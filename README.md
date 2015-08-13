@@ -1,4 +1,6 @@
-Score Title
-===========
+Myrkr
+=====
 
-Score Title (year) description.
+Myrkr (2015) for bass clarinet.
+
+Written for Richard Haynes.
