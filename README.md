@@ -1,2 +1,6 @@
-# myrkr
-Myrkr (2015) for bass clarinet
+Myrkr
+=====
+
+Myrkr (2015) for bass clarinet.
+
+Written for Richard Haynes.
