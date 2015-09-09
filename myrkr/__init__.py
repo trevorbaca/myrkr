@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-import makers
-import materials
-import segments
+from myrkr import makers
+from myrkr import materials
+from myrkr import segments
