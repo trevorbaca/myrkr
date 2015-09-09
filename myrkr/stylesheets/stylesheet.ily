@@ -153,11 +153,18 @@
         \alias Voice
     }
     \context {
+        \Voice
+        \name ClarinetDynamicsVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
         \Staff
         \name ClarinetMusicStaff
         \type Engraver_group
         \alias Staff
         \accepts ClarinetMusicVoice1
+        \accepts ClarinetDynamicsVoice
         instrumentName = \clarinetName
         shortInstrumentName = \shortClarinetName
     }
