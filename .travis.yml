@@ -18,6 +18,7 @@ install:
 script:
     - ajv doctest ./myrkr -x
     - py.test -rf ./myrkr -x
+    #- python ./myrkr/test/illustrate_segments.py
 
 notifications:
     email: false
