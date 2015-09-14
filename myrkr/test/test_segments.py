@@ -2,22 +2,29 @@
 import os
 import pytest
 import shutil
-import ide
 import myrkr
+import ide
 from abjad.tools import systemtools
+pytest.skip('possibly deprecated in favor of test/illustrate_segments.py')
 
 
 configuration = ide.tools.idetools.AbjadIDEConfiguration()
 boilerplate_path = configuration.abjad_ide_boilerplate_directory
 boilerplate_path = os.path.join(boilerplate_path, '__illustrate_segment__.py')
+
 segments_path = os.path.join(myrkr.__path__[0], 'segments')
+
 directory_names = os.listdir(segments_path)
 directory_names = [_ for _ in directory_names if not _.startswith(('.', '_'))]
+
 segment_paths = [os.path.join(segments_path, _) for _ in directory_names]
 segment_paths = [_ for _ in segment_paths if os.path.isdir(_)]
 
 @pytest.mark.parametrize('segment_path', segment_paths)
-def test_myrkr_segments_01(segment_path):
+def test_segments_01(segment_path):
+    r'''Illustrates segments.
+    '''
+    
     local_boilerplate_path = os.path.join(
         segment_path,
         '__illustrate_segment__.py',
@@ -38,8 +45,10 @@ def test_myrkr_segments_01(segment_path):
         segment_path,
         'illustration.candidate.pdf',
         )
+
     if os.path.exists(local_boilerplate_path):
         os.remove(local_boilerplate_path)
+
     with systemtools.FilesystemState(
         keep=[illustration_ly_path, illustration_pdf_path],
         remove=[local_boilerplate_path],
