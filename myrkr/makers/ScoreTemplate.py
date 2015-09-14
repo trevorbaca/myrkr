@@ -17,6 +17,8 @@ class ScoreTemplate(abctools.AbjadValueObject):
 
             >>> f(score)
             \context Score = "Score" <<
+                \context TimeSignatureContext = "Time Signature Context" {
+                }
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \clef "treble"
                     \set Staff.instrumentName = \markup { Bass clarinet }
@@ -28,6 +30,10 @@ class ScoreTemplate(abctools.AbjadValueObject):
 
         Returns score.
         '''
+        time_signature_context = scoretools.Context(
+            context_name='TimeSignatureContext',
+            name='Time Signature Context',
+            )
         clarinet_music_voice = scoretools.Voice(
             [],
             context_name='ClarinetMusicVoice1',
@@ -42,6 +48,7 @@ class ScoreTemplate(abctools.AbjadValueObject):
         attach(instrumenttools.BassClarinet(), clarinet_music_staff)
         score = Score(
             [
+            time_signature_context,
             clarinet_music_staff,
             ],
             name='Score',
