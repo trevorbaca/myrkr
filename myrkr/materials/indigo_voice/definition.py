@@ -16,7 +16,7 @@ tuplet_ratios = sequencetools.partition_sequence_by_counts(
 maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=tuplet_ratios,
     )
-divisions = 8 * [(1, 4)]
+divisions = 8 * [(1, 4), (2, 4)]
 music = maker(divisions)
 indigo_voice = Voice(music)
 #print(indigo_voice)
