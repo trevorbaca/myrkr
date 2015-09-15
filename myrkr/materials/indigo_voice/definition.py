@@ -10,8 +10,8 @@ tuplet_ratios = sequencetools.partition_sequence_by_counts(
     cyclic=True,
     overhang=True,
     )
-print(len(tuplet_ratios))
-print(tuplet_ratios)
+#print(len(tuplet_ratios))
+#print(tuplet_ratios)
 
 maker = rhythmmakertools.TupletRhythmMaker(
     tuplet_ratios=tuplet_ratios,
@@ -19,4 +19,4 @@ maker = rhythmmakertools.TupletRhythmMaker(
 divisions = 8 * [(1, 4)]
 music = maker(divisions)
 indigo_voice = Voice(music)
-print(indigo_voice)
+#print(indigo_voice)
