@@ -4,16 +4,22 @@ from abjad import *
 
 
 terms = [1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2]
-terms *= 4
+counts = [4, 3, 2]
+lcm = mathtools.least_common_multiple(len(terms), sum(counts))
+terms = sequencetools.repeat_sequence_to_length(
+    terms,
+    lcm,
+    )
+#terms.reverse()
 tuplet_ratios = sequencetools.partition_sequence_by_counts(
     terms,
-    counts=[4, 3, 2],
+    counts=counts,
     cyclic=True,
     overhang=True,
     )
 #print(tuplet_ratios)
 #print(list(sum(_) for _ in tuplet_ratios))
-prolation_indicators = [0, -1]
+prolation_indicators = [0, 0, -1, -1]
 assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
 prolation_indicators = datastructuretools.CyclicTuple(prolation_indicators)
 
