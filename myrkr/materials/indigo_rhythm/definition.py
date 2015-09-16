@@ -10,7 +10,7 @@ terms = sequencetools.repeat_sequence_to_length(
     terms,
     lcm,
     )
-#terms.reverse()
+terms.reverse()
 tuplet_ratios = sequencetools.partition_sequence_by_counts(
     terms,
     counts=counts,
