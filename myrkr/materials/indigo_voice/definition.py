@@ -4,7 +4,7 @@ from abjad import *
 
 
 terms = [1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2]
-terms *= 3
+terms *= 4
 tuplet_ratios = sequencetools.partition_sequence_by_counts(
     terms,
     counts=[4, 3, 2],
@@ -13,7 +13,7 @@ tuplet_ratios = sequencetools.partition_sequence_by_counts(
     )
 #print(tuplet_ratios)
 #print(list(sum(_) for _ in tuplet_ratios))
-prolation_indicators = [0, 0]
+prolation_indicators = [0, -1]
 assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
 prolation_indicators = datastructuretools.CyclicTuple(prolation_indicators)
 
