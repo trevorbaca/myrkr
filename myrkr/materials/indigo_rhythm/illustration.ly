@@ -1,4 +1,4 @@
-% 2015-09-16 10:31
+% 2015-09-16 10:33
 
 \version "2.19.26"
 \language "english"
@@ -11,7 +11,7 @@
     tagline = ^ \markup {
         \null
         }
-    title = \markup { Indigo voice }
+    title = \markup { Indigo rhythm }
 }
 
 \layout {
