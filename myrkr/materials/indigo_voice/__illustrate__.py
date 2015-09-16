@@ -3,16 +3,26 @@ import os
 import sys
 import traceback
 from abjad import *
-from myrkr.materials.indigo_voice.definition import music
-from myrkr.materials.indigo_voice.definition import divisions
+from myrkr.materials.indigo_voice.definition import tuplets
+from myrkr.materials.indigo_voice.definition import time_signatures
 
 
-def make_lilypond_file(music, divisions):
-    lilypond_file = rhythmmakertools.make_lilypond_file(music, divisions)
+def make_lilypond_file(tuplets, time_signatures):
+    lilypond_file = rhythmmakertools.make_lilypond_file(
+        tuplets,
+        time_signatures,
+        )
+    lilypond_file.layout_block.indent = 0
+    lilypond_file.header_block.subtitle = Markup('(Myrkr)')
+    lilypond_file.header_block.tagline = markuptools.Markup.null()
+    lilypond_file.header_block.title = Markup('Indigo voice')
+    vector = layouttools.make_spacing_vector(0, 20, 0, 0)
+    lilypond_file.paper_block.markup_system_spacing = vector
+    lilypond_file.score_block.items[0].add_final_bar_line()
     return lilypond_file
 
 if __name__ == '__main__':
-    lilypond_file = make_lilypond_file(music, divisions)
+    lilypond_file = make_lilypond_file(tuplets, time_signatures)
     try:
         current_directory = os.path.dirname(__file__)
         candidate_path = os.path.join(

@@ -1,4 +1,4 @@
-% 2015-09-15 15:35
+% 2015-09-16 10:12
 
 \version "2.19.26"
 \language "english"
@@ -6,10 +6,17 @@
 #(set-default-paper-size "letter" 'portrait)
 #(set-global-staff-size 12)
 
-\header {}
+\header {
+    subtitle = \markup { (Myrkr) }
+    tagline = ^ \markup {
+        \null
+        }
+    title = \markup { Indigo voice }
+}
 
 \layout {
     \accidentalStyle forget
+    indent = #0
     ragged-right = ##t
     \context {
         \name TimeSignatureContext
@@ -57,6 +64,7 @@
 
 \paper {
     left-margin = #20
+    markup-system-spacing = #'((basic-distance . 0) (minimum-distance . 20) (padding . 0) (stretchability . 0))
     system-system-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 12) (stretchability . 0))
 }
 
@@ -64,98 +72,89 @@
     \new Score <<
         \new TimeSignatureContext {
             {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
+                \time 8/16
                 s1 * 1/2
             }
             {
-                \time 1/4
+                \time 7/16
+                s1 * 7/16
+            }
+            {
+                \time 4/16
                 s1 * 1/4
             }
             {
-                \time 2/4
+                \time 9/16
+                s1 * 9/16
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                s1 * 5/16
+            }
+            {
+                \time 9/16
+                s1 * 9/16
+            }
+            {
+                \time 6/16
+                s1 * 3/8
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 8/16
                 s1 * 1/2
             }
             {
-                \time 1/4
-                s1 * 1/4
+                \time 6/16
+                s1 * 3/8
             }
             {
-                \time 2/4
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 8/16
                 s1 * 1/2
             }
             {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
+                \time 5/16
+                s1 * 5/16
             }
         }
         \new RhythmicStaff {
             {
-                \time 1/4
+                \time 8/16
                 {
-                    c'32 [
-                    c'16
-                    c'16.
-                    c'16 ]
-                }
-            }
-            {
-                \time 2/4
-                \times 4/7 {
-                    c'4.
+                    c'16 [
                     c'8
-                    c'4.
+                    c'8.
+                    c'8 ]
                 }
             }
             {
-                \time 1/4
+                \time 7/16
+                {
+                    c'8. [
+                    c'16
+                    c'8. ]
+                }
+            }
+            {
+                \time 4/16
                 {
                     c'8 [
                     c'8 ]
                 }
             }
             {
-                \time 2/4
-                \times 8/9 {
+                \time 9/16
+                {
                     c'8. [
                     c'16
                     c'8
@@ -163,99 +162,82 @@
                 }
             }
             {
-                \time 1/4
-                \times 4/5 {
+                \time 5/16
+                {
                     c'8 [
                     c'16
                     c'8 ]
                 }
             }
             {
-                \time 2/4
-                \times 4/5 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/4
-                \times 8/9 {
-                    c'16. [
-                    c'32
-                    c'16.
-                    c'16 ]
-                }
-            }
-            {
-                \time 2/4
-                \times 2/3 {
-                    c'4
-                    c'4.
-                    c'8
-                }
-            }
-            {
-                \time 1/4
-                \times 4/5 {
-                    c'8 [
-                    c'8. ]
-                }
-            }
-            {
-                \time 2/4
                 {
-                    c'8 [
-                    c'16
-                    c'8
-                    c'8. ]
+                    c'8. [
+                    c'8 ]
                 }
             }
             {
-                \time 1/4
-                \times 2/3 {
+                \time 9/16
+                {
+                    c'8. [
+                    c'16
+                    c'8.
+                    c'8 ]
+                }
+            }
+            {
+                \time 6/16
+                {
                     c'8 [
                     c'8.
                     c'16 ]
                 }
             }
             {
-                \time 2/4
-                \times 4/5 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/4
+                \time 5/16
                 {
-                    c'16 [
-                    c'16.
-                    c'32
-                    c'16 ]
+                    c'8 [
+                    c'8. ]
                 }
             }
             {
-                \time 2/4
-                \times 4/5 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/4
+                \time 8/16
                 {
-                    c'32 [
+                    c'8 [
                     c'16
-                    c'16.
+                    c'8
+                    c'8. ]
+                }
+            }
+            {
+                \time 6/16
+                {
+                    c'8 [
+                    c'8.
                     c'16 ]
                 }
             }
             {
-                \time 2/4
-                \times 4/7 {
-                    c'4.
-                    c'8
-                    c'4.
+                \time 5/16
+                {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 8/16
+                {
+                    c'8 [
+                    c'8.
+                    c'16
+                    c'8 ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8. [
+                    c'8 ]
+                    \bar "|."
                 }
             }
         }
