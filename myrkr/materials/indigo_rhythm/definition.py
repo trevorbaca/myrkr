@@ -23,7 +23,7 @@ prolation_indicators = [0, 0, -1, -1]
 assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
 prolation_indicators = datastructuretools.CyclicTuple(prolation_indicators)
 
-denominator = 8
+denominator = 16
 tuplets = []
 for i, tuplet_ratio in enumerate(tuplet_ratios):
     assert mathtools.all_are_positive_integers(tuplet_ratio)
@@ -44,8 +44,6 @@ for i, tuplet_ratio in enumerate(tuplet_ratios):
         notes.append(note)
     duration = Duration(scaled_weight, denominator)
     tuplet = scoretools.FixedDurationTuplet(duration, notes)
-    beam = spannertools.MultipartBeam()
-    attach(beam, tuplet)
     tuplets.append(tuplet)
 
 def split_tuplet(tuplet):
@@ -86,6 +84,10 @@ for i, tuplet in enumerate(tuplets):
 tuplets = split_tuplets
 prototype = scoretools.FixedDurationTuplet
 assert all(isinstance(_, prototype) for _ in tuplets)
+
+for tuplet in tuplets:
+    beam = spannertools.MultipartBeam()
+    attach(beam, tuplet)
 
 time_signatures = []
 for tuplet in tuplets:

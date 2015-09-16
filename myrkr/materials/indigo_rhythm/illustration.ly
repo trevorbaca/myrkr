@@ -1,6 +1,6 @@
-% 2015-09-16 15:25
+% 2015-09-16 17:13
 
-\version "2.19.26"
+\version "2.19.27"
 \language "english"
 
 #(set-default-paper-size "letter" 'portrait)
@@ -72,699 +72,739 @@
     \new Score <<
         \new TimeSignatureContext {
             {
-                \time 8/8
-                s1 * 1
+                \time 8/16
+                s1 * 1/2
             }
             {
-                \time 7/8
-                s1 * 7/8
+                \time 7/16
+                s1 * 7/16
             }
             {
-                \time 3/8
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 1/16
+                s1 * 1/16
+            }
+            {
+                \time 4/16
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 6/16
                 s1 * 3/8
             }
             {
-                \time 1/8
-                s1 * 1/8
+                \time 3/16
+                s1 * 3/16
             }
             {
-                \time 4/8
+                \time 4/16
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 1/24
+                s1 * 1/24
+            }
+            {
+                \time 5/24
+                s1 * 5/24
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 8/16
                 s1 * 1/2
             }
             {
-                s1 * 1/2
+                \time 1/24
+                s1 * 1/24
             }
             {
-                \time 6/8
-                s1 * 3/4
+                \time 5/24
+                s1 * 5/24
             }
             {
-                \time 3/8
-                s1 * 3/8
+                \time 1/10
+                s1 * 1/10
             }
             {
-                \time 4/8
-                s1 * 1/2
+                \time 3/20
+                s1 * 3/20
             }
             {
-                s1 * 1/2
+                \time 9/16
+                s1 * 9/16
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 3/20
+                s1 * 3/20
+            }
+            {
+                \time 1/10
+                s1 * 1/10
+            }
+            {
+                \time 4/16
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 7/16
+                s1 * 7/16
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 5/16
+                s1 * 5/16
             }
             {
                 \time 1/12
                 s1 * 1/12
-            }
-            {
-                \time 5/12
-                s1 * 5/12
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 8/8
-                s1 * 1
-            }
-            {
-                \time 1/12
-                s1 * 1/12
-            }
-            {
-                \time 5/12
-                s1 * 5/12
-            }
-            {
-                \time 1/5
-                s1 * 1/5
-            }
-            {
-                \time 3/10
-                s1 * 3/10
-            }
-            {
-                \time 9/8
-                s1 * 9/8
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 3/10
-                s1 * 3/10
-            }
-            {
-                \time 1/5
-                s1 * 1/5
-            }
-            {
-                \time 4/8
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 5/8
-                s1 * 5/8
             }
             {
                 \time 1/6
                 s1 * 1/6
             }
             {
-                \time 1/3
-                s1 * 1/3
+                \time 4/16
+                s1 * 1/4
             }
             {
-                \time 4/8
+                \time 9/16
+                s1 * 9/16
+            }
+            {
+                \time 2/16
+                s1 * 1/8
+            }
+            {
+                s1 * 1/8
+            }
+            {
+                \time 1/10
+                s1 * 1/10
+            }
+            {
+                \time 3/20
+                s1 * 3/20
+            }
+            {
+                \time 8/16
                 s1 * 1/2
             }
             {
-                \time 9/8
-                s1 * 9/8
+                \time 6/16
+                s1 * 3/8
             }
             {
-                \time 2/8
+                \time 3/20
+                s1 * 3/20
+            }
+            {
+                \time 1/10
+                s1 * 1/10
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 6/16
+                s1 * 3/8
+            }
+            {
+                \time 5/16
+                s1 * 5/16
+            }
+            {
+                \time 5/18
+                s1 * 5/18
+            }
+            {
+                \time 2/9
+                s1 * 2/9
+            }
+            {
+                \time 1/14
+                s1 * 1/14
+            }
+            {
+                \time 5/28
+                s1 * 5/28
+            }
+            {
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 9/16
+                s1 * 9/16
+            }
+            {
+                \time 1/14
+                s1 * 1/14
+            }
+            {
+                \time 5/28
+                s1 * 5/28
+            }
+            {
+                \time 1/16
+                s1 * 1/16
+            }
+            {
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 8/16
+                s1 * 1/2
+            }
+            {
+                \time 7/16
+                s1 * 7/16
+            }
+            {
+                \time 1/16
+                s1 * 1/16
+            }
+            {
+                \time 3/16
+                s1 * 3/16
+            }
+            {
+                \time 4/16
                 s1 * 1/4
             }
             {
                 s1 * 1/4
             }
             {
-                \time 1/5
-                s1 * 1/5
-            }
-            {
-                \time 3/10
-                s1 * 3/10
-            }
-            {
-                \time 8/8
-                s1 * 1
-            }
-            {
-                \time 6/8
-                s1 * 3/4
-            }
-            {
-                \time 3/10
-                s1 * 3/10
-            }
-            {
-                \time 1/5
-                s1 * 1/5
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 6/8
-                s1 * 3/4
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 5/9
-                s1 * 5/9
-            }
-            {
-                \time 4/9
-                s1 * 4/9
-            }
-            {
-                \time 1/7
-                s1 * 1/7
-            }
-            {
-                \time 5/14
-                s1 * 5/14
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 9/8
-                s1 * 9/8
-            }
-            {
-                \time 1/7
-                s1 * 1/7
-            }
-            {
-                \time 5/14
-                s1 * 5/14
-            }
-            {
-                \time 1/8
-                s1 * 1/8
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 8/8
-                s1 * 1
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 1/8
-                s1 * 1/8
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 4/8
+                \time 8/16
                 s1 * 1/2
             }
             {
-                s1 * 1/2
-            }
-            {
-                \time 8/8
-                s1 * 1
-            }
-            {
-                \time 3/8
-                s1 * 3/8
+                \time 3/16
+                s1 * 3/16
             }
         }
         \new RhythmicStaff {
             {
-                \time 8/8
+                \time 8/16
                 {
-                    c'4
-                    c'4.
-                    c'4
+                    c'8 [
+                    c'8.
                     c'8
+                    c'16 ]
                 }
             }
             {
-                \time 7/8
+                \time 7/16
                 {
-                    c'4.
-                    c'4
-                    c'4
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'4.
-                }
-            }
-            {
-                \time 1/8
-                {
+                    c'8. [
                     c'8
+                    c'8 ]
                 }
             }
             {
-                \time 4/8
+                \time 3/16
+                \set tupletFullLength = ##f
+                {
+                    c'8.
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 1/16
+                \set tupletFullLength = ##f
+                {
+                    c'16
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 4/16
                 \times 4/5 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \times 4/5 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 6/8
-                {
-                    c'8
-                    c'4
-                    c'4.
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'4
-                    c'8
-                }
-            }
-            {
-                \time 4/8
-                \times 4/5 {
-                    c'4.
-                    c'4
+                    c'8. [
+                    c'8 ]
                 }
             }
             {
                 \times 4/5 {
-                    c'4
-                    c'4.
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 6/16
+                {
+                    c'16 [
+                    c'8
+                    c'8. ]
+                }
+            }
+            {
+                \time 3/16
+                {
+                    c'8 [
+                    c'16 ]
+                }
+            }
+            {
+                \time 4/16
+                \times 4/5 {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \times 4/5 {
+                    c'8 [
+                    c'8. ]
+                }
+            }
+            {
+                \time 1/24
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'16
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 5/24
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 8/16
+                {
+                    c'16 [
+                    c'8
+                    c'8.
+                    c'8 ]
+                }
+            }
+            {
+                \time 1/24
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'16
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 5/24
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 1/10
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'8
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 3/20
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'8.
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 9/16
+                {
+                    c'16 [
+                    c'8.
+                    c'8
+                    c'8. ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8 [
+                    c'16
+                    c'8 ]
+                }
+            }
+            {
+                \time 3/20
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'8.
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 1/10
+                \set tupletFullLength = ##f
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'8
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 4/16
+                {
+                    c'16 [
+                    c'8. ]
+                }
+            }
+            {
+                {
+                    c'8 [
+                    c'8 ]
+                }
+            }
+            {
+                \time 7/16
+                {
+                    c'8. [
+                    c'16
+                    c'8. ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8 [
+                    c'8. ]
+                }
+            }
+            {
+                \time 3/16
+                {
+                    c'8 [
+                    c'16 ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8 [
+                    c'8. ]
                 }
             }
             {
                 \time 1/12
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'8
                 }
-            }
-            {
-                \time 5/12
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 5/8
-                {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 8/8
-                {
-                    c'8
-                    c'4
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/12
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    c'8
-                }
-            }
-            {
-                \time 5/12
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'4
-                }
-            }
-            {
-                \time 3/10
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'4.
-                }
-            }
-            {
-                \time 9/8
-                {
-                    c'8
-                    c'4.
-                    c'4
-                    c'4.
-                }
-            }
-            {
-                \time 5/8
-                {
-                    c'4
-                    c'8
-                    c'4
-                }
-            }
-            {
-                \time 3/10
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'4.
-                }
-            }
-            {
-                \time 1/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'4
-                }
-            }
-            {
-                \time 4/8
-                {
-                    c'8
-                    c'4.
-                }
-            }
-            {
-                {
-                    c'4
-                    c'4
-                }
-            }
-            {
-                \time 7/8
-                {
-                    c'4.
-                    c'8
-                    c'4.
-                }
-            }
-            {
-                \time 5/8
-                {
-                    c'4
-                    c'4.
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'4
-                    c'8
-                }
-            }
-            {
-                \time 5/8
-                {
-                    c'4
-                    c'4.
-                }
+                \set tupletFullLength = ##t
             }
             {
                 \time 1/6
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    c'4
+                    c'16 [
+                    c'8. ]
                 }
             }
             {
-                \time 1/3
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    c'8
-                    c'4.
-                }
-            }
-            {
-                \time 4/8
+                \time 4/16
                 {
-                    c'4
-                    c'4
+                    c'8 [
+                    c'8 ]
                 }
             }
             {
-                \time 9/8
+                \time 9/16
                 {
-                    c'4.
-                    c'8
-                    c'4.
-                    c'4
+                    c'8. [
+                    c'16
+                    c'8.
+                    c'8 ]
                 }
             }
             {
-                \time 2/8
+                \time 2/16
+                \set tupletFullLength = ##f
                 \times 2/3 {
-                    c'4.
+                    c'8.
                 }
+                \set tupletFullLength = ##t
             }
             {
                 \times 2/3 {
-                    c'4
-                    c'8
+                    c'8 [
+                    c'16 ]
                 }
             }
             {
-                \time 1/5
+                \time 1/10
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'4
+                    c'8
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 3/10
+                \time 3/20
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'4.
+                    c'8.
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 8/8
+                \time 8/16
                 {
-                    c'4
-                    c'8
-                    c'4.
-                    c'4
+                    c'8 [
+                    c'16
+                    c'8.
+                    c'8 ]
                 }
             }
             {
-                \time 6/8
+                \time 6/16
                 {
-                    c'4
-                    c'4.
-                    c'8
+                    c'8 [
+                    c'8.
+                    c'16 ]
                 }
             }
             {
-                \time 3/10
+                \time 3/20
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'4.
+                    c'8.
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 1/5
+                \time 1/10
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'4
-                }
-            }
-            {
-                \time 5/8
-                {
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'8
-                    c'4
-                }
-            }
-            {
-                \time 6/8
-                {
-                    c'4.
-                    c'4
                     c'8
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 5/8
+                \time 5/16
                 {
-                    c'4.
-                    c'4
+                    c'8. [
+                    c'8 ]
                 }
             }
             {
-                \time 5/9
+                \time 3/16
+                {
+                    c'16 [
+                    c'8 ]
+                }
+            }
+            {
+                \time 6/16
+                {
+                    c'8. [
+                    c'8
+                    c'16 ]
+                }
+            }
+            {
+                \time 5/16
+                {
+                    c'8. [
+                    c'8 ]
+                }
+            }
+            {
+                \time 5/18
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    c'4
-                    c'4.
+                    c'8 [
+                    c'8. ]
                 }
             }
             {
-                \time 4/9
+                \time 2/9
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    c'8
-                    c'4.
+                    c'16 [
+                    c'8. ]
                 }
             }
             {
-                \time 1/7
+                \time 1/14
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    c'4
+                    c'8
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 5/14
+                \time 5/28
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    c'4.
-                    c'4
+                    c'8. [
+                    c'8 ]
                 }
             }
             {
-                \time 3/8
+                \time 3/16
                 {
-                    c'8
-                    c'4
+                    c'16 [
+                    c'8 ]
                 }
             }
             {
-                \time 9/8
+                \time 9/16
                 {
-                    c'4.
-                    c'4
+                    c'8. [
                     c'8
-                    c'4.
+                    c'16
+                    c'8. ]
                 }
             }
             {
-                \time 1/7
+                \time 1/14
+                \set tupletFullLength = ##f
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    c'4
+                    c'8
                 }
+                \set tupletFullLength = ##t
             }
             {
-                \time 5/14
+                \time 5/28
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    c'4
-                    c'4.
+                    c'8 [
+                    c'8. ]
                 }
             }
             {
-                \time 1/8
+                \time 1/16
+                \set tupletFullLength = ##f
                 {
+                    c'16
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 3/16
+                \set tupletFullLength = ##f
+                {
+                    c'8.
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 8/16
+                {
+                    c'8 [
+                    c'8.
                     c'8
+                    c'16 ]
                 }
             }
             {
-                \time 3/8
+                \time 7/16
                 {
-                    c'4.
+                    c'8 [
+                    c'8.
+                    c'8 ]
                 }
             }
             {
-                \time 8/8
+                \time 1/16
+                \set tupletFullLength = ##f
                 {
-                    c'4
-                    c'4.
-                    c'4
+                    c'16
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 3/16
+                \set tupletFullLength = ##f
+                {
+                    c'8.
+                }
+                \set tupletFullLength = ##t
+            }
+            {
+                \time 4/16
+                {
+                    c'8 [
+                    c'8 ]
+                }
+            }
+            {
+                {
+                    c'8. [
+                    c'16 ]
+                }
+            }
+            {
+                \time 8/16
+                {
+                    c'8. [
                     c'8
+                    c'8. ]
                 }
             }
             {
-                \time 7/8
+                \time 3/16
                 {
-                    c'4
-                    c'4.
-                    c'4
-                }
-            }
-            {
-                \time 1/8
-                {
-                    c'8
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'4.
-                }
-            }
-            {
-                \time 4/8
-                {
-                    c'4
-                    c'4
-                }
-            }
-            {
-                {
-                    c'4.
-                    c'8
-                }
-            }
-            {
-                \time 8/8
-                {
-                    c'4.
-                    c'4
-                    c'4.
-                }
-            }
-            {
-                \time 3/8
-                {
-                    c'4
-                    c'8
+                    c'8 [
+                    c'16 ]
                     \bar "|."
                 }
             }
