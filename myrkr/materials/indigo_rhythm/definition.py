@@ -67,19 +67,33 @@ def split_tuplet(tuplet):
     selections = mutate(tuplet).split(durations)
     return selections
 
+displace_split_tuplets = True
 split_indicators = [0, 0, 1, 1]
 split_indicators = datastructuretools.CyclicTuple(split_indicators)
 split_tuplets = []
+last_tuplet = None
 for i, tuplet in enumerate(tuplets):
     split_indicator = split_indicators[i]
     if split_indicator == 0:
         split_tuplets.append(tuplet)
     elif split_indicator == 1:
         selections = split_tuplet(tuplet)
-        for selection in selections:
-            split_tuplets.extend(selection)
+        assert len(selections) == 2
+        left_tuplet = selections[0][0]
+        right_tuplet = selections[1][0]
+        if displace_split_tuplets:
+            if i == 0:
+                last_tuplet = left_tuplet
+            else:
+                split_tuplets.insert(-1, left_tuplet)
+            split_tuplets.append(right_tuplet)
+        else:
+            split_tuplets.append(left_tuplet)
+            split_tuplets.append(right_tuplet)
     else:
         raise ValueError(split_indicator)
+if last_tuplet is not None:
+    split_tuplets.append(last_tuplet)
 
 tuplets = split_tuplets
 prototype = scoretools.FixedDurationTuplet
