@@ -93,10 +93,12 @@ time_signatures = []
 denominators = range(denominator, 2 * denominator)
 for tuplet in tuplets:
     duration = inspect_(tuplet).get_duration()
-    nonreduced_fraction = mathtools.NonreducedFraction(duration)
+    duration = mathtools.NonreducedFraction(duration)
     for denominator in denominators:
-        nonreduced_fraction = nonreduced_fraction.with_denominator(denominator)
-    time_signatures.append(nonreduced_fraction)
+        duration = duration.with_denominator(denominator)
+        if duration.denominator == denominator:
+            time_signatures.append(duration)
+            break
 
 assert len(tuplets) == len(time_signatures)
 for tuplet, time_signature in zip(tuplets, time_signatures):
