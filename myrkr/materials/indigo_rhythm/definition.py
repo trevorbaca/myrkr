@@ -4,7 +4,7 @@ from abjad import *
 
 
 terms = [1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2]
-counts = [4, 3, 2]
+counts = [5, 4]
 lcm = mathtools.least_common_multiple(len(terms), sum(counts))
 terms = sequencetools.repeat_sequence_to_length(
     terms,
@@ -90,9 +90,12 @@ for tuplet in tuplets:
     attach(beam, tuplet)
 
 time_signatures = []
+denominators = range(denominator, 2 * denominator)
 for tuplet in tuplets:
     duration = inspect_(tuplet).get_duration()
-    nonreduced_fraction = duration.with_denominator(denominator)
+    nonreduced_fraction = mathtools.NonreducedFraction(duration)
+    for denominator in denominators:
+        nonreduced_fraction = nonreduced_fraction.with_denominator(denominator)
     time_signatures.append(nonreduced_fraction)
 
 assert len(tuplets) == len(time_signatures)

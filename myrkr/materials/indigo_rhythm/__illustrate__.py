@@ -35,16 +35,4 @@ def tweak_length_1_tuplets(score):
         command = indicatortools.LilyPondCommand(string, format_slot='after')
         attach(command, tuplet)
 
-if __name__ == '__main__':
-    lilypond_file = make_lilypond_file(tuplets, time_signatures)
-    try:
-        current_directory = os.path.dirname(__file__)
-        candidate_path = os.path.join(
-            current_directory,
-            'illustration.candidate.pdf',
-            )
-        persist(lilypond_file).as_pdf(candidate_path)
-    except:
-        traceback.print_exc()
-        sys.exit(1)
-    sys.exit(0)
+lilypond_file = make_lilypond_file(tuplets, time_signatures)
