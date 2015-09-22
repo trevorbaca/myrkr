@@ -89,7 +89,6 @@ class RhythmMaker(object):
             duration = Duration(scaled_weight, self.denominator)
             tuplet = scoretools.FixedDurationTuplet(duration, notes)
             tuplets.append(tuplet)
-        # HERE
         split_tuplets = []
         last_tuplet = None
         for i, tuplet in enumerate(tuplets):
