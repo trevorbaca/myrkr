@@ -10,22 +10,30 @@ class RhythmPreprocessor(object):
 
     __slots__ = (
         '_indicators',
+        '_measures_per_stage',
+        '_name_to_rhythm',
+        '_selections',
         '_time_signatures',
-        '_tuplets',
         )
 
     ### INITIALIZER ###
 
-    def __init__(self, indicators=()):
+    def __init__(self, indicators=(), name_to_rhythm=None):
         indicators = tuple(indicators)
+        name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
+        self._measures_per_stage = ()
+        self._name_to_rhythm = name_to_rhythm
+        self._selections = ()
+        self._time_signatures = ()
         self._validate_indicators()
-        self._unpack_indicators
+        self._unpack_indicators()
 
     ### PRIVATE METHODS ###
 
     def _unpack_indicators(self):
         rhythm_to_cursor = {}
+        selections, time_signatures = [], []
         for indicator in self.indicators:
             position = 0
             if len(indicator) == 2:
@@ -40,8 +48,13 @@ class RhythmPreprocessor(object):
                 server = datastructuretools.Server(source=rhythm)
                 cursor = server.make_cursor(position=position)
                 rhythm_to_cursor[rhythm] = cursor
-
-
+            cursor = rhythm_to_cursor[rhythm]
+            bundles = cursor.next(n=count)
+            for selection, time_signature in bundles:
+                selections.append(selection)
+                time_signatures.append(time_signature)
+        self._selections = tuple(selections)
+        self._time_signatures = tuple(time_signatures)
 
     def _validate_indicators(self):
         for indicator in self.indicators:
@@ -58,12 +71,24 @@ class RhythmPreprocessor(object):
 
     @property
     def measures_per_stage(self):
-        pass
+        r'''Gets measures per stage.
+        '''
+        return self._measures_per_stage
+
+    @property
+    def name_to_rhythm(self):
+        r'''Changes name to rhythm.
+        '''
+        return self._name_to_rhythm
 
     @property
     def selections(self):
-        pass
+        r'''Gets selections.
+        '''
+        return self._selections
 
     @property
     def time_signatures(self):
-        pass
+        r'''Gets time signatures.
+        '''
+        return self._time_signatures
