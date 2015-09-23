@@ -1,4 +1,4 @@
-% 2015-09-22 18:15
+% 2015-09-23 17:13
 
 \version "2.19.27"
 \language "english"
@@ -11,7 +11,7 @@
     tagline = ^ \markup {
         \null
         }
-    title = \markup { ochre rhythm }
+    title = \markup { Ochre rhythm }
 }
 
 \layout {

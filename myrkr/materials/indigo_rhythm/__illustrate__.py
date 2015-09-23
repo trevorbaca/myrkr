@@ -6,8 +6,11 @@ from abjad import *
 from myrkr.materials.indigo_rhythm.definition import indigo_rhythm
 
 
-def make_lilypond_file(rhythm_pair, title):
-    tuplets, time_signatures = indigo_rhythm
+def make_lilypond_file(rhythm, title):
+    tuplets, time_signatures = [], []
+    for tuplet, time_signature in rhythm:
+        tuplets.append(tuplet)
+        time_signatures.append(time_signature)
     lilypond_file = rhythmmakertools.make_lilypond_file(
         tuplets,
         time_signatures,
