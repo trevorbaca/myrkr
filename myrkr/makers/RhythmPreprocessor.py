@@ -10,6 +10,8 @@ class RhythmPreprocessor(object):
 
     __slots__ = (
         '_indicators',
+        '_time_signatures',
+        '_tuplets',
         )
 
     ### INITIALIZER ###
@@ -17,14 +19,19 @@ class RhythmPreprocessor(object):
     def __init__(self, indicators=()):
         indicators = tuple(indicators)
         self._indicators = indicators
+        self._validate_indicators()
+        self._unpack_indicators
 
     ### PRIVATE METHODS ###
 
-    def _get_denominator(self):
-        pass
+    def _unpack_indicators(self):
+        for indicator in self.indicators:
+            pass
 
-    def _get_tuplets(self):
-        pass
+    def _validate_indicators(self):
+        for indicator in self.indicators:
+            assert isinstance(indicator, tuple), repr(indicator)
+            assert len(indicator) in (2, 3), repr(indicator)
 
     ### PUBLIC PROPERTIES ###
 
@@ -34,21 +41,14 @@ class RhythmPreprocessor(object):
         '''
         return self._indicators
 
-    ### PUBLIC METHODS ###
+    @property
+    def measures_per_stage(self):
+        pass
 
-    def make_measures_per_stage(self):
-        measures_per_stage = []
-        return measures_per_stage
+    @property
+    def selections(self):
+        pass
 
-    def make_time_signatures(self):
-        import myrkr
-        time_signatures = []
-        for indicator in self.indicators:
-            tuplets = self._get_tuplets(indicator)
-            denominator = self._get_denominator(indicator)
-            time_signatures_ = myrkr.makers.RhythmMaker.make_time_signatures(
-                tuplets,
-                denominator,
-                )
-            time_signatures.extend(time_signatures_)
-        return time_signatures
+    @property
+    def time_signatures(self):
+        pass

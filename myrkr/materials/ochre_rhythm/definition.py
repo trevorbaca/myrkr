@@ -11,5 +11,4 @@ maker = myrkr.makers.RhythmMaker(
     split_indicators=(0, 0, 1, 1),
     displace_split_tuplets=True,
     )
-tuplets = maker()
-time_signatures = maker.make_time_signatures(tuplets, maker.denominator)
+indigo_rhythm = maker()
