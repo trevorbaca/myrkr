@@ -191,9 +191,10 @@ class RhythmMaker(object):
 
     ### PUBLIC METHODS ###
 
-    def make_time_signatures(self, tuplets):
+    @staticmethod
+    def make_time_signatures(tuplets, denominator):
         time_signatures = []
-        denominators = range(self.denominator, 2 * self.denominator)
+        denominators = range(denominator, 2 * denominator)
         for tuplet in tuplets:
             duration = inspect_(tuplet).get_duration()
             duration = mathtools.NonreducedFraction(duration)

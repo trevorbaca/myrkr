@@ -12,4 +12,4 @@ maker = myrkr.makers.RhythmMaker(
     displace_split_tuplets=True,
     )
 tuplets = maker()
-time_signatures = maker.make_time_signatures(tuplets)
+time_signatures = maker.make_time_signatures(tuplets, maker.denominator)

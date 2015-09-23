@@ -10,13 +10,12 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-
-class SegmentPreprocessor(object):
-    r'''Segment preprocessor.
-    '''
-
-    ### INITIALIZER ###
-
+preprocessor = myrkr.makers.RhythmPreprocessor(
+    indicators=(
+        ),
+    )
+time_signatures = preprocessor.make_time_signatures()
+measures_per_stage = preprocessor.make_measures_per_stage()
 
 
 ###############################################################################
@@ -24,13 +23,13 @@ class SegmentPreprocessor(object):
 ###############################################################################
 
 segment_maker = myrkr.makers.SegmentMaker(
-    measures_per_stage=[],
+    measures_per_stage=measures_per_stage,
     raise_approximate_duration=False,
     show_stage_annotations=False,
     tempo_map = [
         (1, myrkr.materials.tempi[96]),
         ],
-    time_signatures=[],
+    time_signatures=time_signatures,
     transpose_score=True,
     )
 
