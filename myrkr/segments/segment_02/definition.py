@@ -5,13 +5,16 @@ import myrkr
 from myrkr.materials.__abbreviations__ import *
 
 
-
 ###############################################################################
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
+        (myrkr.materials.indigo_rhythm, 12, 0),
+        (myrkr.materials.ochre_rhythm, 1, 0),
+        (myrkr.materials.indigo_rhythm, 6),
+        (myrkr.materials.ochre_rhythm, 1),
         ),
     )
 time_signatures = preprocessor.make_time_signatures()

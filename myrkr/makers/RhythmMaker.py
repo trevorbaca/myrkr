@@ -119,9 +119,32 @@ class RhythmMaker(object):
         for tuplet in tuplets:
             beam = spannertools.MultipartBeam()
             attach(beam, tuplet)
-        return tuplets
+        time_signatures = self._make_time_signatures(tuplets)
+        assert len(tuplets) == len(time_signatures)
+        return tuplets, time_signatures
 
     ### PRIVATE METHODS ###
+
+    def _make_time_signatures(self, tuplets):
+        time_signatures = []
+        denominators = range(self.denominator, 2 * self.denominator)
+        for tuplet in tuplets:
+            duration = inspect_(tuplet).get_duration()
+            duration = mathtools.NonreducedFraction(duration)
+            for denominator in denominators:
+                duration = duration.with_denominator(denominator)
+                if duration.denominator == denominator:
+                    time_signatures.append(duration)
+                    break
+        assert len(tuplets) == len(time_signatures)
+        for tuplet, time_signature in zip(tuplets, time_signatures):
+            tuplet_duration = inspect_(tuplet).get_duration()
+            time_signature = Duration(time_signature)
+            assert tuplet_duration == time_signature, repr((
+                tuplet_duration,
+                time_signature,
+                ))
+        return time_signatures
 
     @staticmethod
     def _split_tuplet(tuplet):
@@ -188,27 +211,3 @@ class RhythmMaker(object):
         r'''Gets terms.
         '''
         return self._terms
-
-    ### PUBLIC METHODS ###
-
-    @staticmethod
-    def make_time_signatures(tuplets, denominator):
-        time_signatures = []
-        denominators = range(denominator, 2 * denominator)
-        for tuplet in tuplets:
-            duration = inspect_(tuplet).get_duration()
-            duration = mathtools.NonreducedFraction(duration)
-            for denominator in denominators:
-                duration = duration.with_denominator(denominator)
-                if duration.denominator == denominator:
-                    time_signatures.append(duration)
-                    break
-        assert len(tuplets) == len(time_signatures)
-        for tuplet, time_signature in zip(tuplets, time_signatures):
-            tuplet_duration = inspect_(tuplet).get_duration()
-            time_signature = Duration(time_signature)
-            assert tuplet_duration == time_signature, repr((
-                tuplet_duration,
-                time_signature,
-                ))
-        return time_signatures

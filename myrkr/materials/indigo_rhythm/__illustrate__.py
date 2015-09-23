@@ -3,11 +3,11 @@ import os
 import sys
 import traceback
 from abjad import *
-from myrkr.materials.indigo_rhythm.definition import tuplets
-from myrkr.materials.indigo_rhythm.definition import time_signatures
+from myrkr.materials.indigo_rhythm.definition import indigo_rhythm
 
 
-def make_lilypond_file(tuplets, time_signatures):
+def make_lilypond_file(rhythm_pair, title):
+    tuplets, time_signatures = indigo_rhythm
     lilypond_file = rhythmmakertools.make_lilypond_file(
         tuplets,
         time_signatures,
@@ -19,7 +19,7 @@ def make_lilypond_file(tuplets, time_signatures):
     lilypond_file.layout_block.indent = 0
     lilypond_file.header_block.subtitle = Markup('(Myrkr)')
     lilypond_file.header_block.tagline = markuptools.Markup.null()
-    lilypond_file.header_block.title = Markup('Indigo rhythm')
+    lilypond_file.header_block.title = Markup(title)
     vector = layouttools.make_spacing_vector(0, 20, 0, 0)
     lilypond_file.paper_block.markup_system_spacing = vector
     return lilypond_file
@@ -35,4 +35,4 @@ def tweak_length_1_tuplets(score):
         command = indicatortools.LilyPondCommand(string, format_slot='after')
         attach(command, tuplet)
 
-lilypond_file = make_lilypond_file(tuplets, time_signatures)
+lilypond_file = make_lilypond_file(indigo_rhythm, 'Indigo rhythm')
