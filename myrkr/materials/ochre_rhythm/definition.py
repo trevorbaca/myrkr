@@ -11,4 +11,4 @@ maker = myrkr.makers.RhythmMaker(
     split_indicators=(0, 0, 1, 1),
     displace_split_tuplets=True,
     )
-indigo_rhythm = maker()
+ochre_rhythm = maker()

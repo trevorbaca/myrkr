@@ -25,8 +25,23 @@ class RhythmPreprocessor(object):
     ### PRIVATE METHODS ###
 
     def _unpack_indicators(self):
+        rhythm_to_cursor = {}
         for indicator in self.indicators:
-            pass
+            position = 0
+            if len(indicator) == 2:
+                rhythm, count = indicator
+            elif len(indicator) == 3:
+                rhythm, count, position = indicator
+            else:
+                raise ValueError(indicator)
+            assert mathtools.is_positive_integer(count), repr(count)
+            assert mathtools.is_nonnegative_integer(position), repr(position)
+            if rhythm not in rhythm_to_cursor:
+                server = datastructuretools.Server(source=rhythm)
+                cursor = server.make_cursor(position=position)
+                rhythm_to_cursor[rhythm] = cursor
+
+
 
     def _validate_indicators(self):
         for indicator in self.indicators:

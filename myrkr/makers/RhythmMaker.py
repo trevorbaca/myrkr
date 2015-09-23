@@ -121,7 +121,8 @@ class RhythmMaker(object):
             attach(beam, tuplet)
         time_signatures = self._make_time_signatures(tuplets)
         assert len(tuplets) == len(time_signatures)
-        return tuplets, time_signatures
+        rhythm = zip(tuplets, time_signatures)
+        return rhythm
 
     ### PRIVATE METHODS ###
 
