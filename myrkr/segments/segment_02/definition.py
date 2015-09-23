@@ -11,14 +11,19 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        (myrkr.materials.indigo_rhythm, 12, 0),
-        (myrkr.materials.ochre_rhythm, 1, 0),
-        (myrkr.materials.indigo_rhythm, 6),
-        (myrkr.materials.ochre_rhythm, 1),
+        ('indigo', 12, 0),
+        ('ochre', 1, 0),
+        ('indigo', 6),
+        ('ochre', 1),
         ),
+    name_to_rhythm={
+        'indigo': myrkr.materials.indigo_rhythm,
+        'ochre': myrkr.materials.ochre_rhythm,
+        },
     )
-time_signatures = preprocessor.make_time_signatures()
-measures_per_stage = preprocessor.make_measures_per_stage()
+print(preprocessor.indicators)
+print(preprocessor.time_signatures)
+print(preprocessor.measures_per_stage)
 
 
 ###############################################################################
@@ -26,13 +31,13 @@ measures_per_stage = preprocessor.make_measures_per_stage()
 ###############################################################################
 
 segment_maker = myrkr.makers.SegmentMaker(
-    measures_per_stage=measures_per_stage,
+    measures_per_stage=preprocessor.measures_per_stage,
     raise_approximate_duration=False,
     show_stage_annotations=False,
     tempo_map = [
         (1, myrkr.materials.tempi[96]),
         ],
-    time_signatures=time_signatures,
+    time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
 
