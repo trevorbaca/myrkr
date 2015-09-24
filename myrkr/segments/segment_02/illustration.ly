@@ -1,4 +1,4 @@
-% 2015-09-24 17:28
+% 2015-09-24 18:43
 
 \version "2.19.27"
 \language "english"
@@ -137,7 +137,7 @@
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
-            \context ClarinetMusicVoice1 = "Clarinet Music Voice 1" {
+            \context ClarinetMusicVoiceOne = "Clarinet Music Voice 1" {
                 R1 * 13/16
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
