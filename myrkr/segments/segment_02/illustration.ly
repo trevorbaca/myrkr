@@ -1,4 +1,4 @@
-% 2015-09-24 15:27
+% 2015-09-24 17:28
 
 \version "2.19.27"
 \language "english"
@@ -14,10 +14,10 @@
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 11/16
+                \time 13/16
                 \bar ""
                 \mark #1
-                s1 * 11/16
+                s1 * 13/16
                     - \markup {
                         \smaller
                             \with-color
@@ -50,24 +50,24 @@
                 s1 * 1/2
             }
             {
-                \time 5/16
-                s1 * 5/16
+                \time 7/20
+                s1 * 7/20
             }
             {
                 \time 6/22
                 s1 * 3/11
             }
             {
-                \time 3/16
-                s1 * 3/16
+                \time 3/20
+                s1 * 3/20
             }
             {
                 \time 11/16
                 s1 * 11/16
             }
             {
-                \time 3/18
-                s1 * 1/6
+                \time 5/22
+                s1 * 5/22
             }
             {
                 \time 10/16
@@ -78,8 +78,8 @@
                 s1 * 1/4
             }
             {
-                \time 6/18
-                s1 * 1/3
+                \time 6/22
+                s1 * 3/11
             }
             {
                 \time 4/16
@@ -110,8 +110,8 @@
                 s1 * 2/11
             }
             {
-                \time 8/16
-                s1 * 1/2
+                \time 10/16
+                s1 * 5/8
             }
             {
                 \time 4/18
@@ -138,28 +138,34 @@
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice1 = "Clarinet Music Voice 1" {
-                R1 * 11/16
+                R1 * 13/16
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     R1 * 5/16
                 }
                 R1 * 1/2
-                R1 * 5/16
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    R1 * 7/16
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     R1 * 3/8
                 }
-                R1 * 3/16
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    R1 * 3/16
+                }
                 R1 * 11/16
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    R1 * 1/4
+                \times 8/11 {
+                    R1 * 5/16
                 }
                 R1 * 5/8
                 R1 * 1/4
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    R1 * 1/2
+                \times 8/11 {
+                    R1 * 3/8
                 }
                 R1 * 1/4
                 R1 * 11/8
@@ -168,7 +174,7 @@
                 \times 8/11 {
                     R1 * 1/4
                 }
-                R1 * 1/2
+                R1 * 5/8
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     R1 * 1/4
