@@ -4,7 +4,8 @@ import myrkr
 
 
 maker = myrkr.makers.RhythmMaker(
-    terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
+    #terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
+    terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 4)),
     counts=(5, 4),
     denominator=16,
     prolation_indicators=(0, 0, -1, -1),
