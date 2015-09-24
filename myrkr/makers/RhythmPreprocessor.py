@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abjad import *
+import myrkr
 
 
 class RhythmPreprocessor(object):
@@ -32,34 +33,38 @@ class RhythmPreprocessor(object):
     ### PRIVATE METHODS ###
 
     def _unpack_indicators(self):
-        rhythm_to_cursor = {}
-        selections, time_signatures = [], []
+        name_to_cursor = {}
+        selections, time_signatures, measures_per_stage = [], [], []
         for indicator in self.indicators:
             position = 0
             if len(indicator) == 2:
-                rhythm, count = indicator
+                name, count = indicator
             elif len(indicator) == 3:
-                rhythm, count, position = indicator
+                name, count, position = indicator
             else:
                 raise ValueError(indicator)
             assert mathtools.is_positive_integer(count), repr(count)
-            assert mathtools.is_nonnegative_integer(position), repr(position)
-            if rhythm not in rhythm_to_cursor:
-                server = datastructuretools.Server(source=rhythm)
-                cursor = server.make_cursor(position=position)
-                rhythm_to_cursor[rhythm] = cursor
-            cursor = rhythm_to_cursor[rhythm]
-            bundles = cursor.next(n=count)
+            assert isinstance(position, int), repr(position)
+            if name not in name_to_cursor:
+                rhythm = self.name_to_rhythm[name]
+                rhythm = datastructuretools.CyclicTuple(rhythm)
+                cursor = datastructuretools.Cursor(source=rhythm)
+                name_to_cursor[name] = cursor
+            cursor = name_to_cursor[name]
+            bundles = cursor.next(count=count)
             for selection, time_signature in bundles:
                 selections.append(selection)
                 time_signatures.append(time_signature)
+            measures_per_stage.append(count)
         self._selections = tuple(selections)
         self._time_signatures = tuple(time_signatures)
+        self._measures_per_stage = tuple(measures_per_stage)
 
     def _validate_indicators(self):
         for indicator in self.indicators:
             assert isinstance(indicator, tuple), repr(indicator)
             assert len(indicator) in (2, 3), repr(indicator)
+            assert isinstance(indicator[0], str), repr(indicator)
 
     ### PUBLIC PROPERTIES ###
 

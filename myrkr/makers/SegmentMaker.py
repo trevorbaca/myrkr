@@ -22,6 +22,7 @@ class SegmentMaker(makertools.SegmentMaker):
         '_music_maker_class',
         '_music_makers',
         '_score',
+        '_score_package',
         '_show_stage_annotations',
         '_stages',
         '_transpose_score',
@@ -43,15 +44,15 @@ class SegmentMaker(makertools.SegmentMaker):
         measures_per_stage=None,
         music_makers=None,
         raise_approximate_duration=False,
+        score_package=None,
         show_stage_annotations=False,
         tempo_map=None,
         time_signatures=None,
         transpose_score=False,
         ):
-        import myrkr
         superclass = super(SegmentMaker, self)
         superclass.__init__()
-        self._initialize_music_makers(music_makers, myrkr.makers)
+        self._initialize_music_makers(music_makers, score_package.makers)
         self.final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
@@ -61,8 +62,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._final_markup_extra_offset = final_markup_extra_offset
         self.measures_per_stage = measures_per_stage
         self._music_handlers = []
-        self._music_maker_class = myrkr.makers.MusicMaker
+        self._music_maker_class = score_package.makers.MusicMaker
         self._initialize_time_signatures(time_signatures)
+        self._score_package = score_package
         self.raise_approximate_duration = bool(raise_approximate_duration)
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
@@ -81,13 +83,13 @@ class SegmentMaker(makertools.SegmentMaker):
 
         Returns LilyPond file and segment metadata.
         '''
-        import myrkr
         self._segment_metadata = segment_metadata or \
             datastructuretools.TypedOrderedDict()
         self._previous_segment_metadata = previous_segment_metadata or \
             datastructuretools.TypedOrderedDict()
-        self._make_score(myrkr.makers.ScoreTemplate())
-        self._remove_score_template_start_instruments(myrkr.materials)
+        self._make_score(self.score_package.makers.ScoreTemplate())
+        self._remove_score_template_start_instruments(
+            self.score_package.materials)
         self._remove_score_template_start_clefs()
         self._make_lilypond_file()
         self._configure_lilypond_file()
@@ -96,9 +98,9 @@ class SegmentMaker(makertools.SegmentMaker):
         self._interpret_music_makers()
         self._interpret_music_handlers()
         self._shorten_long_repeat_ties()
-        self._attach_first_segment_default_instruments()
+        self._attach_first_segment_default_instruments(self.score_package)
         self._attach_first_segment_default_clefs()
-        self._apply_previous_segment_end_settings(myrkr.materials)
+        self._apply_previous_segment_end_settings(self.score_package.materials)
         self._move_instruments_from_notes_back_to_rests()
         self._label_instrument_changes()
         self._transpose_instruments()
@@ -106,7 +108,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._add_final_barline()
         self._add_final_markup()
         self._check_well_formedness()
-        self._update_segment_metadata(myrkr.materials)
+        self._update_segment_metadata(self.score_package.materials)
         self._raise_approximate_duration_in_seconds()
         return self.lilypond_file, self._segment_metadata
 
@@ -151,19 +153,25 @@ class SegmentMaker(makertools.SegmentMaker):
         if not self._previous_segment_metadata:
             message = 'can not find previous metadata before segment {}.'
             message = message.format(self._get_segment_identifier())
-            raise Exception(message)
+            #raise Exception(message)
+            print(message)
+            return
         previous_instruments = self._previous_segment_metadata.get(
             'end_instruments_by_staff')
         if not previous_instruments:
             message = 'can not find previous instruments before segment {}.'
             message = message.format(self._get_segment_identifier())
-            raise Exception(message)
+            #raise Exception(message)
+            print(message)
+            return
         for staff in iterate(self._score).by_class(Staff):
             previous_instrument_name = previous_instruments.get(
                 staff.name)
             if not previous_instrument_name:
                 message = 'can not find previous segment instrument.'
-                raise Exception(message)
+                #raise Exception(message)
+                print(message)
+                return
             first_leaf = inspect_(staff).get_leaf(0)
             prototype = instrumenttools.Instrument
             instrument = inspect_(first_leaf).get_effective(prototype)
@@ -184,12 +192,16 @@ class SegmentMaker(makertools.SegmentMaker):
         if not previous_clefs:
             message = 'can not find previous clefs before segment {}.'
             message = message.format(self._get_segment_identifier())
-            raise Exception(message)
+            #raise Exception(message)
+            print(message)
+            return
         for staff in iterate(self._score).by_class(Staff):
             previous_clef_name = previous_clefs.get(staff.name)
             if not previous_clef_name:
                 message = 'can not find previous segment clef.'
-                raise Exception(message)
+                #raise Exception(message)
+                print(message)
+                return
             first_leaf = inspect_(staff).get_leaf(0)
             prototype = Clef
             clef = inspect_(first_leaf).get_effective(Clef)
@@ -403,7 +415,8 @@ class SegmentMaker(makertools.SegmentMaker):
                 message = 'can not find effective instrument for last leaf'
                 message += ' ({!r}) of {}.'
                 message = message.format(last_leaf, staff.name)
-                raise Exception(message)
+                #raise Exception(message)
+                print(message)
         return result
 
     def _get_end_settings(self, materials_package):
@@ -750,7 +763,7 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def _make_score(self, score_template):
         score = score_template()
-        first_bar_number = self._segment_metadata['first_bar_number']
+        first_bar_number = self._segment_metadata.get('first_bar_number')
         if first_bar_number is not None:
             set_(score).current_bar_number = first_bar_number
         else:
@@ -972,6 +985,14 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns tuples of music-handlers.
         '''
         return tuple(self._music_handlers)
+
+    @property
+    def score_package(self):
+        r'''Gets score package.
+
+        Returns package.
+        '''
+        return self._score_package
 
     @property
     def show_stage_annotations(self):
