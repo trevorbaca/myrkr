@@ -16,22 +16,21 @@ class SegmentMaker(makertools.SegmentMaker):
     __slots__ = (
         '_cached_score_template_start_clefs',
         '_cached_score_template_start_instruments',
+        '_final_barline',
         '_final_markup',
         '_final_markup_extra_offset',
+        '_measures_per_stage',
         '_music_handlers',
         '_music_maker_class',
         '_music_makers',
+        '_raise_approximate_duration',
         '_score',
         '_score_package',
         '_show_stage_annotations',
         '_stages',
+        '_tempo_map',
+        '_time_signatures',
         '_transpose_score',
-        'final_barline',
-        'measures_per_stage',
-        'name',
-        'raise_approximate_duration',
-        'time_signatures',
-        'tempo_map',
         )
 
     ### INITIALIZER ###
@@ -53,22 +52,22 @@ class SegmentMaker(makertools.SegmentMaker):
         superclass = super(SegmentMaker, self)
         superclass.__init__()
         self._initialize_music_makers(music_makers, score_package.makers)
-        self.final_barline = final_barline
+        self._final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
         self._final_markup = final_markup
         if final_markup_extra_offset is not None:
             assert isinstance(final_markup_extra_offset, tuple)
         self._final_markup_extra_offset = final_markup_extra_offset
-        self.measures_per_stage = measures_per_stage
+        self._measures_per_stage = measures_per_stage
         self._music_handlers = []
         self._music_maker_class = score_package.makers.MusicMaker
         self._initialize_time_signatures(time_signatures)
         self._score_package = score_package
-        self.raise_approximate_duration = bool(raise_approximate_duration)
+        self._raise_approximate_duration = bool(raise_approximate_duration)
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
-        self.tempo_map = tempo_map
+        self._tempo_map = tempo_map
         assert isinstance(transpose_score, bool)
         self._transpose_score = transpose_score
 
@@ -653,7 +652,7 @@ class SegmentMaker(makertools.SegmentMaker):
             time_signature = indicatortools.TimeSignature(time_signature)
             time_signatures_.append(time_signature)
         time_signatures_ = tuple(time_signatures_)
-        self.time_signatures = time_signatures_
+        self._time_signatures = time_signatures_
 
     def _label_instrument_changes(self):
         prototype = instrumenttools.Instrument
@@ -943,6 +942,16 @@ class SegmentMaker(makertools.SegmentMaker):
     ### PUBLIC PROPERTIES ###
 
     @property
+    def final_barline(self):
+        r'''Is true when final barline should appear.
+
+        Set to true or false.
+
+        Returns true or false.
+        '''
+        return self._final_barline
+
+    @property
     def final_markup(self):
         r'''Gets final markup.
 
@@ -971,6 +980,16 @@ class SegmentMaker(makertools.SegmentMaker):
         return len(self.time_signatures)
 
     @property
+    def measures_per_stage(self):
+        r'''Gets measures per stage.
+
+        Set to list of positive integers.
+
+        Returns list of positive integers.
+        '''
+        return self._measures_per_stage
+
+    @property
     def music_makers(self):
         r'''Gets music-makers.
 
@@ -985,6 +1004,16 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns tuples of music-handlers.
         '''
         return tuple(self._music_handlers)
+
+    @property
+    def raise_approximate_duration(self):
+        r'''Is true when segment-maker should raise approximate duration.
+
+        Set to true or false.
+
+        Returns true or false.
+        '''
+        return self._raise_approximate_duration
 
     @property
     def score_package(self):
@@ -1011,6 +1040,26 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns nonnegative integer.
         '''
         return len(self.measures_per_stage)
+
+    @property
+    def tempo_map(self):
+        r'''Gets tempo map.
+
+        Set to tempo map.
+
+        Returns tempo map.
+        '''
+        return self._tempo_map
+
+    @property
+    def time_signatures(self):
+        r'''Gets time signatures.
+
+        Set to tuple of time signatures.
+
+        Returns tuple of time signatures.
+        '''
+        return self._time_signatures
 
     @property
     def transpose_score(self):

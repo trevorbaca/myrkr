@@ -12,6 +12,7 @@ class RhythmPreprocessor(object):
     __slots__ = (
         '_indicators',
         '_measures_per_stage',
+        '_music_by_stage',
         '_name_to_rhythm',
         '_selections',
         '_time_signatures',
@@ -59,6 +60,22 @@ class RhythmPreprocessor(object):
         self._selections = tuple(selections)
         self._time_signatures = tuple(time_signatures)
         self._measures_per_stage = tuple(measures_per_stage)
+        counts = self.measures_per_stage
+        selections = self.selections
+        assert sum(counts) == len(selections)
+        selections = []
+        parts = sequencetools.partition_sequence_by_counts(
+            self.selections,
+            self.measures_per_stage,
+            )
+        for part in parts:
+            selection = []
+            for selection_ in part:
+                selection.extend(selection_)
+            selection = select(selection)
+            selections.append(selection)
+        assert all(isinstance(_, selectiontools.Selection) for _ in selections)
+        self._music_by_stage = selections
 
     def _validate_indicators(self):
         for indicator in self.indicators:
@@ -97,3 +114,11 @@ class RhythmPreprocessor(object):
         r'''Gets time signatures.
         '''
         return self._time_signatures
+
+    ### PUBLIC METHODS ###
+
+    def get_music(self, stage_number):
+        assert mathtools.is_positive_integer(stage_number), repr(stage_number)
+        stage_index = stage_number - 1
+        selection = self._music_by_stage[stage_index]
+        return selection
