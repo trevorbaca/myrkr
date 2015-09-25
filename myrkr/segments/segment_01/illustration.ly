@@ -1,4 +1,4 @@
-% 2015-09-25 16:23
+% 2015-09-25 17:12
 
 \version "2.19.27"
 \language "english"
@@ -13,9 +13,9 @@
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 8/4
+                \time 12/5
                 \bar ""
-                s1 * 2
+                s1 * 12/5
                     - \markup {
                         \smaller
                             \with-color
@@ -39,6 +39,10 @@
                         }
                     }
             }
+            {
+                \time 4/3
+                s1 * 4/3
+            }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \clef "treble"
@@ -61,11 +65,13 @@
                     }
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                {
-                    d''4
-                    d''2
-                    d''2.
-                    d''2
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    d''\breve.
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    d''\breve
                     \bar "|"
                 }
             }

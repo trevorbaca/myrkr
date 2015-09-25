@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('cobalt', 1, 0),
+        ('cobalt', 2, 1),
         ),
     name_to_rhythm={
         'cobalt': myrkr.materials.cobalt_rhythm,
@@ -45,7 +45,7 @@ segment_maker = myrkr.makers.SegmentMaker(
     transpose_score=True,
     )
 
-assert segment_maker.measure_count == 1
+assert segment_maker.measure_count == 2
 assert segment_maker.stage_count == 1
 assert segment_maker.validate_time_signatures()
 

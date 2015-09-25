@@ -148,6 +148,8 @@ class RhythmMaker(object):
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
         override(score).tuplet_bracket.staff_padding = 3.5
+        moment = schemetools.SchemeMoment((1, 8))
+        set_(score).proportional_notation_duration = moment
         assert inspect_(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
