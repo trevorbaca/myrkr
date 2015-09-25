@@ -60,7 +60,7 @@ assert segment_maker.validate_time_signatures()
 stage_number = 1
 segment_maker.make_music_maker(
     stages=stage_number,
-    context_name=clarinet_music_voice,
+    context_name=cl,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
     )
@@ -68,7 +68,7 @@ segment_maker.make_music_maker(
 stage_number = 2
 segment_maker.make_music_maker(
     stages=stage_number,
-    context_name=clarinet_music_voice,
+    context_name=cl,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
     )
@@ -76,7 +76,7 @@ segment_maker.make_music_maker(
 stage_number = 3
 segment_maker.make_music_maker(
     stages=stage_number,
-    context_name=clarinet_music_voice,
+    context_name=cl,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
     )
@@ -84,7 +84,7 @@ segment_maker.make_music_maker(
 stage_number = 4
 segment_maker.make_music_maker(
     stages=stage_number,
-    context_name=clarinet_music_voice,
+    context_name=cl,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
     )
