@@ -1,4 +1,4 @@
-% 2015-09-25 10:27
+% 2015-09-25 10:57
 
 \version "2.19.27"
 \language "english"
@@ -37,8 +37,8 @@
         \new Staff {
             \new Voice {
                 \clef "treble"
-                e'4
-                e'4
+                e''4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -46,7 +46,7 @@
                                 \finger
                                     1
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -54,7 +54,7 @@
                                 \finger
                                     2
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -62,8 +62,8 @@
                                 \finger
                                     1
                         }
-                e'4
-                e'4
+                e''4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -71,8 +71,8 @@
                                 \finger
                                     1
                         }
-                e'4
-                e'4
+                e''4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -80,7 +80,7 @@
                                 \finger
                                     2
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -88,7 +88,7 @@
                                 \finger
                                     1
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -96,7 +96,7 @@
                                 \finger
                                     2
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -104,8 +104,8 @@
                                 \finger
                                     1
                         }
-                e'4
-                e'4
+                e''4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -113,7 +113,7 @@
                                 \finger
                                     1
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -121,13 +121,164 @@
                                 \finger
                                     2
                         }
-                e'4
+                e''4
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
                             \circle
                                 \finger
                                     1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
+                e''4
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
                         }
             }
         }
