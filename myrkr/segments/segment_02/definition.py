@@ -26,6 +26,8 @@ print(preprocessor.time_signatures)
 print(preprocessor.measures_per_stage)
 print(sum(preprocessor.measures_per_stage))
 print(len(preprocessor.measures_per_stage))
+print(preprocessor.selections[0])
+print(len(preprocessor.get_music(1)))
 
 
 ###############################################################################
@@ -54,10 +56,10 @@ assert segment_maker.validate_time_signatures()
 ###############################################################################
 
 
-#segment_maker.make_music_maker(
-#    stages=(1, 4),
-#    context_name='ClarinetMusicVoice1',
-#    division_maker=None,
-#    rewrite_meter=True,
-#    rhythm_maker=None,
-#    )
+stage_number = 1
+segment_maker.make_music_maker(
+    stages=(1, 1),
+    context_name='ClarinetMusicVoiceOne',
+    division_maker=None,
+    rhythm_maker=preprocessor.get_music(stage_number),
+    )

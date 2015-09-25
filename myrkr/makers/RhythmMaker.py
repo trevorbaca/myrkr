@@ -120,8 +120,9 @@ class RhythmMaker(object):
             beam = spannertools.MultipartBeam()
             attach(beam, tuplet)
         time_signatures = self._make_time_signatures(tuplets)
-        assert len(tuplets) == len(time_signatures)
-        rhythm = zip(tuplets, time_signatures)
+        selections = [select(_) for _ in tuplets]
+        assert len(selections) == len(time_signatures)
+        rhythm = zip(selections, time_signatures)
         return rhythm
 
     ### PRIVATE METHODS ###
