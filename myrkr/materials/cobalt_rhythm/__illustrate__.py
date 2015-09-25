@@ -3,10 +3,10 @@ import os
 import sys
 import traceback
 from abjad import *
-from myrkr.materials.ochre_rhythm.definition import maker
+from myrkr.materials.cobalt_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(
-    title='Ochre rhythm',
+    title='Cobalt rhythm',
     subtitle='(Myrkr)',
     )
