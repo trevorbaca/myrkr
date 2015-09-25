@@ -1,4 +1,4 @@
-% 2015-09-24 22:11
+% 2015-09-25 16:25
 
 \version "2.19.27"
 \language "english"
@@ -10,7 +10,7 @@
 
 \score {
     \context Score = "Score" \with {
-        \override BarNumber #'transparent = ##t
+        currentBarNumber = #2
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -137,6 +137,7 @@
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
+            \clef "treble"
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
                     c'8.

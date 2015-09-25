@@ -177,7 +177,9 @@ class SegmentMaker(makertools.SegmentMaker):
             if instrument is not None:
                 continue
             previous_instrument = self._get_instrument_by_name(
-                previous_instrument_name)
+                previous_instrument_name, 
+                materials_package,
+                )
             if previous_instrument is None:
                 continue
             copied_previous_instrument = new(previous_instrument)
