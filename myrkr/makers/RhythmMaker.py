@@ -72,7 +72,9 @@ class RhythmMaker(object):
         for i, tuplet_ratio in enumerate(tuplet_ratios):
             assert mathtools.all_are_positive_integers(tuplet_ratio)
             weight = sum(tuplet_ratio)    
-            prolation_indicator = self.prolation_indicators[i]
+            prolation_indicator = 0
+            if self.prolation_indicators:
+                prolation_indicator = self.prolation_indicators[i]
             if prolation_indicator == -1:
                 scaled_weight = 2 ** math.floor(math.log(weight, 2))
             elif prolation_indicator == 0:
@@ -92,7 +94,9 @@ class RhythmMaker(object):
         split_tuplets = []
         last_tuplet = None
         for i, tuplet in enumerate(tuplets):
-            split_indicator = self.split_indicators[i]
+            split_indicator = 0
+            if self.split_indicators:
+                split_indicator = self.split_indicators[i]
             if split_indicator == 0:
                 split_tuplets.append(tuplet)
             elif split_indicator == 1:
@@ -124,6 +128,37 @@ class RhythmMaker(object):
         assert len(selections) == len(time_signatures)
         rhythm = zip(selections, time_signatures)
         return rhythm
+
+    def __illustrate__(self, rhythm=None, title=None, subtitle=None):
+        r'''Illustrates rhythm-maker.
+
+        Returns LilyPond file.
+        '''
+        if rhythm is None:
+            rhythm = self()
+        tuplets, time_signatures = [], []
+        for tuplet, time_signature in rhythm:
+            tuplets.append(tuplet)
+            time_signatures.append(time_signature)
+        lilypond_file = rhythmmakertools.make_lilypond_file(
+            tuplets,
+            time_signatures,
+            )
+        score = lilypond_file.score_block.items[0]
+        score.add_final_bar_line()
+        self._tweak_length_1_tuplets(score)
+        assert inspect_(score).is_well_formed()
+        lilypond_file.layout_block.indent = 0
+        if subtitle is not None:
+            subtitle = Markup(subtitle)
+            lilypond_file.header_block.subtitle = subtitle
+        lilypond_file.header_block.tagline = markuptools.Markup.null()
+        if title is not None:
+            title = Markup(title)
+            lilypond_file.header_block.title = Markup(title)
+        vector = layouttools.make_spacing_vector(0, 20, 0, 0)
+        lilypond_file.paper_block.markup_system_spacing = vector
+        return lilypond_file
 
     ### PRIVATE METHODS ###
 
@@ -169,6 +204,24 @@ class RhythmMaker(object):
         durations = [left_duration, right_duration]
         selections = mutate(tuplet).split(durations)
         return selections
+
+    @staticmethod
+    def _tweak_length_1_tuplets(score):
+        for tuplet in iterate(score).by_class(Tuplet):
+            if not len(tuplet) == 1:
+                continue
+            string = 'set tupletFullLength = ##f'
+            command = indicatortools.LilyPondCommand(
+                string, 
+                format_slot='before',
+                )
+            attach(command, tuplet)
+            string = 'set tupletFullLength = ##t'
+            command = indicatortools.LilyPondCommand(
+                string, 
+                format_slot='after',
+                )
+            attach(command, tuplet)
 
     ### PUBLIC PROPERTIES ###
 
