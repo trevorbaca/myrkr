@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- c_oding: utf-8 -*-
+import collections
 from abjad import *
 
 
@@ -46,10 +47,31 @@ class ColorMaker(object):
         voice = Voice(notes)
         staff = Staff([voice])
         score = Score([staff])
+        override(score).bar_line.stencil = False
+        override(score).bar_number.transparent = True
+        override(score).spacing_spanner.strict_grace_spacing = True
+        override(score).spacing_spanner.strict_note_spacing = True
         override(score).stem.transparent = True
+        override(score).time_signature.stencil = False
+        moment = schemetools.SchemeMoment((1, 8))
+        set_(score).proportional_notation_duration = moment
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(score)
-        lilypond_file.header_block.title = title
-        lilypond_file.header_block.subtitle = subtitle
+        lilypond_file.global_staff_size = 12
+        if subtitle is not None:
+            subtitle = Markup(subtitle)
+            lilypond_file.header_block.subtitle = subtitle
+        lilypond_file.header_block.tagline = Markup.null()
+        if title is not None:
+            title = Markup(title)
+            lilypond_file.header_block.title = title
+        lilypond_file.layout_block.indent = 0
+        lilypond_file.paper_block.left_margin = 20
+        vector = layouttools.make_spacing_vector(0, 20, 0, 0)
+        lilypond_file.paper_block.markup_system_spacing = vector
+        vector = layouttools.make_spacing_vector(0, 0, 12, 0)
+        lilypond_file.paper_block.system_system_spacing = vector
+        vector = layouttools.make_spacing_vector(0, 4, 0, 0)
+        lilypond_file.paper_block.top_markup_spacing = vector
         return lilypond_file
 
     ### PRIVATE METHODS ###
@@ -58,9 +80,9 @@ class ColorMaker(object):
     def _attach_clefs(class_, notes):
         previous_clef = None
         for note in notes:
-            sugested_clef = class_.suggest_clef(note.written_pitch)
+            suggested_clef = class_._suggest_clef(note.written_pitch)
             if (previous_clef is None or
-                not suggested_clef = previous_clef):
+                not suggested_clef == previous_clef):
                 attach(suggested_clef, note)
                 previous_clef = suggested_clef
 
@@ -71,12 +93,14 @@ class ColorMaker(object):
         interval = pitchtools.NamedInterval(interval)
         current_pitch = previous_pitch + interval
         color_fingering_numbers = indicator[1]
-        notes = selectiontools.Selection()
+        notes = []
         for number in color_fingering_numbers:
-            note = Note(current_pitch)
-            color_fingering = indicatortools.ColorFingering(number)
-            attach(color_fingering, note)
+            note = Note(current_pitch, Duration(1, 4))
+            if number < 0:
+                color_fingering = indicatortools.ColorFingering(number)
+                attach(color_fingering, note)
             notes.append(note)
+        notes = select(notes)
         return notes
 
     @staticmethod
