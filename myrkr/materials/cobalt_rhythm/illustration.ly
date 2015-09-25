@@ -1,4 +1,4 @@
-% 2015-09-25 17:06
+% 2015-09-25 17:10
 
 \version "2.19.27"
 \language "english"
@@ -71,50 +71,51 @@
 \score {
     \new Score \with {
         \override TupletBracket #'staff-padding = #3.5
+        proportionalNotationDuration = #(ly:make-moment 1 8)
     } <<
         \new TimeSignatureContext {
             {
-                \time 1/3
-                s1 * 1/3
+                \time 12/5
+                s1 * 12/5
+            }
+            {
+                \time 4/3
+                s1 * 4/3
+            }
+            {
+                \time 3/1
+                s1 * 3
+            }
+            {
+                \time 8/5
+                s1 * 8/5
+            }
+            {
+                \time 12/5
+                s1 * 12/5
+            }
+            {
+                \time 1/1
+                s1 * 1
+            }
+            {
+                \time 8/5
+                s1 * 8/5
+            }
+            {
+                s1 * 8/5
             }
             {
                 \time 2/3
                 s1 * 2/3
             }
             {
-                \time 6/5
-                s1 * 6/5
+                \time 12/5
+                s1 * 12/5
             }
             {
-                \time 4/5
-                s1 * 4/5
-            }
-            {
-                \time 3/2
-                s1 * 3/2
-            }
-            {
-                \time 1/2
-                s1 * 1/2
-            }
-            {
-                \time 6/5
-                s1 * 6/5
-            }
-            {
-                \time 4/5
-                s1 * 4/5
-            }
-            {
-                s1 * 4/5
-            }
-            {
-                \time 6/5
-                s1 * 6/5
-            }
-            {
-                \time 1/3
-                s1 * 1/3
+                \time 4/3
+                s1 * 4/3
             }
             {
                 \time 2/3
@@ -123,10 +124,56 @@
         }
         \new RhythmicStaff {
             {
-                \time 1/3
+                \time 12/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'\breve.
+                }
+            }
+            {
+                \time 4/3
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    c'2
+                    c'\breve
+                }
+            }
+            {
+                \time 3/1
+                {
+                    c'\breve.
+                }
+            }
+            {
+                \time 8/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'\breve
+                }
+            }
+            {
+                \time 12/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'\breve.
+                }
+            }
+            {
+                \time 1/1
+                {
+                    c'1
+                }
+            }
+            {
+                \time 8/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'\breve
+                }
+            }
+            {
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'\breve
                 }
             }
             {
@@ -137,63 +184,17 @@
                 }
             }
             {
-                \time 6/5
+                \time 12/5
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'1.
+                    c'\breve.
                 }
             }
             {
-                \time 4/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'1
-                }
-            }
-            {
-                \time 3/2
-                {
-                    c'1.
-                }
-            }
-            {
-                \time 1/2
-                {
-                    c'2
-                }
-            }
-            {
-                \time 6/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'1.
-                }
-            }
-            {
-                \time 4/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'1
-                }
-            }
-            {
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'1
-                }
-            }
-            {
-                \time 6/5
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    c'1.
-                }
-            }
-            {
-                \time 1/3
+                \time 4/3
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    c'2
+                    c'\breve
                 }
             }
             {
