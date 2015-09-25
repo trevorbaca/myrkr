@@ -96,7 +96,7 @@ class ColorMaker(object):
         notes = []
         for number in color_fingering_numbers:
             note = Note(current_pitch, Duration(1, 4))
-            if number < 0:
+            if 0 < number:
                 color_fingering = indicatortools.ColorFingering(number)
                 attach(color_fingering, note)
             notes.append(note)

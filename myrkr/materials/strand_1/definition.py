@@ -9,10 +9,5 @@ maker = myrkr.makers.ColorMaker(
         ),
     )
 
-#notes = maker(start_pitch=NamedPitch('E4'))
-#print(notes)
-#lilypond_file = maker.__illustrate__(start_pitch=NamedPitch('E4'))
-#print(lilypond_file)
-
 start_pitch = NamedPitch('E4')
 strand_1 = maker(start_pitch=start_pitch)
