@@ -137,7 +137,7 @@
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
-            \context ClarinetMusicVoiceOne = "Clarinet Music Voice 1" {
+            \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 R1 * 13/16
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {

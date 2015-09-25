@@ -23,7 +23,7 @@ class ScoreTemplate(abctools.AbjadValueObject):
                     \clef "treble"
                     \set Staff.instrumentName = \markup { Bass clarinet }
                     \set Staff.shortInstrumentName = \markup { Bass cl. }
-                    \context ClarinetMusicVoiceOne = "Clarinet Music Voice 1" {
+                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     }
                 }
             >>
@@ -36,8 +36,8 @@ class ScoreTemplate(abctools.AbjadValueObject):
             )
         clarinet_music_voice = scoretools.Voice(
             [],
-            context_name='ClarinetMusicVoiceOne',
-            name='Clarinet Music Voice 1',
+            context_name='ClarinetMusicVoice',
+            name='Clarinet Music Voice',
             )
         clarinet_music_staff = scoretools.Staff(
             [clarinet_music_voice],

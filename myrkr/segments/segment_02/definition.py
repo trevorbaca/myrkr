@@ -21,13 +21,14 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         'ochre': myrkr.materials.ochre_rhythm,
         },
     )
-print(preprocessor.indicators)
-print(preprocessor.time_signatures)
-print(preprocessor.measures_per_stage)
-print(sum(preprocessor.measures_per_stage))
-print(len(preprocessor.measures_per_stage))
-print(preprocessor.selections[0])
-print(len(preprocessor.get_music(1)))
+
+#print(preprocessor.indicators)
+#print(preprocessor.time_signatures)
+#print(preprocessor.measures_per_stage)
+#print(sum(preprocessor.measures_per_stage))
+#print(len(preprocessor.measures_per_stage))
+#print(preprocessor.selections[0])
+#print(len(preprocessor.get_music(1)))
 
 
 ###############################################################################
@@ -59,7 +60,7 @@ assert segment_maker.validate_time_signatures()
 stage_number = 1
 segment_maker.make_music_maker(
     stages=(1, 1),
-    context_name='ClarinetMusicVoiceOne',
+    context_name=clarinet_music_voice,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
     )

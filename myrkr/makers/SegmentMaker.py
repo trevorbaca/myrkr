@@ -725,7 +725,9 @@ class SegmentMaker(makertools.SegmentMaker):
 
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
+        raise Exception(voice.name)
         music_makers = self._get_music_makers_for_context(voice.name)
+        raise Exception(music_makers)
         music_makers.sort(key=lambda x: x.stages[0])
         assert self._stages_do_not_overlap(music_makers)
         if not music_makers:
