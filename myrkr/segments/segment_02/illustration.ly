@@ -1,4 +1,4 @@
-% 2015-09-24 18:43
+% 2015-09-24 22:11
 
 \version "2.19.27"
 \language "english"
@@ -66,8 +66,8 @@
                 s1 * 11/16
             }
             {
-                \time 5/22
-                s1 * 5/22
+                \time 4/22
+                s1 * 2/11
             }
             {
                 \time 10/16
@@ -78,8 +78,8 @@
                 s1 * 1/4
             }
             {
-                \time 6/22
-                s1 * 3/11
+                \time 7/22
+                s1 * 7/22
             }
             {
                 \time 4/16
@@ -138,58 +138,117 @@
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                R1 * 13/16
+                {
+                    c'8.
+                    c'4
+                    c'8 [
+                    c'16
+                    c'8. ]
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 5/16
+                    c'8. [
+                    c'8 ]
                 }
-                R1 * 1/2
+                {
+                    c'8 [
+                    c'8
+                    c'8.
+                    c'16 ]
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    R1 * 7/16
+                    c'8.
+                    c'4
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 3/8
+                    c'8. [
+                    c'8
+                    c'16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    R1 * 3/16
+                    c'8 [
+                    c'16 ]
                 }
-                R1 * 11/16
+                {
+                    c'8. [
+                    c'8
+                    c'8
+                    c'8.
+                    c'16 ]
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 5/16
+                    c'16 [
+                    c'8. ]
                 }
-                R1 * 5/8
-                R1 * 1/4
+                {
+                    c'8. [
+                    c'8
+                    c'8.
+                    c'8 ]
+                }
+                \times 4/5 {
+                    c'8. [
+                    c'8 ]
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 3/8
+                    c'4
+                    c'8 [
+                    c'16 ]
                 }
-                R1 * 1/4
-                R1 * 11/8
-                R1 * 11/16
+                \times 4/5 {
+                    c'8 [
+                    c'8. ]
+                }
+                {
+                    c'4
+                    c'4.
+                    c'4
+                    c'8
+                    c'4.
+                }
+                {
+                    c'16 [
+                    c'8.
+                    c'8
+                    c'8.
+                    c'8 ]
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 1/4
+                    c'16 [
+                    c'8. ]
                 }
-                R1 * 5/8
+                {
+                    c'16 [
+                    c'8. ]
+                    c'4
+                    c'8
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    R1 * 1/4
+                    c'16 [
+                    c'8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 7/16
+                    c'8 [
+                    c'8
+                    c'8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    R1 * 5/16
+                    c'8 [
+                    c'8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    R1 * 5/8
+                    c'4.
+                    c'4
                     \bar "|."
                 }
             }

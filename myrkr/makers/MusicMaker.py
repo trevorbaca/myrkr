@@ -207,11 +207,16 @@ class MusicMaker(abctools.AbjadObject):
         return self._default_rhythm_maker
 
     def _make_rhythm(self, time_signatures):
-        division_maker = self._get_division_maker()
-        divisions = division_maker(time_signatures)
-        divisions = sequencetools.flatten_sequence(divisions)
         rhythm_maker = self._get_rhythm_maker()
-        selections = rhythm_maker(divisions)
+        if isinstance(rhythm_maker, selectiontools.Selection):
+            selections = [rhythm_maker]
+        elif isinstance(rhythm_maker, rhythmmakertools.RhythmMaker):
+            division_maker = self._get_division_maker()
+            divisions = division_maker(time_signatures)
+            divisions = sequencetools.flatten_sequence(divisions)
+            selections = rhythm_maker(divisions)
+        else:
+            raise TypeError(rhythm_maker)
         if self.split_at_measure_boundaries:
             specifier = rhythmmakertools.DurationSpellingSpecifier
             selections = specifier._split_at_measure_boundaries(
@@ -307,6 +312,16 @@ class MusicMaker(abctools.AbjadObject):
         Returns none or division maker.
         '''
         return self._division_maker
+
+    @property
+    def instrument(self):
+        r'''Gets instrument.
+
+        Set to instrument or none.
+
+        Returns instrument or none.
+        '''
+        return self._instrument
 
     @property
     def rewrite_meter(self):
