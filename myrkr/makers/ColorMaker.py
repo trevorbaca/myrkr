@@ -44,16 +44,26 @@ class ColorMaker(object):
         '''
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
-        voice = Voice(notes)
-        staff = Staff([voice])
+        note_voice = Voice(notes)
+        durations = [inspect_(_).get_duration() for _ in notes]
+        skips = scoretools.make_skips(Duration(1), durations)
+        label_voice = Voice(skips)
+        labeltools.label_leaves_in_expr_with_leaf_indices(
+            label_voice,
+            markup_direction=Down,
+            )
+        override(label_voice).text_script.staff_padding = 4
+        staff = Staff([note_voice, label_voice], is_simultaneous=True)
         score = Score([staff])
+        attach(TimeSignature((1, 4)), staff)
         override(score).bar_line.stencil = False
         override(score).bar_number.transparent = True
         override(score).spacing_spanner.strict_grace_spacing = True
         override(score).spacing_spanner.strict_note_spacing = True
         override(score).stem.transparent = True
+        override(score).text_script.staff_padding = 1
         override(score).time_signature.stencil = False
-        moment = schemetools.SchemeMoment((1, 8))
+        moment = schemetools.SchemeMoment((1, 9))
         set_(score).proportional_notation_duration = moment
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(score)
         lilypond_file.global_staff_size = 12
