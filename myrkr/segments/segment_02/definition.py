@@ -59,7 +59,7 @@ assert segment_maker.validate_time_signatures()
 
 stage_number = 1
 segment_maker.make_music_maker(
-    stages=(1, 1),
+    stages=stage_number,
     context_name=clarinet_music_voice,
     division_maker=None,
     rhythm_maker=preprocessor.get_music(stage_number),
