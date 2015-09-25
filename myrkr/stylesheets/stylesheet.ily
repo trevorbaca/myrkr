@@ -98,10 +98,11 @@
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
-        \override BarNumber.Y-extent = ##f
-        \override BarNumber.extra-offset = #'(-6 . -4)
-        \override BarNumber.font-size = 1
-        \override BarNumber.padding = 4
+        %\override BarNumber.Y-extent = ##f
+        %\override BarNumber.extra-offset = #'(-6 . -4)
+        %\override BarNumber.font-size = 1
+        %\override BarNumber.padding = 4
+        \override BarNumber.transparent = ##t
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
@@ -211,7 +212,7 @@
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
-        barNumberFormatter = #format-oval-barnumbers
+        %barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t

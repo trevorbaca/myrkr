@@ -11,12 +11,10 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', 12, 0),
-        ('ochre', 1, 0),
-        ('indigo', 6),
-        ('ochre', 1),
+        ('cobalt', 1, 0),
         ),
     name_to_rhythm={
+        'cobalt': myrkr.materials.cobalt_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
         },
@@ -41,14 +39,14 @@ segment_maker = myrkr.makers.SegmentMaker(
     score_package=myrkr,
     show_stage_annotations=True,
     tempo_map = [
-        (1, myrkr.materials.tempi[96]),
+        (1, myrkr.materials.tempi[48]),
         ],
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
 
-assert segment_maker.measure_count == 20
-assert segment_maker.stage_count == 4
+assert segment_maker.measure_count == 1
+assert segment_maker.stage_count == 1
 assert segment_maker.validate_time_signatures()
 
 
@@ -58,30 +56,6 @@ assert segment_maker.validate_time_signatures()
 
 
 stage_number = 1
-segment_maker.make_music_maker(
-    stages=stage_number,
-    context_name=cl,
-    division_maker=None,
-    rhythm_maker=preprocessor.get_music(stage_number),
-    )
-
-stage_number = 2
-segment_maker.make_music_maker(
-    stages=stage_number,
-    context_name=cl,
-    division_maker=None,
-    rhythm_maker=preprocessor.get_music(stage_number),
-    )
-
-stage_number = 3
-segment_maker.make_music_maker(
-    stages=stage_number,
-    context_name=cl,
-    division_maker=None,
-    rhythm_maker=preprocessor.get_music(stage_number),
-    )
-
-stage_number = 4
 segment_maker.make_music_maker(
     stages=stage_number,
     context_name=cl,

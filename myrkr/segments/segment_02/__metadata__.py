@@ -8,7 +8,7 @@ metadata = datastructuretools.TypedOrderedDict(
             'end_clefs_by_staff',
             datastructuretools.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', None),
+                    ('Clarinet Music Staff', 'treble'),
                     ]
                 ),
             ),
@@ -20,6 +20,7 @@ metadata = datastructuretools.TypedOrderedDict(
             ),
         ('end_tempo', 96),
         ('end_time_signature', '5/11'),
+        ('first_bar_number', 2),
         ('measure_count', 20),
         ('segment_count', 2),
         ('segment_number', 2),
