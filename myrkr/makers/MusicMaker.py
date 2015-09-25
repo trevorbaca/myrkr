@@ -31,25 +31,24 @@ class MusicMaker(abctools.AbjadObject):
                 stages=(1, 4),
                 )
 
-    All properties can be configured at or after initialization.
     '''
 
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
         '_clef',
+        '_context_name',
+        '_division_maker',
         '_hide_untuned_percussion_markup',
+        '_instrument',
+        '_rewrite_meter',
+        '_rhythm_maker',
         '_rhythm_overwrites',
+        '_split_at_measure_boundaries',
         '_staff_line_count',
         '_stages',
-        'context_name',
-        'division_maker',
-        'instrument',
-        'rewrite_meter',
-        'rhythm_maker',
-        'split_at_measure_boundaries',
-        'start_tempo',
-        'stop_tempo',
+        '_start_tempo',
+        '_stop_tempo',
         )
 
     _myrkr_meters = [
@@ -81,24 +80,26 @@ class MusicMaker(abctools.AbjadObject):
         stop_tempo=None,
         ):
         from experimental.tools import makertools
-        self.clef = clef
-        self.context_name = context_name
+        self._clef = clef
+        self._context_name = context_name
         if (not 'Maker' in division_maker.__class__.__name__ and
             not 'DivisionCallback' in division_maker.__class__.__name__):
             division_maker = makertools.SplitByDurationsDivisionCallback(
                 durations=division_maker,
                 )
-        self.division_maker = division_maker
+        self._division_maker = division_maker
         self._hide_untuned_percussion_markup = False
-        self.instrument = instrument
-        self.rewrite_meter = rewrite_meter
-        self.rhythm_maker = rhythm_maker
-        self.rhythm_overwrites = rhythm_overwrites
-        self.split_at_measure_boundaries = split_at_measure_boundaries
+        self._instrument = instrument
+        self._rewrite_meter = rewrite_meter
+        self._rhythm_maker = rhythm_maker
+        self._rhythm_overwrites = rhythm_overwrites
+        self._split_at_measure_boundaries = split_at_measure_boundaries
         self._staff_line_count = staff_line_count
-        self.stages = stages
-        self.start_tempo = start_tempo
-        self.stop_tempo = stop_tempo
+        if isinstance(stages, int):
+            stages = (stages, stages)
+        self._stages = stages
+        self._start_tempo = start_tempo
+        self._stop_tempo = stop_tempo
 
     ### SPECIAL METHODS ###
 
@@ -281,45 +282,73 @@ class MusicMaker(abctools.AbjadObject):
 
     @property
     def clef(self):
-        '''Gets clef of music maker.
+        '''Gets clef.
 
         Returns clef or none.
         '''
         return self._clef
 
-    @clef.setter
-    def clef(self, expr):
-        if expr is None:
-            self._clef = expr
-        elif isinstance(expr, Clef):
-            self._clef = expr
-        elif isinstance(expr, str):
-            clef = Clef(expr)
-            self._clef = clef
-        else:
-            message = 'must be clef, string or none: {!r}.'
-            message = message.format(expr)
-            raise TypeError(message)
+    @property
+    def context_name(self):
+        r'''Gets context name.
+
+        Set to string.
+
+        Returns string.
+        '''
+        return self._context_name
+
+    @property
+    def division_maker(self):
+        r'''Gets division maker.
+
+        Set to none or division maker.
+
+        Returns none or division maker.
+        '''
+        return self._division_maker
+
+    @property
+    def rewrite_meter(self):
+        r'''Is true when music-maker should rewrite meter.
+
+        Set to true or false.
+
+        Returns true or false.
+        '''
+        return self._rewrite_meter
+
+    @property
+    def rhythm_maker(self):
+        r'''Gets rhythm-maker.
+
+        Set to rhythm-maker, music or none.
+
+        Returns rhythm-maker or music.
+        '''
+        return self._rhythm_maker
 
     @property
     def rhythm_overwrites(self):
-        r'''Gets rhythm overwrites of music maker.
+        r'''Gets rhythm overwrites.
 
         Returns list.
         '''
         return self._rhythm_overwrites
 
-    @rhythm_overwrites.setter
-    def rhythm_overwrites(self, expr):
-        expr = expr or []
-        assert isinstance(expr, (list, tuple)), repr(expr)
-        for item in expr:
-            assert isinstance(item, tuple) and len(tuple) == 2, repr(item)
-        self._rhythm_overwrites = expr[:]
+    @property
+    def split_at_measure_boundaries(self):
+        r'''Is true when music-maker should split at measure boundaries.
+
+        Set to true or false.
+
+        Returns true or false.
+        '''
+        return self._split_at_measure_boundaries
 
     @property
     def staff_line_count(self):
-        r'''Gets staff line count of music-maker.
+        r'''Gets staff line count.
 
         Returns nonnegative integer or none.
 
@@ -329,44 +358,46 @@ class MusicMaker(abctools.AbjadObject):
             return 5
         return self._staff_line_count
 
-    @staff_line_count.setter
-    def staff_line_count(self, expr):
-        self._staff_line_count = expr
-
     @property
     def stages(self):
-        r'''Gets stages of segment maker.
+        r'''Gets stages.
 
         Returns pair of positive integers.
         '''
         return self._stages
 
-    @stages.setter
-    def stages(self, expr):
-        if expr is None:
-            self._stages = expr
-        elif mathtools.is_positive_integer(expr):
-            self._stages = (expr, expr)
-        elif (mathtools.all_are_positive_integers(expr)
-            and len(expr) == 2):
-            self._stages = tuple(expr)
-        else:
-            message = 'positive integer or pair of positive integers: {!r}.'
-            message = message.format(expr)
-            raise TypeError(message)
-
     @property
     def start_stage(self):
-        r'''Gets start stage of music-maker.
+        r'''Gets start stage.
 
         Returns positive integer.
         '''
         return self.stages[0]
 
     @property
+    def start_tempo(self):
+        r'''Gets start tempo.
+
+        Set to tempo or none.
+
+        Returns tempo or none.
+        '''
+        return self._start_tempo
+
+    @property
     def stop_stage(self):
-        r'''Gets stop stage of music-maker.
+        r'''Gets stop stage.
 
         Returns positive integer.
         '''
         return self.stages[-1]
+
+    @property
+    def stop_tempo(self):
+        r'''Gets stop tempo.
+
+        Set to tempo or none.
+
+        Returns tempo or none.
+        '''
+        return self._stop_tempo
