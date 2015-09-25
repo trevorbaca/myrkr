@@ -147,6 +147,7 @@ class RhythmMaker(object):
         score = lilypond_file.score_block.items[0]
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
+        override(score).tuplet_bracket.staff_padding = 3.5
         assert inspect_(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
@@ -173,7 +174,14 @@ class RhythmMaker(object):
                 if duration.denominator == denominator:
                     time_signatures.append(duration)
                     break
-        assert len(tuplets) == len(time_signatures)
+            else:
+                duration = inspect_(tuplet).get_duration()
+                duration = mathtools.NonreducedFraction(duration)
+                time_signatures.append(duration)
+        tuplet_count = len(tuplets)
+        time_signature_count = len(time_signatures)
+        pair = (tuplet_count, time_signature_count)
+        assert len(tuplets) == len(time_signatures), pair
         for tuplet, time_signature in zip(tuplets, time_signatures):
             tuplet_duration = inspect_(tuplet).get_duration()
             time_signature = Duration(time_signature)
@@ -210,6 +218,9 @@ class RhythmMaker(object):
         for tuplet in iterate(score).by_class(Tuplet):
             if not len(tuplet) == 1:
                 continue
+            note = tuplet[0]
+            if Duration((1, 8)) < note.written_duration:
+                continue
             string = 'set tupletFullLength = ##f'
             command = indicatortools.LilyPondCommand(
                 string, 
@@ -222,6 +233,7 @@ class RhythmMaker(object):
                 format_slot='after',
                 )
             attach(command, tuplet)
+            override(tuplet).tuplet_bracket.stencil = False
 
     ### PUBLIC PROPERTIES ###
 
