@@ -6,7 +6,7 @@ import myrkr
 
 maker = myrkr.makers.ColorMaker(
     indicators=(
-        (0, color_fingerings['A'][:40]),
+        (0, color_fingerings['A'][:32]),
         ),
     )
 

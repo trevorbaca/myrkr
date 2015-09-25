@@ -1,4 +1,4 @@
-% 2015-09-25 10:57
+% 2015-09-25 11:06
 
 \version "2.19.27"
 \language "english"
@@ -229,56 +229,6 @@
                             \circle
                                 \finger
                                     1
-                        }
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    2
-                        }
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    1
-                        }
-                e''4
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    1
-                        }
-                e''4
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    2
-                        }
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    1
-                        }
-                e''4
-                    ^ \markup {
-                        \override
-                            #'(circle-padding . 0.25)
-                            \circle
-                                \finger
-                                    2
                         }
             }
         }
