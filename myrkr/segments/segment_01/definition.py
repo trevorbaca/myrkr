@@ -32,7 +32,7 @@ assert segment_maker.validate_time_signatures()
 
 #segment_maker.make_music_maker(
 #    stages=(1, 4),
-#    context_name='ClarinetMusicVoice1',
+#    context_name='ClarinetMusicVoice',
 #    division_maker=None,
 #    rewrite_meter=True,
 #    rhythm_maker=None,
