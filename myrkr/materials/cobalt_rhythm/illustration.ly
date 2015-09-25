@@ -1,4 +1,4 @@
-% 2015-09-25 14:37
+% 2015-09-25 17:06
 
 \version "2.19.27"
 \language "english"
@@ -69,47 +69,138 @@
 }
 
 \score {
-    \new Score <<
+    \new Score \with {
+        \override TupletBracket #'staff-padding = #3.5
+    } <<
         \new TimeSignatureContext {
             {
-                \time 8/4
-                s1 * 2
+                \time 1/3
+                s1 * 1/3
             }
             {
-                \time 9/4
-                s1 * 9/4
+                \time 2/3
+                s1 * 2/3
             }
             {
-                \time 8/4
-                s1 * 2
+                \time 6/5
+                s1 * 6/5
+            }
+            {
+                \time 4/5
+                s1 * 4/5
+            }
+            {
+                \time 3/2
+                s1 * 3/2
+            }
+            {
+                \time 1/2
+                s1 * 1/2
+            }
+            {
+                \time 6/5
+                s1 * 6/5
+            }
+            {
+                \time 4/5
+                s1 * 4/5
+            }
+            {
+                s1 * 4/5
+            }
+            {
+                \time 6/5
+                s1 * 6/5
+            }
+            {
+                \time 1/3
+                s1 * 1/3
+            }
+            {
+                \time 2/3
+                s1 * 2/3
             }
         }
         \new RhythmicStaff {
             {
-                \time 8/4
-                {
-                    c'4
-                    c'2
-                    c'2.
+                \time 1/3
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
                     c'2
                 }
             }
             {
-                \time 9/4
+                \time 2/3
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'1
+                }
+            }
+            {
+                \time 6/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1.
+                }
+            }
+            {
+                \time 4/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1
+                }
+            }
+            {
+                \time 3/2
                 {
-                    c'2.
-                    c'4
-                    c'2.
+                    c'1.
+                }
+            }
+            {
+                \time 1/2
+                {
                     c'2
                 }
             }
             {
-                \time 8/4
-                {
+                \time 6/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1.
+                }
+            }
+            {
+                \time 4/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1
+                }
+            }
+            {
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1
+                }
+            }
+            {
+                \time 6/5
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    c'1.
+                }
+            }
+            {
+                \time 1/3
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
                     c'2
-                    c'2.
-                    c'4
-                    c'2
+                }
+            }
+            {
+                \time 2/3
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    c'1
                     \bar "|."
                 }
             }
