@@ -56,3 +56,18 @@ for stage_index in range(segment_maker.stage_count):
         division_maker=None,
         rhythm_maker=preprocessor.get_music(stage_number),
         )
+
+
+###############################################################################
+############################### MUSIC-HANDLERS ################################
+###############################################################################
+
+segment_maker.make_music_handler(
+    scope=(cl, (1, 2)),
+    specifiers=[
+        Dynamic('mp'),
+        pitch_specifier(
+            source='D2',
+            ),
+        ],
+    )
