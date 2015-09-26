@@ -1,4 +1,4 @@
-% 2015-09-23 17:13
+% 2015-09-25 23:19
 
 \version "2.19.27"
 \language "english"
@@ -69,7 +69,11 @@
 }
 
 \score {
-    \new Score <<
+    \new Score \with {
+        \override TextScript #'staff-padding = #4
+        \override TupletBracket #'staff-padding = #3.5
+        proportionalNotationDuration = #(ly:make-moment 1 12)
+    } <<
         \new TimeSignatureContext {
             {
                 \time 11/8
@@ -245,6 +249,10 @@
                 \time 11/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                0
+                            }
                     c'4.
                     c'4
                     c'8
@@ -256,6 +264,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4.
+                        - \markup {
+                            \small
+                                1
+                            }
                     c'4
                 }
             }
@@ -263,6 +275,10 @@
                 \time 8/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                2
+                            }
                     c'4
                     c'4.
                     c'8
@@ -272,6 +288,10 @@
                 \time 5/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                3
+                            }
                     c'4.
                 }
             }
@@ -280,6 +300,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4.
+                        - \markup {
+                            \small
+                                4
+                            }
                     c'4
                     c'8
                 }
@@ -288,6 +312,10 @@
                 \time 3/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                5
+                            }
                     c'8
                 }
             }
@@ -295,6 +323,10 @@
                 \time 11/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                6
+                            }
                     c'4
                     c'4
                     c'4.
@@ -306,6 +338,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'8
+                        - \markup {
+                            \small
+                                7
+                            }
                     c'4
                 }
             }
@@ -313,6 +349,10 @@
                 \time 10/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                8
+                            }
                     c'4
                     c'4.
                     c'4
@@ -322,6 +362,10 @@
                 \time 4/8
                 \times 4/5 {
                     c'4.
+                        - \markup {
+                            \small
+                                9
+                            }
                     c'4
                 }
             }
@@ -330,6 +374,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'4.
+                        - \markup {
+                            \small
+                                10
+                            }
                     c'4
                     c'8
                 }
@@ -338,6 +386,10 @@
                 \time 4/8
                 \times 4/5 {
                     c'4
+                        - \markup {
+                            \small
+                                11
+                            }
                     c'4.
                 }
             }
@@ -345,6 +397,10 @@
                 \time 11/8
                 {
                     c'8
+                        - \markup {
+                            \small
+                                12
+                            }
                     c'4.
                     c'4
                     c'4.
@@ -356,6 +412,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'8
+                        - \markup {
+                            \small
+                                13
+                            }
                     c'4.
                 }
             }
@@ -363,6 +423,10 @@
                 \time 8/8
                 {
                     c'8
+                        - \markup {
+                            \small
+                                14
+                            }
                     c'4
                     c'4.
                     c'4
@@ -373,6 +437,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'8
+                        - \markup {
+                            \small
+                                15
+                            }
                     c'4.
                 }
             }
@@ -381,6 +449,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4
+                        - \markup {
+                            \small
+                                16
+                            }
                     c'4
                     c'4.
                 }
@@ -390,6 +462,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'4
+                        - \markup {
+                            \small
+                                17
+                            }
                     c'4.
                 }
             }
@@ -397,6 +473,10 @@
                 \time 10/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                18
+                            }
                     c'8
                     c'4
                     c'4.
@@ -408,6 +488,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'4.
+                        - \markup {
+                            \small
+                                19
+                            }
                     c'8
                 }
             }
@@ -415,6 +499,10 @@
                 \time 8/8
                 {
                     c'8
+                        - \markup {
+                            \small
+                                20
+                            }
                     c'4.
                     c'4
                     c'4
@@ -424,6 +512,10 @@
                 \time 3/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                21
+                            }
                     c'8
                 }
             }
@@ -432,6 +524,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'4.
+                        - \markup {
+                            \small
+                                22
+                            }
                     c'4
                     c'4.
                 }
@@ -440,6 +536,10 @@
                 \time 5/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                23
+                            }
                     c'4.
                 }
             }
@@ -447,6 +547,10 @@
                 \time 10/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                24
+                            }
                     c'8
                     c'4.
                     c'4
@@ -458,6 +562,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4.
+                        - \markup {
+                            \small
+                                25
+                            }
                     c'4
                 }
             }
@@ -465,6 +573,10 @@
                 \time 9/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                26
+                            }
                     c'8
                     c'4.
                     c'4
@@ -474,6 +586,10 @@
                 \time 3/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                27
+                            }
                     c'8
                 }
             }
@@ -482,6 +598,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'8
+                        - \markup {
+                            \small
+                                28
+                            }
                     c'4
                     c'4.
                 }
@@ -490,6 +610,10 @@
                 \time 5/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                29
+                            }
                     c'4
                 }
             }
@@ -497,6 +621,10 @@
                 \time 11/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                30
+                            }
                     c'4.
                     c'8
                     c'4.
@@ -508,6 +636,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4.
+                        - \markup {
+                            \small
+                                31
+                            }
                     c'4
                 }
             }
@@ -515,6 +647,10 @@
                 \time 8/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                32
+                            }
                     c'4
                     c'8
                     c'4
@@ -525,6 +661,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'4
+                        - \markup {
+                            \small
+                                33
+                            }
                     c'4.
                 }
             }
@@ -533,6 +673,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'8
+                        - \markup {
+                            \small
+                                34
+                            }
                     c'4.
                     c'4
                 }
@@ -542,6 +686,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     c'8
+                        - \markup {
+                            \small
+                                35
+                            }
                     c'4.
                 }
             }
@@ -549,6 +697,10 @@
                 \time 10/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                36
+                            }
                     c'4.
                     c'4
                     c'8
@@ -560,6 +712,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4
+                        - \markup {
+                            \small
+                                37
+                            }
                     c'4
                 }
             }
@@ -567,6 +723,10 @@
                 \time 9/8
                 {
                     c'4.
+                        - \markup {
+                            \small
+                                38
+                            }
                     c'4
                     c'8
                     c'4.
@@ -576,6 +736,10 @@
                 \time 5/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                39
+                            }
                     c'4.
                 }
             }
@@ -584,6 +748,10 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     c'4.
+                        - \markup {
+                            \small
+                                40
+                            }
                     c'8
                     c'4.
                 }
@@ -592,6 +760,10 @@
                 \time 3/8
                 {
                     c'4
+                        - \markup {
+                            \small
+                                41
+                            }
                     c'8
                     \bar "|."
                 }

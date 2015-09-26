@@ -129,7 +129,13 @@ class RhythmMaker(object):
         rhythm = zip(selections, time_signatures)
         return rhythm
 
-    def __illustrate__(self, rhythm=None, title=None, subtitle=None):
+    def __illustrate__(
+        self, 
+        rhythm=None, 
+        proportional_notation_duration=Duration(1, 16),
+        subtitle=None,
+        title=None, 
+        ):
         r'''Illustrates rhythm-maker.
 
         Returns LilyPond file.
@@ -137,18 +143,28 @@ class RhythmMaker(object):
         if rhythm is None:
             rhythm = self()
         tuplets, time_signatures = [], []
-        for tuplet, time_signature in rhythm:
-            tuplets.append(tuplet)
+        for selection, time_signature in rhythm:
+            tuplets.extend(selection)
             time_signatures.append(time_signature)
         lilypond_file = rhythmmakertools.make_lilypond_file(
             tuplets,
             time_signatures,
             )
+        first_leaves = []
+        for tuplet in tuplets:
+            first_leaf = tuplet[0]
+            first_leaves.append(first_leaf)
+        for i, first_leaf in enumerate(first_leaves):
+            markup = Markup(str(i)).small()
+            attach(markup, first_leaf)
+
         score = lilypond_file.score_block.items[0]
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
+        override(score).text_script.staff_padding = 4
         override(score).tuplet_bracket.staff_padding = 3.5
-        moment = schemetools.SchemeMoment((1, 8))
+        pair = proportional_notation_duration.pair
+        moment = schemetools.SchemeMoment(pair)
         set_(score).proportional_notation_duration = moment
         assert inspect_(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
