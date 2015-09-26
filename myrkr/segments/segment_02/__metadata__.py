@@ -8,7 +8,7 @@ metadata = datastructuretools.TypedOrderedDict(
             'end_clefs_by_staff',
             datastructuretools.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', 'treble'),
+                    ('Clarinet Music Staff', None),
                     ]
                 ),
             ),

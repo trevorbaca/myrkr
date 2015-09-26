@@ -13,9 +13,9 @@ class MusicMaker(abctools.AbjadObject):
             >>> from myrkr import makers
             >>> music_maker = makers.MusicMaker(
             ...     context_name='Clarinet Music Voice',
+            ...     rhythm_maker = rhythmmakertools.NoteRhythmMaker(),
             ...     stages=(1, 4),
             ...     )
-            >>> music_maker.rhythm_maker = rhythmmakertools.NoteRhythmMaker()
 
         ::
 

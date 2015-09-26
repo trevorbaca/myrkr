@@ -27,6 +27,7 @@ class SegmentMaker(makertools.SegmentMaker):
         '_score',
         '_score_package',
         '_show_stage_annotations',
+        '_spacing_map',
         '_stages',
         '_tempo_map',
         '_time_signatures',
@@ -45,6 +46,7 @@ class SegmentMaker(makertools.SegmentMaker):
         raise_approximate_duration=False,
         score_package=None,
         show_stage_annotations=False,
+        spacing_map=None,
         tempo_map=None,
         time_signatures=None,
         transpose_score=False,
@@ -67,6 +69,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._raise_approximate_duration = bool(raise_approximate_duration)
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
+        self._spacing_map = spacing_map
         self._tempo_map = tempo_map
         assert isinstance(transpose_score, bool)
         self._transpose_score = transpose_score
@@ -211,6 +214,12 @@ class SegmentMaker(makertools.SegmentMaker):
             clef = Clef(previous_clef_name)
             attach(clef, staff)
 
+    def _assert_valid_stage_number(self, stage_number):
+        if not 0 < stage_number <= self.stage_count:
+            message = 'stage number {} must be between {} and {}.'
+            message = message.format(stage_number, 0, self.stage_count)
+            raise Exception(message)
+
     def _attach_fermatas(self):
         if not self.tempo_map:
             return
@@ -306,10 +315,7 @@ class SegmentMaker(makertools.SegmentMaker):
             )
         attach(tempo_spanner, skips)
         for stage_number, directive in self.tempo_map:
-            if not 0 < stage_number <= self.stage_count:
-                message = 'stage number {} must be between {} and {}.'
-                message = message.format(stage_number, 0, self.stage_count)
-                raise Exception(message)
+            self._assert_valid_stage_number(stage_number)
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
             start_measure = context[start_measure_index]
@@ -527,6 +533,23 @@ class SegmentMaker(makertools.SegmentMaker):
             time_signatures = sequencetools.flatten_sequence(stages)
         return time_signatures
 
+    def _initialize_music_makers(self, music_makers, makers_package):
+        music_makers = music_makers or []
+        music_makers = list(music_makers)
+        for music_maker in music_makers:
+            assert isinstance(music_maker, makers_package.MusicMaker)
+        self._music_makers = music_makers
+
+    def _initialize_time_signatures(self, time_signatures):
+        time_signatures = time_signatures or ()
+        time_signatures_ = list(time_signatures)
+        time_signatures_ = []
+        for time_signature in time_signatures:
+            time_signature = indicatortools.TimeSignature(time_signature)
+            time_signatures_.append(time_signature)
+        time_signatures_ = tuple(time_signatures_)
+        self._time_signatures = time_signatures_
+
     def _instrument_to_instrument_name(self, instrument, materials_package):
         for name, instrument_ in materials_package.instruments.items():
             if type(instrument_) is type(instrument):
@@ -534,26 +557,6 @@ class SegmentMaker(makertools.SegmentMaker):
         message = 'can not find {!r} in instruments package.'
         message = message.format(instrument)
         raise Exception(message)
-
-    def _is_first_segment(self):
-        segment_number = self._segment_metadata.get('segment_number')
-        return segment_number == 1
-
-    def _is_last_segment(self):
-        segment_number = self._segment_metadata.get('segment_number')
-        segment_count = self._segment_metadata.get('segment_count')
-        return segment_number == segment_count
-
-    def _logical_ties_to_leaves(self, logical_ties):
-        first_note = logical_ties[0].head
-        last_note = logical_ties[-1][-1]
-        leaves = []
-        current_leaf = first_note
-        while current_leaf is not last_note:
-            leaves.append(current_leaf)
-            current_leaf = inspect_(current_leaf).get_leaf(1)
-        leaves.append(last_note)
-        return leaves
 
     def _interpret_music_handler(self, music_handler):
         if isinstance(music_handler.scope, baca.makers.SimpleScope):
@@ -636,25 +639,18 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_music_for_time_signature_context()
         self._attach_tempo_indicators()
         self._attach_fermatas()
+        self._make_spacing_regions()
         for voice in iterate(self._score).by_class(scoretools.Voice):
             self._make_music_for_voice(voice)
 
-    def _initialize_music_makers(self, music_makers, makers_package):
-        music_makers = music_makers or []
-        music_makers = list(music_makers)
-        for music_maker in music_makers:
-            assert isinstance(music_maker, makers_package.MusicMaker)
-        self._music_makers = music_makers
+    def _is_first_segment(self):
+        segment_number = self._segment_metadata.get('segment_number')
+        return segment_number == 1
 
-    def _initialize_time_signatures(self, time_signatures):
-        time_signatures = time_signatures or ()
-        time_signatures_ = list(time_signatures)
-        time_signatures_ = []
-        for time_signature in time_signatures:
-            time_signature = indicatortools.TimeSignature(time_signature)
-            time_signatures_.append(time_signature)
-        time_signatures_ = tuple(time_signatures_)
-        self._time_signatures = time_signatures_
+    def _is_last_segment(self):
+        segment_number = self._segment_metadata.get('segment_number')
+        segment_count = self._segment_metadata.get('segment_count')
+        return segment_number == segment_count
 
     def _label_instrument_changes(self):
         prototype = instrumenttools.Instrument
@@ -681,28 +677,22 @@ class SegmentMaker(makertools.SegmentMaker):
                         current_instrument)
                     attach(markup, leaf)
 
+    def _logical_ties_to_leaves(self, logical_ties):
+        first_note = logical_ties[0].head
+        last_note = logical_ties[-1][-1]
+        leaves = []
+        current_leaf = first_note
+        while current_leaf is not last_note:
+            leaves.append(current_leaf)
+            current_leaf = inspect_(current_leaf).get_leaf(1)
+        leaves.append(last_note)
+        return leaves
+
     def _make_instrument_change_markup(self, instrument):
         string = 'to {}'.format(instrument.instrument_name)
         markup = markuptools.Markup(string, direction=Up)
         markup = markup.box().override(('box-padding', 0.75))
         return markup
-
-    def _make_rests(self, time_signatures=None):
-        time_signatures = time_signatures or self.time_signatures
-        specifier = rhythmmakertools.DurationSpellingSpecifier(
-            spell_metrically='unassignable',
-            )
-        mask = rhythmmakertools.silence_all(use_multimeasure_rests=True)
-        maker = rhythmmakertools.NoteRhythmMaker(
-            output_masks=[mask],
-            )
-        selections = maker(time_signatures)
-        return selections
-
-    def _make_skip_filled_measures(self, time_signatures=None):
-        time_signatures = time_signatures or self.time_signatures
-        measures = scoretools.make_spacer_skip_measures(time_signatures)
-        return measures
 
     def _make_lilypond_file(self):
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
@@ -762,6 +752,18 @@ class SegmentMaker(makertools.SegmentMaker):
             measures = self._make_rests(time_signatures)
             voice.extend(measures)
 
+    def _make_rests(self, time_signatures=None):
+        time_signatures = time_signatures or self.time_signatures
+        specifier = rhythmmakertools.DurationSpellingSpecifier(
+            spell_metrically='unassignable',
+            )
+        mask = rhythmmakertools.silence_all(use_multimeasure_rests=True)
+        maker = rhythmmakertools.NoteRhythmMaker(
+            output_masks=[mask],
+            )
+        selections = maker(time_signatures)
+        return selections
+
     def _make_score(self, score_template):
         score = score_template()
         first_bar_number = self._segment_metadata.get('first_bar_number')
@@ -770,6 +772,29 @@ class SegmentMaker(makertools.SegmentMaker):
         else:
             override(score).bar_number.transparent = True
         self._score = score
+
+    def _make_skip_filled_measures(self, time_signatures=None):
+        time_signatures = time_signatures or self.time_signatures
+        measures = scoretools.make_spacer_skip_measures(time_signatures)
+        return measures
+
+    def _make_spacing_regions(self):
+        if not self.tempo_map:
+            return
+        context = self._score['Time Signature Context']
+        skips = list(iterate(context).by_class(scoretools.Leaf))
+        for stage_number, duration in self.spacing_map:
+            self._assert_valid_stage_number(stage_number)
+            result = self._stage_number_to_measure_indices(stage_number)
+            start_measure_index, stop_measure_index = result
+            start_measure = context[start_measure_index]
+            assert isinstance(start_measure, Measure), start_measure
+            start_skip = start_measure[0]
+            assert isinstance(start_skip, scoretools.Skip), start_skip
+            command = indicatortools.LilyPondCommand('newSpacingSection')
+            attach(command, start_skip)
+            moment = schemetools.SchemeMoment(duration)
+            set_(start_skip).score.proportional_notation_duration = moment
 
     def _move_instruments_from_notes_back_to_rests(self):
         prototype = instrumenttools.Instrument
@@ -992,14 +1017,6 @@ class SegmentMaker(makertools.SegmentMaker):
         return self._measures_per_stage
 
     @property
-    def music_makers(self):
-        r'''Gets music-makers.
-
-        Returns tuple of music-makers.
-        '''
-        return self._music_makers
-    
-    @property
     def music_handlers(self):
         r'''Gets music-handlers.
 
@@ -1007,6 +1024,14 @@ class SegmentMaker(makertools.SegmentMaker):
         '''
         return tuple(self._music_handlers)
 
+    @property
+    def music_makers(self):
+        r'''Gets music-makers.
+
+        Returns tuple of music-makers.
+        '''
+        return self._music_makers
+    
     @property
     def raise_approximate_duration(self):
         r'''Is true when segment-maker should raise approximate duration.
@@ -1034,6 +1059,14 @@ class SegmentMaker(makertools.SegmentMaker):
         Returns true or false.
         '''
         return self._show_stage_annotations
+
+    @property
+    def spacing_map(self):
+        r'''Gets spacing map.
+
+        Returns tuple of pairs.
+        '''
+        return self._spacing_map
 
     @property
     def stage_count(self):

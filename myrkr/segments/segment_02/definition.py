@@ -22,14 +22,6 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         },
     )
 
-#print(preprocessor.indicators)
-#print(preprocessor.time_signatures)
-#print(preprocessor.measures_per_stage)
-#print(sum(preprocessor.measures_per_stage))
-#print(len(preprocessor.measures_per_stage))
-#print(preprocessor.selections[0])
-#print(len(preprocessor.get_music(1)))
-
 
 ###############################################################################
 ############################## SEGMENT-MAKER ##################################
@@ -40,9 +32,12 @@ segment_maker = myrkr.makers.SegmentMaker(
     raise_approximate_duration=False,
     score_package=myrkr,
     show_stage_annotations=True,
-    tempo_map = [
+    spacing_map=(
+        (1, Duration(1, 24)),
+        ),
+    tempo_map = (
         (1, myrkr.materials.tempi[96]),
-        ],
+        ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
