@@ -1,4 +1,4 @@
-% 2015-09-25 23:06
+% 2015-09-26 12:09
 
 \version "2.19.27"
 \language "english"
@@ -129,7 +129,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve.
-                        _ \markup {
+                        - \markup {
                             \small
                                 0
                             }
@@ -140,7 +140,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'\breve
-                        _ \markup {
+                        - \markup {
                             \small
                                 1
                             }
@@ -150,7 +150,7 @@
                 \time 3/1
                 {
                     c'\breve.
-                        _ \markup {
+                        - \markup {
                             \small
                                 2
                             }
@@ -161,7 +161,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve
-                        _ \markup {
+                        - \markup {
                             \small
                                 3
                             }
@@ -172,7 +172,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve.
-                        _ \markup {
+                        - \markup {
                             \small
                                 4
                             }
@@ -182,7 +182,7 @@
                 \time 1/1
                 {
                     c'1
-                        _ \markup {
+                        - \markup {
                             \small
                                 5
                             }
@@ -193,7 +193,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve
-                        _ \markup {
+                        - \markup {
                             \small
                                 6
                             }
@@ -203,7 +203,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve
-                        _ \markup {
+                        - \markup {
                             \small
                                 7
                             }
@@ -214,7 +214,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'1
-                        _ \markup {
+                        - \markup {
                             \small
                                 8
                             }
@@ -225,7 +225,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     c'\breve.
-                        _ \markup {
+                        - \markup {
                             \small
                                 9
                             }
@@ -236,7 +236,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'\breve
-                        _ \markup {
+                        - \markup {
                             \small
                                 10
                             }
@@ -247,7 +247,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     c'1
-                        _ \markup {
+                        - \markup {
                             \small
                                 11
                             }

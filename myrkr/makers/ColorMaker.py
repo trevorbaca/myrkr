@@ -50,7 +50,7 @@ class ColorMaker(object):
         label_voice = Voice(skips)
         labeltools.label_leaves_in_expr_with_leaf_indices(
             label_voice,
-            markup_direction=Down,
+            direction=Down,
             )
         override(label_voice).text_script.staff_padding = 4
         staff = Staff([note_voice, label_voice], is_simultaneous=True)
