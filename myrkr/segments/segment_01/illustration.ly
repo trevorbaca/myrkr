@@ -1,4 +1,4 @@
-% 2015-09-25 23:31
+% 2015-09-25 23:37
 
 \version "2.19.27"
 \language "english"
@@ -73,10 +73,10 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d''\breve
+                    e\breve \mp
                 }
                 {
-                    d''\breve.
+                    e\breve.
                     \bar "|"
                 }
             }
