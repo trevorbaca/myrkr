@@ -1,4 +1,4 @@
-% 2015-09-26 10:39
+% 2015-09-26 17:35
 
 \version "2.19.27"
 \language "english"
@@ -39,7 +39,7 @@
                     \upright
                         {
                             =
-                            96
+                            110
                         }
                     }
             }
@@ -140,118 +140,136 @@
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \clef "treble"
+            \set Staff.instrumentName = \markup {
+            \hcenter-in
+                #16
+                \center-column
+                    {
+                        Bass
+                        clarinet
+                    }
+            }
+            \set Staff.shortInstrumentName = \markup {
+            \hcenter-in
+                #10
+                \center-column
+                    {
+                        Bass
+                        cl.
+                    }
+            }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    c'8.
-                    c'4
-                    c'8 [
-                    c'16
-                    c'8. ]
+                    f''8. \ppp
+                    f''4
+                    f''8 [
+                    f''16
+                    f''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'8. [
-                    c'8 ]
+                    f''8. [
+                    f''8 ]
                 }
                 {
-                    c'8 [
-                    c'8
-                    c'8.
-                    c'16 ]
+                    f''8 [
+                    f''8
+                    f''8.
+                    f''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'8.
-                    c'4
+                    f''8.
+                    f''4
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'8. [
-                    c'8
-                    c'16 ]
+                    f''8. [
+                    f''8
+                    f''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c'8 [
-                    c'16 ]
+                    f''8 [
+                    f''16 ]
                 }
                 {
-                    c'8. [
-                    c'8
-                    c'8
-                    c'8.
-                    c'16 ]
+                    f''8. [
+                    f''8
+                    f''8
+                    f''8.
+                    f''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'16 [
-                    c'8. ]
+                    f''16 [
+                    f''8. ]
                 }
                 {
-                    c'8. [
-                    c'8
-                    c'8.
-                    c'8 ]
+                    f''8. [
+                    f''8
+                    f''8.
+                    f''8 ]
                 }
                 \times 4/5 {
-                    c'8. [
-                    c'8 ]
+                    f''8. [
+                    f''8 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'4
-                    c'8 [
-                    c'16 ]
+                    f''4
+                    f''8 [
+                    f''16 ]
                 }
                 \times 4/5 {
-                    c'8 [
-                    c'8. ]
+                    f''8 [
+                    f''8. ]
                 }
                 {
-                    c'4
-                    c'4.
-                    c'4
-                    c'8
-                    c'4.
+                    d''4
+                    d''4.
+                    d''4
+                    d''8
+                    d''4.
                 }
                 {
-                    c'16 [
-                    c'8.
-                    c'8
-                    c'8.
-                    c'8 ]
+                    d''16 [
+                    d''8.
+                    d''8
+                    d''8.
+                    d''8 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'16 [
-                    c'8. ]
+                    d''16 [
+                    d''8. ]
                 }
                 {
-                    c'16 [
-                    c'8. ]
-                    c'4
-                    c'8
+                    d''16 [
+                    d''8. ]
+                    d''4
+                    d''8
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    c'16 [
-                    c'8. ]
+                    d''16 [
+                    d''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'8 [
-                    c'8
-                    c'8. ]
+                    d''8 [
+                    d''8
+                    d''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    c'8 [
-                    c'8. ]
+                    d''8 [
+                    d''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    c'4.
-                    c'4
+                    d''4.
+                    d''4
                     \bar "|."
                 }
             }

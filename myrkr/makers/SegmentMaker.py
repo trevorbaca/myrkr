@@ -155,24 +155,24 @@ class SegmentMaker(makertools.SegmentMaker):
         if not self._previous_segment_metadata:
             message = 'can not find previous metadata before segment {}.'
             message = message.format(self._get_segment_identifier())
-            #raise Exception(message)
-            print(message)
+            raise Exception(message)
+            #print(message)
             return
         previous_instruments = self._previous_segment_metadata.get(
             'end_instruments_by_staff')
         if not previous_instruments:
             message = 'can not find previous instruments before segment {}.'
             message = message.format(self._get_segment_identifier())
-            #raise Exception(message)
-            print(message)
+            raise Exception(message)
+            #print(message)
             return
         for staff in iterate(self._score).by_class(Staff):
             previous_instrument_name = previous_instruments.get(
                 staff.name)
             if not previous_instrument_name:
                 message = 'can not find previous segment instrument.'
-                #raise Exception(message)
-                print(message)
+                raise Exception(message)
+                #print(message)
                 return
             first_leaf = inspect_(staff).get_leaf(0)
             prototype = instrumenttools.Instrument
@@ -184,27 +184,33 @@ class SegmentMaker(makertools.SegmentMaker):
                 materials_package,
                 )
             if previous_instrument is None:
-                continue
+                message = 'can not previous instrument for {}.'
+                message = message.format(staff.name)
+                raise Exception(message)
             copied_previous_instrument = new(previous_instrument)
             prototype = instrumenttools.Piano
             if isinstance(copied_previous_instrument, prototype):
                 copied_previous_instrument._default_scope = \
                     'PianoMusicStaff'
-            self._attach_instrument(copied_previous_instrument, staff)
+            self._attach_instrument(
+                copied_previous_instrument, 
+                staff,
+                materials_package,
+                )
         previous_clefs = self._previous_segment_metadata.get(
             'end_clefs_by_staff')
         if not previous_clefs:
             message = 'can not find previous clefs before segment {}.'
             message = message.format(self._get_segment_identifier())
-            #raise Exception(message)
-            print(message)
+            raise Exception(message)
+            #print(message)
             return
         for staff in iterate(self._score).by_class(Staff):
             previous_clef_name = previous_clefs.get(staff.name)
             if not previous_clef_name:
                 message = 'can not find previous segment clef.'
-                #raise Exception(message)
-                print(message)
+                raise Exception(message)
+                #print(message)
                 return
             first_leaf = inspect_(staff).get_leaf(0)
             prototype = Clef
@@ -422,8 +428,8 @@ class SegmentMaker(makertools.SegmentMaker):
                 message = 'can not find effective instrument for last leaf'
                 message += ' ({!r}) of {}.'
                 message = message.format(last_leaf, staff.name)
-                #raise Exception(message)
-                print(message)
+                raise Exception(message)
+                #print(message)
         return result
 
     def _get_end_settings(self, materials_package):
@@ -462,10 +468,7 @@ class SegmentMaker(makertools.SegmentMaker):
         return string
 
     def _get_instrument_by_name(self, instrument_name, material_package):
-        try:
-            from material_package import instruments
-        except ImportError:
-            return
+        instruments = material_package.instruments
         for instrument_name_, instrument in instruments.items():
             if instrument_name_ == instrument_name:
                 return instrument
@@ -822,6 +825,7 @@ class SegmentMaker(makertools.SegmentMaker):
                     self._attach_instrument(
                         new_instrument, 
                         current_leaf,
+                        materials_package,
                         scope=Staff,
                         )
                     break
