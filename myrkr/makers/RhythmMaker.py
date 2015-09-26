@@ -157,7 +157,6 @@ class RhythmMaker(object):
         for i, first_leaf in enumerate(first_leaves):
             markup = Markup(str(i)).small()
             attach(markup, first_leaf)
-
         score = lilypond_file.score_block.items[0]
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
