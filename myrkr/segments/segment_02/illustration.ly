@@ -1,4 +1,4 @@
-% 2015-09-25 16:25
+% 2015-09-26 10:39
 
 \version "2.19.27"
 \language "english"
@@ -10,12 +10,14 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #2
+        currentBarNumber = #3
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
                 \time 13/16
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \bar ""
+                \newSpacingSection
                 \mark #1
                 s1 * 13/16
                     - \markup {
