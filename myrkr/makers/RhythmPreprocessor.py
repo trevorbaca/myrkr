@@ -48,6 +48,7 @@ class RhythmPreprocessor(object):
             assert isinstance(position, int), repr(position)
             if name not in name_to_cursor:
                 rhythm = self.name_to_rhythm[name]
+                rhythm = sequencetools.rotate_sequence(rhythm, -position)
                 rhythm = datastructuretools.CyclicTuple(rhythm)
                 cursor = datastructuretools.Cursor(source=rhythm)
                 name_to_cursor[name] = cursor

@@ -11,7 +11,8 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('cobalt', 2, 1),
+        ('cobalt', 1, 1),
+        ('cobalt', 1),
         ),
     name_to_rhythm={
         'cobalt': myrkr.materials.cobalt_rhythm,
@@ -19,14 +20,6 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         'ochre': myrkr.materials.ochre_rhythm,
         },
     )
-
-#print(preprocessor.indicators)
-#print(preprocessor.time_signatures)
-#print(preprocessor.measures_per_stage)
-#print(sum(preprocessor.measures_per_stage))
-#print(len(preprocessor.measures_per_stage))
-#print(preprocessor.selections[0])
-#print(len(preprocessor.get_music(1)))
 
 
 ###############################################################################
@@ -46,7 +39,7 @@ segment_maker = myrkr.makers.SegmentMaker(
     )
 
 assert segment_maker.measure_count == 2
-assert segment_maker.stage_count == 1
+assert segment_maker.stage_count == 2
 assert segment_maker.validate_time_signatures()
 
 
@@ -55,10 +48,11 @@ assert segment_maker.validate_time_signatures()
 ###############################################################################
 
 
-stage_number = 1
-segment_maker.make_music_maker(
-    stages=stage_number,
-    context_name=cl,
-    division_maker=None,
-    rhythm_maker=preprocessor.get_music(stage_number),
-    )
+for stage_index in range(segment_maker.stage_count):
+    stage_number = stage_index + 1
+    segment_maker.make_music_maker(
+        stages=stage_number,
+        context_name=cl,
+        division_maker=None,
+        rhythm_maker=preprocessor.get_music(stage_number),
+        )
