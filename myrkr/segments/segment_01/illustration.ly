@@ -1,4 +1,4 @@
-% 2015-09-25 23:37
+% 2015-09-26 10:23
 
 \version "2.19.27"
 \language "english"
@@ -14,7 +14,9 @@
         \context TimeSignatureContext = "Time Signature Context" {
             {
                 \time 4/3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
+                \newSpacingSection
                 s1 * 4/3
                     - \markup {
                         \smaller

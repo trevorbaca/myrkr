@@ -31,9 +31,12 @@ segment_maker = myrkr.makers.SegmentMaker(
     raise_approximate_duration=False,
     score_package=myrkr,
     show_stage_annotations=True,
-    tempo_map = [
+    spacing_map=(
+        (1, Duration(1, 8)),
+        ),
+    tempo_map=(
         (1, myrkr.materials.tempi[48]),
-        ],
+        ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
