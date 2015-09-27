@@ -5,7 +5,6 @@ import pytest
 import sys
 import traceback
 import ide
-from abjad.tools import systemtools
 abjad_ide = ide.tools.idetools.AbjadIDE()
 
 
@@ -21,6 +20,7 @@ if __name__ == '__main__':
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
 
+    # not parameterized to print keep-alive message to Travis log
     for segment_directory in segment_directories:
         message = 'Checking {} definition file ...'
         message = message.format(abjad_ide._trim_path(segment_directory))
@@ -31,6 +31,7 @@ if __name__ == '__main__':
             traceback.print_exc()
             sys.exit(1)
 
+    # not parameterized to print keep-alive message to Travis log
     for segment_directory in segment_directories:
         message = 'Making {} PDF ...'
         message = message.format(abjad_ide._trim_path(segment_directory))
