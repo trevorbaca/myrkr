@@ -8,12 +8,12 @@ abjad_ide = ide.tools.idetools.AbjadIDE()
 
 if __name__ == '__main__':
     this_file = os.path.abspath(__file__)
-    print(repr(this_file))
-    segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
-    print(repr(segments_directory))
+    test_directory = os.path.dirname(this_file)
+    inner_score_directory = os.path.dirname(test_directory)
+    segments_directory = os.path.join(inner_score_directory, 'segments')
     paths = abjad_ide._list_visible_paths(segments_directory)
     for path in paths:
-        message = 'making {} PDF ...'
+        message = 'Making {} PDF ...'
         message = message.format(abjad_ide._trim_path(path))
         print(message)
         try:
