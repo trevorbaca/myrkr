@@ -24,12 +24,12 @@ if __name__ == '__main__':
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
     print(repr(segments_directory))
     print(repr(segment_directories))
-#    for segment_directory in segment_directories:
-#        message = 'Making {} PDF ...'
-#        message = message.format(abjad_ide._trim_path(segment_directory))
-#        print(message)
-#        try:
-#            abjad_ide.make_pdf(segment_directory)
-#        except:
-#            traceback.print_exc()
-#            sys.exit(1)
+    for segment_directory in segment_directories:
+        message = 'Making {} PDF ...'
+        message = message.format(abjad_ide._trim_path(segment_directory))
+        print(message)
+        try:
+            abjad_ide.make_pdf(segment_directory)
+        except:
+            traceback.print_exc()
+            sys.exit(1)
