@@ -2,6 +2,7 @@
 from __future__ import print_function
 import os
 import ide
+import sys
 import traceback
 from abjad.tools import systemtools
 abjad_ide = ide.tools.idetools.AbjadIDE()
