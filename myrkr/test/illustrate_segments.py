@@ -8,6 +8,7 @@ abjad_ide = ide.tools.idetools.AbjadIDE()
 
 if __name__ == '__main__':
     this_file = os.path.abspath(__file__)
+    print(repr(this_file))
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     print(repr(segments_directory))
     paths = abjad_ide._list_visible_paths(segments_directory)
