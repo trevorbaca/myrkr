@@ -22,7 +22,7 @@ if __name__ == '__main__':
     print(abjad_ide._configuration.composer_scores_directory)
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
-    print(repr(segment_directory))
+    print(repr(segments_directory))
     print(repr(segment_directories))
 #    for segment_directory in segment_directories:
 #        message = 'Making {} PDF ...'
