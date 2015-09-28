@@ -40,16 +40,10 @@
     )
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 14)
+        (minimum-distance . 16)
         (padding . 0)
         (stretchability . 0)
     )
-    %top-markup-spacing = #'(
-    %    (basic-distance . 0)
-    %    (minimum-distance . 0)
-    %    (padding . 8)
-    %    (stretchability . 0)
-    %)
     top-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 26)
@@ -98,10 +92,6 @@
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
-        %\override BarNumber.Y-extent = ##f
-        %\override BarNumber.extra-offset = #'(-6 . -4)
-        %\override BarNumber.font-size = 1
-        %\override BarNumber.padding = 4
         \override BarNumber.transparent = ##t
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
@@ -118,10 +108,10 @@
         \override RehearsalMark.outside-staff-priority = 500
         \override RehearsalMark.self-alignment-X = #center
         \override Script.font-size = 6
-        \override Script.extra-offset = #'(4 . -9)
+        %\override Script.extra-offset = #'(4 . -9)
         \override TextScript.font-size = 6
         \override TextScript.outside-staff-priority = 600
-        \override TextScript.padding = 8
+        \override TextScript.padding = 4
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
         \override TextSpanner.Y-extent = #'(-6 . 6)
@@ -133,11 +123,11 @@
         \override TimeSignature.style = #'numbered
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
-            (minimum-distance . 14)
+            (minimum-distance . 10)
             (padding . 0)
             (stretchability . 0)
         )
-        \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
+        \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
     \context {
         \Staff
@@ -203,7 +193,7 @@
         \override StemTremolo.slope = 0.5
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
-        \override TextScript.padding = 2
+        \override TextScript.padding = 1
         \override TrillSpanner.bound-details.right.padding = 2
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
@@ -212,7 +202,6 @@
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
-        %barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
