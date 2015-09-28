@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import copy
 from abjad import *
 import myrkr
 
@@ -46,7 +47,7 @@ class RhythmPreprocessor(object):
                 raise ValueError(indicator)
             assert mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
-            if name not in name_to_cursor:
+            if (name not in name_to_cursor or len(indicator) == 3):
                 rhythm = self.name_to_rhythm[name]
                 rhythm = sequencetools.rotate_sequence(rhythm, -position)
                 rhythm = datastructuretools.CyclicTuple(rhythm)
@@ -122,4 +123,5 @@ class RhythmPreprocessor(object):
         assert mathtools.is_positive_integer(stage_number), repr(stage_number)
         stage_index = stage_number - 1
         selection = self._music_by_stage[stage_index]
+        selection = copy.deepcopy(selection)
         return selection
