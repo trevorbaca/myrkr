@@ -2,4 +2,7 @@
 from abjad import *
 
 
-metadata = datastructuretools.TypedOrderedDict()
+metadata = datastructuretools.TypedOrderedDict([
+    #('view_name', 'custom'),
+    ('view_name', None),
+    ])
