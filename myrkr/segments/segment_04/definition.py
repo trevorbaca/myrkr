@@ -10,21 +10,25 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-emerald_counter = baca.makers.Counter(start=16)
-indigo_counter = baca.makers.Counter(start=0)
-
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', indigo_counter(8), indigo_counter.start), # 1
-        #('emerald', emerald_counter(3), emerald_counter.start), # 2
-        #('indigo', indigo_counter(2)), # 3
-        #('emerald', emerald_counter(1)), # 4
-        #('emerald', emerald_counter(1)), # 5
-        #('indigo', indigo_counter(2)), # 6
-        #('emerald', emerald_counter(1)), # 7
-        #('emerald', emerald_counter(2)), # 8
-        ),
+        ('indigo', 8, 0), # 1
+        ('cobalt', 1, 3), # 2
+        ('indigo', 2), # 3
+        ('emerald', 2, 0), # 4
+        ('indigo', 2), # 5
+        ('indigo', 2), # 6
+        ('cobalt', 1), # 7
+        ('indigo', 2), # 8
+        ('cobalt', 1), # 9
+        ('indigo', 2), # 10
+        ('emerald', 2), # 11
+        ('indigo', 2), # 12
+        ('cobalt', 1), # 13
+        ('indigo', 6), # 14
+    ),
     name_to_rhythm={
+        'cobalt': myrkr.materials.cobalt_rhythm,
         'emerald': myrkr.materials.emerald_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
