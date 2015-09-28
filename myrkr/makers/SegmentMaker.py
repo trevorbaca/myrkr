@@ -883,8 +883,9 @@ class SegmentMaker(makertools.SegmentMaker):
             duration_ /= 1000
             total_duration += duration_
         total_duration = int(round(total_duration))
-        message = '{} seconds'
-        message = message.format(total_duration)
+        identifier = stringtools.pluralize('second', total_duration)
+        message = 'segment duration {} {}.'
+        message = message.format(total_duration, identifier)
         raise Exception(message)
 
     def _remove_score_template_start_clefs(self):
