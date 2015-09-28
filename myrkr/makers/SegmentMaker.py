@@ -23,7 +23,6 @@ class SegmentMaker(makertools.SegmentMaker):
         '_music_handlers',
         '_music_maker_class',
         '_music_makers',
-        '_raise_approximate_duration',
         '_score',
         '_score_package',
         '_show_stage_annotations',
@@ -43,7 +42,6 @@ class SegmentMaker(makertools.SegmentMaker):
         final_markup_extra_offset=None,
         measures_per_stage=None,
         music_makers=None,
-        raise_approximate_duration=False,
         score_package=None,
         show_stage_annotations=False,
         spacing_map=None,
@@ -66,7 +64,6 @@ class SegmentMaker(makertools.SegmentMaker):
         self._music_maker_class = score_package.makers.MusicMaker
         self._initialize_time_signatures(time_signatures)
         self._score_package = score_package
-        self._raise_approximate_duration = bool(raise_approximate_duration)
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
         self._spacing_map = spacing_map
@@ -841,8 +838,6 @@ class SegmentMaker(makertools.SegmentMaker):
         time_signature_context.extend(measures)
 
     def _raise_approximate_duration_in_seconds(self):
-        if not self.raise_approximate_duration:
-            return
         context = self._score['Time Signature Context']
         current_tempo = None
         leaves = iterate(context).by_class(scoretools.Leaf)
@@ -884,9 +879,9 @@ class SegmentMaker(makertools.SegmentMaker):
             total_duration += duration_
         total_duration = int(round(total_duration))
         identifier = stringtools.pluralize('second', total_duration)
-        message = 'segment duration {} {}.'
+        message = 'segment duration {} {} ...'
         message = message.format(total_duration, identifier)
-        raise Exception(message)
+        print(message)
 
     def _remove_score_template_start_clefs(self):
         dictionary = datastructuretools.TypedOrderedDict()
@@ -1037,16 +1032,6 @@ class SegmentMaker(makertools.SegmentMaker):
         '''
         return self._music_makers
     
-    @property
-    def raise_approximate_duration(self):
-        r'''Is true when segment-maker should raise approximate duration.
-
-        Set to true or false.
-
-        Returns true or false.
-        '''
-        return self._raise_approximate_duration
-
     @property
     def score_package(self):
         r'''Gets score package.
