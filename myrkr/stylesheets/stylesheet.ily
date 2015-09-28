@@ -40,7 +40,13 @@
     )
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 16)
+        (minimum-distance . 22)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    top-markup-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 10)
         (padding . 0)
         (stretchability . 0)
     )
@@ -50,7 +56,7 @@
         (padding . 0)
         (stretchability . 0)
     )
-    top-margin = 15\mm
+    top-margin = 0\mm
 }
 
 \header {
@@ -111,10 +117,10 @@
         %\override Script.extra-offset = #'(4 . -9)
         \override TextScript.font-size = 6
         \override TextScript.outside-staff-priority = 600
-        \override TextScript.padding = 4
+        \override TextScript.padding = 5
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
-        \override TextSpanner.Y-extent = #'(-6 . 6)
+        \override TextSpanner.Y-extent = #'(-2 . 2)
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
