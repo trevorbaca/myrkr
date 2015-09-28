@@ -56,6 +56,7 @@ class RhythmPreprocessor(object):
             cursor = name_to_cursor[name]
             bundles = cursor.next(count=count)
             for selection, time_signature in bundles:
+                selection = copy.deepcopy(selection)
                 selections.append(selection)
                 time_signatures.append(time_signature)
             measures_per_stage.append(count)
