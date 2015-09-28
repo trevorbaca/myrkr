@@ -14,6 +14,13 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
         ('emerald', 2),
         ('charcoal', 2),
+        ('emerald', 2),
+        ('charcoal', 2),
+        ('emerald', 2),
+        ('charcoal', 2),
+        ('emerald', 2),
+        ('charcoal', 2),
+        ('graphite', 8),
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -39,6 +46,10 @@ segment_maker = myrkr.makers.SegmentMaker(
         ),
     tempo_map=(
         (1, myrkr.materials.tempi[110]),
+        (1, Ritardando()),
+        (3, myrkr.materials.tempi[55]),
+        (5, Accelerando()),
+        (7, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
