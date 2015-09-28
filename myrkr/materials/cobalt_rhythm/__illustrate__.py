@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-import os
-import sys
-import traceback
 from abjad import *
 from myrkr.materials.cobalt_rhythm.definition import maker
 
