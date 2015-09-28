@@ -261,8 +261,8 @@
                         }
             }
             {
-                \time 6/22
-                s1 * 3/11
+                \time 4/4
+                s1 * 1
                     - \markup {
                         \smaller
                             \with-color
@@ -271,8 +271,40 @@
                         }
             }
             {
+                s1 * 1
+            }
+            {
+                s1 * 1
+            }
+            {
+                \time 6/22
+                s1 * 3/11
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [D17]
+                        }
+            }
+            {
                 \time 3/20
                 s1 * 3/20
+            }
+            {
+                \time 11/16
+                s1 * 11/16
+            }
+            {
+                \time 4/22
+                s1 * 2/11
+            }
+            {
+                \time 10/16
+                s1 * 5/8
+            }
+            {
+                \time 4/16
+                s1 * 1/4
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -480,6 +512,26 @@
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     d''1
                 }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2
+                }
+                \times 4/7 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2.
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2
+                }
+                \times 4/5 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2.
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''2
+                }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
@@ -495,7 +547,42 @@
                     d''8 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     d''16 ]
-                    \bar "|."
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8. [
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8.
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''16 ]
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 8/11 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''16 [
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8. ]
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8. [
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8.
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8 ]
+                }
+                \times 4/5 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8. [
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''8 ]
+                    \bar "|"
                 }
             }
         }

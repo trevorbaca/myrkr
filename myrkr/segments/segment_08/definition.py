@@ -45,7 +45,6 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
 
 segment_maker = myrkr.makers.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
-    #raise_approximate_duration=True,
     score_package=myrkr,
     show_stage_annotations=True,
     spacing_map=(
@@ -89,4 +88,3 @@ segment_maker.make_music_handler(
         dynamic_line_spanner_staff_padding(4),
         ],
     )
-

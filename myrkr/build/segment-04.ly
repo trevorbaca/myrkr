@@ -654,7 +654,7 @@
                     d''8. [
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     d''8 ]
-                    \bar "|."
+                    \bar "|"
                 }
             }
         }
