@@ -3,11 +3,11 @@
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 4/3
+                \time 3/1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
-                s1 * 4/3
+                s1 * 3
                     - \markup {
                         \smaller
                             \with-color
@@ -31,16 +31,6 @@
                         }
                     }
             }
-            {
-                \time 3/1
-                s1 * 3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [2]
-                        }
-            }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \clef "treble"
@@ -63,12 +53,8 @@
                     }
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    e\breve \mp
-                }
                 {
-                    e\breve.
+                    e\breve. \fff
                     \bar "|"
                 }
             }

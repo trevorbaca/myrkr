@@ -1,4 +1,4 @@
-% 2015-09-27 20:13
+% 2015-09-27 22:33
 
 \version "2.19.27"
 \language "english"
@@ -64,7 +64,7 @@
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    e\breve. \mp
+                    e\breve. \fff
                     \bar "|"
                 }
             }
