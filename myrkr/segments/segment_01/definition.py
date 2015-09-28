@@ -65,7 +65,7 @@ for stage_index in range(segment_maker.stage_count):
 segment_maker.make_music_handler(
     scope=(cl, 1),
     specifiers=[
-        Dynamic('mp'),
+        Dynamic('fff'),
         pitch_specifier(
             source='D2',
             ),
