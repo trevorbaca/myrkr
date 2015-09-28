@@ -30,10 +30,11 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         ('indigo', 3, 1), # 13
         ('cobalt', 1, 10), # 14
         ('cobalt', 1), # 15
-        ('indigo', 2), # 16
-
+        ('charcoal', 3, 0), # 16
+        ('indigo', 6), # 17
     ),
     name_to_rhythm={
+        'charcoal': myrkr.materials.charcoal_rhythm,
         'cobalt': myrkr.materials.cobalt_rhythm,
         'emerald': myrkr.materials.emerald_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
