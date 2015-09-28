@@ -20,11 +20,11 @@ metadata = datastructuretools.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_tempo', 48),
-        ('end_time_signature', '3/1'),
-        ('first_bar_number', 1),
-        ('measure_count', 1),
+        ('end_tempo', 110),
+        ('end_time_signature', '5/7'),
+        ('first_bar_number', 57),
+        ('measure_count', 20),
         ('segment_count', 3),
-        ('segment_number', 1),
+        ('segment_number', 3),
         ]
     )
