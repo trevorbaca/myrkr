@@ -43,15 +43,12 @@ segment_maker = myrkr.makers.SegmentMaker(
     transpose_score=True,
     )
 
-assert segment_maker.measure_count == 20
-assert segment_maker.stage_count == 4
 assert segment_maker.validate_time_signatures()
 
 
 ###############################################################################
 ############################## MUSIC-MAKERS ###################################
 ###############################################################################
-
 
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
@@ -68,11 +65,12 @@ for stage_index in range(segment_maker.stage_count):
 ###############################################################################
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, 1)),
+    scope=(cl, 1),
     specifiers=[
         Dynamic('ppp'),
         pitch_specifier(
             source='Eb4',
             ),
+        make_color_fingerings('A', 0),
         ],
     )
