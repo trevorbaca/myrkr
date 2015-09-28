@@ -30,7 +30,7 @@ class RhythmMaker(object):
         displace_split_tuplets=None,
         ):
         terms = tuple(terms)
-        assert mathtools.all_are_positive_integers(terms), repr(terms)
+        assert all(isinstance(_, int) for _ in terms), repr(terms)
         self._terms = terms
         assert mathtools.all_are_positive_integers(counts), repr(counts)
         self._counts = counts
@@ -70,8 +70,7 @@ class RhythmMaker(object):
         #print(list(sum(_) for _ in tuplet_ratios))
         tuplets = []
         for i, tuplet_ratio in enumerate(tuplet_ratios):
-            assert mathtools.all_are_positive_integers(tuplet_ratio)
-            weight = sum(tuplet_ratio)    
+            weight = sum(abs(_) for _ in tuplet_ratio)    
             prolation_indicator = 0
             if self.prolation_indicators:
                 prolation_indicator = self.prolation_indicators[i]
@@ -83,13 +82,16 @@ class RhythmMaker(object):
                 scaled_weight = 2 ** math.ceil(math.log(weight, 2))
             else:
                 raise ValueError(prolation_indicator)
-            notes = []
+            leaves = []
             for term in tuplet_ratio:
-                duration = Duration(term, self.denominator)
-                note = Note("c'", duration)
-                notes.append(note)
+                duration = Duration(abs(term), self.denominator)
+                if 0 < term:
+                    leaf = Note("c'", duration)
+                else:
+                    leaf = Rest(duration)
+                leaves.append(leaf)
             duration = Duration(scaled_weight, self.denominator)
-            tuplet = scoretools.FixedDurationTuplet(duration, notes)
+            tuplet = scoretools.FixedDurationTuplet(duration, leaves)
             tuplets.append(tuplet)
         split_tuplets = []
         last_tuplet = None

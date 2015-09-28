@@ -13,6 +13,16 @@ from myrkr.materials.__abbreviations__ import *
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
         ('graphite', 16),
+        ('white', 1),
+        ('graphite', 5),
+        ('indigo', 3),
+        ('graphite', 2),
+        ('indigo', 2),
+        ('graphite', 3),
+        ('cobalt', 2),
+        ('indigo', 3),
+        ('indigo', 2),
+        ('graphite', 3),
 
     ),
     name_to_rhythm={
@@ -22,6 +32,7 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         'graphite': myrkr.materials.graphite_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
+        'white': myrkr.materials.white_rhythm,
         },
     )
 
