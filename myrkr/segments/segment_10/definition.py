@@ -13,7 +13,17 @@ from myrkr.materials.__abbreviations__ import *
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
         ('emerald', 2),
-        ('charcoal', 2),
+        ('graphite', 4),
+        ('emerald', 2),
+        ('graphite', 4),
+        ('emerald', 2),
+        ('graphite', 4),
+        ('emerald', 2),
+        ('graphite', 4),
+        ('graphite', 8),
+        ('emerald', 8),
+        ('cobalt', 4),
+
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -35,10 +45,15 @@ segment_maker = myrkr.makers.SegmentMaker(
     score_package=myrkr,
     show_stage_annotations=True,
     spacing_map=(
-        #(1, Duration(1, 8)),
+        (1, Duration(1, 12)),
+        (10, Duration(1, 16)),
+        (11, Duration(1, 12)),
         ),
     tempo_map=(
         (1, myrkr.materials.tempi[110]),
+        (10, myrkr.materials.tempi[44]),
+        (10, Accelerando()),
+        (11, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
