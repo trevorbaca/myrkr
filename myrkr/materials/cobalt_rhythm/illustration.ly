@@ -1,4 +1,4 @@
-% 2015-09-26 12:09
+% 2015-09-27 21:00
 
 \version "2.19.27"
 \language "english"
@@ -71,6 +71,7 @@
 \score {
     \new Score \with {
         \override TextScript #'staff-padding = #4
+        \override TimeSignature #'style = #'numbered
         \override TupletBracket #'staff-padding = #3.5
         proportionalNotationDuration = #(ly:make-moment 1 9)
     } <<

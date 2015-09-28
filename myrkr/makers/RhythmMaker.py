@@ -161,6 +161,7 @@ class RhythmMaker(object):
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
         override(score).text_script.staff_padding = 4
+        override(score).time_signature.style = 'numbered'
         override(score).tuplet_bracket.staff_padding = 3.5
         pair = proportional_notation_duration.pair
         moment = schemetools.SchemeMoment(pair)
