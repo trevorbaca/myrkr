@@ -2,8 +2,7 @@
 from abjad import *
 from experimental import *
 import baca
-from myrkr import materials
-from myrkr import makers
+import myrkr
 from abjad.tools import pitchtools
 
 
@@ -53,6 +52,20 @@ color_fingerings = baca.makers.ColorFingeringSpecifier(
         [0, 1, 2, 1],
         ),
     )
+
+def make_color_fingerings(name, index=0):
+    color_fingerings = myrkr.materials.color_fingerings[name]
+    color_fingerings = sequencetools.rotate_sequence(
+        color_fingerings,
+        index,
+        )
+    color_fingerings = baca.makers.ColorFingeringSpecifier(
+        deposit_annotations=['color fingering'],
+        number_lists=(
+            color_fingerings,
+            ),
+        )
+    return color_fingerings
 
 color_microtones = baca.makers.MicrotonalDeviationSpecifier(
     deposit_annotations=['color microtone'],

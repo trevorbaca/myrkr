@@ -12,8 +12,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('cobalt', 1, 1),
-        ('cobalt', 1),
+        ('cobalt', 1, 2),
         ),
     name_to_rhythm={
         'cobalt': myrkr.materials.cobalt_rhythm,
@@ -29,7 +28,7 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
 
 segment_maker = myrkr.makers.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
-    raise_approximate_duration=False,
+    #raise_approximate_duration=True,
     score_package=myrkr,
     show_stage_annotations=True,
     spacing_map=(
@@ -42,15 +41,12 @@ segment_maker = myrkr.makers.SegmentMaker(
     transpose_score=True,
     )
 
-assert segment_maker.measure_count == 2
-assert segment_maker.stage_count == 2
 assert segment_maker.validate_time_signatures()
 
 
 ###############################################################################
 ############################## MUSIC-MAKERS ###################################
 ###############################################################################
-
 
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
@@ -67,7 +63,7 @@ for stage_index in range(segment_maker.stage_count):
 ###############################################################################
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, 2)),
+    scope=(cl, 1),
     specifiers=[
         Dynamic('mp'),
         pitch_specifier(
