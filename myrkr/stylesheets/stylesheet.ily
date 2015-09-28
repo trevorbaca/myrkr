@@ -111,7 +111,7 @@
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
-        \override RehearsalMark.outside-staff-priority = 500
+        \override RehearsalMark.outside-staff-priority = 200
         \override RehearsalMark.self-alignment-X = #center
         \override Script.font-size = 6
         %\override Script.extra-offset = #'(4 . -9)
@@ -120,7 +120,7 @@
         \override TextScript.padding = 5
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
-        \override TextSpanner.Y-extent = #'(-2 . 2)
+        \override TextSpanner.Y-extent = #'(-3 . 3)
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
