@@ -65,6 +65,30 @@ class Preprocessor(object):
         bundle = (stage_number, specifiers)
         self._music_handler_bundles.append(bundle)
 
+    def _remove_duplicate_dynamics(self):
+        bundles = self._music_handler_bundles
+        pairs = sequencetools.iterate_sequence_nwise(bundles)
+        pairs = list(pairs)
+        for first_bundle, second_bundle in reversed(pairs):
+            first_stage_number = first_bundle[0]
+            second_stage_number = second_bundle[0]
+            if not first_stage_number == second_stage_number - 1:
+                continue
+            first_specifiers = first_bundle[1]
+            first_dynamics = [_ for _ in first_specifiers
+                if isinstance(_, Dynamic)]
+            if not first_dynamics:
+                continue
+            first_dynamic = first_dynamics[0]
+            second_specifiers = second_bundle[1]
+            second_dynamics = [_ for _ in second_specifiers
+                if isinstance(_, Dynamic)]
+            if not second_dynamics:
+                continue
+            second_dynamic = second_dynamics[0]
+            if first_dynamic == second_dynamic:
+                second_specifiers.remove(second_dynamic)
+
     def _unpack_indicators(self):
         name_to_cursor = {}
         selections, time_signatures, measures_per_stage = [], [], []
@@ -178,6 +202,7 @@ class Preprocessor(object):
         return selection
 
     def make_music_handlers(self, segment_maker):
+        self._remove_duplicate_dynamics()
         for bundle in self._music_handler_bundles:
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
