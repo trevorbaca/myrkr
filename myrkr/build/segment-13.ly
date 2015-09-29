@@ -8,7 +8,14 @@
                 \bar ""
                 \newSpacingSection
                 \mark #12
-                s1 * 12/5 ^ \markup {
+                s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [L1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align

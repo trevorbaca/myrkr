@@ -7,7 +7,14 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
-                s1 * 3 ^ \markup {
+                s1 * 3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -20,7 +27,7 @@
                     \upright
                         {
                             =
-                            48
+                            44
                         }
                     }
             }
@@ -47,7 +54,13 @@
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve. \fff
+                        ^ \markup {
+                            overblow
+                            \italic
+                                "ad lib."
+                            }
                     \bar "|"
                 }
             }

@@ -8,7 +8,14 @@
                 \bar ""
                 \newSpacingSection
                 \mark #11
-                s1 * 1/4 ^ \markup {
+                s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -43,10 +50,22 @@
             {
                 \time 12/5
                 s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K2]
+                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K3]
+                        }
             }
             {
                 s1 * 1/4
@@ -78,10 +97,22 @@
             {
                 \time 4/3
                 s1 * 4/3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K4]
+                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K5]
+                        }
             }
             {
                 s1 * 1/4
@@ -95,10 +126,22 @@
             {
                 \time 3/1
                 s1 * 3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K6]
+                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K7]
+                        }
             }
             {
                 s1 * 1/4
@@ -154,6 +197,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 20)
                 \newSpacingSection
                 s1 * 13/16 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K8]
+                        }
             }
             {
                 \time 5/22
@@ -178,6 +227,12 @@
             {
                 \time 11/16
                 s1 * 11/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K9]
+                        }
             }
             {
                 \time 4/22
@@ -194,6 +249,12 @@
             {
                 \time 7/22
                 s1 * 7/22
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K10]
+                        }
             }
             {
                 \time 4/16
@@ -202,6 +263,12 @@
             {
                 \time 11/16
                 s1 * 11/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K11]
+                        }
             }
             {
                 \time 4/22
@@ -209,7 +276,14 @@
             }
             {
                 \time 11/8
-                s1 * 11/8 \stopTextSpan ^ \markup {
+                s1 * 11/8 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [K12]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align

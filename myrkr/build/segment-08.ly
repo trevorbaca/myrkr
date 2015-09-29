@@ -8,7 +8,14 @@
                 \bar ""
                 \newSpacingSection
                 \mark #7
-                s1 * 12/5 ^ \markup {
+                s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -64,12 +71,24 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 8/5 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G2]
+                        }
             }
             {
                 \time 1/4
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G3]
+                        }
             }
             {
                 s1 * 1/4
@@ -84,7 +103,14 @@
                 \time 13/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 18)
                 \newSpacingSection
-                s1 * 13/16 \stopTextSpan ^ \markup {
+                s1 * 13/16 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G4]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -116,6 +142,12 @@
             {
                 \time 6/22
                 s1 * 3/11
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G5]
+                        }
             }
             {
                 \time 3/20
@@ -140,6 +172,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G6]
+                        }
             }
             {
                 s1 * 1/4
@@ -158,6 +196,12 @@
             }
             {
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G7]
+                        }
             }
             {
                 s1 * 1/4
@@ -183,6 +227,12 @@
             {
                 \time 7/22
                 s1 * 7/22
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G8]
+                        }
             }
             {
                 \time 4/16
@@ -191,6 +241,12 @@
             {
                 \time 11/16
                 s1 * 11/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G9]
+                        }
             }
             {
                 \time 4/22
@@ -199,6 +255,12 @@
             {
                 \time 10/16
                 s1 * 5/8
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G10]
+                        }
             }
             {
                 \time 4/18
@@ -207,6 +269,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G11]
+                        }
             }
             {
                 s1 * 1/4
@@ -217,6 +285,12 @@
             {
                 \time 7/22
                 s1 * 7/22
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G12]
+                        }
             }
             {
                 \time 5/18
@@ -225,6 +299,12 @@
             {
                 \time 12/16
                 s1 * 3/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G13]
+                        }
             }
             {
                 \time 3/18
@@ -233,12 +313,24 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G14]
+                        }
             }
             {
                 s1 * 1/4
             }
             {
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [G15]
+                        }
             }
             {
                 s1 * 1/4

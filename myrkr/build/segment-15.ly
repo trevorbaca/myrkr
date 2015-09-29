@@ -48,13 +48,32 @@
                 \newSpacingSection
                 \mark #14
                 s1 * 4/3 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N1]
+                        }
             }
             {
-                s1 * 4/3
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N2]
+                        }
             }
             {
                 \time 4/4
                 s1 * 1
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N3]
+                        }
             }
             {
                 s1 * 1
@@ -63,12 +82,24 @@
                 s1 * 1
             }
             {
-                \time 4/3
-                s1 * 4/3
+                \time 12/5
+                s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N4]
+                        }
             }
             {
                 \time 7/4
                 s1 * 7/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N5]
+                        }
             }
             {
                 \time 4/4
@@ -82,6 +113,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 20)
                 \newSpacingSection
                 s1 * 13/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N6]
+                        }
             }
             {
                 \time 5/22
@@ -92,6 +129,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                 \newSpacingSection
                 s1 * 5/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N7]
+                        }
             }
             {
                 \time 4/4
@@ -103,6 +146,12 @@
             {
                 \time 7/4
                 s1 * 7/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N8]
+                        }
             }
             {
                 \time 4/4
@@ -115,7 +164,14 @@
                 \time 8/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 20)
                 \newSpacingSection
-                s1 * 1/2 \stopTextSpan ^ \markup {
+                s1 * 1/2 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N9]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -141,6 +197,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                 \newSpacingSection
                 s1 * 5/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [N10]
+                        }
             }
             {
                 \time 4/4
@@ -179,7 +241,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''1
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
@@ -202,9 +264,9 @@
                     d''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
+                \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''\breve.
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
