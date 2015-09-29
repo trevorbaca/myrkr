@@ -1,9 +1,9 @@
     \context Score = "Score" \with {
-        currentBarNumber = #233
+        currentBarNumber = #236
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/7
+                \time 4/3
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = -2
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -43,9 +43,11 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
+                \newSpacingSection
                 \mark #8
-                s1 * 3/7 \startTextSpan
+                s1 * 4/3 \startTextSpan
                     - \markup {
                         \smaller
                             \with-color
@@ -54,12 +56,8 @@
                         }
             }
             {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 4/4
-                s1 * 1
+                \time 5/4
+                s1 * 5/4
                     - \markup {
                         \smaller
                             \with-color
@@ -68,11 +66,15 @@
                         }
             }
             {
+                \time 4/4
                 s1 * 1
             }
             {
-                \time 3/5
-                s1 * 3/5 \stopTextSpan
+                s1 * 1
+            }
+            {
+                \time 3/1
+                s1 * 3 \stopTextSpan
                     - \markup {
                         \smaller
                             \with-color
@@ -97,12 +99,8 @@
                     }
             }
             {
-                \time 4/7
-                s1 * 4/7
-            }
-            {
-                \time 4/4
-                s1 * 1
+                \time 8/4
+                s1 * 2
                     - \markup {
                         \smaller
                             \with-color
@@ -111,11 +109,14 @@
                         }
             }
             {
-                \time 7/4
-                s1 * 7/4
+                \time 4/4
+                s1 * 1
             }
             {
-                \time 3/4
+                s1 * 1
+            }
+            {
+                \time 8/5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = -2
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -144,17 +145,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 3/4 \startTextSpan
+                s1 * 8/5 \startTextSpan
                     - \markup {
                         \smaller
                             \with-color
                                 #blue
                                 [H5]
                         }
-            }
-            {
-                \time 2/5
-                s1 * 2/5
             }
             {
                 \time 4/4
@@ -167,11 +164,16 @@
                         }
             }
             {
+                \time 7/4
+                s1 * 7/4
+            }
+            {
+                \time 4/4
                 s1 * 1
             }
             {
-                \time 3/5
-                s1 * 3/5 \stopTextSpan
+                \time 12/5
+                s1 * 12/5 \stopTextSpan
                     - \markup {
                         \smaller
                             \with-color
@@ -198,10 +200,6 @@
             {
                 \time 4/4
                 s1 * 1
-            }
-            {
-                \time 5/4
-                s1 * 5/4
                     - \markup {
                         \smaller
                             \with-color
@@ -210,12 +208,18 @@
                         }
             }
             {
+                \time 5/4
+                s1 * 5/4
+            }
+            {
                 \time 4/4
                 s1 * 1
             }
             {
-                \time 1/4
-                s1 * 1/4
+                \time 3/16
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                \newSpacingSection
+                s1 * 3/16
                     - \markup {
                         \smaller
                             \with-color
@@ -224,22 +228,14 @@
                         }
             }
             {
+                \time 1/4
                 s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H10]
+                        }
             }
             {
                 s1 * 1/4
@@ -267,133 +263,119 @@
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 4/7 {
+                \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    e\breve \mp
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                }
-                {
+                    g''2 \ff \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    af''2. \glissando
                 }
                 \times 4/7 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    g''2 \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    fs''2 \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    g''2. \glissando
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    af''2 \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    g''2
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    e\breve. \mp
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    b''2. \f \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    c'''2 \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    b''2. \glissando
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    as''2 \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    b''2 \glissando
+                }
+                \times 4/7 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    c'''2. \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    b''2 \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    as''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/7 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    e\breve \mp
                 }
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    d'''2. \mf \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    ef'''2 \glissando
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    d'''2. \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    cs'''2 \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    d'''2 \glissando
                 }
-                {
+                \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    ef'''2. \glissando
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d'''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                }
-                \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    e\breve. \mp
                 }
                 \times 4/7 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    fs'''2 \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    g'''2. \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    fs'''2 \glissando
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    es'''2. \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    fs'''2 \glissando
                 }
                 \times 4/7 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    g'''2 \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2.
+                    fs'''2. \glissando
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''2
+                    es'''2
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
+                    r8.
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
+                    c''4 \pppp \glissando
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''4
+                    e''4
                     \bar "|"
                 }
             }
