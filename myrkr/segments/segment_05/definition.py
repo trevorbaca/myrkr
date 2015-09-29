@@ -10,27 +10,31 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+charcoal_position = 0
+cobalt_position = 4
+emerald_position = 25
+indigo_position = 80
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', (3, 1)), # 1
-        ('cobalt', (1, 10)), # 2
+        ('indigo', (3, indigo_position)), # 1
+        ('cobalt', (1, cobalt_position)), # 2
         ('cobalt', 1), # 3
         ('indigo', 2), # 4
 
-        ('indigo', (3, 1)), # 5
-        ('cobalt', (1, 10)), # 6
+        ('indigo', (3, indigo_position)), # 5
+        ('cobalt', (1, cobalt_position)), # 6
         ('cobalt', 1), # 7
         ('indigo', 2), # 8
 
-        ('indigo', (3, 1)), # 9
-        ('cobalt', (1, 10)), # 10
+        ('indigo', (3, indigo_position)), # 9
+        ('cobalt', (1, cobalt_position)), # 10
         ('cobalt', 1), # 11
         ('indigo', 2), # 12
 
-        ('indigo', (3, 1)), # 13
-        ('cobalt', (1, 10)), # 14
+        ('indigo', (3, indigo_position)), # 13
+        ('cobalt', (1, cobalt_position)), # 14
         ('cobalt', 1), # 15
-        ('charcoal', (3, 0)), # 16
+        ('charcoal', (3, charcoal_position)), # 16
         ('indigo', 6), # 17
     ),
     name_to_rhythm={
