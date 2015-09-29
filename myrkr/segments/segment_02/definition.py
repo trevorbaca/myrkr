@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', (12, 16), 'Eb4', 'ppp', ('C', 0)), # 1
+        ('indigo', 12, 'Eb4', 'ppp', ('C', 0)), # 1
         ('emerald', 1, 'C4', 'mf', ('A', 0)), # 2
         ('indigo', 4, 'Eb4', 'ppp', ('C', 2)), # 3
         ('emerald', 1, 'C4', 'mf', ('A', 2)), # 4

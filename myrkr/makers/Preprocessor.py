@@ -116,9 +116,11 @@ class Preprocessor(object):
             assert isinstance(position, int), repr(position)
             if (name not in name_to_cursor or len(indicator) == 3):
                 rhythm = self.name_to_rhythm[name]
-                rhythm = sequencetools.rotate_sequence(rhythm, -position)
                 rhythm = datastructuretools.CyclicTuple(rhythm)
-                cursor = datastructuretools.Cursor(source=rhythm)
+                cursor = datastructuretools.Cursor(
+                    source=rhythm,
+                    position=position,
+                    )
                 name_to_cursor[name] = cursor
             cursor = name_to_cursor[name]
             bundles = cursor.next(count=count)
@@ -153,6 +155,11 @@ class Preprocessor(object):
             selections.append(selection)
         assert all(isinstance(_, selectiontools.Selection) for _ in selections)
         self._music_by_stage = selections
+        for name in sorted(name_to_cursor):
+            cursor = name_to_cursor[name]
+            message = '{} position: {} ...'
+            message = message.format(name, cursor.position)
+            print message
 
     def _validate_indicators(self):
         for indicator in self.indicators:

@@ -779,7 +779,7 @@ class SegmentMaker(makertools.SegmentMaker):
         return measures
 
     def _make_spacing_regions(self):
-        if not self.tempo_map:
+        if not self.spacing_map:
             return
         context = self._score['Time Signature Context']
         skips = list(iterate(context).by_class(scoretools.Leaf))
@@ -874,6 +874,10 @@ class SegmentMaker(makertools.SegmentMaker):
                 effective_tempo /= 2
             else:
                 effective_tempo = current_tempo
+            if effective_tempo is None:
+                message = 'no effective tempo found ...'
+                print(message)
+                return
             duration_ = effective_tempo.duration_to_milliseconds(duration)
             duration_ /= 1000
             total_duration += duration_
