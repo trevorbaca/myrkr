@@ -10,9 +10,17 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+cobalt_position = 37
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('cobalt', 8),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
+        ('cobalt', (1, cobalt_position), 'B1', 'fff'),
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -71,5 +79,12 @@ segment_maker.make_music_handler(
     scope=(cl, (1, segment_maker.stage_count)),
     specifiers=[
         dynamic_line_spanner_staff_padding(4),
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 1),
+    specifiers=[
+        overblow,
         ],
     )
