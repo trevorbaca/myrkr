@@ -12,7 +12,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', (12, 16)), # 1
+        ('indigo', (12, 16), 'Eb4', 'ppp', make_color_fingerings('A', 0)), # 1
         ('emerald', 1), # 2
         ('indigo', 4), # 3
         ('emerald', 1), # 4
@@ -87,6 +87,8 @@ for stage_index in range(segment_maker.stage_count):
 ###############################################################################
 ############################### MUSIC-HANDLERS ################################
 ###############################################################################
+
+preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
     scope=(cl, (1, segment_maker.stage_count)),

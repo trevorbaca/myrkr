@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import copy
+import baca
 from abjad import *
+from experimental.tools import makertools
 import myrkr
 
 
@@ -14,6 +16,7 @@ class RhythmPreprocessor(object):
         '_indicators',
         '_measures_per_stage',
         '_music_by_stage',
+        '_music_handler_bundles',
         '_name_to_rhythm',
         '_selections',
         '_time_signatures',
@@ -26,6 +29,7 @@ class RhythmPreprocessor(object):
         name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
         self._measures_per_stage = ()
+        self._music_handler_bundles = []
         self._name_to_rhythm = name_to_rhythm
         self._selections = ()
         self._time_signatures = ()
@@ -34,13 +38,41 @@ class RhythmPreprocessor(object):
 
     ### PRIVATE METHODS ###
 
+    def _make_music_handler_bundle(
+        self, 
+        stage_number, 
+        pitch, 
+        dynamic, 
+        color_fingering,
+        ):
+        if pitch is None and dynamic is None and color_fingering is None:
+            return
+        specifiers = []
+        if pitch is not None:
+            assert isinstance(pitch, str), repr(pitch)
+            pitch_specifier = baca.makers.PitchSpecifier(
+                source=pitch,
+                )
+            specifiers.append(pitch_specifier)
+        if dynamic is not None:
+            dynamic = Dynamic(dynamic)
+            specifiers.append(dynamic)
+        if color_fingering is not None:
+            specifiers.append(color_fingering)
+        bundle = (stage_number, specifiers)
+        self._music_handler_bundles.append(bundle)
+
     def _unpack_indicators(self):
         name_to_cursor = {}
         selections, time_signatures, measures_per_stage = [], [], []
-        for indicator in self.indicators:
+        for stage_index, indicator in enumerate(self.indicators):
             position = 0
-            assert len(indicator) == 2, repr(indicator)
-            name, location = indicator
+            pitch = None
+            dynamic = None
+            color_fingering = None
+            assert len(indicator) in (2, 4, 5), repr(indicator)
+            name = indicator[0]
+            location = indicator[1]
             if isinstance(location, int):
                 count = location
             elif isinstance(location, tuple):
@@ -48,6 +80,11 @@ class RhythmPreprocessor(object):
                 count, position = location
             else:
                 raise TypeError(location)
+            if 4 <= len(indicator):
+                pitch = indicator[2]
+                dynamic = indicator[3]
+            if len(indicator) == 5:
+                color_fingering = indicator[4]
             assert mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
             if (name not in name_to_cursor or len(indicator) == 3):
@@ -63,6 +100,13 @@ class RhythmPreprocessor(object):
                 selections.append(selection)
                 time_signatures.append(time_signature)
             measures_per_stage.append(count)
+            stage_number = stage_index + 1
+            self._make_music_handler_bundle(
+                stage_number, 
+                pitch, 
+                dynamic, 
+                color_fingering,
+                )
         self._selections = tuple(selections)
         self._time_signatures = tuple(time_signatures)
         self._measures_per_stage = tuple(measures_per_stage)
@@ -86,7 +130,7 @@ class RhythmPreprocessor(object):
     def _validate_indicators(self):
         for indicator in self.indicators:
             assert isinstance(indicator, tuple), repr(indicator)
-            assert len(indicator) in (2, 3), repr(indicator)
+            assert len(indicator) in (2, 4, 5), repr(indicator)
             assert isinstance(indicator[0], str), repr(indicator)
 
     ### PUBLIC PROPERTIES ###
@@ -129,3 +173,13 @@ class RhythmPreprocessor(object):
         selection = self._music_by_stage[stage_index]
         selection = copy.deepcopy(selection)
         return selection
+
+    def make_music_handlers(self, segment_maker):
+        for bundle in self._music_handler_bundles:
+            assert len(bundle) == 2, repr(bundle)
+            stage_number = bundle[0]
+            specifiers = bundle[1]
+            segment_maker.make_music_handler(
+                scope=('Clarinet Music Voice', stage_number),
+                specifiers=specifiers,
+                )
