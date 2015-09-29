@@ -15,21 +15,24 @@ emerald_position = 21
 indigo_position = 54
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', (2, indigo_position), 'C4', 'p', ('C', 0)), # 1
-        ('indigo', (6, indigo_position), 'C#4', 'pp', ('C', 2)), # 2
-        ('cobalt', (1, cobalt_position), 'Eb2', 'p'), # 3
-        ('indigo', 2), # 4
-        ('emerald', (2, emerald_position)), # 5
-        ('indigo', 2), # 6
-        ('indigo', 2), # 7
-        ('cobalt', 1, 'Eb2', 'p'), # 8
-        ('indigo', 2), # 9
-        ('cobalt', 1, 'Eb2', 'p'), # 10
-        ('indigo', 2), # 11
-        ('emerald', 2), # 12
-        ('indigo', 2), # 13
-        ('cobalt', 1, 'Eb2', 'p'), # 14
-        ('indigo', 6), # 15
+        ('indigo', (2, indigo_position), 'C4', 'p', ('C', 24)), # 1
+        ('indigo', (6, indigo_position), 'C#4', 'pp', ('C', 26)), # 2
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 3
+        ('indigo', 2, 'C#4', 'pp', ('C', 28)), # 4
+        ('emerald', (1, emerald_position), 'Ab3', 'f', ('A', 28)), # 5
+        ('emerald', 1, 'G3', 'ff', ('A', 30)), # 6
+
+        ('indigo', 2, 'C#4', 'pp', ('C', 30)), # 7
+        ('indigo', 2, 'D#4', 'ppp', ('C', 32)), # 8
+        ('cobalt', 1, 'Eb2', 'mp'), # 9
+        ('indigo', 2, 'D#4', 'ppp', ('C', 34)), # 10
+        ('cobalt', 1, 'Eb2', 'mp'), # 11
+        ('indigo', 2, 'D#4', 'ppp', ('C', 36)), # 12
+        ('emerald', 2, 'G3', 'ff', ('A', 32)), # 13
+        ('indigo', 2, 'D#4', 'ppp', ('C', 38)), # 14
+        ('cobalt', 1, 'Eb2', 'mp'), # 15
+        ('indigo', 2, 'D#4', 'ppp', ('C', 40)), # 16
+        ('indigo', 4, 'E4', 'pppp', ('C', 42)), # 17
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -58,12 +61,12 @@ segment_maker = myrkr.makers.SegmentMaker(
         (1, Duration(1, 24)),
         (3, Duration(1, 8)),
         (4, Duration(1, 24)),
-        (8, Duration(1, 8)),
-        (9, Duration(1, 24)),
-        (10, Duration(1, 8)),
-        (11, Duration(1, 24)),
-        (14, Duration(1, 8)),
-        (15, Duration(1, 24)),
+        (9, Duration(1, 8)),
+        (10, Duration(1, 24)),
+        (11, Duration(1, 8)),
+        (12, Duration(1, 24)),
+        (15, Duration(1, 8)),
+        (16, Duration(1, 24)),
         ),
     tempo_map=(
         #(1, myrkr.materials.tempi[110]),
