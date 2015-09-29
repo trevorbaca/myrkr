@@ -21,7 +21,6 @@ preprocessor = myrkr.makers.Preprocessor(
         ('indigo', 2, 'C#4', 'pp', ('C', 28)), # 4
         ('emerald', (1, emerald_position), 'Ab3', 'f', ('A', 28)), # 5
         ('emerald', 1, 'G3', 'ff', ('A', 30)), # 6
-
         ('indigo', 2, 'C#4', 'pp', ('C', 30)), # 7
         ('indigo', 2, 'D#4', 'ppp', ('C', 32)), # 8
         ('cobalt', 1, 'Eb2', 'mp'), # 9
