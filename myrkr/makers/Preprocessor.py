@@ -114,7 +114,9 @@ class Preprocessor(object):
                 color_fingering = indicator[4]
             assert mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
-            if (name not in name_to_cursor or len(indicator) == 3):
+            reset_cursor = (name not in name_to_cursor or
+                isinstance(location, tuple))
+            if reset_cursor:
                 rhythm = self.name_to_rhythm[name]
                 rhythm = datastructuretools.CyclicTuple(rhythm)
                 cursor = datastructuretools.Cursor(
