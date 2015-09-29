@@ -12,25 +12,25 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', 3, 1), # 1
-        ('cobalt', 1, 10), # 2
+        ('indigo', (3, 1)), # 1
+        ('cobalt', (1, 10)), # 2
         ('cobalt', 1), # 3
         ('indigo', 2), # 4
 
-        ('indigo', 3, 1), # 5
-        ('cobalt', 1, 10), # 6
+        ('indigo', (3, 1)), # 5
+        ('cobalt', (1, 10)), # 6
         ('cobalt', 1), # 7
         ('indigo', 2), # 8
 
-        ('indigo', 3, 1), # 9
-        ('cobalt', 1, 10), # 10
+        ('indigo', (3, 1)), # 9
+        ('cobalt', (1, 10)), # 10
         ('cobalt', 1), # 11
         ('indigo', 2), # 12
 
-        ('indigo', 3, 1), # 13
-        ('cobalt', 1, 10), # 14
+        ('indigo', (3, 1)), # 13
+        ('cobalt', (1, 10)), # 14
         ('cobalt', 1), # 15
-        ('charcoal', 3, 0), # 16
+        ('charcoal', (3, 0)), # 16
         ('indigo', 6), # 17
     ),
     name_to_rhythm={

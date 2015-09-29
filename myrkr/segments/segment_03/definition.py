@@ -12,7 +12,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', 8, 16), # 1
+        ('indigo', (8, 16)), # 1
         ('emerald', 3), # 2
         ('indigo', 2), # 3
         ('emerald', 1), # 4
