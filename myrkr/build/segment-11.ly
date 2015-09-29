@@ -8,7 +8,14 @@
                 \bar ""
                 \newSpacingSection
                 \mark #10
-                s1 * 1/4 ^ \markup {
+                s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -73,10 +80,22 @@
             {
                 \time 3/16
                 s1 * 3/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J2]
+                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J3]
+                        }
             }
             {
                 s1 * 1/4
@@ -93,6 +112,12 @@
             {
                 \time 13/16
                 s1 * 13/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J4]
+                        }
             }
             {
                 \time 5/22
@@ -105,6 +130,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J5]
+                        }
             }
             {
                 s1 * 1/4
@@ -112,6 +143,12 @@
             {
                 \time 7/20
                 s1 * 7/20
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J6]
+                        }
             }
             {
                 \time 6/22
@@ -120,6 +157,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J7]
+                        }
             }
             {
                 s1 * 1/4
@@ -130,6 +173,12 @@
             {
                 \time 12/5
                 s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J8]
+                        }
             }
             {
                 \time 4/3
@@ -138,6 +187,12 @@
             {
                 \time 3/20
                 s1 * 3/20
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J9]
+                        }
             }
             {
                 \time 11/16
@@ -150,6 +205,12 @@
             {
                 \time 10/16
                 s1 * 5/8
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J10]
+                        }
             }
             {
                 \time 4/16
@@ -158,6 +219,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [J11]
+                        }
             }
             {
                 s1 * 1/4

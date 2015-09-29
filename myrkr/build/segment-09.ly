@@ -46,6 +46,12 @@
                 \bar ""
                 \mark #8
                 s1 * 3/7 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H1]
+                        }
             }
             {
                 \time 2/4
@@ -54,13 +60,26 @@
             {
                 \time 4/4
                 s1 * 1
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H2]
+                        }
             }
             {
                 s1 * 1
             }
             {
                 \time 3/5
-                s1 * 3/5 \stopTextSpan ^ \markup {
+                s1 * 3/5 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H3]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -84,6 +103,12 @@
             {
                 \time 4/4
                 s1 * 1
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H4]
+                        }
             }
             {
                 \time 7/4
@@ -120,6 +145,12 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 3/4 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H5]
+                        }
             }
             {
                 \time 2/5
@@ -128,13 +159,26 @@
             {
                 \time 4/4
                 s1 * 1
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H6]
+                        }
             }
             {
                 s1 * 1
             }
             {
                 \time 3/5
-                s1 * 3/5 \stopTextSpan ^ \markup {
+                s1 * 3/5 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H7]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -158,6 +202,12 @@
             {
                 \time 5/4
                 s1 * 5/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H8]
+                        }
             }
             {
                 \time 4/4
@@ -166,6 +216,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [H9]
+                        }
             }
             {
                 s1 * 1/4

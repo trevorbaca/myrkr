@@ -8,7 +8,14 @@
                 \bar ""
                 \newSpacingSection
                 \mark #9
-                s1 * 3/7 ^ \markup {
+                s1 * 3/7
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -32,6 +39,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I2]
+                        }
             }
             {
                 s1 * 1/4
@@ -45,6 +58,12 @@
             {
                 \time 3/5
                 s1 * 3/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I3]
+                        }
             }
             {
                 \time 4/7
@@ -53,6 +72,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I4]
+                        }
             }
             {
                 s1 * 1/4
@@ -66,6 +91,12 @@
             {
                 \time 3/4
                 s1 * 3/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I5]
+                        }
             }
             {
                 \time 2/5
@@ -74,6 +105,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I6]
+                        }
             }
             {
                 s1 * 1/4
@@ -87,6 +124,12 @@
             {
                 \time 3/5
                 s1 * 3/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I7]
+                        }
             }
             {
                 \time 4/4
@@ -95,6 +138,12 @@
             {
                 \time 1/4
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I8]
+                        }
             }
             {
                 s1 * 1/4
@@ -107,6 +156,12 @@
             }
             {
                 s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I9]
+                        }
             }
             {
                 s1 * 1/4
@@ -173,6 +228,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                 \newSpacingSection
                 s1 * 2/7 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I10]
+                        }
             }
             {
                 \time 2/5
@@ -206,7 +267,14 @@
                 \time 12/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
-                s1 * 12/5 \stopTextSpan ^ \markup {
+                s1 * 12/5 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [I11]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align

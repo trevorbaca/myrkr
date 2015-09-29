@@ -48,6 +48,12 @@
                 \newSpacingSection
                 \mark #13
                 s1 * 13/16 \startTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M1]
+                        }
             }
             {
                 \time 5/22
@@ -64,6 +70,12 @@
             {
                 \time 6/22
                 s1 * 3/11
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M2]
+                        }
             }
             {
                 \time 3/20
@@ -80,6 +92,12 @@
             {
                 \time 10/16
                 s1 * 5/8
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M3]
+                        }
             }
             {
                 \time 4/16
@@ -87,7 +105,14 @@
             }
             {
                 \time 3/16
-                s1 * 3/16 \stopTextSpan ^ \markup {
+                s1 * 3/16 \stopTextSpan
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M4]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -109,41 +134,114 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                 \newSpacingSection
                 s1 * 4/3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M5]
+                        }
             }
             {
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M6]
+                        }
+            }
+            {
+                \time 12/5
+                s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M7]
+                        }
+            }
+            {
+                \time 4/3
                 s1 * 4/3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M8]
+                        }
             }
             {
-                s1 * 4/3
+                \time 3/1
+                s1 * 3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M9]
+                        }
             }
             {
-                s1 * 4/3
+                \time 8/5
+                s1 * 8/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M10]
+                        }
             }
             {
-                s1 * 4/3
+                \time 12/5
+                s1 * 12/5
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M11]
+                        }
             }
             {
-                s1 * 4/3
+                \time 1/1
+                s1 * 1
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M12]
+                        }
             }
             {
-                s1 * 4/3
-            }
-            {
-                s1 * 4/3
-            }
-            {
-                \time 3/16
+                \time 1/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
-                s1 * 3/16
+                s1 * 1/16
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M13]
+                        }
             }
             {
                 \time 3/7
                 s1 * 3/7
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M14]
+                        }
             }
             {
-                \time 1/16
-                s1 * 1/16
+                \time 4/16
+                s1 * 1/4
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [M15]
+                        }
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -266,32 +364,12 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
+                \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''\breve.
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -300,7 +378,25 @@
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    r8.
+                    d''\breve.
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve.
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''1
+                }
+                {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    r16
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
@@ -309,7 +405,7 @@
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    r16
+                    r4
                     \bar "|"
                 }
             }
