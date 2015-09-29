@@ -41,10 +41,13 @@ halo_hairpins = handlertools.NoteAndChordHairpinHandler(
 
 ### MARKUP ###
 
+do_not_tongue = Markup('(do not tongue)').bold()
+do_not_tongue = Markup(do_not_tongue, direction=Up)
+
 overblow = Markup('overblow') + Markup('ad lib.', direction=Up).italic()
 overblow = Markup(overblow, direction=Up)
 
-tongue_repeated_notes = Markup('tongue repeated notes', direction=Up)
+tongue = Markup('tongue', direction=Up)
 
 ### PITCH ###
 
