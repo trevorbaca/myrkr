@@ -49,7 +49,7 @@ segment_maker = myrkr.makers.SegmentMaker(
         (1, Duration(1, 24)),
         ),
     tempo_map=(
-        (1, myrkr.materials.tempi[110]),
+        #(1, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

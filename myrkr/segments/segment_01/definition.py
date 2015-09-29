@@ -10,9 +10,10 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+cobalt_position = 0
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('cobalt', (1, 2), 'D2', 'fff'),
+        ('cobalt', (1, cobalt_position), 'D2', 'fff'),
         ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,

@@ -10,7 +10,7 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-cobalt_position = 0
+cobalt_position = 1
 emerald_position = 21
 indigo_position = 54
 preprocessor = myrkr.makers.Preprocessor(

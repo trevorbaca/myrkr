@@ -1,4 +1,4 @@
-% 2015-09-28 20:07
+% 2015-09-29 01:14
 
 \version "2.19.27"
 \language "english"
@@ -153,8 +153,7 @@
                         }
             }
             {
-                \time 2/3
-                s1 * 2/3
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -163,8 +162,7 @@
                         }
             }
             {
-                \time 12/5
-                s1 * 12/5
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -173,7 +171,6 @@
                         }
             }
             {
-                \time 4/3
                 s1 * 4/3
                     - \markup {
                         \smaller
@@ -183,8 +180,7 @@
                         }
             }
             {
-                \time 3/1
-                s1 * 3
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -193,8 +189,7 @@
                         }
             }
             {
-                \time 8/5
-                s1 * 8/5
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -203,8 +198,7 @@
                         }
             }
             {
-                \time 12/5
-                s1 * 12/5
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -213,8 +207,7 @@
                         }
             }
             {
-                \time 1/1
-                s1 * 1
+                s1 * 4/3
                     - \markup {
                         \smaller
                             \with-color
@@ -223,10 +216,10 @@
                         }
             }
             {
-                \time 1/16
+                \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
-                s1 * 1/16
+                s1 * 3/16
                     - \markup {
                         \smaller
                             \with-color
@@ -245,8 +238,8 @@
                         }
             }
             {
-                \time 4/16
-                s1 * 1/4
+                \time 1/16
+                s1 * 1/16
                     - \markup {
                         \smaller
                             \with-color
@@ -375,12 +368,32 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''1
+                    d''\breve
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
+                \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve.
+                    d''\breve
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    d''\breve
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -389,25 +402,7 @@
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve.
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve.
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''1
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    r16
+                    r8.
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/7 {
@@ -416,7 +411,7 @@
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    r4
+                    r16
                     \bar "|"
                 }
             }
