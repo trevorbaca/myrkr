@@ -12,10 +12,10 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('cobalt', 3, 0), # 1 
+        ('cobalt', (3, 0)), # 1 
         ('cobalt', 1), # 2 
         ('graphite', 4), # 3
-        ('indigo', 4, 0), # 4
+        ('indigo', (4, 0)), # 4
         ('indigo', 6), # 5
         ('graphite', 6), # 6
         ('graphite', 8), # 7

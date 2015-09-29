@@ -1,4 +1,4 @@
-% 2015-09-28 19:05
+% 2015-09-28 20:08
 
 \version "2.19.27"
 \language "english"
@@ -67,7 +67,8 @@
                         }
             }
             {
-                s1 * 4/3
+                \time 2/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -92,8 +93,8 @@
                 s1 * 1
             }
             {
-                \time 4/3
-                s1 * 4/3
+                \time 12/5
+                s1 * 12/5
                     - \markup {
                         \smaller
                             \with-color
@@ -251,7 +252,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''1
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
@@ -274,9 +275,9 @@
                     d''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
+                \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    d''\breve
+                    d''\breve.
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4

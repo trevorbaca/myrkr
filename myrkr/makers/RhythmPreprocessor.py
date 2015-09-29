@@ -39,12 +39,15 @@ class RhythmPreprocessor(object):
         selections, time_signatures, measures_per_stage = [], [], []
         for indicator in self.indicators:
             position = 0
-            if len(indicator) == 2:
-                name, count = indicator
-            elif len(indicator) == 3:
-                name, count, position = indicator
+            assert len(indicator) == 2, repr(indicator)
+            name, location = indicator
+            if isinstance(location, int):
+                count = location
+            elif isinstance(location, tuple):
+                assert len(location) == 2, repr(location)
+                count, position = location
             else:
-                raise ValueError(indicator)
+                raise TypeError(location)
             assert mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
             if (name not in name_to_cursor or len(indicator) == 3):
