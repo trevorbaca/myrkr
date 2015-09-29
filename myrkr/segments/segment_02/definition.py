@@ -94,224 +94,224 @@ segment_maker.make_music_handler(
         ],
     )
 
-segment_maker.make_music_handler(
-    scope=(cl, 1),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='Eb4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 2),
-    specifiers=[
-        Dynamic('mf'),
-        pitch_specifier(
-            source='C4',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 3),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='Eb4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 4),
-    specifiers=[
-        Dynamic('mf'),
-        pitch_specifier(
-            source='C4',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 5),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='Eb4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 6),
-    specifiers=[
-        pitch_specifier(
-            source='E4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 7),
-    specifiers=[
-        Dynamic('f'),
-        pitch_specifier(
-            source='C4',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 8),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='E4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 9),
-    specifiers=[
-        Dynamic('f'),
-        pitch_specifier(
-            source='C4 Bb3',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 10),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='E4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 11),
-    specifiers=[
-        Dynamic('f'),
-        pitch_specifier(
-            source='Bb3',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 12),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='E4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 13),
-    specifiers=[
-        Dynamic('f'),
-        pitch_specifier(
-            source='Bb3',
-            ),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 14),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='E4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 15),
-    specifiers=[
-        pitch_specifier(
-            source='F4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 16),
-    specifiers=[
-        Dynamic('ff'),
-        pitch_specifier(
-            source='Bb3',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 17),
-    specifiers=[
-        pitch_specifier(
-            source='A3',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 18),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='F4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 19),
-    specifiers=[
-        Dynamic('fff'),
-        pitch_specifier(
-            source='Ab3',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 20),
-    specifiers=[
-        Dynamic('ppp'),
-        pitch_specifier(
-            source='F4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 21),
-    specifiers=[
-        Dynamic('pppp'),
-        pitch_specifier(
-            source='F#4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
+#segment_maker.make_music_handler(
+#    scope=(cl, 1),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='Eb4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 2),
+#    specifiers=[
+#        Dynamic('mf'),
+#        pitch_specifier(
+#            source='C4',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 3),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='Eb4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 4),
+#    specifiers=[
+#        Dynamic('mf'),
+#        pitch_specifier(
+#            source='C4',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 5),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='Eb4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 6),
+#    specifiers=[
+#        pitch_specifier(
+#            source='E4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 7),
+#    specifiers=[
+#        Dynamic('f'),
+#        pitch_specifier(
+#            source='C4',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 8),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='E4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 9),
+#    specifiers=[
+#        Dynamic('f'),
+#        pitch_specifier(
+#            source='C4 Bb3',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 10),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='E4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 11),
+#    specifiers=[
+#        Dynamic('f'),
+#        pitch_specifier(
+#            source='Bb3',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 12),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='E4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 13),
+#    specifiers=[
+#        Dynamic('f'),
+#        pitch_specifier(
+#            source='Bb3',
+#            ),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 14),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='E4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 15),
+#    specifiers=[
+#        pitch_specifier(
+#            source='F4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 16),
+#    specifiers=[
+#        Dynamic('ff'),
+#        pitch_specifier(
+#            source='Bb3',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 17),
+#    specifiers=[
+#        pitch_specifier(
+#            source='A3',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 18),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='F4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 19),
+#    specifiers=[
+#        Dynamic('fff'),
+#        pitch_specifier(
+#            source='Ab3',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 20),
+#    specifiers=[
+#        Dynamic('ppp'),
+#        pitch_specifier(
+#            source='F4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )
+#
+#segment_maker.make_music_handler(
+#    scope=(cl, 21),
+#    specifiers=[
+#        Dynamic('pppp'),
+#        pitch_specifier(
+#            source='F#4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )

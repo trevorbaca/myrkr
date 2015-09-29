@@ -1,4 +1,4 @@
-% 2015-09-28 07:50
+% 2015-09-28 19:04
 
 \version "2.19.27"
 \language "english"
@@ -17,7 +17,14 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
-                s1 * 3 ^ \markup {
+                s1 * 3
+                    - \markup {
+                        \smaller
+                            \with-color
+                                #blue
+                                [1]
+                        }
+                    ^ \markup {
                     \fontsize
                         #-6
                         \general-align

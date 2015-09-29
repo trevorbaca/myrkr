@@ -82,13 +82,13 @@ segment_maker.make_music_handler(
         ],
     )
 
-segment_maker.make_music_handler(
-    scope=(cl, 1),
-    specifiers=[
-        Dynamic('pp'),
-        pitch_specifier(
-            source='C#4',
-            ),
-        make_color_fingerings('A', 0),
-        ],
-    )
+#segment_maker.make_music_handler(
+#    scope=(cl, 1),
+#    specifiers=[
+#        Dynamic('pp'),
+#        pitch_specifier(
+#            source='C#4',
+#            ),
+#        make_color_fingerings('A', 0),
+#        ],
+#    )

@@ -64,6 +64,8 @@ class SegmentMaker(makertools.SegmentMaker):
         self._music_maker_class = score_package.makers.MusicMaker
         self._initialize_time_signatures(time_signatures)
         self._score_package = score_package
+        # temporary override
+        show_stage_annotations = True
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
         self._spacing_map = spacing_map
