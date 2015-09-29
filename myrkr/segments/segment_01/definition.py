@@ -15,9 +15,13 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         ('cobalt', 1, 2),
         ),
     name_to_rhythm={
+        'charcoal': myrkr.materials.charcoal_rhythm,
         'cobalt': myrkr.materials.cobalt_rhythm,
+        'emerald': myrkr.materials.emerald_rhythm,
+        'graphite': myrkr.materials.graphite_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
+        'white': myrkr.materials.white_rhythm,
         },
     )
 
@@ -29,7 +33,7 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
 segment_maker = myrkr.makers.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
-    #show_stage_annotations=True,
+    show_stage_annotations=True,
     spacing_map=(
         (1, Duration(1, 8)),
         ),

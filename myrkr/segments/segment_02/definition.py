@@ -10,40 +10,41 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-emerald_counter = baca.makers.Counter(start=16)
-indigo_counter = baca.makers.Counter(start=0)
-
 preprocessor = myrkr.makers.RhythmPreprocessor(
     indicators=(
-        ('indigo', indigo_counter(12), indigo_counter.start), # 1
-        ('emerald', emerald_counter(1), emerald_counter.start), # 2
-        ('indigo', indigo_counter(4)), # 3
-        ('emerald', emerald_counter(1)), # 4
-        ('indigo', indigo_counter(1)), # 5
-        ('indigo', indigo_counter(3)), # 6
-        ('emerald', emerald_counter(1)), # 7
-        ('indigo', indigo_counter(2)), # 8
-        ('emerald', emerald_counter(1)), # 9
-        ('indigo', indigo_counter(4)), # 10
-        ('emerald', emerald_counter(1)), # 11
-        ('indigo', indigo_counter(2)), # 12
-        ('emerald', emerald_counter(1)), # 13
-        ('indigo', indigo_counter(2)), # 14
-        ('indigo', indigo_counter(2)), # 15
+        ('indigo', 12, 16), # 1
+        ('emerald', 1), # 2
+        ('indigo', 4), # 3
+        ('emerald', 1), # 4
+        ('indigo', 1), # 5
+        ('indigo', 3), # 6
+        ('emerald', 1), # 7
+        ('indigo', 2), # 8
+        ('emerald', 1), # 9
+        ('indigo', 4), # 10
+        ('emerald', 1), # 11
+        ('indigo', 2), # 12
+        ('emerald', 1), # 13
+        ('indigo', 2), # 14
+        ('indigo', 2), # 15
 
-        ('emerald', emerald_counter(1)), # 16
-        ('emerald', emerald_counter(2)), # 17
-        ('indigo', indigo_counter(2)), # 18
-        ('emerald', emerald_counter(4)), # 19
+        ('emerald', 1), # 16
+        ('emerald', 2), # 17
+        ('indigo', 2), # 18
+        ('emerald', 4), # 19
 
-        ('indigo', indigo_counter(2)), # 20
-        ('indigo', indigo_counter(6)), # 21
+        ('indigo', 2), # 20
+        ('indigo', 6), # 21
 
         ),
     name_to_rhythm={
+        'charcoal': myrkr.materials.charcoal_rhythm,
+        'cobalt': myrkr.materials.cobalt_rhythm,
         'emerald': myrkr.materials.emerald_rhythm,
+        'graphite': myrkr.materials.graphite_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
+        'white': myrkr.materials.white_rhythm,
         },
     )
 
@@ -55,7 +56,7 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
 segment_maker = myrkr.makers.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
-    #show_stage_annotations=True,
+    show_stage_annotations=True,
     spacing_map=(
         (1, Duration(1, 24)),
         ),

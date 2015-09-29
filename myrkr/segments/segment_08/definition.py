@@ -35,6 +35,7 @@ preprocessor = myrkr.makers.RhythmPreprocessor(
         'graphite': myrkr.materials.graphite_rhythm,
         'indigo': myrkr.materials.indigo_rhythm,
         'ochre': myrkr.materials.ochre_rhythm,
+        'white': myrkr.materials.white_rhythm,
         },
     )
 
