@@ -218,9 +218,9 @@ class SegmentMaker(makertools.SegmentMaker):
             attach(clef, staff)
 
     def _assert_valid_stage_number(self, stage_number):
-        if not 0 < stage_number <= self.stage_count:
+        if not 1 <= stage_number <= self.stage_count:
             message = 'stage number {} must be between {} and {}.'
-            message = message.format(stage_number, 0, self.stage_count)
+            message = message.format(stage_number, 1, self.stage_count)
             raise Exception(message)
 
     def _attach_fermatas(self):

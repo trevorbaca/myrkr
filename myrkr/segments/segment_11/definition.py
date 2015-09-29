@@ -22,8 +22,8 @@ preprocessor = myrkr.makers.Preprocessor(
         ('indigo', 2, 'F3', 'ff', ('C', 84)), # 6
         ('cobalt', (1, cobalt_position), 'C2', 'mp'), # 7
         ('graphite', 5, 'Eb5', 'p'), # 8
-        ('indigo', 2, 'F3', 'ff'), # 9
-        ('indigo', 2, 'E3', 'fff'), # 10
+        ('indigo', 2, 'F3', 'ff', ('C', 86)), # 9
+        ('indigo', 2, 'E3', 'fff', ('C', 88)), # 10
         ('cobalt', 1, 'C2', 'mp'), # 11
     ),
     name_to_rhythm={
