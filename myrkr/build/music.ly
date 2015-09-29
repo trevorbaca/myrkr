@@ -18,5 +18,10 @@
     \include "segment-08.ly"
     \include "segment-09.ly"
     \include "segment-10.ly"
+    \include "segment-11.ly"
+    \include "segment-12.ly"
+    \include "segment-13.ly"
+    \include "segment-14.ly"
+    \include "segment-15.ly"
     }
 }

@@ -8,14 +8,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #4
-                s1 * 5/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D1]
-                        }
-                    ^ \markup {
+                s1 * 5/22 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -43,32 +36,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D2]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D3]
-                        }
             }
             {
                 \time 6/22
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D4]
-                        }
             }
             {
                 \time 3/20
@@ -105,12 +80,6 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 5/22 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D5]
-                        }
             }
             {
                 \time 8/16
@@ -123,32 +92,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D6]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D7]
-                        }
             }
             {
                 \time 6/22
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D8]
-                        }
             }
             {
                 \time 3/20
@@ -157,12 +108,6 @@
             {
                 \time 5/22
                 s1 * 5/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D9]
-                        }
             }
             {
                 \time 8/16
@@ -175,32 +120,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D10]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D11]
-                        }
             }
             {
                 \time 6/22
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D12]
-                        }
             }
             {
                 \time 3/20
@@ -208,14 +135,7 @@
             }
             {
                 \time 5/22
-                s1 * 5/22 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D13]
-                        }
-                    ^ \markup {
+                s1 * 5/22 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -243,32 +163,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D14]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D15]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D16]
-                        }
             }
             {
                 s1 * 1
@@ -279,12 +181,6 @@
             {
                 \time 6/22
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D17]
-                        }
             }
             {
                 \time 3/20

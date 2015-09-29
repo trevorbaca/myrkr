@@ -1,4 +1,4 @@
-% 2015-09-28 15:18
+% 2015-09-28 19:04
 
 \version "2.19.27"
 \language "english"
@@ -277,200 +277,74 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. \pp
+                    d''8.
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''4
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''4
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8 [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''8 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''16
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. ]
+                    d''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8. [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8 ]
+                    d''8 ]
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8 [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''8 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8.
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''8.
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16 ]
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8.
+                    d''8.
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''4
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''4
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''8. [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16 ]
+                    d''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8 [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16 ]
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''16 ]
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8. [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8
+                    d''8
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''8
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8.
+                    d''8.
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16 ]
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''16 [
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    d''16 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    ds''8. ]
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    d''8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {

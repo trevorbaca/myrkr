@@ -8,14 +8,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #5
-                s1 * 5/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E1]
-                        }
-                    ^ \markup {
+                s1 * 5/22 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -43,32 +36,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E2]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E3]
-                        }
             }
             {
                 \time 6/22
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E4]
-                        }
             }
             {
                 \time 3/20
@@ -77,12 +52,6 @@
             {
                 \time 5/22
                 s1 * 5/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E5]
-                        }
             }
             {
                 \time 8/16
@@ -95,32 +64,14 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E6]
-                        }
             }
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E7]
-                        }
             }
             {
                 \time 7/4
                 s1 * 7/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E8]
-                        }
             }
             {
                 \time 4/4
@@ -131,14 +82,7 @@
             }
             {
                 \time 6/22
-                s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E9]
-                        }
-                    ^ \markup {
+                s1 * 3/11 ^ \markup {
                     \fontsize
                         #-6
                         \general-align

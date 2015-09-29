@@ -1,4 +1,4 @@
-% 2015-09-28 18:26
+% 2015-09-28 19:04
 
 \version "2.19.27"
 \language "english"
@@ -602,7 +602,7 @@
                     d''4.
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     d''4
-                    \bar "|."
+                    \bar "|"
                 }
             }
         }

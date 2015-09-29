@@ -1,4 +1,4 @@
-% 2015-09-28 18:44
+% 2015-09-28 19:05
 
 \version "2.19.27"
 \language "english"
@@ -412,7 +412,7 @@
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     r16
-                    \bar "|."
+                    \bar "|"
                 }
             }
         }

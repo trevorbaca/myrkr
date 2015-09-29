@@ -1,14 +1,3 @@
-% 2015-09-28 19:05
-
-\version "2.19.27"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "../../stylesheets/stylesheet.ily"
-\include "../../stylesheets/nonfirst-segment.ily"
-
-\score {
     \context Score = "Score" \with {
         currentBarNumber = #390
     } <<
@@ -19,14 +8,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #12
-                s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L1]
-                        }
-                    ^ \markup {
+                s1 * 12/5 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -134,4 +116,3 @@
             }
         }
     >>
-}
