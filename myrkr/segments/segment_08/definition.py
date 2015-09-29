@@ -27,7 +27,7 @@ preprocessor = myrkr.makers.Preprocessor(
         ('indigo', 2, 'G3', 'mf', ('C', 74)), # 11
         ('graphite', 3, 'Eb4'), # 12
         ('indigo', 2, 'G3', 'mf', ('C', 76)), # 13
-        ('indigo', 2, 'F#3', 'f'), # 14
+        ('indigo', 2, 'F#3', 'f', ('C', 78)), # 14
         ('graphite', 3, 'Eb4'), # 15
         ('white', (1, 0)), # 16
         ('graphite', 4, 'C3 Eb3 G3 Bb3', 'pppp'), # 17
