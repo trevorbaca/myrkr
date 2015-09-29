@@ -18,7 +18,6 @@ preprocessor = myrkr.makers.Preprocessor(
         ('charcoal', 2, 'A4 Bb4 A4 G#4', 'mf'), # 3 
         ('emerald', 1, 'G3', 'ff', ('A', 36)), # 4
         ('emerald', 1, 'F#3', 'fff', ('A', 38)), # 5
-
         ('charcoal', 2, 'G4 Ab4 G4 F#4', 'f'), # 6 
         ('emerald', 2, 'F#3', 'fff', ('A', 40)), # 7
         ('emerald', 4, 'E3', 'fff', ('A', 42)), # 8
