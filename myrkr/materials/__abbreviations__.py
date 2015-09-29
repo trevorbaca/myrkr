@@ -44,6 +44,8 @@ halo_hairpins = handlertools.NoteAndChordHairpinHandler(
 overblow = Markup('overblow') + Markup('ad lib.', direction=Up).italic()
 overblow = Markup(overblow, direction=Up)
 
+tongue_repeated_notes = Markup('tongue repeated notes', direction=Up)
+
 ### PITCH ###
 
 color_fingering_1 = baca.makers.ColorFingeringSpecifier(

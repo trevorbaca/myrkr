@@ -97,7 +97,7 @@ class Preprocessor(object):
             pitch = None
             dynamic = None
             color_fingering = None
-            assert len(indicator) in (2, 4, 5), repr(indicator)
+            assert len(indicator) in (2, 3, 4, 5), repr(indicator)
             name = indicator[0]
             location = indicator[1]
             if isinstance(location, int):
@@ -107,10 +107,14 @@ class Preprocessor(object):
                 count, position = location
             else:
                 raise TypeError(location)
-            if 4 <= len(indicator):
+            if len(indicator) == 3:
+                pitch = indicator[2]
+            elif len(indicator) == 4:
                 pitch = indicator[2]
                 dynamic = indicator[3]
-            if len(indicator) == 5:
+            elif len(indicator) == 5:
+                pitch = indicator[2]
+                dynamic = indicator[3]
                 color_fingering = indicator[4]
             assert mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
@@ -166,7 +170,7 @@ class Preprocessor(object):
     def _validate_indicators(self):
         for indicator in self.indicators:
             assert isinstance(indicator, tuple), repr(indicator)
-            assert len(indicator) in (2, 4, 5), repr(indicator)
+            assert 2 <= len(indicator) <= 5, repr(indicator)
             assert isinstance(indicator[0], str), repr(indicator)
 
     ### PUBLIC PROPERTIES ###
