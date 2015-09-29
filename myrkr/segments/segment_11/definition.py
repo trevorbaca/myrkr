@@ -10,20 +10,21 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+cobalt_position = 29
+indigo_position = 118
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('graphite', 16),
-        ('white', 1),
-        ('graphite', 5),
-        ('indigo', 3),
-        ('graphite', 2),
-        ('indigo', 2),
-        ('graphite', 3),
-        ('cobalt', 2),
-        ('indigo', 3),
-        ('indigo', 2),
-        ('graphite', 3),
-
+        ('graphite', 9, 'C3 Eb3 G3 Bb3 D4 F4 A4 C5 Eb5', 'pppp'), # 1
+        ('graphite', 5, 'Eb5', 'p'), # 2
+        ('indigo', (2, indigo_position), 'F#3', 'f', ('C', 80)), # 3
+        ('indigo', 2, 'F3', 'ff', ('C', 82)), # 4
+        ('graphite', 3, 'Eb5', 'p'), # 5
+        ('indigo', 2, 'F3', 'ff', ('C', 84)), # 6
+        ('cobalt', (1, cobalt_position), 'C2', 'mp'), # 7
+        ('graphite', 5, 'Eb5', 'p'), # 8
+        ('indigo', 2, 'F3', 'ff'), # 9
+        ('indigo', 2, 'E3', 'fff'), # 10
+        ('cobalt', 1, 'C2', 'mp'), # 11
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -47,6 +48,12 @@ segment_maker = myrkr.makers.SegmentMaker(
     show_stage_annotations=True,
     spacing_map=(
         (1, Duration(1, 12)),
+        (3, Duration(1, 24)),
+        (5, Duration(1, 12)),
+        (6, Duration(1, 24)),
+        (7, Duration(1, 12)),
+        (9, Duration(1, 24)),
+        (11, Duration(1, 12)),
         ),
     tempo_map=(
         (1, myrkr.materials.tempi[110]),
@@ -82,5 +89,31 @@ segment_maker.make_music_handler(
     scope=(cl, (1, segment_maker.stage_count)),
     specifiers=[
         dynamic_line_spanner_staff_padding(4),
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 1),
+    specifiers=[
+        baca.makers.GlissandoSpecifier(
+            patterns=[
+                rhythmmakertools.select_all(),
+                rhythmmakertools.silence_last(1),
+                ],
+            ),
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 2),
+    specifiers=[
+        tenuti,
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 5),
+    specifiers=[
+        tenuti,
         ],
     )
