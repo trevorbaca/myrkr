@@ -10,7 +10,7 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-preprocessor = myrkr.makers.RhythmPreprocessor(
+preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('cobalt', (3, 0)), # 1 
         ('cobalt', 1), # 2 

@@ -6,7 +6,7 @@ from experimental.tools import makertools
 import myrkr
 
 
-class RhythmPreprocessor(object):
+class Preprocessor(object):
     r'''Rhythm preprocessor.
     '''
 
