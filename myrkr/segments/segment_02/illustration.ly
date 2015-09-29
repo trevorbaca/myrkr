@@ -1,4 +1,4 @@
-% 2015-09-28 23:27
+% 2015-09-28 23:35
 
 \version "2.19.27"
 \language "english"
@@ -832,7 +832,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    fs''8 \ppp [
+                    fs''8 [
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     fs''8. ]
                         ^ \markup {
@@ -1150,7 +1150,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    g''8. \ppp [
+                    g''8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1205,7 +1205,7 @@
                 }
                 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    b'2 \ff
+                    b'2
                     \once \override DynamicLineSpanner #'staff-padding = #4
                     b'2
                 }
