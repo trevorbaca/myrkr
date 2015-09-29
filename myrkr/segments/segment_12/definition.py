@@ -41,6 +41,8 @@ preprocessor = myrkr.makers.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
+preprocessor.make_music_handlers(segment_maker)
+
 segment_maker = myrkr.makers.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,

@@ -7,7 +7,7 @@ import myrkr
 
 
 class Preprocessor(object):
-    r'''Rhythm preprocessor.
+    r'''Preprocessor.
     '''
 
     ### CLASS VARIABLES ###
@@ -58,6 +58,9 @@ class Preprocessor(object):
             dynamic = Dynamic(dynamic)
             specifiers.append(dynamic)
         if color_fingering is not None:
+            assert len(color_fingering) == 2
+            method = myrkr.materials.__abbreviations__.make_color_fingerings
+            color_fingering = method(*color_fingering)
             specifiers.append(color_fingering)
         bundle = (stage_number, specifiers)
         self._music_handler_bundles.append(bundle)
