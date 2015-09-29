@@ -12,7 +12,7 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('cobalt', (1, 2)),
+        ('cobalt', (1, 2), 'D2', 'fff'),
         ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -38,7 +38,7 @@ segment_maker = myrkr.makers.SegmentMaker(
         (1, Duration(1, 8)),
         ),
     tempo_map=(
-        (1, myrkr.materials.tempi[48]),
+        (1, myrkr.materials.tempi[44]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -65,12 +65,12 @@ for stage_index in range(segment_maker.stage_count):
 ############################### MUSIC-HANDLERS ################################
 ###############################################################################
 
+preprocessor.make_music_handlers(segment_maker)
+
 segment_maker.make_music_handler(
-    scope=(cl, 1),
+    scope=(cl, segment_maker.stage_count),
     specifiers=[
-        Dynamic('fff'),
-        pitch_specifier(
-            source='D2',
-            ),
+        dynamic_line_spanner_staff_padding(4),
+        overblow,
         ],
     )

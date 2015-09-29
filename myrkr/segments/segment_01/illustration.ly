@@ -1,4 +1,4 @@
-% 2015-09-28 19:04
+% 2015-09-28 20:40
 
 \version "2.19.27"
 \language "english"
@@ -37,7 +37,7 @@
                     \upright
                         {
                             =
-                            48
+                            44
                         }
                     }
             }
@@ -64,7 +64,13 @@
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve. \fff
+                        ^ \markup {
+                            overblow
+                            \italic
+                                "ad lib."
+                            }
                     \bar "|"
                 }
             }
