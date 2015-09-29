@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 charcoal_position = 0
-cobalt_position = 4
+cobalt_position = 5
 emerald_position = 25
 indigo_position = 80
 preprocessor = myrkr.makers.Preprocessor(
@@ -75,7 +75,7 @@ segment_maker = myrkr.makers.SegmentMaker(
         (17, Duration(1, 24)),
         ),
     tempo_map=(
-        (1, myrkr.materials.tempi[110]),
+        #(1, myrkr.materials.tempi[110]),
         (5, Ritardando()),
         (13, myrkr.materials.tempi[55]),
         ),

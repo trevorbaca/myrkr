@@ -1,4 +1,4 @@
-% 2015-09-29 00:21
+% 2015-09-29 01:08
 
 \version "2.19.27"
 \language "english"
@@ -26,22 +26,6 @@
                                 #blue
                                 [B1]
                         }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
-                    }
             }
             {
                 \time 5/22
