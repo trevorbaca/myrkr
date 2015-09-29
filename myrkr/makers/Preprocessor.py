@@ -159,7 +159,7 @@ class Preprocessor(object):
         self._music_by_stage = selections
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
-            message = '{} position: {} ...'
+            message = '{} position {} ...'
             message = message.format(name, cursor.position)
             print message
 

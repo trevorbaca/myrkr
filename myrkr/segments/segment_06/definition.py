@@ -20,8 +20,8 @@ preprocessor = myrkr.makers.Preprocessor(
         ('cobalt', 1, 'E2', 'mp'), # 3 
         ('indigo', 2, 'A3', 'mp', ('C', 60)), # 4
 
-        ('indigo', (3, 1), 'B3', 'mf', ('C', 62)), # 5
-        ('cobalt', (1, 10), 'E2', 'mp'), # 6
+        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 62)), # 5
+        ('cobalt', (1, cobalt_position), 'E2', 'mp'), # 6
         ('cobalt', 1, 'Eb2', 'mp'), # 7
         ('charcoal', (3, charcoal_position), 'C5 Db5 C5 B4', 'pp'), # 8
         ('indigo', 6, 'B3', 'f', ('C', 64)), # 9
@@ -36,6 +36,9 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
+# Charcoal position 6 ...
+# Cobalt position 9 ...
+# Indigo position 98 ...
 
 
 ###############################################################################
