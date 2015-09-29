@@ -10,22 +10,26 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+cobalt_position = 0
+emerald_position = 21
+indigo_position = 54
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', 8), # 1
-        ('cobalt', (1, 3)), # 2
-        ('indigo', 2), # 3
-        ('emerald', 2), # 4
-        ('indigo', 2), # 5
+        ('indigo', (2, indigo_position), 'C4', 'p', ('C', 0)), # 1
+        ('indigo', (6, indigo_position), 'C#4', 'pp', ('C', 2)), # 2
+        ('cobalt', (1, cobalt_position), 'Eb2', 'p'), # 3
+        ('indigo', 2), # 4
+        ('emerald', (2, emerald_position)), # 5
         ('indigo', 2), # 6
-        ('cobalt', 1), # 7
-        ('indigo', 2), # 8
-        ('cobalt', 1), # 9
-        ('indigo', 2), # 10
-        ('emerald', 2), # 11
-        ('indigo', 2), # 12
-        ('cobalt', 1), # 13
-        ('indigo', 6), # 14
+        ('indigo', 2), # 7
+        ('cobalt', 1, 'Eb2', 'p'), # 8
+        ('indigo', 2), # 9
+        ('cobalt', 1, 'Eb2', 'p'), # 10
+        ('indigo', 2), # 11
+        ('emerald', 2), # 12
+        ('indigo', 2), # 13
+        ('cobalt', 1, 'Eb2', 'p'), # 14
+        ('indigo', 6), # 15
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -37,6 +41,9 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
+# Cobalt position: 4 ...
+# Emerald position: 25 ...
+# Indigo position: 80 ...
 
 
 ###############################################################################
@@ -49,9 +56,17 @@ segment_maker = myrkr.makers.SegmentMaker(
     show_stage_annotations=True,
     spacing_map=(
         (1, Duration(1, 24)),
+        (3, Duration(1, 8)),
+        (4, Duration(1, 24)),
+        (8, Duration(1, 8)),
+        (9, Duration(1, 24)),
+        (10, Duration(1, 8)),
+        (11, Duration(1, 24)),
+        (14, Duration(1, 8)),
+        (15, Duration(1, 24)),
         ),
     tempo_map=(
-        (1, myrkr.materials.tempi[110]),
+        #(1, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

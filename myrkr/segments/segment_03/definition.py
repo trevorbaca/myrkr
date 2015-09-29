@@ -10,10 +10,12 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
+emerald_position = 13
+indigo_position = 42
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', (8, 16), 'C4', 'p', ('C', 0)), # 1
-        ('emerald', 3, 'B3', 'mf', ('A', 0)), # 2
+        ('indigo', (8, indigo_position), 'C4', 'p', ('C', 0)), # 1
+        ('emerald', (3, emerald_position), 'B3', 'mf', ('A', 0)), # 2
         ('indigo', 2, 'C4', 'p', ('C', 2)), # 3
         ('emerald', 1, 'B3', 'mf', ('A', 2)), # 4
         ('emerald', 1, 'A3', 'mf', ('A', 4)), # 5
@@ -31,6 +33,8 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
+# Emerald position: 21 ...
+# Indigo position: 54 ...
 
 
 ###############################################################################
