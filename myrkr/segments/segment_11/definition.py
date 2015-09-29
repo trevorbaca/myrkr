@@ -76,6 +76,8 @@ for stage_index in range(segment_maker.stage_count):
 ############################### MUSIC-HANDLERS ################################
 ###############################################################################
 
+preprocessor.make_music_handlers(segment_maker)
+
 segment_maker.make_music_handler(
     scope=(cl, (1, segment_maker.stage_count)),
     specifiers=[

@@ -12,14 +12,14 @@ from myrkr.materials.__abbreviations__ import *
 
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('indigo', (12, 16), 'Eb4', 'ppp', make_color_fingerings('A', 0)), # 1
-        ('emerald', 1), # 2
-        ('indigo', 4), # 3
-        ('emerald', 1), # 4
-        ('indigo', 1), # 5
-        ('indigo', 3), # 6
-        ('emerald', 1), # 7
-        ('indigo', 2), # 8
+        ('indigo', (12, 16), 'Eb4', 'ppp', ('C', 0)), # 1
+        ('emerald', 1, 'C4', 'mf', ('A', 0)), # 2
+        ('indigo', 4, 'Eb4', 'ppp', ('C', 1)), # 3
+        ('emerald', 1, 'C4', 'mf'), # 4
+        ('indigo', 1, 'Eb4', 'ppp', ('C', 2)), # 5
+        ('indigo', 3, 'E4', 'ppp', ('C', 3)), # 6
+        ('emerald', 1, 'C4', 'f'), # 7
+        ('indigo', 2, 'E4', 'ppp', ('C', 4)), # 8
         ('emerald', 1), # 9
         ('indigo', 4), # 10
         ('emerald', 1), # 11
@@ -97,79 +97,6 @@ segment_maker.make_music_handler(
         ],
     )
 
-#segment_maker.make_music_handler(
-#    scope=(cl, 1),
-#    specifiers=[
-#        Dynamic('ppp'),
-#        pitch_specifier(
-#            source='Eb4',
-#            ),
-#        make_color_fingerings('A', 0),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 2),
-#    specifiers=[
-#        Dynamic('mf'),
-#        pitch_specifier(
-#            source='C4',
-#            ),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 3),
-#    specifiers=[
-#        Dynamic('ppp'),
-#        pitch_specifier(
-#            source='Eb4',
-#            ),
-#        make_color_fingerings('A', 0),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 4),
-#    specifiers=[
-#        Dynamic('mf'),
-#        pitch_specifier(
-#            source='C4',
-#            ),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 5),
-#    specifiers=[
-#        Dynamic('ppp'),
-#        pitch_specifier(
-#            source='Eb4',
-#            ),
-#        make_color_fingerings('A', 0),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 6),
-#    specifiers=[
-#        pitch_specifier(
-#            source='E4',
-#            ),
-#        make_color_fingerings('A', 0),
-#        ],
-#    )
-#
-#segment_maker.make_music_handler(
-#    scope=(cl, 7),
-#    specifiers=[
-#        Dynamic('f'),
-#        pitch_specifier(
-#            source='C4',
-#            ),
-#        ],
-#    )
-#
 #segment_maker.make_music_handler(
 #    scope=(cl, 8),
 #    specifiers=[
