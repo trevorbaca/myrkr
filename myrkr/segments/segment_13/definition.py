@@ -32,6 +32,7 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
+# Cobalt position 38 ...
 
 
 ###############################################################################
