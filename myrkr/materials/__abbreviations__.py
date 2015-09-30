@@ -41,6 +41,11 @@ halo_hairpins = handlertools.NoteAndChordHairpinHandler(
 
 ### MARKUP ###
 
+vowel_a = Markup('“A”', direction=Up)
+vowel_i = Markup('“I”', direction=Up)
+vowel_o = Markup('“O”', direction=Up)
+vowel_u = Markup('“U”', direction=Up)
+
 do_not_tongue = Markup('(do not tongue)').bold()
 do_not_tongue = Markup(do_not_tongue, direction=Up)
 
