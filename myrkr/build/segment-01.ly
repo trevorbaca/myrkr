@@ -7,14 +7,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
-                s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [1]
-                        }
-                    ^ \markup {
+                s1 * 12/5 ^ \markup {
                     \fontsize
                         #-6
                         \general-align

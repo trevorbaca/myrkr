@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #146
+        currentBarNumber = #142
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -9,28 +9,6 @@
                 \newSpacingSection
                 \mark #5
                 s1 * 3/20
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E1]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            55
-                        }
-                    }
             }
             {
                 \time 11/16
@@ -45,34 +23,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E2]
-                        }
-            }
-            {
-                \time 2/3
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E3]
-                        }
             }
             {
                 \time 10/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E4]
-                        }
             }
             {
                 \time 4/16
@@ -81,12 +37,6 @@
             {
                 \time 3/20
                 s1 * 3/20
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E5]
-                        }
             }
             {
                 \time 11/16
@@ -101,32 +51,10 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E6]
-                        }
-            }
-            {
-                \time 2/3
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E7]
-                        }
             }
             {
                 \time 7/4
                 s1 * 7/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E8]
-                        }
             }
             {
                 \time 4/4
@@ -139,14 +67,7 @@
                 \time 10/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
-                s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [E9]
-                        }
-                    ^ \markup {
+                s1 * 5/8 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -275,10 +196,6 @@
                 \times 4/5 {
                     f\breve \mp
                 }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    fs1
-                }
                 {
                     b'8. [
                     b'8
@@ -393,10 +310,6 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     fs\breve \mp
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    f1
                 }
                 {
                     d'''2. \pp \glissando

@@ -110,14 +110,14 @@ segment_maker.make_music_handler(
     )
 
 segment_maker.make_music_handler(
-    scope=(cl, (6, 7)),
+    scope=(cl, 6),
     specifiers=[
         pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
-    scope=(cl, 9),
+    scope=(cl, 8),
     specifiers=[
         pervasive_glissandi,
         ],

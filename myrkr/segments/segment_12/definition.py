@@ -79,7 +79,7 @@ segment_maker = myrkr.makers.SegmentMaker(
         (22, Duration(1, 12)),
         ),
     tempo_map=(
-        (1, myrkr.materials.tempi[110]),
+        #(1, myrkr.materials.tempi[110]),
         (14, Ritardando()),
         (20, myrkr.materials.tempi[55]),
         ),

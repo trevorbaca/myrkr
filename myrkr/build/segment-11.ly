@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #283
+        currentBarNumber = #277
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -9,28 +9,6 @@
                 \newSpacingSection
                 \mark #10
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J1]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
-                    }
             }
             {
                 s1 * 1/4
@@ -58,12 +36,6 @@
             }
             {
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J2]
-                        }
             }
             {
                 s1 * 1/4
@@ -82,12 +54,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J3]
-                        }
             }
             {
                 \time 4/18
@@ -96,12 +62,6 @@
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J4]
-                        }
             }
             {
                 \time 4/22
@@ -112,12 +72,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J5]
-                        }
             }
             {
                 s1 * 1/4
@@ -130,38 +84,20 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J6]
-                        }
             }
             {
                 \time 5/16
                 s1 * 5/16
             }
             {
-                \time 1/1
+                \time 8/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
-                s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J7]
-                        }
+                s1 * 8/5
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J8]
-                        }
             }
             {
                 s1 * 1/4
@@ -180,12 +116,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 7/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J9]
-                        }
             }
             {
                 \time 3/16
@@ -194,28 +124,16 @@
             {
                 \time 13/16
                 s1 * 13/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J10]
-                        }
             }
             {
                 \time 5/22
                 s1 * 5/22
             }
             {
-                \time 8/5
+                \time 12/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [J11]
-                        }
+                s1 * 12/5
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -413,8 +331,9 @@
                                         4
                             }
                 }
-                {
-                    d1 \mp
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    d\breve \mp
                 }
                 {
                     f'''4 -\tenuto \pppp
@@ -525,7 +444,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d\breve \mp
+                    d\breve. \mp
                     \bar "|"
                 }
             }

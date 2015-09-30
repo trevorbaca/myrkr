@@ -1,4 +1,4 @@
-% 2015-09-30 01:25
+% 2015-09-30 01:49
 
 \version "2.19.27"
 \language "english"
@@ -20,38 +20,10 @@
                 \newSpacingSection
                 \mark #9
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I1]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
-                    }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I2]
-                        }
             }
             {
                 s1 * 1/4
@@ -65,22 +37,10 @@
             {
                 \time 12/5
                 s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I3]
-                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I4]
-                        }
             }
             {
                 s1 * 1/4
@@ -91,22 +51,10 @@
             {
                 \time 1/1
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I5]
-                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I6]
-                        }
             }
             {
                 s1 * 1/4
@@ -123,22 +71,10 @@
             {
                 \time 8/5
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I7]
-                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I8]
-                        }
             }
             {
                 s1 * 1/4
@@ -190,12 +126,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                 \newSpacingSection
                 s1 * 8/5 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I9]
-                        }
             }
             {
                 \time 2/3
@@ -211,14 +141,7 @@
             }
             {
                 \time 2/3
-                s1 * 2/3 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I10]
-                        }
-                    ^ \markup {
+                s1 * 2/3 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align

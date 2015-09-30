@@ -1,133 +1,21 @@
     \context Score = "Score" \with {
-        currentBarNumber = #256
+        currentBarNumber = #250
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 1/1
+                \time 8/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \bar ""
                 \newSpacingSection
                 \mark #9
-                s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I1]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
-                    }
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I2]
-                        }
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                \time 8/5
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I3]
-                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I4]
-                        }
             }
             {
                 s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I5]
-                        }
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I6]
-                        }
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                s1 * 1/4
-            }
-            {
-                \time 2/3
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I7]
-                        }
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I8]
-                        }
             }
             {
                 s1 * 1/4
@@ -137,6 +25,54 @@
             }
             {
                 \time 12/5
+                s1 * 12/5
+            }
+            {
+                \time 1/4
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 1/1
+                s1 * 1
+            }
+            {
+                \time 1/4
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 8/5
+                s1 * 8/5
+            }
+            {
+                \time 1/4
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                s1 * 1/4
+            }
+            {
+                \time 8/5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = -2
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -178,17 +114,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                 \newSpacingSection
-                s1 * 12/5 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I9]
-                        }
-            }
-            {
-                \time 4/3
-                s1 * 4/3
+                s1 * 8/5 \startTextSpan
             }
             {
                 \time 2/3
@@ -200,14 +126,11 @@
             }
             {
                 \time 4/3
-                s1 * 4/3 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [I10]
-                        }
-                    ^ \markup {
+                s1 * 4/3
+            }
+            {
+                \time 2/3
+                s1 * 2/3 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -225,16 +148,16 @@
                     }
             }
             {
-                \time 3/1
-                s1 * 3
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-            }
-            {
                 \time 12/5
                 s1 * 12/5
+            }
+            {
+                \time 4/3
+                s1 * 4/3
+            }
+            {
+                \time 3/1
+                s1 * 3
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -258,8 +181,9 @@
                     }
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                {
-                    e1 \mp
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    e\breve \mp
                 }
                 {
                     e''4 \pppp \glissando
@@ -275,20 +199,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    e\breve \mp
-                }
-                {
-                    d'''4 -\tenuto \pppp
-                }
-                {
-                    d'''4 -\tenuto
-                }
-                {
-                    d'''4 -\tenuto
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    e\breve \mp
+                    e\breve. \mp
                 }
                 {
                     d'''4 -\tenuto \pppp
@@ -300,13 +211,6 @@
                     d'''4 -\tenuto
                 }
                 {
-                    d'''4 -\tenuto
-                }
-                {
-                    d'''4 -\tenuto
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
                     e1 \mp
                 }
                 {
@@ -318,12 +222,27 @@
                 {
                     d'''4 -\tenuto
                 }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    e\breve. -\tenuto
+                {
+                    d'''4 -\tenuto
+                }
+                {
+                    d'''4 -\tenuto
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
+                \times 4/5 {
+                    e\breve \mp
+                }
+                {
+                    d'''4 -\tenuto \pppp
+                }
+                {
+                    d'''4 -\tenuto
+                }
+                {
+                    d'''4 -\tenuto
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
                     e\breve -\tenuto
                 }
                 \tweak #'edge-height #'(0.7 . 0)
@@ -336,17 +255,21 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    ef\breve \fff ^ \markup { overblow }
+                    e\breve -\tenuto
                 }
-                {
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    ef1 \fff ^ \markup { overblow }
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
                     ef\breve.
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
+                \times 2/3 {
                     ef\breve
                 }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
+                {
                     ef\breve.
                     \bar "|"
                 }

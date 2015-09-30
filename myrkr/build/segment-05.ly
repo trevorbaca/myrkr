@@ -9,12 +9,6 @@
                 \newSpacingSection
                 \mark #4
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D1]
-                        }
             }
             {
                 \time 5/16
@@ -29,34 +23,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D2]
-                        }
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D3]
-                        }
             }
             {
                 \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D4]
-                        }
             }
             {
                 \time 13/16
@@ -93,12 +65,6 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 5/8 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D5]
-                        }
             }
             {
                 \time 5/16
@@ -113,34 +79,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D6]
-                        }
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D7]
-                        }
             }
             {
                 \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D8]
-                        }
             }
             {
                 \time 13/16
@@ -149,12 +93,6 @@
             {
                 \time 10/16
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D9]
-                        }
             }
             {
                 \time 5/16
@@ -169,34 +107,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D10]
-                        }
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D11]
-                        }
             }
             {
                 \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D12]
-                        }
             }
             {
                 \time 13/16
@@ -204,14 +120,7 @@
             }
             {
                 \time 10/16
-                s1 * 5/8 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D13]
-                        }
-                    ^ \markup {
+                s1 * 5/8 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -241,32 +150,10 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D14]
-                        }
-            }
-            {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D15]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D16]
-                        }
             }
             {
                 s1 * 1
@@ -279,12 +166,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [D17]
-                        }
             }
             {
                 \time 13/16
@@ -395,10 +276,6 @@
                 }
                 {
                     f1 \mp
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    fs\breve
                 }
                 {
                     b'8 [
@@ -519,11 +396,7 @@
                             }
                 }
                 {
-                    fs1 \mp
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    f\breve
+                    f1 \mp
                 }
                 {
                     cs''8 \f [
@@ -632,10 +505,6 @@
                 {
                     f1 \mp
                 }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    fs\breve
-                }
                 {
                     d''8 \fff [
                     d''16 ]
@@ -734,11 +603,7 @@
                     ds''8. ]
                 }
                 {
-                    fs1 \mp
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    f\breve
+                    f1 \mp
                 }
                 {
                     e'''2 \pppp \glissando

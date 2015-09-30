@@ -1,21 +1,14 @@
     \context Score = "Score" \with {
-        currentBarNumber = #362
+        currentBarNumber = #356
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 4/3
+                \time 2/3
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
                 \mark #12
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L1]
-                        }
-                    ^ \markup {
+                s1 * 2/3 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -33,67 +26,25 @@
                     }
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L2]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L3]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L4]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L5]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L6]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L7]
-                        }
+                s1 * 2/3
             }
             {
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L8]
-                        }
+                s1 * 2/3
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -119,35 +70,35 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve \fff ^ \markup { overblow }
+                    cs1 \fff ^ \markup { overblow }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    cs\breve
+                    cs1
                     \bar "|"
                 }
             }
