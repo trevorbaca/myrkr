@@ -23,7 +23,7 @@ metadata = datastructuretools.TypedOrderedDict(
         ('end_tempo', 110),
         ('end_time_signature', '4/4'),
         ('first_bar_number', 389),
-        ('measure_count', 22),
+        ('measure_count', 34),
         ('segment_count', 15),
         ('segment_number', 15),
         ]
