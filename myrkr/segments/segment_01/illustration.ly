@@ -1,4 +1,4 @@
-% 2015-09-30 00:23
+% 2015-09-30 01:01
 
 \version "2.19.27"
 \language "english"
@@ -65,7 +65,6 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve. \fff ^ \markup { overblow }
                     \bar "|"
                 }

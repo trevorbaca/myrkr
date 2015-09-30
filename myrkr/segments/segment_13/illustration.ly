@@ -1,4 +1,4 @@
-% 2015-09-29 18:11
+% 2015-09-30 01:30
 
 \version "2.19.27"
 \language "english"
@@ -10,16 +10,16 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #361
+        currentBarNumber = #356
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 4/3
+                \time 2/3
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \bar ""
                 \newSpacingSection
                 \mark #12
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -44,7 +44,7 @@
                     }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -53,7 +53,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -62,7 +62,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -71,7 +71,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -80,7 +80,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -89,7 +89,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -98,7 +98,7 @@
                         }
             }
             {
-                s1 * 4/3
+                s1 * 2/3
                     - \markup {
                         \smaller
                             \with-color
@@ -130,43 +130,35 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve \fff ^ \markup { overblow }
+                    cs1 \fff ^ \markup { overblow }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    cs\breve
+                    cs1
                     \bar "|"
                 }
             }

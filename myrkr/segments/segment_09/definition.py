@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 charcoal_position = 12
-cobalt_position = 13
+cobalt_position = 11
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'D2', 'mp'), # 1
@@ -36,7 +36,7 @@ preprocessor = myrkr.makers.Preprocessor(
         },
     )
 # Charcoal position 24 ...
-# Cobalt position 17 ...
+# Cobalt position 15 ...
 
 
 ###############################################################################
@@ -49,7 +49,6 @@ segment_maker = myrkr.makers.SegmentMaker(
     show_stage_annotations=True,
     spacing_map=(
         (1, Duration(1, 8)),
-        (9, Duration(1, 12)),
         ),
     tempo_map=(
         (1, myrkr.materials.tempi[110]),
@@ -86,68 +85,36 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
-
-segment_maker.make_music_handler(
     scope=(cl, 2),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 4),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 6),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 8),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 10),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )

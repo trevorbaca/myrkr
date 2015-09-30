@@ -80,44 +80,22 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(5),
-        ],
-    )
-
-segment_maker.make_music_handler(
     scope=(cl, 1),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 3),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 6),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )

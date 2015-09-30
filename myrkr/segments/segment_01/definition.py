@@ -69,9 +69,8 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, segment_maker.stage_count),
+    scope=(cl, 1),
     specifiers=[
-        dynamic_line_spanner_staff_padding(4),
         overblow,
         ],
     )

@@ -10,25 +10,25 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-cobalt_position = 9
+cobalt_position = 7
 indigo_position = 98
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('cobalt', (3, cobalt_position), 'Eb2', 'mp'), # 1 
         ('cobalt', 1, 'D2', 'ffff'), # 2 
-        ('graphite', 4, 'C3 D3 F3 G3', 'pppp'), # 3
+        ('graphite', 5, 'C3 D3 Eb3 F3 G3', 'pppp'), # 3
         ('indigo', (4, indigo_position), 'B3', 'f', ('C', 66)), # 4
         ('indigo', 6, 'A3', 'p', ('C', 68)), # 5
         ('white', (1, 0)), # 6
         ('graphite', 6, 'G3 A3 Bb3 C4 D4 Eb4', 'pppp'), # 7
-        ('graphite', 8, 'Eb4'), #  8
+        ('graphite', 8, 'Eb4', 'pppp'), #  8
         ('indigo', 2, 'A3', 'p', ('C', 70)), # 9
         ('indigo', 2, 'B3', 'mp', ('C', 72)), # 10
         ('indigo', 2, 'G3', 'mf', ('C', 74)), # 11
         ('graphite', 3, 'Eb4'), # 12
         ('indigo', 2, 'G3', 'mf', ('C', 76)), # 13
         ('indigo', 2, 'F#3', 'f', ('C', 78)), # 14
-        ('graphite', 3, 'Eb4'), # 15
+        ('graphite', 3, 'Eb4', 'pppp'), # 15
         ('white', (1, 0)), # 16
         ('graphite', 4, 'C3 Eb3 G3 Bb3', 'pppp'), # 17
     ),
@@ -42,7 +42,7 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
-# Cobalt position 13 ...
+# Cobalt position 11 ...
 # Indigo position 118 ...
 
 
@@ -97,13 +97,6 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
-
-segment_maker.make_music_handler(
     scope=(cl, 2),
     specifiers=[
         overblow,
@@ -113,83 +106,41 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, 3),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 7),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 8),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='f ff p f pp ff',
-            ),
         tenuti,
-        tongue,
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 9),
-    specifiers=[
-        do_not_tongue,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 12),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='f ff p f pp ff',
-            ),
         tenuti,
-        tongue,
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 13),
-    specifiers=[
-        do_not_tongue,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 15),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='f ff p f pp ff',
-            ),
         tenuti,
-        tongue,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 17),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
-        do_not_tongue,
+        pervasive_glissandi,
         ],
     )

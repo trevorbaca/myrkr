@@ -10,17 +10,17 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-cobalt_position = 17
+cobalt_position = 15
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'D2', 'mp'), # 1
         ('graphite', 4, 'D4 F4 A4 C5', 'pppp'), # 2
         ('cobalt', 1, 'D2', 'mp'), # 3
-        ('graphite', 3, 'C5'), # 4
+        ('graphite', 3, 'C5', 'pppp'), # 4
         ('cobalt', 1, 'D2', 'mp'), # 5
-        ('graphite', 5, 'C5'), # 6
+        ('graphite', 5, 'C5', 'pppp'), # 6
         ('cobalt', 1, 'D2', 'mp'), # 7
-        ('graphite', 3, 'C5'), # 8
+        ('graphite', 3, 'C5', 'pppp'), # 8
         ('cobalt', 4, 'D2'), # 9
         ('cobalt', 4, 'Db2', 'fff'), # 10
     ),
@@ -34,6 +34,7 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
+# Cobalt position 27 ...
 
 
 ###############################################################################
@@ -82,31 +83,15 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
-
-segment_maker.make_music_handler(
     scope=(cl, 2),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
-# 'f ff p f pp ff',
 segment_maker.make_music_handler(
     scope=(cl, 4),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='f ff p',
-            ),
         tenuti,
         ],
     )
@@ -114,9 +99,6 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, 6),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='f pp ff f ff',
-            ),
         tenuti,
         ],
     )
@@ -124,9 +106,6 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, 8),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='p f pp',
-            ),
         tenuti,
         ],
     )
@@ -134,9 +113,6 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, 9),
     specifiers=[
-        handlertools.ReiteratedDynamicHandler(
-            dynamic_name='mp mf f ff',
-            ),
         tenuti,
         ],
     )

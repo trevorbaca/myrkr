@@ -11,21 +11,21 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 
-cobalt_position = 31
+cobalt_position = 29
 indigo_position = 128
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
-        ('graphite', 3, 'Eb5', 'p'), # 1
+        ('graphite', 3, 'Eb5', 'pppp'), # 1
         ('cobalt', (1, cobalt_position), 'C2', 'mp'), # 2
         ('indigo', (2, indigo_position), 'E3', 'fff', ('C', 90)), # 3
-        ('graphite', 5, 'Eb5', 'p'), # 4
+        ('graphite', 5, 'Eb5', 'pppp'), # 4
         ('indigo', 2, 'E3', 'fff', ('C', 92)), # 5
         ('indigo', 2, 'D3', 'ff', ('C', 94)), # 6
         ('cobalt', 1, 'C2', 'mp'), # 7
         ('indigo', 2, 'D3', 'ff', ('C', 96)), # 8
-        ('graphite', 3, 'Eb5', 'pp'), # 9
+        ('graphite', 3, 'Eb5', 'pppp'), # 9
         ('indigo', 2, 'Db3', 'f', ('C', 98)), # 10
-        ('graphite', 5, 'Eb5', 'ppp'), # 11
+        ('graphite', 5, 'Eb5', 'pppp'), # 11
         ('indigo', 2, 'Db3', 'mf', ('C', 100)), # 12
         ('cobalt', 1, 'C2', 'mp'), # 13
         ('indigo', 2, 'Db3', 'mp', ('C', 102)), # 14
@@ -48,7 +48,7 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
-# Cobalt position 37 ...
+# Cobalt position 35 ...
 # Indigo position 150 ...
 
 
@@ -111,8 +111,29 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
+    scope=(cl, 1),
     specifiers=[
-        dynamic_line_spanner_staff_padding(4),
+        tenuti,
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 4),
+    specifiers=[
+        tenuti,
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 9),
+    specifiers=[
+        tenuti,
+        ],
+    )
+
+segment_maker.make_music_handler(
+    scope=(cl, 11),
+    specifiers=[
+        tenuti,
         ],
     )

@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 charcoal_position = 24
-cobalt_position = 47
+cobalt_position = 45
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('charcoal', (3, charcoal_position), 'E5 F5 E5 D#5', 'p'), # 1
@@ -20,11 +20,10 @@ preprocessor = myrkr.makers.Preprocessor(
         ('charcoal', 3, 'E5 D#5 E5 F5', 'ppp'), # 4
         ('cobalt', 1, 'C2', 'ppppp'), # 5
         ('charcoal', 3, 'D#5 E5 F5 E5', 'pppp'), # 6
-        ('charcoal', 3, 'E5 F5 E5 D#5', 'ppppp'), # 7
-        ('cobalt', 1, 'B2', 'pppp'), # 8
-        ('charcoal', 3, 'F5 E5 D#5 E5', 'pppppp'), # 9
-        ('cobalt', 1, 'B2', 'pppp'), # 10
-        ('charcoal', 12, 'E5 D#5 E5 F5', 'ppppppp'), # 11
+        ('cobalt', 1, 'B2', 'pppp'), # 7
+        ('charcoal', 6, 'E5 F5 E5 D#5', 'ppppp'), # 8
+        ('cobalt', 1, 'B2', 'pppp'), # 9
+        ('charcoal', 12, 'F5 E5 D#5 E5', 'ppppp'), # 10
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -37,7 +36,7 @@ preprocessor = myrkr.makers.Preprocessor(
         },
     )
 # Charcoal position 54 ...
-# Cobalt position 51 ...
+# Cobalt position 49 ...
 
 ###############################################################################
 ############################## SEGMENT-MAKER ##################################
@@ -53,7 +52,7 @@ segment_maker = myrkr.makers.SegmentMaker(
     tempo_map=(
         (1, myrkr.materials.tempi[55]),
         (1, Accelerando()),
-        (11, myrkr.materials.tempi[110]),
+        (10, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -83,21 +82,9 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
-
-segment_maker.make_music_handler(
     scope=(cl, 1),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
@@ -111,12 +98,7 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, (3, 4)),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
@@ -130,35 +112,20 @@ segment_maker.make_music_handler(
 segment_maker.make_music_handler(
     scope=(cl, (6, 7)),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
     scope=(cl, 9),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )
 
 segment_maker.make_music_handler(
-    scope=(cl, 11),
+    scope=(cl, 10),
     specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )

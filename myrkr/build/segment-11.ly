@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #282
+        currentBarNumber = #283
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -240,63 +240,48 @@
             }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'4 \pppp \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     a'4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     c''4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e''4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g''4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     b''4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'''4 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4 -\tenuto \p
-                }
-                {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
+                    f'''4 -\tenuto
+                }
+                {
                     f'''4 -\tenuto
                 }
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     gs'16 \f [
                         ^ \markup {
                             \override
@@ -305,7 +290,6 @@
                                     \finger
                                         3
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     gs'8.
                         ^ \markup {
                             \override
@@ -314,12 +298,10 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     gs'8 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     gs'16 [
                         ^ \markup {
                             \override
@@ -328,7 +310,6 @@
                                     \finger
                                         1
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     gs'8. ]
                         ^ \markup {
                             \override
@@ -339,7 +320,6 @@
                             }
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 \ff [
                         ^ \markup {
                             \override
@@ -348,9 +328,7 @@
                                     \finger
                                         2
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8.
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8
                         ^ \markup {
                             \override
@@ -359,7 +337,6 @@
                                     \finger
                                         3
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'16
                         ^ \markup {
                             \override
@@ -368,12 +345,10 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 [
                         ^ \markup {
                             \override
@@ -382,7 +357,6 @@
                                     \finger
                                         1
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 ]
                         ^ \markup {
                             \override
@@ -393,21 +367,16 @@
                             }
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4 -\tenuto \p
+                    f'''4 -\tenuto \pppp
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'4 \ff
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 [
                         ^ \markup {
                             \override
@@ -416,7 +385,6 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'16
                         ^ \markup {
                             \override
@@ -425,11 +393,9 @@
                                     \finger
                                         2
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8. ]
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 [
                         ^ \markup {
                             \override
@@ -438,7 +404,6 @@
                                     \finger
                                         3
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8. ]
                         ^ \markup {
                             \override
@@ -449,32 +414,25 @@
                             }
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d1 \mp
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4 \p
+                    f'''4 -\tenuto \pppp
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4
+                    f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4
+                    f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4
+                    f'''4 -\tenuto
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
-                    f'''4
+                    f'''4 -\tenuto
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8. \ff [
                         ^ \markup {
                             \override
@@ -483,7 +441,6 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'16
                         ^ \markup {
                             \override
@@ -492,11 +449,9 @@
                                     \finger
                                         1
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8. ]
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'8 [
                         ^ \markup {
                             \override
@@ -505,7 +460,6 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'16 ]
                         ^ \markup {
                             \override
@@ -516,7 +470,6 @@
                             }
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'8. \fff
                         ^ \markup {
                             \override
@@ -525,7 +478,6 @@
                                     \finger
                                         1
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'4
                         ^ \markup {
                             \override
@@ -534,7 +486,6 @@
                                     \finger
                                         2
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'8 [
                         ^ \markup {
                             \override
@@ -543,7 +494,6 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'16
                         ^ \markup {
                             \override
@@ -552,12 +502,10 @@
                                     \finger
                                         1
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'8. ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'8. [
                         ^ \markup {
                             \override
@@ -566,7 +514,6 @@
                                     \finger
                                         4
                             }
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'8 ]
                         ^ \markup {
                             \override
@@ -578,7 +525,6 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d\breve \mp
                     \bar "|"
                 }

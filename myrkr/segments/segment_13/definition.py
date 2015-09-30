@@ -10,7 +10,7 @@ from myrkr.materials.__abbreviations__ import *
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
 
-cobalt_position = 37
+cobalt_position = 35
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'B1', 'fff'),
@@ -32,7 +32,7 @@ preprocessor = myrkr.makers.Preprocessor(
         'white': myrkr.materials.white_rhythm,
         },
     )
-# Cobalt position 38 ...
+# Cobalt position 36 ...
 
 
 ###############################################################################
@@ -75,13 +75,6 @@ for stage_index in range(segment_maker.stage_count):
 ###############################################################################
 
 preprocessor.make_music_handlers(segment_maker)
-
-segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
-    specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
 
 segment_maker.make_music_handler(
     scope=(cl, 1),
