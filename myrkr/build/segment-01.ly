@@ -56,12 +56,7 @@
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     \once \override DynamicLineSpanner #'staff-padding = #4
-                    e\breve. \fff
-                        ^ \markup {
-                            overblow
-                            \italic
-                                "ad lib."
-                            }
+                    e\breve. \fff ^ \markup { overblow }
                     \bar "|"
                 }
             }
