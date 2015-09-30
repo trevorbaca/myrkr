@@ -1,5 +1,5 @@
 #(set-default-paper-size "11x17" 'landscape)
-#(set-global-staff-size 12)
+#(set-global-staff-size 11)
 
 \include "default-instrument-names.ily"
 \include "scheme.ily"
@@ -40,13 +40,13 @@
     )
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 22)
+        (minimum-distance . 20)
         (padding . 0)
         (stretchability . 0)
     )
     top-markup-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 10)
+        (minimum-distance . 12)
         (padding . 0)
         (stretchability . 0)
     )
