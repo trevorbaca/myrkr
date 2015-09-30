@@ -93,7 +93,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
-        self._annotate_stages()
+        #self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
         self._shorten_long_repeat_ties()
@@ -869,7 +869,7 @@ class SegmentMaker(makertools.SegmentMaker):
         total_duration = Duration(0)
         for measure_summary in measure_summaries:
             duration, current_tempo, is_trending, next_tempo = measure_summary
-            if is_trending:
+            if is_trending and current_tempo is not None:
                 effective_tempo = current_tempo + next_tempo
                 effective_tempo /= 2
             else:

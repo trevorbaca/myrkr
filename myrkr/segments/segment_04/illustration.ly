@@ -1,4 +1,4 @@
-% 2015-09-30 00:50
+% 2015-09-30 01:36
 
 \version "2.19.27"
 \language "english"
@@ -20,12 +20,6 @@
                 \newSpacingSection
                 \mark #3
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C1]
-                        }
             }
             {
                 \time 4/22
@@ -34,12 +28,6 @@
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C2]
-                        }
             }
             {
                 \time 4/22
@@ -66,24 +54,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C3]
-                        }
             }
             {
                 \time 12/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C4]
-                        }
             }
             {
                 \time 3/18
@@ -92,32 +68,14 @@
             {
                 \time 3/5
                 s1 * 3/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C5]
-                        }
             }
             {
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C6]
-                        }
             }
             {
                 \time 8/16
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C7]
-                        }
             }
             {
                 \time 3/20
@@ -126,12 +84,6 @@
             {
                 \time 6/18
                 s1 * 1/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C8]
-                        }
             }
             {
                 \time 7/20
@@ -142,24 +94,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C9]
-                        }
             }
             {
                 \time 10/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C10]
-                        }
             }
             {
                 \time 5/26
@@ -170,24 +110,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C11]
-                        }
             }
             {
                 \time 9/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 9/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C12]
-                        }
             }
             {
                 \time 3/16
@@ -196,12 +124,6 @@
             {
                 \time 5/7
                 s1 * 5/7
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C13]
-                        }
             }
             {
                 \time 2/7
@@ -210,12 +132,6 @@
             {
                 \time 8/26
                 s1 * 4/13
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C14]
-                        }
             }
             {
                 \time 5/16
@@ -226,24 +142,12 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
                 s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C15]
-                        }
             }
             {
                 \time 11/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C16]
-                        }
             }
             {
                 \time 4/16
@@ -252,12 +156,6 @@
             {
                 \time 9/16
                 s1 * 9/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [C17]
-                        }
             }
             {
                 \time 5/18

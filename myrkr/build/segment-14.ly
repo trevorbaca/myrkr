@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #370
+        currentBarNumber = #364
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -8,14 +8,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #13
-                s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M1]
-                        }
-                    ^ \markup {
+                s1 * 5/8 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -39,12 +32,6 @@
             {
                 \time 9/16
                 s1 * 9/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M2]
-                        }
             }
             {
                 \time 3/16
@@ -53,12 +40,6 @@
             {
                 \time 8/26
                 s1 * 4/13
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M3]
-                        }
             }
             {
                 \time 5/16
@@ -77,13 +58,24 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M4]
-                        }
-                    ^ \markup {
+            }
+            {
+                \time 12/5
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                \newSpacingSection
+                s1 * 12/5
+            }
+            {
+                \time 3/16
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                \newSpacingSection
+                s1 * 3/16
+            }
+            {
+                \time 4/3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                \newSpacingSection
+                s1 * 4/3 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -102,138 +94,38 @@
             }
             {
                 \time 3/1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
                 s1 * 3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M5]
-                        }
-            }
-            {
-                \time 3/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                \newSpacingSection
-                s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M6]
-                        }
             }
             {
                 \time 8/5
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M7]
-                        }
             }
             {
                 \time 12/5
                 s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M8]
-                        }
             }
             {
                 \time 1/1
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M9]
-                        }
             }
             {
                 \time 8/5
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M10]
-                        }
             }
             {
                 s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M11]
-                        }
-            }
-            {
-                \time 2/3
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M12]
-                        }
-            }
-            {
-                \time 12/5
-                s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M13]
-                        }
             }
             {
                 \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M14]
-                        }
             }
             {
-                \time 4/3
+                \time 2/3
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [M15]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            55
-                        }
-                    }
+                s1 * 2/3
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -422,45 +314,45 @@
                 {
                     r8.
                 }
-                {
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
                     cs'\breve. \pppp
                 }
                 {
                     r8.
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
+                \times 2/3 {
                     d\breve \ppppp ^ \markup { “A” }
+                }
+                {
+                    d\breve. ^ \markup { “U” }
+                }
+                \tweak #'edge-height #'(0.7 . 0)
+                \times 4/5 {
+                    d\breve ^ \markup { “I” }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
                     d\breve. ^ \markup { “U” }
                 }
                 {
-                    d1 ^ \markup { “I” }
+                    d1 ^ \markup { “A” }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d\breve ^ \markup { “U” }
+                    d\breve ^ \markup { “O” }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d\breve ^ \markup { “A” }
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    d1 ^ \markup { “O” }
-                }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    d\breve. ^ \markup { “I” }
+                    d\breve ^ \markup { “I” }
                 }
                 {
                     r8.
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    fs'\breve \fff
+                    fs'1 \fff
                     \bar "|"
                 }
             }

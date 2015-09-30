@@ -1,4 +1,4 @@
-% 2015-09-30 01:19
+% 2015-09-30 01:37
 
 \version "2.19.27"
 \language "english"
@@ -19,14 +19,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #6
-                s1 * 5/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F1]
-                        }
-                    ^ \markup {
+                s1 * 5/4 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -50,22 +43,10 @@
             {
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F2]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F3]
-                        }
             }
             {
                 \time 7/4
@@ -102,46 +83,21 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 1/2 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F4]
-                        }
             }
             {
                 \time 5/7
                 s1 * 5/7
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F5]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F6]
-                        }
             }
             {
                 s1 * 1
             }
             {
                 \time 3/4
-                s1 * 3/4 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F7]
-                        }
-                    ^ \markup {
+                s1 * 3/4 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -165,12 +121,6 @@
             {
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [F8]
-                        }
             }
             {
                 \time 2/4

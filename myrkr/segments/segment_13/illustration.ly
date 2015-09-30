@@ -1,4 +1,4 @@
-% 2015-09-30 01:30
+% 2015-09-30 01:38
 
 \version "2.19.27"
 \language "english"
@@ -19,14 +19,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #12
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L1]
-                        }
-                    ^ \markup {
+                s1 * 2/3 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -45,66 +38,24 @@
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L2]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L3]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L4]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L5]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L6]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L7]
-                        }
             }
             {
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [L8]
-                        }
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {

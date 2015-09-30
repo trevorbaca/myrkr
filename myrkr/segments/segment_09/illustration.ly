@@ -1,4 +1,4 @@
-% 2015-09-30 01:24
+% 2015-09-30 01:47
 
 \version "2.19.27"
 \language "english"
@@ -29,22 +29,11 @@
                     }
                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                 \once \override TextSpanner.bound-details.left.text = \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
+                    \large
+                        \upright
+                            rit.
                     \hspace
-                        #1.25
+                        #0.75
                     }
                 \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                 \once \override TextSpanner.bound-details.right-broken.padding = 0
@@ -59,22 +48,10 @@
                 \newSpacingSection
                 \mark #8
                 s1 * 2/3 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H1]
-                        }
             }
             {
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H2]
-                        }
             }
             {
                 \time 4/4
@@ -85,14 +62,7 @@
             }
             {
                 \time 12/5
-                s1 * 12/5 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H3]
-                        }
-                    ^ \markup {
+                s1 * 12/5 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -112,12 +82,6 @@
             {
                 \time 8/4
                 s1 * 2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H4]
-                        }
             }
             {
                 \time 4/4
@@ -157,22 +121,10 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 s1 * 4/3 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H5]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H6]
-                        }
             }
             {
                 \time 7/4
@@ -184,14 +136,7 @@
             }
             {
                 \time 3/1
-                s1 * 3 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H7]
-                        }
-                    ^ \markup {
+                s1 * 3 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -211,12 +156,6 @@
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H8]
-                        }
             }
             {
                 \time 5/4
@@ -229,22 +168,10 @@
             {
                 \time 3/16
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H9]
-                        }
             }
             {
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [H10]
-                        }
             }
             {
                 s1 * 1/4

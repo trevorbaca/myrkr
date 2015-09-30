@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #317
+        currentBarNumber = #311
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -9,28 +9,6 @@
                 \newSpacingSection
                 \mark #11
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K1]
-                        }
-                    ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            110
-                        }
-                    }
             }
             {
                 s1 * 1/4
@@ -39,26 +17,14 @@
                 s1 * 1/4
             }
             {
-                \time 8/5
-                s1 * 8/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K2]
-                        }
+                \time 1/1
+                s1 * 1
             }
             {
                 \time 8/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K3]
-                        }
             }
             {
                 \time 7/20
@@ -69,12 +35,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K4]
-                        }
             }
             {
                 s1 * 1/4
@@ -93,12 +53,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 3/11
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K5]
-                        }
             }
             {
                 \time 3/20
@@ -107,40 +61,22 @@
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K6]
-                        }
             }
             {
                 \time 4/22
                 s1 * 2/11
             }
             {
-                \time 2/3
+                \time 8/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
-                s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K7]
-                        }
+                s1 * 8/5
             }
             {
                 \time 10/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K8]
-                        }
             }
             {
                 \time 4/16
@@ -151,12 +87,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K9]
-                        }
             }
             {
                 s1 * 1/4
@@ -169,12 +99,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 7/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K10]
-                        }
             }
             {
                 \time 4/16
@@ -185,12 +109,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K11]
-                        }
             }
             {
                 s1 * 1/4
@@ -209,28 +127,16 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K12]
-                        }
             }
             {
                 \time 4/22
                 s1 * 2/11
             }
             {
-                \time 12/5
+                \time 8/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
-                s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K13]
-                        }
+                s1 * 8/5
             }
             {
                 \time 10/16
@@ -265,12 +171,6 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 5/8 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K14]
-                        }
             }
             {
                 \time 4/18
@@ -279,12 +179,6 @@
             {
                 \time 7/22
                 s1 * 7/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K15]
-                        }
             }
             {
                 \time 5/18
@@ -293,12 +187,6 @@
             {
                 \time 12/16
                 s1 * 3/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K16]
-                        }
             }
             {
                 \time 3/18
@@ -307,57 +195,32 @@
             {
                 \time 8/16
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K17]
-                        }
             }
             {
                 \time 3/20
                 s1 * 3/20
             }
             {
-                \time 4/3
+                \time 2/3
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
-                s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K18]
-                        }
+                s1 * 2/3
             }
             {
                 \time 6/18
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \newSpacingSection
                 s1 * 1/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K19]
-                        }
             }
             {
                 \time 7/20
                 s1 * 7/20
             }
             {
-                \time 2/3
+                \time 12/5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection
-                s1 * 2/3 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K20]
-                        }
-                    ^ \markup {
+                s1 * 12/5 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -375,26 +238,14 @@
                     }
             }
             {
-                \time 12/5
-                s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K21]
-                        }
+                \time 4/3
+                s1 * 4/3
             }
             {
                 \time 3/16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \newSpacingSection
                 s1 * 3/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [K22]
-                        }
             }
         }
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -427,13 +278,12 @@
                 {
                     f'''4 -\tenuto
                 }
-                \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    d\breve -\tenuto \mp
+                {
+                    d1 \mp
                 }
                 {
-                    fs'8 -\tenuto \fff [
-                    fs'8 -\tenuto
+                    fs'8 \fff [
+                    fs'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -441,7 +291,7 @@
                                     \finger
                                         3
                             }
-                    fs'8. -\tenuto
+                    fs'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -449,7 +299,7 @@
                                     \finger
                                         1
                             }
-                    fs'16 -\tenuto ]
+                    fs'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -460,7 +310,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    fs'8. -\tenuto
+                    fs'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -468,7 +318,7 @@
                                     \finger
                                         4
                             }
-                    fs'4 -\tenuto
+                    fs'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -494,7 +344,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    fs'8. -\tenuto \fff [
+                    fs'8. \fff [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -502,7 +352,7 @@
                                     \finger
                                         1
                             }
-                    fs'8 -\tenuto
+                    fs'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -510,11 +360,11 @@
                                     \finger
                                         2
                             }
-                    fs'16 -\tenuto ]
+                    fs'16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    fs'8 -\tenuto [
+                    fs'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -522,7 +372,7 @@
                                     \finger
                                         3
                             }
-                    fs'16 -\tenuto ]
+                    fs'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -532,7 +382,7 @@
                             }
                 }
                 {
-                    e'8. -\tenuto \ff [
+                    e'8. \ff [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -540,8 +390,8 @@
                                     \finger
                                         4
                             }
-                    e'8 -\tenuto
-                    e'8 -\tenuto
+                    e'8
+                    e'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -549,7 +399,7 @@
                                     \finger
                                         1
                             }
-                    e'8. -\tenuto
+                    e'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -557,11 +407,11 @@
                                     \finger
                                         2
                             }
-                    e'16 -\tenuto ]
+                    e'16 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    e'16 -\tenuto [
+                    e'16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -569,7 +419,7 @@
                                     \finger
                                         3
                             }
-                    e'8. -\tenuto ]
+                    e'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -579,12 +429,12 @@
                             }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    d1 -\tenuto \mp
+                \times 4/5 {
+                    d\breve \mp
                 }
                 {
-                    e'8. -\tenuto \ff [
-                    e'8 -\tenuto
+                    e'8. \ff [
+                    e'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -592,7 +442,7 @@
                                     \finger
                                         3
                             }
-                    e'8. -\tenuto
+                    e'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -600,10 +450,10 @@
                                     \finger
                                         4
                             }
-                    e'8 -\tenuto ]
+                    e'8 ]
                 }
                 \times 4/5 {
-                    e'8. -\tenuto [
+                    e'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -611,7 +461,7 @@
                                     \finger
                                         1
                             }
-                    e'8 -\tenuto ]
+                    e'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -631,7 +481,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ef'4 -\tenuto \f
+                    ef'4 \f
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -639,7 +489,7 @@
                                     \finger
                                         4
                             }
-                    ef'8 -\tenuto [
+                    ef'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -647,10 +497,10 @@
                                     \finger
                                         2
                             }
-                    ef'16 -\tenuto ]
+                    ef'16 ]
                 }
                 \times 4/5 {
-                    ef'8 -\tenuto [
+                    ef'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -658,7 +508,7 @@
                                     \finger
                                         3
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -683,7 +533,7 @@
                     f'''4 -\tenuto
                 }
                 {
-                    ef'16 -\tenuto \mf [
+                    ef'16 \mf [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -691,8 +541,8 @@
                                     \finger
                                         1
                             }
-                    ef'8. -\tenuto
-                    ef'8 -\tenuto
+                    ef'8.
+                    ef'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -700,7 +550,7 @@
                                     \finger
                                         4
                             }
-                    ef'8. -\tenuto
+                    ef'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -708,11 +558,11 @@
                                     \finger
                                         2
                             }
-                    ef'8 -\tenuto ]
+                    ef'8 ]
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ef'16 -\tenuto [
+                    ef'16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -720,7 +570,7 @@
                                     \finger
                                         3
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -731,10 +581,10 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d\breve. -\tenuto \mp
+                    d\breve \mp
                 }
                 {
-                    ef'16 -\tenuto [
+                    ef'16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -742,7 +592,7 @@
                                     \finger
                                         2
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -750,7 +600,7 @@
                                     \finger
                                         4
                             }
-                    ef'4 -\tenuto
+                    ef'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -758,11 +608,11 @@
                                     \finger
                                         1
                             }
-                    ef'8 -\tenuto
+                    ef'8
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    ef'16 -\tenuto [
+                    ef'16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -770,7 +620,7 @@
                                     \finger
                                         4
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -781,7 +631,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ef'8 -\tenuto \p [
+                    ef'8 \p [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -789,7 +639,7 @@
                                     \finger
                                         3
                             }
-                    ef'8 -\tenuto
+                    ef'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -797,7 +647,7 @@
                                     \finger
                                         1
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -808,7 +658,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    ef'8 -\tenuto [
+                    ef'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -816,7 +666,7 @@
                                     \finger
                                         4
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -826,7 +676,7 @@
                             }
                 }
                 {
-                    ef'8 -\tenuto \pp [
+                    ef'8 \pp [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -834,8 +684,8 @@
                                     \finger
                                         2
                             }
-                    ef'16 -\tenuto
-                    ef'8. -\tenuto ]
+                    ef'16
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -843,7 +693,7 @@
                                     \finger
                                         3
                             }
-                    ef'4 -\tenuto
+                    ef'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -851,7 +701,7 @@
                                     \finger
                                         1
                             }
-                    ef'8 -\tenuto
+                    ef'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -862,7 +712,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    ef'8. -\tenuto [
+                    ef'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -870,7 +720,7 @@
                                     \finger
                                         4
                             }
-                    ef'16 -\tenuto ]
+                    ef'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -880,7 +730,7 @@
                             }
                 }
                 {
-                    ef'16 -\tenuto \ppp [
+                    ef'16 \ppp [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -888,8 +738,8 @@
                                     \finger
                                         2
                             }
-                    ef'8. -\tenuto
-                    ef'8 -\tenuto
+                    ef'8.
+                    ef'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -897,7 +747,7 @@
                                     \finger
                                         3
                             }
-                    ef'8 -\tenuto ]
+                    ef'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -908,7 +758,7 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    ef'8 -\tenuto [
+                    ef'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -916,7 +766,7 @@
                                     \finger
                                         2
                             }
-                    ef'16 -\tenuto ]
+                    ef'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -927,12 +777,12 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d\breve -\tenuto \mf
+                    d1 \mf
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    ef'8. -\tenuto \pppp [
-                    ef'8 -\tenuto
+                    ef'8. \pppp [
+                    ef'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -940,7 +790,7 @@
                                     \finger
                                         1
                             }
-                    ef'8. -\tenuto ]
+                    ef'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -951,8 +801,8 @@
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    ef'8. -\tenuto
-                    ef'4 -\tenuto
+                    ef'8.
+                    ef'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -962,12 +812,12 @@
                             }
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    d1 -\tenuto \f
+                \times 4/5 {
+                    d\breve. \f
                 }
                 \tweak #'edge-height #'(0.7 . 0)
-                \times 4/5 {
-                    d\breve. -\tenuto \ff
+                \times 2/3 {
+                    d\breve \ff
                 }
                 {
                     r8.

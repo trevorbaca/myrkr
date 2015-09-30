@@ -1,4 +1,4 @@
-% 2015-09-30 00:49
+% 2015-09-30 01:36
 
 \version "2.19.27"
 \language "english"
@@ -19,14 +19,7 @@
                 \bar ""
                 \newSpacingSection
                 \mark #1
-                s1 * 13/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A1]
-                        }
-                    ^ \markup {
+                s1 * 13/16 ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -90,22 +83,10 @@
             {
                 \time 3/7
                 s1 * 3/7
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A2]
-                        }
             }
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A3]
-                        }
             }
             {
                 \time 4/22
@@ -122,32 +103,14 @@
             {
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A4]
-                        }
             }
             {
                 \time 7/22
                 s1 * 7/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A5]
-                        }
             }
             {
                 \time 5/18
                 s1 * 5/18
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A6]
-                        }
             }
             {
                 \time 12/16
@@ -160,22 +123,10 @@
             {
                 \time 3/5
                 s1 * 3/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A7]
-                        }
             }
             {
                 \time 8/16
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A8]
-                        }
             }
             {
                 \time 3/20
@@ -184,22 +135,10 @@
             {
                 \time 4/7
                 s1 * 4/7
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A9]
-                        }
             }
             {
                 \time 6/18
                 s1 * 1/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A10]
-                        }
             }
             {
                 \time 7/20
@@ -216,22 +155,10 @@
             {
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A11]
-                        }
             }
             {
                 \time 9/16
                 s1 * 9/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A12]
-                        }
             }
             {
                 \time 3/16
@@ -240,22 +167,10 @@
             {
                 \time 2/5
                 s1 * 2/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A13]
-                        }
             }
             {
                 \time 8/26
                 s1 * 4/13
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A14]
-                        }
             }
             {
                 \time 5/16
@@ -264,12 +179,6 @@
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A15]
-                        }
             }
             {
                 \time 4/16
@@ -278,22 +187,10 @@
             {
                 \time 3/5
                 s1 * 3/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A16]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A17]
-                        }
             }
             {
                 \time 2/7
@@ -302,12 +199,6 @@
             {
                 \time 9/16
                 s1 * 9/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A18]
-                        }
             }
             {
                 \time 5/18
@@ -316,12 +207,6 @@
             {
                 \time 2/5
                 s1 * 2/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A19]
-                        }
             }
             {
                 \time 3/4
@@ -338,12 +223,6 @@
             {
                 \time 4/16
                 s1 * 1/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A20]
-                        }
             }
             {
                 \time 4/18
@@ -352,12 +231,6 @@
             {
                 \time 11/16
                 s1 * 11/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [A21]
-                        }
             }
             {
                 \time 4/22

@@ -1,4 +1,4 @@
-% 2015-09-30 01:34
+% 2015-09-30 01:43
 
 \version "2.19.27"
 \language "english"
@@ -59,12 +59,6 @@
                 \newSpacingSection
                 \mark #14
                 s1 * 1 \startTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N1]
-                        }
             }
             {
                 \time 7/4
@@ -77,22 +71,10 @@
             {
                 \time 12/5
                 s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N2]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N3]
-                        }
             }
             {
                 \time 5/4
@@ -104,12 +86,6 @@
             }
             {
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N4]
-                        }
             }
             {
                 \time 8/4
@@ -122,22 +98,10 @@
             {
                 \time 4/3
                 s1 * 4/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N5]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N6]
-                        }
             }
             {
                 s1 * 1
@@ -149,22 +113,10 @@
             {
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N7]
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N8]
-                        }
             }
             {
                 s1 * 1
@@ -187,23 +139,10 @@
             {
                 \time 12/5
                 s1 * 12/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N9]
-                        }
             }
             {
                 \time 4/4
-                s1 * 1 \stopTextSpan
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [N10]
-                        }
-                    ^ \markup {
+                s1 * 1 \stopTextSpan ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -341,37 +280,37 @@
                 {
                     fs'''2. \glissando
                     g'''2 \glissando
-                    fs'''2 \glissando
+                    fs'''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
                     cs'1
                 }
                 \times 4/5 {
-                    fs'''2. \ppppp
-                    g'''2
+                    fs'''2. \ppppp \glissando
+                    g'''2 \glissando
                 }
                 \times 4/7 {
-                    fs'''2
-                    es'''2.
-                    fs'''2
+                    fs'''2 \glissando
+                    es'''2. \glissando
+                    fs'''2 \glissando
                 }
                 {
-                    g'''2.
-                    fs'''2
+                    g'''2. \glissando
+                    fs'''2 \glissando
                 }
                 \times 4/7 {
-                    es'''2
-                    fs'''2.
-                    g'''2
+                    es'''2 \glissando
+                    fs'''2. \glissando
+                    g'''2 \glissando
                 }
                 \times 4/5 {
-                    fs'''2
-                    es'''2.
+                    fs'''2 \glissando
+                    es'''2. \glissando
                 }
                 {
-                    fs'''2
-                    g'''2.
+                    fs'''2 \glissando
+                    g'''2. \glissando
                     fs'''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)

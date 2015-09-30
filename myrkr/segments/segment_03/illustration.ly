@@ -1,4 +1,4 @@
-% 2015-09-30 00:50
+% 2015-09-30 01:36
 
 \version "2.19.27"
 \language "english"
@@ -20,12 +20,6 @@
                 \newSpacingSection
                 \mark #2
                 s1 * 13/16
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B1]
-                        }
             }
             {
                 \time 5/22
@@ -58,12 +52,6 @@
             {
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B2]
-                        }
             }
             {
                 \time 2/5
@@ -76,12 +64,6 @@
             {
                 \time 10/16
                 s1 * 5/8
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B3]
-                        }
             }
             {
                 \time 4/16
@@ -90,32 +72,14 @@
             {
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B4]
-                        }
             }
             {
                 \time 3/5
                 s1 * 3/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B5]
-                        }
             }
             {
                 \time 7/22
                 s1 * 7/22
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B6]
-                        }
             }
             {
                 \time 4/16
@@ -124,22 +88,10 @@
             {
                 \time 2/5
                 s1 * 2/5
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B7]
-                        }
             }
             {
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \smaller
-                            \with-color
-                                #blue
-                                [B8]
-                        }
             }
             {
                 \time 2/7
