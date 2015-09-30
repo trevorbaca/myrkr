@@ -11,20 +11,18 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 charcoal_position = 3
-cobalt_position = 7
+cobalt_position = 6
 indigo_position = 89
 preprocessor = myrkr.makers.Preprocessor(
     indicators=(
         ('indigo', (3, indigo_position), 'A3', 'p', ('C', 60)), # 1
         ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 2
-        ('cobalt', 1, 'E2', 'mp'), # 3 
-        ('indigo', 2, 'A3', 'mp', ('C', 60)), # 4
+        ('indigo', 2, 'A3', 'mp', ('C', 60)), # 3
 
-        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 62)), # 5
-        ('cobalt', (1, cobalt_position), 'E2', 'mp'), # 6
-        ('cobalt', 1, 'Eb2', 'mp'), # 7
-        ('charcoal', (3, charcoal_position), 'C5 Db5 C5 B4', 'pp'), # 8
-        ('indigo', 6, 'B3', 'f', ('C', 64)), # 9
+        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 62)), # 4
+        ('cobalt', (1, cobalt_position), 'E2', 'mp'), # 5
+        ('charcoal', (3, charcoal_position), 'C5 Db5 C5 B4', 'pp'), # 6
+        ('indigo', 6, 'B3', 'f', ('C', 64)), # 7
     ),
     name_to_rhythm={
         'charcoal': myrkr.materials.charcoal_rhythm,
@@ -37,7 +35,7 @@ preprocessor = myrkr.makers.Preprocessor(
         },
     )
 # Charcoal position 6 ...
-# Cobalt position 9 ...
+# Cobalt position 7 ...
 # Indigo position 98 ...
 
 
@@ -52,13 +50,13 @@ segment_maker = myrkr.makers.SegmentMaker(
     spacing_map=(
         (1, Duration(1, 24)),
         (2, Duration(1, 8)),
-        (4, Duration(1, 24)),
-        (6, Duration(1, 8)),
-        (9, Duration(1, 24)),
+        (3, Duration(1, 24)),
+        (5, Duration(1, 8)),
+        (7, Duration(1, 24)),
         ),
     tempo_map=(
         (1, myrkr.materials.tempi[55]),
-        (9, myrkr.materials.tempi[110]),
+        (7, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -88,20 +86,8 @@ for stage_index in range(segment_maker.stage_count):
 preprocessor.make_music_handlers(segment_maker)
 
 segment_maker.make_music_handler(
-    scope=(cl, (1, segment_maker.stage_count)),
+    scope=(cl, 6),
     specifiers=[
-        dynamic_line_spanner_staff_padding(4),
-        ],
-    )
-
-segment_maker.make_music_handler(
-    scope=(cl, 8),
-    specifiers=[
-        baca.makers.GlissandoSpecifier(
-            patterns=[
-                rhythmmakertools.select_all(),
-                rhythmmakertools.silence_last(1),
-                ],
-            ),
+        pervasive_glissandi,
         ],
     )

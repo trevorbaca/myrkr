@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #236
+        currentBarNumber = #237
     } <<
         \context TimeSignatureContext = "Time Signature Context" {
             {
@@ -264,117 +264,80 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve \mp
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g''2 \ff \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     af''2. \glissando
                 }
                 \times 4/7 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g''2. \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     af''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g''2
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve. \mp
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     b''2. \f \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     c'''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     b''2. \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     as''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     b''2 \glissando
                 }
                 \times 4/7 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     c'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     b''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     as''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve \mp
                 }
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'''2. \mf \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     ef'''2 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     cs'''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'''2 \glissando
                 }
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     ef'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     d'''2
                 }
                 \tweak #'edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e\breve. \mp
                 }
                 \times 4/7 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'''2 \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     es'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'''2 \glissando
                 }
                 \times 4/7 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     g'''2 \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     fs'''2. \glissando
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     es'''2
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     r8.
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     c''4 \pppp \glissando
                 }
                 {
-                    \once \override DynamicLineSpanner #'staff-padding = #4
                     e''4
                     \bar "|"
                 }

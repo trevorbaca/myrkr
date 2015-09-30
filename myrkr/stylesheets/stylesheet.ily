@@ -185,6 +185,7 @@
         )
         \override Beam.breakable = ##t
         \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
+        \override DynamicLineSpanner.padding = #1.5
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
         \override NoteCollision.merge-differently-dotted = ##t
