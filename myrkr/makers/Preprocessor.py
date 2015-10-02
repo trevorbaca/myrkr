@@ -165,7 +165,7 @@ class Preprocessor(object):
             cursor = name_to_cursor[name]
             message = '{} position {} ...'
             message = message.format(name, cursor.position)
-            print message
+            print(message)
 
     def _validate_indicators(self):
         for indicator in self.indicators:
