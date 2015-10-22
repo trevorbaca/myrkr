@@ -10,8 +10,8 @@ class MusicMaker(abctools.AbjadObject):
 
         ::
 
-            >>> from myrkr import makers
-            >>> music_maker = makers.MusicMaker(
+            >>> import myrkr
+            >>> music_maker = myrkr.tools.MusicMaker(
             ...     context_name='Clarinet Music Voice',
             ...     rhythm_maker = rhythmmakertools.NoteRhythmMaker(),
             ...     stages=(1, 4),
@@ -20,7 +20,7 @@ class MusicMaker(abctools.AbjadObject):
         ::
 
             >>> print(format(music_maker, 'storage'))
-            myrkr.makers.MusicMaker(
+            myrkr.tools.MusicMaker(
                 context_name='Clarinet Music Voice',
                 division_maker=makertools.SplitByDurationsDivisionCallback(
                     compound_meter_multiplier=durationtools.Multiplier(1, 1),

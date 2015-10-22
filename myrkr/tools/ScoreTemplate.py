@@ -11,9 +11,13 @@ class ScoreTemplate(abctools.AbjadValueObject):
     def __call__(self):
         r'''Calls score template.
 
-            >>> from myrkr import makers
-            >>> template = makers.ScoreTemplate()
+        ::
+
+            >>> import myrkr
+            >>> template = myrkr.tools.ScoreTemplate()
             >>> score = template()
+
+        ::
 
             >>> f(score)
             \context Score = "Score" <<

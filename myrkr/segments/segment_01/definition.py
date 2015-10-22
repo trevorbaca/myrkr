@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 
 cobalt_position = 0
-preprocessor = myrkr.makers.Preprocessor(
+preprocessor = myrkr.tools.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'D2', 'fff'),
         ),
@@ -31,7 +31,7 @@ preprocessor = myrkr.makers.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
-segment_maker = myrkr.makers.SegmentMaker(
+segment_maker = myrkr.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
     show_stage_annotations=True,
