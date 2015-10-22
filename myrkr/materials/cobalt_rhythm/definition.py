@@ -3,7 +3,7 @@ from abjad import *
 import myrkr
 
 
-maker = myrkr.makers.RhythmMaker(
+maker = myrkr.tools.RhythmMaker(
     terms=(1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2),
     counts=(2,),
     denominator=1,

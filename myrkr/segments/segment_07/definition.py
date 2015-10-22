@@ -11,7 +11,7 @@ from myrkr.materials.__abbreviations__ import *
 
 charcoal_position = 6
 emerald_position = 25
-preprocessor = myrkr.makers.Preprocessor(
+preprocessor = myrkr.tools.Preprocessor(
     indicators=(
         ('charcoal', (2, charcoal_position), 'B4 C5 B4 A#4', 'mp'), # 1 
         ('emerald', (1, emerald_position), 'G3', 'ff', ('A', 34)), # 2
@@ -40,7 +40,7 @@ preprocessor = myrkr.makers.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
-segment_maker = myrkr.makers.SegmentMaker(
+segment_maker = myrkr.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
     show_stage_annotations=True,

@@ -3,7 +3,7 @@ from abjad import *
 import myrkr
 
 
-maker = myrkr.makers.RhythmMaker(
+maker = myrkr.tools.RhythmMaker(
     #terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
     terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 4, 3)),
     counts=(5, 4),

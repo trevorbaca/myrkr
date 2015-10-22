@@ -13,7 +13,7 @@ from myrkr.materials.__abbreviations__ import *
 
 cobalt_position = 29
 indigo_position = 128
-preprocessor = myrkr.makers.Preprocessor(
+preprocessor = myrkr.tools.Preprocessor(
     indicators=(
         ('graphite', 3, 'Eb5', 'pppp'), # 1
         ('cobalt', (1, cobalt_position), 'C2', 'mp'), # 2
@@ -56,7 +56,7 @@ preprocessor = myrkr.makers.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
-segment_maker = myrkr.makers.SegmentMaker(
+segment_maker = myrkr.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
     show_stage_annotations=True,

@@ -12,7 +12,7 @@ from myrkr.materials.__abbreviations__ import *
 
 charcoal_position = 12
 cobalt_position = 11
-preprocessor = myrkr.makers.Preprocessor(
+preprocessor = myrkr.tools.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'D2', 'mp'), # 1
         ('charcoal', (3, charcoal_position), 'F4 Gb4 F4 E4', 'ff'), # 2
@@ -43,7 +43,7 @@ preprocessor = myrkr.makers.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
-segment_maker = myrkr.makers.SegmentMaker(
+segment_maker = myrkr.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
     show_stage_annotations=True,
