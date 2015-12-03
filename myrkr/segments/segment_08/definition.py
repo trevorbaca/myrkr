@@ -50,7 +50,7 @@ preprocessor = myrkr.tools.Preprocessor(
 ############################## SEGMENT-MAKER ##################################
 ###############################################################################
 
-segment_maker = myrkr.tools.SegmentMaker(
+segment_maker = baca.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
     show_stage_annotations=True,
