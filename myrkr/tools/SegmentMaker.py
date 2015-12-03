@@ -51,7 +51,7 @@ class SegmentMaker(makertools.SegmentMaker):
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__()
-        self._initialize_music_makers(music_makers, score_package.tools)
+        self._initialize_music_makers(music_makers)
         self._final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
@@ -61,7 +61,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._final_markup_extra_offset = final_markup_extra_offset
         self._measures_per_stage = measures_per_stage
         self._music_handlers = []
-        self._music_maker_class = score_package.tools.MusicMaker
+        self._music_maker_class = baca.tools.MusicMaker
         self._initialize_time_signatures(time_signatures)
         self._score_package = score_package
         assert isinstance(show_stage_annotations, bool)
@@ -533,11 +533,11 @@ class SegmentMaker(makertools.SegmentMaker):
             time_signatures = sequencetools.flatten_sequence(stages)
         return time_signatures
 
-    def _initialize_music_makers(self, music_makers, makers_package):
+    def _initialize_music_makers(self, music_makers):
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, makers_package.MusicMaker)
+            assert isinstance(music_maker, baca.tools.MusicMaker)
         self._music_makers = music_makers
 
     def _initialize_time_signatures(self, time_signatures):
