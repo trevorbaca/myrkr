@@ -51,7 +51,7 @@ class SegmentMaker(makertools.SegmentMaker):
         ):
         superclass = super(SegmentMaker, self)
         superclass.__init__()
-        self._initialize_music_makers(music_makers, score_package.makers)
+        self._initialize_music_makers(music_makers, score_package.tools)
         self._final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
@@ -61,7 +61,7 @@ class SegmentMaker(makertools.SegmentMaker):
         self._final_markup_extra_offset = final_markup_extra_offset
         self._measures_per_stage = measures_per_stage
         self._music_handlers = []
-        self._music_maker_class = score_package.makers.MusicMaker
+        self._music_maker_class = score_package.tools.MusicMaker
         self._initialize_time_signatures(time_signatures)
         self._score_package = score_package
         assert isinstance(show_stage_annotations, bool)
@@ -86,7 +86,7 @@ class SegmentMaker(makertools.SegmentMaker):
             datastructuretools.TypedOrderedDict()
         self._previous_segment_metadata = previous_segment_metadata or \
             datastructuretools.TypedOrderedDict()
-        self._make_score(self.score_package.makers.ScoreTemplate())
+        self._make_score(self.score_package.tools.ScoreTemplate())
         self._remove_score_template_start_instruments(
             self.score_package.materials)
         self._remove_score_template_start_clefs()
