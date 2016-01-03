@@ -86,7 +86,7 @@ for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     segment_maker.make_music_maker(
         stages=stage_number,
-        context_name=cl,
+        voice_name=cl,
         division_maker=None,
         rhythm_maker=preprocessor.get_music(stage_number),
         )
