@@ -64,7 +64,7 @@ assert segment_maker.validate_time_signatures()
 
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
-    segment_maker.make_music_maker(
+    segment_maker.make_rhythm(
         stages=stage_number,
         voice_name=cl,
         division_maker=None,
