@@ -64,7 +64,7 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-assert segment_maker.validate_time_signatures()
+segment_maker.validate_measures_per_stage()
 
 
 ###############################################################################
