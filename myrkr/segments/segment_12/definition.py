@@ -110,28 +110,28 @@ for stage_index in range(segment_maker.stage_count):
 
 preprocessor.make_music_handlers(segment_maker)
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 1),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 4),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 9),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 11),
     specifiers=[
         tenuti,
