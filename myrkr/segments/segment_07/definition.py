@@ -79,21 +79,21 @@ for stage_index in range(segment_maker.stage_count):
 
 preprocessor.make_music_handlers(segment_maker)
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 1),
     specifiers=[
         pervasive_glissandi,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 3),
     specifiers=[
         pervasive_glissandi,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 6),
     specifiers=[
         pervasive_glissandi,

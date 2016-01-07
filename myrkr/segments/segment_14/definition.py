@@ -92,49 +92,49 @@ for stage_index in range(segment_maker.stage_count):
 
 preprocessor.make_music_handlers(segment_maker)
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 7),
     specifiers=[
         vowel_a,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 8),
     specifiers=[
         vowel_u,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 9),
     specifiers=[
         vowel_i,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 10),
     specifiers=[
         vowel_u,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 11),
     specifiers=[
         vowel_a,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 12),
     specifiers=[
         vowel_o,
         ],
     )
 
-segment_maker.make_music_handler(
+segment_maker.make_specifiers(
     scope=(cl, 13),
     specifiers=[
         vowel_i,
