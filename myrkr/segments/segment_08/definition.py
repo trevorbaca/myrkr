@@ -96,49 +96,49 @@ for stage_index in range(segment_maker.stage_count):
 
 preprocessor.make_music_handlers(segment_maker)
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 2),
     specifiers=[
         overblow,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 3),
     specifiers=[
         pervasive_glissandi,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 7),
     specifiers=[
         pervasive_glissandi,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 8),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 12),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 15),
     specifiers=[
         tenuti,
         ],
     )
 
-segment_maker.make_specifiers(
+segment_maker.make_scoped_specifiers(
     scope=(cl, 17),
     specifiers=[
         pervasive_glissandi,

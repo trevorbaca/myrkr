@@ -220,7 +220,7 @@ class Preprocessor(object):
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
             specifiers = bundle[1]
-            segment_maker.make_specifiers(
+            segment_maker.make_scoped_specifiers(
                 scope=('Clarinet Music Voice', stage_number),
                 specifiers=specifiers,
                 )
