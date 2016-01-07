@@ -68,7 +68,7 @@ segment_maker.validate_measures_per_stage()
 
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
-    segment_maker.make_rhythm_maker(
+    segment_maker.define_rhythm(
         stages=stage_number,
         voice_name=cl,
         division_maker=None,
