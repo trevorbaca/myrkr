@@ -93,12 +93,6 @@ color_microtones = baca.tools.MicrotonalDeviationSpecifier(
 
 ### MISCELLANEOUS ###
 
-def label_logical_ties(start_index=0):
-    return baca.tools.LabelSpecifier(
-        label_logical_ties=True,
-        start_index=start_index
-        )
-
 wide_third_octave = baca.tools.RegistrationSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
