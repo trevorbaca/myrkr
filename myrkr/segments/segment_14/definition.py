@@ -61,7 +61,7 @@ segment_maker = baca.tools.SegmentMaker(
         (14, Duration(1, 12)),
         (15, Duration(1, 8)),
         ),
-    tempo_map=(
+    tempo_specifier=(
         (1, myrkr.materials.tempi[55]),
         (7, myrkr.materials.tempi[44]),
         ),
