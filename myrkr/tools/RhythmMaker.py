@@ -124,7 +124,8 @@ class RhythmMaker(object):
         assert all(isinstance(_, prototype) for _ in tuplets)
         for tuplet in tuplets:
             beam = spannertools.MultipartBeam()
-            attach(beam, tuplet)
+            leaves = list(iterate(tuplet).by_leaf())
+            attach(beam, leaves)
         time_signatures = self._make_time_signatures(tuplets)
         selections = [select(_) for _ in tuplets]
         assert len(selections) == len(time_signatures)
