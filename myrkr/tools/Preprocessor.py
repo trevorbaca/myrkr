@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import copy
 import baca
+import copy
+import myrkr
 from abjad import *
 from experimental.tools import makertools
-import myrkr
 
 
 class Preprocessor(object):
@@ -123,7 +123,7 @@ class Preprocessor(object):
             if reset_cursor:
                 rhythm = self.name_to_rhythm[name]
                 rhythm = datastructuretools.CyclicTuple(rhythm)
-                cursor = datastructuretools.Cursor(
+                cursor = baca.tools.Cursor(
                     source=rhythm,
                     position=position,
                     )
