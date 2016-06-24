@@ -34,7 +34,7 @@ preprocessor = myrkr.tools.Preprocessor(
 segment_maker = baca.tools.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     score_package=myrkr,
-    label_stage_numbers=True,
+    label_stages=True,
     spacing_map=(
         (1, Duration(1, 8)),
         ),
