@@ -93,25 +93,25 @@ color_microtones = baca.tools.MicrotonalDeviationSpecifier(
 
 ### MISCELLANEOUS ###
 
-wide_third_octave = baca.tools.RegistrationSpecifier(
+wide_third_octave = baca.tools.RegisterSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
-narrow_fourth_octave = baca.tools.RegistrationSpecifier(
+narrow_fourth_octave = baca.tools.RegisterSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
-narrow_sixth_octave = baca.tools.RegistrationSpecifier(
+narrow_sixth_octave = baca.tools.RegisterSpecifier(
     registration=pitchtools.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
-sixth_octave = baca.tools.RegistrationSpecifier(
+sixth_octave = baca.tools.RegisterSpecifier(
     registration=pitchtools.Registration(
         [('[A0, C8)', 30)],
         ),
