@@ -18,11 +18,6 @@ leggierissimo = Markup('leggierissimo', direction=Up).italic().larger()
 
 ppp_subtone = Markup('ppp').dynamic() + Markup('subtone')
 
-patterned_f_ff = handlertools.TerracedDynamicsHandler(
-    dynamics=['f', 'f', 'ff', 'f', 'ff', 'f', 'f', 'ff', 'ff'],
-    minimum_duration=Duration(1, 8),
-    )
-
 halo_accompaniment_hairpins = handlertools.HairpinHandler(
     hairpin_token=[
         'pp > ppp', 'ppp < pp', 'pp > ppp', 'ppp < pp',
