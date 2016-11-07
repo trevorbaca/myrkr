@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
+import abjad
 import math
-from abjad import *
 
 
 class RhythmMaker(object):
@@ -32,18 +32,19 @@ class RhythmMaker(object):
         terms = tuple(terms)
         assert all(isinstance(_, int) for _ in terms), repr(terms)
         self._terms = terms
-        assert mathtools.all_are_positive_integers(counts), repr(counts)
+        assert abjad.mathtools.all_are_positive_integers(counts), repr(counts)
         self._counts = counts
-        assert mathtools.is_positive_integer_power_of_two(denominator)
+        assert abjad.mathtools.is_positive_integer_power_of_two(denominator)
         self._denominator = denominator
         prolation_indicators = prolation_indicators or ()
         assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
-        prolation_indicators = datastructuretools.CyclicTuple(
+        prolation_indicators = abjad.datastructuretools.CyclicTuple(
             prolation_indicators)
         self._prolation_indicators = prolation_indicators
         split_indicators = split_indicators or ()
         assert all(_ in (0, 1) for _ in split_indicators)
-        split_indicators = datastructuretools.CyclicTuple(split_indicators)
+        split_indicators = abjad.datastructuretools.CyclicTuple(
+            split_indicators)
         self._split_indicators = split_indicators
         displace_split_tuplets = bool(displace_split_tuplets)
         self._displace_split_tuplets = displace_split_tuplets
@@ -55,12 +56,12 @@ class RhythmMaker(object):
 
         Returns list of selections.
         '''
-        lcm = mathtools.least_common_multiple(
+        lcm = abjad.mathtools.least_common_multiple(
             len(self.terms),
             sum(self.counts),
             )
-        terms = sequencetools.repeat_sequence_to_length(self.terms, lcm)
-        tuplet_ratios = sequencetools.partition_sequence_by_counts(
+        terms = abjad.sequencetools.repeat_sequence_to_length(self.terms, lcm)
+        tuplet_ratios = abjad.sequencetools.partition_sequence_by_counts(
             terms,
             counts=self.counts,
             cyclic=True,
@@ -84,14 +85,14 @@ class RhythmMaker(object):
                 raise ValueError(prolation_indicator)
             leaves = []
             for term in tuplet_ratio:
-                duration = Duration(abs(term), self.denominator)
+                duration = abjad.Duration(abs(term), self.denominator)
                 if 0 < term:
-                    leaf = Note("c'", duration)
+                    leaf = abjad.Note("c'", duration)
                 else:
-                    leaf = Rest(duration)
+                    leaf = abjad.Rest(duration)
                 leaves.append(leaf)
-            duration = Duration(scaled_weight, self.denominator)
-            tuplet = scoretools.FixedDurationTuplet(duration, leaves)
+            duration = abjad.Duration(scaled_weight, self.denominator)
+            tuplet = abjad.scoretools.FixedDurationTuplet(duration, leaves)
             tuplets.append(tuplet)
         split_tuplets = []
         last_tuplet = None
@@ -120,14 +121,14 @@ class RhythmMaker(object):
         if last_tuplet is not None:
             split_tuplets.append(last_tuplet)
         tuplets = split_tuplets
-        prototype = scoretools.FixedDurationTuplet
+        prototype = abjad.scoretools.FixedDurationTuplet
         assert all(isinstance(_, prototype) for _ in tuplets)
         for tuplet in tuplets:
-            beam = spannertools.MultipartBeam()
-            leaves = list(iterate(tuplet).by_leaf())
-            attach(beam, leaves)
+            beam = abjad.spannertools.MultipartBeam()
+            leaves = list(abjad.iterate(tuplet).by_leaf())
+            abjad.attach(beam, leaves)
         time_signatures = self._make_time_signatures(tuplets)
-        selections = [select(_) for _ in tuplets]
+        selections = [abjad.select(_) for _ in tuplets]
         assert len(selections) == len(time_signatures)
         rhythm = zip(selections, time_signatures)
         return rhythm
@@ -135,7 +136,7 @@ class RhythmMaker(object):
     def __illustrate__(
         self, 
         rhythm=None, 
-        proportional_notation_duration=Duration(1, 16),
+        proportional_notation_duration=abjad.Duration(1, 16),
         subtitle=None,
         title=None, 
         ):
@@ -149,7 +150,7 @@ class RhythmMaker(object):
         for selection, time_signature in rhythm:
             tuplets.extend(selection)
             time_signatures.append(time_signature)
-        lilypond_file = rhythmmakertools.make_lilypond_file(
+        lilypond_file = abjad.rhythmmakertools.make_lilypond_file(
             tuplets,
             time_signatures,
             )
@@ -158,26 +159,26 @@ class RhythmMaker(object):
             first_leaf = tuplet[0]
             first_leaves.append(first_leaf)
         for i, first_leaf in enumerate(first_leaves):
-            markup = Markup(str(i)).small()
-            attach(markup, first_leaf)
+            markup = abjad.Markup(str(i)).small()
+            abjad.attach(markup, first_leaf)
         score = lilypond_file.score_block.items[0]
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
-        override(score).text_script.staff_padding = 4
-        override(score).time_signature.style = 'numbered'
-        override(score).tuplet_bracket.staff_padding = 3.5
+        abjad.override(score).text_script.staff_padding = 4
+        abjad.override(score).time_signature.style = 'numbered'
+        abjad.override(score).tuplet_bracket.staff_padding = 3.5
         pair = proportional_notation_duration.pair
-        moment = schemetools.SchemeMoment(pair)
-        set_(score).proportional_notation_duration = moment
-        assert inspect_(score).is_well_formed()
+        moment = abjad.schemetools.SchemeMoment(pair)
+        abjad.set_(score).proportional_notation_duration = moment
+        assert abjad.inspect_(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
-            subtitle = Markup(subtitle)
+            subtitle = abjad.Markup(subtitle)
             lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = markuptools.Markup.null()
+        lilypond_file.header_block.tagline = abjad.Markup.null()
         if title is not None:
-            title = Markup(title)
-            lilypond_file.header_block.title = Markup(title)
+            title = abjad.Markup(title)
+            lilypond_file.header_block.title = abjad.Markup(title)
         vector = layouttools.make_spacing_vector(0, 20, 0, 0)
         lilypond_file.paper_block.markup_system_spacing = vector
         return lilypond_file
@@ -188,24 +189,24 @@ class RhythmMaker(object):
         time_signatures = []
         denominators = range(self.denominator, 2 * self.denominator)
         for tuplet in tuplets:
-            duration = inspect_(tuplet).get_duration()
-            duration = mathtools.NonreducedFraction(duration)
+            duration = abjad.inspect_(tuplet).get_duration()
+            duration = abjad.mathtools.NonreducedFraction(duration)
             for denominator in denominators:
                 duration = duration.with_denominator(denominator)
                 if duration.denominator == denominator:
                     time_signatures.append(duration)
                     break
             else:
-                duration = inspect_(tuplet).get_duration()
-                duration = mathtools.NonreducedFraction(duration)
+                duration = abjad.inspect_(tuplet).get_duration()
+                duration = abjad.mathtools.NonreducedFraction(duration)
                 time_signatures.append(duration)
         tuplet_count = len(tuplets)
         time_signature_count = len(time_signatures)
         pair = (tuplet_count, time_signature_count)
         assert len(tuplets) == len(time_signatures), pair
         for tuplet, time_signature in zip(tuplets, time_signatures):
-            tuplet_duration = inspect_(tuplet).get_duration()
-            time_signature = Duration(time_signature)
+            tuplet_duration = abjad.inspect_(tuplet).get_duration()
+            time_signature = abjad.Duration(time_signature)
             assert tuplet_duration == time_signature, repr((
                 tuplet_duration,
                 time_signature,
@@ -214,7 +215,7 @@ class RhythmMaker(object):
 
     @staticmethod
     def _split_tuplet(tuplet):
-        logical_ties = list(iterate(tuplet).by_logical_tie())
+        logical_ties = list(abjad.iterate(tuplet).by_logical_tie())
         durations = [_.get_duration() for _ in logical_ties]
         left_count = int(math.floor(len(logical_ties)/2.0))
         right_count = int(math.ceil(len(logical_ties)/2.0))
@@ -223,7 +224,7 @@ class RhythmMaker(object):
         right_durations = durations[-right_count:]
         right_duration = sum(right_durations)
         total_duration = left_duration + right_duration
-        tuplet_duration = inspect_(tuplet).get_duration()
+        tuplet_duration = abjad.inspect_(tuplet).get_duration()
         assert tuplet_duration == total_duration, repr((
             tuplet, 
             total_duration,
@@ -231,29 +232,29 @@ class RhythmMaker(object):
             right_count,
             ))
         durations = [left_duration, right_duration]
-        selections = mutate(tuplet).split(durations)
+        selections = abjad.mutate(tuplet).split(durations)
         return selections
 
     @staticmethod
     def _tweak_length_1_tuplets(score):
-        for tuplet in iterate(score).by_class(Tuplet):
+        for tuplet in iterate(score).by_class(abjad.Tuplet):
             if not len(tuplet) == 1:
                 continue
             note = tuplet[0]
-            if Duration((1, 8)) < note.written_duration:
+            if abjad.Duration((1, 8)) < note.written_duration:
                 continue
             string = 'set tupletFullLength = ##f'
-            command = indicatortools.LilyPondCommand(
+            command = abjad.indicatortools.LilyPondCommand(
                 string, 
                 format_slot='before',
                 )
-            attach(command, tuplet)
+            abjad.attach(command, tuplet)
             string = 'set tupletFullLength = ##t'
-            command = indicatortools.LilyPondCommand(
+            command = abjad.indicatortools.LilyPondCommand(
                 string, 
                 format_slot='after',
                 )
-            attach(command, tuplet)
+            abjad.attach(command, tuplet)
             override(tuplet).tuplet_bracket.stencil = False
 
     ### PUBLIC PROPERTIES ###

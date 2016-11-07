@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import copy
 import myrkr
-from abjad import *
 from experimental.tools import makertools
 
 
@@ -55,7 +55,7 @@ class Preprocessor(object):
                 )
             specifiers.append(pitch_specifier)
         if dynamic is not None:
-            dynamic = Dynamic(dynamic)
+            dynamic = abjad.Dynamic(dynamic)
             specifiers.append(dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
@@ -67,7 +67,7 @@ class Preprocessor(object):
 
     def _remove_duplicate_dynamics(self):
         bundles = self._music_handler_bundles
-        pairs = sequencetools.iterate_sequence_nwise(bundles)
+        pairs = abjad.sequencetools.iterate_sequence_nwise(bundles)
         pairs = list(pairs)
         for first_bundle, second_bundle in reversed(pairs):
             first_stage_number = first_bundle[0]
@@ -76,13 +76,13 @@ class Preprocessor(object):
                 continue
             first_specifiers = first_bundle[1]
             first_dynamics = [_ for _ in first_specifiers
-                if isinstance(_, Dynamic)]
+                if isinstance(_, abjad.Dynamic)]
             if not first_dynamics:
                 continue
             first_dynamic = first_dynamics[0]
             second_specifiers = second_bundle[1]
             second_dynamics = [_ for _ in second_specifiers
-                if isinstance(_, Dynamic)]
+                if isinstance(_, abjad.Dynamic)]
             if not second_dynamics:
                 continue
             second_dynamic = second_dynamics[0]
@@ -122,7 +122,7 @@ class Preprocessor(object):
                 isinstance(location, tuple))
             if reset_cursor:
                 rhythm = self.name_to_rhythm[name]
-                rhythm = datastructuretools.CyclicTuple(rhythm)
+                rhythm = abjad.datastructuretools.CyclicTuple(rhythm)
                 cursor = baca.tools.Cursor(
                     source=rhythm,
                     position=position,
@@ -149,7 +149,7 @@ class Preprocessor(object):
         selections = self.selections
         assert sum(counts) == len(selections)
         selections = []
-        parts = sequencetools.partition_sequence_by_counts(
+        parts = abjad.sequencetools.partition_sequence_by_counts(
             self.selections,
             self.measures_per_stage,
             )
@@ -208,7 +208,8 @@ class Preprocessor(object):
     ### PUBLIC METHODS ###
 
     def get_music(self, stage_number):
-        assert mathtools.is_positive_integer(stage_number), repr(stage_number)
+        assert abjad.mathtools.is_positive_integer(stage_number), repr(
+            stage_number)
         stage_index = stage_number - 1
         selection = self._music_by_stage[stage_index]
         selection = copy.deepcopy(selection)

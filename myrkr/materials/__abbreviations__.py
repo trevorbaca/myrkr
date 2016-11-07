@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-from abjad import *
-from experimental import *
+import abjad
 import baca
+import experimental
 import myrkr
-from abjad.tools import pitchtools
 
 
 ### CONTEXT NAMES ###
@@ -14,11 +13,11 @@ cl = 'Clarinet Music Voice'
 
 ### DYNAMICS ###
 
-leggierissimo = Markup('leggierissimo', direction=Up).italic().larger()
+leggierissimo = abjad.Markup('leggierissimo', direction=Up).italic().larger()
 
-ppp_subtone = Markup('ppp').dynamic() + Markup('subtone')
+ppp_subtone = abjad.Markup('ppp').dynamic() + abjad.Markup('subtone')
 
-halo_accompaniment_hairpins = handlertools.HairpinSpecifier(
+halo_accompaniment_hairpins = baca.tool.HairpinSpecifier(
     hairpin_token=[
         'pp > ppp', 'ppp < pp', 'pp > ppp', 'ppp < pp',
         'pp < p', 'p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 
@@ -26,7 +25,7 @@ halo_accompaniment_hairpins = handlertools.HairpinSpecifier(
     span='nontrivial ties',
     )
 
-halo_hairpins = handlertools.HairpinSpecifier(
+halo_hairpins = baca.tools.HairpinSpecifier(
     hairpin_token=[
         'pp > ppp', 'ppp < pp', 'pp > ppp', 'ppp < pp',
         'pp < p', 'p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 
@@ -36,17 +35,17 @@ halo_hairpins = handlertools.HairpinSpecifier(
 
 ### MARKUP ###
 
-vowel_a = Markup('“A”', direction=Up)
-vowel_i = Markup('“I”', direction=Up)
-vowel_o = Markup('“O”', direction=Up)
-vowel_u = Markup('“U”', direction=Up)
+vowel_a = abjad.Markup('“A”', direction=Up)
+vowel_i = abjad.Markup('“I”', direction=Up)
+vowel_o = abjad.Markup('“O”', direction=Up)
+vowel_u = abjad.Markup('“U”', direction=Up)
 
-do_not_tongue = Markup('(do not tongue)').bold()
-do_not_tongue = Markup(do_not_tongue, direction=Up)
+do_not_tongue = abjad.Markup('(do not tongue)').bold()
+do_not_tongue = abjad.Markup(do_not_tongue, direction=Up)
 
-overblow = Markup('overblow', direction=Up)
+overblow = abjad.Markup('overblow', direction=Up)
 
-tongue = Markup('tongue', direction=Up)
+tongue = abjad.Markup('tongue', direction=Up)
 
 ### PITCH ###
 
@@ -66,7 +65,7 @@ color_fingerings = baca.tools.ColorFingeringSpecifier(
 
 def make_color_fingerings(name, index=0):
     color_fingerings = myrkr.materials.color_fingerings[name]
-    color_fingerings = sequencetools.rotate_sequence(
+    color_fingerings = abjad.sequencetools.rotate_sequence(
         color_fingerings,
         index,
         )

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 import myrkr
 from baca.__abbreviations__ import *
@@ -46,13 +46,13 @@ segment_maker = baca.tools.SegmentMaker(
     score_package=myrkr,
     label_stages=True,
     spacing_map=(
-        (1, Duration(1, 12)),
-        (9, Duration(1, 6)),
+        (1, abjad.Duration(1, 12)),
+        (9, abjad.Duration(1, 6)),
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[110]),
         (9, myrkr.materials.tempi[55]),
-        (9, Accelerando()),
+        (9, abjad.Accelerando()),
         (10, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,

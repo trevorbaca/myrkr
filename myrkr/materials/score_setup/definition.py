@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
 score_setup = {
     'ClarinetMusicStaff': (
-        instrumenttools.BassClarinet,
+        abjad.instrumenttools.BassClarinet,
         ),
     }
