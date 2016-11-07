@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 import myrkr
 from baca.__abbreviations__ import *
@@ -46,7 +46,7 @@ segment_maker = baca.tools.SegmentMaker(
     score_package=myrkr,
     label_stages=True,
     spacing_map=(
-        (1, Duration(1, 24)),
+        (1, abjad.Duration(1, 24)),
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[110]),
@@ -73,7 +73,7 @@ for stage_index in range(segment_maker.stage_count):
 
 
 ###############################################################################
-############################### COLOR ################################
+#################################### COLOR ####################################
 ###############################################################################
 
 preprocessor.make_music_handlers(segment_maker)

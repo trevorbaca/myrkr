@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 import myrkr
 from baca.__abbreviations__ import *
@@ -7,7 +7,7 @@ from myrkr.materials.__abbreviations__ import *
 
 
 ###############################################################################
-########################## SEGMENT-PREPROCESSOR ###############################
+############################ SEGMENT-PREPROCESSOR #############################
 ###############################################################################
 
 charcoal_position = 0
@@ -68,7 +68,7 @@ segment_maker = baca.tools.SegmentMaker(
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[110]),
-        (4, Ritardando()),
+        (4, abjad.indicatortools.Ritardando()),
         (10, myrkr.materials.tempi[55]),
         ),
     time_signatures=preprocessor.time_signatures,
@@ -93,7 +93,7 @@ for stage_index in range(segment_maker.stage_count):
 
 
 ###############################################################################
-############################### COLOR ################################
+################################### COLOR #####################################
 ###############################################################################
 
 preprocessor.make_music_handlers(segment_maker)

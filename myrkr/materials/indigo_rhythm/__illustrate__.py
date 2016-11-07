@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from abjad import *
 from myrkr.materials.indigo_rhythm.definition import maker
 
 

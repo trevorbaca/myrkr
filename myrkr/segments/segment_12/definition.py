@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 import myrkr
 from baca.__abbreviations__ import *
@@ -9,7 +9,6 @@ from myrkr.materials.__abbreviations__ import *
 ###############################################################################
 ########################## SEGMENT-PREPROCESSOR ###############################
 ###############################################################################
-
 
 cobalt_position = 29
 indigo_position = 128
@@ -61,26 +60,26 @@ segment_maker = baca.tools.SegmentMaker(
     score_package=myrkr,
     label_stages=True,
     spacing_map=(
-        (1, Duration(1, 12)),
-        (3, Duration(1, 24)),
-        (4, Duration(1, 12)),
-        (5, Duration(1, 24)),
-        (7, Duration(1, 12)),
-        (8, Duration(1, 24)),
-        (9, Duration(1, 12)),
-        (10, Duration(1, 24)),
-        (11, Duration(1, 12)),
-        (12, Duration(1, 24)),
-        (13, Duration(1, 8)),
-        (14, Duration(1, 24)),
-        (18, Duration(1, 8)),
-        (19, Duration(1, 24)),
-        (20, Duration(1, 8)),
-        (22, Duration(1, 12)),
+        (1, abjad.Duration(1, 12)),
+        (3, abjad.Duration(1, 24)),
+        (4, abjad.Duration(1, 12)),
+        (5, abjad.Duration(1, 24)),
+        (7, abjad.Duration(1, 12)),
+        (8, abjad.Duration(1, 24)),
+        (9, abjad.Duration(1, 12)),
+        (10, abjad.Duration(1, 24)),
+        (11, abjad.Duration(1, 12)),
+        (12, abjad.Duration(1, 24)),
+        (13, abjad.Duration(1, 8)),
+        (14, abjad.Duration(1, 24)),
+        (18, abjad.Duration(1, 8)),
+        (19, abjad.Duration(1, 24)),
+        (20, abjad.Duration(1, 8)),
+        (22, abjad.Duration(1, 12)),
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[110]),
-        (14, Ritardando()),
+        (14, abjad.Ritardando()),
         (20, myrkr.materials.tempi[55]),
         ),
     time_signatures=preprocessor.time_signatures,

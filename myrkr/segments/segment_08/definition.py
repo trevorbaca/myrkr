@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 import myrkr
 from baca.__abbreviations__ import *
@@ -66,7 +66,7 @@ segment_maker = baca.tools.SegmentMaker(
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[44]),
-        (2, Accelerando()),
+        (2, abjad.Accelerando()),
         (4, myrkr.materials.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,

@@ -1,6 +1,6 @@
 # -*- c_oding: utf-8 -*-
+import abjad
 import collections
-from abjad import *
 
 
 class ColorMaker(object):
@@ -26,7 +26,7 @@ class ColorMaker(object):
 
         Returns selection of notes.
         '''
-        start_pitch = NamedPitch(start_pitch)
+        start_pitch = abjad.NamedPitch(start_pitch)
         notes = []
         previous_pitch = start_pitch
         for indicator in self.indicators:
@@ -46,41 +46,38 @@ class ColorMaker(object):
         self._attach_clefs(notes)
         note_voice = Voice(notes)
         durations = [inspect_(_).get_duration() for _ in notes]
-        skips = scoretools.make_skips(Duration(1), durations)
-        label_voice = Voice(skips)
-        labeltools.label_leaves_in_expr_with_leaf_indices(
-            label_voice,
-            direction=Down,
-            )
-        override(label_voice).text_script.staff_padding = 4
-        staff = Staff([note_voice, label_voice], is_simultaneous=True)
-        score = Score([staff])
-        attach(TimeSignature((1, 4)), staff)
-        override(score).bar_line.stencil = False
-        override(score).bar_number.transparent = True
-        override(score).spacing_spanner.strict_grace_spacing = True
-        override(score).spacing_spanner.strict_note_spacing = True
-        override(score).stem.transparent = True
-        override(score).text_script.staff_padding = 1
-        override(score).time_signature.stencil = False
-        moment = schemetools.SchemeMoment((1, 9))
-        set_(score).proportional_notation_duration = moment
-        lilypond_file = lilypondfiletools.make_basic_lilypond_file(score)
+        skips = scoretools.make_skips(abjad.Duration(1), durations)
+        label_voice = abjad.Voice(skips)
+        abjad.labe(label_voice).with_indices(direction=Down)
+        abjad.override(label_voice).text_script.staff_padding = 4
+        staff = abjad.Staff([note_voice, label_voice], is_simultaneous=True)
+        score = abjad.Score([staff])
+        abjad.attach(abjad.TimeSignature((1, 4)), staff)
+        abjad.override(score).bar_line.stencil = False
+        abjad.override(score).bar_number.transparent = True
+        abjad.override(score).spacing_spanner.strict_grace_spacing = True
+        abjad.override(score).spacing_spanner.strict_note_spacing = True
+        abjad.override(score).stem.transparent = True
+        abjad.override(score).text_script.staff_padding = 1
+        abjad.override(score).time_signature.stencil = False
+        moment = abjad.schemetools.SchemeMoment((1, 9))
+        abjad.set_(score).proportional_notation_duration = moment
+        lilypond_file = abjad.lilypondfiletools.make_basic_lilypond_file(score)
         lilypond_file.global_staff_size = 12
         if subtitle is not None:
-            subtitle = Markup(subtitle)
+            subtitle = abjad.Markup(subtitle)
             lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = Markup.null()
+        lilypond_file.header_block.tagline = abjad.Markup.null()
         if title is not None:
-            title = Markup(title)
+            title = abjad.Markup(title)
             lilypond_file.header_block.title = title
         lilypond_file.layout_block.indent = 0
         lilypond_file.paper_block.left_margin = 20
-        vector = layouttools.make_spacing_vector(0, 20, 0, 0)
+        vector = abjad.layouttools.make_spacing_vector(0, 20, 0, 0)
         lilypond_file.paper_block.markup_system_spacing = vector
-        vector = layouttools.make_spacing_vector(0, 0, 12, 0)
+        vector = abjad.layouttools.make_spacing_vector(0, 0, 12, 0)
         lilypond_file.paper_block.system_system_spacing = vector
-        vector = layouttools.make_spacing_vector(0, 4, 0, 0)
+        vector = abjad.layouttools.make_spacing_vector(0, 4, 0, 0)
         lilypond_file.paper_block.top_markup_spacing = vector
         return lilypond_file
 
@@ -93,22 +90,22 @@ class ColorMaker(object):
             suggested_clef = class_._suggest_clef(note.written_pitch)
             if (previous_clef is None or
                 not suggested_clef == previous_clef):
-                attach(suggested_clef, note)
+                abjad.attach(suggested_clef, note)
                 previous_clef = suggested_clef
 
     @staticmethod
     def _interpret_indicator(indicator, previous_pitch):
         assert len(indicator) == 2
         interval = indicator[0]
-        interval = pitchtools.NamedInterval(interval)
+        interval = abjad.pitchtools.NamedInterval(interval)
         current_pitch = previous_pitch + interval
         color_fingering_numbers = indicator[1]
         notes = []
         for number in color_fingering_numbers:
-            note = Note(current_pitch, Duration(1, 4))
+            note = abjad.Note(current_pitch, Duration(1, 4))
             if 0 < number:
-                color_fingering = indicatortools.ColorFingering(number)
-                attach(color_fingering, note)
+                color_fingering = abjad.indicatortools.ColorFingering(number)
+                abjad.attach(color_fingering, note)
             notes.append(note)
         notes = select(notes)
         return notes
@@ -116,8 +113,8 @@ class ColorMaker(object):
     @staticmethod
     def _suggest_clef(pitch):
         if pitch < -3:
-            return Clef('bass')
-        return Clef('treble')
+            return abjad.Clef('bass')
+        return abjad.Clef('treble')
 
     def _validate_indicators(self, indicators):
         for indicator in indicators:
