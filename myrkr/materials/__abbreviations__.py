@@ -17,8 +17,8 @@ leggierissimo = abjad.Markup('leggierissimo', direction=Up).italic().larger()
 
 ppp_subtone = abjad.Markup('ppp').dynamic() + abjad.Markup('subtone')
 
-halo_accompaniment_hairpins = baca.tool.HairpinSpecifier(
-    hairpin_token=[
+halo_accompaniment_hairpins = baca.tools.HairpinSpecifier(
+    hairpin_tokens=[
         'pp > ppp', 'ppp < pp', 'pp > ppp', 'ppp < pp',
         'pp < p', 'p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 
         ],
@@ -26,7 +26,7 @@ halo_accompaniment_hairpins = baca.tool.HairpinSpecifier(
     )
 
 halo_hairpins = baca.tools.HairpinSpecifier(
-    hairpin_token=[
+    hairpin_tokens=[
         'pp > ppp', 'ppp < pp', 'pp > ppp', 'ppp < pp',
         'pp < p', 'p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 
         ],
@@ -88,25 +88,25 @@ color_microtones = baca.tools.MicrotonalDeviationSpecifier(
 ### MISCELLANEOUS ###
 
 wide_third_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -20), ('[F#4, C8]', -6)]
         ),
     )
 
 narrow_fourth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
         ),
     )
 
 narrow_sixth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
         ),
     )
 
 sixth_octave = baca.tools.RegisterSpecifier(
-    registration=pitchtools.Registration(
+    registration=abjad.pitchtools.Registration(
         [('[A0, C8)', 30)],
         ),
     )
