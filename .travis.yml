@@ -20,8 +20,8 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./myrkr -x
-    - py.test -rf ./myrkr -x
+    - ajv doctest -x ./myrkr
+    - py.test -xrf ./myrkr
     - python ./myrkr/test/test_segments.py
 
 notifications:
