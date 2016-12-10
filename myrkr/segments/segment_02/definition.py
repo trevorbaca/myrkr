@@ -86,4 +86,4 @@ for stage_index in range(segment_maker.stage_count):
 ############################### COLOR ################################
 ###############################################################################
 
-preprocessor.make_music_handlers(segment_maker)
+preprocessor.make_music_specifiers(segment_maker)

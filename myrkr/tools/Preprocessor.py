@@ -16,7 +16,7 @@ class Preprocessor(object):
         '_indicators',
         '_measures_per_stage',
         '_music_by_stage',
-        '_music_handler_bundles',
+        '_music_specifier_bundles',
         '_name_to_rhythm',
         '_selections',
         '_time_signatures',
@@ -29,7 +29,7 @@ class Preprocessor(object):
         name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
         self._measures_per_stage = ()
-        self._music_handler_bundles = []
+        self._music_specifier_bundles = []
         self._name_to_rhythm = name_to_rhythm
         self._selections = ()
         self._time_signatures = ()
@@ -38,7 +38,7 @@ class Preprocessor(object):
 
     ### PRIVATE METHODS ###
 
-    def _make_music_handler_bundle(
+    def _make_music_specifier_bundle(
         self, 
         stage_number, 
         pitch, 
@@ -63,10 +63,10 @@ class Preprocessor(object):
             color_fingering = method(*color_fingering)
             specifiers.append(color_fingering)
         bundle = (stage_number, specifiers)
-        self._music_handler_bundles.append(bundle)
+        self._music_specifier_bundles.append(bundle)
 
     def _remove_duplicate_dynamics(self):
-        bundles = self._music_handler_bundles
+        bundles = self._music_specifier_bundles
         pairs = abjad.sequencetools.iterate_sequence_nwise(bundles)
         pairs = list(pairs)
         for first_bundle, second_bundle in reversed(pairs):
@@ -136,7 +136,7 @@ class Preprocessor(object):
                 time_signatures.append(time_signature)
             measures_per_stage.append(count)
             stage_number = stage_index + 1
-            self._make_music_handler_bundle(
+            self._make_music_specifier_bundle(
                 stage_number, 
                 pitch, 
                 dynamic, 
@@ -215,9 +215,9 @@ class Preprocessor(object):
         selection = copy.deepcopy(selection)
         return selection
 
-    def make_music_handlers(self, segment_maker):
+    def make_music_specifiers(self, segment_maker):
         self._remove_duplicate_dynamics()
-        for bundle in self._music_handler_bundles:
+        for bundle in self._music_specifier_bundles:
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
             specifiers = bundle[1]
