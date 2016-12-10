@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import abjad
-import collections
 
 
 long_space = 16
@@ -22,7 +21,7 @@ def make_long_markup(string):
 def make_short_markup(string):
     return make_markup(string, short_space)
 
-instruments = collections.OrderedDict([
+instruments = abjad.datastructuretools.TypedOrderedDict([
     (
         'bass clarinet', 
         abjad.instrumenttools.BassClarinet(
