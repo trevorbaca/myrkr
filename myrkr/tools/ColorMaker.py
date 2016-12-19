@@ -1,4 +1,4 @@
-# -*- c_oding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import abjad
 import collections
 
