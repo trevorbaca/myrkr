@@ -161,7 +161,7 @@ class RhythmMaker(object):
         for i, first_leaf in enumerate(first_leaves):
             markup = abjad.Markup(str(i)).small()
             abjad.attach(markup, first_leaf)
-        score = lilypond_file.score_block.items[0]
+        score = lilypond_file[abjad.Score]
         score.add_final_bar_line()
         self._tweak_length_1_tuplets(score)
         abjad.override(score).text_script.staff_padding = 4
