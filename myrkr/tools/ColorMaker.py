@@ -97,7 +97,7 @@ class ColorMaker(object):
     def _interpret_indicator(indicator, previous_pitch):
         assert len(indicator) == 2
         interval = indicator[0]
-        interval = abjad.pitchtools.NamedInterval(interval)
+        interval = abjad.NamedInterval(interval)
         current_pitch = previous_pitch + interval
         color_fingering_numbers = indicator[1]
         notes = []
