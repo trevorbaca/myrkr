@@ -65,10 +65,7 @@ color_fingerings = baca.tools.ColorFingeringSpecifier(
 
 def make_color_fingerings(name, index=0):
     color_fingerings = myrkr.materials.color_fingerings[name]
-    color_fingerings = abjad.sequencetools.rotate_sequence(
-        color_fingerings,
-        index,
-        )
+    color_fingerings = baca.Sequence(color_fingerings).rotate(n=index)
     color_fingerings = baca.tools.ColorFingeringSpecifier(
         deposit_annotations=['color fingering'],
         number_lists=(
