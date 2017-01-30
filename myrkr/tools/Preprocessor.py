@@ -149,8 +149,7 @@ class Preprocessor(object):
         selections = self.selections
         assert sum(counts) == len(selections)
         selections = []
-        parts = abjad.sequencetools.partition_sequence_by_counts(
-            self.selections,
+        parts = baca.Sequence(self.selections).partition_by_counts(
             self.measures_per_stage,
             )
         for part in parts:
