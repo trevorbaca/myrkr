@@ -61,7 +61,7 @@ class RhythmMaker(object):
             len(self.terms),
             sum(self.counts),
             )
-        terms = abjad.sequencetools.repeat_sequence_to_length(self.terms, lcm)
+        terms = baca.Sequence(self.terms).repeat_to_length(lcm)
         tuplet_ratios = baca.Sequence(terms).partition_by_counts(
             counts=self.counts,
             cyclic=True,
