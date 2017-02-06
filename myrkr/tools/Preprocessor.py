@@ -67,8 +67,7 @@ class Preprocessor(object):
 
     def _remove_duplicate_dynamics(self):
         bundles = self._music_specifier_bundles
-        pairs = abjad.sequencetools.iterate_sequence_nwise(bundles)
-        pairs = list(pairs)
+        pairs = abjad.Sequence(bundles).nwise()
         for first_bundle, second_bundle in reversed(pairs):
             first_stage_number = first_bundle[0]
             second_stage_number = second_bundle[0]
