@@ -39,12 +39,12 @@ class RhythmMaker(object):
         self._denominator = denominator
         prolation_indicators = prolation_indicators or ()
         assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
-        prolation_indicators = abjad.datastructuretools.CyclicTuple(
+        prolation_indicators = abjad.CyclicTuple(
             prolation_indicators)
         self._prolation_indicators = prolation_indicators
         split_indicators = split_indicators or ()
         assert all(_ in (0, 1) for _ in split_indicators)
-        split_indicators = abjad.datastructuretools.CyclicTuple(
+        split_indicators = abjad.CyclicTuple(
             split_indicators)
         self._split_indicators = split_indicators
         displace_split_tuplets = bool(displace_split_tuplets)

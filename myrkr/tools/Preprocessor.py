@@ -121,7 +121,7 @@ class Preprocessor(object):
                 isinstance(location, tuple))
             if reset_cursor:
                 rhythm = self.name_to_rhythm[name]
-                rhythm = abjad.datastructuretools.CyclicTuple(rhythm)
+                rhythm = abjad.CyclicTuple(rhythm)
                 cursor = baca.tools.Cursor(
                     source=rhythm,
                     position=position,

@@ -2,7 +2,7 @@
 import abjad
 
 
-metadata = abjad.datastructuretools.TypedOrderedDict([
+metadata = abjad.TypedOrderedDict([
     ('catalog_number', 'AWN-012'),
     ('composer', 'Bača'),
     ('forces_tagline', 'for bass clarinet'),
