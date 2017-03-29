@@ -50,7 +50,7 @@ class Preprocessor(object):
         specifiers = []
         if pitch is not None:
             assert isinstance(pitch, str), repr(pitch)
-            pitch_specifier = baca.tools.ScorePitchSpecifier(
+            pitch_specifier = baca.tools.ScorePitchCommand(
                 source=pitch,
                 )
             specifiers.append(pitch_specifier)
