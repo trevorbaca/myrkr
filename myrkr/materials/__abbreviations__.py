@@ -40,7 +40,7 @@ vowel_u = abjad.Markup('“U”', direction=Up)
 do_not_tongue = abjad.Markup('(do not tongue)').bold()
 do_not_tongue = abjad.Markup(do_not_tongue, direction=Up)
 
-overblow = abjad.Markup('overblow', direction=Up)
+overblow = baca.markup('overblow', direction=Up)
 
 tongue = abjad.Markup('tongue', direction=Up)
 
