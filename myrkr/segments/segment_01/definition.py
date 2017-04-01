@@ -2,8 +2,8 @@
 import abjad
 import baca
 import myrkr
-from baca.__abbreviations__ import *
-from myrkr.materials.__abbreviations__ import *
+#from baca.__abbreviations__ import *
+#from myrkr.materials.__abbreviations__ import *
 
 
 ###############################################################################
