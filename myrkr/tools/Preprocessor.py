@@ -3,7 +3,6 @@ import abjad
 import baca
 import copy
 import myrkr
-from experimental.tools import makertools
 
 
 class Preprocessor(object):
@@ -50,12 +49,11 @@ class Preprocessor(object):
         specifiers = []
         if pitch is not None:
             assert isinstance(pitch, str), repr(pitch)
-            pitch_specifier = baca.tools.ScorePitchCommand(
-                source=pitch,
-                )
+            pitch_specifier = baca.tools.ScorePitchCommand(source=pitch)
             specifiers.append(pitch_specifier)
         if dynamic is not None:
-            dynamic = abjad.Dynamic(dynamic)
+            #dynamic = abjad.Dynamic(dynamic)
+            dynamic = baca.dynamic(dynamic)
             specifiers.append(dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
@@ -67,7 +65,7 @@ class Preprocessor(object):
 
     def _remove_duplicate_dynamics(self):
         bundles = self._music_specifier_bundles
-        pairs = abjad.Sequence(bundles).nwise()
+        pairs = list(abjad.Sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_stage_number = first_bundle[0]
             second_stage_number = second_bundle[0]
@@ -115,10 +113,12 @@ class Preprocessor(object):
                 pitch = indicator[2]
                 dynamic = indicator[3]
                 color_fingering = indicator[4]
-            assert mathtools.is_positive_integer(count), repr(count)
+            assert abjad.mathtools.is_positive_integer(count), repr(count)
             assert isinstance(position, int), repr(position)
-            reset_cursor = (name not in name_to_cursor or
-                isinstance(location, tuple))
+            reset_cursor = (
+                name not in name_to_cursor or
+                isinstance(location, tuple)
+                )
             if reset_cursor:
                 rhythm = self.name_to_rhythm[name]
                 rhythm = abjad.CyclicTuple(rhythm)
@@ -148,16 +148,15 @@ class Preprocessor(object):
         selections = self.selections
         assert sum(counts) == len(selections)
         selections = []
-        parts = baca.Sequence(self.selections).partition_by_counts(
-            self.measures_per_stage,
-            )
+        parts = baca.Sequence(self.selections)
+        parts = parts.partition_by_counts(self.measures_per_stage)
         for part in parts:
             selection = []
             for selection_ in part:
                 selection.extend(selection_)
-            selection = select(selection)
+            selection = abjad.select(selection)
             selections.append(selection)
-        assert all(isinstance(_, selectiontools.Selection) for _ in selections)
+        assert all(isinstance(_, abjad.Selection) for _ in selections)
         self._music_by_stage = selections
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
@@ -218,8 +217,9 @@ class Preprocessor(object):
         for bundle in self._music_specifier_bundles:
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
-            specifiers = bundle[1]
-            segment_maker.make_scoped_specifiers(
-                scope=('Clarinet Music Voice', stage_number),
-                specifiers=specifiers,
+            commands = bundle[1]
+            segment_maker.append_commands(
+                'Clarinet Music Voice',
+                baca.select_stages(stage_number),
+                *commands,
                 )
