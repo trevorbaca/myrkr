@@ -1,6 +1,4 @@
-% 2015-09-30 01:36
-
-\version "2.19.27"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -12,216 +10,407 @@
     \context Score = "Score" \with {
         currentBarNumber = #111
     } <<
-        \context TimeSignatureContext = "Time Signature Context" {
-            {
-                \time 10/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                \bar ""
-                \newSpacingSection
-                \mark #4
-                s1 * 5/8
+        \context TimeSignatureContext = "Time Signature Context" <<
+            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
+                    \time 5/16
+                    R1 * 5/16
+                }
+                {
+                    \time 7/22
+                    R1 * 7/22
+                }
+                {
+                    \time 1/1
+                    R1 * 1
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    \time 13/16
+                    R1 * 13/16
+                }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
+                    \time 5/16
+                    R1 * 5/16
+                }
+                {
+                    \time 7/22
+                    R1 * 7/22
+                }
+                {
+                    \time 1/1
+                    R1 * 1
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    \time 13/16
+                    R1 * 13/16
+                }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
+                    \time 5/16
+                    R1 * 5/16
+                }
+                {
+                    \time 7/22
+                    R1 * 7/22
+                }
+                {
+                    \time 1/1
+                    R1 * 1
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    \time 13/16
+                    R1 * 13/16
+                }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
+                    \time 5/16
+                    R1 * 5/16
+                }
+                {
+                    \time 7/22
+                    R1 * 7/22
+                }
+                {
+                    \time 1/1
+                    R1 * 1
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    R1 * 1
+                }
+                {
+                    R1 * 1
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    \time 13/16
+                    R1 * 13/16
+                }
+                {
+                    \time 5/22
+                    R1 * 5/22
+                }
+                {
+                    \time 8/16
+                    R1 * 1/2
+                }
+                {
+                    \time 7/20
+                    R1 * 7/20
+                }
+                {
+                    \time 6/22
+                    R1 * 3/11
+                }
             }
-            {
-                \time 5/16
-                s1 * 5/16
-            }
-            {
-                \time 7/22
-                s1 * 7/22
-            }
-            {
-                \time 1/1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
-                s1 * 1
-            }
-            {
-                \time 3/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                \newSpacingSection
-                s1 * 3/16
-            }
-            {
-                \time 13/16
-                s1 * 13/16
-            }
-            {
-                \time 10/16
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = -2
-                \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                    \override
-                        #'(padding . 0.45)
-                        \parenthesize
-                            \large
-                                \upright
-                                    rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                \once \override TextSpanner.bound-details.left.text = \markup {
-                    \large
-                        \upright
-                            rit.
-                    \hspace
-                        #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
-                s1 * 5/8 \startTextSpan
-            }
-            {
-                \time 5/16
-                s1 * 5/16
-            }
-            {
-                \time 7/22
-                s1 * 7/22
-            }
-            {
-                \time 1/1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
-                s1 * 1
-            }
-            {
-                \time 3/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                \newSpacingSection
-                s1 * 3/16
-            }
-            {
-                \time 13/16
-                s1 * 13/16
-            }
-            {
-                \time 10/16
-                s1 * 5/8
-            }
-            {
-                \time 5/16
-                s1 * 5/16
-            }
-            {
-                \time 7/22
-                s1 * 7/22
-            }
-            {
-                \time 1/1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
-                s1 * 1
-            }
-            {
-                \time 3/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                \newSpacingSection
-                s1 * 3/16
-            }
-            {
-                \time 13/16
-                s1 * 13/16
-            }
-            {
-                \time 10/16
-                s1 * 5/8 \stopTextSpan ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            55
+            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                {
+                    \time 10/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    \mark #4
+                    s1 * 5/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.1]
+                            }
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 7/22
+                    s1 * 7/22
+                }
+                {
+                    \time 1/1
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                    \newSpacingSection
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.2]
+                            }
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.3]
+                            }
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 10/16
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
                         }
-                    }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                rit.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 5/8 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.4]
+                            }
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 7/22
+                    s1 * 7/22
+                }
+                {
+                    \time 1/1
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                    \newSpacingSection
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.5]
+                            }
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.6]
+                            }
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 10/16
+                    s1 * 5/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.7]
+                            }
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 7/22
+                    s1 * 7/22
+                }
+                {
+                    \time 1/1
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                    \newSpacingSection
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.8]
+                            }
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.9]
+                            }
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 10/16
+                    s1 * 5/8 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.10]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                55
+                            }
+                        }
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 7/22
+                    s1 * 7/22
+                }
+                {
+                    \time 1/1
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                    \newSpacingSection
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.11]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.12]
+                            }
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D.13]
+                            }
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 5/22
+                    s1 * 5/22
+                }
+                {
+                    \time 8/16
+                    s1 * 1/2
+                }
+                {
+                    \time 7/20
+                    s1 * 7/20
+                }
+                {
+                    \time 6/22
+                    s1 * 3/11
+                }
             }
-            {
-                \time 5/16
-                s1 * 5/16
-            }
-            {
-                \time 7/22
-                s1 * 7/22
-            }
-            {
-                \time 1/1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                \newSpacingSection
-                s1 * 1
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                s1 * 1
-            }
-            {
-                s1 * 1
-            }
-            {
-                \time 3/16
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                \newSpacingSection
-                s1 * 3/16
-            }
-            {
-                \time 13/16
-                s1 * 13/16
-            }
-            {
-                \time 5/22
-                s1 * 5/22
-            }
-            {
-                \time 8/16
-                s1 * 1/2
-            }
-            {
-                \time 7/20
-                s1 * 7/20
-            }
-            {
-                \time 6/22
-                s1 * 3/11
-            }
-        }
+        >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
-            \clef "treble"
-            \set Staff.instrumentName = \markup {
-            \hcenter-in
-                #16
-                \center-column
-                    {
-                        Bass
-                        clarinet
-                    }
-            }
-            \set Staff.shortInstrumentName = \markup {
-            \hcenter-in
-                #10
-                \center-column
-                    {
-                        Bass
-                        cl.
-                    }
-            }
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    b'4 \p
+                    a4 \p
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -229,7 +418,7 @@
                                     \finger
                                         3
                             }
-                    b'8 [
+                    a8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -237,7 +426,7 @@
                                     \finger
                                         1
                             }
-                    b'16
+                    a16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -245,7 +434,7 @@
                                     \finger
                                         2
                             }
-                    b'8. ]
+                    a8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -255,7 +444,7 @@
                             }
                 }
                 {
-                    b'8 [
+                    a8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -263,11 +452,11 @@
                                     \finger
                                         1
                             }
-                    b'8. ]
+                    a8. ]
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    b'8. [
+                    a8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -275,7 +464,7 @@
                                     \finger
                                         4
                             }
-                    b'16
+                    a16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -283,13 +472,13 @@
                                     \finger
                                         2
                             }
-                    b'8. ]
+                    a8. ]
                 }
                 {
-                    f1 \mp
+                    ef,1 \mp
                 }
                 {
-                    b'8 [
+                    a8 \mp [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -297,10 +486,10 @@
                                     \finger
                                         2
                             }
-                    b'16 ]
+                    a16 ]
                 }
                 {
-                    b'8.
+                    a8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -308,7 +497,7 @@
                                     \finger
                                         3
                             }
-                    b'4
+                    a4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -316,7 +505,7 @@
                                     \finger
                                         1
                             }
-                    b'8 [
+                    a8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -324,7 +513,7 @@
                                     \finger
                                         2
                             }
-                    b'16
+                    a16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -332,7 +521,7 @@
                                     \finger
                                         4
                             }
-                    b'8. ]
+                    a8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -342,8 +531,8 @@
                             }
                 }
                 {
-                    cs''4 \mf
-                    cs''8 [
+                    b4 \mf
+                    b8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -351,7 +540,7 @@
                                     \finger
                                         1
                             }
-                    cs''16
+                    b16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -359,10 +548,10 @@
                                     \finger
                                         2
                             }
-                    cs''8. ]
+                    b8. ]
                 }
                 {
-                    cs''8 [
+                    b8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -370,7 +559,7 @@
                                     \finger
                                         3
                             }
-                    cs''8. ]
+                    b8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -379,9 +568,9 @@
                                         1
                             }
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    cs''8. [
+                    b8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -389,7 +578,7 @@
                                     \finger
                                         2
                             }
-                    cs''16
+                    b16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -397,7 +586,7 @@
                                     \finger
                                         4
                             }
-                    cs''8. ]
+                    b8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -407,10 +596,10 @@
                             }
                 }
                 {
-                    f1 \mp
+                    ef,1 \mp
                 }
                 {
-                    cs''8 \f [
+                    b8 \f [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -418,7 +607,7 @@
                                     \finger
                                         3
                             }
-                    cs''16 ]
+                    b16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -428,8 +617,8 @@
                             }
                 }
                 {
-                    cs''8.
-                    cs''4
+                    b8.
+                    b4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -437,7 +626,7 @@
                                     \finger
                                         1
                             }
-                    cs''8 [
+                    b8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -445,8 +634,8 @@
                                     \finger
                                         2
                             }
-                    cs''16
-                    cs''8. ]
+                    b16
+                    b8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -456,7 +645,7 @@
                             }
                 }
                 {
-                    d''4 \ff
+                    c'4 \ff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -464,8 +653,8 @@
                                     \finger
                                         2
                             }
-                    d''8 [
-                    d''16
+                    c'8 [
+                    c'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -473,7 +662,7 @@
                                     \finger
                                         3
                             }
-                    d''8. ]
+                    c'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -483,8 +672,8 @@
                             }
                 }
                 {
-                    d''8 [
-                    d''8. ]
+                    c'8 [
+                    c'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -493,9 +682,9 @@
                                         1
                             }
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    d''8. [
+                    c'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -503,8 +692,8 @@
                                     \finger
                                         2
                             }
-                    d''16
-                    d''8. ]
+                    c'16
+                    c'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -514,11 +703,11 @@
                             }
                 }
                 {
-                    f1 \mp
+                    ef,1 \mp
                 }
                 {
-                    d''8 \fff [
-                    d''16 ]
+                    c'8 \fff [
+                    c'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -528,7 +717,7 @@
                             }
                 }
                 {
-                    d''8.
+                    c'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -536,8 +725,8 @@
                                     \finger
                                         2
                             }
-                    d''4
-                    d''8 [
+                    c'4
+                    c'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -545,7 +734,7 @@
                                     \finger
                                         3
                             }
-                    d''16
+                    c'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -553,10 +742,10 @@
                                     \finger
                                         4
                             }
-                    d''8. ]
+                    c'8. ]
                 }
                 {
-                    ds''4 \ffff
+                    cs'4 \ffff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -564,7 +753,7 @@
                                     \finger
                                         4
                             }
-                    ds''8 [
+                    cs'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -572,8 +761,8 @@
                                     \finger
                                         1
                             }
-                    ds''16
-                    ds''8. ]
+                    cs'16
+                    cs'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -583,7 +772,7 @@
                             }
                 }
                 {
-                    ds''8 [
+                    cs'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -591,11 +780,11 @@
                                     \finger
                                         2
                             }
-                    ds''8. ]
+                    cs'8. ]
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ds''8. [
+                    cs'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -603,7 +792,7 @@
                                     \finger
                                         3
                             }
-                    ds''16
+                    cs'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -611,26 +800,26 @@
                                     \finger
                                         4
                             }
-                    ds''8. ]
+                    cs'8. ]
                 }
                 {
-                    f1 \mp
+                    ef,1 \mp
                 }
                 {
-                    e'''2 \pppp \glissando
-                    f'''2 \glissando
+                    d''2 \pppp \glissando
+                    ef''2 \glissando
                 }
                 \times 4/7 {
-                    e'''2. \glissando
-                    ds'''2 \glissando
-                    e'''2 \glissando
+                    d''2. \glissando
+                    cs''2 \glissando
+                    d''2 \glissando
                 }
                 \times 4/5 {
-                    f'''2. \glissando
-                    e'''2
+                    ef''2. \glissando
+                    d''2
                 }
                 {
-                    ds''8 \ffff [
+                    cs'8 \ffff [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -638,7 +827,7 @@
                                     \finger
                                         1
                             }
-                    ds''16 ]
+                    cs'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -648,7 +837,7 @@
                             }
                 }
                 {
-                    ds''8.
+                    cs'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -656,7 +845,7 @@
                                     \finger
                                         4
                             }
-                    ds''4
+                    cs'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -664,8 +853,8 @@
                                     \finger
                                         1
                             }
-                    ds''8 [
-                    ds''16
+                    cs'8 [
+                    cs'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -673,7 +862,7 @@
                                     \finger
                                         4
                             }
-                    ds''8. ]
+                    cs'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -682,10 +871,10 @@
                                         2
                             }
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ds''8. [
-                    ds''8 ]
+                    cs'8. [
+                    cs'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -695,7 +884,7 @@
                             }
                 }
                 {
-                    ds''8 [
+                    cs'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -703,8 +892,8 @@
                                     \finger
                                         4
                             }
-                    ds''8
-                    ds''8.
+                    cs'8
+                    cs'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -712,7 +901,7 @@
                                     \finger
                                         1
                             }
-                    ds''16 ]
+                    cs'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -721,10 +910,10 @@
                                         2
                             }
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    ds''8.
-                    ds''4
+                    cs'8.
+                    cs'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -733,9 +922,9 @@
                                         3
                             }
                 }
-                \tweak #'edge-height #'(0.7 . 0)
+                \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    ds''8. [
+                    cs'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -743,7 +932,7 @@
                                     \finger
                                         1
                             }
-                    ds''8
+                    cs'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -751,7 +940,7 @@
                                     \finger
                                         2
                             }
-                    ds''16 ]
+                    cs'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)

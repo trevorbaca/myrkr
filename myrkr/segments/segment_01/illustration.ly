@@ -52,7 +52,12 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve. \fff ^ \markup { overblow }
+                    d,\breve. \fff
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    overblow
+                            }
                     \bar "|"
                 }
             }

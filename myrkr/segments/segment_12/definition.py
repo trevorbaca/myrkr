@@ -2,12 +2,10 @@
 import abjad
 import baca
 import myrkr
-from baca.__abbreviations__ import *
-from myrkr.materials.__abbreviations__ import *
 
 
 ###############################################################################
-############################# SEGMENT-PREPROCESSOR ############################
+##################################### [12] ####################################
 ###############################################################################
 
 cobalt_position = 29
@@ -50,14 +48,11 @@ preprocessor = myrkr.tools.Preprocessor(
 # Cobalt position 35 ...
 # Indigo position 150 ...
 
-###############################################################################
-################################ SEGMENT-MAKER ################################
-###############################################################################
-
 segment_maker = baca.tools.SegmentMaker(
-    measures_per_stage=preprocessor.measures_per_stage,
-    score_package=myrkr,
+    ignore_repeat_pitch_classes=True,
     label_stages=True,
+    measures_per_stage=preprocessor.measures_per_stage,
+    score_template=myrkr.tools.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 12)),
         (3, abjad.Duration(1, 24)),
@@ -87,49 +82,40 @@ segment_maker = baca.tools.SegmentMaker(
 
 segment_maker.validate_measures_per_stage()
 
-###############################################################################
-################################## SPECIFIERS #################################
-###############################################################################
-
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
-    segment_maker.define_rhythm(
-        stages=stage_number,
-        voice_name=cl,
-        division_maker=None,
-        rhythm_maker=preprocessor.get_music(stage_number),
+    selection = preprocessor.get_music(stage_number)
+    rhythm_specifier = baca.tools.RhythmSpecifier(
+        rhythm_maker=selection,
         )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
+    segment_maker.append_commands(
+        'Clarinet Music Voice',
+        baca.select_stages(stage_number),
+        rhythm_specifier,
+        )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 1),
-    specifiers=[
-        tenuti,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(1),
+    baca.tenuti(),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 4),
-    specifiers=[
-        tenuti,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(4),
+    baca.tenuti(),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 9),
-    specifiers=[
-        tenuti,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(9),
+    baca.tenuti(),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 11),
-    specifiers=[
-        tenuti,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(11),
+    baca.tenuti(),
     )

@@ -40,8 +40,6 @@ vowel_u = abjad.Markup('“U”', direction=Up)
 do_not_tongue = abjad.Markup('(do not tongue)').bold()
 do_not_tongue = abjad.Markup(do_not_tongue, direction=Up)
 
-overblow = baca.markup('overblow', direction=Up)
-
 tongue = abjad.Markup('tongue', direction=Up)
 
 ### PITCH ###
@@ -60,16 +58,16 @@ color_fingerings = baca.tools.ColorFingeringCommand(
         ),
     )
 
-def make_color_fingerings(name, index=0):
-    color_fingerings = myrkr.materials.color_fingerings[name]
-    color_fingerings = baca.Sequence(color_fingerings).rotate(n=index)
-    color_fingerings = baca.tools.ColorFingeringCommand(
-        deposit_annotations=['color fingering'],
-        number_lists=(
-            color_fingerings,
-            ),
-        )
-    return color_fingerings
+#def make_color_fingerings(name, index=0):
+#    color_fingerings = myrkr.materials.color_fingerings[name]
+#    color_fingerings = baca.Sequence(color_fingerings).rotate(n=index)
+#    color_fingerings = baca.tools.ColorFingeringCommand(
+#        deposit_annotations=['color fingering'],
+#        number_lists=(
+#            color_fingerings,
+#            ),
+#        )
+#    return color_fingerings
 
 color_microtones = baca.tools.MicrotonalDeviationCommand(
     deposit_annotations=['color microtone'],

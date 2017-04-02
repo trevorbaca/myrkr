@@ -52,12 +52,11 @@ class Preprocessor(object):
             pitch_specifier = baca.tools.ScorePitchCommand(source=pitch)
             specifiers.append(pitch_specifier)
         if dynamic is not None:
-            #dynamic = abjad.Dynamic(dynamic)
             dynamic = baca.dynamic(dynamic)
             specifiers.append(dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
-            method = myrkr.materials.__abbreviations__.make_color_fingerings
+            method = myrkr.tools.make_color_fingerings
             color_fingering = method(*color_fingering)
             specifiers.append(color_fingering)
         bundle = (stage_number, specifiers)
@@ -120,10 +119,11 @@ class Preprocessor(object):
                 isinstance(location, tuple)
                 )
             if reset_cursor:
-                rhythm = self.name_to_rhythm[name]
+                rhythm = list(self.name_to_rhythm[name])
                 rhythm = abjad.CyclicTuple(rhythm)
-                cursor = baca.tools.Cursor(
+                cursor = baca.Cursor(
                     source=rhythm,
+                    #cyclic=True,
                     position=position,
                     )
                 name_to_cursor[name] = cursor
