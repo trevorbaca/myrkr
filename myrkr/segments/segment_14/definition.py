@@ -2,12 +2,10 @@
 import abjad
 import baca
 import myrkr
-from baca.__abbreviations__ import *
-from myrkr.materials.__abbreviations__ import *
 
 
 ###############################################################################
-############################# SEGMENT-PREPROCESSOR ############################
+##################################### [14] ####################################
 ###############################################################################
 
 cobalt_position = 36
@@ -43,14 +41,11 @@ preprocessor = myrkr.tools.Preprocessor(
 # Cobalt position 45 ...
 # Indigo position 158 ...
 
-###############################################################################
-################################ SEGMENT-MAKER ################################
-###############################################################################
-
 segment_maker = baca.tools.SegmentMaker(
-    measures_per_stage=preprocessor.measures_per_stage,
-    score_package=myrkr,
+    ignore_repeat_pitch_classes=True,
     label_stages=True,
+    measures_per_stage=preprocessor.measures_per_stage,
+    score_template=myrkr.tools.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 24)),
         (4, abjad.Duration(1, 12)),
@@ -70,70 +65,58 @@ segment_maker = baca.tools.SegmentMaker(
 
 segment_maker.validate_measures_per_stage()
 
-###############################################################################
-################################## SPECIFIERS #################################
-###############################################################################
-
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
-    segment_maker.define_rhythm(
-        stages=stage_number,
-        voice_name=cl,
-        division_maker=None,
-        rhythm_maker=preprocessor.get_music(stage_number),
+    selection = preprocessor.get_music(stage_number)
+    rhythm_specifier = baca.tools.RhythmSpecifier(
+        rhythm_maker=selection,
         )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
+    segment_maker.append_commands(
+        'Clarinet Music Voice',
+        baca.select_stages(stage_number),
+        rhythm_specifier,
+        )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 7),
-    specifiers=[
-        vowel_a,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(7),
+    baca.markup('“A”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 8),
-    specifiers=[
-        vowel_u,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(8),
+    baca.markup('“U”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 9),
-    specifiers=[
-        vowel_i,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(9),
+    baca.markup('“I”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 10),
-    specifiers=[
-        vowel_u,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(10),
+    baca.markup('“U”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 11),
-    specifiers=[
-        vowel_a,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(11),
+    baca.markup('“A”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 12),
-    specifiers=[
-        vowel_o,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(12),
+    baca.markup('“O”', direction=Up),
     )
 
-segment_maker.make_scoped_specifiers(
-    scope=(cl, 13),
-    specifiers=[
-        vowel_i,
-        ],
+segment_maker.append_commands(
+    'Clarinet Music Voice',
+    baca.select_stages(13),
+    baca.markup('“I”', direction=Up),
     )

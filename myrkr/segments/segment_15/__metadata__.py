@@ -8,8 +8,14 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
             'end_clefs_by_staff',
             abjad.datastructuretools.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', 'treble'),
+                    ('Clarinet Music Staff', None),
                     ]
+                ),
+            ),
+        (
+            'end_instruments_by_context',
+            abjad.datastructuretools.TypedOrderedDict(
+                []
                 ),
             ),
         (
@@ -20,7 +26,7 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_tempo', 110),
+        ('end_tempo', None),
         ('end_time_signature', '4/4'),
         ('first_bar_number', 384),
         ('measure_count', 34),
