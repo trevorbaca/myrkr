@@ -243,13 +243,13 @@ class RhythmMaker(object):
             if abjad.Duration((1, 8)) < note.written_duration:
                 continue
             string = 'set tupletFullLength = ##f'
-            command = abjad.indicatortools.LilyPondCommand(
+            command = abjad.LilyPondCommand(
                 string, 
                 format_slot='before',
                 )
             abjad.attach(command, tuplet)
             string = 'set tupletFullLength = ##t'
-            command = abjad.indicatortools.LilyPondCommand(
+            command = abjad.LilyPondCommand(
                 string, 
                 format_slot='after',
                 )

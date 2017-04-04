@@ -62,7 +62,7 @@ segment_maker = baca.tools.SegmentMaker(
         ),
     tempo_specifier=(
         #(1, myrkr.materials.tempi[110]),
-        (4, abjad.indicatortools.Ritardando()),
+        (4, abjad.Ritardando()),
         (10, myrkr.materials.tempi[55]),
         ),
     time_signatures=preprocessor.time_signatures,

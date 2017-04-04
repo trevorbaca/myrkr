@@ -104,7 +104,7 @@ class ColorMaker(object):
         for number in color_fingering_numbers:
             note = abjad.Note(current_pitch, Duration(1, 4))
             if 0 < number:
-                color_fingering = abjad.indicatortools.ColorFingering(number)
+                color_fingering = abjad.ColorFingering(number)
                 abjad.attach(color_fingering, note)
             notes.append(note)
         notes = select(notes)
