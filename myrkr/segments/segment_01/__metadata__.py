@@ -2,11 +2,11 @@
 import abjad
 
 
-metadata = abjad.TypedOrderedDict(
+metadata = abjad.datastructuretools.TypedOrderedDict(
     [
         (
             'end_clefs_by_staff',
-            abjad.TypedOrderedDict(
+            abjad.datastructuretools.TypedOrderedDict(
                 [
                     ('Clarinet Music Staff', 'treble'),
                     ]
@@ -14,13 +14,13 @@ metadata = abjad.TypedOrderedDict(
             ),
         (
             'end_instruments_by_context',
-            abjad.TypedOrderedDict(
+            abjad.datastructuretools.TypedOrderedDict(
                 []
                 ),
             ),
         (
             'end_instruments_by_staff',
-            abjad.TypedOrderedDict(
+            abjad.datastructuretools.TypedOrderedDict(
                 [
                     ('Clarinet Music Staff', 'bass clarinet'),
                     ]
