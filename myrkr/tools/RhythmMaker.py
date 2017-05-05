@@ -146,11 +146,14 @@ class RhythmMaker(object):
         if rhythm is None:
             rhythm = self()
         tuplets, time_signatures = [], []
+        selections = []
         for selection, time_signature in rhythm:
-            tuplets.extend(selection)
+            #tuplets.extend(selection)
+            selections.append(selection)
             time_signatures.append(time_signature)
         lilypond_file = abjad.rhythmmakertools.make_lilypond_file(
-            tuplets,
+            #tuplets,
+            selections,
             time_signatures,
             )
         first_leaves = []
@@ -178,7 +181,7 @@ class RhythmMaker(object):
         if title is not None:
             title = abjad.Markup(title)
             lilypond_file.header_block.title = abjad.Markup(title)
-        vector = layouttools.make_spacing_vector(0, 20, 0, 0)
+        vector = abjad.schemetools.make_spacing_vector(0, 20, 0, 0)
         lilypond_file.paper_block.markup_system_spacing = vector
         return lilypond_file
 
@@ -236,7 +239,7 @@ class RhythmMaker(object):
 
     @staticmethod
     def _tweak_length_1_tuplets(score):
-        for tuplet in iterate(score).by_class(abjad.Tuplet):
+        for tuplet in abjad.iterate(score).by_class(abjad.Tuplet):
             if not len(tuplet) == 1:
                 continue
             note = tuplet[0]
@@ -254,7 +257,7 @@ class RhythmMaker(object):
                 format_slot='after',
                 )
             abjad.attach(command, tuplet)
-            override(tuplet).tuplet_bracket.stencil = False
+            abjad.override(tuplet).tuplet_bracket.stencil = False
 
     ### PUBLIC PROPERTIES ###
 
