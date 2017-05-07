@@ -34,7 +34,7 @@ preprocessor = myrkr.tools.Preprocessor(
 # Emerald position: 21 ...
 # Indigo position: 54 ...
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
     label_stages=True,
@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    rhythm_specifier = baca.tools.RhythmSpecifier(
+    rhythm_specifier = baca.RhythmSpecifier(
         rhythm_maker=selection,
         )
     segment_maker.append_commands(
