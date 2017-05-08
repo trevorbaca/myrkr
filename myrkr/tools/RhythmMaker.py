@@ -121,7 +121,7 @@ class RhythmMaker(object):
         tuplets = split_tuplets
         assert all(isinstance(_, abjad.FixedDurationTuplet) for _ in tuplets)
         for tuplet in tuplets:
-            beam = abjad.spannertools.MultipartBeam()
+            beam = abjad.MultipartBeam()
             leaves = list(abjad.iterate(tuplet).by_leaf())
             abjad.attach(beam, leaves)
         time_signatures = self._make_time_signatures(tuplets)
