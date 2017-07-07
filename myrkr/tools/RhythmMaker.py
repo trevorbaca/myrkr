@@ -90,7 +90,7 @@ class RhythmMaker(object):
                     leaf = abjad.Rest(duration)
                 leaves.append(leaf)
             duration = abjad.Duration(scaled_weight, self.denominator)
-            tuplet = abjad.FixedDurationTuplet(duration, leaves)
+            tuplet = abjad.Tuplet.from_duration(duration, leaves)
             tuplets.append(tuplet)
         split_tuplets = []
         last_tuplet = None
@@ -119,7 +119,7 @@ class RhythmMaker(object):
         if last_tuplet is not None:
             split_tuplets.append(last_tuplet)
         tuplets = split_tuplets
-        assert all(isinstance(_, abjad.FixedDurationTuplet) for _ in tuplets)
+        assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         for tuplet in tuplets:
             beam = abjad.MultipartBeam()
             leaves = list(abjad.iterate(tuplet).by_leaf())
