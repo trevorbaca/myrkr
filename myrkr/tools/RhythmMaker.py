@@ -171,7 +171,7 @@ class RhythmMaker(object):
         pair = proportional_notation_duration.pair
         moment = abjad.schemetools.SchemeMoment(pair)
         abjad.set_(score).proportional_notation_duration = moment
-        assert abjad.inspect_(score).is_well_formed()
+        assert abjad.inspect(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
             subtitle = abjad.Markup(subtitle)
@@ -190,7 +190,7 @@ class RhythmMaker(object):
         time_signatures = []
         denominators = range(self.denominator, 2 * self.denominator)
         for tuplet in tuplets:
-            duration = abjad.inspect_(tuplet).get_duration()
+            duration = abjad.inspect(tuplet).get_duration()
             duration = abjad.mathtools.NonreducedFraction(duration)
             for denominator in denominators:
                 duration = duration.with_denominator(denominator)
@@ -198,7 +198,7 @@ class RhythmMaker(object):
                     time_signatures.append(duration)
                     break
             else:
-                duration = abjad.inspect_(tuplet).get_duration()
+                duration = abjad.inspect(tuplet).get_duration()
                 duration = abjad.mathtools.NonreducedFraction(duration)
                 time_signatures.append(duration)
         tuplet_count = len(tuplets)
@@ -206,7 +206,7 @@ class RhythmMaker(object):
         pair = (tuplet_count, time_signature_count)
         assert len(tuplets) == len(time_signatures), pair
         for tuplet, time_signature in zip(tuplets, time_signatures):
-            tuplet_duration = abjad.inspect_(tuplet).get_duration()
+            tuplet_duration = abjad.inspect(tuplet).get_duration()
             time_signature = abjad.Duration(time_signature)
             assert tuplet_duration == time_signature, repr((
                 tuplet_duration,
@@ -225,7 +225,7 @@ class RhythmMaker(object):
         right_durations = durations[-right_count:]
         right_duration = sum(right_durations)
         total_duration = left_duration + right_duration
-        tuplet_duration = abjad.inspect_(tuplet).get_duration()
+        tuplet_duration = abjad.inspect(tuplet).get_duration()
         assert tuplet_duration == total_duration, repr((
             tuplet, 
             total_duration,
