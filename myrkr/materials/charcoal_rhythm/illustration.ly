@@ -1,6 +1,6 @@
-% 2017-05-05 19:35
+% 2017-07-07 13:13
 
-\version "2.19.59"
+\version "2.19.63"
 \language "english"
 
 #(set-default-paper-size "letter" 'portrait)
@@ -64,8 +64,8 @@
 
 \paper {
     left-margin = #20
-    markup-system-spacing = #'((basic-distance . 0) (minimum-distance . 20) (padding . 0) (stretchability . 0))
     system-system-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 12) (stretchability . 0))
+    markup-system-spacing = #'((basic-distance . 0) (minimum-distance . 20) (padding . 0) (stretchability . 0))
 }
 
 \score {
