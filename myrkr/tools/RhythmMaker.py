@@ -180,7 +180,7 @@ class RhythmMaker(object):
         if title is not None:
             title = abjad.Markup(title)
             lilypond_file.header_block.title = abjad.Markup(title)
-        vector = abjad.schemetools.make_spacing_vector(0, 20, 0, 0)
+        vector = abjad.SpacingVector(0, 20, 0, 0)
         lilypond_file.paper_block.markup_system_spacing = vector
         return lilypond_file
 

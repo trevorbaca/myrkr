@@ -73,11 +73,11 @@ class ColorMaker(object):
             lilypond_file.header_block.title = title
         lilypond_file.layout_block.indent = 0
         lilypond_file.paper_block.left_margin = 20
-        vector = abjad.layouttools.make_spacing_vector(0, 20, 0, 0)
+        vector = abjad.SpacingVector(0, 20, 0, 0)
         lilypond_file.paper_block.markup_system_spacing = vector
-        vector = abjad.layouttools.make_spacing_vector(0, 0, 12, 0)
+        vector = abjad.SpacingVector(0, 0, 12, 0)
         lilypond_file.paper_block.system_system_spacing = vector
-        vector = abjad.layouttools.make_spacing_vector(0, 4, 0, 0)
+        vector = abjad.SpacingVector(0, 4, 0, 0)
         lilypond_file.paper_block.top_markup_spacing = vector
         return lilypond_file
 
