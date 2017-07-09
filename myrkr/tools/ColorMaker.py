@@ -61,7 +61,7 @@ class ColorMaker(object):
         abjad.override(score).text_script.staff_padding = 1
         abjad.override(score).time_signature.stencil = False
         moment = abjad.schemetools.SchemeMoment((1, 9))
-        abjad.set_(score).proportional_notation_duration = moment
+        abjad.setting(score).proportional_notation_duration = moment
         lilypond_file = abjad.LilyPondFile.new(score)
         lilypond_file.global_staff_size = 12
         if subtitle is not None:
