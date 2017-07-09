@@ -170,7 +170,7 @@ class RhythmMaker(object):
         abjad.override(score).tuplet_bracket.staff_padding = 3.5
         pair = proportional_notation_duration.pair
         moment = abjad.schemetools.SchemeMoment(pair)
-        abjad.set_(score).proportional_notation_duration = moment
+        abjad.setting(score).proportional_notation_duration = moment
         assert abjad.inspect(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
