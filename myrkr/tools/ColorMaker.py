@@ -46,7 +46,8 @@ class ColorMaker(object):
         self._attach_clefs(notes)
         note_voice = Voice(notes)
         durations = [inspect_(_).get_duration() for _ in notes]
-        skips = scoretools.make_skips(abjad.Duration(1), durations)
+        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
         abjad.labe(label_voice).with_indices(direction=Down)
         abjad.override(label_voice).text_script.staff_padding = 4
