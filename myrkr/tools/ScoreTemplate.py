@@ -71,11 +71,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ClarinetMusicStaff',
             name='Clarinet Music Staff',
             )
-        abjad.attach(abjad.Clef('treble'), clarinet_music_staff)
-        abjad.attach(
-            abjad.instrumenttools.BassClarinet(),
-            clarinet_music_staff,
-            )
+        #abjad.attach(abjad.Clef('treble'), clarinet_music_staff)
+        #abjad.attach(
+        #    abjad.instrumenttools.BassClarinet(),
+        #    clarinet_music_staff,
+        #    )
         score = abjad.Score(
             [
             time_signature_context,
