@@ -34,9 +34,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                     }
                 >>
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                    \clef "treble"
-                    \set Staff.instrumentName = \markup { "Bass clarinet" }
-                    \set Staff.shortInstrumentName = \markup { "Bass cl." }
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
                     }
                 }
