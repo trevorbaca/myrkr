@@ -1,4 +1,4 @@
-\version "2.19.63"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -213,8 +213,8 @@
                 {
                     \time 8/5
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                    \newSpacingSection
                     \mark #7
+                    \newSpacingSection
                     s1 * 8/5
                         - \markup {
                             \fontsize

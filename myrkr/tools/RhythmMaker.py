@@ -147,11 +147,9 @@ class RhythmMaker(object):
         tuplets, time_signatures = [], []
         selections = []
         for selection, time_signature in rhythm:
-            #tuplets.extend(selection)
             selections.append(selection)
             time_signatures.append(time_signature)
-        lilypond_file = abjad.rhythmmakertools.make_lilypond_file(
-            #tuplets,
+        lilypond_file = abjad.LilyPondFile.rhythm(
             selections,
             time_signatures,
             )
