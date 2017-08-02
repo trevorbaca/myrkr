@@ -1,4 +1,4 @@
-\version "2.19.63"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -41,8 +41,8 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                    \newSpacingSection
                     \mark #12
+                    \newSpacingSection
                     s1 * 2/3
                         - \markup {
                             \fontsize

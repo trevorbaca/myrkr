@@ -1,4 +1,4 @@
-\version "2.19.63"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -175,8 +175,8 @@
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                    \newSpacingSection
                     \mark #14
+                    \newSpacingSection
                     s1 * 1 \startTextSpan
                         - \markup {
                             \fontsize
