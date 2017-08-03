@@ -44,7 +44,7 @@ class ColorMaker(object):
         '''
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
-        note_voice = Voice(notes)
+        note_voice = abjad.Voice(notes)
         durations = [inspect_(_).get_duration() for _ in notes]
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
@@ -103,7 +103,7 @@ class ColorMaker(object):
         color_fingering_numbers = indicator[1]
         notes = []
         for number in color_fingering_numbers:
-            note = abjad.Note(current_pitch, Duration(1, 4))
+            note = abjad.Note(current_pitch, abjad.Duration(1, 4))
             if 0 < number:
                 color_fingering = abjad.ColorFingering(number)
                 abjad.attach(color_fingering, note)
