@@ -167,7 +167,7 @@ class RhythmMaker(object):
         abjad.override(score).time_signature.style = 'numbered'
         abjad.override(score).tuplet_bracket.staff_padding = 3.5
         pair = proportional_notation_duration.pair
-        moment = abjad.schemetools.SchemeMoment(pair)
+        moment = abjad.SchemeMoment(pair)
         abjad.setting(score).proportional_notation_duration = moment
         assert abjad.inspect(score).is_well_formed()
         lilypond_file.layout_block.indent = 0
@@ -189,7 +189,7 @@ class RhythmMaker(object):
         denominators = range(self.denominator, 2 * self.denominator)
         for tuplet in tuplets:
             duration = abjad.inspect(tuplet).get_duration()
-            duration = abjad.mathtools.NonreducedFraction(duration)
+            duration = abjad.NonreducedFraction(duration)
             for denominator in denominators:
                 duration = duration.with_denominator(denominator)
                 if duration.denominator == denominator:
@@ -197,7 +197,7 @@ class RhythmMaker(object):
                     break
             else:
                 duration = abjad.inspect(tuplet).get_duration()
-                duration = abjad.mathtools.NonreducedFraction(duration)
+                duration = abjad.NonreducedFraction(duration)
                 time_signatures.append(duration)
         tuplet_count = len(tuplets)
         time_signature_count = len(time_signatures)
