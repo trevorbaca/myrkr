@@ -214,7 +214,7 @@ class RhythmMaker(object):
 
     @staticmethod
     def _split_tuplet(tuplet):
-        logical_ties = list(abjad.iterate(tuplet).by_logical_tie())
+        logical_ties = abjad.select(tuplet).by_logical_tie()
         durations = [_.get_duration() for _ in logical_ties]
         left_count = int(math.floor(len(logical_ties)/2.0))
         right_count = int(math.ceil(len(logical_ties)/2.0))
