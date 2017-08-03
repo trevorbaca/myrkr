@@ -59,8 +59,8 @@ class RhythmMaker(object):
             len(self.terms),
             sum(self.counts),
             )
-        terms = baca.Sequence(self.terms).repeat_to_length(lcm)
-        tuplet_ratios = baca.Sequence(terms).partition_by_counts(
+        terms = baca.sequence(self.terms).repeat_to_length(lcm)
+        tuplet_ratios = baca.sequence(terms).partition_by_counts(
             counts=self.counts,
             cyclic=True,
             overhang=True,

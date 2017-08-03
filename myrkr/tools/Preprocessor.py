@@ -64,7 +64,7 @@ class Preprocessor(object):
 
     def _remove_duplicate_dynamics(self):
         bundles = self._music_specifier_bundles
-        pairs = list(abjad.Sequence(bundles).nwise())
+        pairs = list(abjad.sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_stage_number = first_bundle[0]
             second_stage_number = second_bundle[0]
@@ -148,7 +148,7 @@ class Preprocessor(object):
         selections = self.selections
         assert sum(counts) == len(selections)
         selections = []
-        parts = baca.Sequence(self.selections)
+        parts = baca.sequence(self.selections)
         parts = parts.partition_by_counts(self.measures_per_stage)
         for part in parts:
             selection = []
