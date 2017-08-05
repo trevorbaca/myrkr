@@ -1,4 +1,4 @@
-#(set-default-paper-size "11x17" 'landscape)
+#(set-default-paper-size "11x17landscape")
 #(set-global-staff-size 11)
 
 \include "default-instrument-names.ily"
