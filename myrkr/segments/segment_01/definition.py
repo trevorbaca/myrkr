@@ -27,6 +27,7 @@ preprocessor = myrkr.tools.Preprocessor(
 segment_maker = baca.SegmentMaker(
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
+    metronome_marks=myrkr.materials.tempi,
     score_template=myrkr.tools.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 8)),
