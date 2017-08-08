@@ -36,6 +36,7 @@ preprocessor = myrkr.tools.Preprocessor(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
+    instruments=myrkr.materials.instruments,
     measures_per_stage=preprocessor.measures_per_stage,
     label_stages=True,
     score_template=myrkr.tools.ScoreTemplate(),

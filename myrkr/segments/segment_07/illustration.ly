@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -249,28 +249,28 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    b'2. \mp \glissando
-                    c''2 \glissando
+                    cs'''2. \mp \glissando
+                    d'''2 \glissando
                 }
                 \times 4/7 {
-                    b'2 \glissando
-                    as'2. \glissando
-                    b'2
+                    cs'''2 \glissando
+                    bs''2. \glissando
+                    cs'''2
                 }
                 {
-                    g2. \ff
+                    a'2. \ff
                 }
                 \times 4/5 {
-                    a'2 \mf \glissando
-                    bf'2. \glissando
+                    b''2 \mf \glissando
+                    c'''2. \glissando
                 }
                 {
-                    a'2 \glissando
-                    gs'2. \glissando
-                    a'2
+                    b''2 \glissando
+                    as''2. \glissando
+                    b''2
                 }
                 {
-                    g2 \ff
+                    a'2 \ff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -281,7 +281,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    fs2 \fff
+                    gs'2 \fff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -289,7 +289,7 @@
                                     \finger
                                         2
                             }
-                    fs2.
+                    gs'2.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -299,16 +299,16 @@
                             }
                 }
                 \times 4/5 {
-                    g'2 \f \glissando
-                    af'2. \glissando
+                    a''2 \f \glissando
+                    bf''2. \glissando
                 }
                 \times 4/7 {
-                    g'2 \glissando
-                    fs'2 \glissando
-                    g'2.
+                    a''2 \glissando
+                    gs''2 \glissando
+                    a''2.
                 }
                 {
-                    fs2. \fff
+                    gs'2. \fff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -318,10 +318,10 @@
                             }
                 }
                 {
-                    fs2
+                    gs'2
                 }
                 {
-                    e2 \fff
+                    fs'2 \fff
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -329,10 +329,10 @@
                                     \finger
                                         1
                             }
-                    e2.
+                    fs'2.
                 }
                 {
-                    e2
+                    fs'2
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -343,10 +343,10 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/7 {
-                    e2.
+                    fs'2.
                 }
                 {
-                    e2
+                    fs'2
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)

@@ -25,6 +25,7 @@ preprocessor = myrkr.tools.Preprocessor(
     )
 
 segment_maker = baca.SegmentMaker(
+    instruments=myrkr.materials.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_marks=myrkr.materials.tempi,

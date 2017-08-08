@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import abjad
 import baca
+import myrkr
 
 
 class ScoreTemplate(baca.ScoreTemplate):
@@ -11,33 +12,62 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> import abjad
         >>> import myrkr
 
+
+    ::
+
+        >>> template = myrkr.tools.ScoreTemplate()
+        >>> lilypond_file = template.__illustrate__()
+        >>> path = '/Users/trevorbaca/Scores/myrkr/myrkr'
+        >>> path += '/stylesheets/context-definitions.ily'
+        >>> lilypond_file = abjad.new(
+        ...     lilypond_file,
+        ...     global_staff_size=15,
+        ...     includes=[path],
+        ...     )
+        >>> show(lilypond_file) # doctest: +SKIP
+
+    ::
+
+        >>> f(lilypond_file[abjad.Score])
+        \context Score = "Score" <<
+            \context TimeSignatureContext = "Time Signature Context" <<
+                \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                }
+                \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                }
+            >>
+            \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                    \set Staff.instrumentName = \markup {
+                        \hcenter-in
+                            #16
+                            \center-column
+                                {
+                                    Bass
+                                    clarinet
+                                }
+                        }
+                    \set Staff.shortInstrumentName = \markup {
+                        \hcenter-in
+                            #10
+                            \center-column
+                                {
+                                    Bass
+                                    cl.
+                                }
+                        }
+                    \clef "treble"
+                    s1
+                }
+            }
+        >>
+
     '''
 
     ### SPECIAL METHODS ###
 
     def __call__(self):
         r'''Calls score template.
-
-        ::
-
-            >>> template = myrkr.tools.ScoreTemplate()
-            >>> score = template()
-
-        ::
-
-            >>> f(score)
-            \context Score = "Score" <<
-                \context TimeSignatureContext = "Time Signature Context" <<
-                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
-                    }
-                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
-                    }
-                >>
-                \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                    }
-                }
-            >>
 
         Returns score.
         '''
@@ -68,11 +98,17 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ClarinetMusicStaff',
             name='Clarinet Music Staff',
             )
-        #abjad.attach(abjad.Clef('treble'), clarinet_music_staff)
-        #abjad.attach(
-        #    abjad.instrumenttools.BassClarinet(),
-        #    clarinet_music_staff,
-        #    )
+        abjad.annotate(
+            clarinet_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
+        abjad.annotate(
+            clarinet_music_staff,
+            'default_instrument',
+            myrkr.materials.instruments['bass clarinet'],
+            )
+
         score = abjad.Score(
             [
             time_signature_context,
