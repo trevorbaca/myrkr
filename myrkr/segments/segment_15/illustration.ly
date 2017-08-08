@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -393,155 +393,155 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \times 4/5 {
-                    e''2 \p \glissando
-                    f''2. \glissando
+                    fs'''2 \p \glissando
+                    g'''2. \glissando
                 }
                 {
-                    e''2 \glissando
-                    ds''2. \glissando
-                    e''2 \glissando
+                    fs'''2 \glissando
+                    es'''2. \glissando
+                    fs'''2 \glissando
                 }
                 \times 4/5 {
-                    f''2 \glissando
-                    e''2.
+                    g'''2 \glissando
+                    fs'''2.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    c,\breve. \ppppp ^ \markup { “U” }
+                    d\breve. \ppppp ^ \markup { “U” }
                 }
                 \times 4/7 {
-                    f''2 \pp \glissando
-                    e''2 \glissando
-                    ds''2. \glissando
+                    g'''2 \pp \glissando
+                    fs'''2 \glissando
+                    es'''2. \glissando
                 }
                 {
-                    e''2 \glissando
-                    f''2. \glissando
+                    fs'''2 \glissando
+                    g'''2. \glissando
                 }
                 \times 4/7 {
-                    e''2 \glissando
-                    ds''2 \glissando
-                    e''2.
+                    fs'''2 \glissando
+                    es'''2 \glissando
+                    fs'''2.
                 }
                 {
-                    e''2 \ppp \glissando
-                    ds''2 \glissando
+                    fs'''2 \ppp \glissando
+                    es'''2 \glissando
                 }
                 {
-                    e''2. \glissando
-                    f''2 \glissando
-                    e''2. \glissando
+                    fs'''2. \glissando
+                    g'''2 \glissando
+                    fs'''2. \glissando
                 }
                 {
-                    ds''2 \glissando
-                    e''2
-                }
-                \tweak edge-height #'(0.7 . 0)
-                \times 2/3 {
-                    c,\breve \ppppp ^ \markup { “A” }
-                }
-                \times 4/7 {
-                    ds''2. \pppp \glissando
-                    e''2 \glissando
-                    f''2 \glissando
-                }
-                \times 4/5 {
-                    e''2. \glissando
-                    ds''2 \glissando
-                }
-                {
-                    e''2. \glissando
-                    f''2 \glissando
-                    e''2
+                    es'''2 \glissando
+                    fs'''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,1 \pppp
-                }
-                \times 4/5 {
-                    e''2. \ppppp \glissando
-                    f''2 \glissando
+                    d\breve \ppppp ^ \markup { “A” }
                 }
                 \times 4/7 {
-                    e''2 \glissando
-                    ds''2. \glissando
-                    e''2 \glissando
-                }
-                {
-                    f''2. \glissando
-                    e''2 \glissando
-                }
-                \times 4/7 {
-                    ds''2 \glissando
-                    e''2. \glissando
-                    f''2 \glissando
+                    es'''2. \pppp \glissando
+                    fs'''2 \glissando
+                    g'''2 \glissando
                 }
                 \times 4/5 {
-                    e''2 \glissando
-                    ds''2. \glissando
+                    fs'''2. \glissando
+                    es'''2 \glissando
                 }
                 {
-                    e''2 \glissando
-                    f''2. \glissando
-                    e''2
+                    fs'''2. \glissando
+                    g'''2 \glissando
+                    fs'''2
+                }
+                \tweak edge-height #'(0.7 . 0)
+                \times 2/3 {
+                    cs'1 \pppp
+                }
+                \times 4/5 {
+                    fs'''2. \ppppp \glissando
+                    g'''2 \glissando
+                }
+                \times 4/7 {
+                    fs'''2 \glissando
+                    es'''2. \glissando
+                    fs'''2 \glissando
+                }
+                {
+                    g'''2. \glissando
+                    fs'''2 \glissando
+                }
+                \times 4/7 {
+                    es'''2 \glissando
+                    fs'''2. \glissando
+                    g'''2 \glissando
+                }
+                \times 4/5 {
+                    fs'''2 \glissando
+                    es'''2. \glissando
+                }
+                {
+                    fs'''2 \glissando
+                    g'''2. \glissando
+                    fs'''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    b,\breve. \pppp
+                    cs'\breve. \pppp
                 }
                 \times 4/5 {
-                    f''2 \ppppp \glissando
-                    e''2. \glissando
+                    g'''2 \ppppp \glissando
+                    fs'''2. \glissando
                 }
                 \times 4/7 {
-                    ds''2 \glissando
-                    e''2 \glissando
-                    f''2. \glissando
+                    es'''2 \glissando
+                    fs'''2 \glissando
+                    g'''2. \glissando
                 }
                 {
-                    e''2 \glissando
-                    ds''2. \glissando
+                    fs'''2 \glissando
+                    es'''2. \glissando
                 }
                 \times 4/7 {
-                    e''2 \glissando
-                    f''2 \glissando
-                    e''2. \glissando
+                    fs'''2 \glissando
+                    g'''2 \glissando
+                    fs'''2. \glissando
                 }
                 {
-                    ds''2 \glissando
-                    e''2 \glissando
+                    es'''2 \glissando
+                    fs'''2 \glissando
                 }
                 {
-                    f''2. \glissando
-                    e''2 \glissando
-                    ds''2. \glissando
+                    g'''2. \glissando
+                    fs'''2 \glissando
+                    es'''2. \glissando
                 }
                 {
-                    e''2 \glissando
-                    f''2 \glissando
+                    fs'''2 \glissando
+                    g'''2 \glissando
                 }
                 \times 4/7 {
-                    e''2. \glissando
-                    ds''2 \glissando
-                    e''2 \glissando
+                    fs'''2. \glissando
+                    es'''2 \glissando
+                    fs'''2 \glissando
                 }
                 \times 4/5 {
-                    f''2. \glissando
-                    e''2 \glissando
+                    g'''2. \glissando
+                    fs'''2 \glissando
                 }
                 {
-                    ds''2. \glissando
-                    e''2 \glissando
-                    f''2 \glissando
+                    es'''2. \glissando
+                    fs'''2 \glissando
+                    g'''2 \glissando
                 }
                 \times 4/5 {
-                    e''2. \glissando
-                    ds''2 \glissando
+                    fs'''2. \glissando
+                    es'''2 \glissando
                 }
                 \times 4/7 {
-                    e''2 \glissando
-                    f''2. \glissando
-                    e''2
+                    fs'''2 \glissando
+                    g'''2. \glissando
+                    fs'''2
                     \bar "|."
                 }
             }

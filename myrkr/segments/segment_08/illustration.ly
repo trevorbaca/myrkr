@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -585,19 +585,19 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    ef,\breve \mp
+                    f\breve \mp
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    ef,1
+                    f1
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    ef,\breve.
+                    f\breve.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d,\breve \ffff
+                    e\breve \ffff
                         ^ \markup {
                             \whiteout
                                 \upright
@@ -605,23 +605,23 @@
                             }
                 }
                 {
-                    c4 \pppp \glissando
+                    d'4 \pppp \glissando
                 }
                 {
-                    d4 \glissando
+                    e'4 \glissando
                 }
                 {
-                    ef4 \glissando
+                    f'4 \glissando
                 }
                 {
-                    f4 \glissando
+                    g'4 \glissando
                 }
                 {
-                    g4
+                    a'4
                 }
                 {
-                    b16 \f [
-                    b8. ]
+                    cs''16 \f [
+                    cs''8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -629,7 +629,7 @@
                                     \finger
                                         3
                             }
-                    b4
+                    cs''4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -637,11 +637,11 @@
                                     \finger
                                         4
                             }
-                    b8
+                    cs''8
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    b16 [
+                    cs''16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -649,7 +649,7 @@
                                     \finger
                                         1
                             }
-                    b8. ]
+                    cs''8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -660,8 +660,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
-                    b8 [
-                    b8
+                    cs''8 [
+                    cs''8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -669,7 +669,7 @@
                                     \finger
                                         3
                             }
-                    b8. ]
+                    cs''8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -680,7 +680,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    b8 [
+                    cs''8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -688,7 +688,7 @@
                                     \finger
                                         2
                             }
-                    b8. ]
+                    cs''8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -698,7 +698,7 @@
                             }
                 }
                 {
-                    a8 \p [
+                    b'8 \p [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -706,7 +706,7 @@
                                     \finger
                                         4
                             }
-                    a16
+                    b'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -714,8 +714,8 @@
                                     \finger
                                         2
                             }
-                    a8. ]
-                    a4
+                    b'8. ]
+                    b'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -723,7 +723,7 @@
                                     \finger
                                         3
                             }
-                    a8
+                    b'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -734,8 +734,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    a8. [
-                    a16 ]
+                    b'8. [
+                    b'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -745,7 +745,7 @@
                             }
                 }
                 {
-                    a16 [
+                    b'16 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -753,8 +753,8 @@
                                     \finger
                                         2
                             }
-                    a8.
-                    a8
+                    b'8.
+                    b'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -762,7 +762,7 @@
                                     \finger
                                         3
                             }
-                    a8 ]
+                    b'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -773,7 +773,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    a8 [
+                    b'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -781,7 +781,7 @@
                                     \finger
                                         2
                             }
-                    a16 ]
+                    b'16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -792,7 +792,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    a8. [
+                    b'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -800,8 +800,8 @@
                                     \finger
                                         1
                             }
-                    a8
-                    a8. ]
+                    b'8
+                    b'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -812,7 +812,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    a8.
+                    b'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -820,55 +820,55 @@
                                     \finger
                                         2
                             }
-                    a4
+                    b'4
                 }
                 {
                     r8.
                 }
                 {
-                    g4 \pppp \glissando
+                    a'4 \pppp \glissando
                 }
                 {
-                    a4 \glissando
+                    b'4 \glissando
                 }
                 {
-                    bf4 \glissando
+                    c''4 \glissando
                 }
                 {
-                    c'4 \glissando
+                    d''4 \glissando
                 }
                 {
-                    d'4 \glissando
+                    e''4 \glissando
                 }
                 {
-                    ef'4
+                    f''4
                 }
                 {
-                    ef'4 -\tenuto \pppp
+                    f''4 -\tenuto \pppp
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    a8 \p [
+                    b'8 \p [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -876,8 +876,8 @@
                                     \finger
                                         1
                             }
-                    a16
-                    a8.
+                    b'16
+                    b'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -885,7 +885,7 @@
                                     \finger
                                         4
                             }
-                    a8
+                    b'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -893,11 +893,11 @@
                                     \finger
                                         2
                             }
-                    a8 ]
+                    b'8 ]
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
-                    a8. [
+                    b'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -905,7 +905,7 @@
                                     \finger
                                         3
                             }
-                    a8 ]
+                    b'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -915,7 +915,7 @@
                             }
                 }
                 {
-                    b8. \mp [
+                    cs''8. \mp [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -923,7 +923,7 @@
                                     \finger
                                         2
                             }
-                    b16
+                    cs''16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -931,7 +931,7 @@
                                     \finger
                                         4
                             }
-                    b8.
+                    cs''8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -939,10 +939,10 @@
                                     \finger
                                         1
                             }
-                    b8 ]
+                    cs''8 ]
                 }
                 {
-                    b8 [
+                    cs''8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -950,7 +950,7 @@
                                     \finger
                                         4
                             }
-                    b16 ]
+                    cs''16 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -961,7 +961,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
-                    g16 \mf [
+                    a'16 \mf [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -969,7 +969,7 @@
                                     \finger
                                         3
                             }
-                    g8. ]
+                    a'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -977,7 +977,7 @@
                                     \finger
                                         1
                             }
-                    g4
+                    a'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -987,7 +987,7 @@
                             }
                 }
                 {
-                    g8. [
+                    a'8. [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -995,7 +995,7 @@
                                     \finger
                                         4
                             }
-                    g8 ]
+                    a'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1005,16 +1005,16 @@
                             }
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    g8 \mf [
+                    a'8 \mf [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1022,8 +1022,8 @@
                                     \finger
                                         2
                             }
-                    g8.
-                    g16
+                    a'8.
+                    a'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1031,7 +1031,7 @@
                                     \finger
                                         3
                             }
-                    g8.
+                    a'8.
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1039,7 +1039,7 @@
                                     \finger
                                         1
                             }
-                    g8 ]
+                    a'8 ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1049,7 +1049,7 @@
                             }
                 }
                 \times 2/3 {
-                    g4
+                    a'4
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1057,7 +1057,7 @@
                                     \finger
                                         4
                             }
-                    g8
+                    a'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1067,8 +1067,8 @@
                             }
                 }
                 {
-                    fs8. \f [
-                    fs8
+                    gs'8. \f [
+                    gs'8
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1076,7 +1076,7 @@
                                     \finger
                                         1
                             }
-                    fs16
+                    gs'16
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1084,11 +1084,11 @@
                                     \finger
                                         2
                             }
-                    fs8. ]
+                    gs'8. ]
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
-                    fs8 [
+                    gs'8 [
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1096,7 +1096,7 @@
                                     \finger
                                         3
                             }
-                    fs8. ]
+                    gs'8. ]
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1106,28 +1106,28 @@
                             }
                 }
                 {
-                    ef'4 -\tenuto \pppp
+                    f''4 -\tenuto \pppp
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
-                    ef'4 -\tenuto
+                    f''4 -\tenuto
                 }
                 {
                     r8.
                 }
                 {
-                    c4 \pppp \glissando
+                    d'4 \pppp \glissando
                 }
                 {
-                    ef4 \glissando
+                    f'4 \glissando
                 }
                 {
-                    g4 \glissando
+                    a'4 \glissando
                 }
                 {
-                    bf4
+                    c''4
                     \bar "|"
                 }
             }

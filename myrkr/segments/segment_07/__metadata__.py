@@ -8,14 +8,16 @@ metadata = abjad.TypedOrderedDict(
             'end_clefs_by_staff',
             abjad.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', None),
+                    ('Clarinet Music Staff', 'treble'),
                     ]
                 ),
             ),
         (
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
-                []
+                [
+                    ('Clarinet Music Staff', 'bass clarinet'),
+                    ]
                 ),
             ),
         (

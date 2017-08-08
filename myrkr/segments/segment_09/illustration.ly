@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -313,81 +313,81 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d,1 \mp
+                    e1 \mp
                 }
                 {
-                    f'2 \ff \glissando
-                    gf'2. \glissando
+                    g''2 \ff \glissando
+                    af''2. \glissando
                 }
                 \times 4/7 {
-                    f'2 \glissando
-                    e'2 \glissando
-                    f'2. \glissando
+                    g''2 \glissando
+                    fs''2 \glissando
+                    g''2. \glissando
                 }
                 {
-                    gf'2 \glissando
-                    f'2
+                    af''2 \glissando
+                    g''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve. \mp
+                    e\breve. \mp
                 }
                 {
-                    a'2. \f \glissando
-                    bf'2 \glissando
-                    a'2. \glissando
+                    b''2. \f \glissando
+                    c'''2 \glissando
+                    b''2. \glissando
                 }
                 {
-                    gs'2 \glissando
-                    a'2 \glissando
+                    as''2 \glissando
+                    b''2 \glissando
                 }
                 \times 4/7 {
-                    bf'2. \glissando
-                    a'2 \glissando
-                    gs'2
+                    c'''2. \glissando
+                    b''2 \glissando
+                    as''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d,\breve \mp
+                    e\breve \mp
                 }
                 \times 4/5 {
-                    c''2. \mf \glissando
-                    df''2 \glissando
+                    d'''2. \mf \glissando
+                    ef'''2 \glissando
                 }
                 {
-                    c''2. \glissando
-                    b'2 \glissando
-                    c''2 \glissando
+                    d'''2. \glissando
+                    cs'''2 \glissando
+                    d'''2 \glissando
                 }
                 \times 4/5 {
-                    df''2. \glissando
-                    c''2
+                    ef'''2. \glissando
+                    d'''2
                 }
                 {
-                    d,\breve. \mp
+                    e\breve. \mp
                 }
                 \times 4/7 {
-                    e''2 \mp \glissando
-                    f''2. \glissando
-                    e''2 \glissando
+                    fs'''2 \mp \glissando
+                    g'''2. \glissando
+                    fs'''2 \glissando
                 }
                 {
-                    ds''2. \glissando
-                    e''2 \glissando
+                    es'''2. \glissando
+                    fs'''2 \glissando
                 }
                 \times 4/7 {
-                    f''2 \glissando
-                    e''2. \glissando
-                    ds''2
+                    g'''2 \glissando
+                    fs'''2. \glissando
+                    es'''2
                 }
                 {
                     r8.
                 }
                 {
-                    bf4 \pppp \glissando
+                    c''4 \pppp \glissando
                 }
                 {
-                    d'4
+                    e''4
                     \bar "|"
                 }
             }

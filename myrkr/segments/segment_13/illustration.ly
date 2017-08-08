@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -144,7 +144,7 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                         ^ \markup {
                             \whiteout
                                 \upright
@@ -153,31 +153,31 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    b,,1 \fff
+                    cs1 \fff
                     \bar "|"
                 }
             }

@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -337,83 +337,83 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve \mp
+                    e\breve \mp
                 }
                 {
-                    d'4 \pppp \glissando
+                    e''4 \pppp \glissando
                 }
                 {
-                    f'4 \glissando
+                    g''4 \glissando
                 }
                 {
-                    a'4 \glissando
+                    b''4 \glissando
                 }
                 {
-                    c''4
+                    d'''4
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve. \mp
+                    e\breve. \mp
                 }
                 {
-                    c''4 -\tenuto \pppp
+                    d'''4 -\tenuto \pppp
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    d,1 \mp
+                    e1 \mp
                 }
                 {
-                    c''4 -\tenuto \pppp
+                    d'''4 -\tenuto \pppp
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve \mp
+                    e\breve \mp
                 }
                 {
-                    c''4 -\tenuto \pppp
+                    d'''4 -\tenuto \pppp
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 {
-                    c''4 -\tenuto
+                    d'''4 -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve -\tenuto
+                    e\breve -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d,1 -\tenuto
+                    e1 -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d,\breve. -\tenuto
+                    e\breve. -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d,\breve -\tenuto
+                    e\breve -\tenuto
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    df,1 \fff
+                    ef1 \fff
                         ^ \markup {
                             \whiteout
                                 \upright
@@ -422,14 +422,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    df,\breve.
+                    ef\breve.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    df,\breve
+                    ef\breve
                 }
                 {
-                    df,\breve.
+                    ef\breve.
                     \bar "|"
                 }
             }
