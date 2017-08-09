@@ -142,6 +142,9 @@ class RhythmMaker(object):
 
         Returns LilyPond file.
         '''
+        proportional_notation_duration = abjad.Duration(
+            proportional_notation_duration
+            )
         if rhythm is None:
             rhythm = self()
         tuplets, time_signatures = [], []
