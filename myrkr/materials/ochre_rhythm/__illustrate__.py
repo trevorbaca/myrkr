@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from myrkr.mateirals.ochre_rhythm.definition import maker
+from myrkr.materials.ochre_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(
