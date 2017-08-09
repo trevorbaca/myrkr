@@ -30,10 +30,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
-            \context TimeSignatureContext = "Time Signature Context" <<
-                \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+            \context GlobalContext = "Global Context" <<
+                \context GlobalRests = "Global Rests" {
                 }
-                \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                \context GlobalSkips = "Global Skips" {
                 }
             >>
             \context ClarinetMusicStaff = "Clarinet Music Staff" {
@@ -72,21 +72,21 @@ class ScoreTemplate(baca.ScoreTemplate):
         Returns score.
         '''
         time_signature_context_multimeasure_rests = abjad.Context(
-            context_name='TimeSignatureContextMultimeasureRests',
-            name='Time Signature Context Multimeasure Rests',
+            context_name='GlobalRests',
+            name='Global Rests',
             )
         time_signature_context_skips = abjad.Context(
-            context_name='TimeSignatureContextSkips',
-            name='Time Signature Context Skips',
+            context_name='GlobalSkips',
+            name='Global Skips',
             )
         time_signature_context = abjad.Context(
             [
                 time_signature_context_multimeasure_rests,
                 time_signature_context_skips,
             ],
-            context_name='TimeSignatureContext',
+            context_name='GlobalContext',
             is_simultaneous=True,
-            name='Time Signature Context',
+            name='Global Context',
             )
         clarinet_music_voice = abjad.Voice(
             [],
