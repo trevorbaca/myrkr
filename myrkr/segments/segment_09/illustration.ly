@@ -89,6 +89,7 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 2/3
+                    \tempo 4=110
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = 0
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {

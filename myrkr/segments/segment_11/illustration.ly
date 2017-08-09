@@ -133,6 +133,7 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 1/4
+                    \tempo 4=110
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \mark #10
                     \newSpacingSection

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
-from myrkr.materials.charcoal_rhythm.definition import maker
+from myrkr.charcoal_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(

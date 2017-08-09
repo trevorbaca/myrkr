@@ -3,7 +3,7 @@ import abjad
 import os
 import sys
 import traceback
-from myrkr.materials.ochre_rhythm.definition import maker
+from myrkr.ochre_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(

@@ -10,7 +10,7 @@ import myrkr
 
 cobalt_position = 27
 indigo_position = 118
-preprocessor = myrkr.tools.Preprocessor(
+preprocessor = myrkr.Preprocessor(
     indicators=(
         ('graphite', 9, 'C3 Eb3 G3 Bb3 D4 F4 A4 C5 Eb5', 'pppp'), # 1
         ('graphite', 5, 'Eb5', 'pppp'), # 2
@@ -25,13 +25,13 @@ preprocessor = myrkr.tools.Preprocessor(
         ('cobalt', 1, 'C2', 'mp'), # 11
     ),
     name_to_rhythm={
-        'charcoal': myrkr.materials.charcoal_rhythm,
-        'cobalt': myrkr.materials.cobalt_rhythm,
-        'emerald': myrkr.materials.emerald_rhythm,
-        'graphite': myrkr.materials.graphite_rhythm,
-        'indigo': myrkr.materials.indigo_rhythm,
-        'ochre': myrkr.materials.ochre_rhythm,
-        'white': myrkr.materials.white_rhythm,
+        'charcoal': myrkr.charcoal_rhythm,
+        'cobalt': myrkr.cobalt_rhythm,
+        'emerald': myrkr.emerald_rhythm,
+        'graphite': myrkr.graphite_rhythm,
+        'indigo': myrkr.indigo_rhythm,
+        'ochre': myrkr.ochre_rhythm,
+        'white': myrkr.white_rhythm,
         },
     )
 # Cobalt position 29 ...
@@ -39,11 +39,11 @@ preprocessor = myrkr.tools.Preprocessor(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=myrkr.materials.instruments,
+    instruments=myrkr.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.materials.tempi,
-    score_template=myrkr.tools.ScoreTemplate(),
+    metronome_marks=myrkr.tempi,
+    score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 12)),
         (3, abjad.Duration(1, 24)),
@@ -54,7 +54,7 @@ segment_maker = baca.SegmentMaker(
         (11, abjad.Duration(1, 12)),
         ),
     tempo_specifier=(
-        #(1, myrkr.materials.tempi[110]),
+        #(1, myrkr.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
