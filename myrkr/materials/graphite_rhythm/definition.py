@@ -2,7 +2,7 @@
 import myrkr
 
 
-maker = myrkr.tools.RhythmMaker(
+maker = myrkr.RhythmMaker(
     terms=(1,),
     counts=(1,),
     denominator=4,

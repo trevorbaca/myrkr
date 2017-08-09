@@ -8,6 +8,7 @@ if not (
     raise ImportError('Requires Python 3.5.')
 del distutils
 del platform
-from myrkr import tools
-from myrkr import materials
+
+from myrkr.tools import *
+from myrkr.materials import *
 from myrkr import segments

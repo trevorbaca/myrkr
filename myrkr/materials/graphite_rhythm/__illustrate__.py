@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
-from myrkr.materials.graphite_rhythm.definition import maker
+from myrkr.graphite_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(

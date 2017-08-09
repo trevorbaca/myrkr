@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from myrkr.materials.indigo_rhythm.definition import maker
+from myrkr.indigo_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(

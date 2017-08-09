@@ -10,7 +10,7 @@ import myrkr
 
 cobalt_position = 36
 indigo_position = 150
-preprocessor = myrkr.tools.Preprocessor(
+preprocessor = myrkr.Preprocessor(
     indicators=(
         ('indigo', (2, indigo_position), 'Db3', 'pppp', ('C', 110)), # 1
         ('indigo', 2, 'C3', 'pppp', ('C', 112)), # 2
@@ -29,13 +29,13 @@ preprocessor = myrkr.tools.Preprocessor(
         ('cobalt', 1, 'E3', 'fff', ('A', 44)), # 15
     ),
     name_to_rhythm={
-        'charcoal': myrkr.materials.charcoal_rhythm,
-        'cobalt': myrkr.materials.cobalt_rhythm,
-        'emerald': myrkr.materials.emerald_rhythm,
-        'graphite': myrkr.materials.graphite_rhythm,
-        'indigo': myrkr.materials.indigo_rhythm,
-        'ochre': myrkr.materials.ochre_rhythm,
-        'white': myrkr.materials.white_rhythm,
+        'charcoal': myrkr.charcoal_rhythm,
+        'cobalt': myrkr.cobalt_rhythm,
+        'emerald': myrkr.emerald_rhythm,
+        'graphite': myrkr.graphite_rhythm,
+        'indigo': myrkr.indigo_rhythm,
+        'ochre': myrkr.ochre_rhythm,
+        'white': myrkr.white_rhythm,
         },
     )
 # Cobalt position 45 ...
@@ -43,11 +43,11 @@ preprocessor = myrkr.tools.Preprocessor(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=myrkr.materials.instruments,
+    instruments=myrkr.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.materials.tempi,
-    score_template=myrkr.tools.ScoreTemplate(),
+    metronome_marks=myrkr.tempi,
+    score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 24)),
         (4, abjad.Duration(1, 12)),
@@ -58,8 +58,8 @@ segment_maker = baca.SegmentMaker(
         (15, abjad.Duration(1, 8)),
         ),
     tempo_specifier=(
-        (1, myrkr.materials.tempi[55]),
-        (7, myrkr.materials.tempi[44]),
+        (1, myrkr.tempi[55]),
+        (7, myrkr.tempi[44]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

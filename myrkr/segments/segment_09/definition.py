@@ -10,7 +10,7 @@ import myrkr
 
 charcoal_position = 12
 cobalt_position = 11
-preprocessor = myrkr.tools.Preprocessor(
+preprocessor = myrkr.Preprocessor(
     indicators=(
         ('cobalt', (1, cobalt_position), 'D2', 'mp'), # 1
         ('charcoal', (3, charcoal_position), 'F4 Gb4 F4 E4', 'ff'), # 2
@@ -24,13 +24,13 @@ preprocessor = myrkr.tools.Preprocessor(
         ('graphite', 2, 'Bb3 D4', 'pppp'), # 10
     ),
     name_to_rhythm={
-        'charcoal': myrkr.materials.charcoal_rhythm,
-        'cobalt': myrkr.materials.cobalt_rhythm,
-        'emerald': myrkr.materials.emerald_rhythm,
-        'graphite': myrkr.materials.graphite_rhythm,
-        'indigo': myrkr.materials.indigo_rhythm,
-        'ochre': myrkr.materials.ochre_rhythm,
-        'white': myrkr.materials.white_rhythm,
+        'charcoal': myrkr.charcoal_rhythm,
+        'cobalt': myrkr.cobalt_rhythm,
+        'emerald': myrkr.emerald_rhythm,
+        'graphite': myrkr.graphite_rhythm,
+        'indigo': myrkr.indigo_rhythm,
+        'ochre': myrkr.ochre_rhythm,
+        'white': myrkr.white_rhythm,
         },
     )
 # Charcoal position 24 ...
@@ -38,20 +38,20 @@ preprocessor = myrkr.tools.Preprocessor(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=myrkr.materials.instruments,
+    instruments=myrkr.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.materials.tempi,
-    score_template=myrkr.tools.ScoreTemplate(),
+    metronome_marks=myrkr.tempi,
+    score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 8)),
         ),
     tempo_specifier=(
-        #(1, myrkr.materials.tempi[110]),
+        #(1, myrkr.tempi[110]),
         (1, abjad.Ritardando()),
-        (3, myrkr.materials.tempi[55]),
+        (3, myrkr.tempi[55]),
         (5, abjad.Accelerando()),
-        (7, myrkr.materials.tempi[110]),
+        (7, myrkr.tempi[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
-from myrkr.materials.white_rhythm.definition import maker
+from myrkr.white_rhythm.definition import maker
 
 
 lilypond_file = maker.__illustrate__(

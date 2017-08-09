@@ -10,7 +10,7 @@ import myrkr
 
 cobalt_position = 29
 indigo_position = 128
-preprocessor = myrkr.tools.Preprocessor(
+preprocessor = myrkr.Preprocessor(
     indicators=(
         ('graphite', 3, 'Eb5', 'pppp'), # 1
         ('cobalt', (1, cobalt_position), 'C2', 'mp'), # 2
@@ -36,13 +36,13 @@ preprocessor = myrkr.tools.Preprocessor(
         ('white', (1, 0)), # 22
     ),
     name_to_rhythm={
-        'charcoal': myrkr.materials.charcoal_rhythm,
-        'cobalt': myrkr.materials.cobalt_rhythm,
-        'emerald': myrkr.materials.emerald_rhythm,
-        'graphite': myrkr.materials.graphite_rhythm,
-        'indigo': myrkr.materials.indigo_rhythm,
-        'ochre': myrkr.materials.ochre_rhythm,
-        'white': myrkr.materials.white_rhythm,
+        'charcoal': myrkr.charcoal_rhythm,
+        'cobalt': myrkr.cobalt_rhythm,
+        'emerald': myrkr.emerald_rhythm,
+        'graphite': myrkr.graphite_rhythm,
+        'indigo': myrkr.indigo_rhythm,
+        'ochre': myrkr.ochre_rhythm,
+        'white': myrkr.white_rhythm,
         },
     )
 # Cobalt position 35 ...
@@ -50,11 +50,11 @@ preprocessor = myrkr.tools.Preprocessor(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=myrkr.materials.instruments,
+    instruments=myrkr.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.materials.tempi,
-    score_template=myrkr.tools.ScoreTemplate(),
+    metronome_marks=myrkr.tempi,
+    score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 12)),
         (3, abjad.Duration(1, 24)),
@@ -74,9 +74,9 @@ segment_maker = baca.SegmentMaker(
         (22, abjad.Duration(1, 12)),
         ),
     tempo_specifier=(
-        #(1, myrkr.materials.tempi[110]),
+        #(1, myrkr.tempi[110]),
         (14, abjad.Ritardando()),
-        (20, myrkr.materials.tempi[55]),
+        (20, myrkr.tempi[55]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

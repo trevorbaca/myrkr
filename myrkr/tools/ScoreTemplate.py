@@ -15,7 +15,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> template = myrkr.tools.ScoreTemplate()
+        >>> template = myrkr.ScoreTemplate()
         >>> lilypond_file = template.__illustrate__()
         >>> path = '/Users/trevorbaca/Scores/myrkr/myrkr'
         >>> path += '/stylesheets/context-definitions.ily'
@@ -106,7 +106,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
-            myrkr.materials.instruments['bass clarinet'],
+            myrkr.instruments['bass clarinet'],
             )
 
         score = abjad.Score(
