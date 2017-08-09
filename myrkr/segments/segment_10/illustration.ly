@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #250
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 8/5
                     R1 * 8/5
@@ -110,7 +110,7 @@
                     R1 * 3
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 8/5
                     \tempo 4=110

@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #384
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 4/4
                     R1 * 1
@@ -140,7 +140,7 @@
                     R1 * 1
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = 0

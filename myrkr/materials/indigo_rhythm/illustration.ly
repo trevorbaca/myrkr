@@ -19,7 +19,7 @@
     indent = #0
     ragged-right = ##t
     \context {
-        \name TimeSignatureContext
+        \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
         \consists Time_signature_engraver
@@ -35,7 +35,7 @@
     \context {
         \Score
         \remove Bar_number_engraver
-        \accepts TimeSignatureContext
+        \accepts GlobalContext
         \override Beam.breakable = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
@@ -75,7 +75,7 @@
         \override TupletBracket.staff-padding = #3.5
         proportionalNotationDuration = #(ly:make-moment 1 16)
     } <<
-        \new TimeSignatureContext {
+        \new GlobalContext {
             {
                 \time 13/16
                 s1 * 13/16
