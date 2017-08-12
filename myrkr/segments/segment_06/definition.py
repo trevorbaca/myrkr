@@ -13,14 +13,15 @@ cobalt_position = 6
 indigo_position = 89
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('indigo', (3, indigo_position), 'A3', 'p', ('C', 60)), # 1
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 2
-        ('indigo', 2, 'A3', 'mp', ('C', 60)), # 3
-
-        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 62)), # 4
-        ('cobalt', (1, cobalt_position), 'E2', 'mp'), # 5
-        ('charcoal', (3, charcoal_position), 'C5 Db5 C5 B4', 'pp'), # 6
-        ('indigo', 6, 'B3', 'f', ('C', 64)), # 7
+        # 1-3
+        ('indigo', (3, indigo_position), 'A3', 'p', ('C', 60)),
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('indigo', 2, 'A3', 'mp', ('C', 60)),
+        # 4-7
+        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 62)),
+        ('cobalt', (1, cobalt_position), 'E2', 'mp'),
+        ('charcoal', (3, charcoal_position), 'C5 Db5 C5 B4', 'pp'),
+        ('indigo', 6, 'B3', 'f', ('C', 64)),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,

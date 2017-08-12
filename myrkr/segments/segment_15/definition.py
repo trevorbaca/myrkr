@@ -12,16 +12,20 @@ charcoal_position = 24
 cobalt_position = 45
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('charcoal', (3, charcoal_position), 'E5 F5 E5 D#5', 'p'), # 1
-        ('cobalt', (1, cobalt_position), 'C2', 'ppppp'), # 2
-        ('charcoal', 3, 'F5 E5 D#5 E5', 'pp'), # 3
-        ('charcoal', 3, 'E5 D#5 E5 F5', 'ppp'), # 4
-        ('cobalt', 1, 'C2', 'ppppp'), # 5
-        ('charcoal', 3, 'D#5 E5 F5 E5', 'pppp'), # 6
-        ('cobalt', 1, 'B2', 'pppp'), # 7
-        ('charcoal', 6, 'E5 F5 E5 D#5', 'ppppp'), # 8
-        ('cobalt', 1, 'B2', 'pppp'), # 9
-        ('charcoal', 12, 'F5 E5 D#5 E5', 'ppppp'), # 10
+        # 1-3
+        ('charcoal', (3, charcoal_position), 'E5 F5 E5 D#5', 'p'),
+        ('cobalt', (1, cobalt_position), 'C2', 'ppppp'),
+        ('charcoal', 3, 'F5 E5 D#5 E5', 'pp'),
+        # 4-6
+        ('charcoal', 3, 'E5 D#5 E5 F5', 'ppp'),
+        ('cobalt', 1, 'C2', 'ppppp'),
+        ('charcoal', 3, 'D#5 E5 F5 E5', 'pppp'),
+        # 7-9
+        ('cobalt', 1, 'B2', 'pppp'),
+        ('charcoal', 6, 'E5 F5 E5 D#5', 'ppppp'),
+        ('cobalt', 1, 'B2', 'pppp'),
+        # 10
+        ('charcoal', 12, 'F5 E5 D#5 E5', 'ppppp'),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,

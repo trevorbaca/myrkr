@@ -13,22 +13,23 @@ cobalt_position = 5
 indigo_position = 80
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('indigo', (3, indigo_position), 'A3', 'p', ('C', 44)), # 1
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 2
-        ('indigo', 2, 'A3', 'mp', ('C', 46)), # 3
-
-        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 48)), # 4
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 5
-        ('indigo', 2, 'B3', 'f', ('C', 50)), # 6
-
-        ('indigo', (3, indigo_position), 'C4', 'ff', ('C', 52)), # 7
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 8
-        ('indigo', 2, 'C4', 'fff', ('C', 54)), # 9
-
-        ('indigo', (3, indigo_position), 'C#4', 'ffff', ('C', 56)), # 10
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 11
-        ('charcoal', (3, charcoal_position), 'D5 Eb5 D5 C#5', 'pppp'), # 12
-        ('indigo', 6, 'C#4', 'ffff', ('C', 58)), # 13
+        # 1-3
+        ('indigo', (3, indigo_position), 'A3', 'p', ('C', 44)),
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('indigo', 2, 'A3', 'mp', ('C', 46)),
+        # 4-6
+        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 48)),
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('indigo', 2, 'B3', 'f', ('C', 50)),
+        # 7-9
+        ('indigo', (3, indigo_position), 'C4', 'ff', ('C', 52)),
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('indigo', 2, 'C4', 'fff', ('C', 54)),
+        # 10-13
+        ('indigo', (3, indigo_position), 'C#4', 'ffff', ('C', 56)),
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('charcoal', (3, charcoal_position), 'D5 Eb5 D5 C#5', 'pppp'),
+        ('indigo', 6, 'C#4', 'ffff', ('C', 58)),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,

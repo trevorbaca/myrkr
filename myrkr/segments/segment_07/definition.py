@@ -12,14 +12,17 @@ charcoal_position = 6
 emerald_position = 25
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('charcoal', (2, charcoal_position), 'B4 C5 B4 A#4', 'mp'), # 1 
-        ('emerald', (1, emerald_position), 'G3', 'ff', ('A', 34)), # 2
-        ('charcoal', 2, 'A4 Bb4 A4 G#4', 'mf'), # 3 
-        ('emerald', 1, 'G3', 'ff', ('A', 36)), # 4
-        ('emerald', 1, 'F#3', 'fff', ('A', 38)), # 5
-        ('charcoal', 2, 'G4 Ab4 G4 F#4', 'f'), # 6 
-        ('emerald', 2, 'F#3', 'fff', ('A', 40)), # 7
-        ('emerald', 4, 'E3', 'fff', ('A', 42)), # 8
+        # 1-3
+        ('charcoal', (2, charcoal_position), 'B4 C5 B4 A#4', 'mp'),
+        ('emerald', (1, emerald_position), 'G3', 'ff', ('A', 34)),
+        ('charcoal', 2, 'A4 Bb4 A4 G#4', 'mf'),
+        # 4-6
+        ('emerald', 1, 'G3', 'ff', ('A', 36)),
+        ('emerald', 1, 'F#3', 'fff', ('A', 38)),
+        ('charcoal', 2, 'G4 Ab4 G4 F#4', 'f'),
+        # 7-8
+        ('emerald', 2, 'F#3', 'fff', ('A', 40)),
+        ('emerald', 4, 'E3', 'fff', ('A', 42)),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,
