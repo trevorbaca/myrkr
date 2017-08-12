@@ -13,23 +13,31 @@ emerald_position = 21
 indigo_position = 54
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('indigo', (2, indigo_position), 'C4', 'p', ('C', 24)), # 1
-        ('indigo', (6, indigo_position), 'C#4', 'pp', ('C', 26)), # 2
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'), # 3
-        ('indigo', 2, 'C#4', 'pp', ('C', 28)), # 4
-        ('emerald', (1, emerald_position), 'Ab3', 'f', ('A', 28)), # 5
-        ('emerald', 1, 'G3', 'ff', ('A', 30)), # 6
-        ('indigo', 2, 'C#4', 'pp', ('C', 30)), # 7
-        ('indigo', 2, 'D#4', 'ppp', ('C', 32)), # 8
-        ('cobalt', 1, 'Eb2', 'mp'), # 9
-        ('indigo', 2, 'D#4', 'ppp', ('C', 34)), # 10
-        ('cobalt', 1, 'Eb2', 'mp'), # 11
-        ('indigo', 2, 'D#4', 'ppp', ('C', 36)), # 12
-        ('emerald', 2, 'G3', 'ff', ('A', 32)), # 13
-        ('indigo', 2, 'D#4', 'ppp', ('C', 38)), # 14
-        ('cobalt', 1, 'Eb2', 'mp'), # 15
-        ('indigo', 2, 'D#4', 'ppp', ('C', 40)), # 16
-        ('indigo', 4, 'E4', 'pppp', ('C', 42)), # 17
+        # 1-2
+        ('indigo', (2, indigo_position), 'C4', 'p', ('C', 24)),
+        ('indigo', (6, indigo_position), 'C#4', 'pp', ('C', 26)),
+        # 3-4
+        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
+        ('indigo', 2, 'C#4', 'pp', ('C', 28)),
+        # 5-6
+        ('emerald', (1, emerald_position), 'Ab3', 'f', ('A', 28)),
+        ('emerald', 1, 'G3', 'ff', ('A', 30)),
+        # 7-8
+        ('indigo', 2, 'C#4', 'pp', ('C', 30)),
+        ('indigo', 2, 'D#4', 'ppp', ('C', 32)),
+        # 9-10
+        ('cobalt', 1, 'Eb2', 'mp'),
+        ('indigo', 2, 'D#4', 'ppp', ('C', 34)),
+        # 11-12
+        ('cobalt', 1, 'Eb2', 'mp'),
+        ('indigo', 2, 'D#4', 'ppp', ('C', 36)),
+        # 13-14
+        ('emerald', 2, 'G3', 'ff', ('A', 32)),
+        ('indigo', 2, 'D#4', 'ppp', ('C', 38)),
+        # 15-17
+        ('cobalt', 1, 'Eb2', 'mp'),
+        ('indigo', 2, 'D#4', 'ppp', ('C', 40)),
+        ('indigo', 4, 'E4', 'pppp', ('C', 42)),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,

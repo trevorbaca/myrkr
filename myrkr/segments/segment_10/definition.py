@@ -11,16 +11,20 @@ import myrkr
 cobalt_position = 15
 preprocessor = myrkr.Preprocessor(
     indicators=(
-        ('cobalt', (1, cobalt_position), 'D2', 'mp'), # 1
-        ('graphite', 4, 'D4 F4 A4 C5', 'pppp'), # 2
-        ('cobalt', 1, 'D2', 'mp'), # 3
-        ('graphite', 3, 'C5', 'pppp'), # 4
-        ('cobalt', 1, 'D2', 'mp'), # 5
-        ('graphite', 5, 'C5', 'pppp'), # 6
-        ('cobalt', 1, 'D2', 'mp'), # 7
-        ('graphite', 3, 'C5', 'pppp'), # 8
-        ('cobalt', 4, 'D2'), # 9
-        ('cobalt', 4, 'Db2', 'fff'), # 10
+        # 1-3
+        ('cobalt', (1, cobalt_position), 'D2', 'mp'),
+        ('graphite', 4, 'D4 F4 A4 C5', 'pppp'),
+        ('cobalt', 1, 'D2', 'mp'),
+        # 4-6
+        ('graphite', 3, 'C5', 'pppp'),
+        ('cobalt', 1, 'D2', 'mp'),
+        ('graphite', 5, 'C5', 'pppp'),
+        # 7-9
+        ('cobalt', 1, 'D2', 'mp'),
+        ('graphite', 3, 'C5', 'pppp'),
+        ('cobalt', 4, 'D2'),
+        # 10
+        ('cobalt', 4, 'Db2', 'fff'),
     ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,
