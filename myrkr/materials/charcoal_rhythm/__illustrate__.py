@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from myrkr.materials.charcoal_rhythm.definition import maker
 
 

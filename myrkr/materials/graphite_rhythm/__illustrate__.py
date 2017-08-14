@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from myrkr.materials.graphite_rhythm.definition import maker
 
 

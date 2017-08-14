@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from myrkr.materials.ochre_rhythm.definition import maker
 
 

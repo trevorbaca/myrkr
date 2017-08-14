@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from myrkr.materials.cobalt_rhythm.definition import maker
 
 
