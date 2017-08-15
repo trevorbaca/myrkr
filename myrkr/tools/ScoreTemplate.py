@@ -108,8 +108,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             myrkr.instruments['bass clarinet'],
             )
 
-        score = abjad.Score(
-            [
+        score = abjad.Score([
             time_signature_context,
             clarinet_music_staff,
             ],

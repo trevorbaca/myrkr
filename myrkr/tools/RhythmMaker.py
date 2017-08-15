@@ -6,7 +6,7 @@ import math
 class RhythmMaker(object):
     r'''Rhythm-maker.
     '''
-    
+
     ### CLASS VARIABLES ###
 
     __slots__ = (
@@ -21,8 +21,8 @@ class RhythmMaker(object):
     ### INITIALIZER ###
 
     def __init__(
-        self, 
-        terms=None, 
+        self,
+        terms=None,
         counts=None,
         denominator=None,
         prolation_indicators=None,
@@ -68,7 +68,7 @@ class RhythmMaker(object):
         #print(list(sum(_) for _ in tuplet_ratios))
         tuplets = []
         for i, tuplet_ratio in enumerate(tuplet_ratios):
-            weight = sum(abs(_) for _ in tuplet_ratio)    
+            weight = sum(abs(_) for _ in tuplet_ratio)
             prolation_indicator = 0
             if self.prolation_indicators:
                 prolation_indicator = self.prolation_indicators[i]
@@ -131,11 +131,11 @@ class RhythmMaker(object):
         return rhythm
 
     def __illustrate__(
-        self, 
-        rhythm=None, 
+        self,
+        rhythm=None,
         proportional_notation_duration=abjad.Duration(1, 16),
         subtitle=None,
-        title=None, 
+        title=None,
         ):
         r'''Illustrates rhythm-maker.
 
@@ -227,7 +227,7 @@ class RhythmMaker(object):
         total_duration = left_duration + right_duration
         tuplet_duration = abjad.inspect(tuplet).get_duration()
         assert tuplet_duration == total_duration, repr((
-            tuplet, 
+            tuplet,
             total_duration,
             left_count,
             right_count,
@@ -246,13 +246,13 @@ class RhythmMaker(object):
                 continue
             string = 'set tupletFullLength = ##f'
             command = abjad.LilyPondCommand(
-                string, 
+                string,
                 format_slot='before',
                 )
             abjad.attach(command, tuplet)
             string = 'set tupletFullLength = ##t'
             command = abjad.LilyPondCommand(
-                string, 
+                string,
                 format_slot='after',
                 )
             abjad.attach(command, tuplet)

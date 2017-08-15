@@ -33,7 +33,7 @@ class ColorMaker(object):
             notes.extend(notes_)
             last_note = notes_[-1]
             previous_pitch = last_note.written_pitch
-        selection = select(notes)
+        selection = abjad.select(notes)
         return selection
 
     def __illustrate__(self, start_pitch=None, title=None, subtitle=None):
@@ -44,7 +44,7 @@ class ColorMaker(object):
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
-        durations = [inspect_(_).get_duration() for _ in notes]
+        durations = [abjad.inspect(_).get_duration() for _ in notes]
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
@@ -107,7 +107,7 @@ class ColorMaker(object):
                 color_fingering = abjad.ColorFingering(number)
                 abjad.attach(color_fingering, note)
             notes.append(note)
-        notes = select(notes)
+        notes = abjad.select(notes)
         return notes
 
     @staticmethod
