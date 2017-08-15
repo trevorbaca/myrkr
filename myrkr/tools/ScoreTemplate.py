@@ -10,56 +10,58 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> import abjad
         >>> import myrkr
+        >>> import pathlib
 
+    ..  container:: example
 
-    ::
+        ::
 
-        >>> template = myrkr.ScoreTemplate()
-        >>> lilypond_file = template.__illustrate__()
-        >>> path = '/Users/trevorbaca/Scores/myrkr/myrkr'
-        >>> path += '/stylesheets/context-definitions.ily'
-        >>> lilypond_file = abjad.new(
-        ...     lilypond_file,
-        ...     global_staff_size=15,
-        ...     includes=[path],
-        ...     )
-        >>> show(lilypond_file) # doctest: +SKIP
+            >>> template = myrkr.ScoreTemplate()
+            >>> lilypond_file = template.__illustrate__()
+            >>> path = pathlib.Path(myrkr.__path__[0], 'stylesheets')
+            >>> path = path.joinpath('context-definitions.ily')
+            >>> lilypond_file = abjad.new(
+            ...     lilypond_file,
+            ...     global_staff_size=15,
+            ...     includes=[path],
+            ...     )
+            >>> show(lilypond_file) # doctest: +SKIP
 
-    ::
+        ::
 
-        >>> f(lilypond_file[abjad.Score])
-        \context Score = "Score" <<
-            \context GlobalContext = "Global Context" <<
-                \context GlobalRests = "Global Rests" {
-                }
-                \context GlobalSkips = "Global Skips" {
+            >>> f(lilypond_file[abjad.Score])
+            \context Score = "Score" <<
+                \context GlobalContext = "Global Context" <<
+                    \context GlobalRests = "Global Rests" {
+                    }
+                    \context GlobalSkips = "Global Skips" {
+                    }
+                >>
+                \context ClarinetMusicStaff = "Clarinet Music Staff" {
+                    \context ClarinetMusicVoice = "Clarinet Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                \center-column
+                                    {
+                                        Bass
+                                        cl.
+                                    }
+                            }
+                        \clef "treble"
+                        s1
+                    }
                 }
             >>
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                    \set Staff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set Staff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \center-column
-                                {
-                                    Bass
-                                    cl.
-                                }
-                        }
-                    \clef "treble"
-                    s1
-                }
-            }
-        >>
 
     '''
 
