@@ -37,10 +37,10 @@ class Preprocessor(object):
     ### PRIVATE METHODS ###
 
     def _make_music_specifier_bundle(
-        self, 
-        stage_number, 
-        pitch, 
-        dynamic, 
+        self,
+        stage_number,
+        pitch,
+        dynamic,
         color_fingering,
         ):
         if pitch is None and dynamic is None and color_fingering is None:
@@ -135,9 +135,9 @@ class Preprocessor(object):
             measures_per_stage.append(count)
             stage_number = stage_index + 1
             self._make_music_specifier_bundle(
-                stage_number, 
-                pitch, 
-                dynamic, 
+                stage_number,
+                pitch,
+                dynamic,
                 color_fingering,
                 )
         self._selections = tuple(selections)
