@@ -8,7 +8,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> import abjad
         >>> import myrkr
         >>> import pathlib
 
@@ -17,13 +16,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = myrkr.ScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
-            >>> path = pathlib.Path(myrkr.__path__[0], 'stylesheets')
-            >>> path = path.joinpath('context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
+            >>> path = pathlib.Path(myrkr.__path__[0])
+            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
-            ...     includes=[str(path)],
+            ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
@@ -72,25 +69,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context_multimeasure_rests = abjad.Context(
-            context_name='GlobalRests',
-            name='Global Rests',
-            )
-        time_signature_context_skips = abjad.Context(
-            context_name='GlobalSkips',
-            name='Global Skips',
-            )
-        time_signature_context = abjad.Context(
-            [
-                time_signature_context_multimeasure_rests,
-                time_signature_context_skips,
-            ],
-            context_name='GlobalContext',
-            is_simultaneous=True,
-            name='Global Context',
-            )
+        time_signature_context = self._make_time_signature_context()
+        # CLARINET
         clarinet_music_voice = abjad.Voice(
-            [],
             context_name='ClarinetMusicVoice',
             name='Clarinet Music Voice',
             )
@@ -101,19 +82,15 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         abjad.annotate(
             clarinet_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
-        abjad.annotate(
-            clarinet_music_staff,
             'default_instrument',
             myrkr.instruments['bass clarinet'],
             )
-
-        score = abjad.Score([
-            time_signature_context,
-            clarinet_music_staff,
-            ],
+        # SCORE
+        score = abjad.Score(
+            [
+                time_signature_context,
+                clarinet_music_staff,
+                ],
             name='Score',
             )
         return score
