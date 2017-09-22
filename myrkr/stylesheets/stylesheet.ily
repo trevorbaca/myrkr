@@ -1,7 +1,7 @@
 #(set-default-paper-size "11x17landscape")
 #(set-global-staff-size 11)
 
-\include "context-definitions.ily"
+\include "contexts.ily"
 
 \paper {
     %bottom-margin = 10\mm
