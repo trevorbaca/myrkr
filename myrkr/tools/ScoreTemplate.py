@@ -9,15 +9,13 @@ class ScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import myrkr
-        >>> import pathlib
 
     ..  container:: example
 
         ::
 
             >>> template = myrkr.ScoreTemplate()
-            >>> path = pathlib.Path(myrkr.__path__[0])
-            >>> path = path / 'stylesheets' / 'contexts.ily'
+            >>> path = abjad.Path('myrkr', 'stylesheets', 'contexts.ily')
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
             ...     includes=[path],
@@ -36,7 +34,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 >>
                 \context ClarinetMusicStaff = "Clarinet Music Staff" {
                     \context ClarinetMusicVoice = "Clarinet Music Voice" {
-                        \set Staff.instrumentName = \markup {
+                        \set ClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
                                 \center-column
@@ -45,7 +43,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         clarinet
                                     }
                             }
-                        \set Staff.shortInstrumentName = \markup {
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup {
                             \hcenter-in
                                 #10
                                 \center-column
