@@ -53,7 +53,7 @@ segment_maker = baca.SegmentMaker(
     instruments=myrkr.instruments,
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.tempi,
+    metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 8)),
@@ -66,9 +66,9 @@ segment_maker = baca.SegmentMaker(
         (15, abjad.Duration(1, 12)),
         ),
     tempo_specifier=(
-        #(1, myrkr.tempi[44]),
+        #(1, myrkr.metronome_marks[44]),
         (2, abjad.Accelerando()),
-        (4, myrkr.tempi[110]),
+        (4, myrkr.metronome_marks[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

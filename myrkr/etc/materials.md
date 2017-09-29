@@ -190,7 +190,7 @@ transitions are actually very interesting. and in fact it may be possible to
 calibrate the construction of the piece in counts of integer numbers of notes
 per voice region. this would mean a correspondence between integer note counts
 and formal proportions, or at least the possibility of such a correspondence.
-(global tempi and tempo transitions will still be applied independently.)
+(global metronome_marks and tempo transitions will still be applied independently.)
 dynamics and hairpins will also still be applied independently. all of this
 also means that the rhythmic profile of each voice is relatively
 straightforward at any given time: voice 5 is, for instance, written as a
