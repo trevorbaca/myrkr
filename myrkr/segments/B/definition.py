@@ -42,13 +42,13 @@ segment_maker = baca.SegmentMaker(
     instruments=myrkr.instruments,
     measures_per_stage=preprocessor.measures_per_stage,
     label_stages=True,
-    metronome_marks=myrkr.tempi,
+    metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
     spacing_map=(
         (1, abjad.Duration(1, 24)),
         ),
     tempo_specifier=(
-        #(1, myrkr.tempi[110]),
+        #(1, myrkr.metronome_marks[110]),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
