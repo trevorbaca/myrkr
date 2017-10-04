@@ -42,6 +42,11 @@ preprocessor = myrkr.Preprocessor(
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=myrkr.instruments,
+    final_markup=(
+        ['Cambridge, MA', 'Dallas, TX.'],
+        ['August', 'October 2015.'],
+        ),
+    final_markup_extra_offset=(-24, -4),
     label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_marks=myrkr.metronome_marks,
