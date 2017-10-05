@@ -54,7 +54,7 @@ segment_maker = baca.SegmentMaker(
     spacing_map=(
         (1, abjad.Duration(1, 8)),
         ),
-    tempo_specifier=(
+    metronome_mark_measure_map=(
         (1, myrkr.metronome_marks[55]),
         (1, abjad.Accelerando()),
         (10, myrkr.metronome_marks[110]),
