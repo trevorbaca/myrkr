@@ -159,9 +159,7 @@ class Preprocessor(object):
         self._music_by_stage = selections
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
-            message = '{} position {} ...'
-            message = message.format(name, cursor.position)
-            print(message)
+            print(f'{name} position {cursor.position} ...')
 
     def _validate_indicators(self):
         for indicator in self.indicators:
