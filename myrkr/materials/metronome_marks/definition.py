@@ -3,19 +3,19 @@ import abjad
 
 metronome_marks = abjad.MetronomeMarkDictionary([
     (
-        44,
+        '44',
         abjad.MetronomeMark(abjad.Duration(1, 4), 44),
         ),
     (
-        55,
+        '55',
         abjad.MetronomeMark(abjad.Duration(1, 4), 55),
         ),
     (
-        88,
+        '88',
         abjad.MetronomeMark(abjad.Duration(1, 4), 88),
         ),
     (
-        110,
+        '110',
         abjad.MetronomeMark(abjad.Duration(1, 4), 110),
         ),
     ])
