@@ -537,32 +537,34 @@
                     _ \markup {
                         \whiteout
                             \upright
-                                \right-column
-                                    {
-                                        \line
-                                            {
-                                                Cambridge,
-                                                MA
-                                                \hspace
-                                                    #0.75
-                                                –
-                                                \hspace
-                                                    #0.75
-                                                Dallas,
-                                                TX.
-                                            }
-                                        \line
-                                            {
-                                                August
-                                                \hspace
-                                                    #0.75
-                                                –
-                                                \hspace
-                                                    #0.75
-                                                October
-                                                2015.
-                                            }
-                                    }
+                                \with-color
+                                    #black
+                                    \right-column
+                                        {
+                                            \line
+                                                {
+                                                    Cambridge,
+                                                    MA
+                                                    \hspace
+                                                        #0.75
+                                                    –
+                                                    \hspace
+                                                        #0.75
+                                                    Dallas,
+                                                    TX.
+                                                }
+                                            \line
+                                                {
+                                                    August
+                                                    \hspace
+                                                        #0.75
+                                                    –
+                                                    \hspace
+                                                        #0.75
+                                                    October
+                                                    2015.
+                                                }
+                                        }
                         }
                 \bar "|."
             }

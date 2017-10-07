@@ -81,9 +81,9 @@ segment_maker = baca.SegmentMaker(
         (22, abjad.Duration(1, 12)),
         ),
     metronome_mark_measure_map=(
-        #(1, myrkr.metronome_marks[110]),
+        #(1, myrkr.metronome_marks['110']),
         (14, abjad.Ritardando()),
-        (20, myrkr.metronome_marks[55]),
+        (20, myrkr.metronome_marks['55']),
         ),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
