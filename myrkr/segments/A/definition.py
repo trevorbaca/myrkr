@@ -4,7 +4,7 @@ import myrkr
 
 
 ###############################################################################
-##################################### [2] #####################################
+##################################### [A] #####################################
 ###############################################################################
 
 emerald_position = 0
@@ -76,13 +76,8 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    rhythm_specifier = baca.RhythmCommand(
-        rhythm_maker=selection,
+    segment_maker.scope(
+        baca.scope('Clarinet Music Voice', stage_number),
+        baca.rhythm(selection),
         )
-    segment_maker.append_commands(
-        'Clarinet Music Voice',
-        baca.select_stages(stage_number),
-        rhythm_specifier,
-        )
-
 preprocessor.make_music_specifiers(segment_maker)

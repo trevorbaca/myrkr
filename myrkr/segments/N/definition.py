@@ -4,7 +4,7 @@ import myrkr
 
 
 ###############################################################################
-##################################### [15] ####################################
+##################################### [N] #####################################
 ###############################################################################
 
 charcoal_position = 24
@@ -68,55 +68,44 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    rhythm_specifier = baca.RhythmCommand(
-        rhythm_maker=selection,
-        )
-    segment_maker.append_commands(
-        'Clarinet Music Voice',
-        baca.select_stages(stage_number),
-        rhythm_specifier,
+    segment_maker.scope(
+        baca.scope('Clarinet Music Voice', stage_number),
+        baca.rhythm(selection),
         )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 1),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(2),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 2),
     baca.markup('“U”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(3, 4),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 3, 4),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(5),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 5),
     baca.markup('“A”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(6),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 6),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(8),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 8),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(10),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 10),
     baca.glissandi(),
     )

@@ -4,7 +4,7 @@ import myrkr
 
 
 ###############################################################################
-##################################### [14] ####################################
+##################################### [M] #####################################
 ###############################################################################
 
 cobalt_position = 36
@@ -74,55 +74,44 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    rhythm_specifier = baca.RhythmCommand(
-        rhythm_maker=selection,
-        )
-    segment_maker.append_commands(
-        'Clarinet Music Voice',
-        baca.select_stages(stage_number),
-        rhythm_specifier,
+    segment_maker.scope(
+        baca.scope('Clarinet Music Voice', stage_number),
+        baca.rhythm(selection),
         )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(7),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 7),
     baca.markup('“A”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(8),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 8),
     baca.markup('“U”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(9),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 9),
     baca.markup('“I”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(10),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 10),
     baca.markup('“U”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(11),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 11),
     baca.markup('“A”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(12),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 12),
     baca.markup('“O”', direction=Up),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(13),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 13),
     baca.markup('“I”', direction=Up),
     )
