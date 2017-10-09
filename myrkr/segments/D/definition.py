@@ -91,9 +91,7 @@ for stage_index in range(segment_maker.stage_count):
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(12),
-    #pervasive_glissandi,
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 12),
     baca.glissandi(),
     )
