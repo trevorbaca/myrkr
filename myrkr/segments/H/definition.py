@@ -4,7 +4,7 @@ import myrkr
 
 
 ###############################################################################
-##################################### [9] #####################################
+##################################### [H] #####################################
 ###############################################################################
 
 charcoal_position = 12
@@ -65,43 +65,34 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    rhythm_specifier = baca.RhythmCommand(
-        rhythm_maker=selection,
-        )
-    segment_maker.append_commands(
-        'Clarinet Music Voice',
-        baca.select_stages(stage_number),
-        rhythm_specifier,
+    segment_maker.scope(
+        baca.scope('Clarinet Music Voice', stage_number),
+        baca.rhythm(selection),
         )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(2),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 2),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(4),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 4),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(6),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 6),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(8),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 8),
     baca.glissandi(),
     )
 
-segment_maker.append_commands(
-    'Clarinet Music Voice',
-    baca.select_stages(10),
+segment_maker.scope(
+    baca.scope('Clarinet Music Voice', 10),
     baca.glissandi(),
     )
