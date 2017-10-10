@@ -67,39 +67,39 @@ segment_maker.validate_measures_per_stage()
 for stage_index in range(segment_maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    segment_maker.scope(
+    segment_maker(
         baca.scope('Clarinet Music Voice', stage_number),
         baca.rhythm(selection),
         )
 
 preprocessor.make_music_specifiers(segment_maker)
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 2),
     baca.glissandi(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 4),
     baca.tenuti(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 6),
     baca.tenuti(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 8),
     baca.tenuti(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 9),
     baca.tenuti(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Clarinet Music Voice', 10),
     baca.markup.overblow(),
     )
