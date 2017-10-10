@@ -215,7 +215,7 @@ class Preprocessor(object):
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
             commands = bundle[1]
-            segment_maker.scope(
+            segment_maker(
                 baca.scope('Clarinet Music Voice', stage_number),
                 *commands,
                 )
