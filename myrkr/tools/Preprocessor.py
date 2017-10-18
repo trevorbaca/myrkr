@@ -55,8 +55,7 @@ class Preprocessor(object):
             specifiers.append(dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
-            method = myrkr.make_color_fingerings
-            color_fingering = method(*color_fingering)
+            color_fingering = myrkr.color_fingerings(*color_fingering)
             specifiers.append(color_fingering)
         bundle = (stage_number, specifiers)
         self._music_specifier_bundles.append(bundle)
