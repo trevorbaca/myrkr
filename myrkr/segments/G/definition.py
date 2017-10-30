@@ -93,12 +93,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 3),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 7),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
@@ -118,5 +118,5 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 17),
-    baca.glissandi(),
+    baca.glissando(),
     )
