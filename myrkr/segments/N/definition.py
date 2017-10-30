@@ -77,7 +77,7 @@ preprocessor.make_music_specifiers(segment_maker)
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 1),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
@@ -87,7 +87,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 3, 4),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
@@ -97,15 +97,15 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 6),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 8),
-    baca.glissandi(),
+    baca.glissando(),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 10),
-    baca.glissandi(),
+    baca.glissando(),
     )
