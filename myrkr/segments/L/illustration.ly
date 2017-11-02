@@ -144,6 +144,7 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    \clef "treble"
                     cs1 \fff
                         ^ \markup {
                             \whiteout

@@ -346,6 +346,7 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    \clef "treble"
                     d'4 \pppp \glissando
                 }
                 {

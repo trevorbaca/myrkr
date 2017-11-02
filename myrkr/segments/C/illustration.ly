@@ -430,6 +430,7 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    \clef "treble"
                     d''16 \p [
                     d''8.
                         ^ \markup {
