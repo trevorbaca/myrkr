@@ -586,6 +586,7 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    \clef "treble"
                     f\breve \mp
                 }
                 \tweak edge-height #'(0.7 . 0)

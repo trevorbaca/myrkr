@@ -393,6 +393,7 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \times 4/5 {
+                    \clef "treble"
                     fs'''2 \p \glissando
                     g'''2. \glissando
                 }

@@ -580,6 +580,7 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    \clef "treble"
                     f'''4 -\tenuto \pppp
                 }
                 {
