@@ -14,7 +14,7 @@ class Preprocessor(object):
         '_indicators',
         '_measures_per_stage',
         '_music_by_stage',
-        '_music_specifier_bundles',
+        '_command_bundles',
         '_name_to_rhythm',
         '_selections',
         '_time_signatures',
@@ -27,7 +27,7 @@ class Preprocessor(object):
         name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
         self._measures_per_stage = ()
-        self._music_specifier_bundles = []
+        self._command_bundles = []
         self._name_to_rhythm = name_to_rhythm
         self._selections = ()
         self._time_signatures = ()
@@ -36,7 +36,7 @@ class Preprocessor(object):
 
     ### PRIVATE METHODS ###
 
-    def _make_music_specifier_bundle(
+    def _make_command_bundle(
         self,
         stage_number,
         pitch,
@@ -45,43 +45,43 @@ class Preprocessor(object):
         ):
         if pitch is None and dynamic is None and color_fingering is None:
             return
-        specifiers = []
+        commands = []
         if pitch is not None:
             assert isinstance(pitch, str), repr(pitch)
-            pitch_specifier = baca.ScorePitchCommand(source=pitch)
-            specifiers.append(pitch_specifier)
+            command = baca.pitches(pitch)
+            commands.append(command)
         if dynamic is not None:
             dynamic = baca.dynamic(dynamic)
-            specifiers.append(dynamic)
+            commands.append(dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
             color_fingering = myrkr.color_fingerings(*color_fingering)
-            specifiers.append(color_fingering)
-        bundle = (stage_number, specifiers)
-        self._music_specifier_bundles.append(bundle)
+            commands.append(color_fingering)
+        bundle = (stage_number, commands)
+        self._command_bundles.append(bundle)
 
     def _remove_duplicate_dynamics(self):
-        bundles = self._music_specifier_bundles
+        bundles = self._command_bundles
         pairs = list(abjad.sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_stage_number = first_bundle[0]
             second_stage_number = second_bundle[0]
             if not first_stage_number == second_stage_number - 1:
                 continue
-            first_specifiers = first_bundle[1]
-            first_dynamics = [_ for _ in first_specifiers
+            first_commands = first_bundle[1]
+            first_dynamics = [_ for _ in first_commands
                 if isinstance(_, abjad.Dynamic)]
             if not first_dynamics:
                 continue
             first_dynamic = first_dynamics[0]
-            second_specifiers = second_bundle[1]
-            second_dynamics = [_ for _ in second_specifiers
+            second_commands = second_bundle[1]
+            second_dynamics = [_ for _ in second_commands
                 if isinstance(_, abjad.Dynamic)]
             if not second_dynamics:
                 continue
             second_dynamic = second_dynamics[0]
             if first_dynamic == second_dynamic:
-                second_specifiers.remove(second_dynamic)
+                second_commands.remove(second_dynamic)
 
     def _unpack_indicators(self):
         name_to_cursor = {}
@@ -133,7 +133,7 @@ class Preprocessor(object):
                 time_signatures.append(time_signature)
             measures_per_stage.append(count)
             stage_number = stage_index + 1
-            self._make_music_specifier_bundle(
+            self._make_command_bundle(
                 stage_number,
                 pitch,
                 dynamic,
@@ -208,9 +208,9 @@ class Preprocessor(object):
         selection = copy.deepcopy(selection)
         return selection
 
-    def make_music_specifiers(self, segment_maker):
+    def make_commands(self, segment_maker):
         self._remove_duplicate_dynamics()
-        for bundle in self._music_specifier_bundles:
+        for bundle in self._command_bundles:
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
             commands = bundle[1]
