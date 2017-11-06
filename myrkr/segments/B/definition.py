@@ -64,4 +64,4 @@ for stage_index in range(segment_maker.stage_count):
         baca.rhythm(selection),
         )
 
-preprocessor.make_music_specifiers(segment_maker)
+preprocessor.make_commands(segment_maker)
