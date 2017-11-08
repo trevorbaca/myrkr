@@ -586,16 +586,37 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     \clef "treble"
                     f\breve \mp
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f1
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f\breve.
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -622,8 +643,22 @@
                     a'4
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''16 \f [
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -631,7 +666,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -639,11 +681,25 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''16 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -651,7 +707,14 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -662,8 +725,22 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8 [
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -671,7 +748,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -682,7 +766,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -690,7 +781,14 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -700,7 +798,14 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 \p [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -708,7 +813,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'16
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -716,8 +828,22 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -725,7 +851,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -736,8 +869,22 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8. [
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'16 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -747,7 +894,14 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'16 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -755,8 +909,22 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8.
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -764,7 +932,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -775,7 +950,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -783,7 +965,14 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'16 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -794,7 +983,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8. [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -802,8 +998,22 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -814,7 +1024,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8.
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -822,7 +1039,14 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'4
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
                     r8.
@@ -843,34 +1067,104 @@
                     e''4 \glissando
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto \pppp
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 \p [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -878,8 +1172,22 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'16
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8.
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -887,7 +1195,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -895,11 +1210,25 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8. [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -907,7 +1236,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     b'8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -917,7 +1253,14 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8. \mp [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -925,7 +1268,14 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''16
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -933,7 +1283,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8.
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -941,10 +1298,24 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''8 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -952,7 +1323,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     cs''16 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -963,7 +1341,14 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'16 \mf [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -971,7 +1356,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -979,7 +1371,14 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -989,7 +1388,14 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8. [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -997,7 +1403,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1007,16 +1420,44 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8 \mf [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1024,8 +1465,22 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8.
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'16
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1033,7 +1488,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8.
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1041,7 +1503,14 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8 ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1051,7 +1520,14 @@
                             }
                 }
                 \times 2/3 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'4
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1059,7 +1535,14 @@
                                     \finger
                                         4
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     a'8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1069,8 +1552,22 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'8. \f [
+                        - \tweak color #red
+                        ^ \markup { @ }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'8
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1078,7 +1575,14 @@
                                     \finger
                                         1
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'16
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1086,11 +1590,25 @@
                                     \finger
                                         2
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/9 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'8 [
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1098,7 +1616,14 @@
                                     \finger
                                         3
                             }
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     gs'8. ]
+                        - \tweak color #red
+                        ^ \markup { @ }
                         ^ \markup {
                             \override
                                 #'(circle-padding . 0.25)
@@ -1108,13 +1633,34 @@
                             }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto \pppp
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     f''4 -\tenuto
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
                     r8.
