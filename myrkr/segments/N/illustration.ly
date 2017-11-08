@@ -422,10 +422,24 @@
                 \times 4/7 {
                     fs'''2 \glissando
                     es'''2 \glissando
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     fs'''2.
+                        - \tweak color #red
+                        ^ \markup { @ }
                 }
                 {
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Stem.color = #red
                     fs'''2 \ppp \glissando
+                        - \tweak color #red
+                        ^ \markup { @ }
                     es'''2 \glissando
                 }
                 {
