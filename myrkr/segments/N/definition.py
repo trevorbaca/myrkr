@@ -82,7 +82,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 2),
-    baca.make_markup('“U”', direction=Up),
+    baca.markup('“U”', direction=Up),
     )
 
 segment_maker(
@@ -92,7 +92,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 5),
-    baca.make_markup('“A”', direction=Up),
+    baca.markup('“A”', direction=Up),
     )
 
 segment_maker(
