@@ -689,7 +689,9 @@
                                 {
                                     \line
                                         {
-                                            “A”
+                                            \whiteout
+                                                \upright
+                                                    “A”
                                         }
                                     \line
                                         {
@@ -710,7 +712,9 @@
                                 {
                                     \line
                                         {
-                                            “U”
+                                            \whiteout
+                                                \upright
+                                                    “U”
                                         }
                                     \line
                                         {
@@ -732,7 +736,9 @@
                                 {
                                     \line
                                         {
-                                            “I”
+                                            \whiteout
+                                                \upright
+                                                    “I”
                                         }
                                     \line
                                         {
@@ -754,7 +760,9 @@
                                 {
                                     \line
                                         {
-                                            “U”
+                                            \whiteout
+                                                \upright
+                                                    “U”
                                         }
                                     \line
                                         {
@@ -775,7 +783,9 @@
                                 {
                                     \line
                                         {
-                                            “A”
+                                            \whiteout
+                                                \upright
+                                                    “A”
                                         }
                                     \line
                                         {
@@ -797,7 +807,9 @@
                                 {
                                     \line
                                         {
-                                            “O”
+                                            \whiteout
+                                                \upright
+                                                    “O”
                                         }
                                     \line
                                         {
@@ -819,7 +831,9 @@
                                 {
                                     \line
                                         {
-                                            “I”
+                                            \whiteout
+                                                \upright
+                                                    “I”
                                         }
                                     \line
                                         {

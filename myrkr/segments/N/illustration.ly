@@ -408,7 +408,12 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    d\breve. \ppppp ^ \markup { “U” }
+                    d\breve. \ppppp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    “U”
+                            }
                 }
                 \times 4/7 {
                     g'''2 \pp \glissando
@@ -453,7 +458,12 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    d\breve \ppppp ^ \markup { “A” }
+                    d\breve \ppppp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    “A”
+                            }
                 }
                 \times 4/7 {
                     es'''2. \pppp \glissando
