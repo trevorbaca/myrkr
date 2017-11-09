@@ -83,35 +83,35 @@ preprocessor.make_commands(segment_maker)
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 7),
-    baca.markup('“A”', direction=Up),
+    baca.make_markup('“A”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 8),
-    baca.markup('“U”', direction=Up),
+    baca.make_markup('“U”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 9),
-    baca.markup('“I”', direction=Up),
+    baca.make_markup('“I”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 10),
-    baca.markup('“U”', direction=Up),
+    baca.make_markup('“U”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 11),
-    baca.markup('“A”', direction=Up),
+    baca.make_markup('“A”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 12),
-    baca.markup('“O”', direction=Up),
+    baca.make_markup('“O”', direction=Up),
     )
 
 segment_maker(
     baca.scope('Clarinet Music Voice', 13),
-    baca.markup('“I”', direction=Up),
+    baca.make_markup('“I”', direction=Up),
     )
