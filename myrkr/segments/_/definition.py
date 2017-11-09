@@ -46,7 +46,7 @@ for stage_index in range(segment_maker.stage_count):
     selection = preprocessor.get_music(stage_number)
     segment_maker(
         baca.scope('Clarinet Music Voice', stage_number),
-        baca.rhythm(selection),
+        baca.make_rhythm(selection),
         )
 
 preprocessor.make_commands(segment_maker)
