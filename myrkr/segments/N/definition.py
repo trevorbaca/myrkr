@@ -39,7 +39,7 @@ preprocessor = myrkr.Preprocessor(
 # Charcoal position 54 ...
 # Cobalt position 49 ...
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=myrkr.instruments,
     final_markup=(
@@ -63,49 +63,49 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measures_per_stage()
+maker.validate_measures_per_stage()
 
-for stage_index in range(segment_maker.stage_count):
+for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    segment_maker(
+    maker(
         baca.scope('Clarinet Music Voice', stage_number),
         baca.make_rhythm(selection),
         )
 
-preprocessor.make_commands(segment_maker)
+preprocessor.make_commands(maker)
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 1),
     baca.glissando(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 2),
     baca.markup('“U”', direction=Up),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 3, 4),
     baca.glissando(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 5),
     baca.markup('“A”', direction=Up),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 6),
     baca.glissando(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 8),
     baca.glissando(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 10),
     baca.glissando(),
     )

@@ -55,7 +55,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 35 ...
 # Indigo position 150 ...
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=myrkr.instruments,
     label_stages=True,
@@ -89,34 +89,34 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measures_per_stage()
+maker.validate_measures_per_stage()
 
-for stage_index in range(segment_maker.stage_count):
+for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
-    segment_maker(
+    maker(
         baca.scope('Clarinet Music Voice', stage_number),
         baca.make_rhythm(selection),
         )
 
-preprocessor.make_commands(segment_maker)
+preprocessor.make_commands(maker)
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 1),
     baca.tenuti(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 4),
     baca.tenuti(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 9),
     baca.tenuti(),
     )
 
-segment_maker(
+maker(
     baca.scope('Clarinet Music Voice', 11),
     baca.tenuti(),
     )
