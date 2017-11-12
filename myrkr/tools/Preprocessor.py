@@ -208,13 +208,13 @@ class Preprocessor(object):
         selection = copy.deepcopy(selection)
         return selection
 
-    def make_commands(self, segment_maker):
+    def make_commands(self, maker):
         self._remove_duplicate_dynamics()
         for bundle in self._command_bundles:
             assert len(bundle) == 2, repr(bundle)
             stage_number = bundle[0]
             commands = bundle[1]
-            segment_maker(
+            maker(
                 baca.scope('Clarinet Music Voice', stage_number),
                 *commands,
                 )
