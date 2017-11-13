@@ -12,392 +12,282 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 13/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \mark #1
-                    \newSpacingSection
-                    s1 * 13/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.1]
-                            }
-                        ^ \markup {
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                \time 13/16
+                \mark #1
+                \newSpacingSection
+                s1 * 13/16
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                110
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [A.1]
                         }
-                }
-                {
-                    \time 5/22
-                    s1 * 5/22
-                }
-                {
-                    \time 8/16
-                    s1 * 1/2
-                }
-                {
-                    \time 7/20
-                    s1 * 7/20
-                }
-                {
-                    \time 6/22
-                    s1 * 3/11
-                }
-                {
-                    \time 3/20
-                    s1 * 3/20
-                }
-                {
-                    \time 11/16
-                    s1 * 11/16
-                }
-                {
-                    \time 4/22
-                    s1 * 2/11
-                }
-                {
-                    \time 10/16
-                    s1 * 5/8
-                }
-                {
-                    \time 4/16
-                    s1 * 1/4
-                }
-                {
-                    \time 7/22
-                    s1 * 7/22
-                }
-                {
-                    \time 4/16
-                    s1 * 1/4
-                }
-                {
-                    \time 3/7
-                    s1 * 3/7
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.2]
-                            }
-                }
-                {
-                    \time 11/16
-                    s1 * 11/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.3]
-                            }
-                }
-                {
-                    \time 4/22
-                    s1 * 2/11
-                }
-                {
-                    \time 10/16
-                    s1 * 5/8
-                }
-                {
-                    \time 4/18
-                    s1 * 2/9
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.4]
-                            }
-                }
-                {
-                    \time 7/22
-                    s1 * 7/22
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.5]
-                            }
-                }
-                {
-                    \time 5/18
-                    s1 * 5/18
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.6]
-                            }
-                }
-                {
-                    \time 12/16
-                    s1 * 3/4
-                }
-                {
-                    \time 3/18
-                    s1 * 1/6
-                }
-                {
-                    \time 3/5
-                    s1 * 3/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.7]
-                            }
-                }
-                {
-                    \time 8/16
-                    s1 * 1/2
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.8]
-                            }
-                }
-                {
-                    \time 3/20
-                    s1 * 3/20
-                }
-                {
-                    \time 4/7
-                    s1 * 4/7
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.9]
-                            }
-                }
-                {
-                    \time 6/18
-                    s1 * 1/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.10]
-                            }
-                }
-                {
-                    \time 7/20
-                    s1 * 7/20
-                }
-                {
-                    \time 10/16
-                    s1 * 5/8
-                }
-                {
-                    \time 5/26
-                    s1 * 5/26
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.11]
-                            }
-                }
-                {
-                    \time 9/16
-                    s1 * 9/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.12]
-                            }
-                }
-                {
-                    \time 3/16
-                    s1 * 3/16
-                }
-                {
-                    \time 2/5
-                    s1 * 2/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.13]
-                            }
-                }
-                {
-                    \time 8/26
-                    s1 * 4/13
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.14]
-                            }
-                }
-                {
-                    \time 5/16
-                    s1 * 5/16
-                }
-                {
-                    \time 11/16
-                    s1 * 11/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.15]
-                            }
-                }
-                {
-                    \time 4/16
-                    s1 * 1/4
-                }
-                {
-                    \time 3/5
-                    s1 * 3/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.16]
-                            }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.17]
-                            }
-                }
-                {
-                    \time 2/7
-                    s1 * 2/7
-                }
-                {
-                    \time 9/16
-                    s1 * 9/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.18]
-                            }
-                }
-                {
-                    \time 5/18
-                    s1 * 5/18
-                }
-                {
-                    \time 2/5
-                    s1 * 2/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.19]
-                            }
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/7
-                    s1 * 5/7
-                }
-                {
-                    \time 2/7
-                    s1 * 2/7
-                }
-                {
-                    \time 4/16
-                    s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.20]
-                            }
-                }
-                {
-                    \time 4/18
-                    s1 * 2/9
-                }
-                {
-                    \time 11/16
-                    s1 * 11/16
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A.21]
-                            }
-                }
-                {
-                    \time 4/22
-                    s1 * 2/11
-                }
-                {
-                    \time 10/16
-                    s1 * 5/8
-                }
-                {
-                    \time 5/16
-                    s1 * 5/16
-                }
-                {
-                    \time 7/22
-                    s1 * 7/22
-                }
-                {
-                    \time 3/16
-                    s1 * 3/16
-                }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            110
+                        }
+                    }
+                \time 5/22
+                s1 * 5/22
+                \time 8/16
+                s1 * 1/2
+                \time 7/20
+                s1 * 7/20
+                \time 6/22
+                s1 * 3/11
+                \time 3/20
+                s1 * 3/20
+                \time 11/16
+                s1 * 11/16
+                \time 4/22
+                s1 * 2/11
+                \time 10/16
+                s1 * 5/8
+                \time 4/16
+                s1 * 1/4
+                \time 7/22
+                s1 * 7/22
+                \time 4/16
+                s1 * 1/4
+                \time 3/7
+                s1 * 3/7
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.2]
+                        }
+                \time 11/16
+                s1 * 11/16
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.3]
+                        }
+                \time 4/22
+                s1 * 2/11
+                \time 10/16
+                s1 * 5/8
+                \time 4/18
+                s1 * 2/9
+                \time 2/4
+                s1 * 1/2
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.4]
+                        }
+                \time 7/22
+                s1 * 7/22
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.5]
+                        }
+                \time 5/18
+                s1 * 5/18
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.6]
+                        }
+                \time 12/16
+                s1 * 3/4
+                \time 3/18
+                s1 * 1/6
+                \time 3/5
+                s1 * 3/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.7]
+                        }
+                \time 8/16
+                s1 * 1/2
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.8]
+                        }
+                \time 3/20
+                s1 * 3/20
+                \time 4/7
+                s1 * 4/7
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.9]
+                        }
+                \time 6/18
+                s1 * 1/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.10]
+                        }
+                \time 7/20
+                s1 * 7/20
+                \time 10/16
+                s1 * 5/8
+                \time 5/26
+                s1 * 5/26
+                \time 3/4
+                s1 * 3/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.11]
+                        }
+                \time 9/16
+                s1 * 9/16
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.12]
+                        }
+                \time 3/16
+                s1 * 3/16
+                \time 2/5
+                s1 * 2/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.13]
+                        }
+                \time 8/26
+                s1 * 4/13
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.14]
+                        }
+                \time 5/16
+                s1 * 5/16
+                \time 11/16
+                s1 * 11/16
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.15]
+                        }
+                \time 4/16
+                s1 * 1/4
+                \time 3/5
+                s1 * 3/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.16]
+                        }
+                \time 4/4
+                s1 * 1
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.17]
+                        }
+                \time 2/7
+                s1 * 2/7
+                \time 9/16
+                s1 * 9/16
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.18]
+                        }
+                \time 5/18
+                s1 * 5/18
+                \time 2/5
+                s1 * 2/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.19]
+                        }
+                \time 3/4
+                s1 * 3/4
+                \time 5/7
+                s1 * 5/7
+                \time 2/7
+                s1 * 2/7
+                \time 4/16
+                s1 * 1/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.20]
+                        }
+                \time 4/18
+                s1 * 2/9
+                \time 11/16
+                s1 * 11/16
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [A.21]
+                        }
+                \time 4/22
+                s1 * 2/11
+                \time 10/16
+                s1 * 5/8
+                \time 5/16
+                s1 * 5/16
+                \time 7/22
+                s1 * 7/22
+                \time 3/16
+                s1 * 3/16
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {

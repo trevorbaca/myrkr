@@ -12,227 +12,184 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 8/5
-                    \tempo 4=110
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \mark #9
-                    \newSpacingSection
-                    s1 * 8/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.1]
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.2]
-                            }
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    \time 12/5
-                    s1 * 12/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.3]
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.4]
-                            }
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    \time 1/1
-                    s1 * 1
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.5]
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.6]
-                            }
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    \time 8/5
-                    s1 * 8/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.7]
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.8]
-                            }
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    s1 * 1/4
-                }
-                {
-                    \time 8/5
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                \tempo 4=110
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                \time 8/5
+                \mark #9
+                \newSpacingSection
+                s1 * 8/5
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                55
-                            }
-                        \hspace
-                            #1.25
+                            #-3
+                            \with-color
+                                #blue
+                                [I.1]
                         }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
-                    \newSpacingSection
-                    s1 * 8/5 \startTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.9]
-                            }
-                }
-                {
-                    \time 2/3
-                    s1 * 2/3
-                }
-                {
-                    \time 12/5
-                    s1 * 12/5
-                }
-                {
-                    \time 4/3
-                    s1 * 4/3
-                }
-                {
-                    \time 2/3
-                    s1 * 2/3 \stopTextSpan
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [I.10]
-                            }
-                        ^ \markup {
+                \time 1/4
+                s1 * 1/4
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                110
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [I.2]
                         }
-                }
-                {
-                    \time 12/5
-                    s1 * 12/5
-                }
-                {
-                    \time 4/3
-                    s1 * 4/3
-                }
-                {
-                    \time 3/1
-                    s1 * 3
-                }
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 12/5
+                s1 * 12/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.3]
+                        }
+                \time 1/4
+                s1 * 1/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.4]
+                        }
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 1/1
+                s1 * 1
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.5]
+                        }
+                \time 1/4
+                s1 * 1/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.6]
+                        }
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \time 8/5
+                s1 * 8/5
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.7]
+                        }
+                \time 1/4
+                s1 * 1/4
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.8]
+                        }
+                \time 1/4
+                s1 * 1/4
+                \time 1/4
+                s1 * 1/4
+                \once \override TextSpanner.arrow-width = 0.25
+                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                    \null
+                    }
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                \once \override TextSpanner.bound-details.left.text = \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            55
+                        }
+                    \hspace
+                        #1.25
+                    }
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                \once \override TextSpanner.bound-details.right.arrow = ##t
+                \once \override TextSpanner.bound-details.right.padding = 2
+                \once \override TextSpanner.bound-details.right.text = ##f
+                \once \override TextSpanner.dash-fraction = 0.25
+                \once \override TextSpanner.dash-period = 1.5
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
+                \time 8/5
+                \newSpacingSection
+                s1 * 8/5 \startTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.9]
+                        }
+                \time 2/3
+                s1 * 2/3
+                \time 12/5
+                s1 * 12/5
+                \time 4/3
+                s1 * 4/3
+                \time 2/3
+                s1 * 2/3 \stopTextSpan
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [I.10]
+                        }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            110
+                        }
+                    }
+                \time 12/5
+                s1 * 12/5
+                \time 4/3
+                s1 * 4/3
+                \time 3/1
+                s1 * 3
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
