@@ -11,35 +11,33 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 12/5
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                    \newSpacingSection
-                    s1 * 12/5
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [1]
-                            }
-                        ^ \markup {
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                \time 12/5
+                \newSpacingSection
+                s1 * 12/5
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                44
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [1]
                         }
-                }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            44
+                        }
+                    }
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {

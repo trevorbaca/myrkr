@@ -12,106 +12,97 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 2/3
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
-                    \mark #12
-                    \newSpacingSection
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.1]
-                            }
-                        ^ \markup {
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
+                \time 2/3
+                \mark #12
+                \newSpacingSection
+                s1 * 2/3
+                    - \markup {
                         \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                44
-                            }
+                            #-3
+                            \with-color
+                                #blue
+                                [L.1]
                         }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.2]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.3]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.4]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.5]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.6]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.7]
-                            }
-                }
-                {
-                    s1 * 2/3
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L.8]
-                            }
-                }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            44
+                        }
+                    }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.2]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.3]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.4]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.5]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.6]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.7]
+                        }
+                \time 2/3
+                s1 * 2/3
+                    - \markup {
+                        \fontsize
+                            #-3
+                            \with-color
+                                #blue
+                                [L.8]
+                        }
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
