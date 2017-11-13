@@ -12,6 +12,7 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 142
                 \tempo 4=55
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 3/20
@@ -25,10 +26,13 @@
                                 #blue
                                 [E.1]
                         }
+                % measure 143
                 \time 11/16
                 s1 * 11/16
+                % measure 144
                 \time 4/22
                 s1 * 2/11
+                % measure 145
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 8/5
                 \newSpacingSection
@@ -40,6 +44,7 @@
                                 #blue
                                 [E.2]
                         }
+                % measure 146
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
                 \newSpacingSection
@@ -51,8 +56,10 @@
                                 #blue
                                 [E.3]
                         }
+                % measure 147
                 \time 4/16
                 s1 * 1/4
+                % measure 148
                 \time 3/20
                 s1 * 3/20
                     - \markup {
@@ -62,10 +69,13 @@
                                 #blue
                                 [E.4]
                         }
+                % measure 149
                 \time 11/16
                 s1 * 11/16
+                % measure 150
                 \time 4/22
                 s1 * 2/11
+                % measure 151
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 8/5
                 \newSpacingSection
@@ -77,6 +87,7 @@
                                 #blue
                                 [E.5]
                         }
+                % measure 152
                 \time 7/4
                 s1 * 7/4
                     - \markup {
@@ -86,10 +97,13 @@
                                 #blue
                                 [E.6]
                         }
+                % measure 153
                 \time 4/4
                 s1 * 1
+                % measure 154
                 \time 4/4
                 s1 * 1
+                % measure 155
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
                 \newSpacingSection
@@ -117,14 +131,19 @@
                             110
                         }
                     }
+                % measure 156
                 \time 4/16
                 s1 * 1/4
+                % measure 157
                 \time 7/22
                 s1 * 7/22
+                % measure 158
                 \time 4/16
                 s1 * 1/4
+                % measure 159
                 \time 11/16
                 s1 * 11/16
+                % measure 160
                 \time 4/22
                 s1 * 2/11
             }
@@ -133,6 +152,7 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 142
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -159,6 +179,7 @@
                             }
                 }
                 {
+                    % measure 143
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -230,6 +251,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
+                    % measure 144
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -263,9 +285,11 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 145
                     f\breve \mp
                 }
                 {
+                    % measure 146
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -321,6 +345,7 @@
                             }
                 }
                 \times 4/5 {
+                    % measure 147
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -354,6 +379,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 148
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -386,6 +412,7 @@
                             }
                 }
                 {
+                    % measure 149
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -457,6 +484,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
+                    % measure 150
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -483,18 +511,22 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 151
                     fs\breve \mp
                 }
                 {
+                    % measure 152
                     d'''2. \pp \glissando
                     ef'''2 \glissando
                     d'''2 \glissando
                 }
                 \times 4/5 {
+                    % measure 153
                     cs'''2. \glissando
                     d'''2 \glissando
                 }
                 \times 4/7 {
+                    % measure 154
                     ef'''2 \glissando
                     d'''2. \glissando
                     \once \override Accidental.color = #red
@@ -507,6 +539,7 @@
                         ^ \markup { @ }
                 }
                 {
+                    % measure 155
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -562,6 +595,7 @@
                             }
                 }
                 \times 4/5 {
+                    % measure 156
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -588,6 +622,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
+                    % measure 157
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -635,6 +670,7 @@
                             }
                 }
                 \times 4/5 {
+                    % measure 158
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -660,6 +696,7 @@
                         ^ \markup { @ }
                 }
                 {
+                    % measure 159
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -731,6 +768,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
+                    % measure 160
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red

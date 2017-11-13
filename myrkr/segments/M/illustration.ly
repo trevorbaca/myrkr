@@ -12,6 +12,7 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 364
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
                 \mark #13
@@ -40,8 +41,10 @@
                             55
                         }
                     }
+                % measure 365
                 \time 5/26
                 s1 * 5/26
+                % measure 366
                 \time 9/16
                 s1 * 9/16
                     - \markup {
@@ -51,8 +54,10 @@
                                 #blue
                                 [M.2]
                         }
+                % measure 367
                 \time 3/16
                 s1 * 3/16
+                % measure 368
                 \time 8/26
                 s1 * 4/13
                     - \markup {
@@ -62,12 +67,16 @@
                                 #blue
                                 [M.3]
                         }
+                % measure 369
                 \time 5/16
                 s1 * 5/16
+                % measure 370
                 \time 11/16
                 s1 * 11/16
+                % measure 371
                 \time 4/16
                 s1 * 1/4
+                % measure 372
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/16
                 \newSpacingSection
@@ -79,6 +88,7 @@
                                 #blue
                                 [M.4]
                         }
+                % measure 373
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 12/5
                 \newSpacingSection
@@ -90,6 +100,7 @@
                                 #blue
                                 [M.5]
                         }
+                % measure 374
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/16
                 \newSpacingSection
@@ -101,6 +112,7 @@
                                 #blue
                                 [M.6]
                         }
+                % measure 375
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 4/3
                 \newSpacingSection
@@ -128,6 +140,7 @@
                             44
                         }
                     }
+                % measure 376
                 \time 3/1
                 s1 * 3
                     - \markup {
@@ -137,6 +150,7 @@
                                 #blue
                                 [M.8]
                         }
+                % measure 377
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -146,6 +160,7 @@
                                 #blue
                                 [M.9]
                         }
+                % measure 378
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -155,6 +170,7 @@
                                 #blue
                                 [M.10]
                         }
+                % measure 379
                 \time 1/1
                 s1 * 1
                     - \markup {
@@ -164,6 +180,7 @@
                                 #blue
                                 [M.11]
                         }
+                % measure 380
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -173,6 +190,7 @@
                                 #blue
                                 [M.12]
                         }
+                % measure 381
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -182,6 +200,7 @@
                                 #blue
                                 [M.13]
                         }
+                % measure 382
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/16
                 \newSpacingSection
@@ -193,6 +212,7 @@
                                 #blue
                                 [M.14]
                         }
+                % measure 383
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 2/3
                 \newSpacingSection
@@ -209,6 +229,7 @@
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
+                    % measure 364
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -281,6 +302,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
+                    % measure 365
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -306,6 +328,7 @@
                             }
                 }
                 {
+                    % measure 366
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -361,6 +384,7 @@
                             }
                 }
                 {
+                    % measure 367
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -387,6 +411,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
+                    % measure 368
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -427,6 +452,7 @@
                             }
                 }
                 {
+                    % measure 369
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -452,6 +478,7 @@
                             }
                 }
                 {
+                    % measure 370
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -515,6 +542,7 @@
                         ^ \markup { @ }
                 }
                 \times 2/3 {
+                    % measure 371
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -547,17 +575,21 @@
                             }
                 }
                 {
+                    % measure 372
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 373
                     cs'\breve. \pppp
                 }
                 {
+                    % measure 374
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    % measure 375
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -581,6 +613,7 @@
                             }
                 }
                 {
+                    % measure 376
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -605,6 +638,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 377
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -629,6 +663,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 378
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -652,6 +687,7 @@
                             }
                 }
                 {
+                    % measure 379
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -676,6 +712,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 380
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -700,6 +737,7 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
+                    % measure 381
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -723,10 +761,12 @@
                             }
                 }
                 {
+                    % measure 382
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
+                    % measure 383
                     fs'1 \fff
                         ^ \markup {
                             \override
