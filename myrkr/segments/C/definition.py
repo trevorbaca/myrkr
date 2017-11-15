@@ -59,17 +59,6 @@ maker = baca.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
-    spacing_map=(
-        (1, abjad.Duration(1, 24)),
-        (3, abjad.Duration(1, 8)),
-        (4, abjad.Duration(1, 24)),
-        (9, abjad.Duration(1, 8)),
-        (10, abjad.Duration(1, 24)),
-        (11, abjad.Duration(1, 8)),
-        (12, abjad.Duration(1, 24)),
-        (15, abjad.Duration(1, 8)),
-        (16, abjad.Duration(1, 24)),
-        ),
     metronome_mark_measure_map=(
         #(1, myrkr.metronome_marks['110']),
         ),

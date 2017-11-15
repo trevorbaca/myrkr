@@ -45,10 +45,8 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 4/4
                 \mark #14
-                \newSpacingSection
                 s1 * 1 \startTextSpan
                     - \markup {
                         \fontsize

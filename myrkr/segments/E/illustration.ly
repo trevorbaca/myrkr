@@ -14,10 +14,8 @@
             \context GlobalSkips = "Global Skips" {
                 % measure 142
                 \tempo 4=55
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 3/20
                 \mark #5
-                \newSpacingSection
                 s1 * 3/20
                     - \markup {
                         \fontsize
@@ -33,9 +31,7 @@
                 \time 4/22
                 s1 * 2/11
                 % measure 145
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 8/5
-                \newSpacingSection
                 s1 * 8/5
                     - \markup {
                         \fontsize
@@ -45,9 +41,7 @@
                                 [E.2]
                         }
                 % measure 146
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
-                \newSpacingSection
                 s1 * 5/8
                     - \markup {
                         \fontsize
@@ -76,9 +70,7 @@
                 \time 4/22
                 s1 * 2/11
                 % measure 151
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 8/5
-                \newSpacingSection
                 s1 * 8/5
                     - \markup {
                         \fontsize
@@ -104,9 +96,7 @@
                 \time 4/4
                 s1 * 1
                 % measure 155
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
-                \newSpacingSection
                 s1 * 5/8
                     - \markup {
                         \fontsize
