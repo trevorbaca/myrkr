@@ -14,10 +14,8 @@
             \context GlobalSkips = "Global Skips" {
                 % measure 77
                 \tempo 4=110
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 11/16
                 \mark #3
-                \newSpacingSection
                 s1 * 11/16
                     - \markup {
                         \fontsize
@@ -55,9 +53,7 @@
                 \time 5/18
                 s1 * 5/18
                 % measure 85
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 4/3
-                \newSpacingSection
                 s1 * 4/3
                     - \markup {
                         \fontsize
@@ -67,9 +63,7 @@
                                 [C.3]
                         }
                 % measure 86
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 12/16
-                \newSpacingSection
                 s1 * 3/4
                     - \markup {
                         \fontsize
@@ -128,9 +122,7 @@
                 \time 7/20
                 s1 * 7/20
                 % measure 94
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 3/1
-                \newSpacingSection
                 s1 * 3
                     - \markup {
                         \fontsize
@@ -140,9 +132,7 @@
                                 [C.9]
                         }
                 % measure 95
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 10/16
-                \newSpacingSection
                 s1 * 5/8
                     - \markup {
                         \fontsize
@@ -155,9 +145,7 @@
                 \time 5/26
                 s1 * 5/26
                 % measure 97
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 8/5
-                \newSpacingSection
                 s1 * 8/5
                     - \markup {
                         \fontsize
@@ -167,9 +155,7 @@
                                 [C.11]
                         }
                 % measure 98
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 9/16
-                \newSpacingSection
                 s1 * 9/16
                     - \markup {
                         \fontsize
@@ -208,9 +194,7 @@
                 \time 5/16
                 s1 * 5/16
                 % measure 104
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \time 12/5
-                \newSpacingSection
                 s1 * 12/5
                     - \markup {
                         \fontsize
@@ -220,9 +204,7 @@
                                 [C.15]
                         }
                 % measure 105
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 11/16
-                \newSpacingSection
                 s1 * 11/16
                     - \markup {
                         \fontsize

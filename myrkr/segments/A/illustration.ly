@@ -13,10 +13,8 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 2
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 13/16
                 \mark #1
-                \newSpacingSection
                 s1 * 13/16
                     - \markup {
                         \fontsize

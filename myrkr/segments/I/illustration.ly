@@ -14,10 +14,8 @@
             \context GlobalSkips = "Global Skips" {
                 % measure 250
                 \tempo 4=110
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/5
                 \mark #9
-                \newSpacingSection
                 s1 * 8/5
                     - \markup {
                         \fontsize
@@ -162,9 +160,7 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                 \time 8/5
-                \newSpacingSection
                 s1 * 8/5 \startTextSpan
                     - \markup {
                         \fontsize
