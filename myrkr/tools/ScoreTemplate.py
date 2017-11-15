@@ -61,7 +61,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context = self._make_time_signature_context()
+        global_context = self._make_global_context()
         # CLARINET
         clarinet_music_voice = abjad.Voice(
             context_name='ClarinetMusicVoice',
@@ -80,7 +80,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         # SCORE
         score = abjad.Score(
             [
-                time_signature_context,
+                global_context,
                 clarinet_music_staff,
                 ],
             name='Score',
