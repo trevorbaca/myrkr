@@ -13,9 +13,9 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 311
-                \once \override TextScript.color = #darkgreen
                 \time 1/4
                 \mark #11
+                \once \override TextScript.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 s1 * 1/4
                     - \markup {
                         \fontsize
