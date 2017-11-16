@@ -45,6 +45,7 @@ maker = baca.SegmentMaker(
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
     metronome_mark_measure_map=(
+        # TODO: include as sticky from previous segment
         #(1, myrkr.metronome_marks['110']),
         ),
     time_signatures=preprocessor.time_signatures,
