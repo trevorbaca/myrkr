@@ -259,6 +259,7 @@
                         }
                     \clef "treble"
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                     fs'''2 \p \glissando
                     g'''2. \glissando
                 }

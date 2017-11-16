@@ -141,6 +141,7 @@
                         }
                     \clef "treble"
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                     cs1 \fff
                         ^ \markup {
                             \column
