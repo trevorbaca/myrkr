@@ -13,7 +13,6 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 231
-                \once \override TextScript.color = #darkgreen
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -48,6 +47,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/3
                 \mark #8
+                \once \override TextScript.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 s1 * 2/3 \startTextSpan
                     - \markup {
                         \fontsize
