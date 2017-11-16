@@ -215,7 +215,26 @@
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
                     % measure 277
+                    \set ClarinetMusicStaff.instrumentName = \markup {
+                        \hcenter-in
+                            #16
+                            \center-column
+                                {
+                                    Bass
+                                    clarinet
+                                }
+                        }
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
+                        \hcenter-in
+                            #10
+                            \center-column
+                                {
+                                    Bass
+                                    cl.
+                                }
+                        }
                     \clef "treble"
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                     d'4 \pppp \glissando
                 }
                 {
