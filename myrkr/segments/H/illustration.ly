@@ -13,7 +13,7 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 231
-                \tempo 4=110
+                \once \override TextScript.color = #darkgreen
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -21,11 +21,22 @@
                     }
                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                 \once \override TextSpanner.bound-details.left.text = \markup {
-                    \large
-                        \upright
-                            rit.
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            110
+                        }
                     \hspace
-                        #0.75
+                        #1.25
                     }
                 \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                 \once \override TextSpanner.bound-details.right-broken.padding = 0

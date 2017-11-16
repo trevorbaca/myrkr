@@ -13,7 +13,7 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 277
-                \tempo 4=110
+                \once \override TextScript.color = #darkgreen
                 \time 1/4
                 \mark #10
                 s1 * 1/4
@@ -24,6 +24,22 @@
                                 #blue
                                 [J.1]
                         }
+                    ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            110
+                        }
+                    }
                 % measure 278
                 \time 1/4
                 s1 * 1/4
