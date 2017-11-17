@@ -12,7 +12,8 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 384
+                
+                %%% Global Skips [measure 384] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -55,13 +56,16 @@
                                 #blue
                                 [N.1]
                         }
-                % measure 385
+                
+                %%% Global Skips [measure 385] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 386
+                
+                %%% Global Skips [measure 386] %%%
                 \time 4/4
                 s1 * 1
-                % measure 387
+                
+                %%% Global Skips [measure 387] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -71,7 +75,8 @@
                                 #blue
                                 [N.2]
                         }
-                % measure 388
+                
+                %%% Global Skips [measure 388] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -81,13 +86,16 @@
                                 #blue
                                 [N.3]
                         }
-                % measure 389
+                
+                %%% Global Skips [measure 389] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 390
+                
+                %%% Global Skips [measure 390] %%%
                 \time 4/4
                 s1 * 1
-                % measure 391
+                
+                %%% Global Skips [measure 391] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -97,13 +105,16 @@
                                 #blue
                                 [N.4]
                         }
-                % measure 392
+                
+                %%% Global Skips [measure 392] %%%
                 \time 8/4
                 s1 * 2
-                % measure 393
+                
+                %%% Global Skips [measure 393] %%%
                 \time 4/4
                 s1 * 1
-                % measure 394
+                
+                %%% Global Skips [measure 394] %%%
                 \time 4/3
                 s1 * 4/3
                     - \markup {
@@ -113,7 +124,8 @@
                                 #blue
                                 [N.5]
                         }
-                % measure 395
+                
+                %%% Global Skips [measure 395] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -123,13 +135,16 @@
                                 #blue
                                 [N.6]
                         }
-                % measure 396
+                
+                %%% Global Skips [measure 396] %%%
                 \time 4/4
                 s1 * 1
-                % measure 397
+                
+                %%% Global Skips [measure 397] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 398
+                
+                %%% Global Skips [measure 398] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -139,7 +154,8 @@
                                 #blue
                                 [N.7]
                         }
-                % measure 399
+                
+                %%% Global Skips [measure 399] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -149,22 +165,28 @@
                                 #blue
                                 [N.8]
                         }
-                % measure 400
+                
+                %%% Global Skips [measure 400] %%%
                 \time 4/4
                 s1 * 1
-                % measure 401
+                
+                %%% Global Skips [measure 401] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 402
+                
+                %%% Global Skips [measure 402] %%%
                 \time 4/4
                 s1 * 1
-                % measure 403
+                
+                %%% Global Skips [measure 403] %%%
                 \time 4/4
                 s1 * 1
-                % measure 404
+                
+                %%% Global Skips [measure 404] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 405
+                
+                %%% Global Skips [measure 405] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -174,7 +196,8 @@
                                 #blue
                                 [N.9]
                         }
-                % measure 406
+                
+                %%% Global Skips [measure 406] %%%
                 \time 4/4
                 s1 * 1 \stopTextSpan
                     - \markup {
@@ -200,45 +223,58 @@
                             110
                         }
                     }
-                % measure 407
+                
+                %%% Global Skips [measure 407] %%%
                 \time 4/4
                 s1 * 1
-                % measure 408
+                
+                %%% Global Skips [measure 408] %%%
                 \time 5/4
                 s1 * 5/4
-                % measure 409
+                
+                %%% Global Skips [measure 409] %%%
                 \time 4/4
                 s1 * 1
-                % measure 410
+                
+                %%% Global Skips [measure 410] %%%
                 \time 4/4
                 s1 * 1
-                % measure 411
+                
+                %%% Global Skips [measure 411] %%%
                 \time 8/4
                 s1 * 2
-                % measure 412
+                
+                %%% Global Skips [measure 412] %%%
                 \time 4/4
                 s1 * 1
-                % measure 413
+                
+                %%% Global Skips [measure 413] %%%
                 \time 4/4
                 s1 * 1
-                % measure 414
+                
+                %%% Global Skips [measure 414] %%%
                 \time 4/4
                 s1 * 1
-                % measure 415
+                
+                %%% Global Skips [measure 415] %%%
                 \time 7/4
                 s1 * 7/4
-                % measure 416
+                
+                %%% Global Skips [measure 416] %%%
                 \time 4/4
                 s1 * 1
-                % measure 417
+                
+                %%% Global Skips [measure 417] %%%
                 \time 4/4
                 s1 * 1
+                
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \times 4/5 {
-                    % measure 384
+                    
+                    %%% Clarinet Music Voice [measure 384] %%%
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -261,22 +297,29 @@
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                     fs'''2 \p \glissando
+                    
                     g'''2. \glissando
                 }
                 {
-                    % measure 385
+                    
+                    %%% Clarinet Music Voice [measure 385] %%%
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
+                    
                     fs'''2 \glissando
                 }
                 \times 4/5 {
-                    % measure 386
+                    
+                    %%% Clarinet Music Voice [measure 386] %%%
                     g'''2 \glissando
+                    
                     fs'''2.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 387
+                    
+                    %%% Clarinet Music Voice [measure 387] %%%
                     d\breve. \ppppp
                         ^ \markup {
                             \whiteout
@@ -285,20 +328,28 @@
                             }
                 }
                 \times 4/7 {
-                    % measure 388
+                    
+                    %%% Clarinet Music Voice [measure 388] %%%
                     g'''2 \pp \glissando
+                    
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
                 }
                 {
-                    % measure 389
+                    
+                    %%% Clarinet Music Voice [measure 389] %%%
                     fs'''2 \glissando
+                    
                     g'''2. \glissando
                 }
                 \times 4/7 {
-                    % measure 390
+                    
+                    %%% Clarinet Music Voice [measure 390] %%%
                     fs'''2 \glissando
+                    
                     es'''2 \glissando
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -309,7 +360,8 @@
                         ^ \markup { @ }
                 }
                 {
-                    % measure 391
+                    
+                    %%% Clarinet Music Voice [measure 391] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -318,22 +370,29 @@
                     fs'''2 \ppp \glissando
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     es'''2 \glissando
                 }
                 {
-                    % measure 392
+                    
+                    %%% Clarinet Music Voice [measure 392] %%%
                     fs'''2. \glissando
+                    
                     g'''2 \glissando
+                    
                     fs'''2. \glissando
                 }
                 {
-                    % measure 393
+                    
+                    %%% Clarinet Music Voice [measure 393] %%%
                     es'''2 \glissando
+                    
                     fs'''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 394
+                    
+                    %%% Clarinet Music Voice [measure 394] %%%
                     d\breve \ppppp
                         ^ \markup {
                             \whiteout
@@ -342,129 +401,184 @@
                             }
                 }
                 \times 4/7 {
-                    % measure 395
+                    
+                    %%% Clarinet Music Voice [measure 395] %%%
                     es'''2. \pppp \glissando
+                    
                     fs'''2 \glissando
+                    
                     g'''2 \glissando
                 }
                 \times 4/5 {
-                    % measure 396
+                    
+                    %%% Clarinet Music Voice [measure 396] %%%
                     fs'''2. \glissando
+                    
                     es'''2 \glissando
                 }
                 {
-                    % measure 397
+                    
+                    %%% Clarinet Music Voice [measure 397] %%%
                     fs'''2. \glissando
+                    
                     g'''2 \glissando
+                    
                     fs'''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 398
+                    
+                    %%% Clarinet Music Voice [measure 398] %%%
                     cs'1 \pppp
                 }
                 \times 4/5 {
-                    % measure 399
+                    
+                    %%% Clarinet Music Voice [measure 399] %%%
                     fs'''2. \ppppp \glissando
+                    
                     g'''2 \glissando
                 }
                 \times 4/7 {
-                    % measure 400
+                    
+                    %%% Clarinet Music Voice [measure 400] %%%
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
+                    
                     fs'''2 \glissando
                 }
                 {
-                    % measure 401
+                    
+                    %%% Clarinet Music Voice [measure 401] %%%
                     g'''2. \glissando
+                    
                     fs'''2 \glissando
                 }
                 \times 4/7 {
-                    % measure 402
+                    
+                    %%% Clarinet Music Voice [measure 402] %%%
                     es'''2 \glissando
+                    
                     fs'''2. \glissando
+                    
                     g'''2 \glissando
                 }
                 \times 4/5 {
-                    % measure 403
+                    
+                    %%% Clarinet Music Voice [measure 403] %%%
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
                 }
                 {
-                    % measure 404
+                    
+                    %%% Clarinet Music Voice [measure 404] %%%
                     fs'''2 \glissando
+                    
                     g'''2. \glissando
+                    
                     fs'''2
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 405
+                    
+                    %%% Clarinet Music Voice [measure 405] %%%
                     cs'\breve. \pppp
                 }
                 \times 4/5 {
-                    % measure 406
+                    
+                    %%% Clarinet Music Voice [measure 406] %%%
                     g'''2 \ppppp \glissando
+                    
                     fs'''2. \glissando
                 }
                 \times 4/7 {
-                    % measure 407
+                    
+                    %%% Clarinet Music Voice [measure 407] %%%
                     es'''2 \glissando
+                    
                     fs'''2 \glissando
+                    
                     g'''2. \glissando
                 }
                 {
-                    % measure 408
+                    
+                    %%% Clarinet Music Voice [measure 408] %%%
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
                 }
                 \times 4/7 {
-                    % measure 409
+                    
+                    %%% Clarinet Music Voice [measure 409] %%%
                     fs'''2 \glissando
+                    
                     g'''2 \glissando
+                    
                     fs'''2. \glissando
                 }
                 {
-                    % measure 410
+                    
+                    %%% Clarinet Music Voice [measure 410] %%%
                     es'''2 \glissando
+                    
                     fs'''2 \glissando
                 }
                 {
-                    % measure 411
+                    
+                    %%% Clarinet Music Voice [measure 411] %%%
                     g'''2. \glissando
+                    
                     fs'''2 \glissando
+                    
                     es'''2. \glissando
                 }
                 {
-                    % measure 412
+                    
+                    %%% Clarinet Music Voice [measure 412] %%%
                     fs'''2 \glissando
+                    
                     g'''2 \glissando
                 }
                 \times 4/7 {
-                    % measure 413
+                    
+                    %%% Clarinet Music Voice [measure 413] %%%
                     fs'''2. \glissando
+                    
                     es'''2 \glissando
+                    
                     fs'''2 \glissando
                 }
                 \times 4/5 {
-                    % measure 414
+                    
+                    %%% Clarinet Music Voice [measure 414] %%%
                     g'''2. \glissando
+                    
                     fs'''2 \glissando
                 }
                 {
-                    % measure 415
+                    
+                    %%% Clarinet Music Voice [measure 415] %%%
                     es'''2. \glissando
+                    
                     fs'''2 \glissando
+                    
                     g'''2 \glissando
                 }
                 \times 4/5 {
-                    % measure 416
+                    
+                    %%% Clarinet Music Voice [measure 416] %%%
                     fs'''2. \glissando
+                    
                     es'''2 \glissando
                 }
                 \times 4/7 {
-                    % measure 417
+                    
+                    %%% Clarinet Music Voice [measure 417] %%%
                     fs'''2 \glissando
+                    
                     g'''2. \glissando
+                    
                     \once \override TextScript.extra-offset = #'(-24 . -4)
                     fs'''2
                         _ \markup {
@@ -500,6 +614,7 @@
                                             }
                             }
                     \bar "|."
+                    
                 }
             }
         }
