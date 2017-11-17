@@ -12,7 +12,8 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 356
+                
+                %%% Global Skips [measure 356] %%%
                 \time 2/3
                 \mark #12
                 s1 * 2/3
@@ -39,7 +40,8 @@
                             44
                         }
                     }
-                % measure 357
+                
+                %%% Global Skips [measure 357] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -49,7 +51,8 @@
                                 #blue
                                 [L.2]
                         }
-                % measure 358
+                
+                %%% Global Skips [measure 358] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -59,7 +62,8 @@
                                 #blue
                                 [L.3]
                         }
-                % measure 359
+                
+                %%% Global Skips [measure 359] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -69,7 +73,8 @@
                                 #blue
                                 [L.4]
                         }
-                % measure 360
+                
+                %%% Global Skips [measure 360] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -79,7 +84,8 @@
                                 #blue
                                 [L.5]
                         }
-                % measure 361
+                
+                %%% Global Skips [measure 361] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -89,7 +95,8 @@
                                 #blue
                                 [L.6]
                         }
-                % measure 362
+                
+                %%% Global Skips [measure 362] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -99,7 +106,8 @@
                                 #blue
                                 [L.7]
                         }
-                % measure 363
+                
+                %%% Global Skips [measure 363] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -109,13 +117,15 @@
                                 #blue
                                 [L.8]
                         }
+                
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 356
+                    
+                    %%% Clarinet Music Voice [measure 356] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -161,7 +171,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 357
+                    
+                    %%% Clarinet Music Voice [measure 357] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -173,7 +184,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 358
+                    
+                    %%% Clarinet Music Voice [measure 358] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -185,7 +197,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 359
+                    
+                    %%% Clarinet Music Voice [measure 359] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -197,7 +210,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 360
+                    
+                    %%% Clarinet Music Voice [measure 360] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -209,7 +223,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 361
+                    
+                    %%% Clarinet Music Voice [measure 361] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -221,7 +236,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 362
+                    
+                    %%% Clarinet Music Voice [measure 362] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -233,7 +249,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 363
+                    
+                    %%% Clarinet Music Voice [measure 363] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -243,6 +260,7 @@
                         - \tweak color #red
                         ^ \markup { @ }
                     \bar "|"
+                    
                 }
             }
         }

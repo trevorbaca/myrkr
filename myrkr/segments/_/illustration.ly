@@ -11,7 +11,8 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 1
+                
+                %%% Global Skips [measure 1] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -37,13 +38,15 @@
                             44
                         }
                     }
+                
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 1
+                    
+                    %%% Clarinet Music Voice [measure 1] %%%
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -70,6 +73,7 @@
                                     overblow
                             }
                     \bar "|"
+                    
                 }
             }
         }

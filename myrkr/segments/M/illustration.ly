@@ -12,7 +12,8 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 364
+                
+                %%% Global Skips [measure 364] %%%
                 \time 10/16
                 \mark #13
                 s1 * 5/8
@@ -39,10 +40,12 @@
                             55
                         }
                     }
-                % measure 365
+                
+                %%% Global Skips [measure 365] %%%
                 \time 5/26
                 s1 * 5/26
-                % measure 366
+                
+                %%% Global Skips [measure 366] %%%
                 \time 9/16
                 s1 * 9/16
                     - \markup {
@@ -52,10 +55,12 @@
                                 #blue
                                 [M.2]
                         }
-                % measure 367
+                
+                %%% Global Skips [measure 367] %%%
                 \time 3/16
                 s1 * 3/16
-                % measure 368
+                
+                %%% Global Skips [measure 368] %%%
                 \time 8/26
                 s1 * 4/13
                     - \markup {
@@ -65,16 +70,20 @@
                                 #blue
                                 [M.3]
                         }
-                % measure 369
+                
+                %%% Global Skips [measure 369] %%%
                 \time 5/16
                 s1 * 5/16
-                % measure 370
+                
+                %%% Global Skips [measure 370] %%%
                 \time 11/16
                 s1 * 11/16
-                % measure 371
+                
+                %%% Global Skips [measure 371] %%%
                 \time 4/16
                 s1 * 1/4
-                % measure 372
+                
+                %%% Global Skips [measure 372] %%%
                 \time 3/16
                 s1 * 3/16
                     - \markup {
@@ -84,7 +93,8 @@
                                 #blue
                                 [M.4]
                         }
-                % measure 373
+                
+                %%% Global Skips [measure 373] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -94,7 +104,8 @@
                                 #blue
                                 [M.5]
                         }
-                % measure 374
+                
+                %%% Global Skips [measure 374] %%%
                 \time 3/16
                 s1 * 3/16
                     - \markup {
@@ -104,7 +115,8 @@
                                 #blue
                                 [M.6]
                         }
-                % measure 375
+                
+                %%% Global Skips [measure 375] %%%
                 \time 4/3
                 s1 * 4/3
                     - \markup {
@@ -130,7 +142,8 @@
                             44
                         }
                     }
-                % measure 376
+                
+                %%% Global Skips [measure 376] %%%
                 \time 3/1
                 s1 * 3
                     - \markup {
@@ -140,7 +153,8 @@
                                 #blue
                                 [M.8]
                         }
-                % measure 377
+                
+                %%% Global Skips [measure 377] %%%
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -150,7 +164,8 @@
                                 #blue
                                 [M.9]
                         }
-                % measure 378
+                
+                %%% Global Skips [measure 378] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
@@ -160,7 +175,8 @@
                                 #blue
                                 [M.10]
                         }
-                % measure 379
+                
+                %%% Global Skips [measure 379] %%%
                 \time 1/1
                 s1 * 1
                     - \markup {
@@ -170,7 +186,8 @@
                                 #blue
                                 [M.11]
                         }
-                % measure 380
+                
+                %%% Global Skips [measure 380] %%%
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -180,7 +197,8 @@
                                 #blue
                                 [M.12]
                         }
-                % measure 381
+                
+                %%% Global Skips [measure 381] %%%
                 \time 8/5
                 s1 * 8/5
                     - \markup {
@@ -190,7 +208,8 @@
                                 #blue
                                 [M.13]
                         }
-                % measure 382
+                
+                %%% Global Skips [measure 382] %%%
                 \time 3/16
                 s1 * 3/16
                     - \markup {
@@ -200,7 +219,8 @@
                                 #blue
                                 [M.14]
                         }
-                % measure 383
+                
+                %%% Global Skips [measure 383] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -210,12 +230,14 @@
                                 #blue
                                 [M.15]
                         }
+                
             }
         >>
         \context ClarinetMusicStaff = "Clarinet Music Staff" {
             \context ClarinetMusicVoice = "Clarinet Music Voice" {
                 {
-                    % measure 364
+                    
+                    %%% Clarinet Music Voice [measure 364] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -252,6 +274,7 @@
                                     \finger
                                         3
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -267,6 +290,7 @@
                                     \finger
                                         4
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -275,6 +299,7 @@
                     ef'8.
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -290,6 +315,7 @@
                                     \finger
                                         1
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -308,7 +334,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
-                    % measure 365
+                    
+                    %%% Clarinet Music Voice [measure 365] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -317,6 +344,7 @@
                     ef'8. [
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -334,7 +362,8 @@
                             }
                 }
                 {
-                    % measure 366
+                    
+                    %%% Clarinet Music Voice [measure 366] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -350,6 +379,7 @@
                                     \finger
                                         2
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -358,6 +388,7 @@
                     d'16
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -373,6 +404,7 @@
                                     \finger
                                         3
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -390,7 +422,8 @@
                             }
                 }
                 {
-                    % measure 367
+                    
+                    %%% Clarinet Music Voice [measure 367] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -399,6 +432,7 @@
                     d'8 [
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -417,7 +451,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/13 {
-                    % measure 368
+                    
+                    %%% Clarinet Music Voice [measure 368] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -426,6 +461,7 @@
                     cs'16 \pppp [
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -441,6 +477,7 @@
                                     \finger
                                         4
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -458,7 +495,8 @@
                             }
                 }
                 {
-                    % measure 369
+                    
+                    %%% Clarinet Music Voice [measure 369] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -467,6 +505,7 @@
                     cs'8. [
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -484,7 +523,8 @@
                             }
                 }
                 {
-                    % measure 370
+                    
+                    %%% Clarinet Music Voice [measure 370] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -500,6 +540,7 @@
                                     \finger
                                         4
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -508,6 +549,7 @@
                     cs'8.
                         - \tweak color #red
                         ^ \markup { @ }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -523,6 +565,7 @@
                                     \finger
                                         1
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -538,6 +581,7 @@
                                     \finger
                                         2
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -548,7 +592,8 @@
                         ^ \markup { @ }
                 }
                 \times 2/3 {
-                    % measure 371
+                    
+                    %%% Clarinet Music Voice [measure 371] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -564,6 +609,7 @@
                                     \finger
                                         3
                             }
+                    
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -581,21 +627,25 @@
                             }
                 }
                 {
-                    % measure 372
+                    
+                    %%% Clarinet Music Voice [measure 372] %%%
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 373
+                    
+                    %%% Clarinet Music Voice [measure 373] %%%
                     cs'\breve. \pppp
                 }
                 {
-                    % measure 374
+                    
+                    %%% Clarinet Music Voice [measure 374] %%%
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 375
+                    
+                    %%% Clarinet Music Voice [measure 375] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -619,7 +669,8 @@
                             }
                 }
                 {
-                    % measure 376
+                    
+                    %%% Clarinet Music Voice [measure 376] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -644,7 +695,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 377
+                    
+                    %%% Clarinet Music Voice [measure 377] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -669,7 +721,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 378
+                    
+                    %%% Clarinet Music Voice [measure 378] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -693,7 +746,8 @@
                             }
                 }
                 {
-                    % measure 379
+                    
+                    %%% Clarinet Music Voice [measure 379] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -718,7 +772,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 380
+                    
+                    %%% Clarinet Music Voice [measure 380] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -743,7 +798,8 @@
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
-                    % measure 381
+                    
+                    %%% Clarinet Music Voice [measure 381] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -767,12 +823,14 @@
                             }
                 }
                 {
-                    % measure 382
+                    
+                    %%% Clarinet Music Voice [measure 382] %%%
                     r8.
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
-                    % measure 383
+                    
+                    %%% Clarinet Music Voice [measure 383] %%%
                     fs'1 \fff
                         ^ \markup {
                             \override
@@ -782,6 +840,7 @@
                                         1
                             }
                     \bar "|"
+                    
                 }
             }
         }
