@@ -11,9 +11,9 @@
         currentBarNumber = #57
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 57] %%%
+                %%% GlobalSkips [measure 57] %%%
                 \time 13/16
                 \mark #2
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
@@ -42,35 +42,35 @@
                         }
                     }
                 
-                %%% Global Skips [measure 58] %%%
+                %%% GlobalSkips [measure 58] %%%
                 \time 5/22
                 s1 * 5/22
                 
-                %%% Global Skips [measure 59] %%%
+                %%% GlobalSkips [measure 59] %%%
                 \time 8/16
                 s1 * 1/2
                 
-                %%% Global Skips [measure 60] %%%
+                %%% GlobalSkips [measure 60] %%%
                 \time 7/20
                 s1 * 7/20
                 
-                %%% Global Skips [measure 61] %%%
+                %%% GlobalSkips [measure 61] %%%
                 \time 6/22
                 s1 * 3/11
                 
-                %%% Global Skips [measure 62] %%%
+                %%% GlobalSkips [measure 62] %%%
                 \time 3/20
                 s1 * 3/20
                 
-                %%% Global Skips [measure 63] %%%
+                %%% GlobalSkips [measure 63] %%%
                 \time 11/16
                 s1 * 11/16
                 
-                %%% Global Skips [measure 64] %%%
+                %%% GlobalSkips [measure 64] %%%
                 \time 4/22
                 s1 * 2/11
                 
-                %%% Global Skips [measure 65] %%%
+                %%% GlobalSkips [measure 65] %%%
                 \time 2/4
                 s1 * 1/2
                     - \markup {
@@ -81,15 +81,15 @@
                                 [B.2]
                         }
                 
-                %%% Global Skips [measure 66] %%%
+                %%% GlobalSkips [measure 66] %%%
                 \time 2/5
                 s1 * 2/5
                 
-                %%% Global Skips [measure 67] %%%
+                %%% GlobalSkips [measure 67] %%%
                 \time 5/7
                 s1 * 5/7
                 
-                %%% Global Skips [measure 68] %%%
+                %%% GlobalSkips [measure 68] %%%
                 \time 10/16
                 s1 * 5/8
                     - \markup {
@@ -100,11 +100,11 @@
                                 [B.3]
                         }
                 
-                %%% Global Skips [measure 69] %%%
+                %%% GlobalSkips [measure 69] %%%
                 \time 4/16
                 s1 * 1/4
                 
-                %%% Global Skips [measure 70] %%%
+                %%% GlobalSkips [measure 70] %%%
                 \time 2/4
                 s1 * 1/2
                     - \markup {
@@ -115,7 +115,7 @@
                                 [B.4]
                         }
                 
-                %%% Global Skips [measure 71] %%%
+                %%% GlobalSkips [measure 71] %%%
                 \time 3/5
                 s1 * 3/5
                     - \markup {
@@ -126,7 +126,7 @@
                                 [B.5]
                         }
                 
-                %%% Global Skips [measure 72] %%%
+                %%% GlobalSkips [measure 72] %%%
                 \time 7/22
                 s1 * 7/22
                     - \markup {
@@ -137,11 +137,11 @@
                                 [B.6]
                         }
                 
-                %%% Global Skips [measure 73] %%%
+                %%% GlobalSkips [measure 73] %%%
                 \time 4/16
                 s1 * 1/4
                 
-                %%% Global Skips [measure 74] %%%
+                %%% GlobalSkips [measure 74] %%%
                 \time 2/5
                 s1 * 2/5
                     - \markup {
@@ -152,7 +152,7 @@
                                 [B.7]
                         }
                 
-                %%% Global Skips [measure 75] %%%
+                %%% GlobalSkips [measure 75] %%%
                 \time 5/4
                 s1 * 5/4
                     - \markup {
@@ -163,7 +163,7 @@
                                 [B.8]
                         }
                 
-                %%% Global Skips [measure 76] %%%
+                %%% GlobalSkips [measure 76] %%%
                 \time 2/7
                 s1 * 2/7
                 

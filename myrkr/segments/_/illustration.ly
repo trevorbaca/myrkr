@@ -10,9 +10,9 @@
         currentBarNumber = #1
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 1] %%%
+                %%% GlobalSkips [measure 1] %%%
                 \time 12/5
                 s1 * 12/5
                     - \markup {
