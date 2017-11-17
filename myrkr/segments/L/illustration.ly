@@ -11,9 +11,9 @@
         currentBarNumber = #356
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 356] %%%
+                %%% GlobalSkips [measure 356] %%%
                 \time 2/3
                 \mark #12
                 s1 * 2/3
@@ -41,7 +41,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 357] %%%
+                %%% GlobalSkips [measure 357] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -52,7 +52,7 @@
                                 [L.2]
                         }
                 
-                %%% Global Skips [measure 358] %%%
+                %%% GlobalSkips [measure 358] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -63,7 +63,7 @@
                                 [L.3]
                         }
                 
-                %%% Global Skips [measure 359] %%%
+                %%% GlobalSkips [measure 359] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -74,7 +74,7 @@
                                 [L.4]
                         }
                 
-                %%% Global Skips [measure 360] %%%
+                %%% GlobalSkips [measure 360] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -85,7 +85,7 @@
                                 [L.5]
                         }
                 
-                %%% Global Skips [measure 361] %%%
+                %%% GlobalSkips [measure 361] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -96,7 +96,7 @@
                                 [L.6]
                         }
                 
-                %%% Global Skips [measure 362] %%%
+                %%% GlobalSkips [measure 362] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {
@@ -107,7 +107,7 @@
                                 [L.7]
                         }
                 
-                %%% Global Skips [measure 363] %%%
+                %%% GlobalSkips [measure 363] %%%
                 \time 2/3
                 s1 * 2/3
                     - \markup {

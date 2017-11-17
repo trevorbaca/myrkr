@@ -11,9 +11,9 @@
         currentBarNumber = #176
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 176] %%%
+                %%% GlobalSkips [measure 176] %%%
                 \time 8/5
                 \mark #7
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
@@ -42,15 +42,15 @@
                         }
                     }
                 
-                %%% Global Skips [measure 177] %%%
+                %%% GlobalSkips [measure 177] %%%
                 \time 2/3
                 s1 * 2/3
                 
-                %%% Global Skips [measure 178] %%%
+                %%% GlobalSkips [measure 178] %%%
                 \time 12/5
                 s1 * 12/5
                 
-                %%% Global Skips [measure 179] %%%
+                %%% GlobalSkips [measure 179] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -82,7 +82,7 @@
                                 [G.2]
                         }
                 
-                %%% Global Skips [measure 180] %%%
+                %%% GlobalSkips [measure 180] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -93,23 +93,23 @@
                                 [G.3]
                         }
                 
-                %%% Global Skips [measure 181] %%%
+                %%% GlobalSkips [measure 181] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 182] %%%
+                %%% GlobalSkips [measure 182] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 183] %%%
+                %%% GlobalSkips [measure 183] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 184] %%%
+                %%% GlobalSkips [measure 184] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 185] %%%
+                %%% GlobalSkips [measure 185] %%%
                 \time 10/16
                 s1 * 5/8 \stopTextSpan
                     - \markup {
@@ -136,19 +136,19 @@
                         }
                     }
                 
-                %%% Global Skips [measure 186] %%%
+                %%% GlobalSkips [measure 186] %%%
                 \time 4/18
                 s1 * 2/9
                 
-                %%% Global Skips [measure 187] %%%
+                %%% GlobalSkips [measure 187] %%%
                 \time 7/22
                 s1 * 7/22
                 
-                %%% Global Skips [measure 188] %%%
+                %%% GlobalSkips [measure 188] %%%
                 \time 5/18
                 s1 * 5/18
                 
-                %%% Global Skips [measure 189] %%%
+                %%% GlobalSkips [measure 189] %%%
                 \time 12/16
                 s1 * 3/4
                     - \markup {
@@ -159,27 +159,27 @@
                                 [G.5]
                         }
                 
-                %%% Global Skips [measure 190] %%%
+                %%% GlobalSkips [measure 190] %%%
                 \time 3/18
                 s1 * 1/6
                 
-                %%% Global Skips [measure 191] %%%
+                %%% GlobalSkips [measure 191] %%%
                 \time 8/16
                 s1 * 1/2
                 
-                %%% Global Skips [measure 192] %%%
+                %%% GlobalSkips [measure 192] %%%
                 \time 3/20
                 s1 * 3/20
                 
-                %%% Global Skips [measure 193] %%%
+                %%% GlobalSkips [measure 193] %%%
                 \time 6/18
                 s1 * 1/3
                 
-                %%% Global Skips [measure 194] %%%
+                %%% GlobalSkips [measure 194] %%%
                 \time 7/20
                 s1 * 7/20
                 
-                %%% Global Skips [measure 195] %%%
+                %%% GlobalSkips [measure 195] %%%
                 \time 3/16
                 s1 * 3/16
                     - \markup {
@@ -190,7 +190,7 @@
                                 [G.6]
                         }
                 
-                %%% Global Skips [measure 196] %%%
+                %%% GlobalSkips [measure 196] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -201,27 +201,27 @@
                                 [G.7]
                         }
                 
-                %%% Global Skips [measure 197] %%%
+                %%% GlobalSkips [measure 197] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 198] %%%
+                %%% GlobalSkips [measure 198] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 199] %%%
+                %%% GlobalSkips [measure 199] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 200] %%%
+                %%% GlobalSkips [measure 200] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 201] %%%
+                %%% GlobalSkips [measure 201] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 202] %%%
+                %%% GlobalSkips [measure 202] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -232,35 +232,35 @@
                                 [G.8]
                         }
                 
-                %%% Global Skips [measure 203] %%%
+                %%% GlobalSkips [measure 203] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 204] %%%
+                %%% GlobalSkips [measure 204] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 205] %%%
+                %%% GlobalSkips [measure 205] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 206] %%%
+                %%% GlobalSkips [measure 206] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 207] %%%
+                %%% GlobalSkips [measure 207] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 208] %%%
+                %%% GlobalSkips [measure 208] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 209] %%%
+                %%% GlobalSkips [measure 209] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 210] %%%
+                %%% GlobalSkips [measure 210] %%%
                 \time 10/16
                 s1 * 5/8
                     - \markup {
@@ -271,11 +271,11 @@
                                 [G.9]
                         }
                 
-                %%% Global Skips [measure 211] %%%
+                %%% GlobalSkips [measure 211] %%%
                 \time 5/26
                 s1 * 5/26
                 
-                %%% Global Skips [measure 212] %%%
+                %%% GlobalSkips [measure 212] %%%
                 \time 9/16
                 s1 * 9/16
                     - \markup {
@@ -286,11 +286,11 @@
                                 [G.10]
                         }
                 
-                %%% Global Skips [measure 213] %%%
+                %%% GlobalSkips [measure 213] %%%
                 \time 3/16
                 s1 * 3/16
                 
-                %%% Global Skips [measure 214] %%%
+                %%% GlobalSkips [measure 214] %%%
                 \time 8/26
                 s1 * 4/13
                     - \markup {
@@ -301,11 +301,11 @@
                                 [G.11]
                         }
                 
-                %%% Global Skips [measure 215] %%%
+                %%% GlobalSkips [measure 215] %%%
                 \time 5/16
                 s1 * 5/16
                 
-                %%% Global Skips [measure 216] %%%
+                %%% GlobalSkips [measure 216] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -316,15 +316,15 @@
                                 [G.12]
                         }
                 
-                %%% Global Skips [measure 217] %%%
+                %%% GlobalSkips [measure 217] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 218] %%%
+                %%% GlobalSkips [measure 218] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 219] %%%
+                %%% GlobalSkips [measure 219] %%%
                 \time 11/16
                 s1 * 11/16
                     - \markup {
@@ -335,11 +335,11 @@
                                 [G.13]
                         }
                 
-                %%% Global Skips [measure 220] %%%
+                %%% GlobalSkips [measure 220] %%%
                 \time 4/16
                 s1 * 1/4
                 
-                %%% Global Skips [measure 221] %%%
+                %%% GlobalSkips [measure 221] %%%
                 \time 9/16
                 s1 * 9/16
                     - \markup {
@@ -350,11 +350,11 @@
                                 [G.14]
                         }
                 
-                %%% Global Skips [measure 222] %%%
+                %%% GlobalSkips [measure 222] %%%
                 \time 5/18
                 s1 * 5/18
                 
-                %%% Global Skips [measure 223] %%%
+                %%% GlobalSkips [measure 223] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -365,15 +365,15 @@
                                 [G.15]
                         }
                 
-                %%% Global Skips [measure 224] %%%
+                %%% GlobalSkips [measure 224] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 225] %%%
+                %%% GlobalSkips [measure 225] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 226] %%%
+                %%% GlobalSkips [measure 226] %%%
                 \time 3/16
                 s1 * 3/16
                     - \markup {
@@ -384,7 +384,7 @@
                                 [G.16]
                         }
                 
-                %%% Global Skips [measure 227] %%%
+                %%% GlobalSkips [measure 227] %%%
                 \time 1/4
                 s1 * 1/4
                     - \markup {
@@ -395,15 +395,15 @@
                                 [G.17]
                         }
                 
-                %%% Global Skips [measure 228] %%%
+                %%% GlobalSkips [measure 228] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 229] %%%
+                %%% GlobalSkips [measure 229] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 230] %%%
+                %%% GlobalSkips [measure 230] %%%
                 \time 1/4
                 s1 * 1/4
                 

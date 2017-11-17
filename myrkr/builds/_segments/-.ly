@@ -2,13 +2,13 @@
     currentBarNumber = #1
 } <<
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 12/5
                 R1 * 12/5
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)
                 \newSpacingSection

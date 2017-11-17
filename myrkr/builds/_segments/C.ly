@@ -2,7 +2,7 @@
     currentBarNumber = #77
 } <<
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 11/16
                 R1 * 11/16
@@ -140,7 +140,7 @@
                 R1 * 2/9
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 11/16
                 \tempo 4=110

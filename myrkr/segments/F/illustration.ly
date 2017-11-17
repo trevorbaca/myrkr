@@ -11,9 +11,9 @@
         currentBarNumber = #161
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 161] %%%
+                %%% GlobalSkips [measure 161] %%%
                 \time 5/4
                 \mark #6
                 s1 * 5/4
@@ -41,11 +41,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 162] %%%
+                %%% GlobalSkips [measure 162] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 163] %%%
+                %%% GlobalSkips [measure 163] %%%
                 \time 3/4
                 s1 * 3/4
                     - \markup {
@@ -56,7 +56,7 @@
                                 [F.2]
                         }
                 
-                %%% Global Skips [measure 164] %%%
+                %%% GlobalSkips [measure 164] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -67,11 +67,11 @@
                                 [F.3]
                         }
                 
-                %%% Global Skips [measure 165] %%%
+                %%% GlobalSkips [measure 165] %%%
                 \time 7/4
                 s1 * 7/4
                 
-                %%% Global Skips [measure 166] %%%
+                %%% GlobalSkips [measure 166] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -103,7 +103,7 @@
                                 [F.4]
                         }
                 
-                %%% Global Skips [measure 167] %%%
+                %%% GlobalSkips [measure 167] %%%
                 \time 5/7
                 s1 * 5/7
                     - \markup {
@@ -114,7 +114,7 @@
                                 [F.5]
                         }
                 
-                %%% Global Skips [measure 168] %%%
+                %%% GlobalSkips [measure 168] %%%
                 \time 4/4
                 s1 * 1
                     - \markup {
@@ -125,11 +125,11 @@
                                 [F.6]
                         }
                 
-                %%% Global Skips [measure 169] %%%
+                %%% GlobalSkips [measure 169] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 170] %%%
+                %%% GlobalSkips [measure 170] %%%
                 \time 3/4
                 s1 * 3/4 \stopTextSpan
                     - \markup {
@@ -156,11 +156,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 171] %%%
+                %%% GlobalSkips [measure 171] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 172] %%%
+                %%% GlobalSkips [measure 172] %%%
                 \time 5/4
                 s1 * 5/4
                     - \markup {
@@ -171,15 +171,15 @@
                                 [F.8]
                         }
                 
-                %%% Global Skips [measure 173] %%%
+                %%% GlobalSkips [measure 173] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 174] %%%
+                %%% GlobalSkips [measure 174] %%%
                 \time 3/7
                 s1 * 3/7
                 
-                %%% Global Skips [measure 175] %%%
+                %%% GlobalSkips [measure 175] %%%
                 \time 2/4
                 s1 * 1/2
                 
