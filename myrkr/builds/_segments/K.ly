@@ -568,8 +568,8 @@
             }
         }
     >>
-    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
             {
                 f'''4 -\tenuto \pppp
             }

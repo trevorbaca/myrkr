@@ -418,8 +418,8 @@
             }
         }
     >>
-    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
             {
                 d''16 \p [
                 d''8.

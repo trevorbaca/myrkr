@@ -381,8 +381,8 @@
             }
         }
     >>
-    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
             \times 4/5 {
                 fs'''2 \p \glissando
                 g'''2. \glissando

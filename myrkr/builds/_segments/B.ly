@@ -227,8 +227,8 @@
             }
         }
     >>
-    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
             {
                 d''8. \p
                     ^ \markup {

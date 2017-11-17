@@ -248,12 +248,12 @@
                 
             }
         >>
-        \context ClarinetMusicStaff = "Clarinet Music Staff" {
-            \context ClarinetMusicVoice = "Clarinet Music Voice" {
+        \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+            \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
                     
-                    %%% Clarinet Music Voice [measure 231] %%%
+                    %%% ClarinetMusicVoice [measure 231] %%%
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -279,14 +279,14 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 232] %%%
+                    %%% ClarinetMusicVoice [measure 232] %%%
                     g''2 \ff \glissando
                     
                     af''2. \glissando
                 }
                 \times 4/7 {
                     
-                    %%% Clarinet Music Voice [measure 233] %%%
+                    %%% ClarinetMusicVoice [measure 233] %%%
                     g''2 \glissando
                     
                     fs''2 \glissando
@@ -295,7 +295,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 234] %%%
+                    %%% ClarinetMusicVoice [measure 234] %%%
                     af''2 \glissando
                     
                     g''2
@@ -303,12 +303,12 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
                     
-                    %%% Clarinet Music Voice [measure 235] %%%
+                    %%% ClarinetMusicVoice [measure 235] %%%
                     e\breve. \mp
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 236] %%%
+                    %%% ClarinetMusicVoice [measure 236] %%%
                     b''2. \f \glissando
                     
                     c'''2 \glissando
@@ -317,14 +317,14 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 237] %%%
+                    %%% ClarinetMusicVoice [measure 237] %%%
                     as''2 \glissando
                     
                     b''2 \glissando
                 }
                 \times 4/7 {
                     
-                    %%% Clarinet Music Voice [measure 238] %%%
+                    %%% ClarinetMusicVoice [measure 238] %%%
                     c'''2. \glissando
                     
                     b''2 \glissando
@@ -334,19 +334,19 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
                     
-                    %%% Clarinet Music Voice [measure 239] %%%
+                    %%% ClarinetMusicVoice [measure 239] %%%
                     e\breve \mp
                 }
                 \times 4/5 {
                     
-                    %%% Clarinet Music Voice [measure 240] %%%
+                    %%% ClarinetMusicVoice [measure 240] %%%
                     d'''2. \mf \glissando
                     
                     ef'''2 \glissando
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 241] %%%
+                    %%% ClarinetMusicVoice [measure 241] %%%
                     d'''2. \glissando
                     
                     cs'''2 \glissando
@@ -355,19 +355,19 @@
                 }
                 \times 4/5 {
                     
-                    %%% Clarinet Music Voice [measure 242] %%%
+                    %%% ClarinetMusicVoice [measure 242] %%%
                     ef'''2. \glissando
                     
                     d'''2
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 243] %%%
+                    %%% ClarinetMusicVoice [measure 243] %%%
                     e\breve. \mp
                 }
                 \times 4/7 {
                     
-                    %%% Clarinet Music Voice [measure 244] %%%
+                    %%% ClarinetMusicVoice [measure 244] %%%
                     fs'''2 \mp \glissando
                     
                     g'''2. \glissando
@@ -376,14 +376,14 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 245] %%%
+                    %%% ClarinetMusicVoice [measure 245] %%%
                     es'''2. \glissando
                     
                     fs'''2 \glissando
                 }
                 \times 4/7 {
                     
-                    %%% Clarinet Music Voice [measure 246] %%%
+                    %%% ClarinetMusicVoice [measure 246] %%%
                     g'''2 \glissando
                     
                     fs'''2. \glissando
@@ -392,17 +392,17 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 247] %%%
+                    %%% ClarinetMusicVoice [measure 247] %%%
                     r8.
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 248] %%%
+                    %%% ClarinetMusicVoice [measure 248] %%%
                     c''4 \pppp \glissando
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 249] %%%
+                    %%% ClarinetMusicVoice [measure 249] %%%
                     e''4
                     \bar "|"
                     
