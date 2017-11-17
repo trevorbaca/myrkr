@@ -10,7 +10,7 @@
     \context Score = "Score" \with {
         currentBarNumber = #2
     } <<
-        \context GlobalContext = "Global Context" <<
+        \context GlobalContext = "GlobalContext" <<
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 2] %%%
