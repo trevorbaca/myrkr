@@ -26,8 +26,8 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context GlobalSkips = "Global Skips" {
                 }
             >>
-            \context ClarinetMusicStaff = "Clarinet Music Staff" {
-                \context ClarinetMusicVoice = "Clarinet Music Voice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                     \set ClarinetMusicStaff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -65,12 +65,12 @@ class ScoreTemplate(baca.ScoreTemplate):
         # CLARINET
         clarinet_music_voice = abjad.Voice(
             context_name='ClarinetMusicVoice',
-            name='Clarinet Music Voice',
+            name='ClarinetMusicVoice',
             )
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice],
             context_name='ClarinetMusicStaff',
-            name='Clarinet Music Staff',
+            name='ClarinetMusicStaff',
             )
         abjad.annotate(
             clarinet_music_staff,

@@ -7,7 +7,7 @@ metadata = abjad.TypedOrderedDict(
             'end_clefs_by_staff',
             abjad.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', 'treble'),
+                    ('ClarinetMusicStaff', 'treble'),
                     ]
                 ),
             ),
@@ -15,7 +15,7 @@ metadata = abjad.TypedOrderedDict(
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
                 [
-                    ('Clarinet Music Staff', 'bass clarinet'),
+                    ('ClarinetMusicStaff', 'bass clarinet'),
                     ]
                 ),
             ),

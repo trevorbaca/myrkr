@@ -613,8 +613,8 @@
             }
         }
     >>
-    \context ClarinetMusicStaff = "Clarinet Music Staff" {
-        \context ClarinetMusicVoice = "Clarinet Music Voice" {
+    \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+        \context ClarinetMusicVoice = "ClarinetMusicVoice" {
             {
                 f''8. \ppp
                 f''4

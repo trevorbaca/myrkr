@@ -285,11 +285,11 @@
                 
             }
         >>
-        \context ClarinetMusicStaff = "Clarinet Music Staff" {
-            \context ClarinetMusicVoice = "Clarinet Music Voice" {
+        \context ClarinetMusicStaff = "ClarinetMusicStaff" {
+            \context ClarinetMusicVoice = "ClarinetMusicVoice" {
                 {
                     
-                    %%% Clarinet Music Voice [measure 111] %%%
+                    %%% ClarinetMusicVoice [measure 111] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -377,7 +377,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 112] %%%
+                    %%% ClarinetMusicVoice [measure 112] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -406,7 +406,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 113] %%%
+                    %%% ClarinetMusicVoice [measure 113] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -450,12 +450,12 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 114] %%%
+                    %%% ClarinetMusicVoice [measure 114] %%%
                     f1 \mp
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 115] %%%
+                    %%% ClarinetMusicVoice [measure 115] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -483,7 +483,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 116] %%%
+                    %%% ClarinetMusicVoice [measure 116] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -566,7 +566,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 117] %%%
+                    %%% ClarinetMusicVoice [measure 117] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -619,7 +619,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 118] %%%
+                    %%% ClarinetMusicVoice [measure 118] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -655,7 +655,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 119] %%%
+                    %%% ClarinetMusicVoice [measure 119] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -706,12 +706,12 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 120] %%%
+                    %%% ClarinetMusicVoice [measure 120] %%%
                     f1 \mp
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 121] %%%
+                    %%% ClarinetMusicVoice [measure 121] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -746,7 +746,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 122] %%%
+                    %%% ClarinetMusicVoice [measure 122] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -815,7 +815,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 123] %%%
+                    %%% ClarinetMusicVoice [measure 123] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -875,7 +875,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 124] %%%
+                    %%% ClarinetMusicVoice [measure 124] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -904,7 +904,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 125] %%%
+                    %%% ClarinetMusicVoice [measure 125] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -948,12 +948,12 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 126] %%%
+                    %%% ClarinetMusicVoice [measure 126] %%%
                     f1 \mp
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 127] %%%
+                    %%% ClarinetMusicVoice [measure 127] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -981,7 +981,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 128] %%%
+                    %%% ClarinetMusicVoice [measure 128] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1050,7 +1050,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 129] %%%
+                    %%% ClarinetMusicVoice [measure 129] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1110,7 +1110,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 130] %%%
+                    %%% ClarinetMusicVoice [measure 130] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1139,7 +1139,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 131] %%%
+                    %%% ClarinetMusicVoice [measure 131] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1183,19 +1183,19 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 132] %%%
+                    %%% ClarinetMusicVoice [measure 132] %%%
                     f1 \mp
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 133] %%%
+                    %%% ClarinetMusicVoice [measure 133] %%%
                     e'''2 \pppp \glissando
                     
                     f'''2 \glissando
                 }
                 \times 4/7 {
                     
-                    %%% Clarinet Music Voice [measure 134] %%%
+                    %%% ClarinetMusicVoice [measure 134] %%%
                     e'''2. \glissando
                     
                     ds'''2 \glissando
@@ -1204,14 +1204,14 @@
                 }
                 \times 4/5 {
                     
-                    %%% Clarinet Music Voice [measure 135] %%%
+                    %%% ClarinetMusicVoice [measure 135] %%%
                     f'''2. \glissando
                     
                     e'''2
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 136] %%%
+                    %%% ClarinetMusicVoice [measure 136] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1246,7 +1246,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 137] %%%
+                    %%% ClarinetMusicVoice [measure 137] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1323,7 +1323,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 138] %%%
+                    %%% ClarinetMusicVoice [measure 138] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1351,7 +1351,7 @@
                 }
                 {
                     
-                    %%% Clarinet Music Voice [measure 139] %%%
+                    %%% ClarinetMusicVoice [measure 139] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1412,7 +1412,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/5 {
                     
-                    %%% Clarinet Music Voice [measure 140] %%%
+                    %%% ClarinetMusicVoice [measure 140] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1441,7 +1441,7 @@
                 \tweak edge-height #'(0.7 . 0)
                 \times 8/11 {
                     
-                    %%% Clarinet Music Voice [measure 141] %%%
+                    %%% ClarinetMusicVoice [measure 141] %%%
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
