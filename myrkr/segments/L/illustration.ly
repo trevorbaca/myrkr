@@ -17,14 +17,14 @@
                 \time 2/3
                 \mark #12
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.1]
-                        }
-                    ^ \markup {
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.1]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -44,79 +44,79 @@
                 %%% GlobalSkips [measure 357] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.2]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.2]
+                    }
                 
                 %%% GlobalSkips [measure 358] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.3]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.3]
+                    }
                 
                 %%% GlobalSkips [measure 359] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.4]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.4]
+                    }
                 
                 %%% GlobalSkips [measure 360] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.5]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.5]
+                    }
                 
                 %%% GlobalSkips [measure 361] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.6]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.6]
+                    }
                 
                 %%% GlobalSkips [measure 362] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.7]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.7]
+                    }
                 
                 %%% GlobalSkips [measure 363] %%%
                 \time 2/3
                 s1 * 2/3
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [L.8]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [L.8]
+                    }
                 
             }
         >>
@@ -131,43 +131,44 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \center-column
-                                {
-                                    Bass
-                                    cl.
-                                }
-                        }
-                    \clef "treble"
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    cs1 \fff
-                        ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \whiteout
-                                                \upright
-                                                    overblow
-                                        }
-                                    \line
-                                        {
-                                            @
-                                        }
-                                }
+                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #16 % SEGMENT-ONLY
+                            \center-column % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    Bass % SEGMENT-ONLY
+                                    clarinet % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #10 % SEGMENT-ONLY
+                            \center-column % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    Bass % SEGMENT-ONLY
+                                    cl. % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
+                    \clef "treble" % SEGMENT-ONLY
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    cs1
+                    \fff
+                    ^ \markup {
+                        \column
+                            {
+                                \line
+                                    {
+                                        \whiteout
+                                            \upright
+                                                overblow
+                                    }
+                                \line
+                                    {
+                                        @
+                                    }
                             }
+                        }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -178,9 +179,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -191,9 +193,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -204,9 +207,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -217,9 +221,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -230,9 +235,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -243,9 +249,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
@@ -256,9 +263,10 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    cs1 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    cs1
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
                     \bar "|"
                     
                 }
