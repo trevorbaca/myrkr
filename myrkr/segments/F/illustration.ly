@@ -17,14 +17,14 @@
                 \time 5/4
                 \mark #6
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.1]
-                        }
-                    ^ \markup {
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.1]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -48,24 +48,24 @@
                 %%% GlobalSkips [measure 163] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.2]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.2]
+                    }
                 
                 %%% GlobalSkips [measure 164] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.3]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.3]
+                    }
                 
                 %%% GlobalSkips [measure 165] %%%
                 \time 7/4
@@ -94,36 +94,37 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/4
-                s1 * 1/2 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.4]
-                        }
+                s1 * 1/2
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.4]
+                    }
                 
                 %%% GlobalSkips [measure 167] %%%
                 \time 5/7
                 s1 * 5/7
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.5]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.5]
+                    }
                 
                 %%% GlobalSkips [measure 168] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.6]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.6]
+                    }
                 
                 %%% GlobalSkips [measure 169] %%%
                 \time 4/4
@@ -131,15 +132,16 @@
                 
                 %%% GlobalSkips [measure 170] %%%
                 \time 3/4
-                s1 * 3/4 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.7]
-                        }
-                    ^ \markup {
+                s1 * 3/4
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.7]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -163,13 +165,13 @@
                 %%% GlobalSkips [measure 172] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.8]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.8]
+                    }
                 
                 %%% GlobalSkips [measure 173] %%%
                 \time 2/4
@@ -190,72 +192,84 @@
                 {
                     
                     %%% ClarinetMusicVoice [measure 161] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \center-column
-                                {
-                                    Bass
-                                    cl.
-                                }
-                        }
-                    \clef "treble"
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    cs'''2. \mp \glissando
+                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #16 % SEGMENT-ONLY
+                            \center-column % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    Bass % SEGMENT-ONLY
+                                    clarinet % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #10 % SEGMENT-ONLY
+                            \center-column % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    Bass % SEGMENT-ONLY
+                                    cl. % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
+                    \clef "treble" % SEGMENT-ONLY
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    cs'''2.
+                    \mp
+                    \glissando
                     
-                    d'''2 \glissando
+                    d'''2
+                    \glissando
                 }
                 \times 4/7 {
                     
                     %%% ClarinetMusicVoice [measure 162] %%%
-                    cs'''2 \glissando
+                    cs'''2
+                    \glissando
                     
-                    bs''2. \glissando
+                    bs''2.
+                    \glissando
                     
                     cs'''2
                 }
                 {
                     
                     %%% ClarinetMusicVoice [measure 163] %%%
-                    a'2. \ff
+                    a'2.
+                    \ff
                 }
                 \times 4/5 {
                     
                     %%% ClarinetMusicVoice [measure 164] %%%
-                    b''2 \mf \glissando
+                    b''2
+                    \mf
+                    \glissando
                     
-                    c'''2. \glissando
+                    c'''2.
+                    \glissando
                 }
                 {
                     
                     %%% ClarinetMusicVoice [measure 165] %%%
-                    b''2 \glissando
+                    b''2
+                    \glissando
                     
-                    as''2. \glissando
+                    as''2.
+                    \glissando
                     
                     b''2
                 }
                 {
                     
                     %%% ClarinetMusicVoice [measure 166] %%%
-                    a'2 \ff
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    a'2
+                    \ff
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/7 {
@@ -266,16 +280,17 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    gs'2 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    gs'2
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -283,29 +298,34 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     gs'2.
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
                 }
                 \times 4/5 {
                     
                     %%% ClarinetMusicVoice [measure 168] %%%
-                    a''2 \f \glissando
+                    a''2
+                    \f
+                    \glissando
                     
-                    bf''2. \glissando
+                    bf''2.
+                    \glissando
                 }
                 \times 4/7 {
                     
                     %%% ClarinetMusicVoice [measure 169] %%%
-                    a''2 \glissando
+                    a''2
+                    \glissando
                     
-                    gs''2 \glissando
+                    gs''2
+                    \glissando
                     
                     a''2.
                 }
@@ -317,16 +337,17 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    gs'2. \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    gs'2.
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
                 }
                 {
                     
@@ -337,8 +358,8 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     gs'2
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 {
                     
@@ -348,16 +369,17 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    fs'2 \fff
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    fs'2
+                    \fff
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -365,8 +387,8 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     fs'2.
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 {
                     
@@ -377,15 +399,15 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     fs'2
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    1
+                        }
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 4/7 {
@@ -397,8 +419,8 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     fs'2.
-                        - \tweak color #red
-                        ^ \markup { @ }
+                    - \tweak color #red
+                    ^ \markup { @ }
                 }
                 {
                     
@@ -409,15 +431,15 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     fs'2
-                        - \tweak color #red
-                        ^ \markup { @ }
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
+                    - \tweak color #red
+                    ^ \markup { @ }
+                    ^ \markup {
+                        \override
+                            #'(circle-padding . 0.25)
+                            \circle
+                                \finger
+                                    2
+                        }
                     \bar "|"
                     
                 }

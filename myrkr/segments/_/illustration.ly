@@ -15,14 +15,14 @@
                 %%% GlobalSkips [measure 1] %%%
                 \time 12/5
                 s1 * 12/5
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [1]
-                        }
-                    ^ \markup {
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [1]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -66,12 +66,13 @@
                                 }
                         }
                     \clef "treble"
-                    e\breve. \fff
-                        ^ \markup {
-                            \whiteout
-                                \upright
-                                    overblow
-                            }
+                    e\breve.
+                    \fff
+                    ^ \markup {
+                        \whiteout
+                            \upright
+                                overblow
+                        }
                     \bar "|"
                     
                 }
