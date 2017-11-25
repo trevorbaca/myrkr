@@ -48,7 +48,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/3
                 \mark #8
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                 s1 * 2/3
                 \startTextSpan

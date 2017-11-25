@@ -48,7 +48,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 \mark #14
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 s1 * 1
                 \startTextSpan
                 - \markup {
