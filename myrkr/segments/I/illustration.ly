@@ -16,6 +16,7 @@
                 %%% GlobalSkips [measure 250] %%%
                 \time 8/5
                 \mark #9
+                \bar "" % SEGMENT
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                 s1 * 8/5
                 - \markup {
