@@ -17,7 +17,7 @@
                 \time 8/5
                 \mark #7
                 \bar "" % SEGMENT:EMPTY-BAR
-                \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-METRONOME-MARK
                 s1 * 8/5
                 - \markup {
                     \fontsize
@@ -26,22 +26,22 @@
                             #blue
                             [G.1]
                     }
-                ^ \markup { % SEGMENT-ONLY
-                    \fontsize % SEGMENT-ONLY
-                        #-6 % SEGMENT-ONLY
-                        \general-align % SEGMENT-ONLY
-                            #Y % SEGMENT-ONLY
-                            #DOWN % SEGMENT-ONLY
-                            \note-by-number % SEGMENT-ONLY
-                                #2 % SEGMENT-ONLY
-                                #0 % SEGMENT-ONLY
-                                #1 % SEGMENT-ONLY
-                    \upright % SEGMENT-ONLY
-                        { % SEGMENT-ONLY
-                            = % SEGMENT-ONLY
-                            44 % SEGMENT-ONLY
-                        } % SEGMENT-ONLY
-                    } % SEGMENT-ONLY
+                ^ \markup { % SEGMENT:REMINDER-METRONOME-MARK
+                    \fontsize % SEGMENT:REMINDER-METRONOME-MARK
+                        #-6 % SEGMENT:REMINDER-METRONOME-MARK
+                        \general-align % SEGMENT:REMINDER-METRONOME-MARK
+                            #Y % SEGMENT:REMINDER-METRONOME-MARK
+                            #DOWN % SEGMENT:REMINDER-METRONOME-MARK
+                            \note-by-number % SEGMENT:REMINDER-METRONOME-MARK
+                                #2 % SEGMENT:REMINDER-METRONOME-MARK
+                                #0 % SEGMENT:REMINDER-METRONOME-MARK
+                                #1 % SEGMENT:REMINDER-METRONOME-MARK
+                    \upright % SEGMENT:REMINDER-METRONOME-MARK
+                        { % SEGMENT:REMINDER-METRONOME-MARK
+                            = % SEGMENT:REMINDER-METRONOME-MARK
+                            44 % SEGMENT:REMINDER-METRONOME-MARK
+                        } % SEGMENT:REMINDER-METRONOME-MARK
+                    } % SEGMENT:REMINDER-METRONOME-MARK
                 
                 %%% GlobalSkips [measure 177] %%%
                 \time 2/3
@@ -423,27 +423,27 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
-                        \hcenter-in % SEGMENT-ONLY
-                            #16 % SEGMENT-ONLY
-                            \center-column % SEGMENT-ONLY
-                                { % SEGMENT-ONLY
-                                    Bass % SEGMENT-ONLY
-                                    clarinet % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                        } % SEGMENT-ONLY
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
-                        \hcenter-in % SEGMENT-ONLY
-                            #10 % SEGMENT-ONLY
-                            \center-column % SEGMENT-ONLY
-                                { % SEGMENT-ONLY
-                                    Bass % SEGMENT-ONLY
-                                    cl. % SEGMENT-ONLY
-                                } % SEGMENT-ONLY
-                        } % SEGMENT-ONLY
-                    \clef "treble" % SEGMENT-ONLY
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                        \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                            #16 % SEGMENT:REMINDER-INSTRUMENT
+                            \center-column % SEGMENT:REMINDER-INSTRUMENT
+                                { % SEGMENT:REMINDER-INSTRUMENT
+                                    Bass % SEGMENT:REMINDER-INSTRUMENT
+                                    clarinet % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                        } % SEGMENT:REMINDER-INSTRUMENT
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                        \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                            #10 % SEGMENT:REMINDER-INSTRUMENT
+                            \center-column % SEGMENT:REMINDER-INSTRUMENT
+                                { % SEGMENT:REMINDER-INSTRUMENT
+                                    Bass % SEGMENT:REMINDER-INSTRUMENT
+                                    cl. % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                        } % SEGMENT:REMINDER-INSTRUMENT
+                    \clef "treble" % SEGMENT:REMINDER-CLEF
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                     f\breve
                     \mp
                     - \tweak color #red
