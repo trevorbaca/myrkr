@@ -16,7 +16,7 @@
                 %%% GlobalSkips [measure 111] %%%
                 \time 10/16
                 \mark #4
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                 s1 * 5/8
                 - \markup {
