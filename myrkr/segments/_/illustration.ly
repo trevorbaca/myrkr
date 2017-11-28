@@ -14,7 +14,7 @@
                 
                 %%% GlobalSkips [measure 1] %%%
                 \time 12/5
-                \bar "" % SEGMENT:EMPTY-BAR
+                \bar "" % SEGMENT:EMPTY-BAR:1
                 s1 * 12/5
                 - \markup {
                     \fontsize
@@ -66,8 +66,8 @@
                                     cl.
                                 }
                         }
-                    \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                    \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                    \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                    \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                     e\breve.
                     \fff
                     ^ \markup {
