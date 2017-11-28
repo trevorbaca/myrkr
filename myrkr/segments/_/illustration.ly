@@ -66,7 +66,8 @@
                                     cl.
                                 }
                         }
-                    \clef "treble"
+                    \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                    \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                     e\breve.
                     \fff
                     ^ \markup {
