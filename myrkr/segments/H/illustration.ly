@@ -48,8 +48,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/3
                 \mark #8
-                \bar "" % SEGMENT:EMPTY-BAR
-                \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK
+                \bar "" % SEGMENT:EMPTY-BAR:1
+                \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK:2
                 s1 * 2/3
                 \startTextSpan
                 - \markup {
@@ -259,28 +259,28 @@
                 \times 2/3 {
                     
                     %%% ClarinetMusicVoice [measure 231] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                            #16 % SEGMENT:RESTATED-INSTRUMENT
-                            \center-column % SEGMENT:RESTATED-INSTRUMENT
-                                { % SEGMENT:RESTATED-INSTRUMENT
-                                    Bass % SEGMENT:RESTATED-INSTRUMENT
-                                    clarinet % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                        } % SEGMENT:RESTATED-INSTRUMENT
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                            #10 % SEGMENT:RESTATED-INSTRUMENT
-                            \center-column % SEGMENT:RESTATED-INSTRUMENT
-                                { % SEGMENT:RESTATED-INSTRUMENT
-                                    Bass % SEGMENT:RESTATED-INSTRUMENT
-                                    cl. % SEGMENT:RESTATED-INSTRUMENT
-                                } % SEGMENT:RESTATED-INSTRUMENT
-                        } % SEGMENT:RESTATED-INSTRUMENT
-                    \clef "treble" % SEGMENT:RESTATED-CLEF
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                    \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
+                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                            #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                            \center-column % SEGMENT:RESTATED-INSTRUMENT:2
+                                { % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Bass % SEGMENT:RESTATED-INSTRUMENT:2
+                                    clarinet % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                        } % SEGMENT:RESTATED-INSTRUMENT:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                            #10 % SEGMENT:RESTATED-INSTRUMENT:2
+                            \center-column % SEGMENT:RESTATED-INSTRUMENT:2
+                                { % SEGMENT:RESTATED-INSTRUMENT:2
+                                    Bass % SEGMENT:RESTATED-INSTRUMENT:2
+                                    cl. % SEGMENT:RESTATED-INSTRUMENT:2
+                                } % SEGMENT:RESTATED-INSTRUMENT:2
+                        } % SEGMENT:RESTATED-INSTRUMENT:2
+                    \clef "treble" % SEGMENT:RESTATED-CLEF:4
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
+                    \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
                     e1
                     \mp
                 }
