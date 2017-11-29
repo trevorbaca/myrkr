@@ -25,7 +25,6 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     instruments=myrkr.instruments,
-    label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),

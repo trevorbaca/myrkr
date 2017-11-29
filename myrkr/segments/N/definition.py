@@ -47,7 +47,6 @@ maker = baca.SegmentMaker(
         ['August', 'October 2015.'],
         ),
     final_markup_extra_offset=(-24, -4),
-    label_stages=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
