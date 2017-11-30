@@ -48,7 +48,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/3
                 \mark #8
-                \bar "" % SEGMENT:EMPTY_BAR:1
+                \bar "" % SEGMENT:EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK:3
                 s1 * 2/3
                 \startTextSpan
