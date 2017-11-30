@@ -14,20 +14,20 @@
                 
                 %%% GlobalSkips [measure 1] %%%
                 \time 12/5
-                \bar "" % SEGMENT:EMPTY-BAR:1
+                \bar "" % SEGMENT:EMPTY_BAR:1
                 s1 * 12/5
-                %%% ^ \markup { % CLOCK-TIME:3
-                    %%% \fontsize % CLOCK-TIME:3
-                        %%% #-2 % CLOCK-TIME:3
-                        %%% 0'00'' % CLOCK-TIME:3
-                    %%% } % CLOCK-TIME:3
-                %%% - \markup { % STAGE-NUMBER:2
-                    %%% \fontsize % STAGE-NUMBER:2
-                        %%% #-3 % STAGE-NUMBER:2
-                        %%% \with-color % STAGE-NUMBER:2
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:2
-                            %%% [1] % STAGE-NUMBER:2
-                    %%% } % STAGE-NUMBER:2
+                %%% ^ \markup { % CLOCK_TIME:3
+                    %%% \fontsize % CLOCK_TIME:3
+                        %%% #-2 % CLOCK_TIME:3
+                        %%% 0'00'' % CLOCK_TIME:3
+                    %%% } % CLOCK_TIME:3
+                %%% - \markup { % STAGE_NUMBER:2
+                    %%% \fontsize % STAGE_NUMBER:2
+                        %%% #-3 % STAGE_NUMBER:2
+                        %%% \with-color % STAGE_NUMBER:2
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
+                            %%% [1] % STAGE_NUMBER:2
+                    %%% } % STAGE_NUMBER:2
                 ^ \markup {
                     \fontsize
                         #-6
