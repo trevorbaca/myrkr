@@ -49,7 +49,7 @@
                 \time 2/3
                 \mark #8
                 \bar "" % SEGMENT:EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK:3
+                \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_METRONOME_MARK:3
                 s1 * 2/3
                 \startTextSpan
                 %%% ^ \markup { % CLOCK_TIME:5
@@ -354,28 +354,28 @@
                 \times 2/3 {
                     
                     %%% ClarinetMusicVoice [measure 231] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
-                            #16 % SEGMENT:RESTATED-INSTRUMENT:2
-                            \center-column % SEGMENT:RESTATED-INSTRUMENT:2
-                                { % SEGMENT:RESTATED-INSTRUMENT:2
-                                    Bass % SEGMENT:RESTATED-INSTRUMENT:2
-                                    clarinet % SEGMENT:RESTATED-INSTRUMENT:2
-                                } % SEGMENT:RESTATED-INSTRUMENT:2
-                        } % SEGMENT:RESTATED-INSTRUMENT:2
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
-                            #10 % SEGMENT:RESTATED-INSTRUMENT:2
-                            \center-column % SEGMENT:RESTATED-INSTRUMENT:2
-                                { % SEGMENT:RESTATED-INSTRUMENT:2
-                                    Bass % SEGMENT:RESTATED-INSTRUMENT:2
-                                    cl. % SEGMENT:RESTATED-INSTRUMENT:2
-                                } % SEGMENT:RESTATED-INSTRUMENT:2
-                        } % SEGMENT:RESTATED-INSTRUMENT:2
-                    \clef "treble" % SEGMENT:RESTATED-CLEF:4
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
-                    \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
+                        \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
+                            #16 % SEGMENT:RESTATED_INSTRUMENT:2
+                            \center-column % SEGMENT:RESTATED_INSTRUMENT:2
+                                { % SEGMENT:RESTATED_INSTRUMENT:2
+                                    Bass % SEGMENT:RESTATED_INSTRUMENT:2
+                                    clarinet % SEGMENT:RESTATED_INSTRUMENT:2
+                                } % SEGMENT:RESTATED_INSTRUMENT:2
+                        } % SEGMENT:RESTATED_INSTRUMENT:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
+                        \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
+                            #10 % SEGMENT:RESTATED_INSTRUMENT:2
+                            \center-column % SEGMENT:RESTATED_INSTRUMENT:2
+                                { % SEGMENT:RESTATED_INSTRUMENT:2
+                                    Bass % SEGMENT:RESTATED_INSTRUMENT:2
+                                    cl. % SEGMENT:RESTATED_INSTRUMENT:2
+                                } % SEGMENT:RESTATED_INSTRUMENT:2
+                        } % SEGMENT:RESTATED_INSTRUMENT:2
+                    \clef "treble" % SEGMENT:RESTATED_CLEF:4
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_INSTRUMENT:1
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:3
+                    \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:5
                     e1
                     \mp
                 }
