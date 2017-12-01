@@ -299,16 +299,17 @@
                                     cl. %! SEGMENT:RESTATED_INSTRUMENT:2
                                 } %! SEGMENT:RESTATED_INSTRUMENT:2
                         } %! SEGMENT:RESTATED_INSTRUMENT:2
-                    \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                    \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:5
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
                     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:3
-                    \set ClarinetMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:5
+                    \override ClarinetMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:4
+                    \set ClarinetMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:6
                     b'8
                     \p
                     [
                     - \tweak color #red
                     ^ \markup { @ }
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:6
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:7
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
