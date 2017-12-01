@@ -14,20 +14,20 @@
                 
                 %%% GlobalSkips [measure 1] %%%
                 \time 12/5
-                \bar "" % SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! SEGMENT:EMPTY_START_BAR:1
                 s1 * 12/5
-                %%% ^ \markup { % CLOCK_TIME:3
-                    %%% \fontsize % CLOCK_TIME:3
-                        %%% #-2 % CLOCK_TIME:3
-                        %%% 0'00'' % CLOCK_TIME:3
-                    %%% } % CLOCK_TIME:3
-                %%% - \markup { % STAGE_NUMBER:2
-                    %%% \fontsize % STAGE_NUMBER:2
-                        %%% #-3 % STAGE_NUMBER:2
-                        %%% \with-color % STAGE_NUMBER:2
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
-                            %%% [1] % STAGE_NUMBER:2
-                    %%% } % STAGE_NUMBER:2
+                %%% ^ \markup { %! CLOCK_TIME:3
+                    %%% \fontsize %! CLOCK_TIME:3
+                        %%% #-2 %! CLOCK_TIME:3
+                        %%% 0'00'' %! CLOCK_TIME:3
+                    %%% } %! CLOCK_TIME:3
+                %%% - \markup { %! STAGE_NUMBER:2
+                    %%% \fontsize %! STAGE_NUMBER:2
+                        %%% #-3 %! STAGE_NUMBER:2
+                        %%% \with-color %! STAGE_NUMBER:2
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:2
+                            %%% [1] %! STAGE_NUMBER:2
+                    %%% } %! STAGE_NUMBER:2
                 ^ \markup {
                     \fontsize
                         #-6
@@ -71,8 +71,8 @@
                                     cl.
                                 }
                         }
-                    \clef "treble" % EXPLICIT_CLEF_COMMAND:2
-                    \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                    \clef "treble" %! EXPLICIT_CLEF_COMMAND:2
+                    \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                     e\breve.
                     \fff
                     ^ \markup {
@@ -81,7 +81,7 @@
                                 overblow
                         }
                     \bar "|"
-                    \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:3
                     
                 }
             }
