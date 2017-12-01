@@ -16,20 +16,20 @@
                 %%% GlobalSkips [measure 356] %%%
                 \time 2/3
                 \mark #12
-                \bar "" % SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! SEGMENT:EMPTY_START_BAR:1
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:3
-                    %%% \fontsize % CLOCK_TIME:3
-                        %%% #-2 % CLOCK_TIME:3
-                        %%% 9'39'' % CLOCK_TIME:3
-                    %%% } % CLOCK_TIME:3
-                %%% - \markup { % STAGE_NUMBER:2
-                    %%% \fontsize % STAGE_NUMBER:2
-                        %%% #-3 % STAGE_NUMBER:2
-                        %%% \with-color % STAGE_NUMBER:2
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
-                            %%% [L.1] % STAGE_NUMBER:2
-                    %%% } % STAGE_NUMBER:2
+                %%% ^ \markup { %! CLOCK_TIME:3
+                    %%% \fontsize %! CLOCK_TIME:3
+                        %%% #-2 %! CLOCK_TIME:3
+                        %%% 9'39'' %! CLOCK_TIME:3
+                    %%% } %! CLOCK_TIME:3
+                %%% - \markup { %! STAGE_NUMBER:2
+                    %%% \fontsize %! STAGE_NUMBER:2
+                        %%% #-3 %! STAGE_NUMBER:2
+                        %%% \with-color %! STAGE_NUMBER:2
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:2
+                            %%% [L.1] %! STAGE_NUMBER:2
+                    %%% } %! STAGE_NUMBER:2
                 ^ \markup {
                     \fontsize
                         #-6
@@ -50,114 +50,114 @@
                 %%% GlobalSkips [measure 357] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 9'42'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.2] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 9'42'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.2] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 358] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 9'46'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.3] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 9'46'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.3] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 359] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 9'49'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.4] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 9'49'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.4] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 360] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 9'53'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.5] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 9'53'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.5] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 361] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 9'57'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.6] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 9'57'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.6] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 362] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 10'00'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.7] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 10'00'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.7] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 363] %%%
                 \time 2/3
                 s1 * 2/3
-                %%% ^ \markup { % CLOCK_TIME:2
-                    %%% \fontsize % CLOCK_TIME:2
-                        %%% #-2 % CLOCK_TIME:2
-                        %%% 10'04'' % CLOCK_TIME:2
-                    %%% } % CLOCK_TIME:2
-                %%% - \markup { % STAGE_NUMBER:1
-                    %%% \fontsize % STAGE_NUMBER:1
-                        %%% #-3 % STAGE_NUMBER:1
-                        %%% \with-color % STAGE_NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                            %%% [L.8] % STAGE_NUMBER:1
-                    %%% } % STAGE_NUMBER:1
+                %%% ^ \markup { %! CLOCK_TIME:2
+                    %%% \fontsize %! CLOCK_TIME:2
+                        %%% #-2 %! CLOCK_TIME:2
+                        %%% 10'04'' %! CLOCK_TIME:2
+                    %%% } %! CLOCK_TIME:2
+                %%% - \markup { %! STAGE_NUMBER:1
+                    %%% \fontsize %! STAGE_NUMBER:1
+                        %%% #-3 %! STAGE_NUMBER:1
+                        %%% \with-color %! STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER:1
+                            %%% [L.8] %! STAGE_NUMBER:1
+                    %%% } %! STAGE_NUMBER:1
                 
             }
         >>
@@ -172,28 +172,28 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                        \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                            #16 % SEGMENT:RESTATED_INSTRUMENT:2
-                            \center-column % SEGMENT:RESTATED_INSTRUMENT:2
-                                { % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Bass % SEGMENT:RESTATED_INSTRUMENT:2
-                                    clarinet % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                        } % SEGMENT:RESTATED_INSTRUMENT:2
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                        \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                            #10 % SEGMENT:RESTATED_INSTRUMENT:2
-                            \center-column % SEGMENT:RESTATED_INSTRUMENT:2
-                                { % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Bass % SEGMENT:RESTATED_INSTRUMENT:2
-                                    cl. % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                        } % SEGMENT:RESTATED_INSTRUMENT:2
-                    \clef "treble" % SEGMENT:RESTATED_CLEF_COMMAND:4
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:3
-                    \set ClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:5
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                        \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                            #16 %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \center-column %! SEGMENT:RESTATED_INSTRUMENT:2
+                                { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Bass %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    clarinet %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                        } %! SEGMENT:RESTATED_INSTRUMENT:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                        \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                            #10 %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \center-column %! SEGMENT:RESTATED_INSTRUMENT:2
+                                { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Bass %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    cl. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                        } %! SEGMENT:RESTATED_INSTRUMENT:2
+                    \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:3
+                    \set ClarinetMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:5
                     cs1
                     \fff
                     ^ \markup {
@@ -211,7 +211,7 @@
                                     }
                             }
                         }
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:6
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:6
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
