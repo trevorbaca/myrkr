@@ -17,7 +17,7 @@
                 \time 13/16
                 \mark #2
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DarkCyan) %! REMINDER_METRONOME_MARK:3
+                \once \override TextScript.color = #(x11-color 'DarkCyan) %! REMINDER_METRONOME_MARK_COLOR:3
                 s1 * 13/16
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -31,22 +31,22 @@
                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                             %%% [B.1] %! STAGE_NUMBER_MARKUP:2
                     %%% } %! STAGE_NUMBER_MARKUP:2
-                ^ \markup { % REMINDER_METRONOME_MARK:4
-                    \fontsize % REMINDER_METRONOME_MARK:4
-                        #-6 % REMINDER_METRONOME_MARK:4
-                        \general-align % REMINDER_METRONOME_MARK:4
-                            #Y % REMINDER_METRONOME_MARK:4
-                            #DOWN % REMINDER_METRONOME_MARK:4
-                            \note-by-number % REMINDER_METRONOME_MARK:4
-                                #2 % REMINDER_METRONOME_MARK:4
-                                #0 % REMINDER_METRONOME_MARK:4
-                                #1 % REMINDER_METRONOME_MARK:4
-                    \upright % REMINDER_METRONOME_MARK:4
-                        { % REMINDER_METRONOME_MARK:4
-                            = % REMINDER_METRONOME_MARK:4
-                            110 % REMINDER_METRONOME_MARK:4
-                        } % REMINDER_METRONOME_MARK:4
-                    } % REMINDER_METRONOME_MARK:4
+                ^ \markup { % REMINDER_METRONOME_MARK_COMMAND:4
+                    \fontsize % REMINDER_METRONOME_MARK_COMMAND:4
+                        #-6 % REMINDER_METRONOME_MARK_COMMAND:4
+                        \general-align % REMINDER_METRONOME_MARK_COMMAND:4
+                            #Y % REMINDER_METRONOME_MARK_COMMAND:4
+                            #DOWN % REMINDER_METRONOME_MARK_COMMAND:4
+                            \note-by-number % REMINDER_METRONOME_MARK_COMMAND:4
+                                #2 % REMINDER_METRONOME_MARK_COMMAND:4
+                                #0 % REMINDER_METRONOME_MARK_COMMAND:4
+                                #1 % REMINDER_METRONOME_MARK_COMMAND:4
+                    \upright % REMINDER_METRONOME_MARK_COMMAND:4
+                        { % REMINDER_METRONOME_MARK_COMMAND:4
+                            = % REMINDER_METRONOME_MARK_COMMAND:4
+                            110 % REMINDER_METRONOME_MARK_COMMAND:4
+                        } % REMINDER_METRONOME_MARK_COMMAND:4
+                    } % REMINDER_METRONOME_MARK_COMMAND:4
                 
                 %%% GlobalSkips [measure 58] %%%
                 \time 5/22
@@ -280,26 +280,26 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #16 %! REAPPLIED_INSTRUMENT:2
-                            \center-column %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    Bass %! REAPPLIED_INSTRUMENT:2
-                                    clarinet %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #10 %! REAPPLIED_INSTRUMENT:2
-                            \center-column %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    Bass %! REAPPLIED_INSTRUMENT:2
-                                    cl. %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    Bass %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    Bass %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        } %! REAPPLIED_INSTRUMENT_COMMAND:2
                     \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                     %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                     \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
