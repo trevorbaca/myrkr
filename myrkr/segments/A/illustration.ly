@@ -16,7 +16,7 @@
                 %%% GlobalSkips [measure 2] %%%
                 \time 13/16
                 \mark #1
-                \bar "" %! SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! EMPTY_START_BAR:1
                 s1 * 13/16
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:3
                     %%% \fontsize %! CLOCK_TIME_MARKUP:3
