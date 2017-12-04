@@ -448,33 +448,33 @@
                 \times 4/5 {
                     
                     %%% ClarinetMusicVoice [measure 384] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            #16 %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            \center-column %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                { %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                    Bass %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                    clarinet %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                        } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            #10 %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                            \center-column %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                { %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                    Bass %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                    cl. %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                                } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                        } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                    \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:5
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:3
-                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
-                    \set ClarinetMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
+                            #16 %! REAPPLIED_INSTRUMENT:2
+                            \center-column %! REAPPLIED_INSTRUMENT:2
+                                { %! REAPPLIED_INSTRUMENT:2
+                                    Bass %! REAPPLIED_INSTRUMENT:2
+                                    clarinet %! REAPPLIED_INSTRUMENT:2
+                                } %! REAPPLIED_INSTRUMENT:2
+                        } %! REAPPLIED_INSTRUMENT:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
+                            #10 %! REAPPLIED_INSTRUMENT:2
+                            \center-column %! REAPPLIED_INSTRUMENT:2
+                                { %! REAPPLIED_INSTRUMENT:2
+                                    Bass %! REAPPLIED_INSTRUMENT:2
+                                    cl. %! REAPPLIED_INSTRUMENT:2
+                                } %! REAPPLIED_INSTRUMENT:2
+                        } %! REAPPLIED_INSTRUMENT:2
+                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
+                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
+                    \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
                     fs'''2
                     \p
                     \glissando
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:REAPPLIED_CLEF_SHADOW:7
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
                     
                     g'''2.
                     \glissando
