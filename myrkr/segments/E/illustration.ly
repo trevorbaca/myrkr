@@ -17,7 +17,7 @@
                 \time 3/20
                 \mark #5
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_METRONOME_MARK:3
+                \once \override TextScript.color = #(x11-color 'DarkCyan) %! REMINDER_METRONOME_MARK:3
                 s1 * 3/20
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -31,22 +31,22 @@
                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                             %%% [E.1] %! STAGE_NUMBER_MARKUP:2
                     %%% } %! STAGE_NUMBER_MARKUP:2
-                ^ \markup { % SEGMENT:REMINDER_METRONOME_MARK:4
-                    \fontsize % SEGMENT:REMINDER_METRONOME_MARK:4
-                        #-6 % SEGMENT:REMINDER_METRONOME_MARK:4
-                        \general-align % SEGMENT:REMINDER_METRONOME_MARK:4
-                            #Y % SEGMENT:REMINDER_METRONOME_MARK:4
-                            #DOWN % SEGMENT:REMINDER_METRONOME_MARK:4
-                            \note-by-number % SEGMENT:REMINDER_METRONOME_MARK:4
-                                #2 % SEGMENT:REMINDER_METRONOME_MARK:4
-                                #0 % SEGMENT:REMINDER_METRONOME_MARK:4
-                                #1 % SEGMENT:REMINDER_METRONOME_MARK:4
-                    \upright % SEGMENT:REMINDER_METRONOME_MARK:4
-                        { % SEGMENT:REMINDER_METRONOME_MARK:4
-                            = % SEGMENT:REMINDER_METRONOME_MARK:4
-                            55 % SEGMENT:REMINDER_METRONOME_MARK:4
-                        } % SEGMENT:REMINDER_METRONOME_MARK:4
-                    } % SEGMENT:REMINDER_METRONOME_MARK:4
+                ^ \markup { % REMINDER_METRONOME_MARK:4
+                    \fontsize % REMINDER_METRONOME_MARK:4
+                        #-6 % REMINDER_METRONOME_MARK:4
+                        \general-align % REMINDER_METRONOME_MARK:4
+                            #Y % REMINDER_METRONOME_MARK:4
+                            #DOWN % REMINDER_METRONOME_MARK:4
+                            \note-by-number % REMINDER_METRONOME_MARK:4
+                                #2 % REMINDER_METRONOME_MARK:4
+                                #0 % REMINDER_METRONOME_MARK:4
+                                #1 % REMINDER_METRONOME_MARK:4
+                    \upright % REMINDER_METRONOME_MARK:4
+                        { % REMINDER_METRONOME_MARK:4
+                            = % REMINDER_METRONOME_MARK:4
+                            55 % REMINDER_METRONOME_MARK:4
+                        } % REMINDER_METRONOME_MARK:4
+                    } % REMINDER_METRONOME_MARK:4
                 
                 %%% GlobalSkips [measure 143] %%%
                 \time 11/16

@@ -49,7 +49,7 @@
                 \time 2/3
                 \mark #8
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_METRONOME_MARK:3
+                \once \override TextScript.color = #(x11-color 'DarkCyan) %! REMINDER_METRONOME_MARK:3
                 s1 * 2/3
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
