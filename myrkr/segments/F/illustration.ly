@@ -268,26 +268,26 @@
                 {
                     
                     %%% ClarinetMusicVoice [measure 161] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #16 %! REAPPLIED_INSTRUMENT:2
-                            \center-column %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    Bass %! REAPPLIED_INSTRUMENT:2
-                                    clarinet %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #10 %! REAPPLIED_INSTRUMENT:2
-                            \center-column %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    Bass %! REAPPLIED_INSTRUMENT:2
-                                    cl. %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    Bass %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    Bass %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        } %! REAPPLIED_INSTRUMENT_COMMAND:2
                     \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                     %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                     \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
