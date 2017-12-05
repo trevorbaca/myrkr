@@ -53,28 +53,29 @@
                 \times 4/5 {
                     
                     %%% ClarinetMusicVoice [measure 1] %%%
-                    \set ClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \center-column
-                                {
-                                    Bass
-                                    cl.
-                                }
-                        }
-                    \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
-                    \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                    %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                    \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \center-column %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Bass %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    clarinet %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \center-column %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Bass %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    cl. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                    \clef "treble" %! EXPLICIT_CLEF_COMMAND:6
+                    \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                    \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
+                    %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                    \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                     e\breve.
                     \fff
                     ^ \markup {
@@ -83,7 +84,7 @@
                                 overblow
                         }
                     \bar "|"
-                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                     
                 }
             }
