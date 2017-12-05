@@ -298,15 +298,38 @@
                                     cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 } %! REAPPLIED_INSTRUMENT_COMMAND:2
                         } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:6
+                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
-                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
-                    \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:5
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
+                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
+                    \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                     d''8.
                     \p
-                    - \tweak color #red
-                    ^ \markup { @ }
+                    ^ \markup {
+                        \column
+                            {
+                                %%% \line %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%     { %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%         \override %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%             \box %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%                 "bass clarinet" %! INSTRUMENT_CHANGE_MARKUP:3
+                                %%%     } %! INSTRUMENT_CHANGE_MARKUP:3
+                                \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                    { %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                        \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                            #(x11-color 'green) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                            \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                    "bass clarinet" %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                    } %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                \line
+                                    {
+                                        @
+                                    }
+                            }
+                        }
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -314,7 +337,7 @@
                                 \finger
                                     2
                         }
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
