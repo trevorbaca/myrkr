@@ -102,8 +102,8 @@
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                         } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                     \bar "|"
-                    \override Staff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:3
-                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
+                    \override Staff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                     
                 }
             }
