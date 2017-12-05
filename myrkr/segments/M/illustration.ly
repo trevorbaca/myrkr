@@ -362,33 +362,33 @@
                                     cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 } %! REAPPLIED_INSTRUMENT_COMMAND:2
                         } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:8
+                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
-                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                    \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
+                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
+                    \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
                     ef'8
                     \pppp
                     [
                     ^ \markup {
                         \column
                             {
-                                %%% \line %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%     { %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%         \override %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%             \box %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%                 "bass clarinet" %! INSTRUMENT_CHANGE_MARKUP:3
-                                %%%     } %! INSTRUMENT_CHANGE_MARKUP:3
-                                \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                    { %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                        \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                            #(x11-color 'green) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                            \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                    "bass clarinet" %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                    } %! INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                %%% \line %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%     { %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%         \override %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%             \box %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%                 "bass clarinet" %! INSTRUMENT_CHANGE_MARKUP:5
+                                %%%     } %! INSTRUMENT_CHANGE_MARKUP:5
+                                \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    { %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            #(x11-color 'green) %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    "bass clarinet" %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    } %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
                                 \line
                                     {
                                         @
@@ -402,7 +402,26 @@
                                 \finger
                                     3
                         }
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                    \set Staff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    Bass %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    \set Staff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    Bass %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW:3
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:11
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
