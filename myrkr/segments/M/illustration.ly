@@ -373,22 +373,22 @@
                     ^ \markup {
                         \column
                             {
-                                %%% \line %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%     { %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%         \override %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%             #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%             \box %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%                 "bass clarinet" %! INSTRUMENT_CHANGE_MARKUP:5
-                                %%%     } %! INSTRUMENT_CHANGE_MARKUP:5
-                                \line %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                    { %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                        \with-color %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                            #(x11-color 'green) %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                            \override %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                                #'(box-padding . 0.75) %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                                \box %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                                    "bass clarinet" %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
-                                    } %! INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%                 "bass clarinet" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    "bass clarinet" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
                                 \line
                                     {
                                         @
@@ -402,7 +402,7 @@
                                 \finger
                                     3
                         }
-                    \set Staff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                         \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                             #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                             \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
@@ -411,7 +411,7 @@
                                     clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                         } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
-                    \set Staff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                         \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                             #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                             \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4

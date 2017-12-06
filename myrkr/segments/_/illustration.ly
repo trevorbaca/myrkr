@@ -72,7 +72,7 @@
                                 } %! EXPLICIT_INSTRUMENT_COMMAND:2
                         } %! EXPLICIT_INSTRUMENT_COMMAND:2
                     \clef "treble" %! EXPLICIT_CLEF_COMMAND:8
-                    \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
                     \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
                     %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
                     \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:7
@@ -83,7 +83,7 @@
                             \upright
                                 overblow
                         }
-                    \set Staff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                         \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             \center-column %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
@@ -92,7 +92,7 @@
                                     clarinet %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                         } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
-                    \set Staff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                         \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             \center-column %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
@@ -102,7 +102,7 @@
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                         } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                     \bar "|"
-                    \override Staff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
                     \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                     
                 }
