@@ -54,6 +54,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     '''
 
+    ### CLASS VARIABLES ###
+
+    __documentation_section__ = None
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -61,7 +65,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
+
         # CLARINET
         clarinet_music_voice = abjad.Voice(
             context_name='ClarinetMusicVoice',
@@ -77,12 +84,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             myrkr.instruments['bass clarinet'],
             )
+
         # SCORE
         score = abjad.Score(
-            [
-                global_context,
-                clarinet_music_staff,
-                ],
+            [global_context, clarinet_music_staff],
             name='Score',
             )
+
         return score
