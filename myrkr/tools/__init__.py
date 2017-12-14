@@ -1,7 +1,6 @@
-import abjad
-
-
-abjad.ImportManager.import_structured_package(
-    __path__[0],
-    globals(),
-    )
+from .ColorMaker import ColorMaker
+from .Preprocessor import Preprocessor
+from .RhythmMaker import RhythmMaker
+from .ScoreTemplate import ScoreTemplate
+from .color_fingerings import color_fingerings
+from .final_markup import final_markup
