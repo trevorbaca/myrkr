@@ -27,12 +27,25 @@ metadata = abjad.TypedOrderedDict(
             'end_instruments',
             abjad.TypedOrderedDict(
                 [
-                    ('ClarinetMusicStaff', 'bass clarinet'),
+                    (
+                        'ClarinetMusicStaff',
+                        ('bass clarinet', 'ClarinetMusicVoice'),
+                        ),
                     ]
                 ),
             ),
         ('end_margin_markup', None),
-        ('end_metronome_mark', '55'),
+        (
+            'end_metronome_marks',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        'Score',
+                        ('55', 'GlobalSkips'),
+                        ),
+                    ]
+                ),
+            ),
         ('end_staff_lines', None),
         ('first_measure_number', 111),
         ('segment_number', 5),
