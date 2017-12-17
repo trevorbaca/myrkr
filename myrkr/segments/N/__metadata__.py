@@ -19,7 +19,10 @@ metadata = abjad.TypedOrderedDict(
             'end_dynamics',
             abjad.TypedOrderedDict(
                 [
-                    ('ClarinetMusicVoice', 'ppppp'),
+                    (
+                        'ClarinetMusicVoice',
+                        ('ppppp', 'ClarinetMusicVoice'),
+                        ),
                     ]
                 ),
             ),
