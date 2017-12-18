@@ -73,35 +73,35 @@ preprocessor.make_commands(maker)
 
 maker(
     baca.scope('ClarinetMusicVoice', 7),
-    baca.markup('“A”', direction=Up),
+    baca.markup('“A”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 8),
-    baca.markup('“U”', direction=Up),
+    baca.markup('“U”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 9),
-    baca.markup('“I”', direction=Up),
+    baca.markup('“I”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 10),
-    baca.markup('“U”', direction=Up),
+    baca.markup('“U”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 11),
-    baca.markup('“A”', direction=Up),
+    baca.markup('“A”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 12),
-    baca.markup('“O”', direction=Up),
+    baca.markup('“O”', direction=abjad.Up),
     )
 
 maker(
     baca.scope('ClarinetMusicVoice', 13),
-    baca.markup('“I”', direction=Up),
+    baca.markup('“I”', direction=abjad.Up),
     )
