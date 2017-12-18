@@ -71,9 +71,9 @@
                         } %! EXPLICIT_INSTRUMENT_COMMAND:2
                     \clef "treble" %! EXPLICIT_CLEF_COMMAND:8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
-                    \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
-                    %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
-                    \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:7
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
+                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
+                    \set ClarinetMusicStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:7
                     e\breve.
                     \fff
                     ^ \markup {
@@ -101,7 +101,7 @@
                         } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                     \bar "|"
                     \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
-                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                     
                 }
             }

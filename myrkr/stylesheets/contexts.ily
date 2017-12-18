@@ -1,4 +1,37 @@
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
+
+
 \layout {
+
+    % GLOBAL SKIPS
+    \context {
+        \name GlobalSkips
+        \type Engraver_group
+        \consists Staff_symbol_engraver
+        \consists Script_engraver
+        \consists Text_engraver
+        \consists Text_spanner_engraver
+        \override StaffSymbol.stencil = ##f
+        \override TextScript.font-size = 6
+        \override TextScript.outside-staff-priority = 600
+        \override TextScript.staff-padding = 3
+        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        \override TextSpanner.font-size = 6
+        \override TextSpanner.staff-padding = 4
+        }
+
+    % GLOBAL RESTS
+    \context {
+        \name GlobalRests
+        \type Engraver_group
+        \consists Multi_measure_rest_engraver
+        \override MultiMeasureRest.transparent = ##t
+        \override MultiMeasureRestText.font-size = 3
+        \override MultiMeasureRestText.outside-staff-priority = 0
+        \override MultiMeasureRestText.padding = 0
+        }
+
+    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -6,11 +39,11 @@
         \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
-        \consists Script_engraver
-        \consists Text_engraver
-        \consists Text_spanner_engraver
         \consists Time_signature_engraver
-        \override BarNumber.transparent = ##t
+        \accepts GlobalSkips
+        \accepts GlobalRests
+        \override BarNumber.extra-offset = #'(-4 . -4)
+        \override BarNumber.font-size = 1
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
@@ -25,36 +58,29 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 200
         \override RehearsalMark.self-alignment-X = #center
-        \override Script.font-size = 6
-        %\override Script.extra-offset = #'(4 . -9)
-        \override TextScript.font-size = 6
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.padding = 5
-        \override TextSpanner.bound-details.right.attach-dir = #LEFT
-        \override TextSpanner.font-size = 6
-        \override TextSpanner.Y-extent = #'(-3 . 3)
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'(
-            (basic-distance . 0)
-            (minimum-distance . 10)
-            (padding . 0)
-            (stretchability . 0)
-        )
+        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 20
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
+
+    % STAFF
     \context {
         \Staff
         \remove Time_signature_engraver
     }
+
+    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
     }
+
+    % CLARINET CONTEXTS
     \context {
         \Voice
         \name ClarinetMusicVoice
@@ -75,6 +101,8 @@
         \accepts ClarinetMusicVoice
         \accepts ClarinetDynamicsVoice
     }
+
+    % SCORE
     \context {
         \Score
         \accepts GlobalContext
@@ -82,6 +110,7 @@
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove Metronome_mark_engraver
+        \remove System_start_delimiter_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
@@ -120,8 +149,10 @@
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
+        barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
+
 }
