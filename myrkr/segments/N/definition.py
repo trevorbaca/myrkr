@@ -79,7 +79,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 2),
-    baca.markup('“U”', direction=Up),
+    baca.markup('“U”', direction=abjad.Up),
     )
 
 maker(
@@ -89,7 +89,7 @@ maker(
 
 maker(
     baca.scope('ClarinetMusicVoice', 5),
-    baca.markup('“A”', direction=Up),
+    baca.markup('“A”', direction=abjad.Up),
     )
 
 maker(
