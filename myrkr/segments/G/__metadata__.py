@@ -3,62 +3,6 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        (
-            'abjad.Clef',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'ClarinetMusicStaff',
-                        ('treble', 'ClarinetMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'abjad.Dynamic',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'ClarinetMusicVoice',
-                        ('pppp', 'ClarinetMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'abjad.Instrument',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'ClarinetMusicStaff',
-                        ('BassClarinet', 'ClarinetMusicVoice'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'abjad.MetronomeMark',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'Score',
-                        ('110', 'GlobalSkips'),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'abjad.TimeSignature',
-            abjad.TypedOrderedDict(
-                [
-                    (
-                        'Score',
-                        ('1/4', 'GlobalSkips'),
-                        ),
-                    ]
-                ),
-            ),
-        ('baca.MarginMarkup', None),
         ('baca.StaffLines', None),
         ('duration', "1'10''"),
         ('first_measure_number', 176),
