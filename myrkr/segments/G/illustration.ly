@@ -17,7 +17,7 @@
                 \time 8/5
                 \mark #7
                 \bar "" %! EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'green) %! REMINDER_METRONOME_MARK_COLOR:3
+                \once \override TextScript.color = #(x11-color 'green) %! PERSISTENT_METRONOME_MARK_COLOR:3
                 s1 * 8/5
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -31,22 +31,22 @@
                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                             %%% [G.1] %! STAGE_NUMBER_MARKUP:2
                     %%% } %! STAGE_NUMBER_MARKUP:2
-                ^ \markup { % REMINDER_METRONOME_MARK_COMMAND:4
-                    \fontsize % REMINDER_METRONOME_MARK_COMMAND:4
-                        #-6 % REMINDER_METRONOME_MARK_COMMAND:4
-                        \general-align % REMINDER_METRONOME_MARK_COMMAND:4
-                            #Y % REMINDER_METRONOME_MARK_COMMAND:4
-                            #DOWN % REMINDER_METRONOME_MARK_COMMAND:4
-                            \note-by-number % REMINDER_METRONOME_MARK_COMMAND:4
-                                #2 % REMINDER_METRONOME_MARK_COMMAND:4
-                                #0 % REMINDER_METRONOME_MARK_COMMAND:4
-                                #1 % REMINDER_METRONOME_MARK_COMMAND:4
-                    \upright % REMINDER_METRONOME_MARK_COMMAND:4
-                        { % REMINDER_METRONOME_MARK_COMMAND:4
-                            = % REMINDER_METRONOME_MARK_COMMAND:4
-                            44 % REMINDER_METRONOME_MARK_COMMAND:4
-                        } % REMINDER_METRONOME_MARK_COMMAND:4
-                    } % REMINDER_METRONOME_MARK_COMMAND:4
+                ^ \markup { % PERSISTENT_METRONOME_MARK_COMMAND:4
+                    \fontsize % PERSISTENT_METRONOME_MARK_COMMAND:4
+                        #-6 % PERSISTENT_METRONOME_MARK_COMMAND:4
+                        \general-align % PERSISTENT_METRONOME_MARK_COMMAND:4
+                            #Y % PERSISTENT_METRONOME_MARK_COMMAND:4
+                            #DOWN % PERSISTENT_METRONOME_MARK_COMMAND:4
+                            \note-by-number % PERSISTENT_METRONOME_MARK_COMMAND:4
+                                #2 % PERSISTENT_METRONOME_MARK_COMMAND:4
+                                #0 % PERSISTENT_METRONOME_MARK_COMMAND:4
+                                #1 % PERSISTENT_METRONOME_MARK_COMMAND:4
+                    \upright % PERSISTENT_METRONOME_MARK_COMMAND:4
+                        { % PERSISTENT_METRONOME_MARK_COMMAND:4
+                            = % PERSISTENT_METRONOME_MARK_COMMAND:4
+                            44 % PERSISTENT_METRONOME_MARK_COMMAND:4
+                        } % PERSISTENT_METRONOME_MARK_COMMAND:4
+                    } % PERSISTENT_METRONOME_MARK_COMMAND:4
                 
                 %%% GlobalSkips [measure 177] %%%
                 \time 2/3
@@ -698,76 +698,76 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! REMINDER_INSTRUMENT_COMMAND:7
-                        \hcenter-in %! REMINDER_INSTRUMENT_COMMAND:7
-                            #16 %! REMINDER_INSTRUMENT_COMMAND:7
-                            \center-column %! REMINDER_INSTRUMENT_COMMAND:7
-                                { %! REMINDER_INSTRUMENT_COMMAND:7
-                                    Bass %! REMINDER_INSTRUMENT_COMMAND:7
-                                    clarinet %! REMINDER_INSTRUMENT_COMMAND:7
-                                } %! REMINDER_INSTRUMENT_COMMAND:7
-                        } %! REMINDER_INSTRUMENT_COMMAND:7
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REMINDER_INSTRUMENT_COMMAND:7
-                        \hcenter-in %! REMINDER_INSTRUMENT_COMMAND:7
-                            #10 %! REMINDER_INSTRUMENT_COMMAND:7
-                            \center-column %! REMINDER_INSTRUMENT_COMMAND:7
-                                { %! REMINDER_INSTRUMENT_COMMAND:7
-                                    Bass %! REMINDER_INSTRUMENT_COMMAND:7
-                                    cl. %! REMINDER_INSTRUMENT_COMMAND:7
-                                } %! REMINDER_INSTRUMENT_COMMAND:7
-                        } %! REMINDER_INSTRUMENT_COMMAND:7
-                    \clef "treble" %! REMINDER_CLEF_COMMAND:4
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REMINDER_CLEF_COLOR:1
-                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! REMINDER_CLEF_UNCOLOR:2
-                    \set ClarinetMusicStaff.forceClef = ##t %! REMINDER_CLEF_COMMAND:3
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REMINDER_INSTRUMENT_COLOR:6
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:7
+                        \hcenter-in %! PERSISTENT_INSTRUMENT_COMMAND:7
+                            #16 %! PERSISTENT_INSTRUMENT_COMMAND:7
+                            \center-column %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                { %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                    Bass %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                    clarinet %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                } %! PERSISTENT_INSTRUMENT_COMMAND:7
+                        } %! PERSISTENT_INSTRUMENT_COMMAND:7
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:7
+                        \hcenter-in %! PERSISTENT_INSTRUMENT_COMMAND:7
+                            #10 %! PERSISTENT_INSTRUMENT_COMMAND:7
+                            \center-column %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                { %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                    Bass %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                    cl. %! PERSISTENT_INSTRUMENT_COMMAND:7
+                                } %! PERSISTENT_INSTRUMENT_COMMAND:7
+                        } %! PERSISTENT_INSTRUMENT_COMMAND:7
+                    \clef "treble" %! PERSISTENT_CLEF_COMMAND:4
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! PERSISTENT_CLEF_COLOR:1
+                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! PERSISTENT_CLEF_UNCOLOR:2
+                    \set ClarinetMusicStaff.forceClef = ##t %! PERSISTENT_CLEF_COMMAND:3
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! PERSISTENT_INSTRUMENT_COLOR:6
                     f\breve
                     \mp
                     ^ \markup {
                         \column
                             {
-                                %%% \line %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%     { %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%         \override %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%             #'(box-padding . 0.75) %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%             \box %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%                 "bass clarinet" %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                %%%     } %! REMINDER_INSTRUMENT_CHANGE_MARKUP:10
-                                \line %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                    { %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                        \with-color %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                            #(x11-color 'green) %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                            \override %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                                #'(box-padding . 0.75) %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                                \box %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                                    "bass clarinet" %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
-                                    } %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                %%% \line %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%     { %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%         \override %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%             #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%             \box %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%                 "bass clarinet" %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                %%%     } %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:10
+                                \line %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                    { %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                        \with-color %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                            #(x11-color 'green) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                            \override %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                                #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                                \box %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                                    "bass clarinet" %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
+                                    } %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:11
                                 \line
                                     {
                                         @
                                     }
                             }
                         }
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                        \hcenter-in %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                            #16 %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                            \center-column %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                    Bass %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                    clarinet %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                        } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                        \hcenter-in %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                            #10 %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                            \center-column %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                    Bass %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                    cl. %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                                } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                        } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:9
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REMINDER_CLEF_SHADOW_COLOR:5
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REMINDER_INSTRUMENT_SHADOW_COLOR:8
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                        \hcenter-in %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                            #16 %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                            \center-column %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                    Bass %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                    clarinet %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                        } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                        \hcenter-in %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                            #10 %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                            \center-column %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                    Bass %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                    cl. %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                                } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                        } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:9
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! PERSISTENT_CLEF_SHADOW_COLOR:5
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! PERSISTENT_INSTRUMENT_SHADOW_COLOR:8
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
