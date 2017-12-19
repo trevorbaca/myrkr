@@ -82,7 +82,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             clarinet_music_staff,
             'default_instrument',
-            myrkr.instruments['bass clarinet'],
+            myrkr.instruments['BassClarinet'],
             )
 
         # SCORE

@@ -31,7 +31,7 @@ metadata = abjad.TypedOrderedDict(
                 [
                     (
                         'ClarinetMusicStaff',
-                        ('bass clarinet', 'ClarinetMusicVoice'),
+                        ('BassClarinet', 'ClarinetMusicVoice'),
                         ),
                     ]
                 ),
@@ -77,7 +77,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
                                 prototype='abjad.Instrument',
-                                value='bass clarinet',
+                                value='BassClarinet',
                                 ),
                             ],
                         ),
