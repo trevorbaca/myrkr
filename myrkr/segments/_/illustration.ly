@@ -85,22 +85,22 @@
                                             \upright
                                                 overblow
                                     }
-                                %%% \line %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%     { %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%         \override %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%             \box %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%                 "bass clarinet" %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                %%%     } %! EXPLICIT_INSTRUMENT_CHANGE_MARKUP:7
-                                \line %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                    { %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                        \with-color %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                            #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                            \override %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                                #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                                \box %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                                    "bass clarinet" %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
-                                    } %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:8
+                                %%% \line %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%     { %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%         \override %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             \box %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                 "bass clarinet" %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%     } %! EXPLICIT_INSTRUMENT_ALERT:7
+                                \line %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                    { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                        \with-color %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                            #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                            \override %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                #'(box-padding . 0.75) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                \box %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                    "bass clarinet" %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                    } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                             }
                         }
                     \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
