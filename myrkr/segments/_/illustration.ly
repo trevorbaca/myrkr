@@ -103,27 +103,27 @@
                                     } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                             }
                         }
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            #16 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \center-column %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Bass %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    clarinet %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            #10 %! EXPLICIT_INSTRUMENT_REDRAW:11
-                            \center-column %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                { %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    Bass %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                    cl. %! EXPLICIT_INSTRUMENT_REDRAW:11
-                                } %! EXPLICIT_INSTRUMENT_REDRAW:11
-                        } %! EXPLICIT_INSTRUMENT_REDRAW:11
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            #16 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \center-column %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Bass %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    clarinet %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            #10 %! EXPLICIT_REDRAW_INSTRUMENT:11
+                            \center-column %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                { %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    Bass %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                    cl. %! EXPLICIT_REDRAW_INSTRUMENT:11
+                                } %! EXPLICIT_REDRAW_INSTRUMENT:11
+                        } %! EXPLICIT_REDRAW_INSTRUMENT:11
                     \bar "|"
                     \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:10
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:10
                     
                 }
             }
