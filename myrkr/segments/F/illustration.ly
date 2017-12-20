@@ -315,26 +315,26 @@
                                     } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:8
                             }
                         }
-                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                        \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                            #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                            \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                    Bass %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                    clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                        \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                            #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                            \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                    Bass %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                    cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                                } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:11
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:10
+                    \set ClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                            #16 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                            \center-column %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                    Bass %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                    clarinet %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                        } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                        \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                            #10 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                            \center-column %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                    Bass %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                    cl. %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                                } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                        } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:11
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:5
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_REDRAW_COLOR:10
                     
                     d'''2
                     \glissando
