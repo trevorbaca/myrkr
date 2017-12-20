@@ -285,7 +285,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 381] %%%
-                \time 8/5
                 s1 * 8/5
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
