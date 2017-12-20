@@ -168,7 +168,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 169] %%%
-                \time 4/4
                 s1 * 1
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1

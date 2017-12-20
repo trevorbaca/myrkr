@@ -48,7 +48,6 @@
                     }
                 
                 %%% GlobalSkips [measure 357] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -64,7 +63,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 358] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -80,7 +78,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 359] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -96,7 +93,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 360] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -112,7 +108,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 361] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -128,7 +123,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 362] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -144,7 +138,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 363] %%%
-                \time 2/3
                 s1 * 2/3
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2

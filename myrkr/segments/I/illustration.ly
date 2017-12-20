@@ -65,7 +65,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 252] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -74,7 +73,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 253] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -83,7 +81,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 254] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -124,7 +121,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 257] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -133,7 +129,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 258] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -174,7 +169,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 261] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -183,7 +177,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 262] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -192,7 +185,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 263] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -201,7 +193,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 264] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -242,7 +233,6 @@
                     %%% } %! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 267] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
@@ -251,7 +241,6 @@
                     %%% } %! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 268] %%%
-                \time 1/4
                 s1 * 1/4
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:1
                     %%% \fontsize %! CLOCK_TIME_MARKUP:1
