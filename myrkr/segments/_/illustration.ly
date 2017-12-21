@@ -87,13 +87,59 @@
                                     }
                                 %%% \line %! EXPLICIT_INSTRUMENT_ALERT:7
                                 %%%     { %! EXPLICIT_INSTRUMENT_ALERT:7
-                                %%%         [BassClarinet] %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%         \vcenter %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             (“BassClarinet” %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%         \vcenter %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             \hcenter-in %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                 #16 %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                 \center-column %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                     { %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                         Bass %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                         clarinet %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                     } %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%         \concat %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             { %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                 \vcenter %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                     \hcenter-in %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                         #10 %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                         \center-column %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                             { %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                                 Bass %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                                 cl. %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                             } %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                 \vcenter %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%                     ) %! EXPLICIT_INSTRUMENT_ALERT:7
+                                %%%             } %! EXPLICIT_INSTRUMENT_ALERT:7
                                 %%%     } %! EXPLICIT_INSTRUMENT_ALERT:7
                                 \line %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                     { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                         \with-color %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                             #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
-                                            [BassClarinet] %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                            { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                \vcenter %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                    (“BassClarinet” %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                \vcenter %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                    \hcenter-in %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                        #16 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                        \center-column %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                            { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                Bass %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                clarinet %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                            } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                \concat %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                    { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                        \vcenter %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                            \hcenter-in %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                #10 %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                \center-column %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                    { %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                        Bass %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                        cl. %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                                    } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                        \vcenter %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                            ) %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                                    } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
+                                            } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                                     } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:8
                             }
                         }
