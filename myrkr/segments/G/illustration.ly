@@ -17,7 +17,7 @@
                 \time 8/5
                 \mark #7
                 \bar "" %! EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'green) %! REAPPLIED_METRONOME_MARK_COLOR:3
+                \once \override TextScript.color = #(x11-color 'green4) %! REAPPLIED_METRONOME_MARK_COLOR:3
                 s1 * 8/5
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -693,10 +693,10 @@
                                 } %! REAPPLIED_INSTRUMENT:9
                         } %! REAPPLIED_INSTRUMENT:9
                     \clef "treble" %! REAPPLIED_CLEF:4
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
+                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                     %%% \override ClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                     \set ClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:6
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
                     f\breve
                     \mp
                     ^ \markup {
@@ -731,7 +731,7 @@
                                 \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                     { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                         \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
-                                            #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
+                                            #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                             { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                                     (“BassClarinet” %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
@@ -782,8 +782,8 @@
                                     cl. %! REAPPLIED_REDRAW_INSTRUMENT:11
                                 } %! REAPPLIED_REDRAW_INSTRUMENT:11
                         } %! REAPPLIED_REDRAW_INSTRUMENT:11
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:5
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:10
+                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:10
                 }
                 \tweak edge-height #'(0.7 . 0)
                 \times 2/3 {
