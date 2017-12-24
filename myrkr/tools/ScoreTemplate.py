@@ -46,7 +46,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     cl.
                                 }
                         }
-                    \clef "treble"
                     s1
                 }
             }

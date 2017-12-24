@@ -69,11 +69,7 @@
                                     cl. %! TEMPLATE_INSTRUMENT:4
                                 } %! TEMPLATE_INSTRUMENT:4
                         } %! TEMPLATE_INSTRUMENT:4
-                    \clef "treble" %! TEMPLATE_CLEF:10
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                    %%% \override ClarinetMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                    \set ClarinetMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                     e\breve.
                     \fff
                     ^ \markup {
@@ -163,7 +159,6 @@
                         } %! TEMPLATE_REDRAW_INSTRUMENT:6
                     \bar "|"
                     \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                    \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                     
                 }
             }
