@@ -16,689 +16,689 @@
                 %%% GlobalSkips [measure 2] %%%
                 \time 13/16
                 \mark #1
-                \bar ""        %%! EMPTY_START_BAR:1
+                \bar ""                                                        %%! EMPTY_START_BAR:1
                 s1 * 13/16
                 ^ \markup {
                     \column
                         {
-                            \line                                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                {                                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                    \with-color                            %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                        #(x11-color 'blue)                 %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                        {                                  %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                            \fontsize                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                #-6                        %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                \general-align             %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                    #Y                     %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                    #DOWN                  %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                    \note-by-number        %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                        #2                 %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                        #0                 %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                        #1                 %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                            \upright                       %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                {                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                    =                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                    110                    %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                                }                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                        }                                  %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                                }                                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
-                            %%% \line                     %%! CLOCK_TIME_MARKUP:5
-                                %%% {                     %%! CLOCK_TIME_MARKUP:5
-                                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:5
-                                        %%% #-2           %%! CLOCK_TIME_MARKUP:5
-                                        %%% 0'13''        %%! CLOCK_TIME_MARKUP:5
-                                %%% }                     %%! CLOCK_TIME_MARKUP:5
+                            \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                    \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        #(x11-color 'blue)                     %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        {                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                            \fontsize                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                #-6                            %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                \general-align                 %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    #Y                         %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    #DOWN                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    \note-by-number            %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #2                     %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #0                     %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #1                     %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                            \upright                           %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                {                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    =                          %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    110                        %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                            %%% \line                                              %%! CLOCK_TIME_MARKUP:5
+                                %%% {                                              %%! CLOCK_TIME_MARKUP:5
+                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP:5
+                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP:5
+                                        %%% 0'13''                                 %%! CLOCK_TIME_MARKUP:5
+                                %%% }                                              %%! CLOCK_TIME_MARKUP:5
                         }
                     }
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:2
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:2
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:2
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:2
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:2
-                            %%% [A.1]                         %%! STAGE_NUMBER_MARKUP:2
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:2
-                %%% ^ \markup {                        %%! EXPLICIT_METRONOME_MARK:4
-                %%%     \fontsize                      %%! EXPLICIT_METRONOME_MARK:4
-                %%%         #-6                        %%! EXPLICIT_METRONOME_MARK:4
-                %%%         \general-align             %%! EXPLICIT_METRONOME_MARK:4
-                %%%             #Y                     %%! EXPLICIT_METRONOME_MARK:4
-                %%%             #DOWN                  %%! EXPLICIT_METRONOME_MARK:4
-                %%%             \note-by-number        %%! EXPLICIT_METRONOME_MARK:4
-                %%%                 #2                 %%! EXPLICIT_METRONOME_MARK:4
-                %%%                 #0                 %%! EXPLICIT_METRONOME_MARK:4
-                %%%                 #1                 %%! EXPLICIT_METRONOME_MARK:4
-                %%%     \upright                       %%! EXPLICIT_METRONOME_MARK:4
-                %%%         {                          %%! EXPLICIT_METRONOME_MARK:4
-                %%%             =                      %%! EXPLICIT_METRONOME_MARK:4
-                %%%             110                    %%! EXPLICIT_METRONOME_MARK:4
-                %%%         }                          %%! EXPLICIT_METRONOME_MARK:4
-                %%%     }                              %%! EXPLICIT_METRONOME_MARK:4
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:2
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:2
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:2
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:2
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:2
+                            %%% [A.1]                                              %%! STAGE_NUMBER_MARKUP:2
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:2
+                %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK:4
+                %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK:4
+                %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK:4
+                %%%         \general-align                                     %%! EXPLICIT_METRONOME_MARK:4
+                %%%             #Y                                             %%! EXPLICIT_METRONOME_MARK:4
+                %%%             #DOWN                                          %%! EXPLICIT_METRONOME_MARK:4
+                %%%             \note-by-number                                %%! EXPLICIT_METRONOME_MARK:4
+                %%%                 #2                                         %%! EXPLICIT_METRONOME_MARK:4
+                %%%                 #0                                         %%! EXPLICIT_METRONOME_MARK:4
+                %%%                 #1                                         %%! EXPLICIT_METRONOME_MARK:4
+                %%%     \upright                                               %%! EXPLICIT_METRONOME_MARK:4
+                %%%         {                                                  %%! EXPLICIT_METRONOME_MARK:4
+                %%%             =                                              %%! EXPLICIT_METRONOME_MARK:4
+                %%%             110                                            %%! EXPLICIT_METRONOME_MARK:4
+                %%%         }                                                  %%! EXPLICIT_METRONOME_MARK:4
+                %%%     }                                                      %%! EXPLICIT_METRONOME_MARK:4
                 
                 %%% GlobalSkips [measure 3] %%%
                 \time 5/22
                 s1 * 5/22
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'14''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'14''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 4] %%%
                 \time 8/16
                 s1 * 1/2
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'15''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'15''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 5] %%%
                 \time 7/20
                 s1 * 7/20
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'16''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'16''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 6] %%%
                 \time 6/22
                 s1 * 3/11
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'17''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'17''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 7] %%%
                 \time 3/20
                 s1 * 3/20
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'17''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'17''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 8] %%%
                 \time 11/16
                 s1 * 11/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'18''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'18''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 9] %%%
                 \time 4/22
                 s1 * 2/11
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'19''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'19''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 10] %%%
                 \time 10/16
                 s1 * 5/8
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'19''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'19''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 11] %%%
                 \time 4/16
                 s1 * 1/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'21''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'21''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 12] %%%
                 \time 7/22
                 s1 * 7/22
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'21''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'21''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 13] %%%
                 \time 4/16
                 s1 * 1/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'22''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'22''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 14] %%%
                 \time 3/7
                 s1 * 3/7
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'23''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.2]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'23''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.2]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 15] %%%
                 \time 11/16
                 s1 * 11/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'24''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.3]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'24''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.3]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 16] %%%
                 \time 4/22
                 s1 * 2/11
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'25''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'25''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 17] %%%
                 \time 10/16
                 s1 * 5/8
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'25''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'25''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 18] %%%
                 \time 4/18
                 s1 * 2/9
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'27''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'27''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 19] %%%
                 \time 2/4
                 s1 * 1/2
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'27''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.4]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'27''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.4]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 20] %%%
                 \time 7/22
                 s1 * 7/22
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'28''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.5]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'28''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.5]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 21] %%%
                 \time 5/18
                 s1 * 5/18
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'29''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.6]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'29''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.6]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 22] %%%
                 \time 12/16
                 s1 * 3/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'30''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'30''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 23] %%%
                 \time 3/18
                 s1 * 1/6
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'31''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'31''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 24] %%%
                 \time 3/5
                 s1 * 3/5
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'32''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.7]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'32''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.7]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 25] %%%
                 \time 8/16
                 s1 * 1/2
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'33''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.8]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'33''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.8]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 26] %%%
                 \time 3/20
                 s1 * 3/20
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'34''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'34''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 27] %%%
                 \time 4/7
                 s1 * 4/7
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'34''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.9]                         %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'34''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.9]                                              %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 28] %%%
                 \time 6/18
                 s1 * 1/3
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'36''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.10]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'36''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.10]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 29] %%%
                 \time 7/20
                 s1 * 7/20
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'36''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'36''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 30] %%%
                 \time 10/16
                 s1 * 5/8
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'37''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'37''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 31] %%%
                 \time 5/26
                 s1 * 5/26
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'38''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'38''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 32] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'39''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.11]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'39''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.11]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 33] %%%
                 \time 9/16
                 s1 * 9/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'41''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.12]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'41''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.12]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 34] %%%
                 \time 3/16
                 s1 * 3/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'42''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'42''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 35] %%%
                 \time 2/5
                 s1 * 2/5
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'42''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.13]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'42''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.13]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 36] %%%
                 \time 8/26
                 s1 * 4/13
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'43''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.14]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'43''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.14]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 37] %%%
                 \time 5/16
                 s1 * 5/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'44''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'44''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 38] %%%
                 \time 11/16
                 s1 * 11/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'44''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.15]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'44''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.15]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 39] %%%
                 \time 4/16
                 s1 * 1/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'46''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'46''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 40] %%%
                 \time 3/5
                 s1 * 3/5
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'46''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.16]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'46''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.16]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 41] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'48''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.17]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'48''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.17]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 42] %%%
                 \time 2/7
                 s1 * 2/7
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'50''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'50''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 43] %%%
                 \time 9/16
                 s1 * 9/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'51''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.18]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'51''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.18]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 44] %%%
                 \time 5/18
                 s1 * 5/18
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'52''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'52''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 45] %%%
                 \time 2/5
                 s1 * 2/5
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'52''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.19]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'52''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.19]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 46] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'53''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'53''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 47] %%%
                 \time 5/7
                 s1 * 5/7
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'55''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'55''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 48] %%%
                 \time 2/7
                 s1 * 2/7
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'56''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'56''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 49] %%%
                 \time 4/16
                 s1 * 1/4
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'57''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.20]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'57''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.20]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 50] %%%
                 \time 4/18
                 s1 * 2/9
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 0'58''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 0'58''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 51] %%%
                 \time 11/16
                 s1 * 11/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:2
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:2
-                        %%% 0'58''        %%! CLOCK_TIME_MARKUP:2
-                    %%% }                 %%! CLOCK_TIME_MARKUP:2
-                %%% - \markup {                               %%! STAGE_NUMBER_MARKUP:1
-                    %%% \fontsize                             %%! STAGE_NUMBER_MARKUP:1
-                        %%% #-3                               %%! STAGE_NUMBER_MARKUP:1
-                        %%% \with-color                       %%! STAGE_NUMBER_MARKUP:1
-                            %%% #(x11-color 'DarkCyan)        %%! STAGE_NUMBER_MARKUP:1
-                            %%% [A.21]                        %%! STAGE_NUMBER_MARKUP:1
-                    %%% }                                     %%! STAGE_NUMBER_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:2
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:2
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:2
+                        %%% 0'58''                                                 %%! CLOCK_TIME_MARKUP:2
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:2
+                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP:1
+                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP:1
+                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP:1
+                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP:1
+                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP:1
+                            %%% [A.21]                                             %%! STAGE_NUMBER_MARKUP:1
+                    %%% }                                                          %%! STAGE_NUMBER_MARKUP:1
                 
                 %%% GlobalSkips [measure 52] %%%
                 \time 4/22
                 s1 * 2/11
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 1'00''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 1'00''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 53] %%%
                 \time 10/16
                 s1 * 5/8
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 1'00''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 1'00''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 54] %%%
                 \time 5/16
                 s1 * 5/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 1'01''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 1'01''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 55] %%%
                 \time 7/22
                 s1 * 7/22
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 1'02''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 1'02''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
                 %%% GlobalSkips [measure 56] %%%
                 \time 3/16
                 s1 * 3/16
-                %%% ^ \markup {           %%! CLOCK_TIME_MARKUP:1
-                    %%% \fontsize         %%! CLOCK_TIME_MARKUP:1
-                        %%% #-2           %%! CLOCK_TIME_MARKUP:1
-                        %%% 1'03''        %%! CLOCK_TIME_MARKUP:1
-                    %%% }                 %%! CLOCK_TIME_MARKUP:1
+                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP:1
+                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP:1
+                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP:1
+                        %%% 1'03''                                                 %%! CLOCK_TIME_MARKUP:1
+                    %%% }                                                          %%! CLOCK_TIME_MARKUP:1
                 
             }
         >>
@@ -712,111 +712,111 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
-                    \set ClarinetMusicStaff.instrumentName = \markup {             %%! REAPPLIED_INSTRUMENT:4
-                        \hcenter-in                                                %%! REAPPLIED_INSTRUMENT:4
-                            #16                                                    %%! REAPPLIED_INSTRUMENT:4
-                            \center-column                                         %%! REAPPLIED_INSTRUMENT:4
-                                {                                                  %%! REAPPLIED_INSTRUMENT:4
-                                    Bass                                           %%! REAPPLIED_INSTRUMENT:4
-                                    clarinet                                       %%! REAPPLIED_INSTRUMENT:4
-                                }                                                  %%! REAPPLIED_INSTRUMENT:4
-                        }                                                          %%! REAPPLIED_INSTRUMENT:4
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {        %%! REAPPLIED_INSTRUMENT:4
-                        \hcenter-in                                                %%! REAPPLIED_INSTRUMENT:4
-                            #10                                                    %%! REAPPLIED_INSTRUMENT:4
-                            \center-column                                         %%! REAPPLIED_INSTRUMENT:4
-                                {                                                  %%! REAPPLIED_INSTRUMENT:4
-                                    Bass                                           %%! REAPPLIED_INSTRUMENT:4
-                                    cl.                                            %%! REAPPLIED_INSTRUMENT:4
-                                }                                                  %%! REAPPLIED_INSTRUMENT:4
-                        }                                                          %%! REAPPLIED_INSTRUMENT:4
-                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4)        %%! REAPPLIED_INSTRUMENT_COLOR:1
+                    \set ClarinetMusicStaff.instrumentName = \markup {         %%! REAPPLIED_INSTRUMENT:4
+                        \hcenter-in                                            %%! REAPPLIED_INSTRUMENT:4
+                            #16                                                %%! REAPPLIED_INSTRUMENT:4
+                            \center-column                                     %%! REAPPLIED_INSTRUMENT:4
+                                {                                              %%! REAPPLIED_INSTRUMENT:4
+                                    Bass                                       %%! REAPPLIED_INSTRUMENT:4
+                                    clarinet                                   %%! REAPPLIED_INSTRUMENT:4
+                                }                                              %%! REAPPLIED_INSTRUMENT:4
+                        }                                                      %%! REAPPLIED_INSTRUMENT:4
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {    %%! REAPPLIED_INSTRUMENT:4
+                        \hcenter-in                                            %%! REAPPLIED_INSTRUMENT:4
+                            #10                                                %%! REAPPLIED_INSTRUMENT:4
+                            \center-column                                     %%! REAPPLIED_INSTRUMENT:4
+                                {                                              %%! REAPPLIED_INSTRUMENT:4
+                                    Bass                                       %%! REAPPLIED_INSTRUMENT:4
+                                    cl.                                        %%! REAPPLIED_INSTRUMENT:4
+                                }                                              %%! REAPPLIED_INSTRUMENT:4
+                        }                                                      %%! REAPPLIED_INSTRUMENT:4
+                    \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %%! REAPPLIED_INSTRUMENT_COLOR:1
                     f''8.
                     \ppp
                     ^ \markup {
                         \column
                             {
-                                %%% \line                                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%     {                                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%         \vcenter                              %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%             (“BassClarinet”                   %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%         \vcenter                              %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%             \hcenter-in                       %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                 #16                           %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                 \center-column                %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                     {                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                         Bass                  %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                         clarinet              %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                     }                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%         \concat                               %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%             {                                 %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                 \vcenter                      %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                     \hcenter-in               %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                         #10                   %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                         \center-column        %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                             {                 %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                                 Bass          %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                                 cl.           %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                             }                 %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                 \vcenter                      %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%                     )                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%             }                                 %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                %%%     }                                         %%! REAPPLIED_INSTRUMENT_ALERT:2
-                                \line                                                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                    {                                                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                        \with-color                                   %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                            #(x11-color 'green4)                      %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                            {                                         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                \vcenter                              %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    (“BassClarinet”                   %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                \vcenter                              %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    \hcenter-in                       %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        #16                           %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        \center-column                %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            {                         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                Bass                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                clarinet              %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            }                         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                \concat                               %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    {                                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        \vcenter                      %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            \hcenter-in               %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                #10                   %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                \center-column        %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                    {                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                        Bass          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                        cl.           %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                                    }                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                        \vcenter                      %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                            )                         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                    }                                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                            }                                         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                    }                                                 %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                %%% \line                                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%     {                                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%         \vcenter                           %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%             (“BassClarinet”                %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%         \vcenter                           %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%             \hcenter-in                    %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                 #16                        %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                 \center-column             %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                     {                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                         Bass               %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                         clarinet           %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                     }                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%         \concat                            %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%             {                              %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                 \vcenter                   %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                     \hcenter-in            %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                         #10                %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                         \center-column     %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                             {              %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                                 Bass       %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                                 cl.        %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                             }              %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                 \vcenter                   %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%                     )                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%             }                              %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                %%%     }                                      %%! REAPPLIED_INSTRUMENT_ALERT:2
+                                \line                                          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                    {                                          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                        \with-color                            %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            #(x11-color 'green4)               %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            {                                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                \vcenter                       %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    (“BassClarinet”            %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                \vcenter                       %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \hcenter-in                %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        #16                    %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \center-column         %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            {                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                Bass           %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                clarinet       %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            }                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                \concat                        %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    {                          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \vcenter               %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \hcenter-in        %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                #10            %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                \center-column %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    {          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        Bass   %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                        cl.    %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                    }          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \vcenter               %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            )                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    }                          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                            }                                  %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                    }                                          %%! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                 \line
                                     {
                                         @
                                     }
                             }
                         }
-                    \set ClarinetMusicStaff.instrumentName = \markup {             %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                        \hcenter-in                                                %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                            #16                                                    %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                            \center-column                                         %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                {                                                  %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                    Bass                                           %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                    clarinet                                       %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                }                                                  %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                        }                                                          %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {        %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                        \hcenter-in                                                %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                            #10                                                    %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                            \center-column                                         %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                {                                                  %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                    Bass                                           %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                    cl.                                            %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                                }                                                  %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                        }                                                          %%! REAPPLIED_REDRAW_INSTRUMENT:6
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab)        %%! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
+                    \set ClarinetMusicStaff.instrumentName = \markup {         %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                        \hcenter-in                                            %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                            #16                                                %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \center-column                                     %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                {                                              %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Bass                                       %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    clarinet                                   %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                }                                              %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                        }                                                      %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {    %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                        \hcenter-in                                            %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                            #10                                                %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \center-column                                     %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                {                                              %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Bass                                       %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    cl.                                        %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                                }                                              %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                        }                                                      %%! REAPPLIED_REDRAW_INSTRUMENT:6
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %%! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
