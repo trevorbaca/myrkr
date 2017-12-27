@@ -18,22 +18,9 @@
                 \mark #2
                 \bar "" %! EMPTY_START_BAR:1
                 s1 * 13/16
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
-                        %%% #-2 %! CLOCK_TIME_MARKUP:5
-                        %%% 1'03'' %! CLOCK_TIME_MARKUP:5
-                    %%% } %! CLOCK_TIME_MARKUP:5
-                - \markup {
+                ^ \markup {
                     \column
                         {
-                            %%% \line %! STAGE_NUMBER_MARKUP:2
-                                %%% { %! STAGE_NUMBER_MARKUP:2
-                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
-                                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
-                                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
-                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
-                                            %%% [B.1] %! STAGE_NUMBER_MARKUP:2
-                                %%% } %! STAGE_NUMBER_MARKUP:2
                             \line %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
                                 { %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
                                     \with-color %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
@@ -55,8 +42,21 @@
                                                 } %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
                                         } %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
                                 } %! REAPPLIED_METRONOME_MARK_WITH_COLOR:3
+                            %%% \line %! CLOCK_TIME_MARKUP:5
+                                %%% { %! CLOCK_TIME_MARKUP:5
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:5
+                                        %%% 1'03'' %! CLOCK_TIME_MARKUP:5
+                                %%% } %! CLOCK_TIME_MARKUP:5
                         }
                     }
+                %%% - \markup { %! STAGE_NUMBER_MARKUP:2
+                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                            %%% [B.1] %! STAGE_NUMBER_MARKUP:2
+                    %%% } %! STAGE_NUMBER_MARKUP:2
                 %%% ^ \markup { %! REAPPLIED_METRONOME_MARK:4
                 %%%     \fontsize %! REAPPLIED_METRONOME_MARK:4
                 %%%         #-6 %! REAPPLIED_METRONOME_MARK:4
