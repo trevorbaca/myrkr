@@ -28,24 +28,24 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff" {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice" {
-                    \set ClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \center-column
-                                {
-                                    Bass
-                                    cl.
-                                }
-                        }
+                    \set ClarinetMusicStaff.instrumentName = \markup {      %! ST1
+                        \hcenter-in                                         %! ST1
+                            #16                                             %! ST1
+                            \center-column                                  %! ST1
+                                {                                           %! ST1
+                                    Bass                                    %! ST1
+                                    clarinet                                %! ST1
+                                }                                           %! ST1
+                        }                                                   %! ST1
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! ST1
+                        \hcenter-in                                         %! ST1
+                            #10                                             %! ST1
+                            \center-column                                  %! ST1
+                                {                                           %! ST1
+                                    Bass                                    %! ST1
+                                    cl.                                     %! ST1
+                                }                                           %! ST1
+                        }                                                   %! ST1
                     s1
                 }
             }
