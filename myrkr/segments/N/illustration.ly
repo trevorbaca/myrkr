@@ -46,9 +46,10 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \mark #14                                                                %! SM9
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 \startTextSpan
                 ^ \markup {
@@ -93,7 +94,8 @@
                     }
                 
                 % GlobalSkips [measure 385]                                              %! SM4
-                \time 7/4                                                                %! SM1
+                \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -102,7 +104,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 386]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -111,7 +114,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 387]                                              %! SM4
-                \time 12/5                                                               %! SM1
+                \time 12/5                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 12/5
                 ^ \markup {
                     \column
@@ -134,7 +138,8 @@
                     }
                 
                 % GlobalSkips [measure 388]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
                     \column
@@ -157,7 +162,8 @@
                     }
                 
                 % GlobalSkips [measure 389]                                              %! SM4
-                \time 5/4                                                                %! SM1
+                \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -166,7 +172,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 390]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -175,6 +182,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 391]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
                     \column
@@ -197,7 +205,8 @@
                     }
                 
                 % GlobalSkips [measure 392]                                              %! SM4
-                \time 8/4                                                                %! SM1
+                \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -206,7 +215,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 393]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -215,7 +225,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 394]                                              %! SM4
-                \time 4/3                                                                %! SM1
+                \time 4/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 4/3
                 ^ \markup {
                     \column
@@ -238,7 +249,8 @@
                     }
                 
                 % GlobalSkips [measure 395]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
                     \column
@@ -261,6 +273,7 @@
                     }
                 
                 % GlobalSkips [measure 396]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -269,7 +282,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 397]                                              %! SM4
-                \time 7/4                                                                %! SM1
+                \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -278,7 +292,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 398]                                              %! SM4
-                \time 2/3                                                                %! SM1
+                \time 2/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2/3
                 ^ \markup {
                     \column
@@ -301,7 +316,8 @@
                     }
                 
                 % GlobalSkips [measure 399]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
                     \column
@@ -324,6 +340,7 @@
                     }
                 
                 % GlobalSkips [measure 400]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -332,7 +349,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 401]                                              %! SM4
-                \time 5/4                                                                %! SM1
+                \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -341,7 +359,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 402]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -350,6 +369,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 403]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -358,7 +378,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 404]                                              %! SM4
-                \time 7/4                                                                %! SM1
+                \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -367,7 +388,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 405]                                              %! SM4
-                \time 12/5                                                               %! SM1
+                \time 12/5                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 12/5
                 ^ \markup {
                     \column
@@ -390,7 +412,8 @@
                     }
                 
                 % GlobalSkips [measure 406]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 \stopTextSpan
                 ^ \markup {
@@ -451,6 +474,7 @@
                 %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
                 
                 % GlobalSkips [measure 407]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -459,7 +483,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 408]                                              %! SM4
-                \time 5/4                                                                %! SM1
+                \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -468,7 +493,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 409]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -477,6 +503,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 410]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -485,7 +512,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 411]                                              %! SM4
-                \time 8/4                                                                %! SM1
+                \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -494,7 +522,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 412]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -503,6 +532,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 413]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -511,6 +541,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 414]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -519,7 +550,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 415]                                              %! SM4
-                \time 7/4                                                                %! SM1
+                \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -528,7 +560,8 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 416]                                              %! SM4
-                \time 4/4                                                                %! SM1
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -537,6 +570,7 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 417]                                              %! SM4
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
                 %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
