@@ -585,25 +585,25 @@
                                     }                                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                             }
                         }
-                    \set ClarinetMusicStaff.instrumentName = \markup {                   %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        \hcenter-in                                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            #16                                                          %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            \center-column                                               %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                {                                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                    Bass                                                 %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                    clarinet                                             %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                }                                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        }                                                                %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup {              %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        \hcenter-in                                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            #10                                                          %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            \center-column                                               %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                {                                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                    Bass                                                 %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                    cl.                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                }                                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        }                                                                %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
+                    \set ClarinetMusicStaff.instrumentName = \markup {                   %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \hcenter-in                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            #16                                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \center-column                                               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                {                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    Bass                                                 %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    clarinet                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        }                                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    \set ClarinetMusicStaff.shortInstrumentName = \markup {              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \hcenter-in                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            #10                                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \center-column                                               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                {                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    Bass                                                 %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    cl.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        }                                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                 }
                 {
                     
