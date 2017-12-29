@@ -505,7 +505,7 @@
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                     e1
-                    \mp                                                                  %! IC1
+                    \mp                                                                  %! IC
                     ^ \markup {
                         \column
                             {
@@ -591,7 +591,7 @@
                     
                     % ClarinetMusicVoice [measure 232]                                   %! SM4
                     g''2
-                    \ff                                                                  %! IC1
+                    \ff                                                                  %! IC
                     \glissando
                     
                     af''2.
@@ -622,13 +622,13 @@
                     
                     % ClarinetMusicVoice [measure 235]                                   %! SM4
                     e\breve.
-                    \mp                                                                  %! IC1
+                    \mp                                                                  %! IC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 236]                                   %! SM4
                     b''2.
-                    \f                                                                   %! IC1
+                    \f                                                                   %! IC
                     \glissando
                     
                     c'''2
@@ -662,13 +662,13 @@
                     
                     % ClarinetMusicVoice [measure 239]                                   %! SM4
                     e\breve
-                    \mp                                                                  %! IC1
+                    \mp                                                                  %! IC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 240]                                   %! SM4
                     d'''2.
-                    \mf                                                                  %! IC1
+                    \mf                                                                  %! IC
                     \glissando
                     
                     ef'''2
@@ -698,13 +698,13 @@
                     
                     % ClarinetMusicVoice [measure 243]                                   %! SM4
                     e\breve.
-                    \mp                                                                  %! IC1
+                    \mp                                                                  %! IC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 244]                                   %! SM4
                     fs'''2
-                    \mp                                                                  %! IC1
+                    \mp                                                                  %! IC
                     \glissando
                     
                     g'''2.
@@ -742,7 +742,7 @@
                     
                     % ClarinetMusicVoice [measure 248]                                   %! SM4
                     c''4
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                     \glissando
                 }
                 {
