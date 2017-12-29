@@ -271,8 +271,9 @@
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! EXPLICIT_DYNAMIC:SM8
                     ^ \markup {
                         \column
                             {
@@ -373,8 +374,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -387,8 +389,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -401,8 +404,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -415,8 +419,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -429,8 +434,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -443,8 +449,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                 }
@@ -457,8 +464,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     cs1
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! REDUNDANT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     

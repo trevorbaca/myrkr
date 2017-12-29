@@ -101,8 +101,9 @@
                                 }                                                        %! DEFAULT_INSTRUMENT:SM8
                         }                                                                %! DEFAULT_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     e\breve.
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! EXPLICIT_DYNAMIC:SM8
                     ^ \markup {
                         \column
                             {

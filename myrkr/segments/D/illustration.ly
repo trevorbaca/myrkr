@@ -191,6 +191,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [D.4]                                    %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -635,8 +643,9 @@
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     b'4
-                    \p                                                                   %! IC
+                    \p                                                                   %! EXPLICIT_DYNAMIC:SM8
                     ^ \markup {
                         \column
                             {
@@ -859,8 +868,9 @@
                 {
                     
                     % ClarinetMusicVoice [measure 114]                                   %! SM4
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     f1
-                    \mp                                                                  %! IC
+                    \mp                                                                  %! EXPLICIT_DYNAMIC:SM8
                 }
                 {
                     
@@ -870,8 +880,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     b'8
-                    \mp                                                                  %! IC
+                    \mp                                                                  %! REDUNDANT_DYNAMIC:SM8
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -986,8 +997,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     cs''4
-                    \mf                                                                  %! IC
+                    \mf                                                                  %! EXPLICIT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     
@@ -1128,8 +1140,9 @@
                 {
                     
                     % ClarinetMusicVoice [measure 120]                                   %! SM4
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     f1
-                    \mp                                                                  %! IC
+                    \mp                                                                  %! EXPLICIT_DYNAMIC:SM8
                 }
                 {
                     
@@ -1139,8 +1152,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     cs''8
-                    \f                                                                   %! IC
+                    \f                                                                   %! EXPLICIT_DYNAMIC:SM8
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -1248,8 +1262,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     d''4
-                    \ff                                                                  %! IC
+                    \ff                                                                  %! EXPLICIT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     ^ \markup {
@@ -1383,8 +1398,9 @@
                 {
                     
                     % ClarinetMusicVoice [measure 126]                                   %! SM4
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     f1
-                    \mp                                                                  %! IC
+                    \mp                                                                  %! EXPLICIT_DYNAMIC:SM8
                 }
                 {
                     
@@ -1394,8 +1410,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     d''8
-                    \fff                                                                 %! IC
+                    \fff                                                                 %! EXPLICIT_DYNAMIC:SM8
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -1496,8 +1513,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     ds''4
-                    \ffff                                                                %! IC
+                    \ffff                                                                %! EXPLICIT_DYNAMIC:SM8
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     ^ \markup {
@@ -1631,14 +1649,16 @@
                 {
                     
                     % ClarinetMusicVoice [measure 132]                                   %! SM4
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     f1
-                    \mp                                                                  %! IC
+                    \mp                                                                  %! EXPLICIT_DYNAMIC:SM8
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 133]                                   %! SM4
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     e'''2
-                    \pppp                                                                %! IC
+                    \pppp                                                                %! EXPLICIT_DYNAMIC:SM8
                     \glissando
                     
                     f'''2
@@ -1672,8 +1692,9 @@
                     \once \override Dots.color = #red
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
+                    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     ds''8
-                    \ffff                                                                %! IC
+                    \ffff                                                                %! EXPLICIT_DYNAMIC:SM8
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
