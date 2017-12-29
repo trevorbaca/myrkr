@@ -573,7 +573,7 @@
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                     fs'''2
-                    \p                                                                   %! IC1
+                    \p                                                                   %! IC
                     \glissando
                     ^ \markup {
                         \column
@@ -684,18 +684,18 @@
                     
                     % ClarinetMusicVoice [measure 387]                                   %! SM4
                     d\breve.
-                    \ppppp                                                               %! IC1
-                    ^ \markup {                                                          %! IC1
-                        \whiteout                                                        %! IC1
-                            \upright                                                     %! IC1
-                                “U”                                                      %! IC1
-                        }                                                                %! IC1
+                    \ppppp                                                               %! IC
+                    ^ \markup {                                                          %! IC
+                        \whiteout                                                        %! IC
+                            \upright                                                     %! IC
+                                “U”                                                      %! IC
+                        }                                                                %! IC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 388]                                   %! SM4
                     g'''2
-                    \pp                                                                  %! IC1
+                    \pp                                                                  %! IC
                     \glissando
                     
                     fs'''2
@@ -740,7 +740,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     fs'''2
-                    \ppp                                                                 %! IC1
+                    \ppp                                                                 %! IC
                     \glissando
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -773,18 +773,18 @@
                     
                     % ClarinetMusicVoice [measure 394]                                   %! SM4
                     d\breve
-                    \ppppp                                                               %! IC1
-                    ^ \markup {                                                          %! IC1
-                        \whiteout                                                        %! IC1
-                            \upright                                                     %! IC1
-                                “A”                                                      %! IC1
-                        }                                                                %! IC1
+                    \ppppp                                                               %! IC
+                    ^ \markup {                                                          %! IC
+                        \whiteout                                                        %! IC
+                            \upright                                                     %! IC
+                                “A”                                                      %! IC
+                        }                                                                %! IC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 395]                                   %! SM4
                     es'''2.
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                     \glissando
                     
                     fs'''2
@@ -818,13 +818,13 @@
                     
                     % ClarinetMusicVoice [measure 398]                                   %! SM4
                     cs'1
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 399]                                   %! SM4
                     fs'''2.
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     \glissando
                     
                     g'''2
@@ -888,13 +888,13 @@
                     
                     % ClarinetMusicVoice [measure 405]                                   %! SM4
                     cs'\breve.
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 406]                                   %! SM4
                     g'''2
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     \glissando
                     
                     fs'''2.

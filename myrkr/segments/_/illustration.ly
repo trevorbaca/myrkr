@@ -101,16 +101,16 @@
                         }                                                                %! DEFAULT_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
                     e\breve.
-                    \fff                                                                 %! IC1
+                    \fff                                                                 %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                overblow                                 %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                overblow                                 %! IC
+                                    }                                                    %! IC
                                 %%% \line                                                %! DEFAULT_INSTRUMENT_ALERT:SM10
                                 %%%     {                                                %! DEFAULT_INSTRUMENT_ALERT:SM10
                                 %%%         \vcenter                                     %! DEFAULT_INSTRUMENT_ALERT:SM10

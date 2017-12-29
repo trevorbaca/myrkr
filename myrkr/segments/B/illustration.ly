@@ -378,7 +378,7 @@
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                     d''8.
-                    \p                                                                   %! IC1
+                    \p                                                                   %! IC
                     ^ \markup {
                         \column
                             {
@@ -855,7 +855,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     cs''2
-                    \mf                                                                  %! IC1
+                    \mf                                                                  %! IC
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     ^ \markup {
@@ -924,7 +924,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d''8.
-                    \p                                                                   %! IC1
+                    \p                                                                   %! IC
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -1012,7 +1012,7 @@
                     
                     % ClarinetMusicVoice [measure 70]                                    %! SM4
                     cs''2
-                    \mf                                                                  %! IC1
+                    \mf                                                                  %! IC
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -1026,7 +1026,7 @@
                     
                     % ClarinetMusicVoice [measure 71]                                    %! SM4
                     b'2.
-                    \mf                                                                  %! IC1
+                    \mf                                                                  %! IC
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
@@ -1045,7 +1045,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d''4
-                    \p                                                                   %! IC1
+                    \p                                                                   %! IC
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     ^ \markup {
@@ -1125,7 +1125,7 @@
                     
                     % ClarinetMusicVoice [measure 74]                                    %! SM4
                     b'2
-                    \f                                                                   %! IC1
+                    \f                                                                   %! IC
                 }
                 {
                     
@@ -1136,7 +1136,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     bf'2.
-                    \f                                                                   %! IC1
+                    \f                                                                   %! IC
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     

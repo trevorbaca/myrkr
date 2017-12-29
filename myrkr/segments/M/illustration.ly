@@ -512,7 +512,7 @@
                         }                                                                %! REAPPLIED_INSTRUMENT:SM8
                     \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                     ef'8
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                     [
                     ^ \markup {
                         \column
@@ -704,7 +704,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d'8.
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -798,7 +798,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     cs'16
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                     [
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
@@ -982,7 +982,7 @@
                     
                     % ClarinetMusicVoice [measure 373]                                   %! SM4
                     cs'\breve.
-                    \pppp                                                                %! IC1
+                    \pppp                                                                %! IC
                 }
                 {
                     
@@ -999,16 +999,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “A”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “A”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1025,16 +1025,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve.
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “U”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “U”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1052,16 +1052,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “I”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “I”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1079,16 +1079,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve.
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “U”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “U”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1105,16 +1105,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d1
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “A”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “A”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1132,16 +1132,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “O”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “O”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1159,16 +1159,16 @@
                     \once \override NoteHead.color = #red
                     \once \override Stem.color = #red
                     d\breve
-                    \ppppp                                                               %! IC1
+                    \ppppp                                                               %! IC
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC1
-                                    {                                                    %! IC1
-                                        \whiteout                                        %! IC1
-                                            \upright                                     %! IC1
-                                                “I”                                      %! IC1
-                                    }                                                    %! IC1
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                “I”                                      %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
@@ -1186,7 +1186,7 @@
                     
                     % ClarinetMusicVoice [measure 383]                                   %! SM4
                     fs'1
-                    \fff                                                                 %! IC1
+                    \fff                                                                 %! IC
                     ^ \markup {
                         \override
                             #'(circle-padding . 0.25)
