@@ -277,12 +277,6 @@
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC
-                                    {                                                    %! IC
-                                        \whiteout                                        %! IC
-                                            \upright                                     %! IC
-                                                overblow                                 %! IC
-                                    }                                                    %! IC
                                 %%% \line                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                 %%%     {                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                 %%%         \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -339,6 +333,12 @@
                                                     }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }                                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                overblow                                 %! IC
+                                    }                                                    %! IC
                                 \line                                                    %! SM14
                                     {                                                    %! SM14
                                         @                                                %! SM14
