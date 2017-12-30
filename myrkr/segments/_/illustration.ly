@@ -107,12 +107,6 @@
                     ^ \markup {
                         \column
                             {
-                                \line                                                    %! IC
-                                    {                                                    %! IC
-                                        \whiteout                                        %! IC
-                                            \upright                                     %! IC
-                                                overblow                                 %! IC
-                                    }                                                    %! IC
                                 %%% \line                                                %! DEFAULT_INSTRUMENT_ALERT:SM10
                                 %%%     {                                                %! DEFAULT_INSTRUMENT_ALERT:SM10
                                 %%%         \vcenter                                     %! DEFAULT_INSTRUMENT_ALERT:SM10
@@ -169,6 +163,12 @@
                                                     }                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                            %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }                                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                \line                                                    %! IC
+                                    {                                                    %! IC
+                                        \whiteout                                        %! IC
+                                            \upright                                     %! IC
+                                                overblow                                 %! IC
+                                    }                                                    %! IC
                             }
                         }
                     \set ClarinetMusicStaff.instrumentName = \markup {                   %! REDRAWN_DEFAULT_INSTRUMENT:SM8
