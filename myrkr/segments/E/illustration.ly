@@ -74,7 +74,7 @@
                 %%%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27
                 %%%             55                                                       %! REAPPLIED_METRONOME_MARK:SM27
                 %%%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27
+                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 143]                                              %! SM4
                 \time 11/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -324,7 +324,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             110                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 156]                                              %! SM4
                 \time 4/16                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -904,31 +904,31 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     d'''2.
                     \pp                                                                  %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     ef'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     d'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 153]                                   %! SM4
                     cs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     d'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 154]                                   %! SM4
                     ef'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     d'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red

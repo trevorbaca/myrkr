@@ -74,7 +74,7 @@
                 %%%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27
                 %%%             44                                                       %! REAPPLIED_METRONOME_MARK:SM27
                 %%%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27
+                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 177]                                              %! SM4
                 \time 2/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -97,31 +97,31 @@
                 %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 179]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \large
                         \upright
                             accel.
                     \hspace
                         #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 4/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 4/3
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -214,7 +214,7 @@
                 \time 10/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/8
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -270,7 +270,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             110                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 186]                                              %! SM4
                 \time 4/18                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1051,25 +1051,25 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     d'4
                     \pppp                                                                %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 181]                                   %! SM4
                     e'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 182]                                   %! SM4
                     f'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 183]                                   %! SM4
                     g'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
@@ -1554,31 +1554,31 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     a'4
                     \pppp                                                                %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 197]                                   %! SM4
                     b'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 198]                                   %! SM4
                     c''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 199]                                   %! SM4
                     d''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 200]                                   %! SM4
                     e''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
@@ -2304,19 +2304,19 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                     d'4
                     \pppp                                                                %! REDUNDANT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 228]                                   %! SM4
                     f'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 229]                                   %! SM4
                     a'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
