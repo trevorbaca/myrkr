@@ -55,14 +55,14 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.1]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.1]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
                             \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -92,12 +92,12 @@
                                             \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                 accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             11'46''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             11'46''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -105,21 +105,21 @@
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         11'50''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         11'50''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 386]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         11'58''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         11'58''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 387]                                              %! SM4
                 \time 12/5                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -128,20 +128,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.2]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             12'02''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.2]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'02''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -152,20 +152,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.3]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             12'12''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.3]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'12''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -173,21 +173,21 @@
                 \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'17''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'17''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 390]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'22''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'22''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 391]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -195,20 +195,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.4]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             12'27''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.4]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'27''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -216,21 +216,21 @@
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'31''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'31''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 393]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'40''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'40''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 394]                                              %! SM4
                 \time 4/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -239,20 +239,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.5]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             12'44''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.5]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'44''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -263,41 +263,41 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.6]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             12'50''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.6]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'50''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
                 % GlobalSkips [measure 396]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'54''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'54''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 397]                                              %! SM4
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         12'59''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         12'59''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 398]                                              %! SM4
                 \time 2/3                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -306,20 +306,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.7]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             13'06''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.7]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             13'06''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -330,70 +330,70 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.8]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             13'09''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.8]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             13'09''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
                 % GlobalSkips [measure 400]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'13''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'13''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 401]                                              %! SM4
                 \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'18''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'18''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 402]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'23''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'23''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 403]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'28''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'28''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 404]                                              %! SM4
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'32''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'32''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 405]                                              %! SM4
                 \time 12/5                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -402,20 +402,20 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.9]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             13'40''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.9]                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             13'40''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -427,14 +427,14 @@
                 ^ \markup {
                     \column
                         {
-                            %%% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %%%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             #-3                                          %! STAGE_NUMBER_MARKUP:SM3
-                            %%%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%                 [N.10]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%                 [N.10]                                       %! STAGE_NUMBER_MARKUP:SM3
+                        %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
                             \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -456,12 +456,12 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                            %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
-                            %%%             #-2                                          %! CLOCK_TIME_MARKUP:SM28
-                            %%%             13'50''                                      %! CLOCK_TIME_MARKUP:SM28
-                            %%%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             13'50''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27
@@ -484,107 +484,107 @@
                 % GlobalSkips [measure 407]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'52''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'52''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 408]                                              %! SM4
                 \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'54''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'54''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 409]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'57''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'57''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 410]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         13'59''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         13'59''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 411]                                              %! SM4
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'02''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'02''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 412]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'06''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'06''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 413]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'08''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'08''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 414]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'10''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'10''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 415]                                              %! SM4
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'12''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'12''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 416]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'16''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'16''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 
                 % GlobalSkips [measure 417]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                %%% ^ \markup {                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%     \fontsize                                                        %! CLOCK_TIME_MARKUP:SM28
-                %%%         #-2                                                          %! CLOCK_TIME_MARKUP:SM28
-                %%%         14'18''                                                      %! CLOCK_TIME_MARKUP:SM28
-                %%%     }                                                                %! CLOCK_TIME_MARKUP:SM28
+            %%% ^ \markup {                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%     \fontsize                                                            %! CLOCK_TIME_MARKUP:SM28
+            %%%         #-2                                                              %! CLOCK_TIME_MARKUP:SM28
+            %%%         14'18''                                                          %! CLOCK_TIME_MARKUP:SM28
+            %%%     }                                                                    %! CLOCK_TIME_MARKUP:SM28
                 \override Score.BarLine.transparent = ##f                                %! SM5
                 \bar "|."                                                                %! SM5
                 
