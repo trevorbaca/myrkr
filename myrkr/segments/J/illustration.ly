@@ -74,7 +74,7 @@
                 %%%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27
                 %%%             110                                                      %! REAPPLIED_METRONOME_MARK:SM27
                 %%%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27
+                %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 278]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -558,7 +558,7 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     d'4
                     \pppp                                                                %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     ^ \markup {
                         \column
                             {
@@ -644,43 +644,43 @@
                     
                     % ClarinetMusicVoice [measure 278]                                   %! SM4
                     f'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 279]                                   %! SM4
                     a'4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 280]                                   %! SM4
                     c''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 281]                                   %! SM4
                     e''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 282]                                   %! SM4
                     g''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 283]                                   %! SM4
                     b''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 284]                                   %! SM4
                     d'''4
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     

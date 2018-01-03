@@ -14,12 +14,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 384]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -37,21 +37,21 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \mark #14                                                                %! SM9
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -423,7 +423,7 @@
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -479,7 +479,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             110                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 407]                                              %! SM4
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -617,7 +617,7 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     fs'''2
                     \p                                                                   %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     ^ \markup {
                         \column
                             {
@@ -700,25 +700,25 @@
                     \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                     
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 385]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 386]                                   %! SM4
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2.
                 }
@@ -741,31 +741,31 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     g'''2
                     \pp                                                                  %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 389]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 390]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -787,30 +787,30 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     fs'''2
                     \ppp                                                                 %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     - \tweak color #red                                                  %! SM14
                     ^ \markup { @ }                                                      %! SM14
                     
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 392]                                   %! SM4
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 393]                                   %! SM4
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
                 }
@@ -833,31 +833,31 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     es'''2.
                     \pppp                                                                %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 396]                                   %! SM4
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 397]                                   %! SM4
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
                 }
@@ -875,61 +875,61 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     fs'''2.
                     \ppppp                                                               %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 400]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 401]                                   %! SM4
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 402]                                   %! SM4
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 403]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 404]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
                 }
@@ -947,124 +947,124 @@
                     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     g'''2
                     \ppppp                                                               %! EXPLICIT_DYNAMIC:SM8
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 407]                                   %! SM4
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 408]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 409]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 410]                                   %! SM4
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 411]                                   %! SM4
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 412]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 413]                                   %! SM4
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 414]                                   %! SM4
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 {
                     
                     % ClarinetMusicVoice [measure 415]                                   %! SM4
                     es'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/5 {
                     
                     % ClarinetMusicVoice [measure 416]                                   %! SM4
                     fs'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     es'''2
-                    \glissando
+                    \glissando                                                           %! SC
                 }
                 \times 4/7 {
                     
                     % ClarinetMusicVoice [measure 417]                                   %! SM4
                     fs'''2
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     g'''2.
-                    \glissando
+                    \glissando                                                           %! SC
                     
                     \once \override TextScript.extra-offset = #'(-24 . -4)
                     fs'''2
