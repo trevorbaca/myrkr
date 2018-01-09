@@ -12,7 +12,6 @@
                 
                 % GlobalSkips [measure 1]                                                %! SM4
                 \time 12/5                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
-                \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 12/5
                 ^ \markup {
