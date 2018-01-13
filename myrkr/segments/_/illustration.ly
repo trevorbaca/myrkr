@@ -17,28 +17,28 @@
                 ^ \markup {
                     \column
                         {
-                        %F% \line                                                        %! MEASURE_INDEX_MARKUP:SM31
-                        %F%     {                                                        %! MEASURE_INDEX_MARKUP:SM31
-                        %F%         \fontsize                                            %! MEASURE_INDEX_MARKUP:SM31
-                        %F%             #3                                               %! MEASURE_INDEX_MARKUP:SM31
-                        %F%             \with-color                                      %! MEASURE_INDEX_MARKUP:SM31
-                        %F%                 #(x11-color 'DarkCyan)                       %! MEASURE_INDEX_MARKUP:SM31
-                        %F%                 m0                                           %! MEASURE_INDEX_MARKUP:SM31
-                        %F%     }                                                        %! MEASURE_INDEX_MARKUP:SM31
-                        %F% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %F%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %F%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %F%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
-                        %F%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
-                        %F%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
-                        %F%                 [1]                                          %! STAGE_NUMBER_MARKUP:SM3
-                        %F%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %F% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %F%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %F%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %F%             #3                                               %! CLOCK_TIME_MARKUP:SM28
-                        %F%             0'00''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %F%     }                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %@% \line                                                        %! MEASURE_INDEX_MARKUP:SM31
+                        %@%     {                                                        %! MEASURE_INDEX_MARKUP:SM31
+                        %@%         \fontsize                                            %! MEASURE_INDEX_MARKUP:SM31
+                        %@%             #3                                               %! MEASURE_INDEX_MARKUP:SM31
+                        %@%             \with-color                                      %! MEASURE_INDEX_MARKUP:SM31
+                        %@%                 #(x11-color 'DarkCyan)                       %! MEASURE_INDEX_MARKUP:SM31
+                        %@%                 m0                                           %! MEASURE_INDEX_MARKUP:SM31
+                        %@%     }                                                        %! MEASURE_INDEX_MARKUP:SM31
+                        %@% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %@%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %@%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
+                        %@%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
+                        %@%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
+                        %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
+                        %@%                 [1]                                          %! STAGE_NUMBER_MARKUP:SM3
+                        %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %@%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %@%             #3                                               %! CLOCK_TIME_MARKUP:SM28
+                        %@%             0'00''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 \override Score.BarLine.transparent = ##f                                %! SM5
@@ -77,32 +77,32 @@
                     ^ \markup {
                         \column
                             {
-                            %F% \line                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%     {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%         \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%             (“BassClarinet”                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%         \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%             \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                 #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                 \center-column                           %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                     {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                         Bass                             %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                         clarinet                         %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                     }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%         \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%             {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                 \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                     \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                         #10                              %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                         \center-column                   %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                             {                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                                 Bass                     %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                                 cl.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                             }                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                 \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%                     )                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%             }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
-                            %F%     }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@% \line                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%     {                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%         \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%             (“BassClarinet”                              %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%         \vcenter                                         %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%             \hcenter-in                                  %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                 #16                                      %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                 \center-column                           %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                     {                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                         Bass                             %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                         clarinet                         %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                     }                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%         \concat                                          %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%             {                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                 \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                     \hcenter-in                          %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                         #10                              %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                         \center-column                   %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                             {                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                                 Bass                     %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                                 cl.                      %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                             }                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                 \vcenter                                 %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%                     )                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%             }                                            %! DEFAULT_INSTRUMENT_ALERT:SM10
+                            %@%     }                                                    %! DEFAULT_INSTRUMENT_ALERT:SM10
                                 \line                                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     {                                                    %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         \with-color                                      %! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR:SM11
