@@ -70,12 +70,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # CLARINET
         clarinet_music_voice = abjad.Voice(
-            context_name='ClarinetMusicVoice',
+            lilypond_type='ClarinetMusicVoice',
             name='ClarinetMusicVoice',
             )
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice],
-            context_name='ClarinetMusicStaff',
+            lilypond_type='ClarinetMusicStaff',
             name='ClarinetMusicStaff',
             )
         abjad.annotate(
