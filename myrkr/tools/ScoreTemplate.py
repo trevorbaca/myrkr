@@ -46,6 +46,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     cl.                                     %! ST1
                                 }                                           %! ST1
                         }                                                   %! ST1
+                    \clef "treble" %! ST3
                     s1
                 }
             }
@@ -82,6 +83,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             clarinet_music_staff,
             'default_instrument',
             myrkr.instruments['BassClarinet'],
+            )
+        abjad.annotate(
+            clarinet_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         # SCORE
