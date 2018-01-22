@@ -76,7 +76,11 @@
                                         cl.                                              %! DEFAULT_INSTRUMENT:SM8
                                     }                                                    %! DEFAULT_INSTRUMENT:SM8
                             }                                                            %! DEFAULT_INSTRUMENT:SM8
+                        \set ClarinetMusicStaff.forceClef = ##t                          %! DEFAULT_CLEF:SM8
+                        \clef "treble"                                                   %! DEFAULT_CLEF:SM8
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
+                        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
+                    %@% \override ClarinetMusicStaff.Clef.color = ##f                    %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         e\breve.
                         \fff                                                             %! EXPLICIT_DYNAMIC:SM8
@@ -166,6 +170,7 @@
                                     }                                                    %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
+                        \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)   %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                         
                     }
                 }
