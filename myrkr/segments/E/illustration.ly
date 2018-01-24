@@ -823,7 +823,8 @@
                                         3
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 143]                               %! SM4
                         \once \override Accidental.color = #red
@@ -947,7 +948,8 @@
                         f\breve
                         \mp                                                              %! EXPLICIT_DYNAMIC:SM8
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 146]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1088,7 +1090,8 @@
                                         2
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 149]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1205,7 +1208,8 @@
                         fs\breve
                         \mp                                                              %! EXPLICIT_DYNAMIC:SM8
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 152]                               %! SM4
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -1246,7 +1250,8 @@
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 155]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1424,7 +1429,8 @@
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 159]                               %! SM4
                         \once \override Accidental.color = #red

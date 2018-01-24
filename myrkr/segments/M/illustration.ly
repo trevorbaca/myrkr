@@ -774,7 +774,8 @@
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff" {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice" {
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 364]                               %! SM4
                         \once \override Accidental.color = #red
@@ -991,7 +992,8 @@
                                         3
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 366]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1055,7 +1057,8 @@
                                         4
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 367]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1134,7 +1137,8 @@
                                         2
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 369]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1164,7 +1168,8 @@
                                         3
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 370]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1270,7 +1275,8 @@
                                         1
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 372]                               %! SM4
                         r8.
@@ -1283,7 +1289,8 @@
                         cs'\breve.
                         \pppp                                                            %! REDUNDANT_DYNAMIC:SM8
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 374]                               %! SM4
                         r8.
@@ -1316,7 +1323,8 @@
                                 }
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 376]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1399,7 +1407,8 @@
                                 }
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 379]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1482,7 +1491,8 @@
                                 }
                             }
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 382]                               %! SM4
                         r8.
