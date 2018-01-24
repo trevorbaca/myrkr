@@ -1209,7 +1209,8 @@
                         g'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 385]                               %! SM4
                         fs'''2
@@ -1256,7 +1257,8 @@
                         es'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 389]                               %! SM4
                         fs'''2
@@ -1283,7 +1285,8 @@
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 391]                               %! SM4
                         \once \override Accidental.color = #red
@@ -1301,7 +1304,8 @@
                         es'''2
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 392]                               %! SM4
                         fs'''2.
@@ -1313,7 +1317,8 @@
                         fs'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 393]                               %! SM4
                         es'''2
@@ -1357,7 +1362,8 @@
                         es'''2
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 397]                               %! SM4
                         fs'''2.
@@ -1399,7 +1405,8 @@
                         fs'''2
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 401]                               %! SM4
                         g'''2.
@@ -1429,7 +1436,8 @@
                         es'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 404]                               %! SM4
                         fs'''2
@@ -1471,7 +1479,8 @@
                         g'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 408]                               %! SM4
                         fs'''2
@@ -1492,7 +1501,8 @@
                         fs'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 410]                               %! SM4
                         es'''2
@@ -1501,7 +1511,8 @@
                         fs'''2
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 411]                               %! SM4
                         g'''2.
@@ -1513,7 +1524,8 @@
                         es'''2.
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 412]                               %! SM4
                         fs'''2
@@ -1543,7 +1555,8 @@
                         fs'''2
                         \glissando                                                       %! SC
                     }
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
                         % ClarinetMusicVoice [measure 415]                               %! SM4
                         es'''2.
