@@ -51,8 +51,6 @@ maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-maker.validate_measures_per_stage()
-
 for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
