@@ -12,1659 +12,12 @@
             \include "layout.ly"
         }
         \context Score = "Score" \with {
-            currentBarNumber = #311
+            currentBarNumber = #2
         } <<
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % GlobalSkips [measure 311]                                          %! SM4
-                %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
-                %@% \markup {                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %@%     \fontsize                                                        %! REAPPLIED_METRONOME_MARK:SM27
-                %@%         #-6                                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %@%         \general-align                                               %! REAPPLIED_METRONOME_MARK:SM27
-                %@%             #Y                                                       %! REAPPLIED_METRONOME_MARK:SM27
-                %@%             #DOWN                                                    %! REAPPLIED_METRONOME_MARK:SM27
-                %@%             \note-by-number                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %@%                 #2                                                   %! REAPPLIED_METRONOME_MARK:SM27
-                %@%                 #0                                                   %! REAPPLIED_METRONOME_MARK:SM27
-                %@%                 #1.5                                                 %! REAPPLIED_METRONOME_MARK:SM27
-                %@%     \upright                                                         %! REAPPLIED_METRONOME_MARK:SM27
-                %@%         {                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %@%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27
-                %@%             110                                                      %! REAPPLIED_METRONOME_MARK:SM27
-                %@%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %@%     \hspace                                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %@%         #1                                                           %! REAPPLIED_METRONOME_MARK:SM27
-                %@%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
-                    \once \override TextSpanner.Y-extent = ##f                           %! SM29
-                    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }                                                                %! SM29
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29
-                    \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                    \markup {                                                            %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                        \with-color                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            #(x11-color 'green4)                                         %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            {                                                            %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                \fontsize                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    #-6                                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    \general-align                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                        #Y                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                        #DOWN                                            %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                        \note-by-number                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                            #2                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                            #0                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                            #1.5                                         %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                \upright                                                 %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    {                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                        =                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                        110                                              %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    }                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                \hspace                                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    #1                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            }                                                            %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                        }                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29
-                    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29
-                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
-                    \once \override TextSpanner.dash-period = 0                          %! SM29
-                    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    \startTextSpan                                                       %! SM29
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (311)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <0>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.1]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'45'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 312]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (312)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <1>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'45'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 313]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (313)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <2>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'46'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 314]                                          %! SM4
-                    \time 1/1                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (314)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <3>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.2]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'46'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 315]                                          %! SM4
-                    \time 8/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/2
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (315)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <4>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.3]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'48'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 316]                                          %! SM4
-                    \time 7/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 7/20
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (316)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <5>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'49'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 317]                                          %! SM4
-                    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (317)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <6>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.4]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'50'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 318]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (318)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <7>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'51'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 319]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (319)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <8>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'51'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 320]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (320)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <9>                                      %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'52'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 321]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (321)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <10>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'52'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 322]                                          %! SM4
-                    \time 6/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 3/11
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (322)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <11>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.5]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'53'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 323]                                          %! SM4
-                    \time 3/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 3/20
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (323)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <12>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'53'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 324]                                          %! SM4
-                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 11/16
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (324)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <13>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.6]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'54'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 325]                                          %! SM4
-                    \time 4/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 2/11
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (325)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <14>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'55'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 326]                                          %! SM4
-                    \time 8/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 8/5
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (326)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <15>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.7]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'56'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 327]                                          %! SM4
-                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 5/8
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (327)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <16>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.8]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [8'59'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 328]                                          %! SM4
-                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (328)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <17>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'01'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 329]                                          %! SM4
-                    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (329)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <18>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.9]                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'01'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 330]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (330)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <19>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'02'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 331]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (331)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <20>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'02'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 332]                                          %! SM4
-                    \time 7/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 7/22
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (332)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <21>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.10]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'03'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 333]                                          %! SM4
-                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (333)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <22>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'03'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 334]                                          %! SM4
-                    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (334)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <23>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.11]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'04'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 335]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (335)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <24>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'05'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 336]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (336)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <25>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'05'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 337]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (337)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <26>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'06'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 338]                                          %! SM4
-                    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (338)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <27>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'06'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 339]                                          %! SM4
-                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 11/16
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (339)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <28>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.12]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'07'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 340]                                          %! SM4
-                    \time 4/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 2/11
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (340)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <29>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'08'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 341]                                          %! SM4
-                    \time 8/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 8/5
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (341)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <30>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.13]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'09'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 342]                                          %! SM4
-                    \once \override TextSpanner.Y-extent = ##f                           %! SM29
-                    \once \override TextSpanner.arrow-width = 0.25                       %! SM29
-                    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }                                                                %! SM29
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \large
-                            \upright
-                                rit.
-                        \hspace
-                            #1
-                        }                                                                %! SM29
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! SM29
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29
-                    \once \override TextSpanner.bound-details.right.arrow = ##t          %! SM29
-                    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29
-                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
-                    \once \override TextSpanner.dash-fraction = 0.25                     %! SM29
-                    \once \override TextSpanner.dash-period = 1.5                        %! SM29
-                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 5/8
-                    \stopTextSpan                                                        %! SM29
-                    \startTextSpan                                                       %! SM29
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (342)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <31>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.14]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'12'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 343]                                          %! SM4
-                    \time 4/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 2/9
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (343)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <32>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'13'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 344]                                          %! SM4
-                    \time 7/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 7/22
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (344)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <33>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.15]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'14'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 345]                                          %! SM4
-                    \time 5/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 5/18
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (345)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <34>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'15'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 346]                                          %! SM4
-                    \time 12/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 3/4
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (346)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <35>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.16]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'15'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 347]                                          %! SM4
-                    \time 3/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/6
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (347)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <36>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'17'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 348]                                          %! SM4
-                    \time 8/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/2
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (348)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <37>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.17]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'17'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 349]                                          %! SM4
-                    \time 3/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 3/20
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (349)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <38>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'18'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 350]                                          %! SM4
-                    \time 2/3                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 2/3
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (350)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <39>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.18]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'19'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 351]                                          %! SM4
-                    \time 6/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 1/3
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (351)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <40>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.19]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'20'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 352]                                          %! SM4
-                    \time 7/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 7/20
-                    ^ \markup {
-                        \column
-                            {
-                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (352)                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
-                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
-                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <41>                                     %! MEASURE_INDEX_MARKUP:SM32
-                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
-                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'21'']                                 %! CLOCK_TIME_MARKUP:SM28
-                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
-                            }
-                        }
-                    
-                    % GlobalSkips [measure 353]                                          %! SM4
+                    % GlobalSkips [measure 2]                                            %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1679,7 +32,7 @@
                 %@%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
                 %@%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %@%             55                                                       %! EXPLICIT_METRONOME_MARK:SM27
+                %@%             110                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %@%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
                 %@%         #1                                                           %! EXPLICIT_METRONOME_MARK:SM27
@@ -1707,7 +60,7 @@
                                 \upright                                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     {                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         =                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        55                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        110                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     }                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 \hspace                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     #1                                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -1718,10 +71,10 @@
                     \once \override TextSpanner.bound-details.right.padding = 0          %! SM29
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                     \once \override TextSpanner.dash-period = 0                          %! SM29
-                    \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \time 13/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 12/5
-                    \stopTextSpan                                                        %! SM29
+                    s1 * 13/16
                     \startTextSpan                                                       %! SM29
                     ^ \markup {
                         \column
@@ -1732,7 +85,7 @@
                             %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
                             %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
                             %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (353)                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (2)                                      %! MEASURE_NUMBER_MARKUP:SM31
                             %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
                             %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
                             %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
@@ -1740,7 +93,7 @@
                             %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
                             %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
                             %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <42>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <0>                                      %! MEASURE_INDEX_MARKUP:SM32
                             %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
                             %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
@@ -1748,7 +101,7 @@
                             %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
                             %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
                             %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.20]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.1]                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
@@ -1756,15 +109,15 @@
                             %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
                             %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'22'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'13'']                                 %! CLOCK_TIME_MARKUP:SM28
                             %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
                             }
                         }
                     
-                    % GlobalSkips [measure 354]                                          %! SM4
-                    \time 4/3                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    % GlobalSkips [measure 3]                                            %! SM4
+                    \time 5/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                    s1 * 4/3
+                    s1 * 5/22
                     ^ \markup {
                         \column
                             {
@@ -1774,7 +127,1571 @@
                             %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
                             %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
                             %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (354)                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (3)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <1>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'14'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 4]                                            %! SM4
+                    \time 8/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/2
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (4)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <2>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'15'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 5]                                            %! SM4
+                    \time 7/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 7/20
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (5)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <3>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'16'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 6]                                            %! SM4
+                    \time 6/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/11
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (6)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <4>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'17'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 7]                                            %! SM4
+                    \time 3/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/20
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (7)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <5>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'17'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 8]                                            %! SM4
+                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 11/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (8)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <6>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'18'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 9]                                            %! SM4
+                    \time 4/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/11
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (9)                                      %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <7>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'19'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 10]                                           %! SM4
+                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/8
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (10)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <8>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'19'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 11]                                           %! SM4
+                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (11)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <9>                                      %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'21'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 12]                                           %! SM4
+                    \time 7/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 7/22
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (12)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <10>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'21'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 13]                                           %! SM4
+                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (13)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <11>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'22'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 14]                                           %! SM4
+                    \time 3/7                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/7
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (14)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <12>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.2]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'23'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 15]                                           %! SM4
+                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 11/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (15)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <13>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.3]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'24'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 16]                                           %! SM4
+                    \time 4/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/11
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (16)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <14>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'25'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 17]                                           %! SM4
+                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/8
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (17)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <15>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'25'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 18]                                           %! SM4
+                    \time 4/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/9
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (18)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <16>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'27'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 19]                                           %! SM4
+                    \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/2
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (19)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <17>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.4]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'27'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 20]                                           %! SM4
+                    \time 7/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 7/22
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (20)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <18>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.5]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'28'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 21]                                           %! SM4
+                    \time 5/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/18
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (21)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <19>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.6]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'29'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 22]                                           %! SM4
+                    \time 12/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (22)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <20>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'30'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 23]                                           %! SM4
+                    \time 3/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/6
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (23)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <21>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'31'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 24]                                           %! SM4
+                    \time 3/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/5
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (24)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <22>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.7]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'32'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 25]                                           %! SM4
+                    \time 8/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/2
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (25)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <23>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.8]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'33'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 26]                                           %! SM4
+                    \time 3/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/20
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (26)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <24>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'34'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 27]                                           %! SM4
+                    \time 4/7                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 4/7
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (27)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <25>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.9]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'34'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 28]                                           %! SM4
+                    \time 6/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/3
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (28)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <26>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.10]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'36'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 29]                                           %! SM4
+                    \time 7/20                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 7/20
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (29)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <27>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'36'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 30]                                           %! SM4
+                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/8
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (30)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <28>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'37'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 31]                                           %! SM4
+                    \time 5/26                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/26
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (31)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <29>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'38'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 32]                                           %! SM4
+                    \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (32)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <30>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.11]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'39'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 33]                                           %! SM4
+                    \time 9/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 9/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (33)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <31>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.12]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'41'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 34]                                           %! SM4
+                    \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (34)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <32>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'42'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 35]                                           %! SM4
+                    \time 2/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/5
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (35)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <33>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.13]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'42'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 36]                                           %! SM4
+                    \time 8/26                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 4/13
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (36)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <34>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.14]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'43'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 37]                                           %! SM4
+                    \time 5/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (37)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <35>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'44'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 38]                                           %! SM4
+                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 11/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (38)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <36>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.15]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'44'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 39]                                           %! SM4
+                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (39)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <37>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'46'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 40]                                           %! SM4
+                    \time 3/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/5
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (40)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <38>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.16]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'46'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 41]                                           %! SM4
+                    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (41)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <39>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.17]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'48'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 42]                                           %! SM4
+                    \time 2/7                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/7
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (42)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <40>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'50'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 43]                                           %! SM4
+                    \time 9/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 9/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (43)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <41>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.18]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'51'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 44]                                           %! SM4
+                    \time 5/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/18
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (44)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <42>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'52'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 45]                                           %! SM4
+                    \time 2/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/5
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (45)                                     %! MEASURE_NUMBER_MARKUP:SM31
                             %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
                             %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
                             %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
@@ -1790,7 +1707,7 @@
                             %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
                             %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
                             %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.21]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.19]                                   %! STAGE_NUMBER_MARKUP:SM3
                             %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
@@ -1798,12 +1715,368 @@
                             %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
                             %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'32'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'52'']                                 %! CLOCK_TIME_MARKUP:SM28
                             %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
                             }
                         }
                     
-                    % GlobalSkips [measure 355]                                          %! SM4
+                    % GlobalSkips [measure 46]                                           %! SM4
+                    \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 3/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (46)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <44>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'53'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 47]                                           %! SM4
+                    \time 5/7                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/7
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (47)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <45>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'55'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 48]                                           %! SM4
+                    \time 2/7                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/7
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (48)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <46>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'56'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 49]                                           %! SM4
+                    \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 1/4
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (49)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <47>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.20]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'57'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 50]                                           %! SM4
+                    \time 4/18                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/9
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (50)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <48>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'58'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 51]                                           %! SM4
+                    \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 11/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (51)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <49>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
+                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [A.21]                                   %! STAGE_NUMBER_MARKUP:SM3
+                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [0'58'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 52]                                           %! SM4
+                    \time 4/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 2/11
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (52)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <50>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [1'00'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 53]                                           %! SM4
+                    \time 10/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/8
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (53)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <51>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [1'00'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 54]                                           %! SM4
+                    \time 5/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 5/16
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (54)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <52>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [1'01'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 55]                                           %! SM4
+                    \time 7/22                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
+                    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+                    s1 * 7/22
+                    ^ \markup {
+                        \column
+                            {
+                            %@% \line                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     {                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%         \fontsize                                        %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (55)                                     %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@%         \fontsize                                        %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
+                            %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <53>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
+                            %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
+                            %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [1'02'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
+                            }
+                        }
+                    
+                    % GlobalSkips [measure 56]                                           %! SM4
                     \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/16
@@ -1817,7 +2090,7 @@
                             %@%             #3                                           %! MEASURE_NUMBER_MARKUP:SM31
                             %@%             \with-color                                  %! MEASURE_NUMBER_MARKUP:SM31
                             %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_NUMBER_MARKUP:SM31
-                            %@%                 (355)                                    %! MEASURE_NUMBER_MARKUP:SM31
+                            %@%                 (56)                                     %! MEASURE_NUMBER_MARKUP:SM31
                             %@%     }                                                    %! MEASURE_NUMBER_MARKUP:SM31
                             %@% \line                                                    %! MEASURE_INDEX_MARKUP:SM32
                             %@%     {                                                    %! MEASURE_INDEX_MARKUP:SM32
@@ -1825,23 +2098,15 @@
                             %@%             #3                                           %! MEASURE_INDEX_MARKUP:SM32
                             %@%             \with-color                                  %! MEASURE_INDEX_MARKUP:SM32
                             %@%                 #(x11-color 'DarkCyan)                   %! MEASURE_INDEX_MARKUP:SM32
-                            %@%                 <44>                                     %! MEASURE_INDEX_MARKUP:SM32
+                            %@%                 <54>                                     %! MEASURE_INDEX_MARKUP:SM32
                             %@%     }                                                    %! MEASURE_INDEX_MARKUP:SM32
-                            %@% \line                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     {                                                    %! STAGE_NUMBER_MARKUP:SM3
-                            %@%         \fontsize                                        %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
-                            %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [K.22]                                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
                             %@%             #(x11-color 'DarkCyan)                       %! CLOCK_TIME_MARKUP:SM28
                             %@%             \fontsize                                    %! CLOCK_TIME_MARKUP:SM28
                             %@%                 #3                                       %! CLOCK_TIME_MARKUP:SM28
-                            %@%                 [9'38'']                                 %! CLOCK_TIME_MARKUP:SM28
+                            %@%                 [1'03'']                                 %! CLOCK_TIME_MARKUP:SM28
                             %@%     }                                                    %! CLOCK_TIME_MARKUP:SM28
                             }
                         }
@@ -1855,7 +2120,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 311]                               %! SM4
+                        % ClarinetMusicVoice [measure 2]                                 %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1885,9 +2150,8 @@
                     %@% \override ClarinetMusicStaff.Clef.color = ##f                    %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
+                        f''8.
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1973,65 +2237,13 @@
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 312]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 313]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 314]                               %! SM4
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d1
-                        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 315]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        fs'8
-                        \fff                                                             %! EXPLICIT_DYNAMIC:SM8
-                        [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'8
+                        f''4
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2047,7 +2259,8 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'8.
+                        f''8
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2063,8 +2276,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'16
-                        ]
+                        f''16
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2074,17 +2286,66 @@
                                     \finger
                                         2
                             }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
                         
-                        % ClarinetMusicVoice [measure 316]                               %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'8.
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/11 {
+                        
+                        % ClarinetMusicVoice [measure 3]                                 %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 4]                                 %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2100,7 +2361,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'4
+                        f''8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2108,93 +2369,74 @@
                                 #'(circle-padding . 0.25)
                                 \circle
                                     \finger
-                                        1
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
                             }
                     }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
                         
-                        % ClarinetMusicVoice [measure 317]                               %! SM4
+                        % ClarinetMusicVoice [measure 5]                                 %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
+                        f''8.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
                         
-                        % ClarinetMusicVoice [measure 318]                               %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 319]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 320]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 321]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
+                        f''4
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 8/11 {
                         
-                        % ClarinetMusicVoice [measure 322]                               %! SM4
+                        % ClarinetMusicVoice [measure 6]                                 %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        fs'8.
-                        \fff                                                             %! EXPLICIT_DYNAMIC:SM8
+                        f''8.
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2211,7 +2453,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'8
+                        f''8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2227,7 +2469,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'16
+                        f''16
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2235,13 +2477,13 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % ClarinetMusicVoice [measure 323]                               %! SM4
+                        % ClarinetMusicVoice [measure 7]                                 %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'8
+                        f''8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2258,7 +2500,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        fs'16
+                        f''16
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2273,57 +2515,14 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 324]                               %! SM4
+                        % ClarinetMusicVoice [measure 8]                                 %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        e'8.
-                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
+                        f''8.
                         [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2339,7 +2538,179 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        e'16
+                        f''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/11 {
+                        
+                        % ClarinetMusicVoice [measure 9]                                 %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 10]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 11]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2347,14 +2718,13 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 8/11 {
                         
-                        % ClarinetMusicVoice [measure 325]                               %! SM4
+                        % ClarinetMusicVoice [measure 12]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        e'16
-                        [
+                        f''4
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2370,93 +2740,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        e'8.
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        
-                        % ClarinetMusicVoice [measure 326]                               %! SM4
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d\breve
-                        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 327]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        e'8.
-                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
-                        [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        3
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8.
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \times 4/5 {
-                        
-                        % ClarinetMusicVoice [measure 328]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        e'8.
+                        f''8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2473,7 +2757,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        e'8
+                        f''16
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2484,127 +2768,17 @@
                                     \finger
                                         2
                             }
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 329]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 330]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 331]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 8/11 {
-                        
-                        % ClarinetMusicVoice [measure 332]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'4
-                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8
-                        [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'16
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
                     }
                     \times 4/5 {
                         
-                        % ClarinetMusicVoice [measure 333]                               %! SM4
+                        % ClarinetMusicVoice [measure 13]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        f''8
                         [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        3
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8.
-                        ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2614,91 +2788,44 @@
                                     \finger
                                         4
                             }
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 334]                               %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/7 {
+                        
+                        % ClarinetMusicVoice [measure 14]                                %! SM4
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 335]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 336]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 337]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 338]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        f'''4
-                        -\tenuto                                                         %! IC
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 1/1 {
-                        
-                        % ClarinetMusicVoice [measure 339]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'16
+                        d''2.
                         \mf                                                              %! EXPLICIT_DYNAMIC:SM8
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 15]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        f''16
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2715,32 +2842,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8.
+                        f''8.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2756,22 +2858,16 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
-                        ]
+                        f''8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 8/11 {
                         
-                        % ClarinetMusicVoice [measure 340]                               %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'16
-                        [
+                        f''8.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2787,7 +2883,45 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        f''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/11 {
+                        
+                        % ClarinetMusicVoice [measure 16]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -2799,130 +2933,187 @@
                                         4
                             }
                     }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 341]                               %! SM4
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d\breve
-                        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
+                        % ClarinetMusicVoice [measure 17]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''4
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/9 {
+                        
+                        % ClarinetMusicVoice [measure 18]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''16
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 342]                               %! SM4
+                        % ClarinetMusicVoice [measure 19]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        d''2
+                        \mf                                                              %! EXPLICIT_DYNAMIC:SM8
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/11 {
+                        
+                        % ClarinetMusicVoice [measure 20]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        f''8
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        f''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/9 {
+                        
+                        % ClarinetMusicVoice [measure 21]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                        ef'16
-                        \mp                                                              %! REDUNDANT_DYNAMIC:SM8
+                        fs''8
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        fs''8.
                         ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'4
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 8/9 {
-                        
-                        % ClarinetMusicVoice [measure 343]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'16
-                        [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8.
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 8/11 {
-                        
-                        % ClarinetMusicVoice [measure 344]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'8
-                        \p                                                               %! EXPLICIT_DYNAMIC:SM8
-                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -2931,91 +3122,18 @@
                                 \circle
                                     \finger
                                         3
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8.
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        2
-                            }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 8/9 {
-                        
-                        % ClarinetMusicVoice [measure 345]                               %! SM4
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8
-                        [
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        4
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'8.
-                        ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        1
                             }
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 346]                               %! SM4
+                        % ClarinetMusicVoice [measure 22]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'8
-                        \pp                                                              %! EXPLICIT_DYNAMIC:SM8
+                        fs''8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3024,7 +3142,7 @@
                                 #'(circle-padding . 0.25)
                                 \circle
                                     \finger
-                                        2
+                                        4
                             }
                         
                         \once \override Accidental.color = #red
@@ -3032,7 +3150,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'16
+                        fs''16
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3041,24 +3159,8 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        fs''8.
                         ]
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
-                        ^ \markup {
-                            \override
-                                #'(circle-padding . 0.25)
-                                \circle
-                                    \finger
-                                        3
-                            }
-                        
-                        \once \override Accidental.color = #red
-                        \once \override Beam.color = #red
-                        \once \override Dots.color = #red
-                        \once \override NoteHead.color = #red
-                        \once \override Stem.color = #red
-                        ef'4
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3074,7 +3176,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        fs''4
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3083,19 +3185,288 @@
                                 \circle
                                     \finger
                                         2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        
+                        % ClarinetMusicVoice [measure 23]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 24]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        d''2.
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 25]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        fs''16
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 26]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/7 {
+                        
+                        % ClarinetMusicVoice [measure 27]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        d''2
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        c''2
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
                             }
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         
-                        % ClarinetMusicVoice [measure 347]                               %! SM4
+                        % ClarinetMusicVoice [measure 28]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        fs''8.
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 29]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''4
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 30]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''16
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3111,8 +3482,16 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'16
-                        ]
+                        fs''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3122,18 +3501,81 @@
                                     \finger
                                         1
                             }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/13 {
+                        
+                        % ClarinetMusicVoice [measure 31]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 348]                               %! SM4
+                        % ClarinetMusicVoice [measure 32]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        c''2.
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 33]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'16
+                        fs''8.
                         \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         [
                         - \tweak color #red                                              %! SM14
@@ -3151,16 +3593,109 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        fs''16
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
                         
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        fs''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 34]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 35]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        c''2
+                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/13 {
+                        
+                        % ClarinetMusicVoice [measure 36]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        fs''16
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3176,7 +3711,61 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        fs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''4
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 37]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        fs''8
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3188,16 +3777,18 @@
                                         1
                             }
                     }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 349]                               %! SM4
+                        % ClarinetMusicVoice [measure 38]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        g''8
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3214,7 +3805,259 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'16
+                        g''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''16
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \times 2/3 {
+                        
+                        % ClarinetMusicVoice [measure 39]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''4
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        
+                        % ClarinetMusicVoice [measure 40]                                %! SM4
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        c''2.
+                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 41]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        b'2
+                        \ff                                                              %! REDUNDANT_DYNAMIC:SM8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        b'2
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/7 {
+                        
+                        % ClarinetMusicVoice [measure 42]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        b'2
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 43]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        g''8.
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''16
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/9 {
+                        
+                        % ClarinetMusicVoice [measure 44]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8.
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3227,35 +4070,50 @@
                             }
                     }
                     \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
+                    \times 4/5 {
                         
-                        % ClarinetMusicVoice [measure 350]                               %! SM4
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d1
-                        \mf                                                              %! EXPLICIT_DYNAMIC:SM8
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        
-                        % ClarinetMusicVoice [measure 351]                               %! SM4
+                        % ClarinetMusicVoice [measure 45]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        ef'8.
-                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
-                        [
+                        bf'2
+                        \fff                                                             %! EXPLICIT_DYNAMIC:SM8
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
+                        % ClarinetMusicVoice [measure 46]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8
+                        bf'2.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/7 {
+                        
+                        % ClarinetMusicVoice [measure 47]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        bf'2.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3271,7 +4129,74 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        bf'2
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/7 {
+                        
+                        % ClarinetMusicVoice [measure 48]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        bf'2
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \times 2/3 {
+                        
+                        % ClarinetMusicVoice [measure 49]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        g''16
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        g''8
                         ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -3284,15 +4209,16 @@
                             }
                     }
                     \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
+                    \times 8/9 {
                         
-                        % ClarinetMusicVoice [measure 352]                               %! SM4
+                        % ClarinetMusicVoice [measure 50]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'8.
+                        g''16
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -3301,7 +4227,8 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        ef'4
+                        g''8.
+                        ]
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         ^ \markup {
@@ -3312,41 +4239,296 @@
                                         3
                             }
                     }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 353]                               %! SM4
+                        % ClarinetMusicVoice [measure 51]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d\breve.
-                        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+                        gs''8
+                        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''16
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
                     }
                     \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
+                    \times 8/11 {
                         
-                        % ClarinetMusicVoice [measure 354]                               %! SM4
+                        % ClarinetMusicVoice [measure 52]                                %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        d\breve
-                        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
+                        gs''8
+                        [
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % ClarinetMusicVoice [measure 355]                               %! SM4
-                        r8.
+                        % ClarinetMusicVoice [measure 53]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''4
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''16
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        1
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 54]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 8/11 {
+                        
+                        % ClarinetMusicVoice [measure 55]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        2
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''16
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8.
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        3
+                            }
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        
+                        % ClarinetMusicVoice [measure 56]                                %! SM4
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''8
+                        [
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \override
+                                #'(circle-padding . 0.25)
+                                \circle
+                                    \finger
+                                        4
+                            }
+                        
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
+                        gs''16
+                        ]
+                        - \tweak color #red                                              %! SM14
+                        ^ \markup { @ }                                                  %! SM14
                         
                     }
                 }
