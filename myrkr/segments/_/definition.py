@@ -26,11 +26,12 @@ preprocessor = myrkr.Preprocessor(
 maker = baca.SegmentMaker(
     instruments=myrkr.instruments,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.ScoreTemplate(),
     metronome_mark_measure_map=(
         (1, myrkr.metronome_marks['44']),
         ),
+    metronome_marks=myrkr.metronome_marks,
+    score_template=myrkr.ScoreTemplate(),
+    stage_label_base_string='_',
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )

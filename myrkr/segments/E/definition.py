@@ -40,12 +40,12 @@ maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=myrkr.instruments,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.ScoreTemplate(),
     metronome_mark_measure_map=(
-        #(1, myrkr.metronome_marks['55']),
         (7, myrkr.metronome_marks['110']),
         ),
+    metronome_marks=myrkr.metronome_marks,
+    stage_label_base_string='E',
+    score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )

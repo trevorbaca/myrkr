@@ -76,7 +76,6 @@
                     \once \override TextSpanner.dash-fraction = 0.25                     %! SM29
                     \once \override TextSpanner.dash-period = 1.5                        %! SM29
                     \time 2/3                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-                    \mark #8                                                             %! SM9
                     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 2/3
