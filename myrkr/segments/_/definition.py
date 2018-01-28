@@ -31,7 +31,6 @@ maker = baca.SegmentMaker(
         ),
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
-    stage_label_base_string='_',
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
