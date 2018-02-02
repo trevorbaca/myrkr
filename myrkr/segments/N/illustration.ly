@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #384
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [N GlobalSkips measure 384]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1363,8 +1368,10 @@
                     
                 }
             >>
-            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff"
+            {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                {
                     \times 4/5 {
                         
                         % [N ClarinetMusicVoice measure 384]                             %! SM4

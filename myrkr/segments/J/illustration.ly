@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #277
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [J GlobalSkips measure 277]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -1302,8 +1307,10 @@
                     
                 }
             >>
-            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff"
+            {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
