@@ -10,9 +10,12 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        \context Score = "Score"
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [_ GlobalSkips measure 1]                                          %! SM4
                     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -60,8 +63,10 @@
                     
                 }
             >>
-            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
+            \context ClarinetMusicStaff = "ClarinetMusicStaff"
+            {
+                \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                {
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
