@@ -14,7 +14,7 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 1]                                            %! SM4
+                    % [_ GlobalSkips measure 1]                                          %! SM4
                     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 12/5
@@ -65,7 +65,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 1]                                 %! SM4
+                        % [_ ClarinetMusicVoice measure 1]                               %! SM4
                         \set ClarinetMusicStaff.instrumentName = \markup {               %! DEFAULT_INSTRUMENT:SM8
                             \hcenter-in                                                  %! DEFAULT_INSTRUMENT:SM8
                                 #16                                                      %! DEFAULT_INSTRUMENT:SM8

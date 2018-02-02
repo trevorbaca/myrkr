@@ -17,7 +17,7 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 364]                                          %! SM4
+                    % [M GlobalSkips measure 364]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -114,7 +114,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 365]                                          %! SM4
+                    % [M GlobalSkips measure 365]                                        %! SM4
                     \time 5/26                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/26
@@ -148,7 +148,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 366]                                          %! SM4
+                    % [M GlobalSkips measure 366]                                        %! SM4
                     \time 9/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 9/16
@@ -190,7 +190,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 367]                                          %! SM4
+                    % [M GlobalSkips measure 367]                                        %! SM4
                     \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/16
@@ -224,7 +224,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 368]                                          %! SM4
+                    % [M GlobalSkips measure 368]                                        %! SM4
                     \time 8/26                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 4/13
@@ -266,7 +266,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 369]                                          %! SM4
+                    % [M GlobalSkips measure 369]                                        %! SM4
                     \time 5/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/16
@@ -300,7 +300,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 370]                                          %! SM4
+                    % [M GlobalSkips measure 370]                                        %! SM4
                     \time 11/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 11/16
@@ -334,7 +334,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 371]                                          %! SM4
+                    % [M GlobalSkips measure 371]                                        %! SM4
                     \time 4/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -368,7 +368,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 372]                                          %! SM4
+                    % [M GlobalSkips measure 372]                                        %! SM4
                     \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/16
@@ -410,7 +410,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 373]                                          %! SM4
+                    % [M GlobalSkips measure 373]                                        %! SM4
                     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 12/5
@@ -452,7 +452,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 374]                                          %! SM4
+                    % [M GlobalSkips measure 374]                                        %! SM4
                     \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/16
@@ -494,7 +494,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 375]                                          %! SM4
+                    % [M GlobalSkips measure 375]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -591,7 +591,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 376]                                          %! SM4
+                    % [M GlobalSkips measure 376]                                        %! SM4
                     \time 3/1                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3
@@ -633,7 +633,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 377]                                          %! SM4
+                    % [M GlobalSkips measure 377]                                        %! SM4
                     \time 8/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 8/5
@@ -675,7 +675,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 378]                                          %! SM4
+                    % [M GlobalSkips measure 378]                                        %! SM4
                     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 12/5
@@ -717,7 +717,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 379]                                          %! SM4
+                    % [M GlobalSkips measure 379]                                        %! SM4
                     \time 1/1                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -759,7 +759,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 380]                                          %! SM4
+                    % [M GlobalSkips measure 380]                                        %! SM4
                     \time 8/5                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 8/5
@@ -801,7 +801,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 381]                                          %! SM4
+                    % [M GlobalSkips measure 381]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 8/5
                     ^ \markup {
@@ -842,7 +842,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 382]                                          %! SM4
+                    % [M GlobalSkips measure 382]                                        %! SM4
                     \time 3/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/16
@@ -884,7 +884,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 383]                                          %! SM4
+                    % [M GlobalSkips measure 383]                                        %! SM4
                     \time 2/3                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 2/3
@@ -936,7 +936,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 364]                               %! SM4
+                        % [M ClarinetMusicVoice measure 364]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1097,7 +1097,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 8/13 {
                         
-                        % [ClarinetMusicVoice measure 365]                               %! SM4
+                        % [M ClarinetMusicVoice measure 365]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1128,7 +1128,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 366]                               %! SM4
+                        % [M ClarinetMusicVoice measure 366]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1193,7 +1193,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 367]                               %! SM4
+                        % [M ClarinetMusicVoice measure 367]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1224,7 +1224,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 8/13 {
                         
-                        % [ClarinetMusicVoice measure 368]                               %! SM4
+                        % [M ClarinetMusicVoice measure 368]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1273,7 +1273,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 369]                               %! SM4
+                        % [M ClarinetMusicVoice measure 369]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1304,7 +1304,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 370]                               %! SM4
+                        % [M ClarinetMusicVoice measure 370]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1375,7 +1375,7 @@
                     }
                     \times 2/3 {
                         
-                        % [ClarinetMusicVoice measure 371]                               %! SM4
+                        % [M ClarinetMusicVoice measure 371]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1411,13 +1411,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 372]                               %! SM4
+                        % [M ClarinetMusicVoice measure 372]                             %! SM4
                         r8.
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 373]                               %! SM4
+                        % [M ClarinetMusicVoice measure 373]                             %! SM4
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs'\breve.
                         \pppp                                                            %! REDUNDANT_DYNAMIC:SM8
@@ -1425,13 +1425,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 374]                               %! SM4
+                        % [M ClarinetMusicVoice measure 374]                             %! SM4
                         r8.
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         
-                        % [ClarinetMusicVoice measure 375]                               %! SM4
+                        % [M ClarinetMusicVoice measure 375]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1459,7 +1459,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 376]                               %! SM4
+                        % [M ClarinetMusicVoice measure 376]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1487,7 +1487,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 377]                               %! SM4
+                        % [M ClarinetMusicVoice measure 377]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1515,7 +1515,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 378]                               %! SM4
+                        % [M ClarinetMusicVoice measure 378]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1543,7 +1543,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 379]                               %! SM4
+                        % [M ClarinetMusicVoice measure 379]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1571,7 +1571,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 380]                               %! SM4
+                        % [M ClarinetMusicVoice measure 380]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1599,7 +1599,7 @@
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
-                        % [ClarinetMusicVoice measure 381]                               %! SM4
+                        % [M ClarinetMusicVoice measure 381]                             %! SM4
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -1627,13 +1627,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
-                        % [ClarinetMusicVoice measure 382]                               %! SM4
+                        % [M ClarinetMusicVoice measure 382]                             %! SM4
                         r8.
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         
-                        % [ClarinetMusicVoice measure 383]                               %! SM4
+                        % [M ClarinetMusicVoice measure 383]                             %! SM4
                         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         fs'1
                         \fff                                                             %! EXPLICIT_DYNAMIC:SM8
