@@ -15,7 +15,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% iGlobalSkips
                     
                     % [_ GlobalSkips measure 1]                                          %! SM4
                     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -61,12 +61,12 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% iGlobalSkips
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff"
             {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                {
+                {   %*% iClarinetMusicVoice
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         
@@ -160,7 +160,7 @@
                         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)   %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                         
                     }
-                }
+                }   %*% iClarinetMusicVoice
             }
         >>
     >>

@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% CGlobalSkips
                     
                     % [C GlobalSkips measure 77]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -1372,12 +1372,12 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% CGlobalSkips
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff"
             {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                {
+                {   %*% CClarinetMusicVoice
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         
@@ -2852,7 +2852,7 @@
                             }
                         
                     }
-                }
+                }   %*% CClarinetMusicVoice
             }
         >>
     >>

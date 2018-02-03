@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% HGlobalSkips
                     
                     % [H GlobalSkips measure 231]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -941,12 +941,12 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% HGlobalSkips
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff"
             {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                {
+                {   %*% HClarinetMusicVoice
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         
@@ -1209,7 +1209,7 @@
                         e''4
                         
                     }
-                }
+                }   %*% HClarinetMusicVoice
             }
         >>
     >>
