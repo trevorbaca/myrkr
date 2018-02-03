@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% NGlobalSkips
                     
                     % [N GlobalSkips measure 384]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1366,12 +1366,12 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|."                                                            %! SM5
                     
-                }
+                }   %*% NGlobalSkips
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff"
             {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                {
+                {   %*% NClarinetMusicVoice
                     \times 4/5 {
                         
                         % [N ClarinetMusicVoice measure 384]                             %! SM4
@@ -1868,7 +1868,7 @@
                             }                                                            %! SCORE2
                         
                     }
-                }
+                }   %*% NClarinetMusicVoice
             }
         >>
     >>
