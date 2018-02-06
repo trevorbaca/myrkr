@@ -1,4 +1,4 @@
-iGlobalSkips = {
+i_GlobalSkips = {
     
     % [_ GlobalSkips measure 1]                                          %! SM4
     \time 12/5                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -47,7 +47,7 @@ iGlobalSkips = {
 }
 
 
-iClarinetMusicVoice = {
+i_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         

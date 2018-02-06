@@ -1,4 +1,4 @@
-NGlobalSkips = {
+N_GlobalSkips = {
     
     % [N GlobalSkips measure 384]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1347,7 +1347,7 @@ NGlobalSkips = {
 }
 
 
-NClarinetMusicVoice = {
+N_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 384]                             %! SM4
