@@ -19,35 +19,44 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score" <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalRests = "GlobalRests" {
+        \context Score = "Score"
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalRests = "GlobalRests"
+                {
                 }
-                \context GlobalSkips = "GlobalSkips" {
+                \context GlobalSkips = "GlobalSkips"
+                {
                 }
             >>
-            \context ClarinetMusicStaff = "ClarinetMusicStaff" {
-                \context ClarinetMusicVoice = "ClarinetMusicVoice" {
-                    \set ClarinetMusicStaff.instrumentName = \markup {      %! ST1
-                        \hcenter-in                                         %! ST1
-                            #16                                             %! ST1
-                            \center-column                                  %! ST1
-                                {                                           %! ST1
-                                    Bass                                    %! ST1
-                                    clarinet                                %! ST1
-                                }                                           %! ST1
-                        }                                                   %! ST1
-                    \set ClarinetMusicStaff.shortInstrumentName = \markup { %! ST1
-                        \hcenter-in                                         %! ST1
-                            #10                                             %! ST1
-                            \center-column                                  %! ST1
-                                {                                           %! ST1
-                                    Bass                                    %! ST1
-                                    cl.                                     %! ST1
-                                }                                           %! ST1
-                        }                                                   %! ST1
-                    \clef "treble" %! ST3
-                    s1
+            \context MusicContext = "MusicContext"
+            {
+                \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                {
+                    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                    {
+                        \set ClarinetMusicStaff.instrumentName = \markup {      %! ST1
+                            \hcenter-in                                         %! ST1
+                                #16                                             %! ST1
+                                \center-column                                  %! ST1
+                                    {                                           %! ST1
+                                        Bass                                    %! ST1
+                                        clarinet                                %! ST1
+                                    }                                           %! ST1
+                            }                                                   %! ST1
+                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! ST1
+                            \hcenter-in                                         %! ST1
+                                #10                                             %! ST1
+                                \center-column                                  %! ST1
+                                    {                                           %! ST1
+                                        Bass                                    %! ST1
+                                        cl.                                     %! ST1
+                                    }                                           %! ST1
+                            }                                                   %! ST1
+                        \clef "treble" %! ST3
+                        s1
+                    }
                 }
             }
         >>
@@ -91,8 +100,13 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
 
         # SCORE
+        music_context = abjad.Context(
+            [clarinet_music_staff],
+            lilypond_type='MusicContext',
+            name='MusicContext',
+            )
         score = abjad.Score(
-            [global_context, clarinet_music_staff],
+            [global_context, music_context],
             name='Score',
             )
         self._assert_lilypond_identifiers(score)

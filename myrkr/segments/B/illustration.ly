@@ -24,10 +24,13 @@
                 \context GlobalSkips = "GlobalSkips"
                 \B_GlobalSkips
             >>
-            \context ClarinetMusicStaff = "ClarinetMusicStaff"
+            \context MusicContext = "MusicContext"
             {
-                \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                \B_ClarinetMusicVoice
+                \context ClarinetMusicStaff = "ClarinetMusicStaff"
+                {
+                    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+                    \B_ClarinetMusicVoice
+                }
             }
         >>
     >>
