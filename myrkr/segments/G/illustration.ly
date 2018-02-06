@@ -22,12 +22,12 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \GGlobalSkips
+                \G_GlobalSkips
             >>
             \context ClarinetMusicStaff = "ClarinetMusicStaff"
             {
                 \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                \GClarinetMusicVoice
+                \G_ClarinetMusicVoice
             }
         >>
     >>

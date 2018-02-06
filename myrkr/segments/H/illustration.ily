@@ -1,4 +1,4 @@
-HGlobalSkips = {
+H_GlobalSkips = {
     
     % [H GlobalSkips measure 231]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -922,7 +922,7 @@ HGlobalSkips = {
 }
 
 
-HClarinetMusicVoice = {
+H_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         

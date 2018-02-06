@@ -1,4 +1,4 @@
-JGlobalSkips = {
+J_GlobalSkips = {
     
     % [J GlobalSkips measure 277]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -1286,7 +1286,7 @@ JGlobalSkips = {
 }
 
 
-JClarinetMusicVoice = {
+J_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         

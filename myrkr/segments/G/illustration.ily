@@ -1,4 +1,4 @@
-GGlobalSkips = {
+G_GlobalSkips = {
     
     % [G GlobalSkips measure 176]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -2122,7 +2122,7 @@ GGlobalSkips = {
 }
 
 
-GClarinetMusicVoice = {
+G_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         

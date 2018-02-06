@@ -1,4 +1,4 @@
-MGlobalSkips = {
+M_GlobalSkips = {
     
     % [M GlobalSkips measure 364]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -915,7 +915,7 @@ MGlobalSkips = {
 }
 
 
-MClarinetMusicVoice = {
+M_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
