@@ -1357,96 +1357,96 @@ C_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 77]                              %! SM4
+        % [C ClarinetMusicVoice measure 77]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ClarinetMusicStaff.instrumentName = \markup {               %! REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
-                #16                                                      %! REAPPLIED_INSTRUMENT:SM8
-                \center-column                                           %! REAPPLIED_INSTRUMENT:SM8
-                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
-                        Bass                                             %! REAPPLIED_INSTRUMENT:SM8
-                        clarinet                                         %! REAPPLIED_INSTRUMENT:SM8
-                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
-            }                                                            %! REAPPLIED_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
-                #10                                                      %! REAPPLIED_INSTRUMENT:SM8
-                \center-column                                           %! REAPPLIED_INSTRUMENT:SM8
-                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
-                        Bass                                             %! REAPPLIED_INSTRUMENT:SM8
-                        cl.                                              %! REAPPLIED_INSTRUMENT:SM8
-                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
-            }                                                            %! REAPPLIED_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.forceClef = ##t                          %! REAPPLIED_CLEF:SM8
-        \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
+        \set ClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
+            \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
+                #16                                                  %! REAPPLIED_INSTRUMENT:SM8
+                \center-column                                       %! REAPPLIED_INSTRUMENT:SM8
+                    {                                                %! REAPPLIED_INSTRUMENT:SM8
+                        Bass                                         %! REAPPLIED_INSTRUMENT:SM8
+                        clarinet                                     %! REAPPLIED_INSTRUMENT:SM8
+                    }                                                %! REAPPLIED_INSTRUMENT:SM8
+            }                                                        %! REAPPLIED_INSTRUMENT:SM8
+        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! REAPPLIED_INSTRUMENT:SM8
+            \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
+                #10                                                  %! REAPPLIED_INSTRUMENT:SM8
+                \center-column                                       %! REAPPLIED_INSTRUMENT:SM8
+                    {                                                %! REAPPLIED_INSTRUMENT:SM8
+                        Bass                                         %! REAPPLIED_INSTRUMENT:SM8
+                        cl.                                          %! REAPPLIED_INSTRUMENT:SM8
+                    }                                                %! REAPPLIED_INSTRUMENT:SM8
+            }                                                        %! REAPPLIED_INSTRUMENT:SM8
+        \set ClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
+        \clef "treble"                                               %! REAPPLIED_CLEF:SM8
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-    %@% \override ClarinetMusicStaff.Clef.color = ##f                    %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    %@% \override ClarinetMusicStaff.Clef.color = ##f                %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         d''16
-        \p                                                               %! EXPLICIT_DYNAMIC:SM8
+        \p                                                           %! EXPLICIT_DYNAMIC:SM8
         [
         ^ \markup {
             \column
                 {
-                    \line                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        {                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            #16                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \center-column               %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                {                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    Bass                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    clarinet             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                }                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \concat                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        {                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    #10                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    \center-column       %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                        {                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                            Bass         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                            cl.          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                        }                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                )                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        }                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        }                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \line                                                %! SM14
-                        {                                                %! SM14
-                            @                                            %! SM14
-                        }                                                %! SM14
+                    \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                        {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                            \with-color                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                #(x11-color 'green4)                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                    \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                        (“BassClarinet”              %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                    \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                        \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                            #16                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                            \center-column           %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                {                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                    Bass             %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                    clarinet         %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                }                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                    \concat                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                        {                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                            \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                \hcenter-in          %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                    #10              %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                    \center-column   %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                        {            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                            Bass     %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                            cl.      %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                        }            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                            \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                                )                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                        }                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                        }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                    \line                                            %! SM14
+                        {                                            %! SM14
+                            @                                        %! SM14
+                        }                                            %! SM14
                 }
             }
-        \set ClarinetMusicStaff.instrumentName = \markup {               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                \center-column                                           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        Bass                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        clarinet                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                #10                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                \center-column                                           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        Bass                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                \center-column                                       %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    {                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        Bass                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        clarinet                                     %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    }                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                #10                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                \center-column                                       %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    {                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        Bass                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        cl.                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                    }                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
         \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         
@@ -1456,8 +1456,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         d''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1472,8 +1472,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         d''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1488,8 +1488,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         d''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1498,8 +1498,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         d''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1511,7 +1511,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [C ClarinetMusicVoice measure 78]                              %! SM4
+        % [C ClarinetMusicVoice measure 78]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1519,8 +1519,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         d''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1536,13 +1536,13 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         d''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 79]                              %! SM4
+        % [C ClarinetMusicVoice measure 79]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1550,10 +1550,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         ds''16
-        \pp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \pp                                                          %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1568,8 +1568,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1584,8 +1584,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1593,8 +1593,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1610,8 +1610,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1623,7 +1623,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [C ClarinetMusicVoice measure 80]                              %! SM4
+        % [C ClarinetMusicVoice measure 80]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1631,8 +1631,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1641,8 +1641,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1654,7 +1654,7 @@ C_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 81]                              %! SM4
+        % [C ClarinetMusicVoice measure 81]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1662,8 +1662,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1679,8 +1679,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1688,8 +1688,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''4
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1704,8 +1704,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1717,7 +1717,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [C ClarinetMusicVoice measure 82]                              %! SM4
+        % [C ClarinetMusicVoice measure 82]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1725,8 +1725,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1735,8 +1735,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1748,7 +1748,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [C ClarinetMusicVoice measure 83]                              %! SM4
+        % [C ClarinetMusicVoice measure 83]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1756,8 +1756,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1772,8 +1772,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1789,8 +1789,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1802,7 +1802,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [C ClarinetMusicVoice measure 84]                              %! SM4
+        % [C ClarinetMusicVoice measure 84]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1810,8 +1810,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1827,21 +1827,21 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ClarinetMusicVoice measure 85]                              %! SM4
+        % [C ClarinetMusicVoice measure 85]                          %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         f\breve
-        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \mp                                                          %! EXPLICIT_DYNAMIC:SM8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 86]                              %! SM4
+        % [C ClarinetMusicVoice measure 86]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1849,10 +1849,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         ds''8
-        \pp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \pp                                                          %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1867,8 +1867,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''16
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1884,8 +1884,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1900,8 +1900,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''4
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1916,13 +1916,13 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ClarinetMusicVoice measure 87]                              %! SM4
+        % [C ClarinetMusicVoice measure 87]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1930,8 +1930,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8.
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1947,8 +1947,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''16
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1960,10 +1960,10 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [C ClarinetMusicVoice measure 88]                              %! SM4
+        % [C ClarinetMusicVoice measure 88]                          %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         bf'2.
-        \f                                                               %! EXPLICIT_DYNAMIC:SM8
+        \f                                                           %! EXPLICIT_DYNAMIC:SM8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1975,15 +1975,15 @@ C_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 89]                              %! SM4
+        % [C ClarinetMusicVoice measure 89]                          %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         a'2
-        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
+        \ff                                                          %! EXPLICIT_DYNAMIC:SM8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 90]                              %! SM4
+        % [C ClarinetMusicVoice measure 90]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1991,10 +1991,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         ds''16
-        \pp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \pp                                                          %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2002,8 +2002,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2018,8 +2018,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         ds''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2035,8 +2035,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2048,7 +2048,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [C ClarinetMusicVoice measure 91]                              %! SM4
+        % [C ClarinetMusicVoice measure 91]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2056,8 +2056,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2073,8 +2073,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         ds''16
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2086,7 +2086,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ClarinetMusicVoice measure 92]                              %! SM4
+        % [C ClarinetMusicVoice measure 92]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2094,10 +2094,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         es''8.
-        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+        \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2112,8 +2112,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2129,21 +2129,21 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [C ClarinetMusicVoice measure 93]                              %! SM4
+        % [C ClarinetMusicVoice measure 93]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2158,8 +2158,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''4
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2171,15 +2171,15 @@ C_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 94]                              %! SM4
+        % [C ClarinetMusicVoice measure 94]                          %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         f\breve.
-        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \mp                                                          %! EXPLICIT_DYNAMIC:SM8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 95]                              %! SM4
+        % [C ClarinetMusicVoice measure 95]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2187,10 +2187,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         es''8
-        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+        \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2205,8 +2205,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''16
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2214,8 +2214,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2230,8 +2230,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2247,13 +2247,13 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
-        % [C ClarinetMusicVoice measure 96]                              %! SM4
+        % [C ClarinetMusicVoice measure 96]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2261,8 +2261,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8.
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2278,8 +2278,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2291,15 +2291,15 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [C ClarinetMusicVoice measure 97]                              %! SM4
+        % [C ClarinetMusicVoice measure 97]                          %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         f\breve
-        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \mp                                                          %! EXPLICIT_DYNAMIC:SM8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 98]                              %! SM4
+        % [C ClarinetMusicVoice measure 98]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2307,10 +2307,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         es''8.
-        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+        \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2318,8 +2318,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''16
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2334,8 +2334,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2351,13 +2351,13 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 99]                              %! SM4
+        % [C ClarinetMusicVoice measure 99]                          %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2365,8 +2365,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2382,8 +2382,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''16
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2395,7 +2395,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [C ClarinetMusicVoice measure 100]                             %! SM4
+        % [C ClarinetMusicVoice measure 100]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2403,9 +2403,9 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         a'2
-        \ff                                                              %! EXPLICIT_DYNAMIC:SM8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        \ff                                                          %! EXPLICIT_DYNAMIC:SM8
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2420,8 +2420,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         a'2.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2433,20 +2433,20 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [C ClarinetMusicVoice measure 101]                             %! SM4
+        % [C ClarinetMusicVoice measure 101]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         a'2
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
-        % [C ClarinetMusicVoice measure 102]                             %! SM4
+        % [C ClarinetMusicVoice measure 102]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2454,10 +2454,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         es''16
-        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+        \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2473,8 +2473,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2489,13 +2489,13 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''4
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 103]                             %! SM4
+        % [C ClarinetMusicVoice measure 103]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2503,8 +2503,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8.
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2520,8 +2520,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2533,15 +2533,15 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [C ClarinetMusicVoice measure 104]                             %! SM4
+        % [C ClarinetMusicVoice measure 104]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         f\breve.
-        \mp                                                              %! EXPLICIT_DYNAMIC:SM8
+        \mp                                                          %! EXPLICIT_DYNAMIC:SM8
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 105]                             %! SM4
+        % [C ClarinetMusicVoice measure 105]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2549,10 +2549,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         es''8
-        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
+        \ppp                                                         %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2567,8 +2567,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2576,8 +2576,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''16
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2592,8 +2592,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2609,20 +2609,20 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         es''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \times 2/3 {
         
-        % [C ClarinetMusicVoice measure 106]                             %! SM4
+        % [C ClarinetMusicVoice measure 106]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''4
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2637,8 +2637,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         es''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2650,7 +2650,7 @@ C_ClarinetMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [C ClarinetMusicVoice measure 107]                             %! SM4
+        % [C ClarinetMusicVoice measure 107]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2658,10 +2658,10 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         fs''8.
-        \pppp                                                            %! EXPLICIT_DYNAMIC:SM8
+        \pppp                                                        %! EXPLICIT_DYNAMIC:SM8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2676,8 +2676,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         fs''8
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2692,8 +2692,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         fs''16
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2709,13 +2709,13 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [C ClarinetMusicVoice measure 108]                             %! SM4
+        % [C ClarinetMusicVoice measure 108]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2723,8 +2723,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''8
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2740,8 +2740,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2752,7 +2752,7 @@ C_ClarinetMusicVoice = {
     }
     \times 2/3 {
         
-        % [C ClarinetMusicVoice measure 109]                             %! SM4
+        % [C ClarinetMusicVoice measure 109]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2760,8 +2760,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2769,8 +2769,8 @@ C_ClarinetMusicVoice = {
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
         fs''8.
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2786,8 +2786,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''8
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2799,7 +2799,7 @@ C_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [C ClarinetMusicVoice measure 110]                             %! SM4
+        % [C ClarinetMusicVoice measure 110]                         %! SM4
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2807,8 +2807,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''16
         [
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2817,8 +2817,8 @@ C_ClarinetMusicVoice = {
         \once \override Stem.color = #red
         fs''8.
         ]
-        - \tweak color #red                                              %! SM14
-        ^ \markup { @ }                                                  %! SM14
+        - \tweak color #red                                          %! SM14
+        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
