@@ -85,31 +85,7 @@ i_ClarinetMusicVoice = {
                         {                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
                             \with-color                              %! DEFAULT_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'DarkViolet)             %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                {                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                    \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                        (“BassClarinet”              %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                    \vcenter                         %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in                  %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                            #16                      %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                            \center-column           %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                {                    %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                    Bass             %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                    clarinet         %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                }                    %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                    \concat                          %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                        {                            %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                            \vcenter                 %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in          %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                    #10              %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                    \center-column   %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                        {            %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                            Bass     %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                            cl.      %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                        }            %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                            \vcenter                 %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                                )                    %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                        }                            %! DEFAULT_INSTRUMENT_ALERT:SM11
-                                }                                    %! DEFAULT_INSTRUMENT_ALERT:SM11
+                                (“BassClarinet”)                     %! DEFAULT_INSTRUMENT_ALERT:SM11
                         }                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
                     \line                                            %! IC
                         {                                            %! IC
