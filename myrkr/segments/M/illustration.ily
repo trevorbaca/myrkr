@@ -1606,3 +1606,9 @@ M_ClarinetMusicVoice = {
         
     }
 }
+
+
+M_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \M_ClarinetMusicVoice
+}

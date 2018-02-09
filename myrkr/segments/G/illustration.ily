@@ -3553,3 +3553,9 @@ G_ClarinetMusicVoice = {
         
     }
 }
+
+
+G_ClarinetMusicStaff = {
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \G_ClarinetMusicVoice
+}

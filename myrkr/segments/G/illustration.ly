@@ -27,10 +27,7 @@
             \context MusicContext = "MusicContext"
             {
                 \context ClarinetMusicStaff = "ClarinetMusicStaff"
-                {
-                    \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                    \G_ClarinetMusicVoice
-                }
+                \G_ClarinetMusicStaff
             }
         >>
     >>
