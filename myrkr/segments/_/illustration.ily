@@ -70,11 +70,11 @@ i_ClarinetMusicVoice = {
                         cl.                                          %! ST1:DEFAULT_INSTRUMENT:SM8
                     }                                                %! ST1:DEFAULT_INSTRUMENT:SM8
             }                                                        %! ST1:DEFAULT_INSTRUMENT:SM8
-        \set ClarinetMusicStaff.forceClef = ##t                      %! ST3:DEFAULT_CLEF:SM8
         \clef "treble"                                               %! ST3:DEFAULT_CLEF:SM8
         \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+        \set ClarinetMusicStaff.forceClef = ##t                      %! ST3:DEFAULT_CLEF:SM8
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         e\breve.
         \fff                                                         %! IC:EXPLICIT_DYNAMIC:SM8
