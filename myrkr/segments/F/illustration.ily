@@ -750,6 +750,8 @@ F_ClarinetMusicVoice = {
                 #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
                 (“BassClarinet”)                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
             }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
+        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         \set ClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                 #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -768,8 +770,6 @@ F_ClarinetMusicVoice = {
                         cl.                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                     }                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
             }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
         
         d'''2
         \glissando                                                   %! SC

@@ -95,6 +95,7 @@ i_ClarinetMusicVoice = {
                         }                                            %! IC
                 }
             }
+        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! ST1:REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
         \set ClarinetMusicStaff.instrumentName = \markup {           %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
             \hcenter-in                                              %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
                 #16                                                  %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
@@ -113,7 +114,6 @@ i_ClarinetMusicVoice = {
                         cl.                                          %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
                     }                                                %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
             }                                                        %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! ST1:REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
         
     }
