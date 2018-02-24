@@ -81,7 +81,7 @@ maker(
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 3, 4),
+    baca.scope('ClarinetMusicVoice', (3, 4)),
     baca.glissando(),
     )
 
