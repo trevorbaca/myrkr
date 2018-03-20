@@ -41,7 +41,6 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=myrkr.instruments,
     final_markup=(
         ['Cambridge, MA', 'Dallas, TX.'],
         ['August', 'October 2015.'],
@@ -54,8 +53,6 @@ maker = baca.SegmentMaker(
         (1, abjad.Accelerando()),
         (10, myrkr.metronome_marks['110']),
         ),
-    metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
