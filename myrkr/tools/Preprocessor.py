@@ -215,6 +215,6 @@ class Preprocessor(object):
             stage_number = bundle[0]
             commands = bundle[1]
             maker(
-                baca.scope('ClarinetMusicVoice', stage_number),
+                ('ClarinetMusicVoice', stage_number),
                 *commands,
                 )
