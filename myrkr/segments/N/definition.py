@@ -61,43 +61,43 @@ for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
     maker(
-        baca.scope('ClarinetMusicVoice', stage_number),
+        ('ClarinetMusicVoice', stage_number),
         baca.make_rhythm(selection),
         )
 
 preprocessor.make_commands(maker)
 
 maker(
-    baca.scope('ClarinetMusicVoice', 1),
+    ('ClarinetMusicVoice', 1),
     baca.glissando(),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 2),
+    ('ClarinetMusicVoice', 2),
     baca.markup('“U”', direction=abjad.Up),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', (3, 4)),
+    ('ClarinetMusicVoice', (3, 4)),
     baca.glissando(),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 5),
+    ('ClarinetMusicVoice', 5),
     baca.markup('“A”', direction=abjad.Up),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 6),
+    ('ClarinetMusicVoice', 6),
     baca.glissando(),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 8),
+    ('ClarinetMusicVoice', 8),
     baca.glissando(),
     )
 
 maker(
-    baca.scope('ClarinetMusicVoice', 10),
+    ('ClarinetMusicVoice', 10),
     baca.glissando(),
     )
