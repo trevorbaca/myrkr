@@ -1,6 +1,7 @@
 import abjad
 import baca
 import myrkr
+import os
 
 
 ###############################################################################
@@ -53,6 +54,7 @@ maker = baca.SegmentMaker(
         (1, abjad.Accelerando()),
         (10, myrkr.metronome_marks['110']),
         ),
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )

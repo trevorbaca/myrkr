@@ -1,6 +1,7 @@
 import abjad
 import baca
 import myrkr
+import os
 
 
 ###############################################################################
@@ -37,6 +38,7 @@ maker = baca.SegmentMaker(
     metronome_mark_measure_map=(
         (1, myrkr.metronome_marks['44']),
         ),
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
     )
