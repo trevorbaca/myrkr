@@ -50,7 +50,7 @@ for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1
     selection = preprocessor.get_music(stage_number)
     maker(
-        ('ClarinetMusicVoice', stage_number),
+        ('cl', stage_number),
         baca.make_rhythm(selection),
         )
 
