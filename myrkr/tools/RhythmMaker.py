@@ -120,6 +120,7 @@ class RhythmMaker(object):
         tuplets = split_tuplets
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         for tuplet in tuplets:
+            tuplet.trivialize()
             beam = abjad.MultipartBeam()
             leaves = abjad.select(tuplet).leaves()
             abjad.attach(beam, leaves)
