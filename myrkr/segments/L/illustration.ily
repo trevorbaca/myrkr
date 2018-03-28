@@ -341,7 +341,6 @@ L_ClarinetMusicVoice = {
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -359,10 +358,6 @@ L_ClarinetMusicVoice = {
                                 \upright                             %! IC
                                     overblow                         %! IC
                         }                                            %! IC
-                    \line                                            %! SM14
-                        {                                            %! SM14
-                            @                                        %! SM14
-                        }                                            %! SM14
                 }
             }
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -372,77 +367,56 @@ L_ClarinetMusicVoice = {
         
         % [L ClarinetMusicVoice measure 357]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 358]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 359]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 360]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 361]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 362]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 363]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
     }
 }

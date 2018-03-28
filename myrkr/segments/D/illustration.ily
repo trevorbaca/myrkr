@@ -1147,24 +1147,13 @@ D_ClarinetMusicVoice = {
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         b'4
         \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \column
-                {
-                    \line                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        {                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                            \with-color                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                #(x11-color 'green4)                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                                (“BassClarinet”)                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                        }                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                    \line                                            %! SM14
-                        {                                            %! SM14
-                            @                                        %! SM14
-                        }                                            %! SM14
-                }
-            }
+        ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+                (“BassClarinet”)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1174,11 +1163,8 @@ D_ClarinetMusicVoice = {
             }
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \makeRed                                                     %! SM14
         b'8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1187,10 +1173,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         b'16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1199,11 +1182,8 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         b'8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1216,11 +1196,8 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 112]                         %! SM4
-        \makeRed                                                     %! SM14
         b'8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1229,21 +1206,15 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         b'8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 113]                         %! SM4
-        \makeRed                                                     %! SM14
         b'8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1252,10 +1223,7 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         b'16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1264,11 +1232,8 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         b'8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1283,12 +1248,9 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 115]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         b'8
         \mp                                                          %! SM8:REDUNDANT_DYNAMIC:IC
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1297,20 +1259,14 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         b'16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 116]                         %! SM4
-        \makeRed                                                     %! SM14
         b'8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1319,10 +1275,7 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         b'4
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1331,11 +1284,8 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         b'8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1344,10 +1294,7 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         b'16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1356,11 +1303,8 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         b'8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1374,17 +1318,11 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 117]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs''4
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         cs''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1393,10 +1331,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         cs''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1405,21 +1340,15 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         cs''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 118]                         %! SM4
-        \makeRed                                                     %! SM14
         cs''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1428,11 +1357,8 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         cs''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1445,11 +1371,8 @@ D_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 119]                         %! SM4
-        \makeRed                                                     %! SM14
         cs''8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1458,10 +1381,7 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         cs''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1470,11 +1390,8 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         cs''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1496,12 +1413,9 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 121]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         cs''8
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1510,11 +1424,8 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         cs''16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1527,15 +1438,9 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 122]                         %! SM4
-        \makeRed                                                     %! SM14
         cs''8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         cs''4
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1544,11 +1449,8 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         cs''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1557,16 +1459,10 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         cs''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         cs''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1580,11 +1476,8 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 123]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         d''4
         \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1593,16 +1486,10 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         d''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         d''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1611,11 +1498,8 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         d''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1628,17 +1512,11 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 124]                         %! SM4
-        \makeRed                                                     %! SM14
         d''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         d''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1651,11 +1529,8 @@ D_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 125]                         %! SM4
-        \makeRed                                                     %! SM14
         d''8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1664,16 +1539,10 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         d''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         d''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1695,18 +1564,12 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 127]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         d''8
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         d''16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1719,10 +1582,7 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 128]                         %! SM4
-        \makeRed                                                     %! SM14
         d''8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1731,16 +1591,10 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         d''4
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         d''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1749,10 +1603,7 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         d''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1761,22 +1612,16 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         d''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 129]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         ds''4
         \ffff                                                        %! SM8:EXPLICIT_DYNAMIC:IC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1785,11 +1630,8 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         ds''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1798,16 +1640,10 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         ds''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         ds''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1820,11 +1656,8 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 130]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1833,21 +1666,15 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         ds''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 131]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1856,10 +1683,7 @@ D_ClarinetMusicVoice = {
                         3
             }
         
-        \makeRed                                                     %! SM14
         ds''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1868,11 +1692,8 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         ds''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1919,12 +1740,9 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 136]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         ds''8
         \ffff                                                        %! SM8:EXPLICIT_DYNAMIC:IC
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1933,11 +1751,8 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         ds''16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1950,10 +1765,7 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 137]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1962,10 +1774,7 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         ds''4
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1974,16 +1783,10 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         ds''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         ds''16
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1992,11 +1795,8 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         ds''8.
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2009,17 +1809,11 @@ D_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 138]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         ds''8
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2032,11 +1826,8 @@ D_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [D ClarinetMusicVoice measure 139]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2045,15 +1836,9 @@ D_ClarinetMusicVoice = {
                         4
             }
         
-        \makeRed                                                     %! SM14
         ds''8
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         ds''8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2062,11 +1847,8 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         ds''16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2079,15 +1861,9 @@ D_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [D ClarinetMusicVoice measure 140]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
-        \makeRed                                                     %! SM14
         ds''4
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2100,11 +1876,8 @@ D_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 141]                         %! SM4
-        \makeRed                                                     %! SM14
         ds''8.
         [
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2113,10 +1886,7 @@ D_ClarinetMusicVoice = {
                         1
             }
         
-        \makeRed                                                     %! SM14
         ds''8
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2125,11 +1895,8 @@ D_ClarinetMusicVoice = {
                         2
             }
         
-        \makeRed                                                     %! SM14
         ds''16
         ]
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)

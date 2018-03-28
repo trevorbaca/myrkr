@@ -54,13 +54,13 @@ preprocessor = myrkr.Preprocessor(
 # Indigo position 80 ...
 
 maker = baca.SegmentMaker(
+    color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
-    transpose_score=True,
-    )
+    transpose_score=True,)
 
 for stage_index in range(maker.stage_count):
     stage_number = stage_index + 1

@@ -1264,22 +1264,16 @@ N_ClarinetMusicVoice = {
         es'''2
         \glissando                                                   %! SC
         
-        \makeRed                                                     %! SM14
         fs'''2.
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [N ClarinetMusicVoice measure 391]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                                     %! SM14
         fs'''2
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
-        - \tweak color #red                                          %! SM14
-        ^ \markup { @ }                                              %! SM14
         
         es'''2
         \glissando                                                   %! SC

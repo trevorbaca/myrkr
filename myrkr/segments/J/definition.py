@@ -42,6 +42,7 @@ preprocessor = myrkr.Preprocessor(
 # Indigo position 128 ...
 
 maker = baca.SegmentMaker(
+    color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_mark_stem_height=1.5,
