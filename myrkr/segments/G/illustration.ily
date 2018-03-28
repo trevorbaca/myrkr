@@ -1860,16 +1860,12 @@ G_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [G ClarinetMusicVoice measure 176]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         f\breve
         \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -1893,11 +1889,7 @@ G_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [G ClarinetMusicVoice measure 177]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f1
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -1906,11 +1898,7 @@ G_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [G ClarinetMusicVoice measure 178]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f\breve.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -1968,23 +1956,15 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 185]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs''16
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8.
         ]
         - \tweak color #red                                          %! SM14
@@ -1997,11 +1977,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2013,11 +1989,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2026,11 +1998,7 @@ G_ClarinetMusicVoice = {
     \times 8/9 {
         
         % [G ClarinetMusicVoice measure 186]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''16
         [
         - \tweak color #red                                          %! SM14
@@ -2043,11 +2011,7 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8.
         ]
         - \tweak color #red                                          %! SM14
@@ -2064,21 +2028,13 @@ G_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [G ClarinetMusicVoice measure 187]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         [
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2090,11 +2046,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8.
         ]
         - \tweak color #red                                          %! SM14
@@ -2111,11 +2063,7 @@ G_ClarinetMusicVoice = {
     \times 8/9 {
         
         % [G ClarinetMusicVoice measure 188]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         [
         - \tweak color #red                                          %! SM14
@@ -2128,11 +2076,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8.
         ]
         - \tweak color #red                                          %! SM14
@@ -2149,12 +2093,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 189]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         b'8
         \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
@@ -2168,11 +2108,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'16
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2184,21 +2120,13 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         ]
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2210,11 +2138,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2230,21 +2154,13 @@ G_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [G ClarinetMusicVoice measure 190]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         [
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'16
         ]
         - \tweak color #red                                          %! SM14
@@ -2261,11 +2177,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 191]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'16
         [
         - \tweak color #red                                          %! SM14
@@ -2278,20 +2190,12 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2303,11 +2207,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         ]
         - \tweak color #red                                          %! SM14
@@ -2324,11 +2224,7 @@ G_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [G ClarinetMusicVoice measure 192]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         [
         - \tweak color #red                                          %! SM14
@@ -2341,11 +2237,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'16
         ]
         - \tweak color #red                                          %! SM14
@@ -2362,11 +2254,7 @@ G_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [G ClarinetMusicVoice measure 193]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         [
         - \tweak color #red                                          %! SM14
@@ -2379,20 +2267,12 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         ]
         - \tweak color #red                                          %! SM14
@@ -2409,11 +2289,7 @@ G_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [G ClarinetMusicVoice measure 194]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2425,11 +2301,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2481,11 +2353,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 201]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2494,12 +2362,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 202]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         \pppp                                                        %! SM8:REDUNDANT_DYNAMIC:IC
@@ -2510,11 +2374,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 203]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2524,11 +2384,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 204]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2538,11 +2394,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 205]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2552,11 +2404,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 206]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2566,11 +2414,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 207]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2580,11 +2424,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 208]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2594,11 +2434,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 209]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2608,12 +2444,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 210]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         b'8
         \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
@@ -2627,20 +2459,12 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'16
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2652,11 +2476,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2668,11 +2488,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         ]
         - \tweak color #red                                          %! SM14
@@ -2682,11 +2498,7 @@ G_ClarinetMusicVoice = {
     \times 8/13 {
         
         % [G ClarinetMusicVoice measure 211]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8.
         [
         - \tweak color #red                                          %! SM14
@@ -2699,11 +2511,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         b'8
         ]
         - \tweak color #red                                          %! SM14
@@ -2720,12 +2528,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 212]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs''8.
         \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         [
@@ -2739,11 +2543,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''16
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2755,11 +2555,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2771,11 +2567,7 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         ]
         - \tweak color #red                                          %! SM14
@@ -2785,11 +2577,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 213]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''8
         [
         - \tweak color #red                                          %! SM14
@@ -2802,11 +2590,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         cs''16
         ]
         - \tweak color #red                                          %! SM14
@@ -2823,12 +2607,8 @@ G_ClarinetMusicVoice = {
     \times 8/13 {
         
         % [G ClarinetMusicVoice measure 214]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         a'16
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         [
@@ -2842,11 +2622,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8.
         ]
         - \tweak color #red                                          %! SM14
@@ -2859,11 +2635,7 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -2879,11 +2651,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 215]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8.
         [
         - \tweak color #red                                          %! SM14
@@ -2896,11 +2664,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8
         ]
         - \tweak color #red                                          %! SM14
@@ -2917,11 +2681,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 216]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2931,11 +2691,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 217]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2945,11 +2701,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 218]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -2959,12 +2711,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 219]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         a'8
         \mf                                                          %! SM8:REDUNDANT_DYNAMIC:IC
         [
@@ -2978,20 +2726,12 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'16
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3003,11 +2743,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3019,11 +2755,7 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8
         ]
         - \tweak color #red                                          %! SM14
@@ -3039,11 +2771,7 @@ G_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [G ClarinetMusicVoice measure 220]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'4
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3055,11 +2783,7 @@ G_ClarinetMusicVoice = {
                         4
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         a'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3075,23 +2799,15 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 221]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         gs'8.
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         gs'8
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3103,11 +2819,7 @@ G_ClarinetMusicVoice = {
                         1
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         gs'16
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -3119,11 +2831,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         gs'8.
         ]
         - \tweak color #red                                          %! SM14
@@ -3133,11 +2841,7 @@ G_ClarinetMusicVoice = {
     \times 8/9 {
         
         % [G ClarinetMusicVoice measure 222]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         gs'8
         [
         - \tweak color #red                                          %! SM14
@@ -3150,11 +2854,7 @@ G_ClarinetMusicVoice = {
                         3
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         gs'8.
         ]
         - \tweak color #red                                          %! SM14
@@ -3171,12 +2871,8 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 223]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3187,11 +2883,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 224]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14
@@ -3201,11 +2893,7 @@ G_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [G ClarinetMusicVoice measure 225]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         f''4
         -\tenuto                                                     %! IC
         - \tweak color #red                                          %! SM14

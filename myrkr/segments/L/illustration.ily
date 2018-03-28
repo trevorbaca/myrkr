@@ -336,16 +336,12 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 356]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
@@ -375,12 +371,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 357]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -390,12 +382,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 358]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -405,12 +393,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 359]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -420,12 +404,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 360]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -435,12 +415,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 361]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -450,12 +426,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 362]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
@@ -465,12 +437,8 @@ L_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [L ClarinetMusicVoice measure 363]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         cs1
         \fff                                                         %! SM8:REDUNDANT_DYNAMIC:IC
         - \tweak color #red                                          %! SM14
