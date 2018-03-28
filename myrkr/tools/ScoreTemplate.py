@@ -36,16 +36,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {
                     \context ClarinetMusicVoice = "ClarinetMusicVoice"
                     {
-                        \set ClarinetMusicStaff.instrumentName = \markup {      %! ST1
-                            \hcenter-in                                         %! ST1
-                                #16                                             %! ST1
-                                "Bass clarinet"                                 %! ST1
-                            }                                                   %! ST1
-                        \set ClarinetMusicStaff.shortInstrumentName = \markup { %! ST1
-                            \hcenter-in                                         %! ST1
-                                #10                                             %! ST1
-                                "Bass cl."                                      %! ST1
-                            }                                                   %! ST1
                         \clef "treble" %! ST3
                         s1
                     }
@@ -58,6 +48,8 @@ class ScoreTemplate(baca.ScoreTemplate):
     ### CLASS VARIABLES ###
 
     __documentation_section__ = None
+
+    _do_not_require_margin_markup = True
 
     ### INITIALIZER ###
 
@@ -112,6 +104,18 @@ class ScoreTemplate(baca.ScoreTemplate):
         return score
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def do_not_require_margin_markup(self):
+        r'''Does not require margin markup.
+
+        ..  container:: example
+
+            >>> myrkr.ScoreTemplate().do_not_require_margin_markup
+            True
+
+        '''
+        return super(ScoreTemplate, self).do_not_require_margin_markup
 
     @property
     def voice_abbreviations(self):

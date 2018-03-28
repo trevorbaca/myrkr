@@ -1602,21 +1602,10 @@ K_ClarinetMusicVoice = {
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Stem.color = #red
-        \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REAPPLIED_INSTRUMENT:SM37
-            \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
-                #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
-                "Bass clarinet"                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
-            }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REAPPLIED_INSTRUMENT:SM37
-            \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
-                #10                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
-                "Bass cl."                                           %! SM8:REAPPLIED_INSTRUMENT:SM37
-            }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
         \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         f'''4
         -\tenuto                                                     %! IC
@@ -1637,17 +1626,6 @@ K_ClarinetMusicVoice = {
                 }
             }
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-        \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                #16                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                "Bass clarinet"                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                #10                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-                "Bass cl."                                           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-            }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
