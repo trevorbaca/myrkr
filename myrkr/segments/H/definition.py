@@ -44,12 +44,6 @@ maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_mark_measure_map=(
-        (1, abjad.Ritardando()),
-        (3, myrkr.metronome_marks['55']),
-        (5, abjad.Accelerando()),
-        (7, myrkr.metronome_marks['110']),
-        ),
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
@@ -65,6 +59,14 @@ for stage_index in range(maker.stage_count):
         )
 
 preprocessor.make_commands(maker)
+
+maker(
+    'GlobalSkips',
+    baca.metronome_mark(abjad.Ritardando()),
+    baca.metronome_mark('55', selector=baca.leaf(4)),
+    baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(8)),
+    baca.metronome_mark('110', selector=baca.leaf(12)),
+    )
 
 maker(
     ('cl', 2),
