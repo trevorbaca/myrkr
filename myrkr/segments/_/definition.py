@@ -47,4 +47,5 @@ preprocessor.make_commands(maker)
 maker(
     ('cl', 1),
     baca.markup.overblow(),
+    baca.start_markup(['BASS', 'CLARINET'], hcenter_in=18),
     )

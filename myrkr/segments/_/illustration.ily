@@ -45,18 +45,17 @@ i_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [_ ClarinetMusicVoice measure 1]                           %! SM4
-        \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:DEFAULT_INSTRUMENT:ST1
-            \hcenter-in                                              %! SM8:DEFAULT_INSTRUMENT:ST1
-                #16                                                  %! SM8:DEFAULT_INSTRUMENT:ST1
-                "Bass clarinet"                                      %! SM8:DEFAULT_INSTRUMENT:ST1
-            }                                                        %! SM8:DEFAULT_INSTRUMENT:ST1
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:DEFAULT_INSTRUMENT:ST1
-            \hcenter-in                                              %! SM8:DEFAULT_INSTRUMENT:ST1
-                #10                                                  %! SM8:DEFAULT_INSTRUMENT:ST1
-                "Bass cl."                                           %! SM8:DEFAULT_INSTRUMENT:ST1
-            }                                                        %! SM8:DEFAULT_INSTRUMENT:ST1
+        \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
+        \markup {                                                    %! IC:STMK:-PARTS
+            \hcenter-in                                              %! IC:STMK:-PARTS
+                #18                                                  %! IC:STMK:-PARTS
+                \center-column                                       %! IC:STMK:-PARTS
+                    {                                                %! IC:STMK:-PARTS
+                        BASS                                         %! IC:STMK:-PARTS
+                        CLARINET                                     %! IC:STMK:-PARTS
+                    }                                                %! IC:STMK:-PARTS
+            }                                                        %! IC:STMK:-PARTS
         \clef "treble"                                               %! SM8:DEFAULT_CLEF:ST3
-        \once \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_INSTRUMENT_COLOR:ST1
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:DEFAULT_CLEF:SM33:ST3
@@ -80,17 +79,6 @@ i_ClarinetMusicVoice = {
                         }                                            %! IC
                 }
             }
-        \override ClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! SM6:REDRAWN_DEFAULT_INSTRUMENT_COLOR:ST1
-        \set ClarinetMusicStaff.instrumentName = \markup {           %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-            \hcenter-in                                              %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-                #16                                                  %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-                "Bass clarinet"                                      %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-            }                                                        %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-        \set ClarinetMusicStaff.shortInstrumentName = \markup {      %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-            \hcenter-in                                              %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-                #10                                                  %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-                "Bass cl."                                           %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
-            }                                                        %! SM8:REDRAWN_DEFAULT_INSTRUMENT:SM34:ST1
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
         
     }
