@@ -83,21 +83,6 @@ maker(
     )
 
 maker(
-    ('cl', 1),
-    baca.tenuti(),
-    )
-
-maker(
-    ('cl', 4),
-    baca.tenuti(),
-    )
-
-maker(
-    ('cl', 9),
-    baca.tenuti(),
-    )
-
-maker(
-    ('cl', 11),
+    ('cl', [1, 4, 9, 11]),
     baca.tenuti(),
     )

@@ -81,31 +81,11 @@ maker(
     )
 
 maker(
-    ('cl', 3),
+    ('cl', [3, 7, 17]),
     baca.glissando(),
     )
 
 maker(
-    ('cl', 7),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 8),
+    ('cl', [8, 12, 15]),
     baca.tenuti(),
-    )
-
-maker(
-    ('cl', 12),
-    baca.tenuti(),
-    )
-
-maker(
-    ('cl', 15),
-    baca.tenuti(),
-    )
-
-maker(
-    ('cl', 17),
-    baca.glissando(),
     )

@@ -65,16 +65,6 @@ maker(
     )
 
 maker(
-    ('cl', 1),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 3),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 6),
+    ('cl', [1, 3, 6]),
     baca.glissando(),
     )
