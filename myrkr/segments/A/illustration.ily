@@ -1814,62 +1814,59 @@ A_GlobalSkips = {
 
 
 A_ClarinetMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 2]                           %! SM4
-        \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
-        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        f''8.
-        \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                (“BassClarinet”)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-        
-        f''4
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        f''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        f''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        f''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 2]                               %! SM4
+    \clef "treble"                                                   %! SM8:REAPPLIED_CLEF:SM37
+    \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override ClarinetMusicStaff.Clef.color = ##f                    %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set ClarinetMusicStaff.forceClef = ##t                          %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    f''8.
+    \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        \with-color                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            #(x11-color 'green4)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            (“BassClarinet”)                                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        }                                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+    \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    
+    f''4
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    f''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    f''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    f''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -1887,41 +1884,38 @@ A_ClarinetMusicVoice = {
         f''8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 4]                           %! SM4
-        f''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        f''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        f''8.
-        
-        f''16
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 4]                               %! SM4
+    f''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    f''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    f''8.
+    
+    f''16
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -1987,50 +1981,47 @@ A_ClarinetMusicVoice = {
                         1
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 8]                           %! SM4
-        f''8.
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        f''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        f''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        f''8.
-        
-        f''16
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 8]                               %! SM4
+    f''8.
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    f''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    f''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    f''8.
+    
+    f''16
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -2048,41 +2039,38 @@ A_ClarinetMusicVoice = {
         f''8.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 10]                          %! SM4
-        f''8.
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        f''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        f''8.
-        
-        f''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 10]                              %! SM4
+    f''8.
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    f''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    f''8.
+    
+    f''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
     \times 4/5 {
         
         % [A ClarinetMusicVoice measure 11]                          %! SM4
@@ -2163,52 +2151,49 @@ A_ClarinetMusicVoice = {
         d''2.
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 15]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        f''16
-        \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        f''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        f''8
-        
-        f''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        f''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 15]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    f''16
+    \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    f''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    f''8
+    
+    f''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    f''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -2233,41 +2218,38 @@ A_ClarinetMusicVoice = {
                         4
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 17]                          %! SM4
-        f''16
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        f''8.
-        ]
-        
-        f''4
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        f''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 17]                              %! SM4
+    f''16
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    f''8.
+    ]
+    
+    f''4
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    f''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
@@ -2285,21 +2267,18 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 19]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        d''2
-        \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 19]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    d''2
+    \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -2347,43 +2326,40 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 22]                          %! SM4
-        fs''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''16
-        
-        fs''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        fs''4
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        fs''8
-    }
+    
+    % [A ClarinetMusicVoice measure 22]                              %! SM4
+    fs''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''16
+    
+    fs''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    fs''4
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    fs''8
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
@@ -2416,43 +2392,40 @@ A_ClarinetMusicVoice = {
         d''2.
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 25]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs''16
-        \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        fs''8
-        
-        fs''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 25]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    fs''16
+    \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    fs''8
+    
+    fs''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -2537,50 +2510,47 @@ A_ClarinetMusicVoice = {
         
         fs''4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 30]                          %! SM4
-        fs''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        fs''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''8.
-        
-        fs''8
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        fs''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 30]                              %! SM4
+    fs''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    fs''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''8.
+    
+    fs''8
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    fs''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
@@ -2598,82 +2568,73 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 32]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        c''2.
-        \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 33]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs''8.
-        \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        fs''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        fs''8
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 34]                          %! SM4
-        fs''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''16
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 32]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    c''2.
+    \f                                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    % [A ClarinetMusicVoice measure 33]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    fs''8.
+    \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    fs''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    fs''8
+    ]
+    
+    % [A ClarinetMusicVoice measure 34]                              %! SM4
+    fs''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''16
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -2724,76 +2685,70 @@ A_ClarinetMusicVoice = {
                         2
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 37]                          %! SM4
-        fs''8.
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        fs''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 38]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        g''8
-        \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        g''8.
-        
-        g''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        g''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        g''8
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 37]                              %! SM4
+    fs''8.
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    fs''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    % [A ClarinetMusicVoice measure 38]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+    g''8
+    \ppp                                                             %! SM8:REDUNDANT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    g''8.
+    
+    g''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    g''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    g''8
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \times 2/3 {
         
         % [A ClarinetMusicVoice measure 39]                          %! SM4
@@ -2830,30 +2785,27 @@ A_ClarinetMusicVoice = {
                         1
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 41]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        b'2
-        \ff                                                          %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        b'2
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 41]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
+    b'2
+    \ff                                                              %! SM8:REDUNDANT_DYNAMIC:IC
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    b'2
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
@@ -2867,43 +2819,40 @@ A_ClarinetMusicVoice = {
                         1
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 43]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        g''8.
-        \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        g''8
-        
-        g''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        g''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 43]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    g''8.
+    \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    g''8
+    
+    g''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    g''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
@@ -2943,12 +2892,9 @@ A_ClarinetMusicVoice = {
                         1
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 46]                          %! SM4
-        bf'2.
-    }
+    
+    % [A ClarinetMusicVoice measure 46]                              %! SM4
+    bf'2.
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
@@ -3028,52 +2974,49 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 51]                          %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        gs''8
-        \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        3
-            }
-        
-        gs''8.
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        gs''8
-        
-        gs''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        gs''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 51]                              %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    gs''8
+    \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    3
+        }
+    
+    gs''8.
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    gs''8
+    
+    gs''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    gs''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -3091,65 +3034,59 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 53]                          %! SM4
-        gs''4
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        
-        gs''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        
-        gs''16
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        gs''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 54]                          %! SM4
-        gs''8
-        [
-        
-        gs''8.
-        ]
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-    }
+    
+    % [A ClarinetMusicVoice measure 53]                              %! SM4
+    gs''4
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    gs''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    
+    gs''16
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    gs''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    
+    % [A ClarinetMusicVoice measure 54]                              %! SM4
+    gs''8
+    [
+    
+    gs''8.
+    ]
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -3176,24 +3113,21 @@ A_ClarinetMusicVoice = {
                         3
             }
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [A ClarinetMusicVoice measure 56]                          %! SM4
-        gs''8
-        [
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        4
-            }
-        
-        gs''16
-        ]
-        
-    }
+    
+    % [A ClarinetMusicVoice measure 56]                              %! SM4
+    gs''8
+    [
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    4
+        }
+    
+    gs''16
+    ]
+    
 }
 
 

@@ -125,7 +125,15 @@ class RhythmMaker(object):
             leaves = abjad.select(tuplet).leaves()
             abjad.attach(beam, leaves)
         time_signatures = self._make_time_signatures(tuplets)
-        selections = [abjad.select(_) for _ in tuplets]
+        selections = []
+        for tuplet in tuplets:
+            if tuplet.trivial():
+                selection = abjad.mutate(tuplet).eject_contents()
+                assert isinstance(selection, abjad.Selection)
+                selections.append(selection)
+            else:
+                selection = abjad.select(tuplet)
+                selections.append(selection)
         assert len(selections) == len(time_signatures)
         rhythm = zip(selections, time_signatures)
         rhythm = list(rhythm)
