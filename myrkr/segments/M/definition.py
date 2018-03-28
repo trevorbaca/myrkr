@@ -73,36 +73,12 @@ maker(
     )
 
 maker(
-    ('cl', 7),
-    baca.markup('“A”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 8),
-    baca.markup('“U”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 9),
-    baca.markup('“I”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 10),
-    baca.markup('“U”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 11),
-    baca.markup('“A”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 12),
-    baca.markup('“O”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 13),
-    baca.markup('“I”', direction=abjad.Up),
+    ('cl', [7, 8, 9, 10, 11, 12, 13]),
+    (baca.markup('“A”'), 0),
+    (baca.markup('“U”'), 1),
+    (baca.markup('“I”'), 2),
+    (baca.markup('“U”'), 3),
+    (baca.markup('“A”'), 4),
+    (baca.markup('“O”'), 5),
+    (baca.markup('“I”'), 6),
     )

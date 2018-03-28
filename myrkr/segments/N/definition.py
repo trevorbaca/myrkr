@@ -74,36 +74,12 @@ maker(
     )
 
 maker(
-    ('cl', 1),
+    ('cl', [1, (3, 4), 6, 8, 10]),
     baca.glissando(),
     )
 
 maker(
-    ('cl', 2),
-    baca.markup('“U”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', (3, 4)),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 5),
-    baca.markup('“A”', direction=abjad.Up),
-    )
-
-maker(
-    ('cl', 6),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 8),
-    baca.glissando(),
-    )
-
-maker(
-    ('cl', 10),
-    baca.glissando(),
+    ('cl', [2, 5]),
+    (baca.markup('“U”'), 0),
+    (baca.markup('“A”'), 1),
     )
