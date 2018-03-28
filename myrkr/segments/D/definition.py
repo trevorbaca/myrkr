@@ -52,6 +52,7 @@ maker = baca.SegmentMaker(
         (4, abjad.Ritardando()),
         (10, myrkr.metronome_marks['55']),
         ),
+    metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
