@@ -38,11 +38,8 @@ preprocessor = myrkr.Preprocessor(
     )
 # Cobalt position 27 ...
 
-###############################################################################
-################################ SEGMENT-MAKER ################################
-###############################################################################
-
 maker = baca.SegmentMaker(
+    color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_mark_measure_map=(
