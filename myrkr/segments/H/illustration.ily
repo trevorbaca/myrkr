@@ -836,18 +836,15 @@ H_ClarinetMusicVoice = {
             }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 232]                         %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        g''2
-        \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-        \glissando                                                   %! SC
-        
-        af''2.
-        \glissando                                                   %! SC
-    }
+    
+    % [H ClarinetMusicVoice measure 232]                             %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    g''2
+    \ff                                                              %! SM8:EXPLICIT_DYNAMIC:IC
+    \glissando                                                       %! SC
+    
+    af''2.
+    \glissando                                                       %! SC
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 233]                         %! SM4
@@ -860,15 +857,12 @@ H_ClarinetMusicVoice = {
         g''2.
         \glissando                                                   %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 234]                         %! SM4
-        af''2
-        \glissando                                                   %! SC
-        
-        g''2
-    }
+    
+    % [H ClarinetMusicVoice measure 234]                             %! SM4
+    af''2
+    \glissando                                                       %! SC
+    
+    g''2
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -877,31 +871,25 @@ H_ClarinetMusicVoice = {
         e\breve.
         \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 236]                         %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        b''2.
-        \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
-        \glissando                                                   %! SC
-        
-        c'''2
-        \glissando                                                   %! SC
-        
-        b''2.
-        \glissando                                                   %! SC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 237]                         %! SM4
-        as''2
-        \glissando                                                   %! SC
-        
-        b''2
-        \glissando                                                   %! SC
-    }
+    
+    % [H ClarinetMusicVoice measure 236]                             %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    b''2.
+    \f                                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \glissando                                                       %! SC
+    
+    c'''2
+    \glissando                                                       %! SC
+    
+    b''2.
+    \glissando                                                       %! SC
+    
+    % [H ClarinetMusicVoice measure 237]                             %! SM4
+    as''2
+    \glissando                                                       %! SC
+    
+    b''2
+    \glissando                                                       %! SC
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 238]                         %! SM4
@@ -932,19 +920,16 @@ H_ClarinetMusicVoice = {
         ef'''2
         \glissando                                                   %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 241]                         %! SM4
-        d'''2.
-        \glissando                                                   %! SC
-        
-        cs'''2
-        \glissando                                                   %! SC
-        
-        d'''2
-        \glissando                                                   %! SC
-    }
+    
+    % [H ClarinetMusicVoice measure 241]                             %! SM4
+    d'''2.
+    \glissando                                                       %! SC
+    
+    cs'''2
+    \glissando                                                       %! SC
+    
+    d'''2
+    \glissando                                                       %! SC
     \times 4/5 {
         
         % [H ClarinetMusicVoice measure 242]                         %! SM4
@@ -953,14 +938,11 @@ H_ClarinetMusicVoice = {
         
         d'''2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 243]                         %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        e\breve.
-        \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
-    }
+    
+    % [H ClarinetMusicVoice measure 243]                             %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    e\breve.
+    \mp                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 244]                         %! SM4
@@ -975,16 +957,13 @@ H_ClarinetMusicVoice = {
         fs'''2
         \glissando                                                   %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 245]                         %! SM4
-        es'''2.
-        \glissando                                                   %! SC
-        
-        fs'''2
-        \glissando                                                   %! SC
-    }
+    
+    % [H ClarinetMusicVoice measure 245]                             %! SM4
+    es'''2.
+    \glissando                                                       %! SC
+    
+    fs'''2
+    \glissando                                                       %! SC
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 246]                         %! SM4
@@ -996,28 +975,19 @@ H_ClarinetMusicVoice = {
         
         es'''2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 247]                         %! SM4
-        r8.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 248]                         %! SM4
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        c''4
-        \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
-        \glissando                                                   %! SC
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ClarinetMusicVoice measure 249]                         %! SM4
-        e''4
-        
-    }
+    
+    % [H ClarinetMusicVoice measure 247]                             %! SM4
+    r8.
+    
+    % [H ClarinetMusicVoice measure 248]                             %! SM4
+    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    c''4
+    \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    \glissando                                                       %! SC
+    
+    % [H ClarinetMusicVoice measure 249]                             %! SM4
+    e''4
+    
 }
 
 
