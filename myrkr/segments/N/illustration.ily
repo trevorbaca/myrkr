@@ -1264,11 +1264,7 @@ N_ClarinetMusicVoice = {
         es'''2
         \glissando                                                   %! SC
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                                     %! SM14
         fs'''2.
         - \tweak color #red                                          %! SM14
         ^ \markup { @ }                                              %! SM14
@@ -1277,12 +1273,8 @@ N_ClarinetMusicVoice = {
     \times 1/1 {
         
         % [N ClarinetMusicVoice measure 391]                         %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \makeRed                                                     %! SM14
         fs'''2
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
