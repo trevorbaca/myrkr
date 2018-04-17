@@ -879,7 +879,7 @@ E_ClarinetMusicVoice = {
         
         % [E ClarinetMusicVoice measure 148]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs''8
+        cs''!8
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         [
         ^ \markup {
@@ -890,7 +890,7 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        cs''16
+        cs''!16
         ]
         ^ \markup {
             \override
@@ -902,10 +902,10 @@ E_ClarinetMusicVoice = {
     }
     
     % [E ClarinetMusicVoice measure 149]                             %! SM4
-    cs''8.
+    cs''!8.
     [
     
-    cs''8
+    cs''!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -914,7 +914,7 @@ E_ClarinetMusicVoice = {
                     3
         }
     
-    cs''8
+    cs''!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -923,7 +923,7 @@ E_ClarinetMusicVoice = {
                     1
         }
     
-    cs''8.
+    cs''!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -932,7 +932,7 @@ E_ClarinetMusicVoice = {
                     2
         }
     
-    cs''16
+    cs''!16
     ]
     ^ \markup {
         \override
@@ -945,7 +945,7 @@ E_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [E ClarinetMusicVoice measure 150]                         %! SM4
-        cs''16
+        cs''!16
         [
         ^ \markup {
             \override
@@ -955,7 +955,7 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        cs''8.
+        cs''!8.
         ]
     }
     \tweak edge-height #'(0.7 . 0)
@@ -963,7 +963,7 @@ E_ClarinetMusicVoice = {
         
         % [E ClarinetMusicVoice measure 151]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs\breve
+        fs!\breve
         \mp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     }
     
@@ -973,7 +973,7 @@ E_ClarinetMusicVoice = {
     \pp                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                       %! SC
     
-    ef'''2
+    ef'''!2
     \glissando                                                       %! SC
     
     d'''2
@@ -981,7 +981,7 @@ E_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [E ClarinetMusicVoice measure 153]                         %! SM4
-        cs'''2.
+        cs'''!2.
         \glissando                                                   %! SC
         
         d'''2
@@ -990,18 +990,18 @@ E_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [E ClarinetMusicVoice measure 154]                         %! SM4
-        ef'''2
+        ef'''!2
         \glissando                                                   %! SC
         
         d'''2.
         \glissando                                                   %! SC
         
-        cs'''2
+        cs'''!2
     }
     
     % [E ClarinetMusicVoice measure 155]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''8.
+    cs''!8.
     \f                                                               %! SM8:EXPLICIT_DYNAMIC:IC
     [
     ^ \markup {
@@ -1012,9 +1012,9 @@ E_ClarinetMusicVoice = {
                     4
         }
     
-    cs''8
+    cs''!8
     
-    cs''8.
+    cs''!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1023,7 +1023,7 @@ E_ClarinetMusicVoice = {
                     1
         }
     
-    cs''8
+    cs''!8
     ]
     ^ \markup {
         \override
@@ -1035,10 +1035,10 @@ E_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [E ClarinetMusicVoice measure 156]                         %! SM4
-        cs''8.
+        cs''!8.
         [
         
-        cs''8
+        cs''!8
         ]
         ^ \markup {
             \override
@@ -1052,7 +1052,7 @@ E_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [E ClarinetMusicVoice measure 157]                         %! SM4
-        cs''4
+        cs''!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1061,7 +1061,7 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        cs''8
+        cs''!8
         [
         ^ \markup {
             \override
@@ -1071,7 +1071,7 @@ E_ClarinetMusicVoice = {
                         2
             }
         
-        cs''16
+        cs''!16
         ]
         ^ \markup {
             \override
@@ -1084,7 +1084,7 @@ E_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [E ClarinetMusicVoice measure 158]                         %! SM4
-        cs''8
+        cs''!8
         [
         ^ \markup {
             \override
@@ -1094,12 +1094,12 @@ E_ClarinetMusicVoice = {
                         1
             }
         
-        cs''8.
+        cs''!8.
         ]
     }
     
     % [E ClarinetMusicVoice measure 159]                             %! SM4
-    cs''16
+    cs''!16
     [
     ^ \markup {
         \override
@@ -1109,7 +1109,7 @@ E_ClarinetMusicVoice = {
                     4
         }
     
-    cs''8.
+    cs''!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1118,9 +1118,9 @@ E_ClarinetMusicVoice = {
                     2
         }
     
-    cs''8
+    cs''!8
     
-    cs''8.
+    cs''!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1129,7 +1129,7 @@ E_ClarinetMusicVoice = {
                     3
         }
     
-    cs''8
+    cs''!8
     ]
     ^ \markup {
         \override
@@ -1142,10 +1142,10 @@ E_ClarinetMusicVoice = {
     \times 8/11 {
         
         % [E ClarinetMusicVoice measure 160]                         %! SM4
-        cs''16
+        cs''!16
         [
         
-        cs''8.
+        cs''!8.
         ]
         ^ \markup {
             \override

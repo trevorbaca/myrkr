@@ -1188,7 +1188,7 @@ J_ClarinetMusicVoice = {
         
         % [J ClarinetMusicVoice measure 291]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        gs'16
+        gs'!16
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
         ^ \markup {
@@ -1199,7 +1199,7 @@ J_ClarinetMusicVoice = {
                         3
             }
         
-        gs'8.
+        gs'!8.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1208,14 +1208,14 @@ J_ClarinetMusicVoice = {
                         4
             }
         
-        gs'8
+        gs'!8
         ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
         % [J ClarinetMusicVoice measure 292]                         %! SM4
-        gs'16
+        gs'!16
         [
         ^ \markup {
             \override
@@ -1225,7 +1225,7 @@ J_ClarinetMusicVoice = {
                         1
             }
         
-        gs'8.
+        gs'!8.
         ]
         ^ \markup {
             \override
@@ -1439,7 +1439,7 @@ J_ClarinetMusicVoice = {
     
     % [J ClarinetMusicVoice measure 308]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs'8.
+    fs'!8.
     \fff                                                             %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \override
@@ -1449,7 +1449,7 @@ J_ClarinetMusicVoice = {
                     1
         }
     
-    fs'4
+    fs'!4
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1458,7 +1458,7 @@ J_ClarinetMusicVoice = {
                     2
         }
     
-    fs'8
+    fs'!8
     [
     ^ \markup {
         \override
@@ -1468,7 +1468,7 @@ J_ClarinetMusicVoice = {
                     4
         }
     
-    fs'16
+    fs'!16
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1477,13 +1477,13 @@ J_ClarinetMusicVoice = {
                     1
         }
     
-    fs'8.
+    fs'!8.
     ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [J ClarinetMusicVoice measure 309]                         %! SM4
-        fs'8.
+        fs'!8.
         [
         ^ \markup {
             \override
@@ -1493,7 +1493,7 @@ J_ClarinetMusicVoice = {
                         4
             }
         
-        fs'8
+        fs'!8
         ]
         ^ \markup {
             \override

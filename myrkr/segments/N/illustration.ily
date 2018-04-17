@@ -1184,7 +1184,7 @@ N_ClarinetMusicVoice = {
     %@% \override ClarinetMusicStaff.Clef.color = ##f                %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
         \set ClarinetMusicStaff.forceClef = ##t                      %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'''2
+        fs'''!2
         \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1199,13 +1199,13 @@ N_ClarinetMusicVoice = {
     }
     
     % [N ClarinetMusicVoice measure 385]                             %! SM4
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
-    es'''2.
+    es'''!2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     \times 4/5 {
         
@@ -1213,7 +1213,7 @@ N_ClarinetMusicVoice = {
         g'''2
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1236,15 +1236,15 @@ N_ClarinetMusicVoice = {
         \pp                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
-        es'''2.
+        es'''!2.
         \glissando                                                   %! SC
     }
     
     % [N ClarinetMusicVoice measure 389]                             %! SM4
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
     g'''2.
@@ -1252,39 +1252,39 @@ N_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 390]                         %! SM4
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
     }
     
     % [N ClarinetMusicVoice measure 391]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs'''2
+    fs'''!2
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                       %! SC
     
-    es'''2
+    es'''!2
     \glissando                                                       %! SC
     
     % [N ClarinetMusicVoice measure 392]                             %! SM4
-    fs'''2.
+    fs'''!2.
     \glissando                                                       %! SC
     
     g'''2
     \glissando                                                       %! SC
     
-    fs'''2.
+    fs'''!2.
     \glissando                                                       %! SC
     
     % [N ClarinetMusicVoice measure 393]                             %! SM4
-    es'''2
+    es'''!2
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
@@ -1302,11 +1302,11 @@ N_ClarinetMusicVoice = {
         
         % [N ClarinetMusicVoice measure 395]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        es'''2.
+        es'''!2.
         \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
         g'''2
@@ -1315,34 +1315,34 @@ N_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 396]                         %! SM4
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
         
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
     }
     
     % [N ClarinetMusicVoice measure 397]                             %! SM4
-    fs'''2.
+    fs'''!2.
     \glissando                                                       %! SC
     
     g'''2
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [N ClarinetMusicVoice measure 398]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        cs'1
+        cs'!1
         \pppp                                                        %! SM8:REDUNDANT_DYNAMIC:IC
     }
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 399]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'''2.
+        fs'''!2.
         \ppppp                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         
@@ -1352,13 +1352,13 @@ N_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 400]                         %! SM4
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
-        es'''2.
+        es'''!2.
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
     }
     
@@ -1366,15 +1366,15 @@ N_ClarinetMusicVoice = {
     g'''2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 402]                         %! SM4
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
         
         g'''2
@@ -1383,27 +1383,27 @@ N_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 403]                         %! SM4
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
-        es'''2.
+        es'''!2.
         \glissando                                                   %! SC
     }
     
     % [N ClarinetMusicVoice measure 404]                             %! SM4
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
     g'''2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 405]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        cs'\breve.
+        cs'!\breve.
         \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
     }
     \times 4/5 {
@@ -1414,16 +1414,16 @@ N_ClarinetMusicVoice = {
         \ppppp                                                       %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
     }
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 407]                         %! SM4
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
         g'''2.
@@ -1431,43 +1431,43 @@ N_ClarinetMusicVoice = {
     }
     
     % [N ClarinetMusicVoice measure 408]                             %! SM4
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
-    es'''2.
+    es'''!2.
     \glissando                                                       %! SC
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 409]                         %! SM4
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
         g'''2
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
     }
     
     % [N ClarinetMusicVoice measure 410]                             %! SM4
-    es'''2
+    es'''!2
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
     % [N ClarinetMusicVoice measure 411]                             %! SM4
     g'''2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
-    es'''2.
+    es'''!2.
     \glissando                                                       %! SC
     
     % [N ClarinetMusicVoice measure 412]                             %! SM4
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
     g'''2
@@ -1475,13 +1475,13 @@ N_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 413]                         %! SM4
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
         
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
     }
     \times 4/5 {
@@ -1490,15 +1490,15 @@ N_ClarinetMusicVoice = {
         g'''2.
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
     }
     
     % [N ClarinetMusicVoice measure 415]                             %! SM4
-    es'''2.
+    es'''!2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     
     g'''2
@@ -1506,23 +1506,23 @@ N_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 416]                         %! SM4
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
         
-        es'''2
+        es'''!2
         \glissando                                                   %! SC
     }
     \times 4/7 {
         
         % [N ClarinetMusicVoice measure 417]                         %! SM4
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
         
         g'''2.
         \glissando                                                   %! SC
         
         \once \override TextScript.extra-offset = #'(-24 . -4)
-        fs'''2
+        fs'''!2
         _ \markup {                                                  %! SCORE2
             \whiteout                                                %! SCORE2
                 \upright                                             %! SCORE2
