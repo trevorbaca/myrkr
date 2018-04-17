@@ -1625,11 +1625,11 @@ K_ClarinetMusicVoice = {
     
     % [K ClarinetMusicVoice measure 315]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs'8
+    fs'!8
     \fff                                                             %! SM8:EXPLICIT_DYNAMIC:IC
     [
     
-    fs'8
+    fs'!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1638,7 +1638,7 @@ K_ClarinetMusicVoice = {
                     3
         }
     
-    fs'8.
+    fs'!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1647,7 +1647,7 @@ K_ClarinetMusicVoice = {
                     1
         }
     
-    fs'16
+    fs'!16
     ]
     ^ \markup {
         \override
@@ -1660,7 +1660,7 @@ K_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [K ClarinetMusicVoice measure 316]                         %! SM4
-        fs'8.
+        fs'!8.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1669,7 +1669,7 @@ K_ClarinetMusicVoice = {
                         4
             }
         
-        fs'4
+        fs'!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1705,7 +1705,7 @@ K_ClarinetMusicVoice = {
         
         % [K ClarinetMusicVoice measure 322]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'8.
+        fs'!8.
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         [
         ^ \markup {
@@ -1716,7 +1716,7 @@ K_ClarinetMusicVoice = {
                         1
             }
         
-        fs'8
+        fs'!8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1725,14 +1725,14 @@ K_ClarinetMusicVoice = {
                         2
             }
         
-        fs'16
+        fs'!16
         ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
         % [K ClarinetMusicVoice measure 323]                         %! SM4
-        fs'8
+        fs'!8
         [
         ^ \markup {
             \override
@@ -1742,7 +1742,7 @@ K_ClarinetMusicVoice = {
                         3
             }
         
-        fs'16
+        fs'!16
         ]
         ^ \markup {
             \override
@@ -1889,7 +1889,7 @@ K_ClarinetMusicVoice = {
         
         % [K ClarinetMusicVoice measure 332]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef'4
+        ef'!4
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
             \override
@@ -1899,7 +1899,7 @@ K_ClarinetMusicVoice = {
                         4
             }
         
-        ef'8
+        ef'!8
         [
         ^ \markup {
             \override
@@ -1909,13 +1909,13 @@ K_ClarinetMusicVoice = {
                         2
             }
         
-        ef'16
+        ef'!16
         ]
     }
     \times 4/5 {
         
         % [K ClarinetMusicVoice measure 333]                         %! SM4
-        ef'8
+        ef'!8
         [
         ^ \markup {
             \override
@@ -1925,7 +1925,7 @@ K_ClarinetMusicVoice = {
                         3
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -1960,7 +1960,7 @@ K_ClarinetMusicVoice = {
     
     % [K ClarinetMusicVoice measure 339]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    ef'16
+    ef'!16
     \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     [
     ^ \markup {
@@ -1971,9 +1971,9 @@ K_ClarinetMusicVoice = {
                     1
         }
     
-    ef'8.
+    ef'!8.
     
-    ef'8
+    ef'!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1982,7 +1982,7 @@ K_ClarinetMusicVoice = {
                     4
         }
     
-    ef'8.
+    ef'!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1991,13 +1991,13 @@ K_ClarinetMusicVoice = {
                     2
         }
     
-    ef'8
+    ef'!8
     ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [K ClarinetMusicVoice measure 340]                         %! SM4
-        ef'16
+        ef'!16
         [
         ^ \markup {
             \override
@@ -2007,7 +2007,7 @@ K_ClarinetMusicVoice = {
                         3
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -2028,7 +2028,7 @@ K_ClarinetMusicVoice = {
     
     % [K ClarinetMusicVoice measure 342]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    ef'16
+    ef'!16
     \mp                                                              %! SM8:REDUNDANT_DYNAMIC:IC
     [
     ^ \markup {
@@ -2039,7 +2039,7 @@ K_ClarinetMusicVoice = {
                     2
         }
     
-    ef'8.
+    ef'!8.
     ]
     ^ \markup {
         \override
@@ -2049,7 +2049,7 @@ K_ClarinetMusicVoice = {
                     4
         }
     
-    ef'4
+    ef'!4
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2058,12 +2058,12 @@ K_ClarinetMusicVoice = {
                     1
         }
     
-    ef'8
+    ef'!8
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
         % [K ClarinetMusicVoice measure 343]                         %! SM4
-        ef'16
+        ef'!16
         [
         ^ \markup {
             \override
@@ -2073,7 +2073,7 @@ K_ClarinetMusicVoice = {
                         4
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -2088,7 +2088,7 @@ K_ClarinetMusicVoice = {
         
         % [K ClarinetMusicVoice measure 344]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef'8
+        ef'!8
         \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
         ^ \markup {
@@ -2099,7 +2099,7 @@ K_ClarinetMusicVoice = {
                         3
             }
         
-        ef'8
+        ef'!8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2108,7 +2108,7 @@ K_ClarinetMusicVoice = {
                         1
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -2122,7 +2122,7 @@ K_ClarinetMusicVoice = {
     \times 8/9 {
         
         % [K ClarinetMusicVoice measure 345]                         %! SM4
-        ef'8
+        ef'!8
         [
         ^ \markup {
             \override
@@ -2132,7 +2132,7 @@ K_ClarinetMusicVoice = {
                         4
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -2145,7 +2145,7 @@ K_ClarinetMusicVoice = {
     
     % [K ClarinetMusicVoice measure 346]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    ef'8
+    ef'!8
     \pp                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     [
     ^ \markup {
@@ -2156,9 +2156,9 @@ K_ClarinetMusicVoice = {
                     2
         }
     
-    ef'16
+    ef'!16
     
-    ef'8.
+    ef'!8.
     ]
     ^ \markup {
         \override
@@ -2168,7 +2168,7 @@ K_ClarinetMusicVoice = {
                     3
         }
     
-    ef'4
+    ef'!4
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2177,7 +2177,7 @@ K_ClarinetMusicVoice = {
                     1
         }
     
-    ef'8
+    ef'!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2189,7 +2189,7 @@ K_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [K ClarinetMusicVoice measure 347]                         %! SM4
-        ef'8.
+        ef'!8.
         [
         ^ \markup {
             \override
@@ -2199,7 +2199,7 @@ K_ClarinetMusicVoice = {
                         4
             }
         
-        ef'16
+        ef'!16
         ]
         ^ \markup {
             \override
@@ -2212,7 +2212,7 @@ K_ClarinetMusicVoice = {
     
     % [K ClarinetMusicVoice measure 348]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    ef'16
+    ef'!16
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
     [
     ^ \markup {
@@ -2223,9 +2223,9 @@ K_ClarinetMusicVoice = {
                     2
         }
     
-    ef'8.
+    ef'!8.
     
-    ef'8
+    ef'!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2234,7 +2234,7 @@ K_ClarinetMusicVoice = {
                     3
         }
     
-    ef'8
+    ef'!8
     ]
     ^ \markup {
         \override
@@ -2247,7 +2247,7 @@ K_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [K ClarinetMusicVoice measure 349]                         %! SM4
-        ef'8
+        ef'!8
         [
         ^ \markup {
             \override
@@ -2257,7 +2257,7 @@ K_ClarinetMusicVoice = {
                         2
             }
         
-        ef'16
+        ef'!16
         ]
         ^ \markup {
             \override
@@ -2280,11 +2280,11 @@ K_ClarinetMusicVoice = {
         
         % [K ClarinetMusicVoice measure 351]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef'8.
+        ef'!8.
         \pppp                                                        %! SM8:EXPLICIT_DYNAMIC:IC
         [
         
-        ef'8
+        ef'!8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2293,7 +2293,7 @@ K_ClarinetMusicVoice = {
                         1
             }
         
-        ef'8.
+        ef'!8.
         ]
         ^ \markup {
             \override
@@ -2307,9 +2307,9 @@ K_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [K ClarinetMusicVoice measure 352]                         %! SM4
-        ef'8.
+        ef'!8.
         
-        ef'4
+        ef'!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)

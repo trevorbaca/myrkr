@@ -792,7 +792,7 @@ M_ClarinetMusicVoice = {
 %@% \override ClarinetMusicStaff.Clef.color = ##f                    %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set ClarinetMusicStaff.forceClef = ##t                          %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    ef'8
+    ef'!8
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
     [
     ^ \markup {                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -809,7 +809,7 @@ M_ClarinetMusicVoice = {
         }
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    ef'16
+    ef'!16
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -818,9 +818,9 @@ M_ClarinetMusicVoice = {
                     4
         }
     
-    ef'8.
+    ef'!8.
     
-    ef'8
+    ef'!8
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -829,7 +829,7 @@ M_ClarinetMusicVoice = {
                     1
         }
     
-    ef'8
+    ef'!8
     ]
     ^ \markup {
         \override
@@ -842,10 +842,10 @@ M_ClarinetMusicVoice = {
     \times 8/13 {
         
         % [M ClarinetMusicVoice measure 365]                         %! SM4
-        ef'8.
+        ef'!8.
         [
         
-        ef'8
+        ef'!8
         ]
         ^ \markup {
             \override
@@ -908,11 +908,11 @@ M_ClarinetMusicVoice = {
         
         % [M ClarinetMusicVoice measure 368]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        cs'16
+        cs'!16
         \pppp                                                        %! SM8:REDUNDANT_DYNAMIC:IC
         [
         
-        cs'8.
+        cs'!8.
         ]
         ^ \markup {
             \override
@@ -922,7 +922,7 @@ M_ClarinetMusicVoice = {
                         4
             }
         
-        cs'4
+        cs'!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -933,10 +933,10 @@ M_ClarinetMusicVoice = {
     }
     
     % [M ClarinetMusicVoice measure 369]                             %! SM4
-    cs'8.
+    cs'!8.
     [
     
-    cs'8
+    cs'!8
     ]
     ^ \markup {
         \override
@@ -947,7 +947,7 @@ M_ClarinetMusicVoice = {
         }
     
     % [M ClarinetMusicVoice measure 370]                             %! SM4
-    cs'8
+    cs'!8
     [
     ^ \markup {
         \override
@@ -957,9 +957,9 @@ M_ClarinetMusicVoice = {
                     4
         }
     
-    cs'8.
+    cs'!8.
     
-    cs'16
+    cs'!16
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -968,7 +968,7 @@ M_ClarinetMusicVoice = {
                     1
         }
     
-    cs'8.
+    cs'!8.
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -977,12 +977,12 @@ M_ClarinetMusicVoice = {
                     2
         }
     
-    cs'8
+    cs'!8
     ]
     \times 2/3 {
         
         % [M ClarinetMusicVoice measure 371]                         %! SM4
-        cs'4
+        cs'!4
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -991,7 +991,7 @@ M_ClarinetMusicVoice = {
                         3
             }
         
-        cs'8
+        cs'!8
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1008,7 +1008,7 @@ M_ClarinetMusicVoice = {
         
         % [M ClarinetMusicVoice measure 373]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        cs'\breve.
+        cs'!\breve.
         \pppp                                                        %! SM8:REDUNDANT_DYNAMIC:IC
     }
     
@@ -1107,7 +1107,7 @@ M_ClarinetMusicVoice = {
         
         % [M ClarinetMusicVoice measure 383]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        fs'1
+        fs'!1
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {
             \override

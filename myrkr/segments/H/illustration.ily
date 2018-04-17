@@ -726,7 +726,7 @@ H_ClarinetMusicVoice = {
     \ff                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     \glissando                                                       %! SC
     
-    af''2.
+    af''!2.
     \glissando                                                       %! SC
     \times 4/7 {
         
@@ -734,7 +734,7 @@ H_ClarinetMusicVoice = {
         g''2
         \glissando                                                   %! SC
         
-        fs''2
+        fs''!2
         \glissando                                                   %! SC
         
         g''2.
@@ -742,7 +742,7 @@ H_ClarinetMusicVoice = {
     }
     
     % [H ClarinetMusicVoice measure 234]                             %! SM4
-    af''2
+    af''!2
     \glissando                                                       %! SC
     
     g''2
@@ -768,7 +768,7 @@ H_ClarinetMusicVoice = {
     \glissando                                                       %! SC
     
     % [H ClarinetMusicVoice measure 237]                             %! SM4
-    as''2
+    as''!2
     \glissando                                                       %! SC
     
     b''2
@@ -782,7 +782,7 @@ H_ClarinetMusicVoice = {
         b''2
         \glissando                                                   %! SC
         
-        as''2
+        as''!2
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -800,7 +800,7 @@ H_ClarinetMusicVoice = {
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
         \glissando                                                   %! SC
         
-        ef'''2
+        ef'''!2
         \glissando                                                   %! SC
     }
     
@@ -808,7 +808,7 @@ H_ClarinetMusicVoice = {
     d'''2.
     \glissando                                                       %! SC
     
-    cs'''2
+    cs'''!2
     \glissando                                                       %! SC
     
     d'''2
@@ -816,7 +816,7 @@ H_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [H ClarinetMusicVoice measure 242]                         %! SM4
-        ef'''2.
+        ef'''!2.
         \glissando                                                   %! SC
         
         d'''2
@@ -830,22 +830,22 @@ H_ClarinetMusicVoice = {
         
         % [H ClarinetMusicVoice measure 244]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-        fs'''2
+        fs'''!2
         \mp                                                          %! SM8:REDUNDANT_DYNAMIC:IC
         \glissando                                                   %! SC
         
         g'''2.
         \glissando                                                   %! SC
         
-        fs'''2
+        fs'''!2
         \glissando                                                   %! SC
     }
     
     % [H ClarinetMusicVoice measure 245]                             %! SM4
-    es'''2.
+    es'''!2.
     \glissando                                                       %! SC
     
-    fs'''2
+    fs'''!2
     \glissando                                                       %! SC
     \times 4/7 {
         
@@ -853,10 +853,10 @@ H_ClarinetMusicVoice = {
         g'''2
         \glissando                                                   %! SC
         
-        fs'''2.
+        fs'''!2.
         \glissando                                                   %! SC
         
-        es'''2
+        es'''!2
     }
     
     % [H ClarinetMusicVoice measure 247]                             %! SM4

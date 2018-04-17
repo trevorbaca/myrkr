@@ -927,7 +927,7 @@ B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 65]                              %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''2
+    cs''!2
     \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \override
@@ -940,7 +940,7 @@ B_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [B ClarinetMusicVoice measure 66]                          %! SM4
-        cs''2
+        cs''!2
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -953,7 +953,7 @@ B_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [B ClarinetMusicVoice measure 67]                          %! SM4
-        cs''2.
+        cs''!2.
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -962,7 +962,7 @@ B_ClarinetMusicVoice = {
                         1
             }
         
-        cs''2
+        cs''!2
     }
     
     % [B ClarinetMusicVoice measure 68]                              %! SM4
@@ -1017,7 +1017,7 @@ B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 70]                              %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs''2
+    cs''!2
     \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \override
@@ -1103,10 +1103,10 @@ B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 75]                              %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-    bf'2.
+    bf'!2.
     \f                                                               %! SM8:REDUNDANT_DYNAMIC:IC
     
-    bf'2
+    bf'!2
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1118,7 +1118,7 @@ B_ClarinetMusicVoice = {
     \times 4/7 {
         
         % [B ClarinetMusicVoice measure 76]                          %! SM4
-        bf'2
+        bf'!2
         
     }
 }

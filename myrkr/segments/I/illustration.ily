@@ -1155,7 +1155,7 @@ I_ClarinetMusicVoice = {
         
         % [I ClarinetMusicVoice measure 273]                         %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        ef1
+        ef!1
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                                  %! IC
             \whiteout                                                %! IC
@@ -1167,17 +1167,17 @@ I_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [I ClarinetMusicVoice measure 274]                         %! SM4
-        ef\breve.
+        ef!\breve.
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [I ClarinetMusicVoice measure 275]                         %! SM4
-        ef\breve
+        ef!\breve
     }
     
     % [I ClarinetMusicVoice measure 276]                             %! SM4
-    ef\breve.
+    ef!\breve.
     
 }
 
