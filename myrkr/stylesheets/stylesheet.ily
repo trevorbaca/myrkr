@@ -1,6 +1,7 @@
 #(set-default-paper-size "11x17landscape")
 #(set-global-staff-size 11)
 
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
 \include "contexts.ily"
 
 \paper {
