@@ -84,5 +84,5 @@ maker(
 
 maker(
     ('cl', [1, 4, 9, 11]),
-    baca.tenuti(),
+    baca.tenuto(),
     )
