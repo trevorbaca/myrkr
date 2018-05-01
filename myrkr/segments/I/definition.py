@@ -72,7 +72,7 @@ maker(
 
 maker(
     ('cl', [4, 6, 8, 9]),
-    baca.tenuto(),
+    baca.tenuto(baca.pheads()),
     )
 
 maker(
