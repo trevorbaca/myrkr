@@ -2204,8 +2204,8 @@ G_ClarinetMusicVoice = {
     % [G ClarinetMusicVoice measure 202]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     f''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [G ClarinetMusicVoice measure 203]                             %! SM4
     f''4
@@ -2536,8 +2536,8 @@ G_ClarinetMusicVoice = {
     % [G ClarinetMusicVoice measure 223]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [G ClarinetMusicVoice measure 224]                             %! SM4
     f''4

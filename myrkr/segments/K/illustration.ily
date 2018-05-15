@@ -1595,8 +1595,8 @@ K_ClarinetMusicVoice = {
     \set ClarinetMusicStaff.forceClef = ##t                          %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     ^ \markup {                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1676,8 +1676,8 @@ K_ClarinetMusicVoice = {
     % [K ClarinetMusicVoice measure 317]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [K ClarinetMusicVoice measure 318]                             %! SM4
     f'''4
@@ -1868,8 +1868,8 @@ K_ClarinetMusicVoice = {
     % [K ClarinetMusicVoice measure 329]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [K ClarinetMusicVoice measure 330]                             %! SM4
     f'''4
@@ -1933,8 +1933,8 @@ K_ClarinetMusicVoice = {
     % [K ClarinetMusicVoice measure 334]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [K ClarinetMusicVoice measure 335]                             %! SM4
     f'''4
