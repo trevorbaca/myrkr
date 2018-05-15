@@ -1164,8 +1164,8 @@ J_ClarinetMusicVoice = {
     % [J ClarinetMusicVoice measure 286]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:REDUNDANT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [J ClarinetMusicVoice measure 287]                             %! SM4
     f'''4
@@ -1297,8 +1297,8 @@ J_ClarinetMusicVoice = {
     % [J ClarinetMusicVoice measure 295]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [J ClarinetMusicVoice measure 296]                             %! SM4
     f'''4
@@ -1367,8 +1367,8 @@ J_ClarinetMusicVoice = {
     % [J ClarinetMusicVoice measure 301]                             %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f'''4
-    -\tenuto                                                         %! IC
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tenuto                                                         %! IC
     
     % [J ClarinetMusicVoice measure 302]                             %! SM4
     f'''4
