@@ -4,8 +4,9 @@ import math
 
 
 class RhythmMaker(object):
-    r'''Rhythm-maker.
-    '''
+    """
+    Rhythm-maker.
+    """
 
     ### CLASS VARIABLES ###
 
@@ -50,10 +51,11 @@ class RhythmMaker(object):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls rhythm-maker.
+        """
+        Calls rhythm-maker.
 
         Returns list of selections.
-        '''
+        """
         lcm = abjad.mathtools.least_common_multiple(
             len(self.terms),
             sum(self.counts),
@@ -146,10 +148,11 @@ class RhythmMaker(object):
         subtitle=None,
         title=None,
         ):
-        r'''Illustrates rhythm-maker.
+        """
+        Illustrates rhythm-maker.
 
         Returns LilyPond file.
-        '''
+        """
         proportional_notation_duration = abjad.Duration(
             proportional_notation_duration
             )
@@ -265,42 +268,48 @@ class RhythmMaker(object):
 
     @property
     def counts(self):
-        r'''Gets counts.
-        '''
+        """
+        Gets counts.
+        """
         return self._counts
 
     @property
     def denominator(self):
-        r'''Gets denominator.
-        '''
+        """
+        Gets denominator.
+        """
         return self._denominator
 
     @property
     def displace_split_tuplets(self):
-        r'''Is true when split tuplets should displace. Otherwise false.
-        '''
+        """
+        Is true when split tuplets should displace. Otherwise false.
+        """
         return self._displace_split_tuplets
 
     @property
     def prolation_indicators(self):
-        r'''Gets prolation indicators. All indicators are -1, 0 or 1.
+        """
+        Gets prolation indicators. All indicators are -1, 0 or 1.
 
         Returns cyclic tuple.
-        '''
+        """
         return self._prolation_indicators
 
     @property
     def split_indicators(self):
-        r'''Gets split indicators.
+        """
+        Gets split indicators.
 
         Set to an iterable in which all elements are 0 or 1.
 
         Returns cyclic tuple.
-        '''
+        """
         return self._split_indicators
 
     @property
     def terms(self):
-        r'''Gets terms.
-        '''
+        """
+        Gets terms.
+        """
         return self._terms

@@ -4,8 +4,9 @@ import myrkr
 
 
 def color_fingerings(name, index=0):
-    r'''Makes color fingerings.
-    '''
+    """
+    Makes color fingerings.
+    """
     color_fingerings = {
         'A': abjad.CyclicTuple([0, 1, 2, 1, 0, 1, 0, 2, 1, 2, 1, 0, 1, 2, 1]),
         'B': abjad.CyclicTuple([0, 2, 1, 3, 1, 2, 1, 3, 0, 1, 0, 2, 1, 2, 3]),

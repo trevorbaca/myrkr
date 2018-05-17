@@ -4,8 +4,9 @@ from abjad import rhythmmakertools as rhythmos
 
 
 class ColorMaker(object):
-    r'''Color maker.
-    '''
+    """
+    Color maker.
+    """
 
     ### CLASS VARIABLES ###
 
@@ -22,10 +23,11 @@ class ColorMaker(object):
     ### SPECIAL METHODS ###
 
     def __call__(self, start_pitch=None):
-        r'''Calls color-maker.
+        """
+        Calls color-maker.
 
         Returns selection of notes.
-        '''
+        """
         start_pitch = abjad.NamedPitch(start_pitch)
         notes = []
         previous_pitch = start_pitch
@@ -38,10 +40,11 @@ class ColorMaker(object):
         return selection
 
     def __illustrate__(self, start_pitch=None, title=None, subtitle=None):
-        r'''Illustrates color-maker output.
+        """
+        Illustrates color-maker output.
 
         Returns LilyPond file.
-        '''
+        """
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
@@ -128,6 +131,7 @@ class ColorMaker(object):
 
     @property
     def indicators(self):
-        r'''Gets indicators.
-        '''
+        """
+        Gets indicators.
+        """
         return self._indicators
