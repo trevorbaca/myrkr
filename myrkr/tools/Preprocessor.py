@@ -5,8 +5,9 @@ import myrkr
 
 
 class Preprocessor(object):
-    r'''Preprocessor.
-    '''
+    """
+    Preprocessor.
+    """
 
     ### CLASS VARIABLES ###
 
@@ -170,32 +171,37 @@ class Preprocessor(object):
 
     @property
     def indicators(self):
-        r'''Gets indicators.
-        '''
+        """
+        Gets indicators.
+        """
         return self._indicators
 
     @property
     def measures_per_stage(self):
-        r'''Gets measures per stage.
-        '''
+        """
+        Gets measures per stage.
+        """
         return self._measures_per_stage
 
     @property
     def name_to_rhythm(self):
-        r'''Changes name to rhythm.
-        '''
+        """
+        Changes name to rhythm.
+        """
         return self._name_to_rhythm
 
     @property
     def selections(self):
-        r'''Gets selections.
-        '''
+        """
+        Gets selections.
+        """
         return self._selections
 
     @property
     def time_signatures(self):
-        r'''Gets time signatures.
-        '''
+        """
+        Gets time signatures.
+        """
         return self._time_signatures
 
     ### PUBLIC METHODS ###

@@ -4,7 +4,8 @@ import myrkr
 
 
 class ScoreTemplate(baca.ScoreTemplate):
-    r'''Score template.
+    r"""
+    Score template.
 
     >>> import myrkr
 
@@ -43,7 +44,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             }
         >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -62,8 +63,9 @@ class ScoreTemplate(baca.ScoreTemplate):
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
-        r'''Calls score template.
-        '''
+        """
+        Calls score template.
+        """
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
@@ -107,19 +109,21 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     @property
     def do_not_require_margin_markup(self):
-        r'''Does not require margin markup.
+        """
+        Does not require margin markup.
 
         ..  container:: example
 
             >>> myrkr.ScoreTemplate().do_not_require_margin_markup
             True
 
-        '''
+        """
         return super(ScoreTemplate, self).do_not_require_margin_markup
 
     @property
     def voice_abbreviations(self):
-        r'''Gets voice abbreviations.
+        """
+        Gets voice abbreviations.
 
         ..  container:: example
 
@@ -131,5 +135,5 @@ class ScoreTemplate(baca.ScoreTemplate):
                     ]
                 )
 
-        '''
+        """
         return super(ScoreTemplate, self).voice_abbreviations
