@@ -1,6 +1,6 @@
 A_GlobalSkips = {
     
-    % [A GlobalSkips measure 2]                                          %! SM4
+    % [A GlobalSkips measure 2 / measure 1]                              %! SM4
     \time 13/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
@@ -85,7 +85,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 3]                                          %! SM4
+    % [A GlobalSkips measure 3 / measure 2]                              %! SM4
     \time 5/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/22
@@ -115,7 +115,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 4]                                          %! SM4
+    % [A GlobalSkips measure 4 / measure 3]                              %! SM4
     \time 8/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -145,7 +145,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 5]                                          %! SM4
+    % [A GlobalSkips measure 5 / measure 4]                              %! SM4
     \time 7/20                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/20
@@ -175,7 +175,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 6]                                          %! SM4
+    % [A GlobalSkips measure 6 / measure 5]                              %! SM4
     \time 6/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/11
@@ -205,7 +205,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 7]                                          %! SM4
+    % [A GlobalSkips measure 7 / measure 6]                              %! SM4
     \time 3/20                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/20
@@ -235,7 +235,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 8]                                          %! SM4
+    % [A GlobalSkips measure 8 / measure 7]                              %! SM4
     \time 11/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
@@ -265,7 +265,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 9]                                          %! SM4
+    % [A GlobalSkips measure 9 / measure 8]                              %! SM4
     \time 4/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/11
@@ -295,7 +295,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 10]                                         %! SM4
+    % [A GlobalSkips measure 10 / measure 9]                             %! SM4
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
@@ -325,7 +325,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 11]                                         %! SM4
+    % [A GlobalSkips measure 11 / measure 10]                            %! SM4
     \time 4/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
@@ -355,7 +355,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 12]                                         %! SM4
+    % [A GlobalSkips measure 12 / measure 11]                            %! SM4
     \time 7/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/22
@@ -385,7 +385,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 13]                                         %! SM4
+    % [A GlobalSkips measure 13 / measure 12]                            %! SM4
     \time 4/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
@@ -415,7 +415,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 14]                                         %! SM4
+    % [A GlobalSkips measure 14 / measure 13]                            %! SM4
     \time 3/7                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/7
@@ -450,7 +450,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 15]                                         %! SM4
+    % [A GlobalSkips measure 15 / measure 14]                            %! SM4
     \time 11/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
@@ -485,7 +485,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 16]                                         %! SM4
+    % [A GlobalSkips measure 16 / measure 15]                            %! SM4
     \time 4/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/11
@@ -515,7 +515,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 17]                                         %! SM4
+    % [A GlobalSkips measure 17 / measure 16]                            %! SM4
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
@@ -545,7 +545,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 18]                                         %! SM4
+    % [A GlobalSkips measure 18 / measure 17]                            %! SM4
     \time 4/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/9
@@ -575,7 +575,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 19]                                         %! SM4
+    % [A GlobalSkips measure 19 / measure 18]                            %! SM4
     \time 2/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -610,7 +610,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 20]                                         %! SM4
+    % [A GlobalSkips measure 20 / measure 19]                            %! SM4
     \time 7/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/22
@@ -645,7 +645,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 21]                                         %! SM4
+    % [A GlobalSkips measure 21 / measure 20]                            %! SM4
     \time 5/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/18
@@ -680,7 +680,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 22]                                         %! SM4
+    % [A GlobalSkips measure 22 / measure 21]                            %! SM4
     \time 12/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -710,7 +710,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 23]                                         %! SM4
+    % [A GlobalSkips measure 23 / measure 22]                            %! SM4
     \time 3/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/6
@@ -740,7 +740,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 24]                                         %! SM4
+    % [A GlobalSkips measure 24 / measure 23]                            %! SM4
     \time 3/5                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/5
@@ -775,7 +775,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 25]                                         %! SM4
+    % [A GlobalSkips measure 25 / measure 24]                            %! SM4
     \time 8/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -810,7 +810,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 26]                                         %! SM4
+    % [A GlobalSkips measure 26 / measure 25]                            %! SM4
     \time 3/20                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/20
@@ -840,7 +840,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 27]                                         %! SM4
+    % [A GlobalSkips measure 27 / measure 26]                            %! SM4
     \time 4/7                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 4/7
@@ -875,7 +875,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 28]                                         %! SM4
+    % [A GlobalSkips measure 28 / measure 27]                            %! SM4
     \time 6/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/3
@@ -910,7 +910,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 29]                                         %! SM4
+    % [A GlobalSkips measure 29 / measure 28]                            %! SM4
     \time 7/20                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/20
@@ -940,7 +940,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 30]                                         %! SM4
+    % [A GlobalSkips measure 30 / measure 29]                            %! SM4
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
@@ -970,7 +970,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 31]                                         %! SM4
+    % [A GlobalSkips measure 31 / measure 30]                            %! SM4
     \time 5/26                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/26
@@ -1000,7 +1000,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 32]                                         %! SM4
+    % [A GlobalSkips measure 32 / measure 31]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -1035,7 +1035,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 33]                                         %! SM4
+    % [A GlobalSkips measure 33 / measure 32]                            %! SM4
     \time 9/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/16
@@ -1070,7 +1070,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 34]                                         %! SM4
+    % [A GlobalSkips measure 34 / measure 33]                            %! SM4
     \time 3/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/16
@@ -1100,7 +1100,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 35]                                         %! SM4
+    % [A GlobalSkips measure 35 / measure 34]                            %! SM4
     \time 2/5                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/5
@@ -1135,7 +1135,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 36]                                         %! SM4
+    % [A GlobalSkips measure 36 / measure 35]                            %! SM4
     \time 8/26                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 4/13
@@ -1170,7 +1170,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 37]                                         %! SM4
+    % [A GlobalSkips measure 37 / measure 36]                            %! SM4
     \time 5/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/16
@@ -1200,7 +1200,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 38]                                         %! SM4
+    % [A GlobalSkips measure 38 / measure 37]                            %! SM4
     \time 11/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
@@ -1235,7 +1235,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 39]                                         %! SM4
+    % [A GlobalSkips measure 39 / measure 38]                            %! SM4
     \time 4/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
@@ -1265,7 +1265,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 40]                                         %! SM4
+    % [A GlobalSkips measure 40 / measure 39]                            %! SM4
     \time 3/5                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/5
@@ -1300,7 +1300,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 41]                                         %! SM4
+    % [A GlobalSkips measure 41 / measure 40]                            %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
@@ -1335,7 +1335,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 42]                                         %! SM4
+    % [A GlobalSkips measure 42 / measure 41]                            %! SM4
     \time 2/7                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/7
@@ -1365,7 +1365,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 43]                                         %! SM4
+    % [A GlobalSkips measure 43 / measure 42]                            %! SM4
     \time 9/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/16
@@ -1400,7 +1400,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 44]                                         %! SM4
+    % [A GlobalSkips measure 44 / measure 43]                            %! SM4
     \time 5/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/18
@@ -1430,7 +1430,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 45]                                         %! SM4
+    % [A GlobalSkips measure 45 / measure 44]                            %! SM4
     \time 2/5                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/5
@@ -1465,7 +1465,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 46]                                         %! SM4
+    % [A GlobalSkips measure 46 / measure 45]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -1495,7 +1495,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 47]                                         %! SM4
+    % [A GlobalSkips measure 47 / measure 46]                            %! SM4
     \time 5/7                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/7
@@ -1525,7 +1525,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 48]                                         %! SM4
+    % [A GlobalSkips measure 48 / measure 47]                            %! SM4
     \time 2/7                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/7
@@ -1555,7 +1555,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 49]                                         %! SM4
+    % [A GlobalSkips measure 49 / measure 48]                            %! SM4
     \time 4/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
@@ -1590,7 +1590,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 50]                                         %! SM4
+    % [A GlobalSkips measure 50 / measure 49]                            %! SM4
     \time 4/18                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/9
@@ -1620,7 +1620,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 51]                                         %! SM4
+    % [A GlobalSkips measure 51 / measure 50]                            %! SM4
     \time 11/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
@@ -1655,7 +1655,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 52]                                         %! SM4
+    % [A GlobalSkips measure 52 / measure 51]                            %! SM4
     \time 4/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/11
@@ -1685,7 +1685,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 53]                                         %! SM4
+    % [A GlobalSkips measure 53 / measure 52]                            %! SM4
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
@@ -1715,7 +1715,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 54]                                         %! SM4
+    % [A GlobalSkips measure 54 / measure 53]                            %! SM4
     \time 5/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/16
@@ -1745,7 +1745,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 55]                                         %! SM4
+    % [A GlobalSkips measure 55 / measure 54]                            %! SM4
     \time 7/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/22
@@ -1775,7 +1775,7 @@ A_GlobalSkips = {
             }
         }
     
-    % [A GlobalSkips measure 56]                                         %! SM4
+    % [A GlobalSkips measure 56 / measure 55]                            %! SM4
     \time 3/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/16
@@ -1813,7 +1813,7 @@ A_GlobalSkips = {
 
 A_ClarinetMusicVoice = {
     
-    % [A ClarinetMusicVoice measure 2]                               %! SM4
+    % [A ClarinetMusicVoice measure 2 / measure 1]                   %! SM4
     \clef "treble"                                                   %! SM8:REAPPLIED_CLEF:SM37
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override ClarinetMusicStaff.Clef.color = ##f                    %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -1868,7 +1868,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 3]                           %! SM4
+        % [A ClarinetMusicVoice measure 3 / measure 2]               %! SM4
         f''8.
         [
         ^ \markup {
@@ -1883,7 +1883,7 @@ A_ClarinetMusicVoice = {
         ]
     }
     
-    % [A ClarinetMusicVoice measure 4]                               %! SM4
+    % [A ClarinetMusicVoice measure 4 / measure 3]                   %! SM4
     f''8
     [
     ^ \markup {
@@ -1917,7 +1917,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 5]                           %! SM4
+        % [A ClarinetMusicVoice measure 5 / measure 4]               %! SM4
         f''8.
         ^ \markup {
             \override
@@ -1932,7 +1932,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 6]                           %! SM4
+        % [A ClarinetMusicVoice measure 6 / measure 5]               %! SM4
         f''8.
         [
         ^ \markup {
@@ -1958,7 +1958,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 7]                           %! SM4
+        % [A ClarinetMusicVoice measure 7 / measure 6]               %! SM4
         f''8
         [
         ^ \markup {
@@ -1980,7 +1980,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 8]                               %! SM4
+    % [A ClarinetMusicVoice measure 8 / measure 7]                   %! SM4
     f''8.
     [
     ^ \markup {
@@ -2023,7 +2023,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 9]                           %! SM4
+        % [A ClarinetMusicVoice measure 9 / measure 8]               %! SM4
         f''16
         [
         ^ \markup {
@@ -2038,7 +2038,7 @@ A_ClarinetMusicVoice = {
         ]
     }
     
-    % [A ClarinetMusicVoice measure 10]                              %! SM4
+    % [A ClarinetMusicVoice measure 10 / measure 9]                  %! SM4
     f''8.
     [
     ^ \markup {
@@ -2071,7 +2071,7 @@ A_ClarinetMusicVoice = {
         }
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 11]                          %! SM4
+        % [A ClarinetMusicVoice measure 11 / measure 10]             %! SM4
         f''8.
         [
         ^ \markup {
@@ -2088,7 +2088,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 12]                          %! SM4
+        % [A ClarinetMusicVoice measure 12 / measure 11]             %! SM4
         f''4
         ^ \markup {
             \override
@@ -2120,7 +2120,7 @@ A_ClarinetMusicVoice = {
     }
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 13]                          %! SM4
+        % [A ClarinetMusicVoice measure 13 / measure 12]             %! SM4
         f''8
         [
         ^ \markup {
@@ -2144,13 +2144,13 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [A ClarinetMusicVoice measure 14]                          %! SM4
+        % [A ClarinetMusicVoice measure 14 / measure 13]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d''2.
         \mf                                                          %! SM8:EXPLICIT_DYNAMIC:IC
     }
     
-    % [A ClarinetMusicVoice measure 15]                              %! SM4
+    % [A ClarinetMusicVoice measure 15 / measure 14]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f''16
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2195,7 +2195,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 16]                          %! SM4
+        % [A ClarinetMusicVoice measure 16 / measure 15]             %! SM4
         f''16
         [
         ^ \markup {
@@ -2217,7 +2217,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 17]                              %! SM4
+    % [A ClarinetMusicVoice measure 17 / measure 16]                 %! SM4
     f''16
     [
     ^ \markup {
@@ -2251,7 +2251,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [A ClarinetMusicVoice measure 18]                          %! SM4
+        % [A ClarinetMusicVoice measure 18 / measure 17]             %! SM4
         f''16
         [
         
@@ -2266,7 +2266,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 19]                              %! SM4
+    % [A ClarinetMusicVoice measure 19 / measure 18]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d''2
     \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2280,7 +2280,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 20]                          %! SM4
+        % [A ClarinetMusicVoice measure 20 / measure 19]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         f''8
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2308,7 +2308,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [A ClarinetMusicVoice measure 21]                          %! SM4
+        % [A ClarinetMusicVoice measure 21 / measure 20]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         fs''!8
         \ppp                                                         %! SM8:REDUNDANT_DYNAMIC:IC
@@ -2325,7 +2325,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 22]                              %! SM4
+    % [A ClarinetMusicVoice measure 22 / measure 21]                 %! SM4
     fs''!8
     [
     ^ \markup {
@@ -2361,7 +2361,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [A ClarinetMusicVoice measure 23]                          %! SM4
+        % [A ClarinetMusicVoice measure 23 / measure 22]             %! SM4
         fs''!8.
         [
         ^ \markup {
@@ -2385,13 +2385,13 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 24]                          %! SM4
+        % [A ClarinetMusicVoice measure 24 / measure 23]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d''2.
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     }
     
-    % [A ClarinetMusicVoice measure 25]                              %! SM4
+    % [A ClarinetMusicVoice measure 25 / measure 24]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs''!16
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2427,7 +2427,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 26]                          %! SM4
+        % [A ClarinetMusicVoice measure 26 / measure 25]             %! SM4
         fs''!8
         [
         ^ \markup {
@@ -2444,7 +2444,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [A ClarinetMusicVoice measure 27]                          %! SM4
+        % [A ClarinetMusicVoice measure 27 / measure 26]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d''2
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2468,7 +2468,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [A ClarinetMusicVoice measure 28]                          %! SM4
+        % [A ClarinetMusicVoice measure 28 / measure 27]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!8.
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2496,7 +2496,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 29]                          %! SM4
+        % [A ClarinetMusicVoice measure 29 / measure 28]             %! SM4
         fs''!8.
         ^ \markup {
             \override
@@ -2509,7 +2509,7 @@ A_ClarinetMusicVoice = {
         fs''!4
     }
     
-    % [A ClarinetMusicVoice measure 30]                              %! SM4
+    % [A ClarinetMusicVoice measure 30 / measure 29]                 %! SM4
     fs''!8
     [
     ^ \markup {
@@ -2552,7 +2552,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
-        % [A ClarinetMusicVoice measure 31]                          %! SM4
+        % [A ClarinetMusicVoice measure 31 / measure 30]             %! SM4
         fs''!8.
         [
         
@@ -2567,7 +2567,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 32]                              %! SM4
+    % [A ClarinetMusicVoice measure 32 / measure 31]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c''2.
     \f                                                               %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2579,7 +2579,7 @@ A_ClarinetMusicVoice = {
                     2
         }
     
-    % [A ClarinetMusicVoice measure 33]                              %! SM4
+    % [A ClarinetMusicVoice measure 33 / measure 32]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs''!8.
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2613,7 +2613,7 @@ A_ClarinetMusicVoice = {
     fs''!8
     ]
     
-    % [A ClarinetMusicVoice measure 34]                              %! SM4
+    % [A ClarinetMusicVoice measure 34 / measure 33]                 %! SM4
     fs''!8
     [
     ^ \markup {
@@ -2636,7 +2636,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 35]                          %! SM4
+        % [A ClarinetMusicVoice measure 35 / measure 34]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c''2
         \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2651,7 +2651,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
-        % [A ClarinetMusicVoice measure 36]                          %! SM4
+        % [A ClarinetMusicVoice measure 36 / measure 35]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!16
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2684,7 +2684,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 37]                              %! SM4
+    % [A ClarinetMusicVoice measure 37 / measure 36]                 %! SM4
     fs''!8.
     [
     ^ \markup {
@@ -2705,7 +2705,7 @@ A_ClarinetMusicVoice = {
                     1
         }
     
-    % [A ClarinetMusicVoice measure 38]                              %! SM4
+    % [A ClarinetMusicVoice measure 38 / measure 37]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     g''8
     \ppp                                                             %! SM8:REDUNDANT_DYNAMIC:IC
@@ -2749,7 +2749,7 @@ A_ClarinetMusicVoice = {
         }
     \times 2/3 {
         
-        % [A ClarinetMusicVoice measure 39]                          %! SM4
+        % [A ClarinetMusicVoice measure 39 / measure 38]             %! SM4
         g''4
         ^ \markup {
             \override
@@ -2771,7 +2771,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 40]                          %! SM4
+        % [A ClarinetMusicVoice measure 40 / measure 39]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c''2.
         \ff                                                          %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2784,7 +2784,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 41]                              %! SM4
+    % [A ClarinetMusicVoice measure 41 / measure 40]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     b'2
     \ff                                                              %! SM8:REDUNDANT_DYNAMIC:IC
@@ -2807,7 +2807,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [A ClarinetMusicVoice measure 42]                          %! SM4
+        % [A ClarinetMusicVoice measure 42 / measure 41]             %! SM4
         b'2
         ^ \markup {
             \override
@@ -2818,7 +2818,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 43]                              %! SM4
+    % [A ClarinetMusicVoice measure 43 / measure 42]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''8.
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2854,7 +2854,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [A ClarinetMusicVoice measure 44]                          %! SM4
+        % [A ClarinetMusicVoice measure 44 / measure 43]             %! SM4
         g''8
         [
         ^ \markup {
@@ -2878,7 +2878,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [A ClarinetMusicVoice measure 45]                          %! SM4
+        % [A ClarinetMusicVoice measure 45 / measure 44]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         bf'!2
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2891,12 +2891,12 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 46]                              %! SM4
+    % [A ClarinetMusicVoice measure 46 / measure 45]                 %! SM4
     bf'!2.
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [A ClarinetMusicVoice measure 47]                          %! SM4
+        % [A ClarinetMusicVoice measure 47 / measure 46]             %! SM4
         bf'!2.
         ^ \markup {
             \override
@@ -2918,7 +2918,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
         
-        % [A ClarinetMusicVoice measure 48]                          %! SM4
+        % [A ClarinetMusicVoice measure 48 / measure 47]             %! SM4
         bf'!2
         ^ \markup {
             \override
@@ -2930,7 +2930,7 @@ A_ClarinetMusicVoice = {
     }
     \times 2/3 {
         
-        % [A ClarinetMusicVoice measure 49]                          %! SM4
+        % [A ClarinetMusicVoice measure 49 / measure 48]             %! SM4
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         g''16
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2958,7 +2958,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
-        % [A ClarinetMusicVoice measure 50]                          %! SM4
+        % [A ClarinetMusicVoice measure 50 / measure 49]             %! SM4
         g''16
         [
         
@@ -2973,7 +2973,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 51]                              %! SM4
+    % [A ClarinetMusicVoice measure 51 / measure 50]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     gs''!8
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3018,7 +3018,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 52]                          %! SM4
+        % [A ClarinetMusicVoice measure 52 / measure 51]             %! SM4
         gs''!8
         [
         
@@ -3033,7 +3033,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 53]                              %! SM4
+    % [A ClarinetMusicVoice measure 53 / measure 52]                 %! SM4
     gs''!4
     ^ \markup {
         \override
@@ -3072,7 +3072,7 @@ A_ClarinetMusicVoice = {
                     1
         }
     
-    % [A ClarinetMusicVoice measure 54]                              %! SM4
+    % [A ClarinetMusicVoice measure 54 / measure 53]                 %! SM4
     gs''!8
     [
     
@@ -3088,7 +3088,7 @@ A_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
-        % [A ClarinetMusicVoice measure 55]                          %! SM4
+        % [A ClarinetMusicVoice measure 55 / measure 54]             %! SM4
         gs''!8.
         [
         ^ \markup {
@@ -3112,7 +3112,7 @@ A_ClarinetMusicVoice = {
             }
     }
     
-    % [A ClarinetMusicVoice measure 56]                              %! SM4
+    % [A ClarinetMusicVoice measure 56 / measure 55]                 %! SM4
     gs''!8
     [
     ^ \markup {
