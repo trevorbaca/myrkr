@@ -1,6 +1,6 @@
 import abjad
 import collections
-from abjad import rhythmmakertools as rhythmos
+from abjad import rhythmos
 
 
 class ColorMaker(object):
