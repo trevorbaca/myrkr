@@ -283,7 +283,7 @@ class RhythmMaker(object):
     @property
     def displace_split_tuplets(self):
         """
-        Is true when split tuplets should displace. Otherwise false.
+        Is true when split tuplets should displace.
         """
         return self._displace_split_tuplets
 
