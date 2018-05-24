@@ -1,6 +1,6 @@
 i_GlobalSkips = {
     
-    % [_ GlobalSkips measure 1 / measure 1]                              %! SM4
+    % [_ GlobalSkips measure 1]                                          %! SM4
     \time 12/5                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 12/5
@@ -44,7 +44,7 @@ i_ClarinetMusicVoice = {
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
-        % [_ ClarinetMusicVoice measure 1 / measure 1]               %! SM4
+        % [_ ClarinetMusicVoice measure 1]                           %! SM4
         \set Staff.instrumentName =                                  %! IC:STMK:-PARTS
         \markup {                                                    %! IC:STMK:-PARTS
             \hcenter-in                                              %! IC:STMK:-PARTS
