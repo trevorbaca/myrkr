@@ -1,6 +1,6 @@
 import abjad
 import collections
-from abjad import rmakers
+from abjadext import rmakers
 
 
 class ColorMaker(object):
