@@ -1218,11 +1218,7 @@ N_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d\breve.
         \ppppp                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “U”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “U” }                                            %! IC
     }
     \times 4/7 {
         
@@ -1288,11 +1284,7 @@ N_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d\breve
         \ppppp                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “A”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “A” }                                            %! IC
     }
     \times 4/7 {
         
@@ -1520,38 +1512,36 @@ N_ClarinetMusicVoice = {
         \once \override TextScript.extra-offset = #'(-24 . -4)
         fs'''!2
         _ \markup {                                                  %! SCORE2
-            \whiteout                                                %! SCORE2
-                \upright                                             %! SCORE2
-                    \override                                        %! SCORE2
-                        #'(font-name . "Palatino")                   %! SCORE2
-                        \with-color                                  %! SCORE2
-                            #black                                   %! SCORE2
-                            \right-column                            %! SCORE2
+            \override                                                %! SCORE2
+                #'(font-name . "Palatino")                           %! SCORE2
+                \with-color                                          %! SCORE2
+                    #black                                           %! SCORE2
+                    \right-column                                    %! SCORE2
+                        {                                            %! SCORE2
+                            \line                                    %! SCORE2
                                 {                                    %! SCORE2
-                                    \line                            %! SCORE2
-                                        {                            %! SCORE2
-                                            Cambridge,               %! SCORE2
-                                            MA                       %! SCORE2
-                                            \hspace                  %! SCORE2
-                                                #0.75                %! SCORE2
-                                            –                        %! SCORE2
-                                            \hspace                  %! SCORE2
-                                                #0.75                %! SCORE2
-                                            Dallas,                  %! SCORE2
-                                            TX.                      %! SCORE2
-                                        }                            %! SCORE2
-                                    \line                            %! SCORE2
-                                        {                            %! SCORE2
-                                            August                   %! SCORE2
-                                            \hspace                  %! SCORE2
-                                                #0.75                %! SCORE2
-                                            –                        %! SCORE2
-                                            \hspace                  %! SCORE2
-                                                #0.75                %! SCORE2
-                                            October                  %! SCORE2
-                                            2015.                    %! SCORE2
-                                        }                            %! SCORE2
+                                    Cambridge,                       %! SCORE2
+                                    MA                               %! SCORE2
+                                    \hspace                          %! SCORE2
+                                        #0.75                        %! SCORE2
+                                    –                                %! SCORE2
+                                    \hspace                          %! SCORE2
+                                        #0.75                        %! SCORE2
+                                    Dallas,                          %! SCORE2
+                                    TX.                              %! SCORE2
                                 }                                    %! SCORE2
+                            \line                                    %! SCORE2
+                                {                                    %! SCORE2
+                                    August                           %! SCORE2
+                                    \hspace                          %! SCORE2
+                                        #0.75                        %! SCORE2
+                                    –                                %! SCORE2
+                                    \hspace                          %! SCORE2
+                                        #0.75                        %! SCORE2
+                                    October                          %! SCORE2
+                                    2015.                            %! SCORE2
+                                }                                    %! SCORE2
+                        }                                            %! SCORE2
             }                                                        %! SCORE2
         
     }
