@@ -1887,11 +1887,7 @@ G_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         e\breve
         \ffff                                                        %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    overblow                                         %! IC
-            }                                                        %! IC
+        ^ \markup { overblow }                                       %! IC
     }
     
     % [G ClarinetMusicVoice measure 180 / measure 5]                 %! SM4

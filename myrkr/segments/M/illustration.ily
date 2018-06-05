@@ -1017,22 +1017,14 @@ M_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         d\breve
         \ppppp                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “A”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “A” }                                            %! IC
     }
     
     % [M ClarinetMusicVoice measure 376 / measure 13]                %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     d\breve.
     \ppppp                                                           %! SM8:REDUNDANT_DYNAMIC:IC
-    ^ \markup {                                                      %! IC
-        \whiteout                                                    %! IC
-            \upright                                                 %! IC
-                “U”                                                  %! IC
-        }                                                            %! IC
+    ^ \markup { “U” }                                                %! IC
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -1040,11 +1032,7 @@ M_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         d\breve
         \ppppp                                                       %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “I”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “I” }                                            %! IC
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1053,22 +1041,14 @@ M_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         d\breve.
         \ppppp                                                       %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “U”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “U” }                                            %! IC
     }
     
     % [M ClarinetMusicVoice measure 379 / measure 16]                %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     d1
     \ppppp                                                           %! SM8:REDUNDANT_DYNAMIC:IC
-    ^ \markup {                                                      %! IC
-        \whiteout                                                    %! IC
-            \upright                                                 %! IC
-                “A”                                                  %! IC
-        }                                                            %! IC
+    ^ \markup { “A” }                                                %! IC
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -1076,11 +1056,7 @@ M_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         d\breve
         \ppppp                                                       %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “O”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “O” }                                            %! IC
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1089,11 +1065,7 @@ M_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
         d\breve
         \ppppp                                                       %! SM8:REDUNDANT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    “I”                                              %! IC
-            }                                                        %! IC
+        ^ \markup { “I” }                                            %! IC
     }
     
     % [M ClarinetMusicVoice measure 382 / measure 19]                %! SM4

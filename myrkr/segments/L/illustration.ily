@@ -352,9 +352,7 @@ L_ClarinetMusicVoice = {
                         }                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                     \line                                            %! IC
                         {                                            %! IC
-                            \whiteout                                %! IC
-                                \upright                             %! IC
-                                    overblow                         %! IC
+                            overblow                                 %! IC
                         }                                            %! IC
                 }
             }

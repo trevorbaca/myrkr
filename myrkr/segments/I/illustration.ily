@@ -1151,11 +1151,7 @@ I_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         ef!1
         \fff                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        ^ \markup {                                                  %! IC
-            \whiteout                                                %! IC
-                \upright                                             %! IC
-                    overblow                                         %! IC
-            }                                                        %! IC
+        ^ \markup { overblow }                                       %! IC
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {

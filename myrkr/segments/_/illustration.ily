@@ -73,9 +73,7 @@ i_ClarinetMusicVoice = {
                         }                                            %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
                     \line                                            %! IC
                         {                                            %! IC
-                            \whiteout                                %! IC
-                                \upright                             %! IC
-                                    overblow                         %! IC
+                            overblow                                 %! IC
                         }                                            %! IC
                 }
             }
