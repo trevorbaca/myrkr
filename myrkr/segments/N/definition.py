@@ -80,6 +80,6 @@ maker(
 
 maker(
     ('cl', [2, 5]),
-    (baca.markup.markup('“U”'), 0),
-    (baca.markup.markup('“A”'), 1),
+    (baca.markups.markup('“U”'), 0),
+    (baca.markups.markup('“A”'), 1),
     )
