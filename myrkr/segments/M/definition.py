@@ -74,11 +74,11 @@ maker(
 
 maker(
     ('cl', [7, 8, 9, 10, 11, 12, 13]),
-    (baca.markup.markup('“A”'), 0),
-    (baca.markup.markup('“U”'), 1),
-    (baca.markup.markup('“I”'), 2),
-    (baca.markup.markup('“U”'), 3),
-    (baca.markup.markup('“A”'), 4),
-    (baca.markup.markup('“O”'), 5),
-    (baca.markup.markup('“I”'), 6),
+    (baca.markups.markup('“A”'), 0),
+    (baca.markups.markup('“U”'), 1),
+    (baca.markups.markup('“I”'), 2),
+    (baca.markups.markup('“U”'), 3),
+    (baca.markups.markup('“A”'), 4),
+    (baca.markups.markup('“O”'), 5),
+    (baca.markups.markup('“I”'), 6),
     )
