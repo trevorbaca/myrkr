@@ -1,4 +1,5 @@
 import abjad
+import baca
 import collections
 from abjadext import rmakers
 
@@ -49,7 +50,7 @@ class ColorMaker(object):
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
         durations = [abjad.inspect(_).get_duration() for _ in notes]
-        maker = rmakers.SkipRhythmMaker()
+        maker = baca.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
         abjad.labe(label_voice).with_indices(direction=Down)
