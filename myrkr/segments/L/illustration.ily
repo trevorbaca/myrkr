@@ -86,7 +86,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 357 / measure 2]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -120,7 +119,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 358 / measure 3]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -154,7 +152,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 359 / measure 4]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -188,7 +185,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 360 / measure 5]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -222,7 +218,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 361 / measure 6]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -256,7 +251,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 362 / measure 7]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     ^ \markup {
         \column
@@ -290,7 +284,6 @@ L_GlobalSkips = {
         }
     
     % [L GlobalSkips measure 363 / measure 8]                            %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
