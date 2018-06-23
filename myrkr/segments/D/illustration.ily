@@ -5,6 +5,26 @@ D_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (111)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [2'07'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
@@ -54,26 +74,6 @@ D_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (111)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [2'07'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [D GlobalSkips measure 112 / measure 2]                            %! SM4
     \time 5/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -192,6 +192,26 @@ D_GlobalSkips = {
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (117)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <6>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((7))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.4]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [2'14'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
@@ -224,26 +244,6 @@ D_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (117)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <6>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((7))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.4]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [2'14'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [D GlobalSkips measure 118 / measure 8]                            %! SM4
     \time 5/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -500,6 +500,26 @@ D_GlobalSkips = {
     \time 10/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (129)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <18>                                                         %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((19))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.10]                                                       %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [2'28'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
@@ -550,26 +570,6 @@ D_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (129)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <18>                                                         %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((19))                                                       %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.10]                                                       %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [2'28'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [D GlobalSkips measure 130 / measure 20]                           %! SM4
     \time 5/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -814,7 +814,6 @@ D_GlobalSkips = {
     \time 6/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/11
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (141)                                                        %! SM31:MEASURE_NUMBER_MARKUP
@@ -831,6 +830,7 @@ D_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [3'00'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     
@@ -862,7 +862,6 @@ D_ClarinetMusicVoice = {
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     b'8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -870,6 +869,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     b'16
     ^ \markup {
@@ -881,7 +881,6 @@ D_ClarinetMusicVoice = {
         }
     
     b'8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -889,10 +888,10 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     
     % [D ClarinetMusicVoice measure 112 / measure 2]                 %! SM4
     b'8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -900,6 +899,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     b'8.
     ]
@@ -908,7 +908,6 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 113 / measure 3]             %! SM4
         b'8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -916,6 +915,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        [
         
         b'16
         ^ \markup {
@@ -939,7 +939,6 @@ D_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     b'8
     \mp                                                              %! SM8:REDUNDANT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -947,6 +946,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     b'16
     ]
@@ -971,7 +971,6 @@ D_ClarinetMusicVoice = {
         }
     
     b'8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -979,6 +978,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     b'16
     ^ \markup {
@@ -990,7 +990,6 @@ D_ClarinetMusicVoice = {
         }
     
     b'8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -998,6 +997,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     
     % [D ClarinetMusicVoice measure 117 / measure 7]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1005,7 +1005,6 @@ D_ClarinetMusicVoice = {
     \mf                                                              %! SM8:EXPLICIT_DYNAMIC:IC
     
     cs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1013,6 +1012,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     cs''!16
     ^ \markup {
@@ -1028,7 +1028,6 @@ D_ClarinetMusicVoice = {
     
     % [D ClarinetMusicVoice measure 118 / measure 8]                 %! SM4
     cs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1036,9 +1035,9 @@ D_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     cs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1046,12 +1045,12 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 119 / measure 9]             %! SM4
         cs''!8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1059,6 +1058,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         cs''!16
         ^ \markup {
@@ -1070,7 +1070,6 @@ D_ClarinetMusicVoice = {
             }
         
         cs''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1078,6 +1077,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     
     % [D ClarinetMusicVoice measure 120 / measure 10]                %! SM4
@@ -1089,7 +1089,6 @@ D_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs''!8
     \f                                                               %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1097,9 +1096,9 @@ D_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     cs''!16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1107,6 +1106,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     
     % [D ClarinetMusicVoice measure 122 / measure 12]                %! SM4
     cs''!8.
@@ -1121,7 +1121,6 @@ D_ClarinetMusicVoice = {
         }
     
     cs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1129,11 +1128,11 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     cs''!16
     
     cs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1141,6 +1140,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    ]
     
     % [D ClarinetMusicVoice measure 123 / measure 13]                %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1167,7 +1167,6 @@ D_ClarinetMusicVoice = {
         }
     
     d''8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1175,13 +1174,13 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     
     % [D ClarinetMusicVoice measure 124 / measure 14]                %! SM4
     d''8
     [
     
     d''8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1189,12 +1188,12 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [D ClarinetMusicVoice measure 125 / measure 15]            %! SM4
         d''8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1202,11 +1201,11 @@ D_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         d''16
         
         d''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1214,6 +1213,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [D ClarinetMusicVoice measure 126 / measure 16]                %! SM4
@@ -1228,7 +1228,6 @@ D_ClarinetMusicVoice = {
     [
     
     d''16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1236,6 +1235,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     
     % [D ClarinetMusicVoice measure 128 / measure 18]                %! SM4
     d''8.
@@ -1250,7 +1250,6 @@ D_ClarinetMusicVoice = {
     d''4
     
     d''8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1258,6 +1257,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     d''16
     ^ \markup {
@@ -1284,7 +1284,6 @@ D_ClarinetMusicVoice = {
         }
     
     ds''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1292,11 +1291,11 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     ds''!16
     
     ds''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1304,10 +1303,10 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     
     % [D ClarinetMusicVoice measure 130 / measure 20]                %! SM4
     ds''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1315,6 +1314,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     ds''!8.
     ]
@@ -1323,7 +1323,6 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 131 / measure 21]            %! SM4
         ds''!8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1331,6 +1330,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        [
         
         ds''!16
         ^ \markup {
@@ -1383,7 +1383,6 @@ D_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     ds''!8
     \ffff                                                            %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1391,9 +1390,9 @@ D_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     ds''!16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1401,6 +1400,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     
     % [D ClarinetMusicVoice measure 137 / measure 27]                %! SM4
     ds''!8.
@@ -1434,7 +1434,6 @@ D_ClarinetMusicVoice = {
         }
     
     ds''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1442,6 +1441,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -1450,7 +1450,6 @@ D_ClarinetMusicVoice = {
         [
         
         ds''!8
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1458,11 +1457,11 @@ D_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [D ClarinetMusicVoice measure 139 / measure 29]                %! SM4
     ds''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1470,6 +1469,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     ds''!8
     
@@ -1483,7 +1483,6 @@ D_ClarinetMusicVoice = {
         }
     
     ds''!16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1491,6 +1490,7 @@ D_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -1511,7 +1511,6 @@ D_ClarinetMusicVoice = {
         
         % [D ClarinetMusicVoice measure 141 / measure 31]            %! SM4
         ds''!8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1519,6 +1518,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
         
         ds''!8
         ^ \markup {
@@ -1530,7 +1530,6 @@ D_ClarinetMusicVoice = {
             }
         
         ds''!16
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1538,6 +1537,7 @@ D_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        ]
         
     }
 }
