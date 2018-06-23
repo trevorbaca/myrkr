@@ -5,6 +5,26 @@ A_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 13/16
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (2)                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [A.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [0'13'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
@@ -54,26 +74,6 @@ A_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (2)                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [A.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [0'13'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [A GlobalSkips measure 3 / measure 2]                              %! SM4
     \time 5/22                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -1272,7 +1272,6 @@ A_GlobalSkips = {
     \time 3/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/16
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (56)                                                         %! SM31:MEASURE_NUMBER_MARKUP
@@ -1289,6 +1288,7 @@ A_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [1'03'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|"                                                             %! SM5
     
@@ -1322,7 +1322,6 @@ A_ClarinetMusicVoice = {
         }
     
     f''8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1330,6 +1329,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     f''16
     ^ \markup {
@@ -1341,7 +1341,6 @@ A_ClarinetMusicVoice = {
         }
     
     f''8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1349,12 +1348,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [A ClarinetMusicVoice measure 3 / measure 2]               %! SM4
         f''8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1362,6 +1361,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
         
         f''8
         ]
@@ -1369,7 +1369,6 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 4 / measure 3]                   %! SM4
     f''8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1377,6 +1376,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     f''8
     ^ \markup {
@@ -1390,7 +1390,6 @@ A_ClarinetMusicVoice = {
     f''8.
     
     f''16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1398,6 +1397,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -1418,7 +1418,6 @@ A_ClarinetMusicVoice = {
         
         % [A ClarinetMusicVoice measure 6 / measure 5]               %! SM4
         f''8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1426,6 +1425,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
         
         f''8
         ^ \markup {
@@ -1444,7 +1444,6 @@ A_ClarinetMusicVoice = {
         
         % [A ClarinetMusicVoice measure 7 / measure 6]               %! SM4
         f''8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1452,9 +1451,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        [
         
         f''16
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1462,11 +1461,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 8 / measure 7]                   %! SM4
     f''8.
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1474,6 +1473,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     f''8
     ^ \markup {
@@ -1496,7 +1496,6 @@ A_ClarinetMusicVoice = {
     f''8.
     
     f''16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1504,12 +1503,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [A ClarinetMusicVoice measure 9 / measure 8]               %! SM4
         f''16
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1517,6 +1516,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         f''8.
         ]
@@ -1524,7 +1524,6 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 10 / measure 9]                  %! SM4
     f''8.
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1532,6 +1531,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     f''8
     ^ \markup {
@@ -1545,7 +1545,6 @@ A_ClarinetMusicVoice = {
     f''8.
     
     f''8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1553,11 +1552,11 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     \times 4/5 {
         
         % [A ClarinetMusicVoice measure 11 / measure 10]             %! SM4
         f''8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1565,6 +1564,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         f''8
         ]
@@ -1583,7 +1583,6 @@ A_ClarinetMusicVoice = {
             }
         
         f''8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1591,9 +1590,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
         
         f''16
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1601,12 +1600,12 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        ]
     }
     \times 4/5 {
         
         % [A ClarinetMusicVoice measure 13 / measure 12]             %! SM4
         f''8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1614,9 +1613,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        [
         
         f''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1624,6 +1623,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
@@ -1638,7 +1638,6 @@ A_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     f''16
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1646,6 +1645,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     f''8.
     ^ \markup {
@@ -1668,7 +1668,6 @@ A_ClarinetMusicVoice = {
         }
     
     f''8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1676,12 +1675,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [A ClarinetMusicVoice measure 16 / measure 15]             %! SM4
         f''16
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1689,9 +1688,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         f''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1699,11 +1698,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 17 / measure 16]                 %! SM4
     f''16
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1711,6 +1710,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    [
     
     f''8.
     ]
@@ -1740,7 +1740,6 @@ A_ClarinetMusicVoice = {
         [
         
         f''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1748,6 +1747,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 19 / measure 18]                 %! SM4
@@ -1768,7 +1768,6 @@ A_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         f''8
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1776,11 +1775,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        [
         
         f''8
         
         f''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1788,6 +1787,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
@@ -1799,7 +1799,6 @@ A_ClarinetMusicVoice = {
         [
         
         fs''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1807,11 +1806,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 22 / measure 21]                 %! SM4
     fs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1819,11 +1818,11 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     fs''!16
     
     fs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1831,6 +1830,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     
     fs''!4
     ^ \markup {
@@ -1847,7 +1847,6 @@ A_ClarinetMusicVoice = {
         
         % [A ClarinetMusicVoice measure 23 / measure 22]             %! SM4
         fs''!8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1855,9 +1854,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        [
         
         fs''!16
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1865,6 +1864,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1879,7 +1879,6 @@ A_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs''!16
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1887,6 +1886,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     fs''!8.
     ^ \markup {
@@ -1900,7 +1900,6 @@ A_ClarinetMusicVoice = {
     fs''!8
     
     fs''!8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1908,12 +1907,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
         % [A ClarinetMusicVoice measure 26 / measure 25]             %! SM4
         fs''!8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1921,6 +1920,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        [
         
         fs''!16
         ]
@@ -1956,7 +1956,6 @@ A_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!8.
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1964,11 +1963,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        [
         
         fs''!8
         
         fs''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1976,6 +1975,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1995,7 +1995,6 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 30 / measure 29]                 %! SM4
     fs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2003,6 +2002,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     fs''!16
     ^ \markup {
@@ -2025,7 +2025,6 @@ A_ClarinetMusicVoice = {
         }
     
     fs''!8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2033,6 +2032,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
         
@@ -2041,7 +2041,6 @@ A_ClarinetMusicVoice = {
         [
         
         fs''!8
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2049,6 +2048,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 32 / measure 31]                 %! SM4
@@ -2067,7 +2067,6 @@ A_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fs''!8.
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2075,6 +2074,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     fs''!16
     ^ \markup {
@@ -2099,7 +2099,6 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 34 / measure 33]                 %! SM4
     fs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2107,9 +2106,9 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     fs''!16
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2117,6 +2116,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -2139,7 +2139,6 @@ A_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         fs''!16
         \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2147,9 +2146,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        [
         
         fs''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2157,6 +2156,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         1
             }
+        ]
         
         fs''!4
         ^ \markup {
@@ -2170,7 +2170,6 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 37 / measure 36]                 %! SM4
     fs''!8.
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2178,9 +2177,9 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     fs''!8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2188,12 +2187,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     
     % [A ClarinetMusicVoice measure 38 / measure 37]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     g''8
     \ppp                                                             %! SM8:REDUNDANT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2201,6 +2200,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     g''8.
     
@@ -2223,7 +2223,6 @@ A_ClarinetMusicVoice = {
         }
     
     g''8
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2231,6 +2230,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \times 2/3 {
         
         % [A ClarinetMusicVoice measure 39 / measure 38]             %! SM4
@@ -2306,7 +2306,6 @@ A_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     g''8.
     \ppp                                                             %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2314,6 +2313,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     g''8
     
@@ -2327,7 +2327,6 @@ A_ClarinetMusicVoice = {
         }
     
     g''8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2335,12 +2334,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
         
         % [A ClarinetMusicVoice measure 44 / measure 43]             %! SM4
         g''8
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2348,9 +2347,9 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         g''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2358,6 +2357,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         4
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -2430,7 +2430,6 @@ A_ClarinetMusicVoice = {
             }
         
         g''8
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2438,6 +2437,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        ]
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
@@ -2447,7 +2447,6 @@ A_ClarinetMusicVoice = {
         [
         
         g''8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2455,13 +2454,13 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 51 / measure 50]                 %! SM4
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     gs''!8
     \pppp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2469,6 +2468,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     3
         }
+    [
     
     gs''!8.
     ^ \markup {
@@ -2491,7 +2491,6 @@ A_ClarinetMusicVoice = {
         }
     
     gs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2499,6 +2498,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
@@ -2507,7 +2507,6 @@ A_ClarinetMusicVoice = {
         [
         
         gs''!8
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2515,6 +2514,7 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 53 / measure 52]                 %! SM4
@@ -2528,7 +2528,6 @@ A_ClarinetMusicVoice = {
         }
     
     gs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2536,6 +2535,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     2
         }
+    [
     
     gs''!16
     ^ \markup {
@@ -2547,7 +2547,6 @@ A_ClarinetMusicVoice = {
         }
     
     gs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2555,13 +2554,13 @@ A_ClarinetMusicVoice = {
                 \finger
                     1
         }
+    ]
     
     % [A ClarinetMusicVoice measure 54 / measure 53]                 %! SM4
     gs''!8
     [
     
     gs''!8.
-    ]
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2569,12 +2568,12 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
         % [A ClarinetMusicVoice measure 55 / measure 54]             %! SM4
         gs''!8.
-        [
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2582,11 +2581,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         2
             }
+        [
         
         gs''!16
         
         gs''!8.
-        ]
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2594,11 +2593,11 @@ A_ClarinetMusicVoice = {
                     \finger
                         3
             }
+        ]
     }
     
     % [A ClarinetMusicVoice measure 56 / measure 55]                 %! SM4
     gs''!8
-    [
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -2606,6 +2605,7 @@ A_ClarinetMusicVoice = {
                 \finger
                     4
         }
+    [
     
     gs''!16
     ]
