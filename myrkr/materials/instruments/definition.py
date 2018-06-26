@@ -5,6 +5,6 @@ import baca
 instruments = abjad.OrderedDict([
     (
         'BassClarinet',
-        abjad.BassClarinet(hide=True),
+        abjad.BassClarinet(),
         ),
     ])
