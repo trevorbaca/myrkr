@@ -25,25 +25,31 @@ N_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'46'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"55"                    %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"55"            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-    - \baca_dashed_arrow                                                 %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_dashed_line_with_arrow                                      %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"55"              %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_dashed_line_with_arrow                                      %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"55"          %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [N GlobalSkips measure 385 / measure 2]                            %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -534,26 +540,31 @@ N_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'50'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
-    - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
-%@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     \abjad-metronome-mark-markup #2 #0 #1.5 #"110"                   %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left.text \markup {                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                \abjad-metronome-mark-markup #2 #0 #1.5 #"110"           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR %! SM29:METRONOME_MARK_SPANNER
-    - \baca_invisible_line_segment                                       %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.right.padding 0                               %! SM29:METRONOME_MARK_SPANNER
-    - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
-    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI1
+%@% - \abjad_invisible_line                                              %! MMI2
+%@% - \tweak bound-details.left.text \markup {                           %! MMI2
+%@%     \concat                                                          %! MMI2
+%@%         {                                                            %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"110"             %! MMI2
+%@%             \hspace                                                  %! MMI2
+%@%                 #0.5                                                 %! MMI2
+%@%         }                                                            %! MMI2
+%@%     }                                                                %! MMI2
+%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
+%@% \startTextSpan                                                       %! MMI2
+    - \abjad_invisible_line                                              %! MMI3
+    - \tweak bound-details.left.text \markup {                           %! MMI3
+        \concat                                                          %! MMI3
+            {                                                            %! MMI3
+                \with-color                                              %! MMI3
+                    #(x11-color 'blue)                                   %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"110"         %! MMI3
+                \hspace                                                  %! MMI3
+                    #0.5                                                 %! MMI3
+            }                                                            %! MMI3
+        }                                                                %! MMI3
+    - \tweak bound-details.left-broken.text ##f                          %! MMI3
+    \startTextSpan                                                       %! MMI3
     
     % [N GlobalSkips measure 407 / measure 24]                           %! SM4
     s1 * 1
@@ -775,7 +786,7 @@ N_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [14'18'']                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \stopTextSpan                                                        %! MMI4
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|."                                                            %! SM5
     

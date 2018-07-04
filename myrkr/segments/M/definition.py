@@ -48,6 +48,7 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
+    do_not_attach_metronome_mark_spanner=True,
     ignore_repeat_pitch_classes=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_mark_stem_height=1.5,
@@ -68,8 +69,8 @@ preprocessor.make_commands(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark('55'),
-    baca.metronome_mark('44', selector=baca.leaf(11)),
+    baca.metronome_mark_new('55'),
+    baca.metronome_mark_new('44', selector=baca.leaf(11)),
     )
 
 maker(
