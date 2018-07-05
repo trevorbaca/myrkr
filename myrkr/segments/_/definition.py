@@ -25,7 +25,6 @@ preprocessor = myrkr.Preprocessor(
     )
 
 maker = baca.SegmentMaker(
-    do_not_attach_metronome_mark_spanner=True,
     measures_per_stage=preprocessor.measures_per_stage,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -45,7 +44,7 @@ preprocessor.make_commands(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark_new('44'),
+    baca.metronome_mark('44'),
     )
 
 maker(
