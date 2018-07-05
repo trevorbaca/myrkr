@@ -42,7 +42,6 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
-    do_not_attach_metronome_mark_spanner=True,
     ignore_repeat_pitch_classes=True,
     final_markup=(
         ['Cambridge, MA', 'Dallas, TX.'],
@@ -69,9 +68,9 @@ preprocessor.make_commands(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark_new('55'),
-    baca.metronome_mark_new(baca.Accelerando()),
-    baca.metronome_mark_new('110', selector=baca.leaf(22)),
+    baca.metronome_mark('55'),
+    baca.metronome_mark(baca.Accelerando()),
+    baca.metronome_mark('110', selector=baca.leaf(22)),
     )
 
 maker(
