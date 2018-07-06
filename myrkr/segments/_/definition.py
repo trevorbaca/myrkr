@@ -26,7 +26,6 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     measures_per_stage=preprocessor.measures_per_stage,
-    metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
