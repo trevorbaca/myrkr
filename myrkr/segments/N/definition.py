@@ -79,6 +79,12 @@ maker(
 
 maker(
     ('cl', [2, 5]),
-    (baca.markup('“U”'), 0),
-    (baca.markup('“A”'), 1),
+    baca.match(
+        0,
+        baca.markup('“U”'),
+        ),
+    baca.match(
+        1,
+        baca.markup('“A”'),
+        ),
     )
