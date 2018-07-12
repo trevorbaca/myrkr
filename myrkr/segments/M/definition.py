@@ -73,11 +73,32 @@ maker(
 
 maker(
     ('cl', [7, 8, 9, 10, 11, 12, 13]),
-    (baca.markup('“A”'), 0),
-    (baca.markup('“U”'), 1),
-    (baca.markup('“I”'), 2),
-    (baca.markup('“U”'), 3),
-    (baca.markup('“A”'), 4),
-    (baca.markup('“O”'), 5),
-    (baca.markup('“I”'), 6),
+    baca.match(
+        0,
+        baca.markup('“A”'),
+        ),
+    baca.match(
+        1,
+        baca.markup('“U”'),
+        ),
+    baca.match(
+        2,
+        baca.markup('“I”'),
+        ),
+    baca.match(
+        3,
+        baca.markup('“U”'),
+        ),
+    baca.match(
+        4,
+        baca.markup('“A”'),
+        ),
+    baca.match(
+        5,
+        baca.markup('“O”'),
+        ),
+    baca.match(
+        6,
+        baca.markup('“I”'),
+        ),
     )
