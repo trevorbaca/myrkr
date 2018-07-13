@@ -49,7 +49,6 @@ preprocessor = myrkr.Preprocessor(
 maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
-    measures_per_stage=preprocessor.measures_per_stage,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -72,33 +71,11 @@ maker(
     )
 
 maker(
-    ('cl', [7, 8, 9, 10, 11, 12, 13]),
-    baca.match(
-        0,
-        baca.markup('“A”'),
+    ('cl', (12, 18)),
+    baca.text_spanner(
+        '“A” || “U” || “I” || “U” || “A” || “O” || “I”',
+        piece_selector=baca.group_by_measures(),
+        selector=baca.rleaves(),
         ),
-    baca.match(
-        1,
-        baca.markup('“U”'),
-        ),
-    baca.match(
-        2,
-        baca.markup('“I”'),
-        ),
-    baca.match(
-        3,
-        baca.markup('“U”'),
-        ),
-    baca.match(
-        4,
-        baca.markup('“A”'),
-        ),
-    baca.match(
-        5,
-        baca.markup('“O”'),
-        ),
-    baca.match(
-        6,
-        baca.markup('“I”'),
-        ),
+    baca.text_spanner_staff_padding(5),
     )

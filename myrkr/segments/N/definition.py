@@ -49,7 +49,6 @@ maker = baca.SegmentMaker(
         ),
     final_markup_extra_offset=(-24, -4),
     last_segment=True,
-    measures_per_stage=preprocessor.measures_per_stage,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -73,12 +72,12 @@ maker(
     )
 
 maker(
-    ('cl', [1, (3, 4), 6, 8, 10]),
+    ('cl', [(1, 3), (5, 10), (12, 14), (16, 21), (23, -1)]),
     baca.glissando(),
     )
 
 maker(
-    ('cl', [2, 5]),
+    ('cl', [4, 11]),
     baca.match(
         0,
         baca.markup('“U”'),
@@ -87,4 +86,5 @@ maker(
         1,
         baca.markup('“A”'),
         ),
+    baca.text_script_staff_padding(5),
     )

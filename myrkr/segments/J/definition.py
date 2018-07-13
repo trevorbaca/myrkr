@@ -44,7 +44,6 @@ preprocessor = myrkr.Preprocessor(
 maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
     ignore_repeat_pitch_classes=True,
-    measures_per_stage=preprocessor.measures_per_stage,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
@@ -61,11 +60,11 @@ for stage_index in range(maker.stage_count):
 preprocessor.make_commands(maker)
 
 maker(
-    ('cl', 1),
+    ('cl', (1, 9)),
     baca.glissando(),
     )
 
 maker(
-    ('cl', [2, 5, 8]),
+    ('cl', [(10, 14), (19, 21), (25, 29)]),
     baca.tenuto(selector=baca.pheads()),
     )
