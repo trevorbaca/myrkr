@@ -65,10 +65,6 @@ class Preprocessor(object):
         bundles = self._command_bundles
         pairs = list(abjad.sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
-            first_stage_number = first_bundle[0]
-            second_stage_number = second_bundle[0]
-            if not first_stage_number == second_stage_number - 1:
-                continue
             first_commands = first_bundle[1]
             first_dynamics = [_ for _ in first_commands
                 if isinstance(_, abjad.Dynamic)]
@@ -86,7 +82,8 @@ class Preprocessor(object):
 
     def _unpack_indicators(self):
         name_to_cursor = {}
-        selections, time_signatures, measures_per_stage = [], [], []
+        selections, time_signatures = [], []
+        start_measure_number = 1
         for stage_index, indicator in enumerate(self.indicators):
             position = 0
             pitch = None
@@ -96,10 +93,10 @@ class Preprocessor(object):
             name = indicator[0]
             location = indicator[1]
             if isinstance(location, int):
-                count = location
+                measure_count = location
             elif isinstance(location, tuple):
                 assert len(location) == 2, repr(location)
-                count, position = location
+                measure_count, position = location
             else:
                 raise TypeError(location)
             if len(indicator) == 3:
@@ -111,7 +108,7 @@ class Preprocessor(object):
                 pitch = indicator[2]
                 dynamic = indicator[3]
                 color_fingering = indicator[4]
-            assert abjad.mathtools.is_positive_integer(count), repr(count)
+            assert isinstance(measure_count, int), repr(measure_count)
             assert isinstance(position, int), repr(position)
             reset_cursor = (
                 name not in name_to_cursor or
@@ -122,40 +119,30 @@ class Preprocessor(object):
                 rhythm = abjad.CyclicTuple(rhythm)
                 cursor = baca.Cursor(
                     source=rhythm,
-                    #cyclic=True,
                     position=position,
                     )
                 name_to_cursor[name] = cursor
             cursor = name_to_cursor[name]
-            bundles = cursor.next(count=count)
+            bundles = cursor.next(count=measure_count)
             for selection, time_signature in bundles:
                 selection = copy.deepcopy(selection)
                 selections.append(selection)
                 time_signatures.append(time_signature)
-            measures_per_stage.append(count)
-            stage_number = stage_index + 1
+            stop_measure_number = start_measure_number + measure_count - 1
+            if measure_count == 1:
+                measure_indicator = start_measure_number
+            else:
+                measure_indicator = (start_measure_number, stop_measure_number)
             self._make_command_bundle(
-                stage_number,
+                measure_indicator,
                 pitch,
                 dynamic,
                 color_fingering,
                 )
+            start_measure_number = stop_measure_number + 1
+        assert len(selections) == len(time_signatures)
         self._selections = tuple(selections)
         self._time_signatures = tuple(time_signatures)
-        self._measures_per_stage = tuple(measures_per_stage)
-        counts = self.measures_per_stage
-        selections = self.selections
-        assert sum(counts) == len(selections)
-        selections = []
-        parts = baca.sequence(self.selections)
-        parts = parts.partition_by_counts(self.measures_per_stage)
-        for part in parts:
-            selection = []
-            for selection_ in part:
-                selection.extend(selection_)
-            selection = abjad.select(selection)
-            selections.append(selection)
-        assert all(isinstance(_, abjad.Selection) for _ in selections)
         self._music_by_stage = selections
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
@@ -207,8 +194,7 @@ class Preprocessor(object):
     ### PUBLIC METHODS ###
 
     def get_music(self, stage_number):
-        assert abjad.mathtools.is_positive_integer(stage_number), repr(
-            stage_number)
+        assert isinstance(stage_number, int), repr(stage_number)
         stage_index = stage_number - 1
         selection = self._music_by_stage[stage_index]
         selection = copy.deepcopy(selection)
