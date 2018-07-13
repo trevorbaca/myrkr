@@ -14,7 +14,6 @@ class Preprocessor(object):
     __slots__ = (
         '_indicators',
         '_music',
-        '_music_by_stage',
         '_command_bundles',
         '_name_to_rhythm',
         '_selections',
@@ -39,7 +38,7 @@ class Preprocessor(object):
 
     def _make_command_bundle(
         self,
-        stage_number,
+        measure_indicator,
         pitch,
         dynamic,
         color_fingering,
@@ -58,7 +57,7 @@ class Preprocessor(object):
             assert len(color_fingering) == 2
             color_fingering = myrkr.color_fingerings(*color_fingering)
             commands.append(color_fingering)
-        bundle = (stage_number, commands)
+        bundle = (measure_indicator, commands)
         self._command_bundles.append(bundle)
 
     def _remove_duplicate_dynamics(self):
@@ -84,7 +83,7 @@ class Preprocessor(object):
         name_to_cursor = {}
         selections, time_signatures = [], []
         start_measure_number = 1
-        for stage_index, indicator in enumerate(self.indicators):
+        for indicator in self.indicators:
             position = 0
             pitch = None
             dynamic = None
@@ -147,7 +146,6 @@ class Preprocessor(object):
             music.extend(selection)
         self._music = abjad.select(music)
         self._time_signatures = tuple(time_signatures)
-        self._music_by_stage = selections
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
             print(f'{name} position {cursor.position} ...')
@@ -197,20 +195,13 @@ class Preprocessor(object):
 
     ### PUBLIC METHODS ###
 
-    def get_music(self, stage_number):
-        assert isinstance(stage_number, int), repr(stage_number)
-        stage_index = stage_number - 1
-        selection = self._music_by_stage[stage_index]
-        selection = copy.deepcopy(selection)
-        return selection
-
     def make_commands(self, maker):
         self._remove_duplicate_dynamics()
         for bundle in self._command_bundles:
             assert len(bundle) == 2, repr(bundle)
-            stage_number = bundle[0]
+            measure_indicator = bundle[0]
             commands = bundle[1]
             maker(
-                ('ClarinetMusicVoice', stage_number),
+                ('ClarinetMusicVoice', measure_indicator),
                 *commands,
                 )
