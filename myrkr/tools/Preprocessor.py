@@ -13,7 +13,7 @@ class Preprocessor(object):
 
     __slots__ = (
         '_indicators',
-        '_measures_per_stage',
+        '_music',
         '_music_by_stage',
         '_command_bundles',
         '_name_to_rhythm',
@@ -27,8 +27,8 @@ class Preprocessor(object):
         indicators = tuple(indicators)
         name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
-        self._measures_per_stage = ()
         self._command_bundles = []
+        self._music = []
         self._name_to_rhythm = name_to_rhythm
         self._selections = ()
         self._time_signatures = ()
@@ -142,6 +142,10 @@ class Preprocessor(object):
             start_measure_number = stop_measure_number + 1
         assert len(selections) == len(time_signatures)
         self._selections = tuple(selections)
+        music = []
+        for selection in selections:
+            music.extend(selection)
+        self._music = abjad.select(music)
         self._time_signatures = tuple(time_signatures)
         self._music_by_stage = selections
         for name in sorted(name_to_cursor):
@@ -164,11 +168,11 @@ class Preprocessor(object):
         return self._indicators
 
     @property
-    def measures_per_stage(self):
+    def music(self):
         """
-        Gets measures per stage.
+        Gets music.
         """
-        return self._measures_per_stage
+        return self._music
 
     @property
     def name_to_rhythm(self):

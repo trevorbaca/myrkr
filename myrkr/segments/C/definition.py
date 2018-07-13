@@ -60,12 +60,9 @@ maker = baca.SegmentMaker(
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,)
 
-for stage_index in range(maker.stage_count):
-    stage_number = stage_index + 1
-    selection = preprocessor.get_music(stage_number)
-    maker(
-        ('cl', stage_number),
-        baca.make_rhythm(selection),
-        )
+maker(
+    ('cl', (1, len(preprocessor.time_signatures))),
+    baca.make_rhythm(preprocessor.music),
+    )
 
 preprocessor.make_commands(maker)
