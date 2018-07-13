@@ -790,7 +790,7 @@ M_ClarinetMusicVoice = {
         d\breve
         \ppppp                                                                 %! SM8:EXPLICIT_DYNAMIC:IC
         - \abjad_invisible_line                                                %! PIC
-        - \tweak bound-details.left.text \markup \baca-left "“A”"              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "˝A˝"              %! PIC
         \startTextSpan                                                         %! PIC
     }
     
@@ -800,7 +800,7 @@ M_ClarinetMusicVoice = {
     \ppppp                                                                     %! SM8:REDUNDANT_DYNAMIC:IC
     \stopTextSpan                                                              %! PIC
     - \abjad_invisible_line                                                    %! PIC
-    - \tweak bound-details.left.text \markup \baca-left "“U”"                  %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "˝U˝"                  %! PIC
     \startTextSpan                                                             %! PIC
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -811,7 +811,7 @@ M_ClarinetMusicVoice = {
         \ppppp                                                                 %! SM8:REDUNDANT_DYNAMIC:IC
         \stopTextSpan                                                          %! PIC
         - \abjad_invisible_line                                                %! PIC
-        - \tweak bound-details.left.text \markup \baca-left "“I”"              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "˝I˝"              %! PIC
         \startTextSpan                                                         %! PIC
     }
     \tweak edge-height #'(0.7 . 0)
@@ -823,7 +823,7 @@ M_ClarinetMusicVoice = {
         \ppppp                                                                 %! SM8:REDUNDANT_DYNAMIC:IC
         \stopTextSpan                                                          %! PIC
         - \abjad_invisible_line                                                %! PIC
-        - \tweak bound-details.left.text \markup \baca-left "“U”"              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "˝U˝"              %! PIC
         \startTextSpan                                                         %! PIC
     }
     
@@ -833,7 +833,7 @@ M_ClarinetMusicVoice = {
     \ppppp                                                                     %! SM8:REDUNDANT_DYNAMIC:IC
     \stopTextSpan                                                              %! PIC
     - \abjad_invisible_line                                                    %! PIC
-    - \tweak bound-details.left.text \markup \baca-left "“A”"                  %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "˝A˝"                  %! PIC
     \startTextSpan                                                             %! PIC
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -844,7 +844,7 @@ M_ClarinetMusicVoice = {
         \ppppp                                                                 %! SM8:REDUNDANT_DYNAMIC:IC
         \stopTextSpan                                                          %! PIC
         - \abjad_invisible_line                                                %! PIC
-        - \tweak bound-details.left.text \markup \baca-left "“O”"              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "˝O˝"              %! PIC
         \startTextSpan                                                         %! PIC
     }
     \tweak edge-height #'(0.7 . 0)
@@ -856,7 +856,7 @@ M_ClarinetMusicVoice = {
         \ppppp                                                                 %! SM8:REDUNDANT_DYNAMIC:IC
         \stopTextSpan                                                          %! PIC
         - \abjad_invisible_line                                                %! PIC
-        - \tweak bound-details.left.text \markup \baca-left "“I”"              %! PIC
+        - \tweak bound-details.left.text \markup \baca-left "˝I˝"              %! PIC
         \startTextSpan                                                         %! PIC
         \revert TextSpanner.staff-padding                                      %! OC2
     }
@@ -865,7 +865,7 @@ M_ClarinetMusicVoice = {
     r8.
     \stopTextSpan                                                              %! PIC
     - \abjad_invisible_line                                                    %! PIC
-    - \tweak bound-details.left.text \markup \baca-left "“A”"                  %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "˝A˝"                  %! PIC
     \startTextSpan                                                             %! PIC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {

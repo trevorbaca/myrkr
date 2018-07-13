@@ -70,7 +70,7 @@ maker(
 maker(
     ('cl', (12, 18)),
     baca.text_spanner(
-        '“A” || “U” || “I” || “U” || “A” || “O” || “I”',
+        '˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝',
         piece_selector=baca.group_by_measures(),
         selector=baca.rleaves(),
         ),
