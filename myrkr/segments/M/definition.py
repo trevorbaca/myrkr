@@ -71,7 +71,7 @@ maker(
     ('cl', (12, 18)),
     baca.text_spanner(
         '˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝',
-        piece_selector=baca.group_by_measures(),
+        piece_selector=baca.mgroups(),
         selector=baca.rleaves(),
         ),
     baca.text_spanner_staff_padding(5),
