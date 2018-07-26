@@ -3,7 +3,7 @@ L_GlobalSkips = {
     % [L GlobalSkips measure 356 / measure 1]                                      %! SM4
     \time 2/3                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
 %@% ^ \markup \baca-dark-cyan-markup (356)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <0>                                           %! SM32:MEASURE_INDEX_MARKUP

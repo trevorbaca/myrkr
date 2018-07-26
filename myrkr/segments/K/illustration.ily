@@ -3,7 +3,7 @@ K_GlobalSkips = {
     % [K GlobalSkips measure 311 / measure 1]                                      %! SM4
     \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (311)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <0>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -52,7 +52,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 314 / measure 4]                                      %! SM4
     \time 1/1                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (314)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <3>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -62,7 +62,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 315 / measure 5]                                      %! SM4
     \time 8/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
 %@% ^ \markup \baca-dark-cyan-markup (315)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <4>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -72,7 +72,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 316 / measure 6]                                      %! SM4
     \time 7/20                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/20
 %@% ^ \markup \baca-dark-cyan-markup (316)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <5>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -82,7 +82,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 317 / measure 7]                                      %! SM4
     \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (317)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <6>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -124,7 +124,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 322 / measure 12]                                     %! SM4
     \time 6/22                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/11
 %@% ^ \markup \baca-dark-cyan-markup (322)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <11>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -134,7 +134,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 323 / measure 13]                                     %! SM4
     \time 3/20                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/20
 %@% ^ \markup \baca-dark-cyan-markup (323)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <12>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -144,7 +144,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 324 / measure 14]                                     %! SM4
     \time 11/16                                                                    %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
 %@% ^ \markup \baca-dark-cyan-markup (324)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <13>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -154,7 +154,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 325 / measure 15]                                     %! SM4
     \time 4/22                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/11
 %@% ^ \markup \baca-dark-cyan-markup (325)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <14>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -164,7 +164,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 326 / measure 16]                                     %! SM4
     \time 8/5                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 8/5
 %@% ^ \markup \baca-dark-cyan-markup (326)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <15>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -174,7 +174,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 327 / measure 17]                                     %! SM4
     \time 10/16                                                                    %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
 %@% ^ \markup \baca-dark-cyan-markup (327)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <16>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -184,7 +184,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 328 / measure 18]                                     %! SM4
     \time 4/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (328)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <17>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -194,7 +194,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 329 / measure 19]                                     %! SM4
     \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (329)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <18>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -220,7 +220,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 332 / measure 22]                                     %! SM4
     \time 7/22                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/22
 %@% ^ \markup \baca-dark-cyan-markup (332)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <21>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -230,7 +230,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 333 / measure 23]                                     %! SM4
     \time 4/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (333)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <22>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -240,7 +240,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 334 / measure 24]                                     %! SM4
     \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (334)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <23>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -282,7 +282,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 339 / measure 29]                                     %! SM4
     \time 11/16                                                                    %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 11/16
 %@% ^ \markup \baca-dark-cyan-markup (339)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <28>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -292,7 +292,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 340 / measure 30]                                     %! SM4
     \time 4/22                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/11
 %@% ^ \markup \baca-dark-cyan-markup (340)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <29>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -302,7 +302,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 341 / measure 31]                                     %! SM4
     \time 8/5                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 8/5
 %@% ^ \markup \baca-dark-cyan-markup (341)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <30>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -312,7 +312,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 342 / measure 32]                                     %! SM4
     \time 10/16                                                                    %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
 %@% ^ \markup \baca-dark-cyan-markup (342)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <31>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -349,7 +349,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 343 / measure 33]                                     %! SM4
     \time 4/18                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/9
 %@% ^ \markup \baca-dark-cyan-markup (343)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <32>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -359,7 +359,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 344 / measure 34]                                     %! SM4
     \time 7/22                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/22
 %@% ^ \markup \baca-dark-cyan-markup (344)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <33>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -369,7 +369,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 345 / measure 35]                                     %! SM4
     \time 5/18                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/18
 %@% ^ \markup \baca-dark-cyan-markup (345)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <34>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -379,7 +379,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 346 / measure 36]                                     %! SM4
     \time 12/16                                                                    %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (346)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <35>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -389,7 +389,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 347 / measure 37]                                     %! SM4
     \time 3/18                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/6
 %@% ^ \markup \baca-dark-cyan-markup (347)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <36>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -399,7 +399,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 348 / measure 38]                                     %! SM4
     \time 8/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
 %@% ^ \markup \baca-dark-cyan-markup (348)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <37>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -409,7 +409,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 349 / measure 39]                                     %! SM4
     \time 3/20                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/20
 %@% ^ \markup \baca-dark-cyan-markup (349)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <38>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -419,7 +419,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 350 / measure 40]                                     %! SM4
     \time 2/3                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2/3
 %@% ^ \markup \baca-dark-cyan-markup (350)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <39>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -429,7 +429,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 351 / measure 41]                                     %! SM4
     \time 6/18                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/3
 %@% ^ \markup \baca-dark-cyan-markup (351)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <40>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -439,7 +439,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 352 / measure 42]                                     %! SM4
     \time 7/20                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/20
 %@% ^ \markup \baca-dark-cyan-markup (352)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <41>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -449,7 +449,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 353 / measure 43]                                     %! SM4
     \time 12/5                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 12/5
 %@% ^ \markup \baca-dark-cyan-markup (353)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <42>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -482,7 +482,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 354 / measure 44]                                     %! SM4
     \time 4/3                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 4/3
 %@% ^ \markup \baca-dark-cyan-markup (354)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <43>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -492,7 +492,7 @@ K_GlobalSkips = {
     
     % [K GlobalSkips measure 355 / measure 45]                                     %! SM4
     \time 3/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color blue                                                %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/16
 %@% ^ \markup \baca-dark-cyan-markup (355)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <44>                                          %! SM32:MEASURE_INDEX_MARKUP
