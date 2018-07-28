@@ -26,13 +26,13 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
+                                manifest='instruments',
+                                value='BassClarinet',
                                 ),
                             abjad.Momento(
                                 context='ClarinetMusicVoice',
-                                prototype='abjad.Instrument',
-                                value='BassClarinet',
+                                prototype='abjad.Clef',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -51,7 +51,7 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='GlobalSkips',
-                                prototype='abjad.MetronomeMark',
+                                manifest='metronome_marks',
                                 value='55',
                                 ),
                             abjad.Momento(
