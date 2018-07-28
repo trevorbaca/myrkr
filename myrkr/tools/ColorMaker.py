@@ -49,7 +49,7 @@ class ColorMaker(object):
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
-        durations = [abjad.inspect(_).get_duration() for _ in notes]
+        durations = [abjad.inspect(_).duration() for _ in notes]
         maker = baca.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
