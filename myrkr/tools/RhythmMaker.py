@@ -183,7 +183,7 @@ class RhythmMaker(object):
         pair = proportional_notation_duration.pair
         moment = abjad.SchemeMoment(pair)
         abjad.setting(score).proportional_notation_duration = moment
-        assert abjad.inspect(score).is_well_formed()
+        assert abjad.inspect(score).is_wellformed()
         lilypond_file.layout_block.indent = 0
         if subtitle is not None:
             subtitle = abjad.Markup(subtitle)
