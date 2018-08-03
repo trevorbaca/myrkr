@@ -37,7 +37,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {
                     \context ClarinetMusicVoice = "ClarinetMusicVoice"
                     {
-                        \clef "treble" %! ST3
+                        \clef "treble" %! ST_3
                         s1
                     }
                 }
