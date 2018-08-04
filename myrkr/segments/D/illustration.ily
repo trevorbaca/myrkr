@@ -391,7 +391,7 @@ D_ClarinetMusicVoice = {
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set ClarinetMusicStaff.forceClef = ##t                                    %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set ClarinetMusicStaff.forceClef = ##t                                    %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     b'4
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -898,27 +898,27 @@ D_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     e'''2
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     f'''2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     \times 4/7 {
         
         % [D ClarinetMusicVoice measure 134 / measure 24]                      %! _comment_measure_numbers
         e'''2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         ds'''!2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         e'''2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
     }
     \times 4/5 {
         
         % [D ClarinetMusicVoice measure 135 / measure 25]                      %! _comment_measure_numbers
         f'''2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         e'''2
     }
