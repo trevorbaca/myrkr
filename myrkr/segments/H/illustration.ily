@@ -279,7 +279,7 @@ H_ClarinetMusicVoice = {
         \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)   %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set ClarinetMusicStaff.forceClef = ##t                                %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+        \set ClarinetMusicStaff.forceClef = ##t                                %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e1
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -291,26 +291,26 @@ H_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g''2
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     af''!2.
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 233 / measure 3]                       %! _comment_measure_numbers
         g''2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         fs''!2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         g''2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
     }
     
     % [H ClarinetMusicVoice measure 234 / measure 4]                           %! _comment_measure_numbers
     af''!2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     g''2
     \tweak edge-height #'(0.7 . 0)
@@ -326,28 +326,28 @@ H_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     b''2.
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     c'''2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     b''2.
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     % [H ClarinetMusicVoice measure 237 / measure 7]                           %! _comment_measure_numbers
     as''!2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     b''2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 238 / measure 8]                       %! _comment_measure_numbers
         c'''2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         b''2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         as''!2
     }
@@ -365,26 +365,26 @@ H_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d'''2.
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         ef'''!2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
     }
     
     % [H ClarinetMusicVoice measure 241 / measure 11]                          %! _comment_measure_numbers
     d'''2.
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     cs'''!2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     d'''2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     \times 4/5 {
         
         % [H ClarinetMusicVoice measure 242 / measure 12]                      %! _comment_measure_numbers
         ef'''!2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         d'''2
     }
@@ -399,29 +399,29 @@ H_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!2
         \mp                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         g'''2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         fs'''!2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
     }
     
     % [H ClarinetMusicVoice measure 245 / measure 15]                          %! _comment_measure_numbers
     es'''!2.
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     fs'''!2
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     \times 4/7 {
         
         % [H ClarinetMusicVoice measure 246 / measure 16]                      %! _comment_measure_numbers
         g'''2
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         fs'''!2.
-        \glissando                                                             %! SC
+        \glissando                                                             %! SpannerCommand
         
         es'''!2
     }
@@ -433,7 +433,7 @@ H_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c''4
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \glissando                                                                 %! SC
+    \glissando                                                                 %! SpannerCommand
     
     % [H ClarinetMusicVoice measure 249 / measure 19]                          %! _comment_measure_numbers
     e''4
