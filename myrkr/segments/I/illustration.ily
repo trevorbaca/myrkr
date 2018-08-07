@@ -368,15 +368,15 @@ I_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d'''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 257 / measure 8]                                               %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 258 / measure 9]                                               %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 259 / measure 10]                                              %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -387,23 +387,23 @@ I_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d'''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 261 / measure 12]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 262 / measure 13]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 263 / measure 14]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 264 / measure 15]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         
@@ -417,15 +417,15 @@ I_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d'''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 267 / measure 18]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [I ClarinetMusicVoice measure 268 / measure 19]                                              %! _comment_measure_numbers
     d'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         

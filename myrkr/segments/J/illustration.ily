@@ -380,23 +380,23 @@ J_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
     \pppp                                                                                          %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 287 / measure 11]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 288 / measure 12]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 289 / measure 13]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 290 / measure 14]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     \times 2/3 {
         
         % [J ClarinetMusicVoice measure 291 / measure 15]                                          %! _comment_measure_numbers
@@ -513,15 +513,15 @@ J_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 296 / measure 20]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 297 / measure 21]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 298 / measure 22]                                              %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -583,23 +583,23 @@ J_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 302 / measure 26]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 303 / measure 27]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 304 / measure 28]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [J ClarinetMusicVoice measure 305 / measure 29]                                              %! _comment_measure_numbers
     f'''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
         
