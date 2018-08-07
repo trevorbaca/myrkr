@@ -929,35 +929,35 @@ G_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     f''4
     \pppp                                                                                          %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 203 / measure 28]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 204 / measure 29]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 205 / measure 30]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 206 / measure 31]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 207 / measure 32]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 208 / measure 33]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 209 / measure 34]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 210 / measure 35]                                              %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1132,15 +1132,15 @@ G_ClarinetMusicVoice = {
     
     % [G ClarinetMusicVoice measure 216 / measure 41]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 217 / measure 42]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 218 / measure 43]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 219 / measure 44]                                              %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1261,15 +1261,15 @@ G_ClarinetMusicVoice = {
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f''4
     \pppp                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 224 / measure 49]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 225 / measure 50]                                              %! _comment_measure_numbers
     f''4
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 226 / measure 51]                                              %! _comment_measure_numbers
     r8.
