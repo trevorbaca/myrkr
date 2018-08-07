@@ -682,6 +682,6 @@ E_ClarinetMusicVoice = {
 
 
 E_ClarinetMusicStaff = {
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"
+    \context ClarinetMusicVoice = "ClarinetMusicVoice"                                             %! ScoreTemplate
     \E_ClarinetMusicVoice                                                                          %! extern
 }
