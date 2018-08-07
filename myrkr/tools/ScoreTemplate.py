@@ -19,30 +19,30 @@ class ScoreTemplate(baca.ScoreTemplate):
         ...     )
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-        >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score"
-        <<
-            \context GlobalContext = "GlobalContext" %! _make_global_context
-            <<                                       %! _make_global_context
-                \context GlobalRests = "GlobalRests" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-                \context GlobalSkips = "GlobalSkips" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-            >> %! _make_global_context
-            \context MusicContext = "MusicContext"
-            {
-                \context ClarinetMusicStaff = "ClarinetMusicStaff"
-                {
-                    \context ClarinetMusicVoice = "ClarinetMusicVoice"
-                    {
-                        \clef "treble" %! attach_defaults
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                }
-            }
-        >>
+        >>> abjad.f(lilypond_file[abjad.Score], strict=79)
+        \context Score = "Score"                                                       %! ScoreTemplate
+        <<                                                                             %! ScoreTemplate
+            \context GlobalContext = "GlobalContext"                                   %! _make_global_context
+            <<                                                                         %! _make_global_context
+                \context GlobalRests = "GlobalRests"                                   %! _make_global_context
+                {                                                                      %! _make_global_context
+                }                                                                      %! _make_global_context
+                \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
+                {                                                                      %! _make_global_context
+                }                                                                      %! _make_global_context
+            >>                                                                         %! _make_global_context
+            \context MusicContext = "MusicContext"                                     %! ScoreTemplate
+            {                                                                          %! ScoreTemplate
+                \context ClarinetMusicStaff = "ClarinetMusicStaff"                     %! ScoreTemplate
+                {                                                                      %! ScoreTemplate
+                    \context ClarinetMusicVoice = "ClarinetMusicVoice"                 %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \clef "treble"                                                 %! attach_defaults
+                        s1                                                             %! ScoreTemplate.__illustrate__
+                    }                                                                  %! ScoreTemplate
+                }                                                                      %! ScoreTemplate
+            }                                                                          %! ScoreTemplate
+        >>                                                                             %! ScoreTemplate
 
     """
 
@@ -66,6 +66,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
+        tag = 'ScoreTemplate'
+
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
@@ -73,11 +75,13 @@ class ScoreTemplate(baca.ScoreTemplate):
         clarinet_music_voice = abjad.Voice(
             lilypond_type='ClarinetMusicVoice',
             name='ClarinetMusicVoice',
+            tag=tag,
             )
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice],
             lilypond_type='ClarinetMusicStaff',
             name='ClarinetMusicStaff',
+            tag=tag,
             )
         abjad.annotate(
             clarinet_music_staff,
@@ -95,10 +99,12 @@ class ScoreTemplate(baca.ScoreTemplate):
             [clarinet_music_staff],
             lilypond_type='MusicContext',
             name='MusicContext',
+            tag=tag,
             )
         score = abjad.Score(
             [global_context, music_context],
             name='Score',
+            tag=tag,
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
