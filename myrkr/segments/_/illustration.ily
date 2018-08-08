@@ -4,11 +4,11 @@ i_GlobalSkips = {
     \time 12/5                                                                                     %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 12/5                                                                                      %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (1)                                                           %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <0>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((1))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [_.1]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'00'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+%@% ^ \baca-dark-cyan-markup (1)                                                                   %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \baca-dark-cyan-markup <0>                                                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-dark-cyan-markup ((1))                                                                 %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \baca-dark-cyan-markup [_.1]                                                                 %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \baca-dark-cyan-markup "[0'00'']"                                                            %! CLOCK_TIME_MARKUP:_label_clock_time
     \baca_bar_line_visible                                                                         %! _attach_final_bar_line
     \bar "|"                                                                                       %! _attach_final_bar_line
     
@@ -37,7 +37,7 @@ i_ClarinetMusicVoice = {
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e\breve.
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        ^ \markup \baca-default-indicator-markup "(“BassClarinet”)"                                %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+        ^ \baca-default-indicator-markup "(“BassClarinet”)"                                        %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { overblow }                                                                     %! IndicatorCommand
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)                             %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
