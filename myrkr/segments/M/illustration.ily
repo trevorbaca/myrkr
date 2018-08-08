@@ -480,7 +480,7 @@ M_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [M ClarinetMusicVoice measure 375 / measure 12]                                          %! _comment_measure_numbers
-        \override TextSpanner.staff-padding = #5                                                   %! OverrideCommand(1)
+        \override TextSpanner.staff-padding = #5                                                   %! baca_text_spanner_staff_padding:OverrideCommand(1)
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
         \ppppp                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -553,7 +553,7 @@ M_ClarinetMusicVoice = {
         - \abjad_invisible_line                                                                    %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.left.text \markup \baca-left "˝I˝"                                  %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                                             %! PiecewiseIndicatorCommand(1)
-        \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
     }
     
     % [M ClarinetMusicVoice measure 382 / measure 19]                                              %! _comment_measure_numbers

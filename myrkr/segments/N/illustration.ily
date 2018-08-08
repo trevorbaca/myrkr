@@ -414,7 +414,7 @@ N_ClarinetMusicVoice = {
     \times 4/5 {
         
         % [N ClarinetMusicVoice measure 387 / measure 4]                                           %! _comment_measure_numbers
-        \once \override TextScript.staff-padding = #5                                              %! OverrideCommand(1)
+        \once \override TextScript.staff-padding = #5                                              %! baca_script_staff_padding:OverrideCommand(1)
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve.
         \ppppp                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -481,7 +481,7 @@ N_ClarinetMusicVoice = {
     \times 2/3 {
         
         % [N ClarinetMusicVoice measure 394 / measure 11]                                          %! _comment_measure_numbers
-        \once \override TextScript.staff-padding = #5                                              %! OverrideCommand(1)
+        \once \override TextScript.staff-padding = #5                                              %! baca_script_staff_padding:OverrideCommand(1)
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)                  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
         \ppppp                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
