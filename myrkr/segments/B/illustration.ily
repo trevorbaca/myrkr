@@ -1,5 +1,5 @@
-B_GlobalSkips = {
-    
+B_GlobalSkips = {                                                              %! extern
+
     % [B GlobalSkips measure 57 / measure 1]                                   %! _comment_measure_numbers
     \time 13/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
@@ -32,7 +32,7 @@ B_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [B GlobalSkips measure 58 / measure 2]                                   %! _comment_measure_numbers
     \time 5/22                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -42,7 +42,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((2))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.2]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'04'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 59 / measure 3]                                   %! _comment_measure_numbers
     \time 8/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -52,7 +52,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((3))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.3]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 60 / measure 4]                                   %! _comment_measure_numbers
     \time 7/20                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -62,7 +62,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((4))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.4]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'06'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 61 / measure 5]                                   %! _comment_measure_numbers
     \time 6/22                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -72,7 +72,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((5))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.5]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'07'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 62 / measure 6]                                   %! _comment_measure_numbers
     \time 3/20                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -82,7 +82,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((6))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.6]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'07'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 63 / measure 7]                                   %! _comment_measure_numbers
     \time 11/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -92,7 +92,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((7))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.7]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'08'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 64 / measure 8]                                   %! _comment_measure_numbers
     \time 4/22                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -102,7 +102,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((8))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.8]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'09'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 65 / measure 9]                                   %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -112,7 +112,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((9))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.9]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'09'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 66 / measure 10]                                  %! _comment_measure_numbers
     \time 2/5                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -122,7 +122,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((10))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.10]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'11'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 67 / measure 11]                                  %! _comment_measure_numbers
     \time 5/7                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -132,7 +132,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((11))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.11]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'11'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 68 / measure 12]                                  %! _comment_measure_numbers
     \time 10/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -142,7 +142,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((12))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.12]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'13'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 69 / measure 13]                                  %! _comment_measure_numbers
     \time 4/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -152,7 +152,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((13))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.13]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'14'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 70 / measure 14]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -162,7 +162,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((14))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.14]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'15'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 71 / measure 15]                                  %! _comment_measure_numbers
     \time 3/5                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -172,7 +172,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((15))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.15]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'16'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 72 / measure 16]                                  %! _comment_measure_numbers
     \time 7/22                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -182,7 +182,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((16))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.16]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'17'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 73 / measure 17]                                  %! _comment_measure_numbers
     \time 4/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -192,7 +192,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((17))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.17]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'18'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 74 / measure 18]                                  %! _comment_measure_numbers
     \time 2/5                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -202,7 +202,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((18))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.18]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'19'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 75 / measure 19]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -212,7 +212,7 @@ B_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((19))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [B.19]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[1'19'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [B GlobalSkips measure 76 / measure 20]                                  %! _comment_measure_numbers
     \time 2/7                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -225,12 +225,12 @@ B_GlobalSkips = {
     \stopTextSpan                                                              %! _attach_metronome_marks(4)
     \baca_bar_line_visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
-    
-}
+
+}                                                                              %! extern
 
 
-B_ClarinetMusicVoice = {
-    
+B_ClarinetMusicVoice = {                                                       %! extern
+
     % [B ClarinetMusicVoice measure 57 / measure 1]                            %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -248,9 +248,9 @@ B_ClarinetMusicVoice = {
                     2
         }
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)          %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     d''4
-    
+
     d''8
     ^ \markup {
         \override
@@ -260,7 +260,7 @@ B_ClarinetMusicVoice = {
                     3
         }
     [
-    
+
     d''16
     ^ \markup {
         \override
@@ -269,12 +269,12 @@ B_ClarinetMusicVoice = {
                 \finger
                     4
         }
-    
+
     d''8.
     ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
-        
+
         % [B ClarinetMusicVoice measure 58 / measure 2]                        %! _comment_measure_numbers
         d''8.
         ^ \markup {
@@ -285,7 +285,7 @@ B_ClarinetMusicVoice = {
                         1
             }
         [
-        
+
         d''8
         ^ \markup {
             \override
@@ -296,11 +296,11 @@ B_ClarinetMusicVoice = {
             }
         ]
     }
-    
+
     % [B ClarinetMusicVoice measure 59 / measure 3]                            %! _comment_measure_numbers
     d''8
     [
-    
+
     d''8
     ^ \markup {
         \override
@@ -309,7 +309,7 @@ B_ClarinetMusicVoice = {
                 \finger
                     3
         }
-    
+
     d''8.
     ^ \markup {
         \override
@@ -318,7 +318,7 @@ B_ClarinetMusicVoice = {
                 \finger
                     1
         }
-    
+
     d''16
     ^ \markup {
         \override
@@ -330,7 +330,7 @@ B_ClarinetMusicVoice = {
     ]
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 60 / measure 4]                        %! _comment_measure_numbers
         d''8.
         ^ \markup {
@@ -340,7 +340,7 @@ B_ClarinetMusicVoice = {
                     \finger
                         4
             }
-        
+
         d''4
         ^ \markup {
             \override
@@ -352,11 +352,11 @@ B_ClarinetMusicVoice = {
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
-        
+
         % [B ClarinetMusicVoice measure 61 / measure 5]                        %! _comment_measure_numbers
         d''8.
         [
-        
+
         d''8
         ^ \markup {
             \override
@@ -365,7 +365,7 @@ B_ClarinetMusicVoice = {
                     \finger
                         4
             }
-        
+
         d''16
         ^ \markup {
             \override
@@ -378,11 +378,11 @@ B_ClarinetMusicVoice = {
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 62 / measure 6]                        %! _comment_measure_numbers
         d''8
         [
-        
+
         d''16
         ^ \markup {
             \override
@@ -393,7 +393,7 @@ B_ClarinetMusicVoice = {
             }
         ]
     }
-    
+
     % [B ClarinetMusicVoice measure 63 / measure 7]                            %! _comment_measure_numbers
     d''8.
     ^ \markup {
@@ -404,9 +404,9 @@ B_ClarinetMusicVoice = {
                     4
         }
     [
-    
+
     d''8
-    
+
     d''8
     ^ \markup {
         \override
@@ -415,7 +415,7 @@ B_ClarinetMusicVoice = {
                 \finger
                     1
         }
-    
+
     d''8.
     ^ \markup {
         \override
@@ -424,12 +424,12 @@ B_ClarinetMusicVoice = {
                 \finger
                     2
         }
-    
+
     d''16
     ]
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
-        
+
         % [B ClarinetMusicVoice measure 64 / measure 8]                        %! _comment_measure_numbers
         d''16
         ^ \markup {
@@ -440,7 +440,7 @@ B_ClarinetMusicVoice = {
                         3
             }
         [
-        
+
         d''8.
         ^ \markup {
             \override
@@ -451,7 +451,7 @@ B_ClarinetMusicVoice = {
             }
         ]
     }
-    
+
     % [B ClarinetMusicVoice measure 65 / measure 9]                            %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs''!2
@@ -465,7 +465,7 @@ B_ClarinetMusicVoice = {
         }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 66 / measure 10]                       %! _comment_measure_numbers
         cs''!2
         ^ \markup {
@@ -478,7 +478,7 @@ B_ClarinetMusicVoice = {
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
-        
+
         % [B ClarinetMusicVoice measure 67 / measure 11]                       %! _comment_measure_numbers
         cs''!2.
         ^ \markup {
@@ -488,16 +488,16 @@ B_ClarinetMusicVoice = {
                     \finger
                         1
             }
-        
+
         cs''!2
     }
-    
+
     % [B ClarinetMusicVoice measure 68 / measure 12]                           %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d''8.
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     [
-    
+
     d''8
     ^ \markup {
         \override
@@ -506,7 +506,7 @@ B_ClarinetMusicVoice = {
                 \finger
                     4
         }
-    
+
     d''8.
     ^ \markup {
         \override
@@ -515,11 +515,11 @@ B_ClarinetMusicVoice = {
                 \finger
                     2
         }
-    
+
     d''8
     ]
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 69 / measure 13]                       %! _comment_measure_numbers
         d''8.
         ^ \markup {
@@ -530,7 +530,7 @@ B_ClarinetMusicVoice = {
                         3
             }
         [
-        
+
         d''8
         ^ \markup {
             \override
@@ -541,7 +541,7 @@ B_ClarinetMusicVoice = {
             }
         ]
     }
-    
+
     % [B ClarinetMusicVoice measure 70 / measure 14]                           %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs''!2
@@ -555,7 +555,7 @@ B_ClarinetMusicVoice = {
         }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 71 / measure 15]                       %! _comment_measure_numbers
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         b'2.
@@ -570,7 +570,7 @@ B_ClarinetMusicVoice = {
     }
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
-        
+
         % [B ClarinetMusicVoice measure 72 / measure 16]                       %! _comment_measure_numbers
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d''4
@@ -582,7 +582,7 @@ B_ClarinetMusicVoice = {
                     \finger
                         4
             }
-        
+
         d''8
         ^ \markup {
             \override
@@ -592,12 +592,12 @@ B_ClarinetMusicVoice = {
                         1
             }
         [
-        
+
         d''16
         ]
     }
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 73 / measure 17]                       %! _comment_measure_numbers
         d''8
         ^ \markup {
@@ -608,7 +608,7 @@ B_ClarinetMusicVoice = {
                         4
             }
         [
-        
+
         d''8.
         ^ \markup {
             \override
@@ -621,18 +621,18 @@ B_ClarinetMusicVoice = {
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
-        
+
         % [B ClarinetMusicVoice measure 74 / measure 18]                       %! _comment_measure_numbers
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b'2
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     }
-    
+
     % [B ClarinetMusicVoice measure 75 / measure 19]                           %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     bf'!2.
     \f                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    
+
     bf'!2
     ^ \markup {
         \override
@@ -643,15 +643,15 @@ B_ClarinetMusicVoice = {
         }
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
-        
+
         % [B ClarinetMusicVoice measure 76 / measure 20]                       %! _comment_measure_numbers
         bf'!2
-        
+
     }
-}
+}                                                                              %! extern
 
 
-B_ClarinetMusicStaff = {
+B_ClarinetMusicStaff = {                                                       %! extern
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \B_ClarinetMusicVoice                                                      %! extern
-}
+}                                                                              %! extern
