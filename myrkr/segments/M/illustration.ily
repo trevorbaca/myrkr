@@ -485,7 +485,7 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \abjad_invisible_line                                                %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "˝A˝"              %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "˝A˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
     }
 
@@ -495,7 +495,7 @@ M_ClarinetMusicVoice = {                                                       %
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
     - \abjad_invisible_line                                                    %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.left.text \markup \baca-left "˝U˝"                  %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_left_text "˝U˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -506,7 +506,7 @@ M_ClarinetMusicVoice = {                                                       %
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad_invisible_line                                                %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "˝I˝"              %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
     }
     \tweak edge-height #'(0.7 . 0)
@@ -518,7 +518,7 @@ M_ClarinetMusicVoice = {                                                       %
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad_invisible_line                                                %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "˝U˝"              %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "˝U˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
     }
 
@@ -528,7 +528,7 @@ M_ClarinetMusicVoice = {                                                       %
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
     - \abjad_invisible_line                                                    %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.left.text \markup \baca-left "˝A˝"                  %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_left_text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -539,7 +539,7 @@ M_ClarinetMusicVoice = {                                                       %
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad_invisible_line                                                %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "˝O˝"              %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "˝O˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
     }
     \tweak edge-height #'(0.7 . 0)
@@ -551,7 +551,7 @@ M_ClarinetMusicVoice = {                                                       %
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad_invisible_line                                                %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "˝I˝"              %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
     }
@@ -561,7 +561,7 @@ M_ClarinetMusicVoice = {                                                       %
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(3)
     - \abjad_invisible_line                                                    %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.left.text \markup \baca-left "˝A˝"                  %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_left_text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
