@@ -75,11 +75,11 @@ maker(
 
 maker(
     ('cl', [4, 11]),
-    baca.match(
+    baca.scope(
         0,
         baca.markup('“U”'),
         ),
-    baca.match(
+    baca.scope(
         1,
         baca.markup('“A”'),
         ),
