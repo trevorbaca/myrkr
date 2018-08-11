@@ -268,6 +268,7 @@ M_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -284,6 +285,7 @@ M_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
 
     % [M ClarinetMusicVoice measure 366 / measure 3]                           %! _comment_measure_numbers
@@ -333,6 +335,7 @@ M_ClarinetMusicVoice = {                                                       %
                     1
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -360,6 +363,7 @@ M_ClarinetMusicVoice = {                                                       %
                     \finger
                         2
             }
+
     }
 
     % [M ClarinetMusicVoice measure 369 / measure 6]                           %! _comment_measure_numbers
@@ -409,6 +413,7 @@ M_ClarinetMusicVoice = {                                                       %
 
     cs'!8
     ]
+
     \times 2/3 {
 
         % [M ClarinetMusicVoice measure 371 / measure 8]                       %! _comment_measure_numbers
@@ -429,10 +434,12 @@ M_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }
 
     % [M ClarinetMusicVoice measure 372 / measure 9]                           %! _comment_measure_numbers
     r8.
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -440,10 +447,12 @@ M_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'!\breve.
         \pppp                                                                  %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [M ClarinetMusicVoice measure 374 / measure 11]                          %! _comment_measure_numbers
     r8.
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -455,6 +464,7 @@ M_ClarinetMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
         - \baca-text-spanner-left-text "˝A˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+
     }
 
     % [M ClarinetMusicVoice measure 376 / measure 13]                          %! _comment_measure_numbers
@@ -465,6 +475,7 @@ M_ClarinetMusicVoice = {                                                       %
     - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
     - \baca-text-spanner-left-text "˝U˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -476,7 +487,9 @@ M_ClarinetMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
         - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -488,6 +501,7 @@ M_ClarinetMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
         - \baca-text-spanner-left-text "˝U˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+
     }
 
     % [M ClarinetMusicVoice measure 379 / measure 16]                          %! _comment_measure_numbers
@@ -498,6 +512,7 @@ M_ClarinetMusicVoice = {                                                       %
     - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
     - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -509,7 +524,9 @@ M_ClarinetMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
         - \baca-text-spanner-left-text "˝O˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -522,6 +539,7 @@ M_ClarinetMusicVoice = {                                                       %
         - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
+
     }
 
     % [M ClarinetMusicVoice measure 382 / measure 19]                          %! _comment_measure_numbers
@@ -531,6 +549,7 @@ M_ClarinetMusicVoice = {                                                       %
     - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
     - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -547,10 +566,13 @@ M_ClarinetMusicVoice = {                                                       %
             }
 
     }
+
 }                                                                              %! extern
 
 
 M_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \M_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

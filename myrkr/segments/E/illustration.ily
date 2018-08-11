@@ -209,6 +209,7 @@ E_GlobalSkips = {                                                              %
 
 
 E_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -233,6 +234,7 @@ E_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
 
     % [E ClarinetMusicVoice measure 143 / measure 2]                           %! _comment_measure_numbers
@@ -275,6 +277,7 @@ E_ClarinetMusicVoice = {                                                       %
 
     b'16
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -298,7 +301,9 @@ E_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -306,6 +311,7 @@ E_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [E ClarinetMusicVoice measure 146 / measure 5]                           %! _comment_measure_numbers
@@ -341,6 +347,7 @@ E_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \times 4/5 {
 
         % [E ClarinetMusicVoice measure 147 / measure 6]                       %! _comment_measure_numbers
@@ -363,7 +370,9 @@ E_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -389,6 +398,7 @@ E_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
 
     % [E ClarinetMusicVoice measure 149 / measure 8]                           %! _comment_measure_numbers
@@ -431,6 +441,7 @@ E_ClarinetMusicVoice = {                                                       %
                     4
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -447,7 +458,9 @@ E_ClarinetMusicVoice = {                                                       %
 
         cs''!8.
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -455,6 +468,7 @@ E_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs!\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [E ClarinetMusicVoice measure 152 / measure 11]                          %! _comment_measure_numbers
@@ -468,6 +482,7 @@ E_ClarinetMusicVoice = {                                                       %
 
     d'''2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/5 {
 
         % [E ClarinetMusicVoice measure 153 / measure 12]                      %! _comment_measure_numbers
@@ -476,7 +491,9 @@ E_ClarinetMusicVoice = {                                                       %
 
         d'''2
         \glissando                                                             %! SpannerCommand
+
     }
+
     \times 4/7 {
 
         % [E ClarinetMusicVoice measure 154 / measure 13]                      %! _comment_measure_numbers
@@ -487,6 +504,7 @@ E_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         cs'''!2
+
     }
 
     % [E ClarinetMusicVoice measure 155 / measure 14]                          %! _comment_measure_numbers
@@ -522,6 +540,7 @@ E_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \times 4/5 {
 
         % [E ClarinetMusicVoice measure 156 / measure 15]                      %! _comment_measure_numbers
@@ -537,7 +556,9 @@ E_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -570,7 +591,9 @@ E_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
+
     \times 4/5 {
 
         % [E ClarinetMusicVoice measure 158 / measure 17]                      %! _comment_measure_numbers
@@ -586,6 +609,7 @@ E_ClarinetMusicVoice = {                                                       %
 
         cs''!8.
         ]
+
     }
 
     % [E ClarinetMusicVoice measure 159 / measure 18]                          %! _comment_measure_numbers
@@ -628,6 +652,7 @@ E_ClarinetMusicVoice = {                                                       %
                     4
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -646,10 +671,13 @@ E_ClarinetMusicVoice = {                                                       %
         ]
 
     }
+
 }                                                                              %! extern
 
 
 E_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \E_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

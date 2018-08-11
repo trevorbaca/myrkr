@@ -16,6 +16,7 @@ i_GlobalSkips = {                                                              %
 
 
 i_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -42,10 +43,13 @@ i_ClarinetMusicVoice = {                                                       %
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)         %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     }
+
 }                                                                              %! extern
 
 
 i_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \i_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

@@ -240,6 +240,7 @@ H_GlobalSkips = {                                                              %
 
 
 H_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -253,6 +254,7 @@ H_ClarinetMusicVoice = {                                                       %
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                  %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)      %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     }
 
     % [H ClarinetMusicVoice measure 232 / measure 2]                           %! _comment_measure_numbers
@@ -263,6 +265,7 @@ H_ClarinetMusicVoice = {                                                       %
 
     af''!2.
     \glissando                                                                 %! SpannerCommand
+
     \times 4/7 {
 
         % [H ClarinetMusicVoice measure 233 / measure 3]                       %! _comment_measure_numbers
@@ -274,6 +277,7 @@ H_ClarinetMusicVoice = {                                                       %
 
         g''2.
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [H ClarinetMusicVoice measure 234 / measure 4]                           %! _comment_measure_numbers
@@ -281,6 +285,7 @@ H_ClarinetMusicVoice = {                                                       %
     \glissando                                                                 %! SpannerCommand
 
     g''2
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -288,6 +293,7 @@ H_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e\breve.
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [H ClarinetMusicVoice measure 236 / measure 6]                           %! _comment_measure_numbers
@@ -308,6 +314,7 @@ H_ClarinetMusicVoice = {                                                       %
 
     b''2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/7 {
 
         % [H ClarinetMusicVoice measure 238 / measure 8]                       %! _comment_measure_numbers
@@ -318,7 +325,9 @@ H_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         as''!2
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -326,7 +335,9 @@ H_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \times 4/5 {
 
         % [H ClarinetMusicVoice measure 240 / measure 10]                      %! _comment_measure_numbers
@@ -337,6 +348,7 @@ H_ClarinetMusicVoice = {                                                       %
 
         ef'''!2
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [H ClarinetMusicVoice measure 241 / measure 11]                          %! _comment_measure_numbers
@@ -348,6 +360,7 @@ H_ClarinetMusicVoice = {                                                       %
 
     d'''2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/5 {
 
         % [H ClarinetMusicVoice measure 242 / measure 12]                      %! _comment_measure_numbers
@@ -355,12 +368,14 @@ H_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         d'''2
+
     }
 
     % [H ClarinetMusicVoice measure 243 / measure 13]                          %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     e\breve.
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     \times 4/7 {
 
         % [H ClarinetMusicVoice measure 244 / measure 14]                      %! _comment_measure_numbers
@@ -374,6 +389,7 @@ H_ClarinetMusicVoice = {                                                       %
 
         fs'''!2
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [H ClarinetMusicVoice measure 245 / measure 15]                          %! _comment_measure_numbers
@@ -382,6 +398,7 @@ H_ClarinetMusicVoice = {                                                       %
 
     fs'''!2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/7 {
 
         % [H ClarinetMusicVoice measure 246 / measure 16]                      %! _comment_measure_numbers
@@ -392,6 +409,7 @@ H_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         es'''!2
+
     }
 
     % [H ClarinetMusicVoice measure 247 / measure 17]                          %! _comment_measure_numbers
@@ -410,6 +428,8 @@ H_ClarinetMusicVoice = {                                                       %
 
 
 H_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \H_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

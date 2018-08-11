@@ -396,6 +396,7 @@ C_ClarinetMusicVoice = {                                                       %
                     3
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -412,6 +413,7 @@ C_ClarinetMusicVoice = {                                                       %
 
         d''8.
         ]
+
     }
 
     % [C ClarinetMusicVoice measure 79 / measure 3]                            %! _comment_measure_numbers
@@ -456,6 +458,7 @@ C_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -472,6 +475,7 @@ C_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
 
     % [C ClarinetMusicVoice measure 81 / measure 5]                            %! _comment_measure_numbers
@@ -505,6 +509,7 @@ C_ClarinetMusicVoice = {                                                       %
                 \finger
                     2
         }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -521,7 +526,9 @@ C_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -554,7 +561,9 @@ C_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -571,7 +580,9 @@ C_ClarinetMusicVoice = {                                                       %
 
         ds''!8.
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -579,6 +590,7 @@ C_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [C ClarinetMusicVoice measure 86 / measure 10]                           %! _comment_measure_numbers
@@ -623,6 +635,7 @@ C_ClarinetMusicVoice = {                                                       %
         }
 
     ds''!8
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -646,7 +659,9 @@ C_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -661,6 +676,7 @@ C_ClarinetMusicVoice = {                                                       %
                     \finger
                         2
             }
+
     }
 
     % [C ClarinetMusicVoice measure 89 / measure 13]                           %! _comment_measure_numbers
@@ -701,6 +717,7 @@ C_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -724,7 +741,9 @@ C_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -752,7 +771,9 @@ C_ClarinetMusicVoice = {                                                       %
 
         es''!8.
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -774,6 +795,7 @@ C_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }
 
     % [C ClarinetMusicVoice measure 94 / measure 18]                           %! _comment_measure_numbers
@@ -816,6 +838,7 @@ C_ClarinetMusicVoice = {                                                       %
 
     es''!8
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -839,7 +862,9 @@ C_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -847,6 +872,7 @@ C_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [C ClarinetMusicVoice measure 98 / measure 22]                           %! _comment_measure_numbers
@@ -896,6 +922,7 @@ C_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
@@ -919,13 +946,17 @@ C_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
         % [C ClarinetMusicVoice measure 101 / measure 25]                      %! _comment_measure_numbers
         a'2
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -953,6 +984,7 @@ C_ClarinetMusicVoice = {                                                       %
         ]
 
         es''!4
+
     }
 
     % [C ClarinetMusicVoice measure 103 / measure 27]                          %! _comment_measure_numbers
@@ -975,6 +1007,7 @@ C_ClarinetMusicVoice = {                                                       %
                     4
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -982,6 +1015,7 @@ C_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f\breve.
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [C ClarinetMusicVoice measure 105 / measure 29]                          %! _comment_measure_numbers
@@ -1019,6 +1053,7 @@ C_ClarinetMusicVoice = {                                                       %
 
     es''!8
     ]
+
     \times 2/3 {
 
         % [C ClarinetMusicVoice measure 106 / measure 30]                      %! _comment_measure_numbers
@@ -1039,6 +1074,7 @@ C_ClarinetMusicVoice = {                                                       %
                     \finger
                         4
             }
+
     }
 
     % [C ClarinetMusicVoice measure 107 / measure 31]                          %! _comment_measure_numbers
@@ -1074,6 +1110,7 @@ C_ClarinetMusicVoice = {                                                       %
 
     fs''!8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -1097,7 +1134,9 @@ C_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
+
     \times 2/3 {
 
         % [C ClarinetMusicVoice measure 109 / measure 33]                      %! _comment_measure_numbers
@@ -1122,7 +1161,9 @@ C_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -1141,10 +1182,13 @@ C_ClarinetMusicVoice = {                                                       %
         ]
 
     }
+
 }                                                                              %! extern
 
 
 C_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \C_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
