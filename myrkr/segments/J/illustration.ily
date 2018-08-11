@@ -381,6 +381,7 @@ J_ClarinetMusicVoice = {                                                       %
     % [J ClarinetMusicVoice measure 290 / measure 14]                          %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! IndicatorCommand
+
     \times 2/3 {
 
         % [J ClarinetMusicVoice measure 291 / measure 15]                      %! _comment_measure_numbers
@@ -407,7 +408,9 @@ J_ClarinetMusicVoice = {                                                       %
 
         gs'!8
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -431,6 +434,7 @@ J_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
 
     % [J ClarinetMusicVoice measure 293 / measure 17]                          %! _comment_measure_numbers
@@ -468,6 +472,7 @@ J_ClarinetMusicVoice = {                                                       %
 
     g'8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -491,6 +496,7 @@ J_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
 
     % [J ClarinetMusicVoice measure 295 / measure 19]                          %! _comment_measure_numbers
@@ -554,6 +560,7 @@ J_ClarinetMusicVoice = {                                                       %
                     4
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -561,6 +568,7 @@ J_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
 
     % [J ClarinetMusicVoice measure 301 / measure 25]                          %! _comment_measure_numbers
@@ -584,6 +592,7 @@ J_ClarinetMusicVoice = {                                                       %
     % [J ClarinetMusicVoice measure 305 / measure 29]                          %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! IndicatorCommand
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -611,6 +620,7 @@ J_ClarinetMusicVoice = {                                                       %
 
         g'8.
         ]
+
     }
 
     % [J ClarinetMusicVoice measure 307 / measure 31]                          %! _comment_measure_numbers
@@ -676,6 +686,7 @@ J_ClarinetMusicVoice = {                                                       %
 
     fs'!8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -699,7 +710,9 @@ J_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -709,10 +722,13 @@ J_ClarinetMusicVoice = {                                                       %
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
+
 }                                                                              %! extern
 
 
 J_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \J_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

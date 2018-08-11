@@ -415,6 +415,7 @@ D_ClarinetMusicVoice = {                                                       %
 
     b'8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -440,6 +441,7 @@ D_ClarinetMusicVoice = {                                                       %
 
         b'8.
         ]
+
     }
 
     % [D ClarinetMusicVoice measure 114 / measure 4]                           %! _comment_measure_numbers
@@ -558,6 +560,7 @@ D_ClarinetMusicVoice = {                                                       %
                     1
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -590,6 +593,7 @@ D_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
 
     % [D ClarinetMusicVoice measure 120 / measure 10]                          %! _comment_measure_numbers
@@ -701,6 +705,7 @@ D_ClarinetMusicVoice = {                                                       %
                     1
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -726,6 +731,7 @@ D_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
 
     % [D ClarinetMusicVoice measure 126 / measure 16]                          %! _comment_measure_numbers
@@ -830,6 +836,7 @@ D_ClarinetMusicVoice = {                                                       %
 
     ds''!8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -855,6 +862,7 @@ D_ClarinetMusicVoice = {                                                       %
 
         ds''!8.
         ]
+
     }
 
     % [D ClarinetMusicVoice measure 132 / measure 22]                          %! _comment_measure_numbers
@@ -870,6 +878,7 @@ D_ClarinetMusicVoice = {                                                       %
 
     f'''2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/7 {
 
         % [D ClarinetMusicVoice measure 134 / measure 24]                      %! _comment_measure_numbers
@@ -881,7 +890,9 @@ D_ClarinetMusicVoice = {                                                       %
 
         e'''2
         \glissando                                                             %! SpannerCommand
+
     }
+
     \times 4/5 {
 
         % [D ClarinetMusicVoice measure 135 / measure 25]                      %! _comment_measure_numbers
@@ -889,6 +900,7 @@ D_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         e'''2
+
     }
 
     % [D ClarinetMusicVoice measure 136 / measure 26]                          %! _comment_measure_numbers
@@ -954,6 +966,7 @@ D_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -970,6 +983,7 @@ D_ClarinetMusicVoice = {                                                       %
                         3
             }
         ]
+
     }
 
     % [D ClarinetMusicVoice measure 139 / measure 29]                          %! _comment_measure_numbers
@@ -1003,6 +1017,7 @@ D_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -1017,7 +1032,9 @@ D_ClarinetMusicVoice = {                                                       %
                     \finger
                         3
             }
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -1052,10 +1069,13 @@ D_ClarinetMusicVoice = {                                                       %
         ]
 
     }
+
 }                                                                              %! extern
 
 
 D_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \D_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

@@ -550,6 +550,7 @@ G_GlobalSkips = {                                                              %
 
 
 G_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -563,19 +564,25 @@ G_ClarinetMusicVoice = {                                                       %
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                  %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)      %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [G ClarinetMusicVoice measure 177 / measure 2]                       %! _comment_measure_numbers
         f1
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
         % [G ClarinetMusicVoice measure 178 / measure 3]                       %! _comment_measure_numbers
         f\breve.
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -584,6 +591,7 @@ G_ClarinetMusicVoice = {                                                       %
         e\breve
         \ffff                                                                  %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { overblow }                                                 %! baca_markup:IndicatorCommand
+
     }
 
     % [G ClarinetMusicVoice measure 180 / measure 5]                           %! _comment_measure_numbers
@@ -633,6 +641,7 @@ G_ClarinetMusicVoice = {                                                       %
         }
 
     cs''!8
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -656,7 +665,9 @@ G_ClarinetMusicVoice = {                                                       %
                         2
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
@@ -682,7 +693,9 @@ G_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -706,6 +719,7 @@ G_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
 
     % [G ClarinetMusicVoice measure 189 / measure 14]                          %! _comment_measure_numbers
@@ -750,6 +764,7 @@ G_ClarinetMusicVoice = {                                                       %
                 \finger
                     4
         }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -766,6 +781,7 @@ G_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
 
     % [G ClarinetMusicVoice measure 191 / measure 16]                          %! _comment_measure_numbers
@@ -799,6 +815,7 @@ G_ClarinetMusicVoice = {                                                       %
                     1
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -822,7 +839,9 @@ G_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -848,7 +867,9 @@ G_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
@@ -863,6 +884,7 @@ G_ClarinetMusicVoice = {                                                       %
             }
 
         b'4
+
     }
 
     % [G ClarinetMusicVoice measure 195 / measure 20]                          %! _comment_measure_numbers
@@ -962,6 +984,7 @@ G_ClarinetMusicVoice = {                                                       %
 
     b'8
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -985,6 +1008,7 @@ G_ClarinetMusicVoice = {                                                       %
                         4
             }
         ]
+
     }
 
     % [G ClarinetMusicVoice measure 212 / measure 37]                          %! _comment_measure_numbers
@@ -1041,6 +1065,7 @@ G_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
@@ -1075,6 +1100,7 @@ G_ClarinetMusicVoice = {                                                       %
                     \finger
                         2
             }
+
     }
 
     % [G ClarinetMusicVoice measure 215 / measure 40]                          %! _comment_measure_numbers
@@ -1152,6 +1178,7 @@ G_ClarinetMusicVoice = {                                                       %
                     2
         }
     ]
+
     \times 2/3 {
 
         % [G ClarinetMusicVoice measure 220 / measure 45]                      %! _comment_measure_numbers
@@ -1172,6 +1199,7 @@ G_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }
 
     % [G ClarinetMusicVoice measure 221 / measure 46]                          %! _comment_measure_numbers
@@ -1200,6 +1228,7 @@ G_ClarinetMusicVoice = {                                                       %
 
     gs'!8.
     ]
+
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
@@ -1223,6 +1252,7 @@ G_ClarinetMusicVoice = {                                                       %
                         1
             }
         ]
+
     }
 
     % [G ClarinetMusicVoice measure 223 / measure 48]                          %! _comment_measure_numbers
@@ -1263,6 +1293,8 @@ G_ClarinetMusicVoice = {                                                       %
 
 
 G_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \G_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

@@ -211,6 +211,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     d'''2
     \glissando                                                                 %! SpannerCommand
+
     \times 4/7 {
 
         % [F ClarinetMusicVoice measure 162 / measure 2]                       %! _comment_measure_numbers
@@ -221,12 +222,14 @@ F_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         cs'''!2
+
     }
 
     % [F ClarinetMusicVoice measure 163 / measure 3]                           %! _comment_measure_numbers
     \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a'2.
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     \times 4/5 {
 
         % [F ClarinetMusicVoice measure 164 / measure 4]                       %! _comment_measure_numbers
@@ -237,6 +240,7 @@ F_ClarinetMusicVoice = {                                                       %
 
         c'''2.
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [F ClarinetMusicVoice measure 165 / measure 5]                           %! _comment_measure_numbers
@@ -259,6 +263,7 @@ F_ClarinetMusicVoice = {                                                       %
                 \finger
                     2
         }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
@@ -282,7 +287,9 @@ F_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }
+
     \times 4/5 {
 
         % [F ClarinetMusicVoice measure 168 / measure 8]                       %! _comment_measure_numbers
@@ -293,7 +300,9 @@ F_ClarinetMusicVoice = {                                                       %
 
         bf''!2.
         \glissando                                                             %! SpannerCommand
+
     }
+
     \times 4/7 {
 
         % [F ClarinetMusicVoice measure 169 / measure 9]                       %! _comment_measure_numbers
@@ -304,6 +313,7 @@ F_ClarinetMusicVoice = {                                                       %
         \glissando                                                             %! SpannerCommand
 
         a''2.
+
     }
 
     % [F ClarinetMusicVoice measure 170 / measure 10]                          %! _comment_measure_numbers
@@ -344,11 +354,13 @@ F_ClarinetMusicVoice = {                                                       %
                 \finger
                     1
         }
+
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
         % [F ClarinetMusicVoice measure 174 / measure 14]                      %! _comment_measure_numbers
         fs'!2.
+
     }
 
     % [F ClarinetMusicVoice measure 175 / measure 15]                          %! _comment_measure_numbers
@@ -365,6 +377,8 @@ F_ClarinetMusicVoice = {                                                       %
 
 
 F_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \F_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern

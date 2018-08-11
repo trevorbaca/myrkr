@@ -80,6 +80,7 @@ L_GlobalSkips = {                                                              %
 
 
 L_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -94,7 +95,9 @@ L_ClarinetMusicVoice = {                                                       %
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                  %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { overblow }                                                 %! baca_markup:IndicatorCommand
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)      %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -102,7 +105,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -110,7 +115,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -118,7 +125,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -126,7 +135,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -134,7 +145,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -142,7 +155,9 @@ L_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs!1
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+
     }
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -152,10 +167,13 @@ L_ClarinetMusicVoice = {                                                       %
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
+
 }                                                                              %! extern
 
 
 L_ClarinetMusicStaff = {                                                       %! extern
+
     \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
     \L_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
