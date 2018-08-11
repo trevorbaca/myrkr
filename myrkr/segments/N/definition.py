@@ -75,13 +75,13 @@ maker(
 
 maker(
     ('cl', [4, 11]),
-    baca.scope(
-        0,
+    baca.new(
         baca.markup('“U”'),
+        match=0,
         ),
-    baca.scope(
-        1,
+    baca.new(
         baca.markup('“A”'),
+        match=1,
         ),
     baca.text_script_staff_padding(5),
     )
