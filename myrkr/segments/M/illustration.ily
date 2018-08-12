@@ -225,8 +225,8 @@ M_ClarinetMusicVoice = {                                                       %
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set ClarinetMusicStaff.forceClef = ##t                                    %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     ef'!8
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup {
@@ -289,8 +289,8 @@ M_ClarinetMusicVoice = {                                                       %
     }
 
     % [M ClarinetMusicVoice measure 366 / measure 3]                           %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     d'8.
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {
         \override
@@ -340,8 +340,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 8/13 {
 
         % [M ClarinetMusicVoice measure 368 / measure 5]                       %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'!16
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pppp                                                                  %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         [
 
@@ -444,8 +444,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [M ClarinetMusicVoice measure 373 / measure 10]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'!\breve.
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pppp                                                                  %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
@@ -458,8 +458,8 @@ M_ClarinetMusicVoice = {                                                       %
 
         % [M ClarinetMusicVoice measure 375 / measure 12]                      %! _comment_measure_numbers
         \override TextSpanner.staff-padding = #5                               %! baca_text_spanner_staff_padding:OverrideCommand(1)
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
         - \baca-text-spanner-left-text "˝A˝"                                   %! PiecewiseIndicatorCommand(1)
@@ -468,8 +468,8 @@ M_ClarinetMusicVoice = {                                                       %
     }
 
     % [M ClarinetMusicVoice measure 376 / measure 13]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     d\breve.
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
     - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
@@ -480,8 +480,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [M ClarinetMusicVoice measure 377 / measure 14]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
@@ -494,8 +494,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [M ClarinetMusicVoice measure 378 / measure 15]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve.
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
@@ -505,8 +505,8 @@ M_ClarinetMusicVoice = {                                                       %
     }
 
     % [M ClarinetMusicVoice measure 379 / measure 16]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     d1
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
     - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
@@ -517,8 +517,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [M ClarinetMusicVoice measure 380 / measure 17]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
@@ -531,8 +531,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [M ClarinetMusicVoice measure 381 / measure 18]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
         - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
@@ -554,8 +554,8 @@ M_ClarinetMusicVoice = {                                                       %
     \times 2/3 {
 
         % [M ClarinetMusicVoice measure 383 / measure 20]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'!1
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup {
             \override
