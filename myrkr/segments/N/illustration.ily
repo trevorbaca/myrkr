@@ -351,8 +351,8 @@ N_ClarinetMusicVoice = {                                                       %
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)   %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set ClarinetMusicStaff.forceClef = ##t                                %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!2
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                  %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \glissando                                                             %! SpannerCommand
@@ -388,8 +388,8 @@ N_ClarinetMusicVoice = {                                                       %
 
         % [N ClarinetMusicVoice measure 387 / measure 4]                       %! _comment_measure_numbers
         \once \override TextScript.staff-padding = #5                          %! baca_script_staff_padding:OverrideCommand(1)
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { “U” }                                                      %! baca_markup:IndicatorCommand
 
@@ -398,8 +398,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 4/7 {
 
         % [N ClarinetMusicVoice measure 388 / measure 5]                       %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g'''2
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
@@ -432,8 +432,8 @@ N_ClarinetMusicVoice = {                                                       %
     }
 
     % [N ClarinetMusicVoice measure 391 / measure 8]                           %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs'''!2
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \glissando                                                                 %! SpannerCommand
 
@@ -461,8 +461,8 @@ N_ClarinetMusicVoice = {                                                       %
 
         % [N ClarinetMusicVoice measure 394 / measure 11]                      %! _comment_measure_numbers
         \once \override TextScript.staff-padding = #5                          %! baca_script_staff_padding:OverrideCommand(1)
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { “A” }                                                      %! baca_markup:IndicatorCommand
 
@@ -471,8 +471,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 4/7 {
 
         % [N ClarinetMusicVoice measure 395 / measure 12]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         es'''!2.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pppp                                                                  %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
@@ -508,8 +508,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 2/3 {
 
         % [N ClarinetMusicVoice measure 398 / measure 15]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'!1
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pppp                                                                  %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
@@ -517,8 +517,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [N ClarinetMusicVoice measure 399 / measure 16]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!2.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
@@ -586,8 +586,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [N ClarinetMusicVoice measure 405 / measure 22]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'!\breve.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \pppp                                                                  %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
@@ -595,8 +595,8 @@ N_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [N ClarinetMusicVoice measure 406 / measure 23]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g'''2
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 

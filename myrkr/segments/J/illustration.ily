@@ -322,8 +322,8 @@ J_ClarinetMusicVoice = {                                                       %
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set ClarinetMusicStaff.forceClef = ##t                                    %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d'4
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \glissando                                                                 %! SpannerCommand
@@ -361,8 +361,8 @@ J_ClarinetMusicVoice = {                                                       %
     f'''4
 
     % [J ClarinetMusicVoice measure 286 / measure 10]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -385,8 +385,8 @@ J_ClarinetMusicVoice = {                                                       %
     \times 2/3 {
 
         % [J ClarinetMusicVoice measure 291 / measure 15]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         gs'!16
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup {
             \override
@@ -438,8 +438,8 @@ J_ClarinetMusicVoice = {                                                       %
     }
 
     % [J ClarinetMusicVoice measure 293 / measure 17]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g'8
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {
         \override
@@ -500,8 +500,8 @@ J_ClarinetMusicVoice = {                                                       %
     }
 
     % [J ClarinetMusicVoice measure 295 / measure 19]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -514,8 +514,8 @@ J_ClarinetMusicVoice = {                                                       %
     - \tenuto                                                                  %! IndicatorCommand
 
     % [J ClarinetMusicVoice measure 298 / measure 22]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g'4
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     g'8
@@ -565,15 +565,15 @@ J_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [J ClarinetMusicVoice measure 300 / measure 24]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
 
     % [J ClarinetMusicVoice measure 301 / measure 25]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f'''4
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -597,8 +597,8 @@ J_ClarinetMusicVoice = {                                                       %
     \times 8/11 {
 
         % [J ClarinetMusicVoice measure 306 / measure 30]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g'8.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup {
             \override
@@ -645,8 +645,8 @@ J_ClarinetMusicVoice = {                                                       %
     ]
 
     % [J ClarinetMusicVoice measure 308 / measure 32]                          %! _comment_measure_numbers
-    \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs'!8.
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {
         \override
@@ -717,8 +717,8 @@ J_ClarinetMusicVoice = {                                                       %
     \times 4/5 {
 
         % [J ClarinetMusicVoice measure 310 / measure 34]                      %! _comment_measure_numbers
-        \once \override ClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d\breve.
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     }
