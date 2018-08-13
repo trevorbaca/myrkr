@@ -461,9 +461,9 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "˝A˝"                                   %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \abjad-invisible-line                                                %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "˝A˝"                                   %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
     }
 
@@ -471,10 +471,10 @@ M_ClarinetMusicVoice = {                                                       %
     d\breve.
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
-    - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
-    - \baca-text-spanner-left-text "˝U˝"                                       %! PiecewiseIndicatorCommand(1)
-    \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+    \stopTextSpan                                                              %! PiecewiseCommand(1)
+    - \abjad-invisible-line                                                    %! PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "˝U˝"                                       %! PiecewiseCommand(1)
+    \startTextSpan                                                             %! PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -483,10 +483,10 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
-        - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        \stopTextSpan                                                          %! PiecewiseCommand(1)
+        - \abjad-invisible-line                                                %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
     }
 
@@ -497,10 +497,10 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve.
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
-        - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "˝U˝"                                   %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        \stopTextSpan                                                          %! PiecewiseCommand(1)
+        - \abjad-invisible-line                                                %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "˝U˝"                                   %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
     }
 
@@ -508,10 +508,10 @@ M_ClarinetMusicVoice = {                                                       %
     d1
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
-    - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
-    - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
-    \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+    \stopTextSpan                                                              %! PiecewiseCommand(1)
+    - \abjad-invisible-line                                                    %! PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseCommand(1)
+    \startTextSpan                                                             %! PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -520,10 +520,10 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
-        - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "˝O˝"                                   %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        \stopTextSpan                                                          %! PiecewiseCommand(1)
+        - \abjad-invisible-line                                                %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "˝O˝"                                   %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
     }
 
@@ -534,21 +534,21 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(1)
-        - \abjad-invisible-line                                                %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        \stopTextSpan                                                          %! PiecewiseCommand(1)
+        - \abjad-invisible-line                                                %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "˝I˝"                                   %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
 
     }
 
     % [M ClarinetMusicVoice measure 382 / measure 19]                          %! _comment_measure_numbers
     r8.
-    \stopTextSpan                                                              %! PiecewiseIndicatorCommand(1)
-    \stopTextSpan                                                              %! PiecewiseIndicatorCommand(3)
-    - \abjad-invisible-line                                                    %! PiecewiseIndicatorCommand(1)
-    - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseIndicatorCommand(1)
-    \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
+    \stopTextSpan                                                              %! PiecewiseCommand(1)
+    \stopTextSpan                                                              %! PiecewiseCommand(3)
+    - \abjad-invisible-line                                                    %! PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "˝A˝"                                       %! PiecewiseCommand(1)
+    \startTextSpan                                                             %! PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
