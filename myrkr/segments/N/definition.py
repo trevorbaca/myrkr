@@ -41,7 +41,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 49 ...
 
 maker = baca.SegmentMaker(
-    color_repeat_pitch_classes=False,
+    do_not_color_repeat_pitch_classes=True,
     ignore_repeat_pitch_classes=True,
     final_markup=(
         ['Cambridge, MA', 'Dallas, TX.'],
