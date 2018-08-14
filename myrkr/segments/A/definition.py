@@ -56,7 +56,7 @@ preprocessor = myrkr.Preprocessor(
     )
 
 maker = baca.SegmentMaker(
-    color_repeat_pitch_classes=False,
+    do_not_color_repeat_pitch_classes=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
