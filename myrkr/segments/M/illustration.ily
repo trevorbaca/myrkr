@@ -457,13 +457,9 @@ M_ClarinetMusicVoice = {                                                       %
     \times 2/3 {
 
         % [M ClarinetMusicVoice measure 375 / measure 12]                      %! _comment_measure_numbers
-        \override TextSpanner.staff-padding = #5                               %! baca_text_spanner_staff_padding:OverrideCommand(1)
         d\breve
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \abjad-invisible-line                                                %! baca_text_spanner:PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "˝A˝"                                   %! baca_text_spanner:PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
     }
 
@@ -471,10 +467,6 @@ M_ClarinetMusicVoice = {                                                       %
     d\breve.
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
-    - \abjad-invisible-line                                                    %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "˝U˝"                                       %! baca_text_spanner:PiecewiseCommand(1)
-    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -483,10 +475,6 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(1)
-        - \abjad-invisible-line                                                %! baca_text_spanner:PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "˝I˝"                                   %! baca_text_spanner:PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
     }
 
@@ -497,10 +485,6 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve.
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(1)
-        - \abjad-invisible-line                                                %! baca_text_spanner:PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "˝U˝"                                   %! baca_text_spanner:PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
     }
 
@@ -508,10 +492,6 @@ M_ClarinetMusicVoice = {                                                       %
     d1
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
-    - \abjad-invisible-line                                                    %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "˝A˝"                                       %! baca_text_spanner:PiecewiseCommand(1)
-    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -520,10 +500,6 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(1)
-        - \abjad-invisible-line                                                %! baca_text_spanner:PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "˝O˝"                                   %! baca_text_spanner:PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
     }
 
@@ -534,21 +510,11 @@ M_ClarinetMusicVoice = {                                                       %
         d\breve
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(1)
-        - \abjad-invisible-line                                                %! baca_text_spanner:PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "˝I˝"                                   %! baca_text_spanner:PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
-        \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
 
     }
 
     % [M ClarinetMusicVoice measure 382 / measure 19]                          %! _comment_measure_numbers
     r8.
-    \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
-    \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(3)
-    - \abjad-invisible-line                                                    %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "˝A˝"                                       %! baca_text_spanner:PiecewiseCommand(1)
-    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
