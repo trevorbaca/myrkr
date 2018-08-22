@@ -16,12 +16,12 @@ i_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-i_ClarinetMusicVoice = {                                                       %! extern
+i_Clarinet_Music_Voice = {                                                     %! extern
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [_ ClarinetMusicVoice measure 1]                                     %! _comment_measure_numbers
+        % [_ Clarinet_Music_Voice measure 1]                                   %! _comment_measure_numbers
         \set Staff.instrumentName =                                            %! baca_start_markup:-PARTS:IndicatorCommand
         \markup {                                                              %! baca_start_markup:-PARTS:IndicatorCommand
             \hcenter-in                                                        %! baca_start_markup:-PARTS:IndicatorCommand
@@ -48,9 +48,9 @@ i_ClarinetMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-i_ClarinetMusicStaff = {                                                       %! extern
+i_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
-    \i_ClarinetMusicVoice                                                      %! extern
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \i_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern

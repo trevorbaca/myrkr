@@ -346,11 +346,11 @@ N_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-N_ClarinetMusicVoice = {                                                       %! extern
+N_Clarinet_Music_Voice = {                                                     %! extern
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 384 / measure 1]                       %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 384 / measure 1]                     %! _comment_measure_numbers
         \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)   %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -367,7 +367,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 385 / measure 2]                           %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 385 / measure 2]                         %! _comment_measure_numbers
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -379,7 +379,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 386 / measure 3]                       %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 386 / measure 3]                     %! _comment_measure_numbers
         g'''2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -390,7 +390,7 @@ N_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 387 / measure 4]                       %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 387 / measure 4]                     %! _comment_measure_numbers
         \once \override TextScript.staff-padding = #5                          %! baca_script_staff_padding:OverrideCommand(1)
         d\breve.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -401,7 +401,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 388 / measure 5]                       %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 388 / measure 5]                     %! _comment_measure_numbers
         g'''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -415,7 +415,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 389 / measure 6]                           %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 389 / measure 6]                         %! _comment_measure_numbers
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -424,7 +424,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 390 / measure 7]                       %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 390 / measure 7]                     %! _comment_measure_numbers
         fs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -435,7 +435,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 391 / measure 8]                           %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 391 / measure 8]                         %! _comment_measure_numbers
     fs'''!2
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -444,7 +444,7 @@ N_ClarinetMusicVoice = {                                                       %
     es'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [N ClarinetMusicVoice measure 392 / measure 9]                           %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 392 / measure 9]                         %! _comment_measure_numbers
     fs'''!2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -454,7 +454,7 @@ N_ClarinetMusicVoice = {                                                       %
     fs'''!2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [N ClarinetMusicVoice measure 393 / measure 10]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 393 / measure 10]                        %! _comment_measure_numbers
     es'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -463,7 +463,7 @@ N_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [N ClarinetMusicVoice measure 394 / measure 11]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 394 / measure 11]                    %! _comment_measure_numbers
         \once \override TextScript.staff-padding = #5                          %! baca_script_staff_padding:OverrideCommand(1)
         d\breve
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -474,7 +474,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 395 / measure 12]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 395 / measure 12]                    %! _comment_measure_numbers
         es'''!2.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pppp                                                                  %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -490,7 +490,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 396 / measure 13]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 396 / measure 13]                    %! _comment_measure_numbers
         fs'''!2.
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -499,7 +499,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 397 / measure 14]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 397 / measure 14]                        %! _comment_measure_numbers
     fs'''!2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -511,7 +511,7 @@ N_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [N ClarinetMusicVoice measure 398 / measure 15]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 398 / measure 15]                    %! _comment_measure_numbers
         cs'!1
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pppp                                                                  %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -520,7 +520,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 399 / measure 16]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 399 / measure 16]                    %! _comment_measure_numbers
         fs'''!2.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -533,7 +533,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 400 / measure 17]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 400 / measure 17]                    %! _comment_measure_numbers
         fs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -545,7 +545,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 401 / measure 18]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 401 / measure 18]                        %! _comment_measure_numbers
     g'''2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -554,7 +554,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 402 / measure 19]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 402 / measure 19]                    %! _comment_measure_numbers
         es'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -568,7 +568,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 403 / measure 20]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 403 / measure 20]                    %! _comment_measure_numbers
         fs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -577,7 +577,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 404 / measure 21]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 404 / measure 21]                        %! _comment_measure_numbers
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -589,7 +589,7 @@ N_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 405 / measure 22]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 405 / measure 22]                    %! _comment_measure_numbers
         cs'!\breve.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pppp                                                                  %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -598,7 +598,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 406 / measure 23]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 406 / measure 23]                    %! _comment_measure_numbers
         g'''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -611,7 +611,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 407 / measure 24]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 407 / measure 24]                    %! _comment_measure_numbers
         es'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -623,7 +623,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 408 / measure 25]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 408 / measure 25]                        %! _comment_measure_numbers
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -632,7 +632,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 409 / measure 26]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 409 / measure 26]                    %! _comment_measure_numbers
         fs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -644,14 +644,14 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 410 / measure 27]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 410 / measure 27]                        %! _comment_measure_numbers
     es'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [N ClarinetMusicVoice measure 411 / measure 28]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 411 / measure 28]                        %! _comment_measure_numbers
     g'''2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -661,7 +661,7 @@ N_ClarinetMusicVoice = {                                                       %
     es'''!2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [N ClarinetMusicVoice measure 412 / measure 29]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 412 / measure 29]                        %! _comment_measure_numbers
     fs'''!2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -670,7 +670,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 413 / measure 30]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 413 / measure 30]                    %! _comment_measure_numbers
         fs'''!2.
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -684,7 +684,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 414 / measure 31]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 414 / measure 31]                    %! _comment_measure_numbers
         g'''2.
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -693,7 +693,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [N ClarinetMusicVoice measure 415 / measure 32]                          %! _comment_measure_numbers
+    % [N Clarinet_Music_Voice measure 415 / measure 32]                        %! _comment_measure_numbers
     es'''!2.
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -705,7 +705,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [N ClarinetMusicVoice measure 416 / measure 33]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 416 / measure 33]                    %! _comment_measure_numbers
         fs'''!2.
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -716,7 +716,7 @@ N_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [N ClarinetMusicVoice measure 417 / measure 34]                      %! _comment_measure_numbers
+        % [N Clarinet_Music_Voice measure 417 / measure 34]                    %! _comment_measure_numbers
         fs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -763,9 +763,9 @@ N_ClarinetMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-N_ClarinetMusicStaff = {                                                       %! extern
+N_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
-    \N_ClarinetMusicVoice                                                      %! extern
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \N_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern

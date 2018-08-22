@@ -592,9 +592,9 @@ A_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-A_ClarinetMusicVoice = {                                                       %! extern
+A_Clarinet_Music_Voice = {                                                     %! extern
 
-    % [A ClarinetMusicVoice measure 2 / measure 1]                             %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 2 / measure 1]                           %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -646,7 +646,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 3 / measure 2]                         %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 3 / measure 2]                       %! _comment_measure_numbers
         f''8.
         ^ \markup {
             \override
@@ -662,7 +662,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 4 / measure 3]                             %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 4 / measure 3]                           %! _comment_measure_numbers
     f''8
     ^ \markup {
         \override
@@ -697,7 +697,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 5 / measure 4]                         %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 5 / measure 4]                       %! _comment_measure_numbers
         f''8.
         ^ \markup {
             \override
@@ -714,7 +714,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 6 / measure 5]                         %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 6 / measure 5]                       %! _comment_measure_numbers
         f''8.
         ^ \markup {
             \override
@@ -742,7 +742,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 7 / measure 6]                         %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 7 / measure 6]                       %! _comment_measure_numbers
         f''8
         ^ \markup {
             \override
@@ -765,7 +765,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 8 / measure 7]                             %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 8 / measure 7]                           %! _comment_measure_numbers
     f''8.
     ^ \markup {
         \override
@@ -809,7 +809,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 9 / measure 8]                         %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 9 / measure 8]                       %! _comment_measure_numbers
         f''16
         ^ \markup {
             \override
@@ -825,7 +825,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 10 / measure 9]                            %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 10 / measure 9]                          %! _comment_measure_numbers
     f''8.
     ^ \markup {
         \override
@@ -859,7 +859,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 11 / measure 10]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 11 / measure 10]                     %! _comment_measure_numbers
         f''8.
         ^ \markup {
             \override
@@ -878,7 +878,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 12 / measure 11]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 12 / measure 11]                     %! _comment_measure_numbers
         f''4
         ^ \markup {
             \override
@@ -912,7 +912,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 13 / measure 12]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 13 / measure 12]                     %! _comment_measure_numbers
         f''8
         ^ \markup {
             \override
@@ -938,14 +938,14 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [A ClarinetMusicVoice measure 14 / measure 13]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 14 / measure 13]                     %! _comment_measure_numbers
         d''2.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     }
 
-    % [A ClarinetMusicVoice measure 15 / measure 14]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 15 / measure 14]                         %! _comment_measure_numbers
     f''16
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -991,7 +991,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 16 / measure 15]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 16 / measure 15]                     %! _comment_measure_numbers
         f''16
         ^ \markup {
             \override
@@ -1014,7 +1014,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 17 / measure 16]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 17 / measure 16]                         %! _comment_measure_numbers
     f''16
     ^ \markup {
         \override
@@ -1049,7 +1049,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
-        % [A ClarinetMusicVoice measure 18 / measure 17]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 18 / measure 17]                     %! _comment_measure_numbers
         f''16
         [
 
@@ -1065,7 +1065,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 19 / measure 18]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 19 / measure 18]                         %! _comment_measure_numbers
     d''2
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1080,7 +1080,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 20 / measure 19]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 20 / measure 19]                     %! _comment_measure_numbers
         f''8
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1110,7 +1110,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
-        % [A ClarinetMusicVoice measure 21 / measure 20]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 21 / measure 20]                     %! _comment_measure_numbers
         fs''!8
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1128,7 +1128,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 22 / measure 21]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 22 / measure 21]                         %! _comment_measure_numbers
     fs''!8
     ^ \markup {
         \override
@@ -1165,7 +1165,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [A ClarinetMusicVoice measure 23 / measure 22]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 23 / measure 22]                     %! _comment_measure_numbers
         fs''!8.
         ^ \markup {
             \override
@@ -1191,14 +1191,14 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 24 / measure 23]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 24 / measure 23]                     %! _comment_measure_numbers
         d''2.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     }
 
-    % [A ClarinetMusicVoice measure 25 / measure 24]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 25 / measure 24]                         %! _comment_measure_numbers
     fs''!16
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1235,7 +1235,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 26 / measure 25]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 26 / measure 25]                     %! _comment_measure_numbers
         fs''!8
         ^ \markup {
             \override
@@ -1254,7 +1254,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [A ClarinetMusicVoice measure 27 / measure 26]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 27 / measure 26]                     %! _comment_measure_numbers
         d''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1280,7 +1280,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [A ClarinetMusicVoice measure 28 / measure 27]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 28 / measure 27]                     %! _comment_measure_numbers
         fs''!8.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1310,7 +1310,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 29 / measure 28]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 29 / measure 28]                     %! _comment_measure_numbers
         fs''!8.
         ^ \markup {
             \override
@@ -1324,7 +1324,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 30 / measure 29]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 30 / measure 29]                         %! _comment_measure_numbers
     fs''!8
     ^ \markup {
         \override
@@ -1368,7 +1368,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
-        % [A ClarinetMusicVoice measure 31 / measure 30]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 31 / measure 30]                     %! _comment_measure_numbers
         fs''!8.
         [
 
@@ -1384,7 +1384,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 32 / measure 31]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 32 / measure 31]                         %! _comment_measure_numbers
     c''2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1396,7 +1396,7 @@ A_ClarinetMusicVoice = {                                                       %
                     2
         }
 
-    % [A ClarinetMusicVoice measure 33 / measure 32]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 33 / measure 32]                         %! _comment_measure_numbers
     fs''!8.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1430,7 +1430,7 @@ A_ClarinetMusicVoice = {                                                       %
     fs''!8
     ]
 
-    % [A ClarinetMusicVoice measure 34 / measure 33]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 34 / measure 33]                         %! _comment_measure_numbers
     fs''!8
     ^ \markup {
         \override
@@ -1454,7 +1454,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 35 / measure 34]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 35 / measure 34]                     %! _comment_measure_numbers
         c''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1471,7 +1471,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/13 {
 
-        % [A ClarinetMusicVoice measure 36 / measure 35]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 36 / measure 35]                     %! _comment_measure_numbers
         fs''!16
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1505,7 +1505,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 37 / measure 36]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 37 / measure 36]                         %! _comment_measure_numbers
     fs''!8.
     ^ \markup {
         \override
@@ -1526,7 +1526,7 @@ A_ClarinetMusicVoice = {                                                       %
         }
     ]
 
-    % [A ClarinetMusicVoice measure 38 / measure 37]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 38 / measure 37]                         %! _comment_measure_numbers
     g''8
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1571,7 +1571,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \times 2/3 {
 
-        % [A ClarinetMusicVoice measure 39 / measure 38]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 39 / measure 38]                     %! _comment_measure_numbers
         g''4
         ^ \markup {
             \override
@@ -1595,7 +1595,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 40 / measure 39]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 40 / measure 39]                     %! _comment_measure_numbers
         c''2.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1609,7 +1609,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 41 / measure 40]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 41 / measure 40]                         %! _comment_measure_numbers
     b'2
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1633,7 +1633,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [A ClarinetMusicVoice measure 42 / measure 41]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 42 / measure 41]                     %! _comment_measure_numbers
         b'2
         ^ \markup {
             \override
@@ -1645,7 +1645,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 43 / measure 42]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 43 / measure 42]                         %! _comment_measure_numbers
     g''8.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1682,7 +1682,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
-        % [A ClarinetMusicVoice measure 44 / measure 43]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 44 / measure 43]                     %! _comment_measure_numbers
         g''8
         ^ \markup {
             \override
@@ -1708,7 +1708,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [A ClarinetMusicVoice measure 45 / measure 44]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 45 / measure 44]                     %! _comment_measure_numbers
         bf'!2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1722,13 +1722,13 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 46 / measure 45]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 46 / measure 45]                         %! _comment_measure_numbers
     bf'!2.
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [A ClarinetMusicVoice measure 47 / measure 46]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 47 / measure 46]                     %! _comment_measure_numbers
         bf'!2.
         ^ \markup {
             \override
@@ -1752,7 +1752,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [A ClarinetMusicVoice measure 48 / measure 47]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 48 / measure 47]                     %! _comment_measure_numbers
         bf'!2
         ^ \markup {
             \override
@@ -1766,7 +1766,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \times 2/3 {
 
-        % [A ClarinetMusicVoice measure 49 / measure 48]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 49 / measure 48]                     %! _comment_measure_numbers
         g''16
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1796,7 +1796,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
-        % [A ClarinetMusicVoice measure 50 / measure 49]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 50 / measure 49]                     %! _comment_measure_numbers
         g''16
         [
 
@@ -1812,7 +1812,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 51 / measure 50]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 51 / measure 50]                         %! _comment_measure_numbers
     gs''!8
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1858,7 +1858,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 52 / measure 51]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 52 / measure 51]                     %! _comment_measure_numbers
         gs''!8
         [
 
@@ -1874,7 +1874,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 53 / measure 52]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 53 / measure 52]                         %! _comment_measure_numbers
     gs''!4
     ^ \markup {
         \override
@@ -1913,7 +1913,7 @@ A_ClarinetMusicVoice = {                                                       %
         }
     ]
 
-    % [A ClarinetMusicVoice measure 54 / measure 53]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 54 / measure 53]                         %! _comment_measure_numbers
     gs''!8
     [
 
@@ -1930,7 +1930,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [A ClarinetMusicVoice measure 55 / measure 54]                       %! _comment_measure_numbers
+        % [A Clarinet_Music_Voice measure 55 / measure 54]                     %! _comment_measure_numbers
         gs''!8.
         ^ \markup {
             \override
@@ -1955,7 +1955,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [A ClarinetMusicVoice measure 56 / measure 55]                           %! _comment_measure_numbers
+    % [A Clarinet_Music_Voice measure 56 / measure 55]                         %! _comment_measure_numbers
     gs''!8
     ^ \markup {
         \override
@@ -1972,9 +1972,9 @@ A_ClarinetMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-A_ClarinetMusicStaff = {                                                       %! extern
+A_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
-    \A_ClarinetMusicVoice                                                      %! extern
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \A_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
