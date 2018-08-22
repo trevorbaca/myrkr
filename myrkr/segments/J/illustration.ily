@@ -321,9 +321,9 @@ J_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-J_ClarinetMusicVoice = {                                                       %! extern
+J_Clarinet_Music_Voice = {                                                     %! extern
 
-    % [J ClarinetMusicVoice measure 277 / measure 1]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 277 / measure 1]                         %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -335,62 +335,62 @@ J_ClarinetMusicVoice = {                                                       %
     \glissando                                                                 %! baca_glissando:SpannerCommand
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)          %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [J ClarinetMusicVoice measure 278 / measure 2]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 278 / measure 2]                         %! _comment_measure_numbers
     f'4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 279 / measure 3]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 279 / measure 3]                         %! _comment_measure_numbers
     a'4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 280 / measure 4]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 280 / measure 4]                         %! _comment_measure_numbers
     c''4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 281 / measure 5]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 281 / measure 5]                         %! _comment_measure_numbers
     e''4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 282 / measure 6]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 282 / measure 6]                         %! _comment_measure_numbers
     g''4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 283 / measure 7]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 283 / measure 7]                         %! _comment_measure_numbers
     b''4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 284 / measure 8]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 284 / measure 8]                         %! _comment_measure_numbers
     d'''4
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [J ClarinetMusicVoice measure 285 / measure 9]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 285 / measure 9]                         %! _comment_measure_numbers
     f'''4
 
-    % [J ClarinetMusicVoice measure 286 / measure 10]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 286 / measure 10]                        %! _comment_measure_numbers
     f'''4
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 287 / measure 11]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 287 / measure 11]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 288 / measure 12]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 288 / measure 12]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 289 / measure 13]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 289 / measure 13]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 290 / measure 14]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 290 / measure 14]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     \times 2/3 {
 
-        % [J ClarinetMusicVoice measure 291 / measure 15]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 291 / measure 15]                    %! _comment_measure_numbers
         gs'!16
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -420,7 +420,7 @@ J_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/9 {
 
-        % [J ClarinetMusicVoice measure 292 / measure 16]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 292 / measure 16]                    %! _comment_measure_numbers
         gs'!16
         ^ \markup {
             \override
@@ -443,7 +443,7 @@ J_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [J ClarinetMusicVoice measure 293 / measure 17]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 293 / measure 17]                        %! _comment_measure_numbers
     g'8
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -482,7 +482,7 @@ J_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [J ClarinetMusicVoice measure 294 / measure 18]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 294 / measure 18]                    %! _comment_measure_numbers
         g'8
         ^ \markup {
             \override
@@ -505,21 +505,21 @@ J_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [J ClarinetMusicVoice measure 295 / measure 19]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 295 / measure 19]                        %! _comment_measure_numbers
     f'''4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 296 / measure 20]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 296 / measure 20]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 297 / measure 21]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 297 / measure 21]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 298 / measure 22]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 298 / measure 22]                        %! _comment_measure_numbers
     g'4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -546,7 +546,7 @@ J_ClarinetMusicVoice = {                                                       %
     g'8.
     ]
 
-    % [J ClarinetMusicVoice measure 299 / measure 23]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 299 / measure 23]                        %! _comment_measure_numbers
     g'8
     ^ \markup {
         \override
@@ -570,39 +570,39 @@ J_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [J ClarinetMusicVoice measure 300 / measure 24]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 300 / measure 24]                    %! _comment_measure_numbers
         d\breve
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     }
 
-    % [J ClarinetMusicVoice measure 301 / measure 25]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 301 / measure 25]                        %! _comment_measure_numbers
     f'''4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 302 / measure 26]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 302 / measure 26]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 303 / measure 27]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 303 / measure 27]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 304 / measure 28]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 304 / measure 28]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
-    % [J ClarinetMusicVoice measure 305 / measure 29]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 305 / measure 29]                        %! _comment_measure_numbers
     f'''4
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [J ClarinetMusicVoice measure 306 / measure 30]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 306 / measure 30]                    %! _comment_measure_numbers
         g'8.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -629,7 +629,7 @@ J_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [J ClarinetMusicVoice measure 307 / measure 31]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 307 / measure 31]                        %! _comment_measure_numbers
     g'8
     ^ \markup {
         \override
@@ -650,7 +650,7 @@ J_ClarinetMusicVoice = {                                                       %
         }
     ]
 
-    % [J ClarinetMusicVoice measure 308 / measure 32]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 308 / measure 32]                        %! _comment_measure_numbers
     fs'!8.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -696,7 +696,7 @@ J_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 8/11 {
 
-        % [J ClarinetMusicVoice measure 309 / measure 33]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 309 / measure 33]                    %! _comment_measure_numbers
         fs'!8.
         ^ \markup {
             \override
@@ -722,7 +722,7 @@ J_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
 
-        % [J ClarinetMusicVoice measure 310 / measure 34]                      %! _comment_measure_numbers
+        % [J Clarinet_Music_Voice measure 310 / measure 34]                    %! _comment_measure_numbers
         d\breve.
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -732,9 +732,9 @@ J_ClarinetMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-J_ClarinetMusicStaff = {                                                       %! extern
+J_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
-    \J_ClarinetMusicVoice                                                      %! extern
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \J_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern

@@ -28,8 +28,8 @@
             \context MusicContext = "MusicContext"                             %! ScoreTemplate
             {                                                                  %! ScoreTemplate
 
-                \context ClarinetMusicStaff = "ClarinetMusicStaff"             %! ScoreTemplate
-                \J_ClarinetMusicStaff                                          %! extern
+                \context ClarinetMusicStaff = "Clarinet_Music_Staff"           %! ScoreTemplate
+                \J_Clarinet_Music_Staff                                        %! extern
 
             }                                                                  %! ScoreTemplate
 

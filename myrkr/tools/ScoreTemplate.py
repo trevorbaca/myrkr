@@ -33,9 +33,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>                                                                         %! _make_global_context
             \context MusicContext = "MusicContext"                                     %! ScoreTemplate
             {                                                                          %! ScoreTemplate
-                \context ClarinetMusicStaff = "ClarinetMusicStaff"                     %! ScoreTemplate
+                \context ClarinetMusicStaff = "Clarinet_Music_Staff"                   %! ScoreTemplate
                 {                                                                      %! ScoreTemplate
-                    \context ClarinetMusicVoice = "ClarinetMusicVoice"                 %! ScoreTemplate
+                    \context ClarinetMusicVoice = "Clarinet_Music_Voice"               %! ScoreTemplate
                     {                                                                  %! ScoreTemplate
                         \clef "treble"                                                 %! attach_defaults
                         s1                                                             %! ScoreTemplate.__illustrate__
@@ -57,7 +57,7 @@ class ScoreTemplate(baca.ScoreTemplate):
     def __init__(self):
         super(ScoreTemplate, self).__init__()
         self.voice_abbreviations.update({
-            'cl': 'ClarinetMusicVoice',
+            'cl': 'Clarinet_Music_Voice',
             })
 
     ### SPECIAL METHODS ###
@@ -74,13 +74,13 @@ class ScoreTemplate(baca.ScoreTemplate):
         # CLARINET
         clarinet_music_voice = abjad.Voice(
             lilypond_type='ClarinetMusicVoice',
-            name='ClarinetMusicVoice',
+            name='Clarinet_Music_Voice',
             tag=tag,
             )
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice],
             lilypond_type='ClarinetMusicStaff',
-            name='ClarinetMusicStaff',
+            name='Clarinet_Music_Staff',
             tag=tag,
             )
         abjad.annotate(
@@ -137,7 +137,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> abjad.f(score_template.voice_abbreviations)
             abjad.OrderedDict(
                 [
-                    ('cl', 'ClarinetMusicVoice'),
+                    ('cl', 'Clarinet_Music_Voice'),
                     ]
                 )
 

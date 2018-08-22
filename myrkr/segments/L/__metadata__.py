@@ -10,8 +10,8 @@ metadata = abjad.OrderedDict(
                 'GlobalContext',
                 'GlobalSkips',
                 'MusicContext',
-                'ClarinetMusicStaff',
-                'ClarinetMusicVoice',
+                'Clarinet_Music_Staff',
+                'Clarinet_Music_Voice',
                 ],
             ),
         ('duration', "0'29''"),
@@ -22,25 +22,25 @@ metadata = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     (
-                        'ClarinetMusicStaff',
+                        'Clarinet_Music_Staff',
                         [
                             abjad.Momento(
-                                context='ClarinetMusicVoice',
+                                context='Clarinet_Music_Voice',
                                 manifest='instruments',
                                 value='BassClarinet',
                                 ),
                             abjad.Momento(
-                                context='ClarinetMusicVoice',
+                                context='Clarinet_Music_Voice',
                                 prototype='abjad.Clef',
                                 value='treble',
                                 ),
                             ],
                         ),
                     (
-                        'ClarinetMusicVoice',
+                        'Clarinet_Music_Voice',
                         [
                             abjad.Momento(
-                                context='ClarinetMusicVoice',
+                                context='Clarinet_Music_Voice',
                                 prototype='abjad.Dynamic',
                                 value='fff',
                                 ),
@@ -70,7 +70,7 @@ metadata = abjad.OrderedDict(
             'sounds_during_segment',
             abjad.OrderedDict(
                 [
-                    ('ClarinetMusicVoice', True),
+                    ('Clarinet_Music_Voice', True),
                     ]
                 ),
             ),

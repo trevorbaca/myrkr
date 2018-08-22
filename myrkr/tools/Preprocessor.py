@@ -202,6 +202,6 @@ class Preprocessor(object):
             measure_indicator = bundle[0]
             commands = bundle[1]
             maker(
-                ('ClarinetMusicVoice', measure_indicator),
+                ('Clarinet_Music_Voice', measure_indicator),
                 *commands,
                 )

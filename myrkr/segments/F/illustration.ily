@@ -197,9 +197,9 @@ F_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-F_ClarinetMusicVoice = {                                                       %! extern
+F_Clarinet_Music_Voice = {                                                     %! extern
 
-    % [F ClarinetMusicVoice measure 161 / measure 1]                           %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 161 / measure 1]                         %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)       %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override ClarinetMusicStaff.Clef.color = ##f                              %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -216,7 +216,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [F ClarinetMusicVoice measure 162 / measure 2]                       %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 162 / measure 2]                     %! _comment_measure_numbers
         cs'''!2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -227,14 +227,14 @@ F_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [F ClarinetMusicVoice measure 163 / measure 3]                           %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 163 / measure 3]                         %! _comment_measure_numbers
     a'2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     \times 4/5 {
 
-        % [F ClarinetMusicVoice measure 164 / measure 4]                       %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 164 / measure 4]                     %! _comment_measure_numbers
         b''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -245,7 +245,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [F ClarinetMusicVoice measure 165 / measure 5]                           %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 165 / measure 5]                         %! _comment_measure_numbers
     b''2
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -254,7 +254,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     b''2
 
-    % [F ClarinetMusicVoice measure 166 / measure 6]                           %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 166 / measure 6]                         %! _comment_measure_numbers
     a'2
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -269,7 +269,7 @@ F_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [F ClarinetMusicVoice measure 167 / measure 7]                       %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 167 / measure 7]                     %! _comment_measure_numbers
         gs'!2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -294,7 +294,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     \times 4/5 {
 
-        % [F ClarinetMusicVoice measure 168 / measure 8]                       %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 168 / measure 8]                     %! _comment_measure_numbers
         a''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -307,7 +307,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     \times 4/7 {
 
-        % [F ClarinetMusicVoice measure 169 / measure 9]                       %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 169 / measure 9]                     %! _comment_measure_numbers
         a''2
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -318,7 +318,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     }
 
-    % [F ClarinetMusicVoice measure 170 / measure 10]                          %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 170 / measure 10]                        %! _comment_measure_numbers
     gs'!2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -330,10 +330,10 @@ F_ClarinetMusicVoice = {                                                       %
                     1
         }
 
-    % [F ClarinetMusicVoice measure 171 / measure 11]                          %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 171 / measure 11]                        %! _comment_measure_numbers
     gs'!2
 
-    % [F ClarinetMusicVoice measure 172 / measure 12]                          %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 172 / measure 12]                        %! _comment_measure_numbers
     fs'!2
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -347,7 +347,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     fs'!2.
 
-    % [F ClarinetMusicVoice measure 173 / measure 13]                          %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 173 / measure 13]                        %! _comment_measure_numbers
     fs'!2
     ^ \markup {
         \override
@@ -360,12 +360,12 @@ F_ClarinetMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 4/7 {
 
-        % [F ClarinetMusicVoice measure 174 / measure 14]                      %! _comment_measure_numbers
+        % [F Clarinet_Music_Voice measure 174 / measure 14]                    %! _comment_measure_numbers
         fs'!2.
 
     }
 
-    % [F ClarinetMusicVoice measure 175 / measure 15]                          %! _comment_measure_numbers
+    % [F Clarinet_Music_Voice measure 175 / measure 15]                        %! _comment_measure_numbers
     fs'!2
     ^ \markup {
         \override
@@ -378,9 +378,9 @@ F_ClarinetMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-F_ClarinetMusicStaff = {                                                       %! extern
+F_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context ClarinetMusicVoice = "ClarinetMusicVoice"                         %! ScoreTemplate
-    \F_ClarinetMusicVoice                                                      %! extern
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \F_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
