@@ -62,7 +62,7 @@ maker(
 preprocessor.make_commands(maker)
 
 maker(
-    'GlobalSkips',
+    'Global_Skips',
     baca.metronome_mark('55'),
     baca.metronome_mark(baca.Accelerando()),
     baca.metronome_mark('110', selector=baca.leaf(22)),
