@@ -7,7 +7,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 8/5                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(176)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<0>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<0>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((1))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.1]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[4'49'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -24,7 +24,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2/3                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(177)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<1>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<1>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((2))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.2]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[4'57'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -35,7 +35,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 12/5                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(178)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<2>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<2>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((3))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.3]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'01'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -46,7 +46,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 4/3                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(179)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<3>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<3>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((4))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.4]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'14'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -83,7 +83,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(180)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<4>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<4>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((5))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.5]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'21'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -91,7 +91,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 181 / measure 6]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(181)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<5>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<5>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((6))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.6]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'23'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -99,7 +99,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 182 / measure 7]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(182)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<6>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<6>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((7))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.7]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'24'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -107,7 +107,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 183 / measure 8]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(183)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<7>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<7>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((8))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.8]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'25'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -115,7 +115,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 184 / measure 9]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(184)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<8>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<8>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((9))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.9]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'27'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -125,7 +125,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(185)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<9>"                                   %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<9>"                                   %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((10))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.10]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'28'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -143,7 +143,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2/9                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(186)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<10>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<10>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((11))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.11]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'29'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -154,7 +154,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/22                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(187)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<11>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<11>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((12))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.12]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'30'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -165,7 +165,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/18                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(188)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<12>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<12>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((13))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.13]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'31'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -175,7 +175,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(189)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<13>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<13>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((14))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.14]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'31'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -186,7 +186,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(190)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<14>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<14>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((15))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.15]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'33'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -196,7 +196,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(191)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<15>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<15>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((16))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.16]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'33'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -207,7 +207,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/20                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(192)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<16>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<16>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((17))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.17]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'34'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -218,7 +218,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/3                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(193)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<17>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<17>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((18))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.18]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'35'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -229,7 +229,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/20                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(194)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<18>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<18>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((19))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.19]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'35'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -239,7 +239,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(195)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<19>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<19>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((20))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.20]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'36'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -249,7 +249,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(196)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<20>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<20>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((21))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.21]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'37'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -257,7 +257,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 197 / measure 22]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(197)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<21>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<21>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((22))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.22]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'37'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -265,7 +265,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 198 / measure 23]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(198)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<22>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<22>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((23))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.23]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'38'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -273,7 +273,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 199 / measure 24]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(199)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<23>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<23>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((24))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.24]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'38'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -281,7 +281,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 200 / measure 25]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(200)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<24>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<24>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((25))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.25]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'39'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -289,7 +289,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 201 / measure 26]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(201)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<25>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<25>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((26))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.26]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'39'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -297,7 +297,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 202 / measure 27]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(202)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<26>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<26>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((27))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.27]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'40'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -305,7 +305,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 203 / measure 28]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(203)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<27>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<27>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((28))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.28]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'40'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -313,7 +313,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 204 / measure 29]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(204)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<28>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<28>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((29))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.29]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'41'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -321,7 +321,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 205 / measure 30]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(205)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<29>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<29>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((30))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.30]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'41'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -329,7 +329,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 206 / measure 31]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(206)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<30>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<30>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((31))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.31]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'42'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -337,7 +337,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 207 / measure 32]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(207)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<31>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<31>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((32))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.32]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'43'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -345,7 +345,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 208 / measure 33]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(208)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<32>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<32>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((33))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.33]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'43'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -353,7 +353,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 209 / measure 34]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(209)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<33>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<33>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((34))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.34]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'44'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -363,7 +363,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(210)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<34>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<34>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((35))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.35]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'44'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -374,7 +374,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/26                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(211)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<35>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<35>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((36))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.36]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'46'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -384,7 +384,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(212)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<36>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<36>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((37))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.37]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'46'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -394,7 +394,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(213)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<37>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<37>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((38))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.38]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'47'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -405,7 +405,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 4/13                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(214)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<38>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<38>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((39))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.39]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'48'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -415,7 +415,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(215)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<39>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<39>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((40))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.40]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'48'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -425,7 +425,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(216)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<40>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<40>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((41))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.41]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'49'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -433,7 +433,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 217 / measure 42]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(217)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<41>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<41>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((42))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.42]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'49'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -441,7 +441,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 218 / measure 43]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(218)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<42>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<42>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((43))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.43]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'50'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -451,7 +451,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/16                                                                 %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(219)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<43>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<43>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((44))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.44]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'51'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -461,7 +461,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(220)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<44>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<44>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((45))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.45]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'52'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -471,7 +471,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(221)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<45>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<45>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((46))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.46]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'53'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -482,7 +482,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/18                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(222)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<46>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<46>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((47))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.47]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'54'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -492,7 +492,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(223)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<47>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<47>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((48))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.48]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'54'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -500,7 +500,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 224 / measure 49]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(224)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<48>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<48>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((49))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.49]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'55'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -508,7 +508,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 225 / measure 50]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(225)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<49>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<49>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((50))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.50]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'56'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -518,7 +518,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/16                                                                  %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(226)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<50>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<50>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((51))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.51]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'56'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -528,7 +528,7 @@ G_Global_Skips = {                                                             %
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(227)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<51>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<51>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((52))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.52]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'56'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -536,7 +536,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 228 / measure 53]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(228)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<52>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<52>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((53))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.53]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'57'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -544,7 +544,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 229 / measure 54]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(229)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<53>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<53>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((54))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.54]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'58'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
@@ -552,7 +552,7 @@ G_Global_Skips = {                                                             %
     % [G Global_Skips measure 230 / measure 55]                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-measure-number-markup "(230)"                                      %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \baca-local-measure-index-markup "<54>"                                  %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \baca-local-measure-index-markup "<54>"                                  %! LOCAL_MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-local-measure-number-markup "((55))"                               %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[G.55]"                                       %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[5'58'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
