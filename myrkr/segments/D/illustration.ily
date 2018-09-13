@@ -1086,22 +1086,22 @@ D_Clarinet_Music_Voice = {                                                     %
     e'''2
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f'''2
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     \times 4/7 {
 
         % [D Clarinet_Music_Voice measure 134 / measure 24]                    %! _comment_measure_numbers
         e'''2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         ds'''!2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         e'''2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }
 
@@ -1109,7 +1109,7 @@ D_Clarinet_Music_Voice = {                                                     %
 
         % [D Clarinet_Music_Voice measure 135 / measure 25]                    %! _comment_measure_numbers
         f'''2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         e'''2
 

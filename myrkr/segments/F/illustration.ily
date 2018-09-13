@@ -301,20 +301,20 @@ F_Clarinet_Music_Voice = {                                                     %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)          %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     d'''2
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     \times 4/7 {
 
         % [F Clarinet_Music_Voice measure 162 / measure 2]                     %! _comment_measure_numbers
         cs'''!2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bs''!2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         cs'''!2
 
@@ -331,19 +331,19 @@ F_Clarinet_Music_Voice = {                                                     %
         b''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         c'''2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }
 
     % [F Clarinet_Music_Voice measure 165 / measure 5]                         %! _comment_measure_numbers
     b''2
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     as''!2.
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     b''2
 
@@ -391,10 +391,10 @@ F_Clarinet_Music_Voice = {                                                     %
         a''2
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf''!2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }
 
@@ -402,10 +402,10 @@ F_Clarinet_Music_Voice = {                                                     %
 
         % [F Clarinet_Music_Voice measure 169 / measure 9]                     %! _comment_measure_numbers
         a''2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         gs''!2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         a''2.
 

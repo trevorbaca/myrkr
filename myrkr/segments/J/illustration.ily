@@ -558,36 +558,36 @@ J_Clarinet_Music_Voice = {                                                     %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)          %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [J Clarinet_Music_Voice measure 278 / measure 2]                         %! _comment_measure_numbers
     f'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 279 / measure 3]                         %! _comment_measure_numbers
     a'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 280 / measure 4]                         %! _comment_measure_numbers
     c''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 281 / measure 5]                         %! _comment_measure_numbers
     e''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 282 / measure 6]                         %! _comment_measure_numbers
     g''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 283 / measure 7]                         %! _comment_measure_numbers
     b''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 284 / measure 8]                         %! _comment_measure_numbers
     d'''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [J Clarinet_Music_Voice measure 285 / measure 9]                         %! _comment_measure_numbers
     f'''4

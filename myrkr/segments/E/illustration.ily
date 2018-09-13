@@ -604,22 +604,22 @@ E_Clarinet_Music_Voice = {                                                     %
     d'''2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef'''!2
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     d'''2
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     \times 4/5 {
 
         % [E Clarinet_Music_Voice measure 153 / measure 12]                    %! _comment_measure_numbers
         cs'''!2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         d'''2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }
 
@@ -627,10 +627,10 @@ E_Clarinet_Music_Voice = {                                                     %
 
         % [E Clarinet_Music_Voice measure 154 / measure 13]                    %! _comment_measure_numbers
         ef'''!2
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         d'''2.
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         cs'''!2
 

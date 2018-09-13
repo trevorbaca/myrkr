@@ -484,15 +484,15 @@ I_Clarinet_Music_Voice = {                                                     %
     e''4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Clarinet_Music_Voice measure 252 / measure 3]                         %! _comment_measure_numbers
     g''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Clarinet_Music_Voice measure 253 / measure 4]                         %! _comment_measure_numbers
     b''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Clarinet_Music_Voice measure 254 / measure 5]                         %! _comment_measure_numbers
     d'''4
