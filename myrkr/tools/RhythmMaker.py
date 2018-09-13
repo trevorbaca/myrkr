@@ -123,9 +123,7 @@ class RhythmMaker(object):
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         for tuplet in tuplets:
             tuplet.trivialize()
-            beam = abjad.Beam(beam_lone_notes=False)
-            leaves = abjad.select(tuplet).leaves()
-            abjad.attach(beam, leaves)
+            abjad.beam(tuplet)
         time_signatures = self._make_time_signatures(tuplets)
         selections = []
         for tuplet in tuplets:
