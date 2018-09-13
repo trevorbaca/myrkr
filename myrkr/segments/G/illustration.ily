@@ -985,19 +985,19 @@ G_Clarinet_Music_Voice = {                                                     %
     d'4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 181 / measure 6]                         %! _comment_measure_numbers
     e'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 182 / measure 7]                         %! _comment_measure_numbers
     f'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 183 / measure 8]                         %! _comment_measure_numbers
     g'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 184 / measure 9]                         %! _comment_measure_numbers
     a'4
@@ -1281,23 +1281,23 @@ G_Clarinet_Music_Voice = {                                                     %
     a'4
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 197 / measure 22]                        %! _comment_measure_numbers
     b'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 198 / measure 23]                        %! _comment_measure_numbers
     c''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 199 / measure 24]                        %! _comment_measure_numbers
     d''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 200 / measure 25]                        %! _comment_measure_numbers
     e''4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 201 / measure 26]                        %! _comment_measure_numbers
     f''4
@@ -1663,15 +1663,15 @@ G_Clarinet_Music_Voice = {                                                     %
     d'4
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 228 / measure 53]                        %! _comment_measure_numbers
     f'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 229 / measure 54]                        %! _comment_measure_numbers
     a'4
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Clarinet_Music_Voice measure 230 / measure 55]                        %! _comment_measure_numbers
     c''4
