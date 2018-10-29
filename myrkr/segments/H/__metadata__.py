@@ -14,8 +14,8 @@ metadata = abjad.OrderedDict(
                 'Clarinet_Music_Voice',
                 ],
             ),
+        ('final_measure_number', 249),
         ('first_measure_number', 231),
-        ('last_measure_number', 249),
         (
             'persistent_indicators',
             abjad.OrderedDict(

@@ -15,8 +15,8 @@ metadata = abjad.OrderedDict(
                 ],
             ),
         ('duration', "1'00''"),
+        ('final_measure_number', 175),
         ('first_measure_number', 161),
-        ('last_measure_number', 175),
         (
             'persistent_indicators',
             abjad.OrderedDict(

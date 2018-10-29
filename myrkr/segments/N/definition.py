@@ -48,7 +48,7 @@ maker = baca.SegmentMaker(
         ['August', 'October 2015.'],
         ),
     final_markup_extra_offset=(-24, -4),
-    last_segment=True,
+    final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
