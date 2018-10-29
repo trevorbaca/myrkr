@@ -14,7 +14,6 @@ metadata = abjad.OrderedDict(
                 'Clarinet_Music_Voice',
                 ],
             ),
-        ('duration', "1'13''"),
         ('first_measure_number', 231),
         ('last_measure_number', 249),
         (
@@ -74,8 +73,6 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
-        ('start_clock_time', "5'59''"),
-        ('stop_clock_time', "7'12''"),
         (
             'time_signatures',
             [
