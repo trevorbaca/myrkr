@@ -74,8 +74,8 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
-        ('start_clock_time', "8'16''"),
-        ('stop_clock_time', "8'45''"),
+        ('start_clock_time', "1'04''"),
+        ('stop_clock_time', "1'33''"),
         (
             'time_signatures',
             [

@@ -18,7 +18,7 @@ L_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[9'39'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'27'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 357 / measure 2]                                 %! _comment_measure_numbers
@@ -33,7 +33,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-left-only "357"                                           %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[9'42'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'30'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 358 / measure 3]                                 %! _comment_measure_numbers
@@ -48,7 +48,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-left-only "358"                                           %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[9'46'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'34'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 359 / measure 4]                                 %! _comment_measure_numbers
@@ -63,7 +63,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-left-only "359"                                           %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[9'49'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'37'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 360 / measure 5]                                 %! _comment_measure_numbers
@@ -78,7 +78,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-left-only "360"                                           %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[9'53'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'41'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 361 / measure 6]                                 %! _comment_measure_numbers
@@ -93,7 +93,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-left-only "361"                                           %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[9'57'']"                                      %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[2'45'']"                                      %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 362 / measure 7]                                 %! _comment_measure_numbers
@@ -108,7 +108,7 @@ L_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
 %@% - \baca-start-mn-both "362" "363"                                          %! MEASURE_NUMBER_MARKUP
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-both "[10'00'']" "[10'04'']"                              %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-both "[2'48'']" "[2'52'']"                                %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
 
     % [L Global_Skips measure 363 / measure 8]                                 %! _comment_measure_numbers
