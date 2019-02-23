@@ -3,8 +3,8 @@ import abjad
 
 metadata = abjad.OrderedDict(
     [
-        ('catalog_number', 'AWN-012'),
-        ('composer', 'TrevorBača'),
+        ('catalog_number', 'AWN-016'),
+        ('composer', 'Trevor Bača'),
         ('forces_tagline', 'for bass clarinet'),
         (
             'time_signatures',
