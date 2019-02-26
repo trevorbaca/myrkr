@@ -1,4 +1,4 @@
-K_Global_Skips = {                                                             %! extern
+K_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [K Global_Skips measure 311 / measure 1]                                 %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -791,10 +791,10 @@ K_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_Clarinet_Music_Voice = {                                                     %! extern
+K_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [K Clarinet_Music_Voice measure 311 / measure 1]                         %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1576,12 +1576,12 @@ K_Clarinet_Music_Voice = {                                                     %
     % [K Clarinet_Music_Voice measure 355 / measure 45]                        %! _comment_measure_numbers
     r8.
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_Clarinet_Music_Staff = {                                                     %! extern
+K_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
-    \K_Clarinet_Music_Voice                                                    %! extern
+    \K_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
