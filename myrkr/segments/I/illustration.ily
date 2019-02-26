@@ -1,4 +1,4 @@
-I_Global_Skips = {                                                             %! extern
+I_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [I Global_Skips measure 250 / measure 1]                                 %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -459,10 +459,10 @@ I_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-I_Clarinet_Music_Voice = {                                                     %! extern
+I_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -634,12 +634,12 @@ I_Clarinet_Music_Voice = {                                                     %
     % [I Clarinet_Music_Voice measure 276 / measure 27]                        %! _comment_measure_numbers
     ef!\breve.
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-I_Clarinet_Music_Staff = {                                                     %! extern
+I_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
-    \I_Clarinet_Music_Voice                                                    %! extern
+    \I_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

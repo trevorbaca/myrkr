@@ -1,4 +1,4 @@
-B_Global_Skips = {                                                             %! extern
+B_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [B Global_Skips measure 57 / measure 1]                                  %! _comment_measure_numbers
     \time 13/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -349,10 +349,10 @@ B_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-B_Clarinet_Music_Voice = {                                                     %! extern
+B_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [B Clarinet_Music_Voice measure 57 / measure 1]                          %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -797,12 +797,12 @@ B_Clarinet_Music_Voice = {                                                     %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-B_Clarinet_Music_Staff = {                                                     %! extern
+B_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
-    \B_Clarinet_Music_Voice                                                    %! extern
+    \B_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

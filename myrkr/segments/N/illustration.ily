@@ -1,4 +1,4 @@
-N_Global_Skips = {                                                             %! extern
+N_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [N Global_Skips measure 384 / measure 1]                                 %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -569,10 +569,10 @@ N_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|."                                                                  %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Clarinet_Music_Voice = {                                                     %! extern
+N_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     \times 4/5 {
 
@@ -986,12 +986,12 @@ N_Clarinet_Music_Voice = {                                                     %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Clarinet_Music_Staff = {                                                     %! extern
+N_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
-    \N_Clarinet_Music_Voice                                                    %! extern
+    \N_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

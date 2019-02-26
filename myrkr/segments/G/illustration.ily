@@ -1,4 +1,4 @@
-G_Global_Skips = {                                                             %! extern
+G_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [G Global_Skips measure 176 / measure 1]                                 %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -933,10 +933,10 @@ G_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-G_Clarinet_Music_Voice = {                                                     %! extern
+G_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1676,12 +1676,12 @@ G_Clarinet_Music_Voice = {                                                     %
     % [G Clarinet_Music_Voice measure 230 / measure 55]                        %! _comment_measure_numbers
     c''4
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-G_Clarinet_Music_Staff = {                                                     %! extern
+G_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
-    \G_Clarinet_Music_Voice                                                    %! extern
+    \G_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
