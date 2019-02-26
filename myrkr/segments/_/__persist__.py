@@ -4,6 +4,17 @@ import abjad
 persist = abjad.OrderedDict(
     [
         (
+            'alive_during_segment',
+            [
+                'Score',
+                'Global_Context',
+                'Global_Skips',
+                'Music_Context',
+                'Clarinet_Music_Staff',
+                'Clarinet_Music_Voice',
+                ],
+            ),
+        (
             'persistent_indicators',
             abjad.OrderedDict(
                 [
