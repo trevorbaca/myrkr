@@ -518,7 +518,7 @@ H_Clarinet_Music_Voice = {                                                     %
 
 H_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
-    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! ScoreTemplate
+    \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__
     \H_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
