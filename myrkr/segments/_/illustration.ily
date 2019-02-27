@@ -11,6 +11,14 @@ i_Global_Skips = {                                                             %
 }                                                                              %! abjad.Path.extern
 
 
+i_Global_Rests = {                                                             %! abjad.Path.extern
+
+    % [_ Global_Rests measure 1]                                               %! _comment_measure_numbers
+    R1 * 12/5                                                                  %! _make_global_rests(1)
+
+}                                                                              %! abjad.Path.extern
+
+
 i_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     \tweak edge-height #'(0.7 . 0)
@@ -43,9 +51,12 @@ i_Clarinet_Music_Voice = {                                                     %
 }                                                                              %! abjad.Path.extern
 
 
-i_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
+i_Clarinet_Music_Staff = <<                                                    %! abjad.Path.extern
+
+    \context GlobalRests = "Global_Rests"                                      %! abjad.ScoreTemplate._make_global_context
+    \i_Global_Rests                                                            %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__
     \i_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! abjad.Path.extern
+>>                                                                             %! abjad.Path.extern

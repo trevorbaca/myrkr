@@ -290,6 +290,56 @@ F_Global_Skips = {                                                             %
 }                                                                              %! abjad.Path.extern
 
 
+F_Global_Rests = {                                                             %! abjad.Path.extern
+
+    % [F Global_Rests measure 161 / measure 1]                                 %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 162 / measure 2]                                 %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [F Global_Rests measure 163 / measure 3]                                 %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 164 / measure 4]                                 %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [F Global_Rests measure 165 / measure 5]                                 %! _comment_measure_numbers
+    R1 * 7/4                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 166 / measure 6]                                 %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 167 / measure 7]                                 %! _comment_measure_numbers
+    R1 * 5/7                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 168 / measure 8]                                 %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [F Global_Rests measure 169 / measure 9]                                 %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [F Global_Rests measure 170 / measure 10]                                %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 171 / measure 11]                                %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 172 / measure 12]                                %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 173 / measure 13]                                %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 174 / measure 14]                                %! _comment_measure_numbers
+    R1 * 3/7                                                                   %! _make_global_rests(1)
+
+    % [F Global_Rests measure 175 / measure 15]                                %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+}                                                                              %! abjad.Path.extern
+
+
 F_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [F Clarinet_Music_Voice measure 161 / measure 1]                         %! _comment_measure_numbers
@@ -471,9 +521,12 @@ F_Clarinet_Music_Voice = {                                                     %
 }                                                                              %! abjad.Path.extern
 
 
-F_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
+F_Clarinet_Music_Staff = <<                                                    %! abjad.Path.extern
+
+    \context GlobalRests = "Global_Rests"                                      %! abjad.ScoreTemplate._make_global_context
+    \F_Global_Rests                                                            %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__
     \F_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! abjad.Path.extern
+>>                                                                             %! abjad.Path.extern

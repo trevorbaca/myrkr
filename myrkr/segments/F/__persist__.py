@@ -11,6 +11,7 @@ persist = abjad.OrderedDict(
                 'Global_Skips',
                 'Music_Context',
                 'Clarinet_Music_Staff',
+                'Global_Rests',
                 'Clarinet_Music_Voice',
                 ],
             ),
