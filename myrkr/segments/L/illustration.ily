@@ -124,6 +124,35 @@ L_Global_Skips = {                                                             %
 }                                                                              %! abjad.Path.extern
 
 
+L_Global_Rests = {                                                             %! abjad.Path.extern
+
+    % [L Global_Rests measure 356 / measure 1]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 357 / measure 2]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 358 / measure 3]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 359 / measure 4]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 360 / measure 5]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 361 / measure 6]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 362 / measure 7]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+    % [L Global_Rests measure 363 / measure 8]                                 %! _comment_measure_numbers
+    R1 * 2/3                                                                   %! _make_global_rests(1)
+
+}                                                                              %! abjad.Path.extern
+
+
 L_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     \tweak edge-height #'(0.7 . 0)
@@ -216,9 +245,12 @@ L_Clarinet_Music_Voice = {                                                     %
 }                                                                              %! abjad.Path.extern
 
 
-L_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
+L_Clarinet_Music_Staff = <<                                                    %! abjad.Path.extern
+
+    \context GlobalRests = "Global_Rests"                                      %! abjad.ScoreTemplate._make_global_context
+    \L_Global_Rests                                                            %! abjad.Path.extern
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__
     \L_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! abjad.Path.extern
+>>                                                                             %! abjad.Path.extern
