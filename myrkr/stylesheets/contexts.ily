@@ -55,6 +55,7 @@
     % STAFF
     \context {
         \Staff
+        \accepts GlobalRests
         \remove Time_signature_engraver
     }
 
