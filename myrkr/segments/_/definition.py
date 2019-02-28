@@ -25,6 +25,9 @@ preprocessor = myrkr.Preprocessor(
     )
 
 maker = baca.SegmentMaker(
+    activate=[
+        abjad.const.LOCAL_MEASURE_NUMBER,
+        ],
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,

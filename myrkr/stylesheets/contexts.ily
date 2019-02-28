@@ -41,6 +41,7 @@
         \accepts GlobalSkips
         \accepts GlobalRests
 
+        \override BarNumber.Y-extent = ##f
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
 
@@ -137,7 +138,7 @@
 
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
-        \override TupletBracket.padding = 0.75
+        \override TupletBracket.staff-padding = 1.5
 
         \override TupletNumber.font-size = 1
 
