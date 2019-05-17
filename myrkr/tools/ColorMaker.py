@@ -123,9 +123,9 @@ class ColorMaker(object):
 
     def _validate_indicators(self, indicators):
         for indicator in indicators:
-            assert isinstance(indicator, collections.Sequence), repr(indicator)
+            assert isinstance(indicator, collections.abc.Sequence), repr(indicator)
             assert len(indicator) == 2, repr(indicator)
-            assert isinstance(indicator[1], collections.Sequence), repr(
+            assert isinstance(indicator[1], collections.abc.Sequence), repr(
                 indicator)
 
     ### PUBLIC PROPERTIES ###
