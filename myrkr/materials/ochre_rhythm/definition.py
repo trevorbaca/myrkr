@@ -8,5 +8,5 @@ maker = myrkr.RhythmMaker(
     prolation_indicators=(0, 0, -1, -1),
     split_indicators=(0, 0, 1, 1),
     displace_split_tuplets=True,
-    )
+)
 ochre_rhythm = maker()

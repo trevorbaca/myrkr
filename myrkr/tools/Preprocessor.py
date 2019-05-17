@@ -12,13 +12,13 @@ class Preprocessor(object):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_indicators',
-        '_music',
-        '_command_bundles',
-        '_name_to_rhythm',
-        '_selections',
-        '_time_signatures',
-        )
+        "_indicators",
+        "_music",
+        "_command_bundles",
+        "_name_to_rhythm",
+        "_selections",
+        "_time_signatures",
+    )
 
     ### INITIALIZER ###
 
@@ -37,12 +37,8 @@ class Preprocessor(object):
     ### PRIVATE METHODS ###
 
     def _make_command_bundle(
-        self,
-        measure_indicator,
-        pitch,
-        dynamic,
-        color_fingering,
-        ):
+        self, measure_indicator, pitch, dynamic, color_fingering
+    ):
         if pitch is None and dynamic is None and color_fingering is None:
             return
         commands = []
@@ -65,14 +61,16 @@ class Preprocessor(object):
         pairs = list(abjad.sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_commands = first_bundle[1]
-            first_dynamics = [_ for _ in first_commands
-                if isinstance(_, abjad.Dynamic)]
+            first_dynamics = [
+                _ for _ in first_commands if isinstance(_, abjad.Dynamic)
+            ]
             if not first_dynamics:
                 continue
             first_dynamic = first_dynamics[0]
             second_commands = second_bundle[1]
-            second_dynamics = [_ for _ in second_commands
-                if isinstance(_, abjad.Dynamic)]
+            second_dynamics = [
+                _ for _ in second_commands if isinstance(_, abjad.Dynamic)
+            ]
             if not second_dynamics:
                 continue
             second_dynamic = second_dynamics[0]
@@ -109,17 +107,13 @@ class Preprocessor(object):
                 color_fingering = indicator[4]
             assert isinstance(measure_count, int), repr(measure_count)
             assert isinstance(position, int), repr(position)
-            reset_cursor = (
-                name not in name_to_cursor or
-                isinstance(location, tuple)
-                )
+            reset_cursor = name not in name_to_cursor or isinstance(
+                location, tuple
+            )
             if reset_cursor:
                 rhythm = list(self.name_to_rhythm[name])
                 rhythm = abjad.CyclicTuple(rhythm)
-                cursor = baca.Cursor(
-                    source=rhythm,
-                    position=position,
-                    )
+                cursor = baca.Cursor(source=rhythm, position=position)
                 name_to_cursor[name] = cursor
             cursor = name_to_cursor[name]
             bundles = cursor.next(count=measure_count)
@@ -133,11 +127,8 @@ class Preprocessor(object):
             else:
                 measure_indicator = (start_measure_number, stop_measure_number)
             self._make_command_bundle(
-                measure_indicator,
-                pitch,
-                dynamic,
-                color_fingering,
-                )
+                measure_indicator, pitch, dynamic, color_fingering
+            )
             start_measure_number = stop_measure_number + 1
         assert len(selections) == len(time_signatures)
         self._selections = tuple(selections)
@@ -148,7 +139,7 @@ class Preprocessor(object):
         self._time_signatures = tuple(time_signatures)
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
-            print(f'{name} position {cursor.position} ...')
+            print(f"{name} position {cursor.position} ...")
 
     def _validate_indicators(self):
         for indicator in self.indicators:
@@ -201,7 +192,4 @@ class Preprocessor(object):
             assert len(bundle) == 2, repr(bundle)
             measure_indicator = bundle[0]
             commands = bundle[1]
-            maker(
-                ('Clarinet_Music_Voice', measure_indicator),
-                *commands,
-                )
+            maker(("Clarinet_Music_Voice", measure_indicator), *commands)

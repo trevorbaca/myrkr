@@ -2,9 +2,4 @@ import abjad
 import baca
 
 
-instruments = abjad.OrderedDict([
-    (
-        'BassClarinet',
-        abjad.BassClarinet(),
-        ),
-    ])
+instruments = abjad.OrderedDict([("BassClarinet", abjad.BassClarinet())])

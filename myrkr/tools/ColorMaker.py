@@ -11,9 +11,7 @@ class ColorMaker(object):
 
     ### CLASS VARIABLES ###
 
-    __slots__ = (
-        '_indicators',
-        )
+    __slots__ = ("_indicators",)
 
     ### INITIALIZER ###
 
@@ -93,8 +91,7 @@ class ColorMaker(object):
         previous_clef = None
         for note in notes:
             suggested_clef = class_._suggest_clef(note.written_pitch)
-            if (previous_clef is None or
-                not suggested_clef == previous_clef):
+            if previous_clef is None or not suggested_clef == previous_clef:
                 abjad.attach(suggested_clef, note)
                 previous_clef = suggested_clef
 
@@ -118,15 +115,18 @@ class ColorMaker(object):
     @staticmethod
     def _suggest_clef(pitch):
         if pitch < -3:
-            return abjad.Clef('bass')
-        return abjad.Clef('treble')
+            return abjad.Clef("bass")
+        return abjad.Clef("treble")
 
     def _validate_indicators(self, indicators):
         for indicator in indicators:
-            assert isinstance(indicator, collections.abc.Sequence), repr(indicator)
+            assert isinstance(indicator, collections.abc.Sequence), repr(
+                indicator
+            )
             assert len(indicator) == 2, repr(indicator)
             assert isinstance(indicator[1], collections.abc.Sequence), repr(
-                indicator)
+                indicator
+            )
 
     ### PUBLIC PROPERTIES ###
 

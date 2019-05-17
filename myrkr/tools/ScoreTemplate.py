@@ -60,9 +60,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     def __init__(self):
         super(ScoreTemplate, self).__init__()
-        self.voice_abbreviations.update({
-            'cl': 'Clarinet_Music_Voice',
-            })
+        self.voice_abbreviations.update({"cl": "Clarinet_Music_Voice"})
 
     ### SPECIAL METHODS ###
 
@@ -70,46 +68,42 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
-        tag = 'myrkr.ScoreTemplate.__call__'
+        tag = "myrkr.ScoreTemplate.__call__"
 
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
         # CLARINET
         clarinet_music_voice = abjad.Voice(
-            lilypond_type='ClarinetMusicVoice',
-            name='Clarinet_Music_Voice',
+            lilypond_type="ClarinetMusicVoice",
+            name="Clarinet_Music_Voice",
             tag=tag,
-            )
+        )
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice],
-            lilypond_type='ClarinetMusicStaff',
-            name='Clarinet_Music_Staff',
+            lilypond_type="ClarinetMusicStaff",
+            name="Clarinet_Music_Staff",
             tag=tag,
-            )
+        )
         abjad.annotate(
             clarinet_music_staff,
-            'default_instrument',
-            myrkr.instruments['BassClarinet'],
-            )
+            "default_instrument",
+            myrkr.instruments["BassClarinet"],
+        )
         abjad.annotate(
-            clarinet_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
+            clarinet_music_staff, "default_clef", abjad.Clef("treble")
+        )
 
         # SCORE
         music_context = abjad.Context(
             [clarinet_music_staff],
-            lilypond_type='MusicContext',
-            name='Music_Context',
+            lilypond_type="MusicContext",
+            name="Music_Context",
             tag=tag,
-            )
+        )
         score = abjad.Score(
-            [global_context, music_context],
-            name='Score',
-            tag=tag,
-            )
+            [global_context, music_context], name="Score", tag=tag
+        )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
         self._assert_matching_custom_context_names(score)
