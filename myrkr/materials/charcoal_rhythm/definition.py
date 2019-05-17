@@ -6,5 +6,5 @@ maker = myrkr.RhythmMaker(
     counts=(2, 3),
     denominator=4,
     prolation_indicators=(0, -1, -1),
-    )
+)
 charcoal_rhythm = maker()

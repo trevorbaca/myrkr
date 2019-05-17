@@ -8,5 +8,5 @@ maker = myrkr.RhythmMaker(
     prolation_indicators=(-1,),
     split_indicators=(1,),
     displace_split_tuplets=True,
-    )
+)
 cobalt_rhythm = maker()
