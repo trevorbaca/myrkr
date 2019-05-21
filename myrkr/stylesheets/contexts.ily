@@ -1,3 +1,4 @@
+% Myrkr (2015)
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
 
 
@@ -134,7 +135,10 @@
         \override StemTremolo.slope = 0.5
 
         \override TextScript.font-name = #"Palatino"
-        \override TextScript.X-extent = ##f
+        % DISCOVERY: overriding TextScript.X-extent = ##f
+        %            makes LilyPond ignore self-alignment-X tweaks;
+        %            probably should never be done at stylesheet level.
+        % NOTE:      may be best to override NO text script properties.
 
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
