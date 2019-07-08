@@ -54,7 +54,7 @@ maker = baca.SegmentMaker(
 
 maker(
     ('cl', (1, len(preprocessor.time_signatures))),
-    baca.rhythm(preprocessor.music),
+    baca.music(preprocessor.music),
     )
 
 preprocessor.make_commands(maker)
