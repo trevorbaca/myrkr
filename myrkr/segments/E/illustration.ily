@@ -366,22 +366,22 @@ E_Global_Rests = {                                                             %
 
 E_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 142 / measure 1]                     %! _comment_measure_numbers
         \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)   %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set ClarinetMusicStaff.forceClef = ##t                                %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        b'8
+        b'8                                                                    %! baca.music
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                  %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)      %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        b'16
+        b'16                                                                   %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -391,10 +391,10 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 143 / measure 2]                         %! _comment_measure_numbers
-    b'8.
+    b'8.                                                                       %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -404,7 +404,7 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     [
 
-    b'8
+    b'8                                                                        %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -413,7 +413,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     2
         }
 
-    b'8
+    b'8                                                                        %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -422,7 +422,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     4
         }
 
-    b'8.
+    b'8.                                                                       %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -431,14 +431,14 @@ E_Clarinet_Music_Voice = {                                                     %
                     1
         }
 
-    b'16
+    b'16                                                                       %! baca.music
     ]
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 8/11 {                                                              %! baca.music
 
         % [E Clarinet_Music_Voice measure 144 / measure 3]                     %! _comment_measure_numbers
-        b'16
+        b'16                                                                   %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -448,7 +448,7 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        b'8.
+        b'8.                                                                   %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -458,25 +458,25 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 145 / measure 4]                     %! _comment_measure_numbers
-        f\breve
+        f\breve                                                                %! baca.music
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 146 / measure 5]                         %! _comment_measure_numbers
-    b'8.
+    b'8.                                                                       %! baca.music
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     [
 
-    b'8
+    b'8                                                                        %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -485,7 +485,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     3
         }
 
-    b'8.
+    b'8.                                                                       %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -494,7 +494,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     1
         }
 
-    b'8
+    b'8                                                                        %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -504,10 +504,10 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     ]
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 147 / measure 6]                     %! _comment_measure_numbers
-        b'8.
+        b'8.                                                                   %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -517,7 +517,7 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        b'8
+        b'8                                                                    %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -527,13 +527,13 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 148 / measure 7]                     %! _comment_measure_numbers
-        cs''!8
+        cs''!8                                                                 %! baca.music
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \markup {
@@ -545,7 +545,7 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        cs''!16
+        cs''!16                                                                %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -555,13 +555,13 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 149 / measure 8]                         %! _comment_measure_numbers
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     [
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -570,7 +570,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     3
         }
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -579,7 +579,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     1
         }
 
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -588,7 +588,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     2
         }
 
-    cs''!16
+    cs''!16                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -598,11 +598,11 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     ]
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 8/11 {                                                              %! baca.music
 
         % [E Clarinet_Music_Voice measure 150 / measure 9]                     %! _comment_measure_numbers
-        cs''!16
+        cs''!16                                                                %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -612,59 +612,59 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        cs''!8.
+        cs''!8.                                                                %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 151 / measure 10]                    %! _comment_measure_numbers
-        fs!\breve
+        fs!\breve                                                              %! baca.music
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 152 / measure 11]                        %! _comment_measure_numbers
-    d'''2.
+    d'''2.                                                                     %! baca.music
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    ef'''!2
+    ef'''!2                                                                    %! baca.music
     \glissando                                                                 %! baca.glissando
 
-    d'''2
+    d'''2                                                                      %! baca.music
     \glissando                                                                 %! baca.glissando
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 153 / measure 12]                    %! _comment_measure_numbers
-        cs'''!2.
+        cs'''!2.                                                               %! baca.music
         \glissando                                                             %! baca.glissando
 
-        d'''2
+        d'''2                                                                  %! baca.music
         \glissando                                                             %! baca.glissando
 
-    }
+    }                                                                          %! baca.music
 
-    \times 4/7 {
+    \times 4/7 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 154 / measure 13]                    %! _comment_measure_numbers
-        ef'''!2
+        ef'''!2                                                                %! baca.music
         \glissando                                                             %! baca.glissando
 
-        d'''2.
+        d'''2.                                                                 %! baca.music
         \glissando                                                             %! baca.glissando
 
-        cs'''!2
+        cs'''!2                                                                %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 155 / measure 14]                        %! _comment_measure_numbers
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \markup {
@@ -676,9 +676,9 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     [
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
 
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -687,7 +687,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     1
         }
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -697,13 +697,13 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     ]
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 156 / measure 15]                    %! _comment_measure_numbers
-        cs''!8.
+        cs''!8.                                                                %! baca.music
         [
 
-        cs''!8
+        cs''!8                                                                 %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -713,13 +713,13 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 8/11 {                                                              %! baca.music
 
         % [E Clarinet_Music_Voice measure 157 / measure 16]                    %! _comment_measure_numbers
-        cs''!4
+        cs''!4                                                                 %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -728,7 +728,7 @@ E_Clarinet_Music_Voice = {                                                     %
                         1
             }
 
-        cs''!8
+        cs''!8                                                                 %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -738,7 +738,7 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        cs''!16
+        cs''!16                                                                %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -748,12 +748,12 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
         % [E Clarinet_Music_Voice measure 158 / measure 17]                    %! _comment_measure_numbers
-        cs''!8
+        cs''!8                                                                 %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -763,13 +763,13 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         [
 
-        cs''!8.
+        cs''!8.                                                                %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
     % [E Clarinet_Music_Voice measure 159 / measure 18]                        %! _comment_measure_numbers
-    cs''!16
+    cs''!16                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -779,7 +779,7 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     [
 
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -788,9 +788,9 @@ E_Clarinet_Music_Voice = {                                                     %
                     2
         }
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
 
-    cs''!8.
+    cs''!8.                                                                    %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -799,7 +799,7 @@ E_Clarinet_Music_Voice = {                                                     %
                     3
         }
 
-    cs''!8
+    cs''!8                                                                     %! baca.music
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -809,14 +809,14 @@ E_Clarinet_Music_Voice = {                                                     %
         }
     ]
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
+    \times 8/11 {                                                              %! baca.music
 
         % [E Clarinet_Music_Voice measure 160 / measure 19]                    %! _comment_measure_numbers
-        cs''!16
+        cs''!16                                                                %! baca.music
         [
 
-        cs''!8.
+        cs''!8.                                                                %! baca.music
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -826,7 +826,7 @@ E_Clarinet_Music_Voice = {                                                     %
             }
         ]
 
-    }
+    }                                                                          %! baca.music
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
