@@ -53,7 +53,7 @@ class ColorMaker(object):
         label_voice = abjad.Voice(skips)
         abjad.labe(label_voice).with_indices(direction=Down)
         abjad.override(label_voice).text_script.staff_padding = 4
-        staff = abjad.Staff([note_voice, label_voice], is_simultaneous=True)
+        staff = abjad.Staff([note_voice, label_voice], simultaneous=True)
         score = abjad.Score([staff])
         abjad.attach(abjad.TimeSignature((1, 4)), staff)
         abjad.override(score).bar_line.stencil = False
