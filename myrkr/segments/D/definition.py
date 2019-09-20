@@ -14,31 +14,31 @@ indigo_position = 80
 preprocessor = myrkr.Preprocessor(
     indicators=(
         # 1-3
-        ('indigo', (3, indigo_position), 'A3', 'p', ('C', 44)),
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
-        ('indigo', 2, 'A3', 'mp', ('C', 46)),
+        ("indigo", (3, indigo_position), "A3", "p", ("C", 44)),
+        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+        ("indigo", 2, "A3", "mp", ("C", 46)),
         # 4-6
-        ('indigo', (3, indigo_position), 'B3', 'mf', ('C', 48)),
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
-        ('indigo', 2, 'B3', 'f', ('C', 50)),
+        ("indigo", (3, indigo_position), "B3", "mf", ("C", 48)),
+        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+        ("indigo", 2, "B3", "f", ("C", 50)),
         # 7-9
-        ('indigo', (3, indigo_position), 'C4', 'ff', ('C', 52)),
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
-        ('indigo', 2, 'C4', 'fff', ('C', 54)),
+        ("indigo", (3, indigo_position), "C4", "ff", ("C", 52)),
+        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+        ("indigo", 2, "C4", "fff", ("C", 54)),
         # 10-13
-        ('indigo', (3, indigo_position), 'C#4', 'ffff', ('C', 56)),
-        ('cobalt', (1, cobalt_position), 'Eb2', 'mp'),
-        ('charcoal', (3, charcoal_position), 'D5 Eb5 D5 C#5', 'pppp'),
-        ('indigo', 6, 'C#4', 'ffff', ('C', 58)),
+        ("indigo", (3, indigo_position), "C#4", "ffff", ("C", 56)),
+        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+        ("charcoal", (3, charcoal_position), "D5 Eb5 D5 C#5", "pppp"),
+        ("indigo", 6, "C#4", "ffff", ("C", 58)),
 ),
     name_to_rhythm={
-        'charcoal': myrkr.charcoal_rhythm,
-        'cobalt': myrkr.cobalt_rhythm,
-        'emerald': myrkr.emerald_rhythm,
-        'graphite': myrkr.graphite_rhythm,
-        'indigo': myrkr.indigo_rhythm,
-        'ochre': myrkr.ochre_rhythm,
-        'white': myrkr.white_rhythm,
+        "charcoal": myrkr.charcoal_rhythm,
+        "cobalt": myrkr.cobalt_rhythm,
+        "emerald": myrkr.emerald_rhythm,
+        "graphite": myrkr.graphite_rhythm,
+        "indigo": myrkr.indigo_rhythm,
+        "ochre": myrkr.ochre_rhythm,
+        "white": myrkr.white_rhythm,
     },
 )
 # Charcoal position: 3 ...
@@ -58,19 +58,19 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    ('cl', (1, len(preprocessor.time_signatures))),
+    ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
 )
 
 preprocessor.make_commands(maker)
 
 maker(
-    'Global_Skips',
+    "Global_Skips",
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(6)),
-    baca.metronome_mark('55', selector=baca.leaf(18)),
+    baca.metronome_mark("55", selector=baca.leaf(18)),
 )
 
 maker(
-    ('cl', (23, 25)),
+    ("cl", (23, 25)),
     baca.glissando(),
 )

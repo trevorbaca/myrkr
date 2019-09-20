@@ -11,16 +11,16 @@ import os
 cobalt_position = 0
 preprocessor = myrkr.Preprocessor(
     indicators=[
-        ('cobalt', (1, cobalt_position), 'D2', 'fff'),
+        ("cobalt", (1, cobalt_position), "D2", "fff"),
         ],
     name_to_rhythm={
-        'charcoal': myrkr.charcoal_rhythm,
-        'cobalt': myrkr.cobalt_rhythm,
-        'emerald': myrkr.emerald_rhythm,
-        'graphite': myrkr.graphite_rhythm,
-        'indigo': myrkr.indigo_rhythm,
-        'ochre': myrkr.ochre_rhythm,
-        'white': myrkr.white_rhythm,
+        "charcoal": myrkr.charcoal_rhythm,
+        "cobalt": myrkr.cobalt_rhythm,
+        "emerald": myrkr.emerald_rhythm,
+        "graphite": myrkr.graphite_rhythm,
+        "indigo": myrkr.indigo_rhythm,
+        "ochre": myrkr.ochre_rhythm,
+        "white": myrkr.white_rhythm,
     },
 )
 
@@ -35,19 +35,19 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    ('cl', (1, len(preprocessor.time_signatures))),
+    ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
 )
 
 preprocessor.make_commands(maker)
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('44'),
+    "Global_Skips",
+    baca.metronome_mark("44"),
 )
 
 maker(
-    ('cl', 1),
-    baca.markup('overblow'),
-    baca.start_markup(['BASS', 'CLARINET'], hcenter_in=18),
+    ("cl", 1),
+    baca.markup("overblow"),
+    baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )
