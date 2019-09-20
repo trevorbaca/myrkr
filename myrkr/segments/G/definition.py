@@ -35,7 +35,7 @@ preprocessor = myrkr.Preprocessor(
         # 16-17
         ('white', (1, 0)),
         ('graphite', 4, 'C3 Eb3 G3 Bb3', 'pppp'),
-    ),
+),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,
         'cobalt': myrkr.cobalt_rhythm,
@@ -44,27 +44,27 @@ preprocessor = myrkr.Preprocessor(
         'indigo': myrkr.indigo_rhythm,
         'ochre': myrkr.ochre_rhythm,
         'white': myrkr.white_rhythm,
-        },
-    )
+    },
+)
 # Cobalt position 11 ...
 # Indigo position 118 ...
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     do_not_color_repeat_pitch_classes=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
-    )
+)
 
 maker(
     ('cl', (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
-    )
+)
 
 preprocessor.make_commands(maker)
 
@@ -72,19 +72,19 @@ maker(
     'Global_Skips',
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(3)),
     baca.metronome_mark('110', selector=baca.leaf(9)),
-    )
+)
 
 maker(
     ('cl', 4),
     baca.markup('overblow'),
-    )
+)
 
 maker(
     ('cl', [(5, 9), (21, 26), (52, 55)]),
     baca.glissando(),
-    )
+)
 
 maker(
     ('cl', [(27, 34), (41, 43), (48, 50)]),
     baca.tenuto(selector=baca.pheads()),
-    )
+)
