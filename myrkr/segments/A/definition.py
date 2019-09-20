@@ -43,7 +43,7 @@ preprocessor = myrkr.Preprocessor(
         ('emerald', 4, 'Ab3', 'fff', ('A', 16)),
         ('indigo', 2, 'F4', 'ppp', ('C', 18)),
         ('indigo', 6, 'F#4', 'pppp', ('C', 20)),
-        ),
+    ),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,
         'cobalt': myrkr.cobalt_rhythm,
@@ -52,29 +52,29 @@ preprocessor = myrkr.Preprocessor(
         'indigo': myrkr.indigo_rhythm,
         'ochre': myrkr.ochre_rhythm,
         'white': myrkr.white_rhythm,
-        },
-    )
+    },
+)
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     do_not_color_repeat_pitch_classes=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
-    )
+)
 
 maker(
     ('cl', (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
-    )
+)
 
 preprocessor.make_commands(maker)
 
 maker(
     'Global_Skips',
     baca.metronome_mark('110'),
-    )
+)

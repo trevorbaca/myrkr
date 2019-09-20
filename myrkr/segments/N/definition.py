@@ -26,7 +26,7 @@ preprocessor = myrkr.Preprocessor(
         ('cobalt', 1, 'B2', 'pppp'),
         # 10
         ('charcoal', 12, 'F5 E5 D#5 E5', 'ppppp'),
-    ),
+),
     name_to_rhythm={
         'charcoal': myrkr.charcoal_rhythm,
         'cobalt': myrkr.cobalt_rhythm,
@@ -35,33 +35,33 @@ preprocessor = myrkr.Preprocessor(
         'indigo': myrkr.indigo_rhythm,
         'ochre': myrkr.ochre_rhythm,
         'white': myrkr.white_rhythm,
-        },
-    )
+    },
+)
 # Charcoal position 54 ...
 # Cobalt position 49 ...
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     do_not_color_repeat_pitch_classes=True,
     ignore_repeat_pitch_classes=True,
     final_markup=(
         ['Cambridge, MA', 'Dallas, TX.'],
         ['August', 'October 2015.'],
-        ),
+    ),
     final_markup_extra_offset=(-24, -4),
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
-    )
+)
 
 maker(
     ('cl', (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
-    )
+)
 
 preprocessor.make_commands(maker)
 
@@ -70,22 +70,22 @@ maker(
     baca.metronome_mark('55'),
     baca.metronome_mark(baca.Accelerando()),
     baca.metronome_mark('110', selector=baca.leaf(22)),
-    )
+)
 
 maker(
     ('cl', [(1, 3), (5, 10), (12, 14), (16, 21), (23, -1)]),
     baca.glissando(),
-    )
+)
 
 maker(
     ('cl', [4, 11]),
     baca.new(
         baca.markup('“U”'),
         match=0,
-        ),
+    ),
     baca.new(
         baca.markup('“A”'),
         match=1,
-        ),
+    ),
     baca.text_script_staff_padding(5),
-    )
+)
