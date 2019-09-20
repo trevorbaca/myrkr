@@ -13,34 +13,34 @@ indigo_position = 150
 preprocessor = myrkr.Preprocessor(
     indicators=(
         # 1-3
-        ('indigo', (2, indigo_position), 'Db3', 'pppp', ('C', 110)),
-        ('indigo', 2, 'C3', 'pppp', ('C', 112)),
-        ('indigo', 4, 'B2', 'pppp', ('C', 114)),
+        ("indigo", (2, indigo_position), "Db3", "pppp", ("C", 110)),
+        ("indigo", 2, "C3", "pppp", ("C", 112)),
+        ("indigo", 4, "B2", "pppp", ("C", 114)),
         # 4-6
-        ('white', (1, 0)),
-        ('cobalt', (1, cobalt_position), 'B2', 'pppp'),
-        ('white', (1, 0)),
+        ("white", (1, 0)),
+        ("cobalt", (1, cobalt_position), "B2", "pppp"),
+        ("white", (1, 0)),
         # 7-9
-        ('cobalt', 1, 'C2', 'ppppp'),
-        ('cobalt', 1, 'C2', 'ppppp'),
-        ('cobalt', 1, 'C2', 'ppppp'),
+        ("cobalt", 1, "C2", "ppppp"),
+        ("cobalt", 1, "C2", "ppppp"),
+        ("cobalt", 1, "C2", "ppppp"),
         # 10-12
-        ('cobalt', 1, 'C2', 'ppppp'),
-        ('cobalt', 1, 'C2', 'ppppp'),
-        ('cobalt', 1, 'C2', 'ppppp'),
+        ("cobalt", 1, "C2", "ppppp"),
+        ("cobalt", 1, "C2", "ppppp"),
+        ("cobalt", 1, "C2", "ppppp"),
         # 13-15
-        ('cobalt', 1, 'C2', 'ppppp'),
-        ('white', (1, 0)),
-        ('cobalt', 1, 'E3', 'fff', ('A', 44)),
+        ("cobalt", 1, "C2", "ppppp"),
+        ("white", (1, 0)),
+        ("cobalt", 1, "E3", "fff", ("A", 44)),
 ),
     name_to_rhythm={
-        'charcoal': myrkr.charcoal_rhythm,
-        'cobalt': myrkr.cobalt_rhythm,
-        'emerald': myrkr.emerald_rhythm,
-        'graphite': myrkr.graphite_rhythm,
-        'indigo': myrkr.indigo_rhythm,
-        'ochre': myrkr.ochre_rhythm,
-        'white': myrkr.white_rhythm,
+        "charcoal": myrkr.charcoal_rhythm,
+        "cobalt": myrkr.cobalt_rhythm,
+        "emerald": myrkr.emerald_rhythm,
+        "graphite": myrkr.graphite_rhythm,
+        "indigo": myrkr.indigo_rhythm,
+        "ochre": myrkr.ochre_rhythm,
+        "white": myrkr.white_rhythm,
     },
 )
 # Cobalt position 45 ...
@@ -59,23 +59,23 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    ('cl', (1, len(preprocessor.time_signatures))),
+    ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
 )
 
 preprocessor.make_commands(maker)
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('55'),
-    baca.metronome_mark('44', selector=baca.leaf(11)),
+    "Global_Skips",
+    baca.metronome_mark("55"),
+    baca.metronome_mark("44", selector=baca.leaf(11)),
 )
 
 # TODO: FIXME:
 #maker(
-#    ('cl', (12, 18)),
+#    ("cl", (12, 18)),
 #    baca.text_spanner(
-#        '˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝',
+#        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
 #        pieces=baca.cmgroups(),
 #        selector=baca.rleaves(),
 #    ),
