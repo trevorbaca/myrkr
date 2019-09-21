@@ -390,6 +390,7 @@ F_Clarinet_Music_Voice = {                                                     %
     \times 4/7 {                                                               %! baca.music
 
         % [F Clarinet_Music_Voice measure 167 / measure 7]                     %! baca.SegmentMaker._comment_measure_numbers()
+    %@% \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         gs'!2                                                                  %! baca.music
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -401,6 +402,7 @@ F_Clarinet_Music_Voice = {                                                     %
                         2
             }
 
+    %@% \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         gs'!2.                                                                 %! baca.music
         ^ \markup {
             \override
@@ -439,6 +441,7 @@ F_Clarinet_Music_Voice = {                                                     %
     }                                                                          %! baca.music
 
     % [F Clarinet_Music_Voice measure 170 / measure 10]                        %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     gs'!2.                                                                     %! baca.music
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -451,9 +454,11 @@ F_Clarinet_Music_Voice = {                                                     %
         }
 
     % [F Clarinet_Music_Voice measure 171 / measure 11]                        %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     gs'!2                                                                      %! baca.music
 
     % [F Clarinet_Music_Voice measure 172 / measure 12]                        %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs'!2                                                                      %! baca.music
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -465,9 +470,11 @@ F_Clarinet_Music_Voice = {                                                     %
                     1
         }
 
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs'!2.                                                                     %! baca.music
 
     % [F Clarinet_Music_Voice measure 173 / measure 13]                        %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs'!2                                                                      %! baca.music
     ^ \markup {
         \override
@@ -481,11 +488,13 @@ F_Clarinet_Music_Voice = {                                                     %
     \times 4/7 {                                                               %! baca.music
 
         % [F Clarinet_Music_Voice measure 174 / measure 14]                    %! baca.SegmentMaker._comment_measure_numbers()
+    %@% \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs'!2.                                                                 %! baca.music
 
     }                                                                          %! baca.music
 
     % [F Clarinet_Music_Voice measure 175 / measure 15]                        %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs'!2                                                                      %! baca.music
     ^ \markup {
         \override
