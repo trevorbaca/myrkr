@@ -684,11 +684,13 @@ N_Clarinet_Music_Voice = {                                                     %
         es'''!2                                                                %! baca.music
         \glissando                                                             %! baca.glissando
 
+    %@% \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs'''!2.                                                               %! baca.music
 
     }                                                                          %! baca.music
 
     % [N Clarinet_Music_Voice measure 391 / measure 8]                         %! baca.SegmentMaker._comment_measure_numbers()
+%@% \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs'''!2                                                                    %! baca.music
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand

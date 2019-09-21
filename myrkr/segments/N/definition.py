@@ -45,7 +45,9 @@ maker = baca.SegmentMaker(
         abjad.const.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
-    do_not_color_repeat_pitch_classes=True,
+    deactivate=[
+        abjad.tags.REPEAT_PITCH_CLASS,
+    ],
     ignore_repeat_pitch_classes=True,
     final_markup=(
         ["Cambridge, MA", "Dallas, TX."],
