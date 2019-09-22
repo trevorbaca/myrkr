@@ -47,32 +47,32 @@ i_Global_Rests = {                                                             %
 
 i_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
-    \tweak edge-height #'(0.7 . 0)                                             %! baca.music
-    \times 4/5 {                                                               %! baca.music
+    \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    \times 4/5 {                                                               %! baca.music()
 
         % [_ Clarinet_Music_Voice measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
-        \set Staff.instrumentName =                                            %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-        \markup {                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                #18                                                            %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                \center-column                                                 %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                    {                                                          %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                        BASS                                                   %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                        CLARINET                                               %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-                    }                                                          %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-            }                                                                  %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
+        \set Staff.instrumentName =                                            %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                #18                                                            %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                \center-column                                                 %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                    {                                                          %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                        BASS                                                   %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                        CLARINET                                               %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+                    }                                                          %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
+            }                                                                  %! baca.start_markup():baca_start_markup:-PARTS:IndicatorCommand
         \clef "treble"                                                         %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! DEFAULT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set ClarinetMusicStaff.forceClef = ##t                                %! DEFAULT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
-        e\breve.                                                               %! baca.music
+        e\breve.                                                               %! baca.music()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-default-indicator-markup "(“BassClarinet”)"                    %! DEFAULT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-        ^ \markup { overblow }                                                 %! baca.markup:IndicatorCommand
+        ^ \markup { overblow }                                                 %! baca.markup():IndicatorCommand
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)         %! DEFAULT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-    }                                                                          %! baca.music
+    }                                                                          %! baca.music()
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
