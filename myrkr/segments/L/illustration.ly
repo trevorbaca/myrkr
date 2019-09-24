@@ -15,8 +15,8 @@
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
-        \context Score = "Score"                                               %! myrkr.ScoreTemplate.__call__
-        <<                                                                     %! myrkr.ScoreTemplate.__call__
+        \context Score = "Score"                                               %! myrkr.ScoreTemplate.__call__()
+        <<                                                                     %! myrkr.ScoreTemplate.__call__()
 
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context()
             <<                                                                 %! abjad.ScoreTemplate._make_global_context()
@@ -26,15 +26,15 @@
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context()
 
-            \context MusicContext = "Music_Context"                            %! myrkr.ScoreTemplate.__call__
-            {                                                                  %! myrkr.ScoreTemplate.__call__
+            \context MusicContext = "Music_Context"                            %! myrkr.ScoreTemplate.__call__()
+            {                                                                  %! myrkr.ScoreTemplate.__call__()
 
-                \context ClarinetMusicStaff = "Clarinet_Music_Staff"           %! myrkr.ScoreTemplate.__call__
+                \context ClarinetMusicStaff = "Clarinet_Music_Staff"           %! myrkr.ScoreTemplate.__call__()
                 \L_Clarinet_Music_Staff                                        %! abjad.Path.extern()
 
-            }                                                                  %! myrkr.ScoreTemplate.__call__
+            }                                                                  %! myrkr.ScoreTemplate.__call__()
 
-        >>                                                                     %! myrkr.ScoreTemplate.__call__
+        >>                                                                     %! myrkr.ScoreTemplate.__call__()
 
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
     
