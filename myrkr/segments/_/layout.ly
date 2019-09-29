@@ -27,6 +27,8 @@
             s1 * 12/5                                                          %! baca.SegmentMaker._make_global_skips(1)
         %@% - \baca-start-spm-left-only "[1/28]"                               %! SPACING
         %@% \bacaStartTextSpanSPM                                              %! SPACING
+            \baca-bar-line-visible                                             %! baca.SegmentMaker._attach_final_bar_line()
+            \bar "|"                                                           %! baca.SegmentMaker._attach_final_bar_line()
 
             % [Page_Layout measure 2]                                          %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
             \baca-new-spacing-section #1 #4                                    %! SPACING_COMMAND:HorizontalSpacingSpecifier(1):baca.SegmentMaker._style_phantom_measures(1):PHANTOM
