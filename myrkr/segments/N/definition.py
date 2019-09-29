@@ -49,11 +49,6 @@ maker = baca.SegmentMaker(
         abjad.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
     ignore_repeat_pitch_classes=True,
-    final_markup=(
-        ["Cambridge, MA", "Dallas, TX."],
-        ["August", "October 2015."],
-    ),
-    final_markup_extra_offset=(-24, -4),
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=preprocessor.time_signatures,
@@ -90,4 +85,15 @@ maker(
         match=1,
     ),
     baca.text_script_staff_padding(5),
+)
+
+maker(
+    ("cl", -1),
+    baca.chunk(
+        baca.mark(r"\myrkr-colophon-markup"),
+        baca.rehearsal_mark_down(),
+        baca.rehearsal_mark_padding(6),
+        baca.rehearsal_mark_self_alignment_x(abjad.Right),
+        selector=baca.leaves().rleak()[-1],
+    ),
 )
