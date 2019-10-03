@@ -30,6 +30,16 @@
         \override MultiMeasureRestText.padding = 0
         }
 
+    % PAGE LAYOUT
+    \context {
+        \name PageLayout
+        \type Engraver_group
+        \consists Text_engraver
+        \consists \alternateTextSpannerEngraver
+
+        \override TextSpanner.font-size = 6
+        }
+
     % GLOBAL CONTEXT
     \context {
         \name GlobalContext
@@ -41,6 +51,7 @@
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
+        \accepts PageLayout
 
         \override BarNumber.Y-extent = ##f
         \override BarNumber.extra-offset = #'(-4 . -4)
