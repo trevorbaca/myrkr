@@ -659,22 +659,22 @@ E_Clarinet_Music_Voice = {                                                     %
     d'''2.                                                                     %! baca.music()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ef'''!2                                                                    %! baca.music()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     d'''2                                                                      %! baca.music()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \times 4/5 {                                                               %! baca.music()
 
         % [E Clarinet_Music_Voice measure 153 / measure 12]                    %! baca.SegmentMaker._comment_measure_numbers()
         cs'''!2.                                                               %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         d'''2                                                                  %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! baca.music()
 
@@ -682,10 +682,10 @@ E_Clarinet_Music_Voice = {                                                     %
 
         % [E Clarinet_Music_Voice measure 154 / measure 13]                    %! baca.SegmentMaker._comment_measure_numbers()
         ef'''!2                                                                %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         d'''2.                                                                 %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     %@% \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs'''!2                                                                %! baca.music()

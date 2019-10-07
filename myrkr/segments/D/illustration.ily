@@ -1174,22 +1174,22 @@ D_Clarinet_Music_Voice = {                                                     %
     e'''2                                                                      %! baca.music()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pppp                                                                      %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     f'''2                                                                      %! baca.music()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \times 4/7 {                                                               %! baca.music()
 
         % [D Clarinet_Music_Voice measure 134 / measure 24]                    %! baca.SegmentMaker._comment_measure_numbers()
         e'''2.                                                                 %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         ds'''!2                                                                %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         e'''2                                                                  %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! baca.music()
 
@@ -1197,7 +1197,7 @@ D_Clarinet_Music_Voice = {                                                     %
 
         % [D Clarinet_Music_Voice measure 135 / measure 25]                    %! baca.SegmentMaker._comment_measure_numbers()
         f'''2.                                                                 %! baca.music()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         e'''2                                                                  %! baca.music()
 
