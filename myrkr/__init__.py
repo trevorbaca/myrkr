@@ -23,4 +23,3 @@ from myrkr.materials.instruments.definition import instruments
 from myrkr.materials.metronome_marks.definition import metronome_marks
 from myrkr.materials.ochre_rhythm.definition import ochre_rhythm
 from myrkr.materials.white_rhythm.definition import white_rhythm
-from myrkr import segments
