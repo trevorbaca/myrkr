@@ -17,8 +17,7 @@ preprocessor = myrkr.Preprocessor(
         ("emerald", (1, emerald_position), "C4", "mf", ("A", 0)),
         # 3-4
         ("indigo", 4, "Eb4", "ppp", ("C", 2)),
-        #("emerald", 1, "C4", "mf", ("A", 2)),
-        ("emerald", 1, "C4", "mf", ("A", 0)),
+        ("emerald", 1, "C4", "mf", ("A", 2)),
         # 5-6
         ("indigo", 1, "Eb4", "ppp", ("C", 4)),
         ("indigo", 3, "E4", "ppp", ("C", 6)),
