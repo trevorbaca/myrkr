@@ -9,11 +9,11 @@ if not (
 del distutils
 del platform
 
-from myrkr.tools.ColorMaker import ColorMaker
-from myrkr.tools.Preprocessor import Preprocessor
-from myrkr.tools.RhythmMaker import RhythmMaker
-from myrkr.tools.ScoreTemplate import ScoreTemplate
-from myrkr.tools.color_fingerings import color_fingerings
+from myrkr.ScoreTemplate import ScoreTemplate
+from myrkr.tools import ColorMaker
+from myrkr.tools import Preprocessor
+from myrkr.tools import RhythmMaker
+from myrkr.tools import color_fingerings
 from myrkr.materials.charcoal_rhythm.definition import charcoal_rhythm
 from myrkr.materials.cobalt_rhythm.definition import cobalt_rhythm
 from myrkr.materials.emerald_rhythm.definition import emerald_rhythm
