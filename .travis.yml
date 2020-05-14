@@ -61,6 +61,7 @@ before_install:
     - export PATH=$PATH:$IDE/ide/scr
 
     # log setup:
+    - echo $TRAVIS_BUILD_DIR
     - echo $MYPYPATH
     - echo $PATH
     - ls
