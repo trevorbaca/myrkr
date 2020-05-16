@@ -1,8 +1,9 @@
-import abjad
-import baca
 import collections
 import copy
 import math
+
+import abjad
+import baca
 from abjadext import rmakers
 
 

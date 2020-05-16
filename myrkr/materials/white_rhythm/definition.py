@@ -1,5 +1,4 @@
-import myrkr
+from myrkr.tools import RhythmMaker
 
-
-maker = myrkr.RhythmMaker(terms=(-3, -1, -4, -2), counts=(1,), denominator=16)
+maker = RhythmMaker(terms=(-3, -1, -4, -2), counts=(1,), denominator=16)
 white_rhythm = maker()

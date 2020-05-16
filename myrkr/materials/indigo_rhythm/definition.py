@@ -1,7 +1,6 @@
-import myrkr
+from myrkr.tools import RhythmMaker
 
-
-maker = myrkr.RhythmMaker(
+maker = RhythmMaker(
     # terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
     terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 4, 3)),
     counts=(5, 4),
