@@ -1,7 +1,6 @@
-import myrkr
+from myrkr.tools import RhythmMaker
 
-
-maker = myrkr.RhythmMaker(
+maker = RhythmMaker(
     terms=(1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2),
     counts=(2,),
     denominator=1,
