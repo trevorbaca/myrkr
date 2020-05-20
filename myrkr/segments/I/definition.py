@@ -25,7 +25,7 @@ preprocessor = myrkr.Preprocessor(
         ("cobalt", 4, "D2"),
         # 10
         ("cobalt", 4, "Db2", "fff"),
-),
+    ),
     name_to_rhythm={
         "charcoal": myrkr.charcoal_rhythm,
         "cobalt": myrkr.cobalt_rhythm,
@@ -61,9 +61,9 @@ preprocessor.make_commands(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("55", selector=baca.leaf(19)), 
-    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(19)), 
-    baca.metronome_mark("110", selector=baca.leaf(23)), 
+    baca.metronome_mark("55", selector=baca.leaf(19)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(19)),
+    baca.metronome_mark("110", selector=baca.leaf(23)),
 )
 
 maker(

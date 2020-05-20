@@ -12,7 +12,7 @@ cobalt_position = 0
 preprocessor = myrkr.Preprocessor(
     indicators=[
         ("cobalt", (1, cobalt_position), "D2", "fff"),
-        ],
+    ],
     name_to_rhythm={
         "charcoal": myrkr.charcoal_rhythm,
         "cobalt": myrkr.cobalt_rhythm,
