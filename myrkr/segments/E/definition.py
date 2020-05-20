@@ -22,7 +22,7 @@ preprocessor = myrkr.Preprocessor(
         ("cobalt", (1, cobalt_position), "E2", "mp"),
         ("charcoal", (3, charcoal_position), "C5 Db5 C5 B4", "pp"),
         ("indigo", 6, "B3", "f", ("C", 64)),
-),
+    ),
     name_to_rhythm={
         "charcoal": myrkr.charcoal_rhythm,
         "cobalt": myrkr.cobalt_rhythm,

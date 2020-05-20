@@ -32,7 +32,7 @@ preprocessor = myrkr.Preprocessor(
         ("cobalt", 1, "C2", "ppppp"),
         ("white", (1, 0)),
         ("cobalt", 1, "E3", "fff", ("A", 44)),
-),
+    ),
     name_to_rhythm={
         "charcoal": myrkr.charcoal_rhythm,
         "cobalt": myrkr.cobalt_rhythm,
@@ -74,7 +74,7 @@ maker(
 )
 
 # TODO: FIXME:
-#maker(
+# maker(
 #    ("cl", (12, 18)),
 #    baca.text_spanner(
 #        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
@@ -82,4 +82,4 @@ maker(
 #        selector=baca.rleaves(),
 #    ),
 #    baca.text_spanner_staff_padding(5),
-#)
+# )

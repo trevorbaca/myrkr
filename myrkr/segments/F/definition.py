@@ -23,7 +23,7 @@ preprocessor = myrkr.Preprocessor(
         # 7-8
         ("emerald", 2, "F#3", "fff", ("A", 40)),
         ("emerald", 4, "E3", "fff", ("A", 42)),
-),
+    ),
     name_to_rhythm={
         "charcoal": myrkr.charcoal_rhythm,
         "cobalt": myrkr.cobalt_rhythm,
