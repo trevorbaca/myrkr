@@ -2,9 +2,13 @@ import distutils.version
 import platform
 
 from .ScoreTemplate import ScoreTemplate
-from .materials import (
+from .tools import (
+    ColorMaker,
+    Preprocessor,
+    RhythmMaker,
     charcoal_rhythm,
     cobalt_rhythm,
+    color_fingerings,
     emerald_rhythm,
     graphite_rhythm,
     indigo_rhythm,
@@ -13,7 +17,6 @@ from .materials import (
     ochre_rhythm,
     white_rhythm,
 )
-from .tools import ColorMaker, Preprocessor, RhythmMaker, color_fingerings
 
 __all__ = [
     "ScoreTemplate",
