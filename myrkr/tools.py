@@ -495,7 +495,7 @@ class RhythmMaker(object):
             markup = abjad.Markup(str(i)).small()
             abjad.attach(markup, first_leaf)
         score = lilypond_file[abjad.Score]
-        score.add_final_bar_line()
+        abjad.deprecated.add_final_bar_line(score)
         self._tweak_length_1_tuplets(score)
         abjad.override(score).text_script.staff_padding = 4
         abjad.override(score).time_signature.style = "numbered"
