@@ -1,5 +1,3 @@
-import os
-
 import abjad
 import baca
 import myrkr
@@ -41,7 +39,7 @@ maker = baca.SegmentMaker(
         abjad.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
     ignore_repeat_pitch_classes=True,
-    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    segment_directory=abjad.Path(__file__).resolve().parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
 )
