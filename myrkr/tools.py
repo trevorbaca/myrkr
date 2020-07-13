@@ -361,9 +361,9 @@ class RhythmMaker(object):
         terms = tuple(terms)
         assert all(isinstance(_, int) for _ in terms), repr(terms)
         self._terms = terms
-        assert abjad.mathtools.all_are_positive_integers(counts), repr(counts)
+        assert abjad.mathx.all_are_positive_integers(counts), repr(counts)
         self._counts = counts
-        assert abjad.mathtools.is_positive_integer_power_of_two(denominator)
+        assert abjad.mathx.is_positive_integer_power_of_two(denominator)
         self._denominator = denominator
         prolation_indicators = prolation_indicators or ()
         assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
@@ -384,7 +384,7 @@ class RhythmMaker(object):
 
         Returns list of selections.
         """
-        lcm = abjad.mathtools.least_common_multiple(
+        lcm = abjad.mathx.least_common_multiple(
             len(self.terms), sum(self.counts)
         )
         terms = baca.sequence(self.terms).repeat_to_length(lcm)
