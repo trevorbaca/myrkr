@@ -1,4 +1,5 @@
 import abjad
+import ide
 
 
 persist = abjad.OrderedDict(
@@ -23,12 +24,12 @@ persist = abjad.OrderedDict(
                     (
                         'Clarinet_Music_Staff',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Clarinet_Music_Voice',
                                 manifest='instruments',
                                 value='BassClarinet',
                                 ),
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Clarinet_Music_Voice',
                                 prototype='abjad.Clef',
                                 value='treble',
@@ -38,7 +39,7 @@ persist = abjad.OrderedDict(
                     (
                         'Clarinet_Music_Voice',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Clarinet_Music_Voice',
                                 prototype='abjad.Dynamic',
                                 value='ff',
@@ -48,12 +49,12 @@ persist = abjad.OrderedDict(
                     (
                         'Score',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
                                 value='55',
                                 ),
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Global_Skips',
                                 prototype='abjad.TimeSignature',
                                 value='3/16',
