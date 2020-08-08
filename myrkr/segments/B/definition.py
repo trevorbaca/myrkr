@@ -38,11 +38,11 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.tags.LOCAL_MEASURE_NUMBER,
+        baca.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
     deactivate=[
-        abjad.tags.REPEAT_PITCH_CLASS_COLORING,
+        baca.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(__file__).resolve().parent,
