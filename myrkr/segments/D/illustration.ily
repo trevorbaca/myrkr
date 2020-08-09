@@ -1,4 +1,4 @@
-D_Global_Skips = {                                                             %! abjad.Path.extern()
+D_Global_Skips = {                                                             %! ide.Path.extern()
 
     % [D Global_Skips measure 111 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 10/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
@@ -486,10 +486,10 @@ D_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-D_Global_Rests = {                                                             %! abjad.Path.extern()
+D_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [D Global_Rests measure 111 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 5/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
@@ -587,10 +587,10 @@ D_Global_Rests = {                                                             %
     % [D Global_Rests measure 142 / measure 32]                                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-D_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern()
+D_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     % [D Clarinet_Music_Voice measure 111 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
 %@% \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -1419,15 +1419,15 @@ D_Clarinet_Music_Voice = {                                                     %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-D_Clarinet_Music_Staff = <<                                                    %! abjad.Path.extern()
+D_Clarinet_Music_Staff = <<                                                    %! ide.Path.extern()
 
     \context GlobalRests = "Global_Rests"                                      %! abjad.ScoreTemplate._make_global_context()
-    \D_Global_Rests                                                            %! abjad.Path.extern()
+    \D_Global_Rests                                                            %! ide.Path.extern()
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__()
-    \D_Clarinet_Music_Voice                                                    %! abjad.Path.extern()
+    \D_Clarinet_Music_Voice                                                    %! ide.Path.extern()
 
->>                                                                             %! abjad.Path.extern()
+>>                                                                             %! ide.Path.extern()
