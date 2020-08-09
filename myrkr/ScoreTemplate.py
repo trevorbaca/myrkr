@@ -12,7 +12,7 @@ class ScoreTemplate(baca.ScoreTemplate):
     ..  container:: example
 
         >>> template = myrkr.ScoreTemplate()
-        >>> path = abjad.Path('myrkr', 'stylesheets', 'contexts.ily')
+        >>> path = baca.Path('myrkr', 'stylesheets', 'contexts.ily')
         >>> lilypond_file = template.__illustrate__(
         ...     global_staff_size=15,
         ...     includes=[path],
