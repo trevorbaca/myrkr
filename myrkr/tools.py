@@ -453,7 +453,7 @@ class RhythmMaker(object):
         selections = []
         for tuplet in tuplets:
             if tuplet.trivial():
-                selection = abjad.mutate(tuplet).eject_contents()
+                selection = abjad.mutate.eject_contents(tuplet)
                 assert isinstance(selection, abjad.Selection)
                 selections.append(selection)
             else:
@@ -561,7 +561,7 @@ class RhythmMaker(object):
             (tuplet, total_duration, left_count, right_count)
         )
         durations = [left_duration, right_duration]
-        selections = abjad.mutate(tuplet).split(durations)
+        selections = abjad.mutate.split(tuplet, durations)
         return selections
 
     @staticmethod
