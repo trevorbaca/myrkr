@@ -49,7 +49,7 @@ class ColorMaker(object):
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
-        durations = [abjad.inspect(_).duration() for _ in notes]
+        durations = [abjad.inspectx.duration(_) for _ in notes]
         maker = baca.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
@@ -522,7 +522,7 @@ class RhythmMaker(object):
         time_signatures = []
         denominators = range(self.denominator, 2 * self.denominator)
         for tuplet in tuplets:
-            duration = abjad.inspect(tuplet).duration()
+            duration = abjad.inspectx.duration(tuplet)
             duration = abjad.NonreducedFraction(duration)
             for denominator in denominators:
                 duration = duration.with_denominator(denominator)
@@ -530,7 +530,7 @@ class RhythmMaker(object):
                     time_signatures.append(duration)
                     break
             else:
-                duration = abjad.inspect(tuplet).duration()
+                duration = abjad.inspectx.duration(tuplet)
                 duration = abjad.NonreducedFraction(duration)
                 time_signatures.append(duration)
         tuplet_count = len(tuplets)
@@ -538,7 +538,7 @@ class RhythmMaker(object):
         pair = (tuplet_count, time_signature_count)
         assert len(tuplets) == len(time_signatures), pair
         for tuplet, time_signature in zip(tuplets, time_signatures):
-            tuplet_duration = abjad.inspect(tuplet).duration()
+            tuplet_duration = abjad.inspectx.duration(tuplet)
             time_signature = abjad.Duration(time_signature)
             assert tuplet_duration == time_signature, repr(
                 (tuplet_duration, time_signature)
@@ -548,7 +548,7 @@ class RhythmMaker(object):
     @staticmethod
     def _split_tuplet(tuplet):
         logical_ties = abjad.select(tuplet).logical_ties()
-        durations = [abjad.inspect(_).duration() for _ in logical_ties]
+        durations = [abjad.inspectx.duration(_) for _ in logical_ties]
         left_count = int(math.floor(len(logical_ties) / 2.0))
         right_count = int(math.ceil(len(logical_ties) / 2.0))
         left_durations = durations[:left_count]
@@ -556,7 +556,7 @@ class RhythmMaker(object):
         right_durations = durations[-right_count:]
         right_duration = sum(right_durations)
         total_duration = left_duration + right_duration
-        tuplet_duration = abjad.inspect(tuplet).duration()
+        tuplet_duration = abjad.inspectx.duration(tuplet)
         assert tuplet_duration == total_duration, repr(
             (tuplet, total_duration, left_count, right_count)
         )
