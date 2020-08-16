@@ -49,16 +49,7 @@ i_Clarinet_Music_Voice = {                                                     %
     \times 4/5 {                                                               %! baca.music()
 
         % [_ Clarinet_Music_Voice measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
-        \set Staff.instrumentName =                                            %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-        \markup {                                                              %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-            \hcenter-in                                                        %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                #18                                                            %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                \center-column                                                 %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                    {                                                          %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                        BASS                                                   %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                        CLARINET                                               %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                    }                                                          %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-            }                                                                  %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
+        \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" } %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
         \clef "treble"                                                         %! abjad.ScoreTemplate.attach_defaults(3):baca.SegmentMaker._set_status_tag():DEFAULT_CLEF
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_COLOR
     %@% \override ClarinetMusicStaff.Clef.color = ##f                          %! baca.SegmentMaker._attach_color_literal(1):DEFAULT_CLEF_COLOR_CANCELLATION
