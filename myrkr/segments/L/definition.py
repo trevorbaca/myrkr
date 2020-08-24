@@ -57,5 +57,8 @@ maker(
 
 maker(
     ("cl", 1),
-    baca.markup("overblow"),
+    baca.markup(
+        r"\baca-overblow-markup",
+        literal=True,
+    ),
 )
