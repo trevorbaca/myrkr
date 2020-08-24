@@ -45,6 +45,9 @@ maker(
 
 maker(
     ("cl", 1),
-    baca.markup("overblow"),
+    baca.markup(
+        r"\baca-overblow-markup",
+        literal=True,
+    ),
     baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )

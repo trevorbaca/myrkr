@@ -76,11 +76,17 @@ maker(
 maker(
     ("cl", [4, 11]),
     baca.new(
-        baca.markup("“U”"),
+        baca.markup(
+            r"\myrkr-vowel-u-markup",
+            literal=True,
+        ),
         match=0,
     ),
     baca.new(
-        baca.markup("“A”"),
+        baca.markup(
+            r"\myrkr-vowel-a-markup",
+            literal=True,
+        ),
         match=1,
     ),
     baca.text_script_staff_padding(5),

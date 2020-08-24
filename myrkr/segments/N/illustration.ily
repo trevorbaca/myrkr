@@ -653,7 +653,7 @@ N_Clarinet_Music_Voice = {                                                     %
         d\breve.                                                               %! baca.music()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { “U” }                                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \myrkr-vowel-u-markup                                                %! baca.markup():baca.IndicatorCommand._call()
 
     }                                                                          %! baca.music()
 
@@ -728,7 +728,7 @@ N_Clarinet_Music_Voice = {                                                     %
         d\breve                                                                %! baca.music()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppppp                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { “A” }                                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \myrkr-vowel-a-markup                                                %! baca.markup():baca.IndicatorCommand._call()
 
     }                                                                          %! baca.music()
 

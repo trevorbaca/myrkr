@@ -994,7 +994,7 @@ G_Clarinet_Music_Voice = {                                                     %
         e\breve                                                                %! baca.music()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ffff                                                                  %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { overblow }                                                 %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-overblow-markup                                                %! baca.markup():baca.IndicatorCommand._call()
 
     }                                                                          %! baca.music()
 
