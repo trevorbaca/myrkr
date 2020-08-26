@@ -61,7 +61,8 @@ maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     segment_directory=baca.Path(__file__).resolve().parent,
     time_signatures=preprocessor.time_signatures,
-    transpose_score=True,)
+    transpose_score=True,
+)
 
 maker(
     ("cl", (1, len(preprocessor.time_signatures))),
