@@ -122,13 +122,9 @@ class ColorMaker(object):
 
     def _validate_indicators(self, indicators):
         for indicator in indicators:
-            assert isinstance(indicator, collections.abc.Sequence), repr(
-                indicator
-            )
+            assert isinstance(indicator, collections.abc.Sequence), repr(indicator)
             assert len(indicator) == 2, repr(indicator)
-            assert isinstance(indicator[1], collections.abc.Sequence), repr(
-                indicator
-            )
+            assert isinstance(indicator[1], collections.abc.Sequence), repr(indicator)
 
     ### PUBLIC PROPERTIES ###
 
@@ -172,9 +168,7 @@ class Preprocessor(object):
 
     ### PRIVATE METHODS ###
 
-    def _make_command_bundle(
-        self, measure_indicator, pitch, dynamic, color_fingering
-    ):
+    def _make_command_bundle(self, measure_indicator, pitch, dynamic, color_fingering):
         if pitch is None and dynamic is None and color_fingering is None:
             return
         commands = []
@@ -197,9 +191,7 @@ class Preprocessor(object):
         pairs = list(abjad.sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_commands = first_bundle[1]
-            first_dynamics = [
-                _ for _ in first_commands if isinstance(_, abjad.Dynamic)
-            ]
+            first_dynamics = [_ for _ in first_commands if isinstance(_, abjad.Dynamic)]
             if not first_dynamics:
                 continue
             first_dynamic = first_dynamics[0]
@@ -243,9 +235,7 @@ class Preprocessor(object):
                 color_fingering = indicator[4]
             assert isinstance(measure_count, int), repr(measure_count)
             assert isinstance(position, int), repr(position)
-            reset_cursor = name not in name_to_cursor or isinstance(
-                location, tuple
-            )
+            reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
             if reset_cursor:
                 rhythm = list(self.name_to_rhythm[name])
                 rhythm = abjad.CyclicTuple(rhythm)
@@ -384,9 +374,7 @@ class RhythmMaker(object):
 
         Returns list of selections.
         """
-        lcm = abjad.mathx.least_common_multiple(
-            len(self.terms), sum(self.counts)
-        )
+        lcm = abjad.mathx.least_common_multiple(len(self.terms), sum(self.counts))
         terms = baca.sequence(self.terms).repeat_to_length(lcm)
         tuplet_ratios = baca.sequence(terms).partition_by_counts(
             counts=self.counts, cyclic=True, overhang=True
@@ -476,9 +464,7 @@ class RhythmMaker(object):
 
         Returns LilyPond file.
         """
-        proportional_notation_duration = abjad.Duration(
-            proportional_notation_duration
-        )
+        proportional_notation_duration = abjad.Duration(proportional_notation_duration)
         if rhythm is None:
             rhythm = self()
         tuplets, time_signatures = [], []
