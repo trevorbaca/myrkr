@@ -100,7 +100,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         ..  container:: example
 
             >>> score_template = myrkr.ScoreTemplate()
-            >>> abjad.f(score_template.voice_abbreviations)
+            >>> string = abjad.storage(score_template.voice_abbreviations)
+            >>> print(string)
             abjad.OrderedDict(
                 [
                     ('cl', 'Clarinet_Music_Voice'),
