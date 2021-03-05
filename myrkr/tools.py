@@ -6,7 +6,7 @@ import abjad
 import baca
 
 
-class ColorMaker(object):
+class ColorMaker:
     """
     Color maker.
     """
@@ -136,7 +136,7 @@ class ColorMaker(object):
         return self._indicators
 
 
-class Preprocessor(object):
+class Preprocessor:
     """
     Preprocessor.
     """
@@ -321,7 +321,7 @@ class Preprocessor(object):
             maker(("Clarinet_Music_Voice", measure_indicator), *commands)
 
 
-class RhythmMaker(object):
+class RhythmMaker:
     """
     Rhythm-maker.
     """
