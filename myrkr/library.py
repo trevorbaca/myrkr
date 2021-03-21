@@ -707,6 +707,9 @@ white_rhythm = maker()
 class ScoreTemplate(baca.ScoreTemplate):
     """
     Score template.
+
+    >>> import myrkr
+
     """
 
     ### CLASS VARIABLES ###
