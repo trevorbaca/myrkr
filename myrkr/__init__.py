@@ -1,11 +1,11 @@
 import distutils.version
 import platform
 
-from .ScoreTemplate import ScoreTemplate
 from .tools import (
     ColorMaker,
     Preprocessor,
     RhythmMaker,
+    ScoreTemplate,
     charcoal_rhythm,
     cobalt_rhythm,
     color_fingerings,
