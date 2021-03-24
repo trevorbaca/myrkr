@@ -390,7 +390,8 @@ o_Global_Rests = {
 
 o_Clarinet_Music_Voice = {
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 384 / measure 1]
         \clef "treble"
@@ -424,7 +425,8 @@ o_Clarinet_Music_Voice = {
     fs'''!2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 386 / measure 3]
         g'''2
@@ -435,7 +437,8 @@ o_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 387 / measure 4]
         \once \override TextScript.staff-padding = 5
@@ -446,7 +449,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 388 / measure 5]
         g'''2
@@ -469,7 +473,8 @@ o_Clarinet_Music_Voice = {
     g'''2.
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 390 / measure 7]
         fs'''!2
@@ -508,7 +513,8 @@ o_Clarinet_Music_Voice = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [15 Clarinet_Music_Voice measure 394 / measure 11]
         \once \override TextScript.staff-padding = 5
@@ -519,7 +525,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 395 / measure 12]
         es'''!2.
@@ -535,7 +542,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 396 / measure 13]
         fs'''!2.
@@ -556,7 +564,8 @@ o_Clarinet_Music_Voice = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [15 Clarinet_Music_Voice measure 398 / measure 15]
         cs'!1
@@ -565,7 +574,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 399 / measure 16]
         fs'''!2.
@@ -578,7 +588,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 400 / measure 17]
         fs'''!2
@@ -599,7 +610,8 @@ o_Clarinet_Music_Voice = {
     fs'''!2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 402 / measure 19]
         es'''!2
@@ -613,7 +625,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 403 / measure 20]
         fs'''!2
@@ -634,7 +647,8 @@ o_Clarinet_Music_Voice = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 405 / measure 22]
         cs'!\breve.
@@ -643,7 +657,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 406 / measure 23]
         g'''2
@@ -656,7 +671,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 407 / measure 24]
         es'''!2
@@ -677,7 +693,8 @@ o_Clarinet_Music_Voice = {
     es'''!2.
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 409 / measure 26]
         fs'''!2
@@ -715,7 +732,8 @@ o_Clarinet_Music_Voice = {
     g'''2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 413 / measure 30]
         fs'''!2.
@@ -729,7 +747,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 414 / measure 31]
         g'''2.
@@ -750,7 +769,8 @@ o_Clarinet_Music_Voice = {
     g'''2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [15 Clarinet_Music_Voice measure 416 / measure 33]
         fs'''!2.
@@ -761,7 +781,8 @@ o_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [15 Clarinet_Music_Voice measure 417 / measure 34]
         fs'''!2

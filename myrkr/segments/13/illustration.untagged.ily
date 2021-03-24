@@ -101,7 +101,8 @@ m_Global_Rests = {
 m_Clarinet_Music_Voice = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 356 / measure 1]
         \clef "treble"
@@ -123,7 +124,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 357 / measure 2]
         cs!1
@@ -133,7 +135,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 358 / measure 3]
         cs!1
@@ -143,7 +146,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 359 / measure 4]
         cs!1
@@ -153,7 +157,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 360 / measure 5]
         cs!1
@@ -163,7 +168,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 361 / measure 6]
         cs!1
@@ -173,7 +179,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 362 / measure 7]
         cs!1
@@ -183,7 +190,8 @@ m_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [13 Clarinet_Music_Voice measure 363 / measure 8]
         cs!1

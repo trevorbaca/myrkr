@@ -319,7 +319,8 @@ j_Global_Rests = {
 j_Clarinet_Music_Voice = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 250 / measure 1]
         \clef "treble"
@@ -357,7 +358,8 @@ j_Clarinet_Music_Voice = {
     d'''4
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 255 / measure 6]
         e\breve.
@@ -408,7 +410,8 @@ j_Clarinet_Music_Voice = {
     - \tenuto
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 265 / measure 16]
         e\breve
@@ -432,7 +435,8 @@ j_Clarinet_Music_Voice = {
     - \tenuto
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 269 / measure 20]
         e\breve
@@ -440,7 +444,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Clarinet_Music_Voice measure 270 / measure 21]
         e1
@@ -448,7 +453,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 271 / measure 22]
         e\breve.
@@ -456,7 +462,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Clarinet_Music_Voice measure 272 / measure 23]
         e\breve
@@ -464,7 +471,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Clarinet_Music_Voice measure 273 / measure 24]
         ef!1
@@ -475,7 +483,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Clarinet_Music_Voice measure 274 / measure 25]
         ef!\breve.
@@ -483,7 +492,8 @@ j_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Clarinet_Music_Voice measure 275 / measure 26]
         ef!\breve

@@ -220,7 +220,8 @@ g_Clarinet_Music_Voice = {
     d'''2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [07 Clarinet_Music_Voice measure 162 / measure 2]
         cs'''!2
@@ -238,7 +239,8 @@ g_Clarinet_Music_Voice = {
     - \tweak color #(x11-color 'blue)
     \ff
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [07 Clarinet_Music_Voice measure 164 / measure 4]
         b''2
@@ -267,7 +269,8 @@ g_Clarinet_Music_Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [07 Clarinet_Music_Voice measure 167 / measure 7]
         gs'!2
@@ -280,7 +283,8 @@ g_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [07 Clarinet_Music_Voice measure 168 / measure 8]
         a''2
@@ -293,7 +297,8 @@ g_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [07 Clarinet_Music_Voice measure 169 / measure 9]
         a''2
@@ -328,7 +333,8 @@ g_Clarinet_Music_Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [07 Clarinet_Music_Voice measure 174 / measure 14]
         fs'!2.
