@@ -322,7 +322,8 @@ g_Clarinet_Music_Voice = {                                                     %
     d'''2                                                                      %! baca.music()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 162 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
         cs'''!2                                                                %! baca.music()
@@ -340,7 +341,8 @@ g_Clarinet_Music_Voice = {                                                     %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 164 / measure 4]                    %! baca.SegmentMaker._comment_measure_numbers()
         b''2                                                                   %! baca.music()
@@ -369,7 +371,8 @@ g_Clarinet_Music_Voice = {                                                     %
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 167 / measure 7]                    %! baca.SegmentMaker._comment_measure_numbers()
     %@% \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -384,7 +387,8 @@ g_Clarinet_Music_Voice = {                                                     %
 
     }                                                                          %! baca.music()
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 168 / measure 8]                    %! baca.SegmentMaker._comment_measure_numbers()
         a''2                                                                   %! baca.music()
@@ -397,7 +401,8 @@ g_Clarinet_Music_Voice = {                                                     %
 
     }                                                                          %! baca.music()
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 169 / measure 9]                    %! baca.SegmentMaker._comment_measure_numbers()
         a''2                                                                   %! baca.music()
@@ -437,7 +442,8 @@ g_Clarinet_Music_Voice = {                                                     %
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [07 Clarinet_Music_Voice measure 174 / measure 14]                   %! baca.SegmentMaker._comment_measure_numbers()
     %@% \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING

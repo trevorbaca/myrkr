@@ -37,7 +37,8 @@ a_Global_Rests = {
 a_Clarinet_Music_Voice = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [01 Clarinet_Music_Voice measure 1]
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }

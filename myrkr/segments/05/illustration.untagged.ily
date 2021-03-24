@@ -416,7 +416,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 113 / measure 3]
         b'8.
@@ -489,7 +490,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 119 / measure 9]
         cs''!8.
@@ -562,7 +564,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 125 / measure 15]
         d''8.
@@ -633,7 +636,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 131 / measure 21]
         ds''!8.
@@ -662,7 +666,8 @@ e_Clarinet_Music_Voice = {
     f'''2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [05 Clarinet_Music_Voice measure 134 / measure 24]
         e'''2.
@@ -676,7 +681,8 @@ e_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [05 Clarinet_Music_Voice measure 135 / measure 25]
         f'''2.
@@ -715,7 +721,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 138 / measure 28]
         ds''!8.
@@ -742,7 +749,8 @@ e_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [05 Clarinet_Music_Voice measure 140 / measure 30]
         ds''!8.
@@ -753,7 +761,8 @@ e_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11 {
+    \times 8/11
+    {
 
         % [05 Clarinet_Music_Voice measure 141 / measure 31]
         ds''!8.

@@ -247,7 +247,8 @@ i_Global_Rests = {
 i_Clarinet_Music_Voice = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Clarinet_Music_Voice measure 231 / measure 1]
         \clef "treble"
@@ -276,7 +277,8 @@ i_Clarinet_Music_Voice = {
     af''!2.
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Clarinet_Music_Voice measure 233 / measure 3]
         g''2
@@ -297,7 +299,8 @@ i_Clarinet_Music_Voice = {
     g''2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 Clarinet_Music_Voice measure 235 / measure 5]
         e\breve.
@@ -325,7 +328,8 @@ i_Clarinet_Music_Voice = {
     b''2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Clarinet_Music_Voice measure 238 / measure 8]
         c'''2.
@@ -339,7 +343,8 @@ i_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Clarinet_Music_Voice measure 239 / measure 9]
         e\breve
@@ -348,7 +353,8 @@ i_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 Clarinet_Music_Voice measure 240 / measure 10]
         d'''2.
@@ -371,7 +377,8 @@ i_Clarinet_Music_Voice = {
     d'''2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 Clarinet_Music_Voice measure 242 / measure 12]
         ef'''!2.
@@ -386,7 +393,8 @@ i_Clarinet_Music_Voice = {
     - \tweak color #(x11-color 'blue)
     \mp
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Clarinet_Music_Voice measure 244 / measure 14]
         fs'''!2
@@ -409,7 +417,8 @@ i_Clarinet_Music_Voice = {
     fs'''!2
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Clarinet_Music_Voice measure 246 / measure 16]
         g'''2

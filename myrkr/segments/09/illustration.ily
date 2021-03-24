@@ -320,7 +320,8 @@ i_Global_Rests = {                                                             %
 i_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 231 / measure 1]                    %! baca.SegmentMaker._comment_measure_numbers()
         \clef "treble"                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
@@ -350,7 +351,8 @@ i_Clarinet_Music_Voice = {                                                     %
     af''!2.                                                                    %! baca.music()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 233 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
         g''2                                                                   %! baca.music()
@@ -371,7 +373,8 @@ i_Clarinet_Music_Voice = {                                                     %
     g''2                                                                       %! baca.music()
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 235 / measure 5]                    %! baca.SegmentMaker._comment_measure_numbers()
         e\breve.                                                               %! baca.music()
@@ -399,7 +402,8 @@ i_Clarinet_Music_Voice = {                                                     %
     b''2                                                                       %! baca.music()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 238 / measure 8]                    %! baca.SegmentMaker._comment_measure_numbers()
         c'''2.                                                                 %! baca.music()
@@ -413,7 +417,8 @@ i_Clarinet_Music_Voice = {                                                     %
     }                                                                          %! baca.music()
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 239 / measure 9]                    %! baca.SegmentMaker._comment_measure_numbers()
         e\breve                                                                %! baca.music()
@@ -422,7 +427,8 @@ i_Clarinet_Music_Voice = {                                                     %
 
     }                                                                          %! baca.music()
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 240 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
         d'''2.                                                                 %! baca.music()
@@ -445,7 +451,8 @@ i_Clarinet_Music_Voice = {                                                     %
     d'''2                                                                      %! baca.music()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 242 / measure 12]                   %! baca.SegmentMaker._comment_measure_numbers()
         ef'''!2.                                                               %! baca.music()
@@ -460,7 +467,8 @@ i_Clarinet_Music_Voice = {                                                     %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 244 / measure 14]                   %! baca.SegmentMaker._comment_measure_numbers()
         fs'''!2                                                                %! baca.music()
@@ -483,7 +491,8 @@ i_Clarinet_Music_Voice = {                                                     %
     fs'''!2                                                                    %! baca.music()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
-    \times 4/7 {                                                               %! baca.music()
+    \times 4/7                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [09 Clarinet_Music_Voice measure 246 / measure 16]                   %! baca.SegmentMaker._comment_measure_numbers()
         g'''2                                                                  %! baca.music()

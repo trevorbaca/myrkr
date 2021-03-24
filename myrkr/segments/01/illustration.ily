@@ -46,7 +46,8 @@ a_Global_Rests = {                                                             %
 a_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Clarinet_Music_Voice measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" } %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()

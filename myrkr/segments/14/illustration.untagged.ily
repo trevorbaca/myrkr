@@ -286,7 +286,8 @@ n_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13 {
+    \times 8/13
+    {
 
         % [14 Clarinet_Music_Voice measure 365 / measure 2]
         ef'!8.
@@ -323,7 +324,8 @@ n_Clarinet_Music_Voice = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13 {
+    \times 8/13
+    {
 
         % [14 Clarinet_Music_Voice measure 368 / measure 5]
         cs'!16
@@ -364,7 +366,8 @@ n_Clarinet_Music_Voice = {
     cs'!8
     ]
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [14 Clarinet_Music_Voice measure 371 / measure 8]
         cs'!4
@@ -379,7 +382,8 @@ n_Clarinet_Music_Voice = {
     r8.
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [14 Clarinet_Music_Voice measure 373 / measure 10]
         cs'!\breve.
@@ -392,7 +396,8 @@ n_Clarinet_Music_Voice = {
     r8.
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [14 Clarinet_Music_Voice measure 375 / measure 12]
         d\breve
@@ -407,7 +412,8 @@ n_Clarinet_Music_Voice = {
     \ppppp
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [14 Clarinet_Music_Voice measure 377 / measure 14]
         d\breve
@@ -417,7 +423,8 @@ n_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [14 Clarinet_Music_Voice measure 378 / measure 15]
         d\breve.
@@ -432,7 +439,8 @@ n_Clarinet_Music_Voice = {
     \ppppp
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [14 Clarinet_Music_Voice measure 380 / measure 17]
         d\breve
@@ -442,7 +450,8 @@ n_Clarinet_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [14 Clarinet_Music_Voice measure 381 / measure 18]
         d\breve
@@ -455,7 +464,8 @@ n_Clarinet_Music_Voice = {
     r8.
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [14 Clarinet_Music_Voice measure 383 / measure 20]
         fs'!1
