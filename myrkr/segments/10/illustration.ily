@@ -424,6 +424,7 @@ j_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -542,13 +543,17 @@ j_Global_Rests = {                                                             %
     %! PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
 j_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 250 / measure 1]                    %! baca.SegmentMaker._comment_measure_numbers()
@@ -570,6 +575,7 @@ j_Clarinet_Music_Voice = {                                                     %
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)      %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
     % [10 Clarinet_Music_Voice measure 251 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
@@ -594,8 +600,11 @@ j_Clarinet_Music_Voice = {                                                     %
     %! baca.music()
     d'''4                                                                      %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 255 / measure 6]                    %! baca.SegmentMaker._comment_measure_numbers()
@@ -604,6 +613,7 @@ j_Clarinet_Music_Voice = {                                                     %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
     % [10 Clarinet_Music_Voice measure 256 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
@@ -664,8 +674,11 @@ j_Clarinet_Music_Voice = {                                                     %
     d'''4                                                                      %! baca.music()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 265 / measure 16]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -674,6 +687,7 @@ j_Clarinet_Music_Voice = {                                                     %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
     % [10 Clarinet_Music_Voice measure 266 / measure 17]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -696,8 +710,11 @@ j_Clarinet_Music_Voice = {                                                     %
     d'''4                                                                      %! baca.music()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 269 / measure 20]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -705,10 +722,14 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         e\breve                                                                %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 2/3                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 270 / measure 21]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -716,10 +737,14 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         e1                                                                     %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 271 / measure 22]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -727,10 +752,14 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         e\breve.                                                               %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 2/3                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 272 / measure 23]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -738,10 +767,14 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         e\breve                                                                %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 2/3                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 273 / measure 24]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -752,10 +785,14 @@ j_Clarinet_Music_Voice = {                                                     %
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         ^ \baca-overblow-markup                                                %! baca.markup():baca.IndicatorCommand._call()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 4/5                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 274 / measure 25]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -763,10 +800,14 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         ef!\breve.                                                             %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
+    %! baca.music()
     \tweak edge-height #'(0.7 . 0)                                             %! baca.music()
+    %! baca.music()
     \times 2/3                                                                 %! baca.music()
+    %! baca.music()
     {                                                                          %! baca.music()
 
         % [10 Clarinet_Music_Voice measure 275 / measure 26]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -774,6 +815,7 @@ j_Clarinet_Music_Voice = {                                                     %
         %! baca.music()
         ef!\breve                                                              %! baca.music()
 
+    %! baca.music()
     }                                                                          %! baca.music()
 
     % [10 Clarinet_Music_Voice measure 276 / measure 27]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -782,9 +824,15 @@ j_Clarinet_Music_Voice = {                                                     %
     ef!\breve.                                                                 %! baca.music()
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Clarinet_Music_Voice"                                %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [10 Clarinet_Music_Voice measure 277 / measure 28]               %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -798,9 +846,15 @@ j_Clarinet_Music_Voice = {                                                     %
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Clarinet_Rest_Voice"                                 %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [10 Clarinet_Rest_Voice measure 277 / measure 28]                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -816,19 +870,29 @@ j_Clarinet_Music_Voice = {                                                     %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! myrkr.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 j_Clarinet_Music_Staff = <<                                                    %! ide.Path.extern()
 
+    %! abjad.ScoreTemplate._make_global_context()
     \context GlobalRests = "Global_Rests"                                      %! abjad.ScoreTemplate._make_global_context()
+    %! abjad.ScoreTemplate._make_global_context()
     \j_Global_Rests                                                            %! ide.Path.extern()
 
+    %! myrkr.ScoreTemplate.__call__()
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"                       %! myrkr.ScoreTemplate.__call__()
+    %! myrkr.ScoreTemplate.__call__()
     \j_Clarinet_Music_Voice                                                    %! ide.Path.extern()
 
+                                                                               %! myrkr.ScoreTemplate.__call__()
 >>                                                                             %! ide.Path.extern()
