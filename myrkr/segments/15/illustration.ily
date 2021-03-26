@@ -1578,6 +1578,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         \set ClarinetMusicStaff.forceClef = ##t %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
         %! baca.music()
         fs'''!2 %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1588,6 +1590,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         %! baca.SegmentMaker._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \p %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        %! REAPPLIED_INSTRUMENT_ALERT
+        %! baca.SegmentMaker._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)" %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         %! baca.rhythm_annotation_spanner()
         %! RHYTHM_ANNOTATION_SPANNER
@@ -1599,6 +1603,11 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
         - \baca-text-spanner-left-text "baca.music()" %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+        %! baca.rhythm_annotation_spanner()
+        %! RHYTHM_ANNOTATION_SPANNER
+        %! baca.PiecewiseCommand._call(2)
+        %! AUTODETECT
+        %! SPANNER_START
         %! baca.rhythm_annotation_spanner()
         %! RHYTHM_ANNOTATION_SPANNER
         %! baca.PiecewiseCommand._call(2)
@@ -1688,6 +1697,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         \once \override TextScript.staff-padding = 5 %! baca.text_script_staff_padding():baca.OverrideCommand._call(1)
         %! baca.music()
         d\breve. %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1698,6 +1709,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         %! baca.SegmentMaker._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \ppppp %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        %! baca.markup()
+        %! baca.IndicatorCommand._call()
         ^ \myrkr-vowel-u-markup %! baca.markup():baca.IndicatorCommand._call()
 
     %! baca.music()
@@ -1712,6 +1725,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 388 / measure 5] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         g'''2 %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1790,6 +1805,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
 %@% \baca-repeat-pitch-class-coloring     %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     %! baca.music()
     fs'''!2 %! baca.music()
+    %! EXPLICIT_DYNAMIC_COLOR
+    %! _treat_persistent_wrapper(1)
     %! baca.dynamic()
     %! baca.IndicatorCommand._call()
     %! baca.SegmentMaker._set_status_tag()
@@ -1855,6 +1872,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         \once \override TextScript.staff-padding = 5 %! baca.text_script_staff_padding():baca.OverrideCommand._call(1)
         %! baca.music()
         d\breve %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1865,6 +1884,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         %! baca.SegmentMaker._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \ppppp %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        %! baca.markup()
+        %! baca.IndicatorCommand._call()
         ^ \myrkr-vowel-a-markup %! baca.markup():baca.IndicatorCommand._call()
 
     %! baca.music()
@@ -1879,6 +1900,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 395 / measure 12] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         es'''!2. %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1958,6 +1981,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 398 / measure 15] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         cs'!1 %! baca.music()
+        %! REDUNDANT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -1981,6 +2006,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 399 / measure 16] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         fs'''!2. %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -2124,6 +2151,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 405 / measure 22] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         cs'!\breve. %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -2147,6 +2176,8 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
         % [15 Clarinet_Music_Voice measure 406 / measure 23] %! baca.SegmentMaker._comment_measure_numbers()
         %! baca.music()
         g'''2 %! baca.music()
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca.SegmentMaker._set_status_tag()
@@ -2469,6 +2500,12 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
             %! HIDDEN
             %! NOTE
             b'1 * 1/4 %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
+            %! baca.SegmentMaker._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %! PHANTOM
+            %! baca.SegmentMaker._style_phantom_measures(5)
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"     %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
@@ -2506,6 +2543,12 @@ o_Clarinet_Music_Voice = { %! ide.Path.extern()
             %! REST_VOICE
             %! MULTIMEASURE_REST
             R1 * 1/4 %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
+            %! baca.SegmentMaker._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! PHANTOM
+            %! REST_VOICE
+            %! baca.SegmentMaker._style_phantom_measures(5)
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"     %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
