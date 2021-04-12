@@ -188,7 +188,7 @@ class Preprocessor:
 
     def _remove_duplicate_dynamics(self):
         bundles = self._command_bundles
-        pairs = list(abjad.sequence(bundles).nwise())
+        pairs = list(abjad.Sequence(bundles).nwise())
         for first_bundle, second_bundle in reversed(pairs):
             first_commands = first_bundle[1]
             first_dynamics = [_ for _ in first_commands if isinstance(_, abjad.Dynamic)]
