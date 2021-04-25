@@ -71,7 +71,7 @@ maker(
 
 maker(
     ("cl", [(7, 9), (11, 15), (17, 19)]),
-    baca.tenuto(selector=baca.pheads()),
+    baca.tenuto(selector=baca.selectors.pheads()),
 )
 
 maker(
