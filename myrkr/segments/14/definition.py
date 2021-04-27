@@ -68,7 +68,10 @@ preprocessor.make_commands(maker)
 maker(
     "Global_Skips",
     baca.metronome_mark("55"),
-    baca.metronome_mark("44", selector=baca.selectors.leaf(11)),
+    baca.metronome_mark(
+        "44",
+        selector=baca.selectors.leaf(11),
+    ),
 )
 
 # TODO: FIXME:
