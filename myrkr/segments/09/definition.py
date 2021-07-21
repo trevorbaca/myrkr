@@ -82,3 +82,6 @@ maker(
     ("cl", [(2, 4), (6, 8), (10, 12), (14, 16), (18, 19)]),
     baca.glissando(),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
