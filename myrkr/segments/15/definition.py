@@ -1,3 +1,5 @@
+import pathlib
+
 import abjad
 import baca
 
@@ -49,7 +51,7 @@ maker = baca.SegmentMaker(
     ],
     ignore_repeat_pitch_classes=True,
     final_segment=True,
-    segment_directory=baca.Path(__file__).resolve().parent,
+    segment_directory=pathlib.Path(__file__).resolve().parent,
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
 )
