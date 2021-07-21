@@ -93,3 +93,6 @@ maker(
     ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
     baca.tenuto(selector=baca.selectors.pheads()),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

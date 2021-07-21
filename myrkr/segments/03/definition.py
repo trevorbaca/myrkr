@@ -58,3 +58,6 @@ maker(
 )
 
 preprocessor.make_commands(maker)
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
