@@ -8,7 +8,16 @@
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
 %! baca.Path.extern()
-\include "illustration.ily"
+\include "music.ily"
+
+%! baca.SegmentMaker._make_lilypond_file()
+\header { composer = ##f poet = ##f title = ##f }
+%! baca.SegmentMaker._make_lilypond_file()
+\layout { indent = 0 }
+%! baca.SegmentMaker._make_lilypond_file()
+\paper { print-first-page-number = ##t }
+%! __make_segment_pdf__
+\paper { first-page-number = #11 }
 
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
@@ -41,7 +50,7 @@
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
                 %! baca.Path.extern()
-                \a_Global_Skips
+                \k_Global_Skips
 
             %! abjad.ScoreTemplate._make_global_context()
             >>
@@ -55,7 +64,7 @@
                 \context ClarinetMusicStaff = "Clarinet_Music_Staff"
                 %! myrkr.ScoreTemplate.__call__()
                 %! baca.Path.extern()
-                \a_Clarinet_Music_Staff
+                \k_Clarinet_Music_Staff
 
             %! myrkr.ScoreTemplate.__call__()
             }

@@ -1,7 +1,12 @@
 \version "2.23.1"
 \language "english"
 \include "../../stylesheet.ily"
-\include "illustration.ily"
+\include "music.ily"
+
+\header { composer = ##f poet = ##f title = ##f }
+\layout { indent = 0 }
+\paper { print-first-page-number = ##t }
+\paper { first-page-number = #6 }
 
 \score
 {
@@ -19,7 +24,7 @@
             <<
 
                 \context GlobalSkips = "Global_Skips"
-                \a_Global_Skips
+                \f_Global_Skips
 
             >>
 
@@ -27,7 +32,7 @@
             {
 
                 \context ClarinetMusicStaff = "Clarinet_Music_Staff"
-                \a_Clarinet_Music_Staff
+                \f_Clarinet_Music_Staff
 
             }
 
