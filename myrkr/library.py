@@ -707,9 +707,6 @@ white_rhythm = maker()
 class ScoreTemplate(baca.ScoreTemplate):
     """
     Score template.
-
-    >>> import myrkr
-
     """
 
     ### CLASS VARIABLES ###
@@ -779,7 +776,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ..  container:: example
 
-            >>> myrkr.ScoreTemplate().do_not_require_margin_markup
+            >>> import myrkr
+            >>> myrkr.library.ScoreTemplate().do_not_require_margin_markup
             True
 
         """
@@ -792,7 +790,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ..  container:: example
 
-            >>> score_template = myrkr.ScoreTemplate()
+            >>> score_template = myrkr.library.ScoreTemplate()
             >>> string = abjad.storage(score_template.voice_abbreviations)
             >>> print(string)
             abjad.OrderedDict(
