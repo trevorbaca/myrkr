@@ -3,7 +3,7 @@ import pathlib
 import abjad
 import baca
 
-import myrkr
+from myrkr import library as myrkr
 
 ###############################################################################
 ##################################### [N] #####################################
