@@ -19,9 +19,9 @@
     <<
 
         \context PageLayout = "Page_Layout"
-        {   %*% Page_Layout
+        {   %*% c_Page_Layout
 
-            % [Page_Layout measure 57]
+            % [03 Page_Layout measure 57]
             \baca-new-spacing-section #1 #28
             \autoPageBreaksOff
             \noBreak
@@ -29,104 +29,104 @@
             \pageBreak
             s1 * 13/16
 
-            % [Page_Layout measure 58]
+            % [03 Page_Layout measure 58]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 5/22
 
-            % [Page_Layout measure 59]
+            % [03 Page_Layout measure 59]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 1/2
 
-            % [Page_Layout measure 60]
+            % [03 Page_Layout measure 60]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 7/20
 
-            % [Page_Layout measure 61]
+            % [03 Page_Layout measure 61]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 3/11
 
-            % [Page_Layout measure 62]
+            % [03 Page_Layout measure 62]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 3/20
 
-            % [Page_Layout measure 63]
+            % [03 Page_Layout measure 63]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 11/16
 
-            % [Page_Layout measure 64]
+            % [03 Page_Layout measure 64]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 2/11
 
-            % [Page_Layout measure 65]
+            % [03 Page_Layout measure 65]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 1/2
 
-            % [Page_Layout measure 66]
+            % [03 Page_Layout measure 66]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 2/5
 
-            % [Page_Layout measure 67]
+            % [03 Page_Layout measure 67]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 5/7
 
-            % [Page_Layout measure 68]
+            % [03 Page_Layout measure 68]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 5/8
 
-            % [Page_Layout measure 69]
+            % [03 Page_Layout measure 69]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 1/4
 
-            % [Page_Layout measure 70]
+            % [03 Page_Layout measure 70]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 1/2
 
-            % [Page_Layout measure 71]
+            % [03 Page_Layout measure 71]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 3/5
 
-            % [Page_Layout measure 72]
+            % [03 Page_Layout measure 72]
             \baca-new-spacing-section #35 #672
             \noBreak
             s1 * 7/22
 
-            % [Page_Layout measure 73]
+            % [03 Page_Layout measure 73]
             \baca-new-spacing-section #1 #28
             \noBreak
             \baca-lbsd #80 #'(10)
             \break
             s1 * 1/4
 
-            % [Page_Layout measure 74]
+            % [03 Page_Layout measure 74]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 2/5
 
-            % [Page_Layout measure 75]
+            % [03 Page_Layout measure 75]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 5/4
 
-            % [Page_Layout measure 76]
+            % [03 Page_Layout measure 76]
             \baca-new-spacing-section #1 #28
             \noBreak
             s1 * 2/7
 
-            % [Page_Layout measure 77]
+            % [03 Page_Layout measure 77]
             \baca-new-spacing-section #1 #4
             \noBreak
             \baca-time-signature-transparent
@@ -134,7 +134,7 @@
             \once \override Score.BarLine.transparent = ##t
             \once \override Score.SpanBar.transparent = ##t
 
-        }   %*% Page_Layout
+        }   %*% c_Page_Layout
 
     >>
 
