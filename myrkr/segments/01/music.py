@@ -27,6 +27,7 @@ maker = baca.SegmentMaker(
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
+    score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
 )

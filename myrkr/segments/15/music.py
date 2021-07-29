@@ -49,6 +49,7 @@ maker = baca.SegmentMaker(
     ],
     ignore_repeat_pitch_classes=True,
     final_segment=True,
+    score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
 )
