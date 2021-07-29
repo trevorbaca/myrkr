@@ -48,6 +48,7 @@ maker = baca.SegmentMaker(
         baca.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
     ignore_repeat_pitch_classes=True,
+    score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
 )
