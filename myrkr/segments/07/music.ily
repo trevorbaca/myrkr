@@ -1,6 +1,6 @@
 g_Global_Skips = {
 
-    % [07 Global_Skips measure 161 / measure 1]
+    % [Global_Skips measure 161 / measure 1]
     \time 5/4
     \bar ""
     \baca-time-signature-color #'blue
@@ -11,7 +11,7 @@ g_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "55" #'blue
     \bacaStartTextSpanMM
 
-    % [07 Global_Skips measure 162 / measure 2]
+    % [Global_Skips measure 162 / measure 2]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -19,7 +19,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "2"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 163 / measure 3]
+    % [Global_Skips measure 163 / measure 3]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -27,7 +27,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "3"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 164 / measure 4]
+    % [Global_Skips measure 164 / measure 4]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -35,7 +35,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "4"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 165 / measure 5]
+    % [Global_Skips measure 165 / measure 5]
     \time 7/4
     \baca-time-signature-color #'blue
     s1 * 7/4
@@ -43,7 +43,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "5"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 166 / measure 6]
+    % [Global_Skips measure 166 / measure 6]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -57,7 +57,7 @@ g_Global_Skips = {
             rit. \hspace #0.5 }
     \bacaStartTextSpanMM
 
-    % [07 Global_Skips measure 167 / measure 7]
+    % [Global_Skips measure 167 / measure 7]
     #(ly:expect-warning "strange time signature found")
     \time 5/7
     \baca-time-signature-color #'blue
@@ -66,7 +66,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "7"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 168 / measure 8]
+    % [Global_Skips measure 168 / measure 8]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -74,13 +74,13 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "8"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 169 / measure 9]
+    % [Global_Skips measure 169 / measure 9]
     s1 * 1
     \bacaStopTextSpanLMN
     - \baca-start-lmn-left-only "9"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 170 / measure 10]
+    % [Global_Skips measure 170 / measure 10]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -92,7 +92,7 @@ g_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue
     \bacaStartTextSpanMM
 
-    % [07 Global_Skips measure 171 / measure 11]
+    % [Global_Skips measure 171 / measure 11]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -100,7 +100,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "11"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 172 / measure 12]
+    % [Global_Skips measure 172 / measure 12]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -108,7 +108,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "12"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 173 / measure 13]
+    % [Global_Skips measure 173 / measure 13]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -116,7 +116,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "13"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 174 / measure 14]
+    % [Global_Skips measure 174 / measure 14]
     #(ly:expect-warning "strange time signature found")
     \time 3/7
     \baca-time-signature-color #'blue
@@ -125,7 +125,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "14"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 175 / measure 15]
+    % [Global_Skips measure 175 / measure 15]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -133,7 +133,7 @@ g_Global_Skips = {
     - \baca-start-lmn-left-only "15"
     \bacaStartTextSpanLMN
 
-    % [07 Global_Skips measure 176 / measure 16]
+    % [Global_Skips measure 176 / measure 16]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -147,52 +147,52 @@ g_Global_Skips = {
 
 g_Global_Rests = {
 
-    % [07 Global_Rests measure 161 / measure 1]
+    % [Global_Rests measure 161 / measure 1]
     R1 * 5/4
 
-    % [07 Global_Rests measure 162 / measure 2]
+    % [Global_Rests measure 162 / measure 2]
     R1 * 1
 
-    % [07 Global_Rests measure 163 / measure 3]
+    % [Global_Rests measure 163 / measure 3]
     R1 * 3/4
 
-    % [07 Global_Rests measure 164 / measure 4]
+    % [Global_Rests measure 164 / measure 4]
     R1 * 1
 
-    % [07 Global_Rests measure 165 / measure 5]
+    % [Global_Rests measure 165 / measure 5]
     R1 * 7/4
 
-    % [07 Global_Rests measure 166 / measure 6]
+    % [Global_Rests measure 166 / measure 6]
     R1 * 1/2
 
-    % [07 Global_Rests measure 167 / measure 7]
+    % [Global_Rests measure 167 / measure 7]
     R1 * 5/7
 
-    % [07 Global_Rests measure 168 / measure 8]
+    % [Global_Rests measure 168 / measure 8]
     R1 * 1
 
-    % [07 Global_Rests measure 169 / measure 9]
+    % [Global_Rests measure 169 / measure 9]
     R1 * 1
 
-    % [07 Global_Rests measure 170 / measure 10]
+    % [Global_Rests measure 170 / measure 10]
     R1 * 3/4
 
-    % [07 Global_Rests measure 171 / measure 11]
+    % [Global_Rests measure 171 / measure 11]
     R1 * 1/2
 
-    % [07 Global_Rests measure 172 / measure 12]
+    % [Global_Rests measure 172 / measure 12]
     R1 * 5/4
 
-    % [07 Global_Rests measure 173 / measure 13]
+    % [Global_Rests measure 173 / measure 13]
     R1 * 1/2
 
-    % [07 Global_Rests measure 174 / measure 14]
+    % [Global_Rests measure 174 / measure 14]
     R1 * 3/7
 
-    % [07 Global_Rests measure 175 / measure 15]
+    % [Global_Rests measure 175 / measure 15]
     R1 * 1/2
 
-    % [07 Global_Rests measure 176 / measure 16]
+    % [Global_Rests measure 176 / measure 16]
     R1 * 1/4
 
 }
@@ -200,7 +200,7 @@ g_Global_Rests = {
 
 g_Clarinet_Music_Voice = {
 
-    % [07 Clarinet_Music_Voice measure 161 / measure 1]
+    % [Clarinet_Music_Voice measure 161 / measure 1]
     \clef "treble"
     \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)
     \set ClarinetMusicStaff.forceClef = ##t
@@ -223,7 +223,7 @@ g_Clarinet_Music_Voice = {
     \times 4/7
     {
 
-        % [07 Clarinet_Music_Voice measure 162 / measure 2]
+        % [Clarinet_Music_Voice measure 162 / measure 2]
         cs'''!2
         \glissando
 
@@ -234,7 +234,7 @@ g_Clarinet_Music_Voice = {
 
     }
 
-    % [07 Clarinet_Music_Voice measure 163 / measure 3]
+    % [Clarinet_Music_Voice measure 163 / measure 3]
     a'2.
     - \tweak color #(x11-color 'blue)
     \ff
@@ -242,7 +242,7 @@ g_Clarinet_Music_Voice = {
     \times 4/5
     {
 
-        % [07 Clarinet_Music_Voice measure 164 / measure 4]
+        % [Clarinet_Music_Voice measure 164 / measure 4]
         b''2
         - \tweak color #(x11-color 'blue)
         \mf
@@ -253,7 +253,7 @@ g_Clarinet_Music_Voice = {
 
     }
 
-    % [07 Clarinet_Music_Voice measure 165 / measure 5]
+    % [Clarinet_Music_Voice measure 165 / measure 5]
     b''2
     \glissando
 
@@ -262,7 +262,7 @@ g_Clarinet_Music_Voice = {
 
     b''2
 
-    % [07 Clarinet_Music_Voice measure 166 / measure 6]
+    % [Clarinet_Music_Voice measure 166 / measure 6]
     a'2
     - \tweak color #(x11-color 'blue)
     \ff
@@ -272,7 +272,7 @@ g_Clarinet_Music_Voice = {
     \times 4/7
     {
 
-        % [07 Clarinet_Music_Voice measure 167 / measure 7]
+        % [Clarinet_Music_Voice measure 167 / measure 7]
         gs'!2
         - \tweak color #(x11-color 'blue)
         \fff
@@ -286,7 +286,7 @@ g_Clarinet_Music_Voice = {
     \times 4/5
     {
 
-        % [07 Clarinet_Music_Voice measure 168 / measure 8]
+        % [Clarinet_Music_Voice measure 168 / measure 8]
         a''2
         - \tweak color #(x11-color 'blue)
         \f
@@ -300,7 +300,7 @@ g_Clarinet_Music_Voice = {
     \times 4/7
     {
 
-        % [07 Clarinet_Music_Voice measure 169 / measure 9]
+        % [Clarinet_Music_Voice measure 169 / measure 9]
         a''2
         \glissando
 
@@ -311,16 +311,16 @@ g_Clarinet_Music_Voice = {
 
     }
 
-    % [07 Clarinet_Music_Voice measure 170 / measure 10]
+    % [Clarinet_Music_Voice measure 170 / measure 10]
     gs'!2.
     - \tweak color #(x11-color 'blue)
     \fff
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    % [07 Clarinet_Music_Voice measure 171 / measure 11]
+    % [Clarinet_Music_Voice measure 171 / measure 11]
     gs'!2
 
-    % [07 Clarinet_Music_Voice measure 172 / measure 12]
+    % [Clarinet_Music_Voice measure 172 / measure 12]
     fs'!2
     - \tweak color #(x11-color 'DeepPink1)
     \fff
@@ -328,7 +328,7 @@ g_Clarinet_Music_Voice = {
 
     fs'!2.
 
-    % [07 Clarinet_Music_Voice measure 173 / measure 13]
+    % [Clarinet_Music_Voice measure 173 / measure 13]
     fs'!2
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
@@ -336,12 +336,12 @@ g_Clarinet_Music_Voice = {
     \times 4/7
     {
 
-        % [07 Clarinet_Music_Voice measure 174 / measure 14]
+        % [Clarinet_Music_Voice measure 174 / measure 14]
         fs'!2.
 
     }
 
-    % [07 Clarinet_Music_Voice measure 175 / measure 15]
+    % [Clarinet_Music_Voice measure 175 / measure 15]
     fs'!2
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     <> \bacaStopTextSpanRhythmAnnotation
@@ -351,7 +351,7 @@ g_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Music_Voice"
         {
 
-            % [07 Clarinet_Music_Voice measure 176 / measure 16]
+            % [Clarinet_Music_Voice measure 176 / measure 16]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -361,7 +361,7 @@ g_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Rest_Voice"
         {
 
-            % [07 Clarinet_Rest_Voice measure 176 / measure 16]
+            % [Clarinet_Rest_Voice measure 176 / measure 16]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
