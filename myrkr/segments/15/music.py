@@ -47,8 +47,10 @@ maker = baca.SegmentMaker(
     deactivate=[
         baca.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
-    ignore_repeat_pitch_classes=True,
     final_segment=True,
+    ignore_repeat_pitch_classes=True,
+    instruments=myrkr.instruments,
+    metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
     transpose_score=True,
