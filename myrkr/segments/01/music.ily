@@ -1,6 +1,6 @@
 a_Global_Skips = {
 
-    % [01 Global_Skips measure 1]
+    % [Global_Skips measure 1]
     #(ly:expect-warning "strange time signature found")
     \time 12/5
     \baca-time-signature-color #'blue
@@ -11,7 +11,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 2]
+    % [Global_Skips measure 2]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -25,10 +25,10 @@ a_Global_Skips = {
 
 a_Global_Rests = {
 
-    % [01 Global_Rests measure 1]
+    % [Global_Rests measure 1]
     R1 * 12/5
 
-    % [01 Global_Rests measure 2]
+    % [Global_Rests measure 2]
     R1 * 1/4
 
 }
@@ -40,7 +40,7 @@ a_Clarinet_Music_Voice = {
     \times 4/5
     {
 
-        % [01 Clarinet_Music_Voice measure 1]
+        % [Clarinet_Music_Voice measure 1]
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }
         \clef "treble"
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet)
@@ -66,7 +66,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Music_Voice"
         {
 
-            % [01 Clarinet_Music_Voice measure 2]
+            % [Clarinet_Music_Voice measure 2]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -76,7 +76,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Rest_Voice"
         {
 
-            % [01 Clarinet_Rest_Voice measure 2]
+            % [Clarinet_Rest_Voice measure 2]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
