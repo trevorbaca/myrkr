@@ -617,7 +617,7 @@ class RhythmMaker:
         return self._terms
 
 
-def color_fingerings(name: str, index: int = 0) -> baca.ColorFingeringCommand:
+def color_fingerings(name, index=0):
     """
     Makes color fingerings.
     """
