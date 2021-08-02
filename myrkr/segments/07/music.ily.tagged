@@ -1,5 +1,5 @@
-%! baca.Path.extern()
-g_Global_Skips = {
+%! baca.path.extern()
+segment.07.Global.Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Skips measure 161 / measure 1]
@@ -707,12 +707,12 @@ g_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Global_Rests = {
+%! baca.path.extern()
+segment.07.Global.Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Rests measure 161 / measure 1]
@@ -798,12 +798,12 @@ g_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Clarinet_Music_Voice = {
+%! baca.path.extern()
+segment.07.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 161 / measure 1]
@@ -1291,25 +1291,25 @@ g_Clarinet_Music_Voice = {
     >>
 
 %! myrkr.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Clarinet_Music_Staff = <<
+%! baca.path.extern()
+segment.07.Clarinet.Music.Staff = <<
 
     %! abjad.ScoreTemplate._make_global_context()
     \context GlobalRests = "Global_Rests"
     %! abjad.ScoreTemplate._make_global_context()
-    %! baca.Path.extern()
-    \g_Global_Rests
+    %! baca.path.extern()
+    { \segment.07.Global.Rests }
 
     %! myrkr.ScoreTemplate.__call__()
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"
     %! myrkr.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_Clarinet_Music_Voice
+    %! baca.path.extern()
+    { \segment.07.Clarinet.Music.Voice }
 
 %! myrkr.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 >>

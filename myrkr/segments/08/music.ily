@@ -1,4 +1,4 @@
-h_Global_Skips = {
+segment.08.Global.Skips = {
 
     % [Global_Skips measure 176 / measure 1]
     #(ly:expect-warning "strange time signature found")
@@ -430,7 +430,7 @@ h_Global_Skips = {
 }
 
 
-h_Global_Rests = {
+segment.08.Global.Rests = {
 
     % [Global_Rests measure 176 / measure 1]
     R1 * 8/5
@@ -603,7 +603,7 @@ h_Global_Rests = {
 }
 
 
-h_Clarinet_Music_Voice = {
+segment.08.Clarinet.Music.Voice = {
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
@@ -1118,12 +1118,12 @@ h_Clarinet_Music_Voice = {
 }
 
 
-h_Clarinet_Music_Staff = <<
+segment.08.Clarinet.Music.Staff = <<
 
     \context GlobalRests = "Global_Rests"
-    \h_Global_Rests
+    { \segment.08.Global.Rests }
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"
-    \h_Clarinet_Music_Voice
+    { \segment.08.Clarinet.Music.Voice }
 
 >>
