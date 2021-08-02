@@ -1,4 +1,4 @@
-g_Global_Skips = {
+segment.07.Global.Skips = {
 
     % [Global_Skips measure 161 / measure 1]
     \time 5/4
@@ -145,7 +145,7 @@ g_Global_Skips = {
 }
 
 
-g_Global_Rests = {
+segment.07.Global.Rests = {
 
     % [Global_Rests measure 161 / measure 1]
     R1 * 5/4
@@ -198,7 +198,7 @@ g_Global_Rests = {
 }
 
 
-g_Clarinet_Music_Voice = {
+segment.07.Clarinet.Music.Voice = {
 
     % [Clarinet_Music_Voice measure 161 / measure 1]
     \clef "treble"
@@ -376,12 +376,12 @@ g_Clarinet_Music_Voice = {
 }
 
 
-g_Clarinet_Music_Staff = <<
+segment.07.Clarinet.Music.Staff = <<
 
     \context GlobalRests = "Global_Rests"
-    \g_Global_Rests
+    { \segment.07.Global.Rests }
 
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"
-    \g_Clarinet_Music_Voice
+    { \segment.07.Clarinet.Music.Voice }
 
 >>
