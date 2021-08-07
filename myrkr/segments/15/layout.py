@@ -12,7 +12,6 @@ breaks = baca.breaks(
         baca.system(measure=27, y_offset=210, distances=distances),
         baca.system(measure=32, y_offset=246, distances=distances),
     ),
-    local_measure_numbers=True,
 )
 
 spacing = baca.scorewide_spacing(
