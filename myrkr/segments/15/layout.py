@@ -13,7 +13,7 @@ spacing = baca.make_layout(
         baca.system(measure=27, y_offset=210, distances=distances),
         baca.system(measure=32, y_offset=246, distances=distances),
     ),
-    fallback_duration=(1, 28),
+    spacing=(1, 28),
 )
 
 if __name__ == "__main__":
