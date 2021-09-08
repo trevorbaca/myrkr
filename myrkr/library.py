@@ -379,8 +379,6 @@ class RhythmMaker:
         tuplet_ratios = baca.Sequence(terms).partition_by_counts(
             counts=self.counts, cyclic=True, overhang=True
         )
-        # print(tuplet_ratios)
-        # print(list(sum(_) for _ in tuplet_ratios))
         tuplets = []
         for i, tuplet_ratio in enumerate(tuplet_ratios):
             weight = sum(abs(_) for _ in tuplet_ratio)
@@ -451,56 +449,6 @@ class RhythmMaker:
         rhythm = zip(selections, time_signatures)
         rhythm = list(rhythm)
         return rhythm
-
-    def __illustrate__(
-        self,
-        rhythm=None,
-        proportional_notation_duration=abjad.Duration(1, 16),
-        subtitle=None,
-        title=None,
-    ):
-        """
-        Illustrates rhythm-maker.
-
-        Returns LilyPond file.
-        """
-        proportional_notation_duration = abjad.Duration(proportional_notation_duration)
-        if rhythm is None:
-            rhythm = self()
-        tuplets, time_signatures = [], []
-        selections = []
-        for selection, time_signature in rhythm:
-            selections.append(selection)
-            time_signatures.append(time_signature)
-        lilypond_file = abjad.LilyPondFile.rhythm(selections, time_signatures)
-        first_leaves = []
-        for tuplet in tuplets:
-            first_leaf = tuplet[0]
-            first_leaves.append(first_leaf)
-        for i, first_leaf in enumerate(first_leaves):
-            markup = abjad.Markup(str(i)).small()
-            abjad.attach(markup, first_leaf)
-        score = lilypond_file[abjad.Score]
-        abjad.deprecated.add_final_bar_line(score)
-        self._tweak_length_1_tuplets(score)
-        abjad.override(score).text_script.staff_padding = 4
-        abjad.override(score).time_signature.style = "numbered"
-        abjad.override(score).tuplet_bracket.staff_padding = 3.5
-        pair = proportional_notation_duration.pair
-        moment = abjad.SchemeMoment(pair)
-        abjad.setting(score).proportional_notation_duration = moment
-        assert abjad.wf.wellformed(score)
-        lilypond_file.layout_block.indent = 0
-        if subtitle is not None:
-            subtitle = abjad.Markup(subtitle)
-            lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = abjad.Markup.null()
-        if title is not None:
-            title = abjad.Markup(title)
-            lilypond_file.header_block.title = abjad.Markup(title)
-        vector = abjad.SpacingVector(0, 20, 0, 0)
-        lilypond_file.paper_block.markup_system_spacing = vector
-        return lilypond_file
 
     ### PRIVATE METHODS ###
 
