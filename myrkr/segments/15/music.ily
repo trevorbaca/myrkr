@@ -2488,13 +2488,6 @@ segment.15.Clarinet.Music.Voice = {
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
             \once \override Score.RehearsalMark.self-alignment-X = #right
-            %! baca.SegmentMaker._color_not_yet_pitched()
-            %! NOT_YET_PITCHED_COLORING
-            %! HIDDEN
-            %! NOTE
-            %! baca.SegmentMaker._style_phantom_measures(5)
-            %! PHANTOM
-            \baca-not-yet-pitched-coloring
             %! baca.mark()
             %! baca.IndicatorCommand._call()
             %! baca.SegmentMaker._style_phantom_measures(5)
