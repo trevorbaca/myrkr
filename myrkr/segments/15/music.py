@@ -43,7 +43,7 @@ maker = baca.SegmentMaker(
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     deactivate=[
         baca.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
