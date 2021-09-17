@@ -1794,7 +1794,7 @@ segment.15.Clarinet.Music.Voice = {
         %! abjad.glissando(7)
         \glissando
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1805,7 +1805,7 @@ segment.15.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 8]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()

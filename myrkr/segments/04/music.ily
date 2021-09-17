@@ -1661,7 +1661,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 1]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -1736,27 +1736,27 @@ segment.04.Clarinet.Music.Voice = {
     %! REAPPLIED_CLEF_REDRAW_COLOR
     \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     d''8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     d''8
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     d''8.
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -1773,7 +1773,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 2]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1781,7 +1781,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1793,7 +1793,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 3]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -1813,27 +1813,27 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -1850,14 +1850,14 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 4]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         ds''!16
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1870,7 +1870,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 5]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -1878,21 +1878,21 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8.
     ]
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!4
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -1908,14 +1908,14 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 6]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         ds''!16
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1935,7 +1935,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 7]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1943,14 +1943,14 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         ds''!8
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1970,7 +1970,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 8]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -1978,7 +1978,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2017,7 +2017,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 10]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2037,14 +2037,14 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!16
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2052,14 +2052,14 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
     ]
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!4
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2074,7 +2074,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 11]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2082,7 +2082,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2140,7 +2140,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 14]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2159,21 +2159,21 @@ segment.04.Clarinet.Music.Voice = {
     \pp
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     ds''!8
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2190,7 +2190,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 15]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2198,7 +2198,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2218,7 +2218,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 16]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2238,14 +2238,14 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         es''!8
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2264,14 +2264,14 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 17]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         es''!8.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2300,7 +2300,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 19]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2320,27 +2320,27 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!16
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!8
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2356,7 +2356,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 20]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2364,7 +2364,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2404,7 +2404,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 22]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2423,21 +2423,21 @@ segment.04.Clarinet.Music.Voice = {
     \ppp
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!16
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2446,7 +2446,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 23]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2454,7 +2454,7 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2471,7 +2471,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 24]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2490,7 +2490,7 @@ segment.04.Clarinet.Music.Voice = {
         \ff
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2509,7 +2509,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 25]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2527,7 +2527,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 26]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2547,7 +2547,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2555,7 +2555,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ]
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2566,7 +2566,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 27]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2574,7 +2574,7 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2611,7 +2611,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 29]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2631,27 +2631,27 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!8.
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!16
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     es''!8.
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2665,14 +2665,14 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 30]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         es''!4
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2684,7 +2684,7 @@ segment.04.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 31]
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2704,21 +2704,21 @@ segment.04.Clarinet.Music.Voice = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     [
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     fs''!8
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
     fs''!16
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
-    %! baca.segmentmaker.color_repeat_pitch_classes()
+    %! baca.color_repeat_pitch_classes()
     %! REPEAT_PITCH_CLASS_COLORING
     %@% \baca-repeat-pitch-class-coloring
     %! baca.music()
@@ -2734,7 +2734,7 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 32]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2742,7 +2742,7 @@ segment.04.Clarinet.Music.Voice = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2760,21 +2760,21 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 33]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         fs''!16
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         fs''!8.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
@@ -2794,14 +2794,14 @@ segment.04.Clarinet.Music.Voice = {
 
         %! baca.SegmentMaker._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 34]
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
         fs''!16
         [
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         %@% \baca-repeat-pitch-class-coloring
         %! baca.music()
