@@ -26,7 +26,7 @@ maker = baca.SegmentMaker(
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
