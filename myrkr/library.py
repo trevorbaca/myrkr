@@ -500,7 +500,7 @@ class RhythmMaker:
 
     @staticmethod
     def _tweak_length_1_tuplets(score):
-        for tuplet in abjad.iterate(score).components(abjad.Tuplet):
+        for tuplet in abjad.iterate.components(score, abjad.Tuplet):
             if not len(tuplet) == 1:
                 continue
             note = tuplet[0]
