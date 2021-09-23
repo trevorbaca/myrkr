@@ -15,50 +15,39 @@ abjad.OrderedDict(
         ),
         (
             "persistent_indicators",
-            abjad.OrderedDict(
-                [
-                    (
-                        "Clarinet_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Clarinet_Music_Voice",
-                                manifest="instruments",
-                                value="BassClarinet",
-                            ),
-                            baca.Memento(
-                                context="Clarinet_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                        ],
+            {
+                "Clarinet_Music_Staff": [
+                    baca.Memento(
+                        context="Clarinet_Music_Voice",
+                        manifest="instruments",
+                        value="BassClarinet",
                     ),
-                    (
-                        "Clarinet_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Clarinet_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="pppp",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Clarinet_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="treble",
                     ),
-                    (
-                        "Score",
-                        [
-                            baca.Memento(
-                                context="Global_Skips",
-                                manifest="metronome_marks",
-                                value="110",
-                            ),
-                            baca.Memento(
-                                context="Global_Skips",
-                                prototype="abjad.TimeSignature",
-                                value="1/4",
-                            ),
-                        ],
+                ],
+                "Clarinet_Music_Voice": [
+                    baca.Memento(
+                        context="Clarinet_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="pppp",
                     ),
-                ]
-            ),
+                ],
+                "Score": [
+                    baca.Memento(
+                        context="Global_Skips",
+                        manifest="metronome_marks",
+                        value="110",
+                    ),
+                    baca.Memento(
+                        context="Global_Skips",
+                        prototype="abjad.TimeSignature",
+                        value="1/4",
+                    ),
+                ],
+            },
         ),
     ]
 )
