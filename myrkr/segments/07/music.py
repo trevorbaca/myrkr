@@ -36,6 +36,7 @@ preprocessor = myrkr.Preprocessor(
 # Emerald position 34 ...
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],

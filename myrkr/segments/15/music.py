@@ -40,6 +40,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 49 ...
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
