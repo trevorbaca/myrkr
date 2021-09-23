@@ -40,6 +40,7 @@ preprocessor = myrkr.Preprocessor(
 # Indigo position 128 ...
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],

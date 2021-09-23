@@ -54,6 +54,7 @@ preprocessor = myrkr.Preprocessor(
 )
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
