@@ -24,12 +24,10 @@ preprocessor = myrkr.Preprocessor(
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
     time_signatures=preprocessor.time_signatures,
-    transpose_score=True,
 )
 
 maker(
@@ -60,4 +58,6 @@ if __name__ == "__main__":
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        error_on_not_yet_pitched=True,
+        transpose_score=True,
     )
