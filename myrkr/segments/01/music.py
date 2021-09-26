@@ -22,7 +22,7 @@ preprocessor = myrkr.Preprocessor(
     },
 )
 
-maker = baca.SegmentMaker(
+maker = baca.CommandAccumulator(
     **baca.segments(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,

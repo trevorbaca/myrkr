@@ -47,7 +47,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 11 ...
 # Indigo position 118 ...
 
-maker = baca.SegmentMaker(
+maker = baca.CommandAccumulator(
     **baca.segments(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
