@@ -47,7 +47,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 11 ...
 # Indigo position 118 ...
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
@@ -55,14 +55,14 @@ maker = baca.CommandAccumulator(
     time_signatures=preprocessor.time_signatures,
 )
 
-maker(
+commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
 )
 
-preprocessor.make_commands(maker)
+preprocessor.make_commands(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         baca.Accelerando(),
@@ -74,7 +74,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", 4),
     baca.markup(
         r"\baca-overblow-markup",
@@ -82,19 +82,19 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", [(5, 9), (21, 26), (52, 55)]),
     baca.glissando(),
 )
 
-maker(
+commands(
     ("cl", [(27, 34), (41, 43), (48, 50)]),
     baca.tenuto(selector=baca.selectors.pheads()),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

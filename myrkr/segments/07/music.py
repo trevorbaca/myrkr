@@ -35,7 +35,7 @@ preprocessor = myrkr.Preprocessor(
 # Charcoal position 12 ...
 # Emerald position 34 ...
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
@@ -43,14 +43,14 @@ maker = baca.CommandAccumulator(
     time_signatures=preprocessor.time_signatures,
 )
 
-maker(
+commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
 )
 
-preprocessor.make_commands(maker)
+preprocessor.make_commands(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("55"),
     baca.metronome_mark(
@@ -63,14 +63,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", [(1, 2), (4, 5), (8, 9)]),
     baca.glissando(),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
