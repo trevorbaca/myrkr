@@ -31,7 +31,7 @@ preprocessor = myrkr.Preprocessor(
 # Cobalt position 36 ...
 
 commands = baca.CommandAccumulator(
-    **baca.segments(),
+    **baca.segment_accumulation_defaults(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
     score_template=myrkr.ScoreTemplate(),
@@ -61,7 +61,7 @@ commands(
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segments(runtime=True),
+        **baca.segment_interpretation_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
