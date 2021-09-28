@@ -43,8 +43,9 @@ commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.ScoreTemplate(),
+    score_template=myrkr.make_empty_score,
     time_signatures=preprocessor.time_signatures,
+    voice_abbreviations=myrkr.voice_abbreviations,
 )
 
 commands(
@@ -110,6 +111,9 @@ if __name__ == "__main__":
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        always_make_global_rests=True,
+        do_not_require_margin_markup=True,
+        global_rests_in_topmost_staff=True,
         deactivate=[
             baca.tags.REPEAT_PITCH_CLASS_COLORING,
         ],
