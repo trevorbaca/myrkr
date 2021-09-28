@@ -741,10 +741,10 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> score_template = myrkr.library.ScoreTemplate()
             >>> string = abjad.storage(score_template.voice_abbreviations)
             >>> print(string)
-            abjad.OrderedDict(
-                [
-                    ('cl', 'Clarinet_Music_Voice'),
-                    ]
+            dict(
+                {
+                    'cl': 'Clarinet_Music_Voice',
+                    }
                 )
 
         """
