@@ -2,9 +2,9 @@ import baca
 
 from myrkr import library as myrkr
 
-###############################################################################
-##################################### [C] #####################################
-###############################################################################
+#########################################################################################
+########################################### 04 ##########################################
+#########################################################################################
 
 cobalt_position = 1
 emerald_position = 21
@@ -51,13 +51,16 @@ preprocessor = myrkr.Preprocessor(
 # Emerald position 25 ...
 # Indigo position 80 ...
 
+score = myrkr.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.make_empty_score,
     time_signatures=preprocessor.time_signatures,
     voice_abbreviations=myrkr.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -81,5 +84,6 @@ if __name__ == "__main__":
             baca.tags.REPEAT_PITCH_CLASS_COLORING,
         ],
         error_on_not_yet_pitched=True,
+        score=score,
         transpose_score=True,
     )

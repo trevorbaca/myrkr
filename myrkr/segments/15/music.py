@@ -3,9 +3,9 @@ import baca
 
 from myrkr import library as myrkr
 
-###############################################################################
-##################################### [N] #####################################
-###############################################################################
+#########################################################################################
+########################################### 15 ##########################################
+#########################################################################################
 
 charcoal_position = 24
 cobalt_position = 45
@@ -39,13 +39,16 @@ preprocessor = myrkr.Preprocessor(
 # Charcoal position 54 ...
 # Cobalt position 49 ...
 
+score = myrkr.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=myrkr.instruments,
     metronome_marks=myrkr.metronome_marks,
-    score_template=myrkr.make_empty_score,
     time_signatures=preprocessor.time_signatures,
     voice_abbreviations=myrkr.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -119,5 +122,6 @@ if __name__ == "__main__":
         ],
         error_on_not_yet_pitched=True,
         final_segment=True,
+        score=score,
         transpose_score=True,
     )
