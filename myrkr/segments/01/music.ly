@@ -27,9 +27,9 @@
         %! baca._make_lilypond_file()
         }
 
-        %! myrkr.ScoreTemplate.__call__()
+        %! myrkr.make_empty_score()
         \context Score = "Score"
-        %! myrkr.ScoreTemplate.__call__()
+        %! myrkr.make_empty_score()
         <<
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -46,21 +46,21 @@
             %! abjad.ScoreTemplate._make_global_context()
             >>
 
-            %! myrkr.ScoreTemplate.__call__()
+            %! myrkr.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! myrkr.ScoreTemplate.__call__()
+            %! myrkr.make_empty_score()
             {
 
-                %! myrkr.ScoreTemplate.__call__()
+                %! myrkr.make_empty_score()
                 \context ClarinetMusicStaff = "Clarinet_Music_Staff"
-                %! myrkr.ScoreTemplate.__call__()
+                %! myrkr.make_empty_score()
                 %! baca.path.extern()
                 { \segment.01.Clarinet.Music.Staff }
 
-            %! myrkr.ScoreTemplate.__call__()
+            %! myrkr.make_empty_score()
             }
 
-        %! myrkr.ScoreTemplate.__call__()
+        %! myrkr.make_empty_score()
         >>
 
     %! baca._make_lilypond_file()

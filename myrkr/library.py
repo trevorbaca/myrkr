@@ -1,5 +1,6 @@
 import collections
 import copy
+import inspect
 import math
 
 import abjad
@@ -656,8 +657,7 @@ voice_abbreviations = {"cl": "Clarinet_Music_Voice"}
 
 
 def make_empty_score():
-    site = "myrkr.ScoreTemplate.__call__()"
-    tag = abjad.Tag(site)
+    tag = baca.site(inspect.currentframe())
     global_context = baca.score.make_global_context()
 
     # CLARINET

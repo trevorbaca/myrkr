@@ -3709,7 +3709,7 @@ segment.08.Clarinet.Music.Voice = {
     %! PHANTOM
     >>
 
-%! myrkr.ScoreTemplate.__call__()
+%! myrkr.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3723,12 +3723,12 @@ segment.08.Clarinet.Music.Staff = <<
     %! baca.path.extern()
     { \segment.08.Global.Rests }
 
-    %! myrkr.ScoreTemplate.__call__()
+    %! myrkr.make_empty_score()
     \context ClarinetMusicVoice = "Clarinet_Music_Voice"
-    %! myrkr.ScoreTemplate.__call__()
+    %! myrkr.make_empty_score()
     %! baca.path.extern()
     { \segment.08.Clarinet.Music.Voice }
 
-%! myrkr.ScoreTemplate.__call__()
+%! myrkr.make_empty_score()
 %! baca.path.extern()
 >>
