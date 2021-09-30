@@ -141,7 +141,7 @@ segment.01.Clarinet.Music.Voice = {
         %! -PARTS
         %! baca.IndicatorCommand._call()
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }
-        %! abjad.ScoreTemplate.attach_defaults(3)
+        %! baca._attach_default_indicators(3)
         %! baca._set_status_tag()
         %! DEFAULT_CLEF
         \clef "treble"
@@ -151,7 +151,7 @@ segment.01.Clarinet.Music.Voice = {
         %! baca.attach_color_literal(1)
         %! DEFAULT_CLEF_COLOR_CANCELLATION
         %@% \override ClarinetMusicStaff.Clef.color = ##f
-        %! abjad.ScoreTemplate.attach_defaults(3)
+        %! baca._attach_default_indicators(3)
         %! baca.treat_persistent_wrapper(2)
         %! baca._set_status_tag()
         %! DEFAULT_CLEF
