@@ -72,16 +72,16 @@ if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
         **baca.segment_interpretation_defaults(),
-        activate=[
-            baca.tags.LOCAL_MEASURE_NUMBER,
-        ],
+        activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_margin_markup=True,
-        global_rests_in_topmost_staff=True,
-        deactivate=[
-            baca.tags.REPEAT_PITCH_CLASS_COLORING,
-        ],
         error_on_not_yet_pitched=True,
+        global_rests_in_topmost_staff=True,
+        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
+            include_layout_ly=True,
+            includes=["../../stylesheet.ily"],
+        ),
         score=score,
         transpose_score=True,
     )
