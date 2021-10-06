@@ -56,7 +56,9 @@ commands(
 preprocessor.make_commands(commands)
 
 if __name__ == "__main__":
-    keywords = baca.interpret.make_keyword_dictionary(
+    metadata, persist, score, timing = baca.build.interpret_segment(
+        score,
+        commands,
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
@@ -64,12 +66,7 @@ if __name__ == "__main__":
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         error_on_not_yet_pitched=True,
         global_rests_in_topmost_staff=True,
-        score=score,
         transpose_score=True,
-    )
-    metadata, persist, score, timing = baca.build.interpret_segment(
-        commands,
-        **keywords,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
