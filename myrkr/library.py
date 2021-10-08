@@ -582,11 +582,11 @@ def color_fingerings(name, index=0):
 
 # instruments
 
-instruments = abjad.OrderedDict([("BassClarinet", abjad.BassClarinet())])
+instruments = dict([("BassClarinet", abjad.BassClarinet())])
 
 # metronome marks
 
-metronome_marks = abjad.OrderedDict(
+metronome_marks = dict(
     [
         ("44", abjad.MetronomeMark((1, 4), 44)),
         ("55", abjad.MetronomeMark((1, 4), 55)),
