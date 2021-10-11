@@ -71,11 +71,11 @@ class ColorMaker:
         lilypond_file = abjad.LilyPondFile.new(score)
         lilypond_file.global_staff_size = 12
         if subtitle is not None:
-            subtitle = abjad.Markup(subtitle)
+            subtitle = abjad.Markup(r"\markup {subtitle}", literal=True)
             lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = abjad.Markup.null()
+        lilypond_file.header_block.tagline = abjad.Markup(r"\markup \null", literal=True)
         if title is not None:
-            title = abjad.Markup(title)
+            title = abjad.Markup(r"\markup {title}", literal=True)
             lilypond_file.header_block.title = title
         lilypond_file.layout_block.indent = 0
         lilypond_file.paper_block.left_margin = 20
