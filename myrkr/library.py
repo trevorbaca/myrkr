@@ -73,7 +73,9 @@ class ColorMaker:
         if subtitle is not None:
             subtitle = abjad.Markup(r"\markup {subtitle}", literal=True)
             lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = abjad.Markup(r"\markup \null", literal=True)
+        lilypond_file.header_block.tagline = abjad.Markup(
+            r"\markup \null", literal=True
+        )
         if title is not None:
             title = abjad.Markup(r"\markup {title}", literal=True)
             lilypond_file.header_block.title = title
