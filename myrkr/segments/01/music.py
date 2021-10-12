@@ -48,10 +48,7 @@ commands(
 
 commands(
     ("cl", 1),
-    baca.markup(
-        r"\baca-overblow-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-overblow-markup"),
     baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )
 

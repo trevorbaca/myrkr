@@ -80,17 +80,11 @@ commands(
 commands(
     ("cl", [4, 11]),
     baca.new(
-        baca.markup(
-            r"\myrkr-vowel-u-markup",
-            literal=True,
-        ),
+        baca.markup(r"\myrkr-vowel-u-markup"),
         match=0,
     ),
     baca.new(
-        baca.markup(
-            r"\myrkr-vowel-a-markup",
-            literal=True,
-        ),
+        baca.markup(r"\myrkr-vowel-a-markup"),
         match=1,
     ),
     baca.text_script_staff_padding(5),

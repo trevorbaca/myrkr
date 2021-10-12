@@ -80,10 +80,7 @@ commands(
 
 commands(
     ("cl", 4),
-    baca.markup(
-        r"\baca-overblow-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-overblow-markup"),
 )
 
 commands(

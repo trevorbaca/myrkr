@@ -83,10 +83,7 @@ commands(
 
 commands(
     ("cl", 24),
-    baca.markup(
-        r"\baca-overblow-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-overblow-markup"),
 )
 
 if __name__ == "__main__":
