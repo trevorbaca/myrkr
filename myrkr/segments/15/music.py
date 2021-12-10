@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from myrkr import library as myrkr
+from myrkr import library
 
 #########################################################################################
 ########################################### 15 ##########################################
@@ -9,7 +9,7 @@ from myrkr import library as myrkr
 
 charcoal_position = 24
 cobalt_position = 45
-preprocessor = myrkr.Preprocessor(
+preprocessor = library.Preprocessor(
     indicators=(
         # 1-3
         ("charcoal", (3, charcoal_position), "E5 F5 E5 D#5", "p"),
@@ -27,27 +27,27 @@ preprocessor = myrkr.Preprocessor(
         ("charcoal", 12, "F5 E5 D#5 E5", "ppppp"),
     ),
     name_to_rhythm={
-        "charcoal": myrkr.charcoal_rhythm,
-        "cobalt": myrkr.cobalt_rhythm,
-        "emerald": myrkr.emerald_rhythm,
-        "graphite": myrkr.graphite_rhythm,
-        "indigo": myrkr.indigo_rhythm,
-        "ochre": myrkr.ochre_rhythm,
-        "white": myrkr.white_rhythm,
+        "charcoal": library.charcoal_rhythm,
+        "cobalt": library.cobalt_rhythm,
+        "emerald": library.emerald_rhythm,
+        "graphite": library.graphite_rhythm,
+        "indigo": library.indigo_rhythm,
+        "ochre": library.ochre_rhythm,
+        "white": library.white_rhythm,
     },
 )
 # Charcoal position 54 ...
 # Cobalt position 49 ...
 
-score = myrkr.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=myrkr.instruments,
-    metronome_marks=myrkr.metronome_marks,
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     time_signatures=preprocessor.time_signatures,
-    voice_abbreviations=myrkr.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
