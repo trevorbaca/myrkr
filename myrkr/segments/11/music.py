@@ -1,6 +1,6 @@
 import baca
 
-from myrkr import library as myrkr
+from myrkr import library
 
 #########################################################################################
 ########################################### 11 ##########################################
@@ -8,7 +8,7 @@ from myrkr import library as myrkr
 
 cobalt_position = 27
 indigo_position = 118
-preprocessor = myrkr.Preprocessor(
+preprocessor = library.Preprocessor(
     indicators=(
         # 1-3
         ("graphite", 9, "C3 Eb3 G3 Bb3 D4 F4 A4 C5 Eb5", "pppp"),
@@ -27,27 +27,27 @@ preprocessor = myrkr.Preprocessor(
         ("cobalt", 1, "C2", "mp"),
     ),
     name_to_rhythm={
-        "charcoal": myrkr.charcoal_rhythm,
-        "cobalt": myrkr.cobalt_rhythm,
-        "emerald": myrkr.emerald_rhythm,
-        "graphite": myrkr.graphite_rhythm,
-        "indigo": myrkr.indigo_rhythm,
-        "ochre": myrkr.ochre_rhythm,
-        "white": myrkr.white_rhythm,
+        "charcoal": library.charcoal_rhythm,
+        "cobalt": library.cobalt_rhythm,
+        "emerald": library.emerald_rhythm,
+        "graphite": library.graphite_rhythm,
+        "indigo": library.indigo_rhythm,
+        "ochre": library.ochre_rhythm,
+        "white": library.white_rhythm,
     },
 )
 # Cobalt position 29 ...
 # Indigo position 128 ...
 
-score = myrkr.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=myrkr.instruments,
-    metronome_marks=myrkr.metronome_marks,
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     time_signatures=preprocessor.time_signatures,
-    voice_abbreviations=myrkr.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
