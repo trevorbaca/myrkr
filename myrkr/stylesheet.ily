@@ -52,27 +52,6 @@
     top-margin = 0\mm
 }
 
-\header {
-    composer = \markup {
-        \override #'(font-name . "Palatino")
-        \fontsize #3 "Trevor Bača"
-    }
-    tagline = \markup { "" }
-    title = \markup \column {
-        \center-align {
-            \override #'(font-name . "Palatino")
-            \fontsize #14 {
-               \line { MYRKR }
-            }
-            " "
-            \override #'(font-name . "Palatino Italic")
-            \fontsize #3 {
-               " for Richard Haynes "
-            }
-        }
-    }
-}
-
 \layout {
     \accidentalStyle neo-modern
     indent = 5
