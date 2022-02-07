@@ -1,47 +1,60 @@
-dict(
-    {
-        "alive_during_segment": [
-            "Score",
-            "Global_Context",
-            "Global_Skips",
-            "Music_Context",
-            "Clarinet_Music_Staff",
-            "Global_Rests",
-            "Clarinet_Music_Voice",
-            "Clarinet_Rest_Voice",
+{
+    "alive_during_segment": [
+        "Score",
+        "Global_Context",
+        "Global_Skips",
+        "Music_Context",
+        "Clarinet_Music_Staff",
+        "Global_Rests",
+        "Clarinet_Music_Voice",
+        "Clarinet_Rest_Voice",
+    ],
+    "persistent_indicators": {
+        "Clarinet_Music_Staff": [
+            baca.Memento(
+                context="Clarinet_Music_Voice",
+                edition=None,
+                manifest="instruments",
+                prototype=None,
+                synthetic_offset=None,
+                value="BassClarinet",
+            ),
+            baca.Memento(
+                context="Clarinet_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            ),
         ],
-        "persistent_indicators": {
-            "Clarinet_Music_Staff": [
-                baca.Memento(
-                    context="Clarinet_Music_Voice",
-                    manifest="instruments",
-                    value="BassClarinet",
-                ),
-                baca.Memento(
-                    context="Clarinet_Music_Voice",
-                    prototype="abjad.Clef",
-                    value="treble",
-                ),
-            ],
-            "Clarinet_Music_Voice": [
-                baca.Memento(
-                    context="Clarinet_Music_Voice",
-                    prototype="abjad.Dynamic",
-                    value="fff",
-                ),
-            ],
-            "Score": [
-                baca.Memento(
-                    context="Global_Skips",
-                    manifest="metronome_marks",
-                    value="110",
-                ),
-                baca.Memento(
-                    context="Global_Skips",
-                    prototype="abjad.TimeSignature",
-                    value="3/1",
-                ),
-            ],
-        },
-    }
-)
+        "Clarinet_Music_Voice": [
+            baca.Memento(
+                context="Clarinet_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="fff",
+            )
+        ],
+        "Score": [
+            baca.Memento(
+                context="Global_Skips",
+                edition=None,
+                manifest="metronome_marks",
+                prototype=None,
+                synthetic_offset=None,
+                value="110",
+            ),
+            baca.Memento(
+                context="Global_Skips",
+                edition=None,
+                manifest=None,
+                prototype="abjad.TimeSignature",
+                synthetic_offset=None,
+                value="3/1",
+            ),
+        ],
+    },
+}
