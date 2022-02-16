@@ -38,7 +38,7 @@ class ColorMaker:
             notes.extend(notes_)
             last_note = notes_[-1]
             previous_pitch = last_note.written_pitch
-        selection = abjad.select(notes)
+        selection = abjad.Selection(notes)
         return selection
 
     def __illustrate__(self, start_pitch=None, title=None, subtitle=None):
@@ -112,7 +112,7 @@ class ColorMaker:
                 color_fingering = abjad.ColorFingering(number)
                 abjad.attach(color_fingering, note)
             notes.append(note)
-        notes = abjad.select(notes)
+        notes = abjad.Selection(notes)
         return notes
 
     @staticmethod
@@ -262,7 +262,7 @@ class Preprocessor:
         music = []
         for selection in selections:
             music.extend(selection)
-        self._music = abjad.select(music)
+        self._music = abjad.Selection(music)
         self._time_signatures = tuple(time_signatures)
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
@@ -444,7 +444,7 @@ class RhythmMaker:
                 assert isinstance(selection, abjad.Selection)
                 selections.append(selection)
             else:
-                selection = abjad.select(tuplet)
+                selection = abjad.Selection(tuplet)
                 selections.append(selection)
         assert len(selections) == len(time_signatures)
         rhythm = zip(selections, time_signatures)
@@ -482,7 +482,7 @@ class RhythmMaker:
 
     @staticmethod
     def _split_tuplet(tuplet):
-        logical_ties = abjad.select(tuplet).logical_ties()
+        logical_ties = abjad.Selection(tuplet).logical_ties()
         durations = [abjad.get.duration(_) for _ in logical_ties]
         left_count = int(math.floor(len(logical_ties) / 2.0))
         right_count = int(math.ceil(len(logical_ties) / 2.0))
