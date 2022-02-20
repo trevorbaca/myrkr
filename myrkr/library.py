@@ -441,7 +441,7 @@ class RhythmMaker:
         for tuplet in tuplets:
             if tuplet.trivial():
                 selection = abjad.mutate.eject_contents(tuplet)
-                assert isinstance(selection, abjad.Selection)
+                assert isinstance(selection, list)
                 selections.append(selection)
             else:
                 selection = abjad.Selection(tuplet)
