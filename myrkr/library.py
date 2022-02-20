@@ -376,8 +376,8 @@ class RhythmMaker:
         Returns list of selections.
         """
         lcm = abjad.math.least_common_multiple(len(self.terms), sum(self.counts))
-        terms = baca.Sequence(self.terms).repeat_to_length(lcm)
-        tuplet_ratios = baca.Sequence(terms).partition_by_counts(
+        terms = abjad.Sequence(self.terms).repeat_to_length(lcm)
+        tuplet_ratios = abjad.Sequence(terms).partition_by_counts(
             counts=self.counts, cyclic=True, overhang=True
         )
         tuplets = []
@@ -576,7 +576,7 @@ def color_fingerings(name, index=0):
         "C": abjad.CyclicTuple([0, 3, 1, 2, 4, 1, 0, 4, 2, 0, 3, 4, 0, 1, 2]),
     }
     color_fingerings = color_fingerings_[name]
-    color_fingerings__ = baca.Sequence(color_fingerings).rotate(n=index)
+    color_fingerings__ = abjad.Sequence(color_fingerings).rotate(n=index)
     return baca.color_fingerings(color_fingerings__)
 
 
