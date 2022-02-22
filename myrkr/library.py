@@ -376,7 +376,7 @@ class RhythmMaker:
         Returns list of selections.
         """
         lcm = abjad.math.least_common_multiple(len(self.terms), sum(self.counts))
-        terms = abjad.Sequence(self.terms).repeat_to_length(lcm)
+        terms = abjad.sequence.repeat_to_length(self.terms, lcm)
         tuplet_ratios = abjad.Sequence(terms).partition_by_counts(
             counts=self.counts, cyclic=True, overhang=True
         )
