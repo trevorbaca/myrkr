@@ -189,7 +189,7 @@ class Preprocessor:
 
     def _remove_duplicate_dynamics(self):
         bundles = self._command_bundles
-        pairs = list(abjad.Sequence(bundles).nwise())
+        pairs = list(abjad.sequence.nwise(bundles))
         for first_bundle, second_bundle in reversed(pairs):
             first_commands = first_bundle[1]
             first_dynamics = [_ for _ in first_commands if isinstance(_, abjad.Dynamic)]
@@ -576,7 +576,7 @@ def color_fingerings(name, index=0):
         "C": abjad.CyclicTuple([0, 3, 1, 2, 4, 1, 0, 4, 2, 0, 3, 4, 0, 1, 2]),
     }
     color_fingerings = color_fingerings_[name]
-    color_fingerings__ = abjad.Sequence(color_fingerings).rotate(n=index)
+    color_fingerings__ = abjad.sequence.rotate(color_fingerings, n=index)
     return baca.color_fingerings(color_fingerings__)
 
 
