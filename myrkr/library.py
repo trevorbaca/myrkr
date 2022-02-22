@@ -377,8 +377,8 @@ class RhythmMaker:
         """
         lcm = abjad.math.least_common_multiple(len(self.terms), sum(self.counts))
         terms = abjad.sequence.repeat_to_length(self.terms, lcm)
-        tuplet_ratios = abjad.Sequence(terms).partition_by_counts(
-            counts=self.counts, cyclic=True, overhang=True
+        tuplet_ratios = abjad.sequence.partition_by_counts(
+            terms, counts=self.counts, cyclic=True, overhang=True
         )
         tuplets = []
         for i, tuplet_ratio in enumerate(tuplet_ratios):
