@@ -53,7 +53,7 @@ class ColorMaker:
         maker = baca.SkipRhythmMaker()
         skips = maker(abjad.Duration(1), durations)
         label_voice = abjad.Voice(skips)
-        abjad.labe(label_voice).with_indices(direction=abjad.Down)
+        abjad.labe(label_voice).with_indices(direction=abjad.DOWN)
         abjad.override(label_voice).text_script.staff_padding = 4
         staff = abjad.Staff([note_voice, label_voice], simultaneous=True)
         score = abjad.Score([staff])
