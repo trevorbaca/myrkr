@@ -9,7 +9,7 @@
         " "
         \concat {
             \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
+            \if \should-print-page-number
             \fromproperty #'page:page-number-string
         }
         " "
@@ -20,7 +20,7 @@
         " "
         \concat {
             \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
+            \if \should-print-page-number
             \fromproperty #'page:page-number-string
         }
         " "
