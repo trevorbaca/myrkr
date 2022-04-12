@@ -64,7 +64,7 @@ commands(
     baca.metronome_mark(baca.Accelerando()),
     baca.metronome_mark(
         "110",
-        selector=baca.selectors.leaf(22),
+        selector=lambda _: abjad.select.leaf(_, 22),
     ),
     baca.bar_line(
         "|.",
