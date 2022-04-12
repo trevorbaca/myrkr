@@ -87,7 +87,7 @@ commands(
 
 commands(
     ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
-    baca.tenuto(selector=baca.selectors.pheads()),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
 )
 
 if __name__ == "__main__":
