@@ -78,7 +78,7 @@ commands(
 
 commands(
     ("cl", [(7, 9), (11, 15), (17, 19)]),
-    baca.tenuto(selector=baca.selectors.pheads()),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(

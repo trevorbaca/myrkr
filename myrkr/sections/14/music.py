@@ -77,7 +77,7 @@ commands(
 #    ("cl", (12, 18)),
 #    baca.text_spanner(
 #        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
-#        pieces=baca.selectors.cmgroups(),
+#        pieces=lambda _: baca.select.cmgroups(_, ),
 #        selector=lambda _: baca.select.rleaves(_),
 #    ),
 #    baca.text_spanner_staff_padding(5),
