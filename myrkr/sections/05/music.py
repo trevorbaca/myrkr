@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from myrkr import library
@@ -66,11 +67,11 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(6),
+        selector=lambda _: abjad.select.leaf(_, 6),
     ),
     baca.metronome_mark(
         "55",
-        selector=baca.selectors.leaf(18),
+        selector=lambda _: abjad.select.leaf(_, 18),
     ),
 )
 
