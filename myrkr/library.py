@@ -652,7 +652,7 @@ voice_abbreviations = {"cl": "Clarinet_Music_Voice"}
 
 
 def make_empty_score():
-    tag = baca.function_name(inspect.currentframe())
+    tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
 
     # CLARINET
