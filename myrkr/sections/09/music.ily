@@ -15,7 +15,7 @@ segment.09.Global.Skips = {
     %! +SEGMENT
     %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -60,7 +60,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 5/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -90,7 +90,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -147,7 +147,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -200,7 +200,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 8/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -230,7 +230,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -287,7 +287,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/3
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -340,7 +340,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -370,7 +370,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 7/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -400,7 +400,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -430,7 +430,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 3/1
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -483,7 +483,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -513,7 +513,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 5/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -543,7 +543,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -573,7 +573,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 3/16
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -603,7 +603,7 @@ segment.09.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 1/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -814,10 +814,10 @@ segment.09.Clarinet.Music.Voice = {
         %! baca._set_status_tag()
         %! REAPPLIED_CLEF
         \clef "treble"
-        %! baca.attach_color_literal(2)
+        %! baca._attach_color_literal(2)
         %! REAPPLIED_CLEF_COLOR
         \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)
-        %! baca.attach_color_literal(1)
+        %! baca._attach_color_literal(1)
         %! REAPPLIED_CLEF_COLOR_CANCELLATION
         %@% \override ClarinetMusicStaff.Clef.color = ##f
         %! baca._reapply_persistent_indicators(3)
@@ -842,7 +842,7 @@ segment.09.Clarinet.Music.Voice = {
         %! REAPPLIED_INSTRUMENT_ALERT
         %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
-        %! baca.attach_color_literal(2)
+        %! baca._attach_color_literal(2)
         %! REAPPLIED_CLEF_REDRAW_COLOR
         \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)
 
