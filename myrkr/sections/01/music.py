@@ -37,6 +37,9 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
+    baca.attach_first_segment_default_indicators(),
+    baca.markup(r"\baca-overblow-markup"),
+    baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )
 
 preprocessor.make_commands(commands)
@@ -44,12 +47,6 @@ preprocessor.make_commands(commands)
 commands(
     "Global_Skips",
     baca.metronome_mark("44"),
-)
-
-commands(
-    ("cl", 1),
-    baca.markup(r"\baca-overblow-markup"),
-    baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )
 
 if __name__ == "__main__":
