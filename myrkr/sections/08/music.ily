@@ -26,18 +26,15 @@ segment.08.Global.Skips = {
     s1 * 8/5
     % AFTER:
     % SPANNER_STARTS:
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    - \baca-start-lmn-left-only "1"
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    \bacaStartTextSpanLMN
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% - \baca-start-mn-left-only "176"
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% \bacaStartTextSpanMN
+      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    - \abjad-invisible-line
+      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'green4
+      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._reapply_persistent_indicators(2)
@@ -53,21 +50,24 @@ segment.08.Global.Skips = {
       %! baca._reapply_persistent_indicators(2)
       %! baca._set_status_tag()
     %@% \bacaStartTextSpanMM
-      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    - \abjad-invisible-line
-      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'green4
-      %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[4'53'']"
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStartTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    - \baca-start-lmn-left-only "1"
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    \bacaStartTextSpanLMN
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% - \baca-start-mn-left-only "176"
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% \bacaStartTextSpanMN
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -90,16 +90,22 @@ segment.08.Global.Skips = {
     s1 * 2/3
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'01'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "2"
@@ -112,12 +118,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'01'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -140,16 +140,22 @@ segment.08.Global.Skips = {
     s1 * 12/5
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'05'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "3"
@@ -162,12 +168,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'05'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -190,30 +190,18 @@ segment.08.Global.Skips = {
     s1 * 4/3
     % AFTER:
     % SPANNER_STOPS:
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    \bacaStopTextSpanLMN
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% \bacaStopTextSpanMN
-      %! baca._attach_metronome_marks(1)
-    \bacaStopTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    \bacaStopTextSpanLMN
+      %! baca._attach_metronome_marks(1)
+    \bacaStopTextSpanMM
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% \bacaStopTextSpanMN
     % SPANNER_STARTS:
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    - \baca-start-lmn-left-only "4"
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    \bacaStartTextSpanLMN
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% - \baca-start-mn-left-only "179"
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% \bacaStartTextSpanMN
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._set_status_tag()
@@ -241,6 +229,18 @@ segment.08.Global.Skips = {
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStartTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    - \baca-start-lmn-left-only "4"
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    \bacaStartTextSpanLMN
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% - \baca-start-mn-left-only "179"
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% \bacaStartTextSpanMN
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -259,16 +259,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'25'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "5"
@@ -281,12 +287,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'25'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -296,16 +296,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'27'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "6"
@@ -318,12 +324,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'27'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -333,16 +333,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'28'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "7"
@@ -355,12 +361,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'28'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -370,16 +370,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'29'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "8"
@@ -392,12 +398,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'29'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -407,16 +407,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'31'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "9"
@@ -429,12 +435,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'31'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -453,30 +453,27 @@ segment.08.Global.Skips = {
     s1 * 5/8
     % AFTER:
     % SPANNER_STOPS:
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    \bacaStopTextSpanLMN
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% \bacaStopTextSpanMN
-      %! baca._attach_metronome_marks(1)
-    \bacaStopTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    \bacaStopTextSpanLMN
+      %! baca._attach_metronome_marks(1)
+    \bacaStopTextSpanMM
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% \bacaStopTextSpanMN
     % SPANNER_STARTS:
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    - \baca-start-lmn-left-only "10"
-      %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    \bacaStartTextSpanLMN
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% - \baca-start-mn-left-only "185"
-      %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-    %@% \bacaStartTextSpanMN
+      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    - \abjad-invisible-line
+      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "110" #'blue
+      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+      %! baca._attach_metronome_marks(3)
+    \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._set_status_tag()
@@ -489,21 +486,24 @@ segment.08.Global.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._set_status_tag()
     %@% \bacaStartTextSpanMM
-      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    - \abjad-invisible-line
-      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "110" #'blue
-      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca._attach_metronome_marks(3)
-    \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[5'32'']"
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStartTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    - \baca-start-lmn-left-only "10"
+      %! LOCAL_MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    \bacaStartTextSpanLMN
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% - \baca-start-mn-left-only "185"
+      %! MEASURE_NUMBER
+      %! baca._label_measure_numbers()
+    %@% \bacaStartTextSpanMN
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -526,16 +526,22 @@ segment.08.Global.Skips = {
     s1 * 2/9
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'33'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "11"
@@ -548,12 +554,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'33'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -576,16 +576,22 @@ segment.08.Global.Skips = {
     s1 * 7/22
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'34'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "12"
@@ -598,12 +604,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'34'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -626,16 +626,22 @@ segment.08.Global.Skips = {
     s1 * 5/18
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'35'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "13"
@@ -648,12 +654,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'35'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -672,16 +672,22 @@ segment.08.Global.Skips = {
     s1 * 3/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'35'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "14"
@@ -694,12 +700,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'35'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -722,16 +722,22 @@ segment.08.Global.Skips = {
     s1 * 1/6
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'37'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "15"
@@ -744,12 +750,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'37'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -768,16 +768,22 @@ segment.08.Global.Skips = {
     s1 * 1/2
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'37'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "16"
@@ -790,12 +796,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'37'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -818,16 +818,22 @@ segment.08.Global.Skips = {
     s1 * 3/20
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'38'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "17"
@@ -840,12 +846,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'38'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -868,16 +868,22 @@ segment.08.Global.Skips = {
     s1 * 1/3
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'39'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "18"
@@ -890,12 +896,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'39'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -918,16 +918,22 @@ segment.08.Global.Skips = {
     s1 * 7/20
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'39'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "19"
@@ -940,12 +946,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'39'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -964,16 +964,22 @@ segment.08.Global.Skips = {
     s1 * 3/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'40'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "20"
@@ -986,12 +992,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'40'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1010,16 +1010,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'41'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "21"
@@ -1032,12 +1038,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'41'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1047,16 +1047,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'41'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "22"
@@ -1069,12 +1075,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'41'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1084,16 +1084,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'42'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "23"
@@ -1106,12 +1112,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'42'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1121,16 +1121,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'42'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "24"
@@ -1143,12 +1149,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'42'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1158,16 +1158,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'43'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "25"
@@ -1180,12 +1186,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'43'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1195,16 +1195,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'43'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "26"
@@ -1217,12 +1223,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'43'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1232,16 +1232,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'44'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "27"
@@ -1254,12 +1260,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'44'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1269,16 +1269,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'44'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "28"
@@ -1291,12 +1297,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'44'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1306,16 +1306,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'45'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "29"
@@ -1328,12 +1334,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'45'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1343,16 +1343,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'45'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "30"
@@ -1365,12 +1371,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'45'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1380,16 +1380,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'46'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "31"
@@ -1402,12 +1408,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'46'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1417,16 +1417,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'47'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "32"
@@ -1439,12 +1445,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'47'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1454,16 +1454,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'47'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "33"
@@ -1476,12 +1482,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'47'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1491,16 +1491,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'48'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "34"
@@ -1513,12 +1519,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'48'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1537,16 +1537,22 @@ segment.08.Global.Skips = {
     s1 * 5/8
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'48'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "35"
@@ -1559,12 +1565,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'48'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1587,16 +1587,22 @@ segment.08.Global.Skips = {
     s1 * 5/26
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'50'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "36"
@@ -1609,12 +1615,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'50'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1633,16 +1633,22 @@ segment.08.Global.Skips = {
     s1 * 9/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'50'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "37"
@@ -1655,12 +1661,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'50'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1679,16 +1679,22 @@ segment.08.Global.Skips = {
     s1 * 3/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'51'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "38"
@@ -1701,12 +1707,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'51'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1729,16 +1729,22 @@ segment.08.Global.Skips = {
     s1 * 4/13
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'52'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "39"
@@ -1751,12 +1757,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'52'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1775,16 +1775,22 @@ segment.08.Global.Skips = {
     s1 * 5/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'52'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "40"
@@ -1797,12 +1803,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'52'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1821,16 +1821,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'53'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "41"
@@ -1843,12 +1849,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'53'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1858,16 +1858,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'53'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "42"
@@ -1880,12 +1886,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'53'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1895,16 +1895,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'54'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "43"
@@ -1917,12 +1923,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'54'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1941,16 +1941,22 @@ segment.08.Global.Skips = {
     s1 * 11/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'55'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "44"
@@ -1963,12 +1969,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'55'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1987,16 +1987,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'56'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "45"
@@ -2009,12 +2015,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'56'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2033,16 +2033,22 @@ segment.08.Global.Skips = {
     s1 * 9/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'57'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "46"
@@ -2055,12 +2061,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'57'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2083,16 +2083,22 @@ segment.08.Global.Skips = {
     s1 * 5/18
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'58'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "47"
@@ -2105,12 +2111,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'58'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2129,16 +2129,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'58'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "48"
@@ -2151,12 +2157,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'58'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2166,16 +2166,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[5'59'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "49"
@@ -2188,12 +2194,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[5'59'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2203,16 +2203,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[6'00'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "50"
@@ -2225,12 +2231,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[6'00'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2249,16 +2249,22 @@ segment.08.Global.Skips = {
     s1 * 3/16
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[6'00'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "51"
@@ -2271,12 +2277,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[6'00'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2295,16 +2295,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[6'00'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "52"
@@ -2317,12 +2323,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[6'00'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2332,16 +2332,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[6'01'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "53"
@@ -2354,12 +2360,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[6'01'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2369,16 +2369,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-left-only "[6'02'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "54"
@@ -2391,12 +2397,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-left-only "[6'02'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2406,16 +2406,22 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
+    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
-    %@% \bacaStopTextSpanCT
-    % SPANNER_STARTS:
+    %@% - \baca-start-ct-both "[6'02'']" "[6'03'']"
+      %! CLOCK_TIME
+      %! baca._label_clock_time()
+    %@% \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
       %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "55"
@@ -2428,12 +2434,6 @@ segment.08.Global.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% - \baca-start-ct-both "[6'02'']" "[6'03'']"
-      %! CLOCK_TIME
-      %! baca._label_clock_time()
-    %@% \bacaStartTextSpanCT
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2451,26 +2451,26 @@ segment.08.Global.Skips = {
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
-      %! LOCAL_MEASURE_NUMBER
-      %! PHANTOM
-      %! baca._label_measure_numbers()
-      %! baca._style_phantom_measures(1)
-    \bacaStopTextSpanLMN
-      %! MEASURE_NUMBER
-      %! PHANTOM
-      %! baca._label_measure_numbers()
-      %! baca._style_phantom_measures(1)
-    %@% \bacaStopTextSpanMN
-      %! EOS_STOP_MM_SPANNER
-      %! PHANTOM
-      %! baca._attach_metronome_marks(4)
-      %! baca._style_phantom_measures(1)
-    \bacaStopTextSpanMM
       %! CLOCK_TIME
       %! PHANTOM
       %! baca._label_clock_time()
       %! baca._style_phantom_measures(1)
     %@% \bacaStopTextSpanCT
+      %! LOCAL_MEASURE_NUMBER
+      %! PHANTOM
+      %! baca._label_measure_numbers()
+      %! baca._style_phantom_measures(1)
+    \bacaStopTextSpanLMN
+      %! EOS_STOP_MM_SPANNER
+      %! PHANTOM
+      %! baca._attach_metronome_marks(4)
+      %! baca._style_phantom_measures(1)
+    \bacaStopTextSpanMM
+      %! MEASURE_NUMBER
+      %! PHANTOM
+      %! baca._label_measure_numbers()
+      %! baca._style_phantom_measures(1)
+    %@% \bacaStopTextSpanMN
     % COMMANDS:
       %! PHANTOM
       %! baca._style_phantom_measures(3)
@@ -3785,6 +3785,9 @@ segment.08.Clarinet.Music.Voice = {
     f''4
     % AFTER:
     % ARTICULATIONS:
+      %! baca.IndicatorCommand._call()
+      %! baca.tenuto()
+    - \tenuto
       %! REDUNDANT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REDUNDANT_DYNAMIC
@@ -3797,9 +3800,6 @@ segment.08.Clarinet.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \pppp
-      %! baca.IndicatorCommand._call()
-      %! baca.tenuto()
-    - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4556,6 +4556,9 @@ segment.08.Clarinet.Music.Voice = {
     f''4
     % AFTER:
     % ARTICULATIONS:
+      %! baca.IndicatorCommand._call()
+      %! baca.tenuto()
+    - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -4568,9 +4571,6 @@ segment.08.Clarinet.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \pppp
-      %! baca.IndicatorCommand._call()
-      %! baca.tenuto()
-    - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
