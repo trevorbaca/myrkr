@@ -3212,6 +3212,9 @@ segment.15.Clarinet.Music.Voice = {
               %! baca._style_phantom_measures(5)
               %! baca.rehearsal_mark_self_alignment_x()
             \once \override Score.RehearsalMark.self-alignment-X = #right
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! PHANTOM
