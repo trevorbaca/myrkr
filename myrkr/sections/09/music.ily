@@ -983,11 +983,11 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \tweak edge-height #'(0.7 . 0)
-      %! baca.music()
+      %! baca.make_music()
     \times 2/3
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1011,7 +1011,7 @@ segment.09.Clarinet.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set ClarinetMusicStaff.forceClef = ##t
-          %! baca.music()
+          %! baca.make_music()
         e1
         % AFTER:
         % ARTICULATIONS:
@@ -1040,14 +1040,14 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 2]
-      %! baca.music()
+      %! baca.make_music()
     g''2
     % AFTER:
     % ARTICULATIONS:
@@ -1070,7 +1070,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     af''!2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1081,16 +1081,16 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/7
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 3]
-          %! baca.music()
+          %! baca.make_music()
         g''2
         % AFTER:
         % SPANNER_STARTS:
@@ -1100,7 +1100,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         fs''!2
         % AFTER:
         % SPANNER_STARTS:
@@ -1110,7 +1110,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         g''2.
         % AFTER:
         % SPANNER_STARTS:
@@ -1121,14 +1121,14 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 4]
-      %! baca.music()
+      %! baca.make_music()
     af''!2
     % AFTER:
     % SPANNER_STARTS:
@@ -1138,24 +1138,24 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     g''2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \tweak edge-height #'(0.7 . 0)
-      %! baca.music()
+      %! baca.make_music()
     \times 4/5
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 5]
-          %! baca.music()
+          %! baca.make_music()
         e\breve.
         % AFTER:
         % ARTICULATIONS:
@@ -1175,14 +1175,14 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 6]
-      %! baca.music()
+      %! baca.make_music()
     b''2.
     % AFTER:
     % ARTICULATIONS:
@@ -1205,7 +1205,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     c'''2
     % AFTER:
     % SPANNER_STARTS:
@@ -1215,7 +1215,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     b''2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1227,7 +1227,7 @@ segment.09.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 7]
-      %! baca.music()
+      %! baca.make_music()
     as''!2
     % AFTER:
     % SPANNER_STARTS:
@@ -1237,7 +1237,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     b''2
     % AFTER:
     % SPANNER_STARTS:
@@ -1248,16 +1248,16 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/7
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 8]
-          %! baca.music()
+          %! baca.make_music()
         c'''2.
         % AFTER:
         % SPANNER_STARTS:
@@ -1267,7 +1267,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         b''2
         % AFTER:
         % SPANNER_STARTS:
@@ -1277,30 +1277,30 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         as''!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \tweak edge-height #'(0.7 . 0)
-      %! baca.music()
+      %! baca.make_music()
     \times 2/3
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 9]
-          %! baca.music()
+          %! baca.make_music()
         e\breve
         % AFTER:
         % ARTICULATIONS:
@@ -1320,22 +1320,22 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/5
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 10]
-          %! baca.music()
+          %! baca.make_music()
         d'''2.
         % AFTER:
         % ARTICULATIONS:
@@ -1358,7 +1358,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         ef'''!2
         % AFTER:
         % SPANNER_STARTS:
@@ -1369,14 +1369,14 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 11]
-      %! baca.music()
+      %! baca.make_music()
     d'''2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1386,7 +1386,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     cs'''!2
     % AFTER:
     % SPANNER_STARTS:
@@ -1396,7 +1396,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     d'''2
     % AFTER:
     % SPANNER_STARTS:
@@ -1407,16 +1407,16 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/5
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 12]
-          %! baca.music()
+          %! baca.make_music()
         ef'''!2.
         % AFTER:
         % SPANNER_STARTS:
@@ -1426,20 +1426,20 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         d'''2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 13]
-      %! baca.music()
+      %! baca.make_music()
     e\breve.
     % AFTER:
     % ARTICULATIONS:
@@ -1459,16 +1459,16 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/7
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 14]
-          %! baca.music()
+          %! baca.make_music()
         fs'''!2
         % AFTER:
         % ARTICULATIONS:
@@ -1491,7 +1491,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         g'''2.
         % AFTER:
         % SPANNER_STARTS:
@@ -1501,7 +1501,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         fs'''!2
         % AFTER:
         % SPANNER_STARTS:
@@ -1512,14 +1512,14 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 15]
-      %! baca.music()
+      %! baca.make_music()
     es'''!2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1529,7 +1529,7 @@ segment.09.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.music()
+      %! baca.make_music()
     fs'''!2
     % AFTER:
     % SPANNER_STARTS:
@@ -1540,16 +1540,16 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \times 4/7
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 16]
-          %! baca.music()
+          %! baca.make_music()
         g'''2
         % AFTER:
         % SPANNER_STARTS:
@@ -1559,7 +1559,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         fs'''!2.
         % AFTER:
         % SPANNER_STARTS:
@@ -1569,27 +1569,27 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.music()
+          %! baca.make_music()
         es'''!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 17]
-      %! baca.music()
+      %! baca.make_music()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 18]
-      %! baca.music()
+      %! baca.make_music()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1614,7 +1614,7 @@ segment.09.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 19]
-      %! baca.music()
+      %! baca.make_music()
     e''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
