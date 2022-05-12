@@ -69,7 +69,7 @@ commands = baca.CommandAccumulator(
 
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
-    baca.music(preprocessor.music),
+    baca.make_music(preprocessor.music),
     baca.reapply_persistent_indicators(),
 )
 

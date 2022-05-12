@@ -154,11 +154,11 @@ segment.01.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     \tweak edge-height #'(0.7 . 0)
-      %! baca.music()
+      %! baca.make_music()
     \times 4/5
-      %! baca.music()
+      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -188,7 +188,7 @@ segment.01.Clarinet.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set ClarinetMusicStaff.forceClef = ##t
-          %! baca.music()
+          %! baca.make_music()
         e\breve.
         % AFTER:
         % ARTICULATIONS:
@@ -220,7 +220,7 @@ segment.01.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.music()
+      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

@@ -36,7 +36,7 @@ commands = baca.CommandAccumulator(
 
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
-    baca.music(preprocessor.music),
+    baca.make_music(preprocessor.music),
     baca.attach_first_segment_default_indicators(),
     baca.markup(r"\baca-overblow-markup"),
     baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
