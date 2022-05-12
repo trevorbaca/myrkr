@@ -54,6 +54,15 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.music(preprocessor.music),
+)
+
+commands(
+    "cl",
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "cl",
     baca.reapply_persistent_indicators(),
 )
 
@@ -74,7 +83,7 @@ commands(
 )
 
 commands(
-    ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, -1)]),
+    ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
     baca.glissando(),
 )
 
@@ -92,7 +101,7 @@ commands(
 )
 
 commands(
-    ("cl", -1),
+    ("cl", 34),
     baca.chunk(
         baca.mark(r"\myrkr-colophon-markup"),
         baca.rehearsal_mark_down(),
@@ -109,8 +118,10 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         final_segment=True,
         global_rests_in_topmost_staff=True,
