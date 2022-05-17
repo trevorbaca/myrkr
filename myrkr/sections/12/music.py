@@ -87,14 +87,19 @@ commands(
     ),
 )
 
-commands(
-    ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-)
+# phantom & reapply
 
 commands(
     "cl",
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# cl
+
+commands(
+    ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
 )
 
 if __name__ == "__main__":

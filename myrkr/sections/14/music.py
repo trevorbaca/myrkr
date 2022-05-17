@@ -60,7 +60,6 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
-    baca.reapply_persistent_indicators(),
 )
 
 preprocessor.make_commands(commands)
@@ -74,6 +73,16 @@ commands(
     ),
 )
 
+# phantom & reapply
+
+commands(
+    "cl",
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# cl
+
 # TODO: FIXME:
 # commands(
 #    ("cl", (12, 18)),
@@ -84,11 +93,6 @@ commands(
 #    ),
 #    baca.text_spanner_staff_padding(5),
 # )
-
-commands(
-    "cl",
-    baca.append_phantom_measure(),
-)
 
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_section(

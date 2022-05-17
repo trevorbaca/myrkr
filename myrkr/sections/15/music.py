@@ -56,16 +56,6 @@ commands(
     baca.make_music(preprocessor.music),
 )
 
-commands(
-    "cl",
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
-
 preprocessor.make_commands(commands)
 
 commands(
@@ -81,6 +71,16 @@ commands(
         lambda _: baca.select.skip(_, -1),
     ),
 )
+
+# phantom & reapply
+
+commands(
+    "cl",
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# cl
 
 commands(
     ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
