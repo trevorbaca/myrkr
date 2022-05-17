@@ -37,7 +37,6 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
-    baca.attach_first_segment_default_indicators(),
     baca.markup(r"\baca-overblow-markup"),
     baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
 )
@@ -49,9 +48,12 @@ commands(
     baca.metronome_mark("44"),
 )
 
+# phantom & reapply
+
 commands(
     "cl",
     baca.append_phantom_measure(),
+    baca.attach_first_segment_default_indicators(),
 )
 
 if __name__ == "__main__":

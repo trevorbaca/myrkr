@@ -52,7 +52,6 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
-    baca.reapply_persistent_indicators(),
 )
 
 preprocessor.make_commands(commands)
@@ -73,6 +72,16 @@ commands(
     ),
 )
 
+# phantom & reapply
+
+commands(
+    "cl",
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# cl
+
 commands(
     ("cl", (2, 5)),
     baca.glissando(),
@@ -86,11 +95,6 @@ commands(
 commands(
     ("cl", 24),
     baca.markup(r"\baca-overblow-markup"),
-)
-
-commands(
-    "cl",
-    baca.append_phantom_measure(),
 )
 
 if __name__ == "__main__":
