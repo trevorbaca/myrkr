@@ -461,7 +461,7 @@ segment.13.Global_Rests = {
 
 
   %! baca.path.extern()
-segment.13.Clarinet_Music_Voice = {
+segment.13.Clarinet.Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -476,7 +476,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 1]
+        % [Clarinet.Music_Voice measure 1]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -547,7 +547,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 2]
+        % [Clarinet.Music_Voice measure 2]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -589,7 +589,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 3]
+        % [Clarinet.Music_Voice measure 3]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -631,7 +631,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 4]
+        % [Clarinet.Music_Voice measure 4]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -673,7 +673,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 5]
+        % [Clarinet.Music_Voice measure 5]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -715,7 +715,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 6]
+        % [Clarinet.Music_Voice measure 6]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -757,7 +757,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 7]
+        % [Clarinet.Music_Voice measure 7]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -799,7 +799,7 @@ segment.13.Clarinet_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet_Music_Voice measure 8]
+        % [Clarinet.Music_Voice measure 8]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -840,7 +840,7 @@ segment.13.Clarinet_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "Clarinet_Music_Voice"
+        \context Voice = "Clarinet.Music_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
         {
@@ -850,7 +850,7 @@ segment.13.Clarinet_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Clarinet_Music_Voice measure 9]
+            % [Clarinet.Music_Voice measure 9]
             % BEFORE:
             % COMMANDS:
               %! INVISIBLE_MUSIC_COMMAND
@@ -895,7 +895,7 @@ segment.13.Clarinet_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "Clarinet_Rest_Voice"
+        \context Voice = "Clarinet.Rest_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -905,7 +905,7 @@ segment.13.Clarinet_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Clarinet_Rest_Voice measure 9]
+            % [Clarinet.Rest_Voice measure 9]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -976,10 +976,10 @@ segment.13.Clarinet.Music.Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet_Music_Voice"
+    \context ClarinetMusicVoice = "Clarinet.Music_Voice"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
-    { \segment.13.Clarinet_Music_Voice }
+    { \segment.13.Clarinet.Music_Voice }
     % CLOSING:
     % COMMANDS:
 

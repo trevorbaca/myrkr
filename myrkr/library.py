@@ -315,7 +315,7 @@ class Preprocessor:
             assert len(pair) == 2, repr(pair)
             measure_indicator = pair[0]
             commands = pair[1]
-            maker(("Clarinet_Music_Voice", measure_indicator), *commands)
+            maker(("Clarinet.Music_Voice", measure_indicator), *commands)
 
 
 class RhythmMaker:
@@ -648,23 +648,22 @@ maker = RhythmMaker(terms=(-3, -1, -4, -2), counts=(1,), denominator=16)
 white_rhythm = maker()
 
 
-voice_abbreviations = {"cl": "Clarinet_Music_Voice"}
+voice_abbreviations = {"cl": "Clarinet.Music_Voice"}
 
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-
     # CLARINET
     clarinet_music_voice = abjad.Voice(
         lilypond_type="ClarinetMusicVoice",
-        name="Clarinet_Music_Voice",
+        name="Clarinet.Music_Voice",
         tag=tag,
     )
     clarinet_music_staff = abjad.Staff(
         [clarinet_music_voice],
         lilypond_type="ClarinetMusicStaff",
-        name="Clarinet_Music_Staff",
+        name="Clarinet.Music_Staff",
         tag=tag,
     )
     abjad.annotate(
@@ -673,7 +672,6 @@ def make_empty_score():
         instruments["BassClarinet"],
     )
     abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
-
     # SCORE
     music_context = abjad.Context(
         [clarinet_music_staff],
