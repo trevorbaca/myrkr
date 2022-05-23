@@ -75,7 +75,7 @@
 
                 % OPEN_BRACKETS:
                   %! myrkr.make_empty_score()
-                \context ClarinetMusicStaff = "Clarinet_Music_Staff"
+                \context ClarinetMusicStaff = "Clarinet.Music_Staff"
                   %! myrkr.make_empty_score()
                   %! baca.path.extern()
                 { \segment.01.Clarinet.Music.Staff }
