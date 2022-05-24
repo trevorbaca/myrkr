@@ -55,7 +55,7 @@
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \segment.01.Global_Skips }
+                { \section_number.01.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -78,7 +78,7 @@
                 \context ClarinetMusicStaff = "Clarinet.Music_Staff"
                   %! myrkr.make_empty_score()
                   %! baca.path.extern()
-                { \segment.01.Clarinet.Music.Staff }
+                { \section_number.01.Clarinet.Music_Staff }
                 % CLOSING:
                 % COMMANDS:
 
