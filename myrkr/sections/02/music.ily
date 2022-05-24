@@ -1,5 +1,5 @@
   %! baca.path.extern()
-segment.02.Global_Skips = {
+section_number.02.Global_Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2721,7 +2721,7 @@ segment.02.Global_Skips = {
 
 
   %! baca.path.extern()
-segment.02.Global_Rests = {
+section_number.02.Global_Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3127,7 +3127,7 @@ segment.02.Global_Rests = {
 
 
   %! baca.path.extern()
-segment.02.Clarinet.Music_Voice = {
+section_number.02.Clarinet.Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6066,7 +6066,7 @@ segment.02.Clarinet.Music_Voice = {
 
 
   %! baca.path.extern()
-segment.02.Clarinet.Music.Staff = <<
+section_number.02.Clarinet.Music_Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6075,7 +6075,7 @@ segment.02.Clarinet.Music.Staff = <<
     \context GlobalRests = "Global_Rests"
       %! baca.make_global_context()
       %! baca.path.extern()
-    { \segment.02.Global_Rests }
+    { \section_number.02.Global_Rests }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6084,7 +6084,7 @@ segment.02.Clarinet.Music.Staff = <<
     \context ClarinetMusicVoice = "Clarinet.Music_Voice"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
-    { \segment.02.Clarinet.Music_Voice }
+    { \section_number.02.Clarinet.Music_Voice }
     % CLOSING:
     % COMMANDS:
 
