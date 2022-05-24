@@ -1,4 +1,4 @@
 *.aux
 *.pdf
-**/_segments/*.ily
-**/_segments/*.ly
+**/_sections/*.ily
+**/_sections/*.ly
