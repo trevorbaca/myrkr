@@ -224,7 +224,7 @@ both slow and faster changes of contour in each voice. the even more important
 point is to render apparent the polyphonic transitions between multiple voices
 involved in changes of contour at the same time.
 
-score still divides into segments to speed interpretation.
+score still divides into sections to speed interpretation.
 
 breath marks. short rests can probably be used in place of breath marks
 everywhere in the piece. the sixteenth- or thirty-second- or
