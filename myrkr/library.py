@@ -12,24 +12,13 @@ class ColorMaker:
     Color maker.
     """
 
-    ### CLASS VARIABLES ###
-
     __slots__ = ("_indicators",)
-
-    ### INITIALIZER ###
 
     def __init__(self, indicators=None):
         self._validate_indicators(indicators)
         self._indicators = indicators
 
-    ### SPECIAL METHODS ###
-
     def __call__(self, start_pitch=None):
-        """
-        Calls color-maker.
-
-        Returns selection of notes.
-        """
         start_pitch = abjad.NamedPitch(start_pitch)
         notes = []
         previous_pitch = start_pitch
@@ -41,11 +30,6 @@ class ColorMaker:
         return notes
 
     def __illustrate__(self, start_pitch=None, title=None, subtitle=None):
-        """
-        Illustrates color-maker output.
-
-        Returns LilyPond file.
-        """
         notes = self(start_pitch=start_pitch)
         self._attach_clefs(notes)
         note_voice = abjad.Voice(notes)
@@ -86,8 +70,6 @@ class ColorMaker:
         lilypond_file.paper_block.top_markup_spacing = vector
         return lilypond_file
 
-    ### PRIVATE METHODS ###
-
     @classmethod
     def _attach_clefs(class_, notes):
         previous_clef = None
@@ -125,8 +107,6 @@ class ColorMaker:
             assert len(indicator) == 2, repr(indicator)
             assert isinstance(indicator[1], collections.abc.Sequence), repr(indicator)
 
-    ### PUBLIC PROPERTIES ###
-
     @property
     def indicators(self):
         """
@@ -140,8 +120,6 @@ class Preprocessor:
     Preprocessor.
     """
 
-    ### CLASS VARIABLES ###
-
     __slots__ = (
         "_indicators",
         "_music",
@@ -150,8 +128,6 @@ class Preprocessor:
         "_selections",
         "_time_signatures",
     )
-
-    ### INITIALIZER ###
 
     def __init__(self, indicators=(), name_to_rhythm=None):
         indicators = tuple(indicators)
@@ -164,8 +140,6 @@ class Preprocessor:
         self._time_signatures = ()
         self._validate_indicators()
         self._unpack_indicators()
-
-    ### PRIVATE METHODS ###
 
     def _make_command_pair(self, measure_indicator, pitch, dynamic, color_fingering):
         if pitch is None and dynamic is None and color_fingering is None:
@@ -270,8 +244,6 @@ class Preprocessor:
             assert 2 <= len(indicator) <= 5, repr(indicator)
             assert isinstance(indicator[0], str), repr(indicator)
 
-    ### PUBLIC PROPERTIES ###
-
     @property
     def indicators(self):
         """
@@ -307,8 +279,6 @@ class Preprocessor:
         """
         return self._time_signatures
 
-    ### PUBLIC METHODS ###
-
     def make_commands(self, maker):
         self._remove_duplicate_dynamics()
         for pair in self._command_pairs:
@@ -323,8 +293,6 @@ class RhythmMaker:
     Rhythm-maker.
     """
 
-    ### CLASS VARIABLES ###
-
     __slots__ = (
         "_counts",
         "_denominator",
@@ -333,8 +301,6 @@ class RhythmMaker:
         "_split_indicators",
         "_terms",
     )
-
-    ### INITIALIZER ###
 
     def __init__(
         self,
@@ -362,8 +328,6 @@ class RhythmMaker:
         self._split_indicators = split_indicators
         displace_split_tuplets = bool(displace_split_tuplets)
         self._displace_split_tuplets = displace_split_tuplets
-
-    ### SPECIAL METHODS ###
 
     def __call__(self):
         """
@@ -446,8 +410,6 @@ class RhythmMaker:
         rhythm = list(rhythm)
         return rhythm
 
-    ### PRIVATE METHODS ###
-
     def _make_time_signatures(self, tuplets):
         time_signatures = []
         denominators = range(self.denominator, 2 * self.denominator)
@@ -509,8 +471,6 @@ class RhythmMaker:
             command = abjad.LilyPondLiteral(string, "after")
             abjad.attach(command, tuplet)
             abjad.override(tuplet).tuplet_bracket.stencil = False
-
-    ### PUBLIC PROPERTIES ###
 
     @property
     def counts(self):
@@ -575,11 +535,7 @@ def color_fingerings(name, index=0):
     return baca.color_fingerings(color_fingerings__)
 
 
-# instruments
-
 instruments = dict([("BassClarinet", abjad.BassClarinet())])
-
-# metronome marks
 
 metronome_marks = dict(
     [
@@ -589,8 +545,6 @@ metronome_marks = dict(
         ("110", abjad.MetronomeMark((1, 4), 110)),
     ]
 )
-
-# rhythms
 
 maker = RhythmMaker(
     terms=(2, 2, 3, 2, 2, 3, 2, 3),
