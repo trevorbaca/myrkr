@@ -149,7 +149,7 @@ number.1.GlobalRests = {
 
 
   %! baca.path.extern()
-number.1.Clarinet.Music_Voice = {
+number.1.Clarinet.MusicVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -164,7 +164,7 @@ number.1.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 1]
+        % [Clarinet.MusicVoice measure 1]
         % BEFORE:
         % COMMANDS:
           %! -PARTS
@@ -235,7 +235,7 @@ number.1.Clarinet.Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "Clarinet.Music_Voice"
+        \context Voice = "Clarinet.MusicVoice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
         {
@@ -245,7 +245,7 @@ number.1.Clarinet.Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Clarinet.Music_Voice measure 2]
+            % [Clarinet.MusicVoice measure 2]
             % BEFORE:
             % COMMANDS:
               %! INVISIBLE_MUSIC_COMMAND
@@ -371,10 +371,10 @@ number.1.Clarinet.Music_Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet.Music_Voice"
+    \context ClarinetMusicVoice = "Clarinet.MusicVoice"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
-    { \number.1.Clarinet.Music_Voice }
+    { \number.1.Clarinet.MusicVoice }
     % CLOSING:
     % COMMANDS:
 
