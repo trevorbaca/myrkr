@@ -1517,7 +1517,7 @@ number.10.GlobalRests = {
 
 
   %! baca.path.extern()
-number.10.Clarinet.Music_Voice = {
+number.10.Clarinet.MusicVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1532,7 +1532,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 1]
+        % [Clarinet.MusicVoice measure 1]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -1590,7 +1590,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 2]
+    % [Clarinet.MusicVoice measure 2]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1620,7 +1620,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 3]
+    % [Clarinet.MusicVoice measure 3]
       %! baca.make_music()
     g''4
     % AFTER:
@@ -1632,7 +1632,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 4]
+    % [Clarinet.MusicVoice measure 4]
       %! baca.make_music()
     b''4
     % AFTER:
@@ -1644,7 +1644,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 5]
+    % [Clarinet.MusicVoice measure 5]
       %! baca.make_music()
     d'''4
     % ABSOLUTE_BEFORE:
@@ -1661,7 +1661,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 6]
+        % [Clarinet.MusicVoice measure 6]
           %! baca.make_music()
         e\breve.
         % AFTER:
@@ -1688,7 +1688,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 7]
+    % [Clarinet.MusicVoice measure 7]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1717,7 +1717,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 8]
+    % [Clarinet.MusicVoice measure 8]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1734,7 +1734,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 9]
+    % [Clarinet.MusicVoice measure 9]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1751,7 +1751,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 10]
+    % [Clarinet.MusicVoice measure 10]
       %! baca.make_music()
     e1
     % AFTER:
@@ -1772,7 +1772,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 11]
+    % [Clarinet.MusicVoice measure 11]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1801,7 +1801,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 12]
+    % [Clarinet.MusicVoice measure 12]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1818,7 +1818,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 13]
+    % [Clarinet.MusicVoice measure 13]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1835,7 +1835,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 14]
+    % [Clarinet.MusicVoice measure 14]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1852,7 +1852,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 15]
+    % [Clarinet.MusicVoice measure 15]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1879,7 +1879,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 16]
+        % [Clarinet.MusicVoice measure 16]
           %! baca.make_music()
         e\breve
         % AFTER:
@@ -1906,7 +1906,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 17]
+    % [Clarinet.MusicVoice measure 17]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1935,7 +1935,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 18]
+    % [Clarinet.MusicVoice measure 18]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1952,7 +1952,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 19]
+    % [Clarinet.MusicVoice measure 19]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1979,7 +1979,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 20]
+        % [Clarinet.MusicVoice measure 20]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2007,7 +2007,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 21]
+        % [Clarinet.MusicVoice measure 21]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2035,7 +2035,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 22]
+        % [Clarinet.MusicVoice measure 22]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2063,7 +2063,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 23]
+        % [Clarinet.MusicVoice measure 23]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2091,7 +2091,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 24]
+        % [Clarinet.MusicVoice measure 24]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2137,7 +2137,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 25]
+        % [Clarinet.MusicVoice measure 25]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2165,7 +2165,7 @@ number.10.Clarinet.Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.Music_Voice measure 26]
+        % [Clarinet.MusicVoice measure 26]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -2183,7 +2183,7 @@ number.10.Clarinet.Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.Music_Voice measure 27]
+    % [Clarinet.MusicVoice measure 27]
     % BEFORE:
     % COMMANDS:
       %! REPEAT_PITCH_CLASS_COLORING
@@ -2204,7 +2204,7 @@ number.10.Clarinet.Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "Clarinet.Music_Voice"
+        \context Voice = "Clarinet.MusicVoice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
         {
@@ -2214,7 +2214,7 @@ number.10.Clarinet.Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Clarinet.Music_Voice measure 28]
+            % [Clarinet.MusicVoice measure 28]
             % BEFORE:
             % COMMANDS:
               %! INVISIBLE_MUSIC_COMMAND
@@ -2340,10 +2340,10 @@ number.10.Clarinet.Music_Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet.Music_Voice"
+    \context ClarinetMusicVoice = "Clarinet.MusicVoice"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
-    { \number.10.Clarinet.Music_Voice }
+    { \number.10.Clarinet.MusicVoice }
     % CLOSING:
     % COMMANDS:
 

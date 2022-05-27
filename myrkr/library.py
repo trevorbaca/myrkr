@@ -285,7 +285,7 @@ class Preprocessor:
             assert len(pair) == 2, repr(pair)
             measure_indicator = pair[0]
             commands = pair[1]
-            maker(("Clarinet.Music_Voice", measure_indicator), *commands)
+            maker(("Clarinet.MusicVoice", measure_indicator), *commands)
 
 
 class RhythmMaker:
@@ -602,7 +602,7 @@ maker = RhythmMaker(terms=(-3, -1, -4, -2), counts=(1,), denominator=16)
 white_rhythm = maker()
 
 
-voice_abbreviations = {"cl": "Clarinet.Music_Voice"}
+voice_abbreviations = {"cl": "Clarinet.MusicVoice"}
 
 
 def make_empty_score():
@@ -611,7 +611,7 @@ def make_empty_score():
     # CLARINET
     clarinet_music_voice = abjad.Voice(
         lilypond_type="ClarinetMusicVoice",
-        name="Clarinet.Music_Voice",
+        name="Clarinet.MusicVoice",
         tag=tag,
     )
     clarinet_music_staff = abjad.Staff(
