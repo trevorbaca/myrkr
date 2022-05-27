@@ -56,7 +56,7 @@ commands(
 preprocessor.make_commands(commands)
 
 commands(
-    "Global_Skips",
+    "GlobalSkips",
     baca.metronome_mark(
         "110",
         selector=lambda _: abjad.select.leaf(_, 13),

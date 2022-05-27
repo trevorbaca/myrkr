@@ -44,7 +44,7 @@ commands(
 preprocessor.make_commands(commands)
 
 commands(
-    "Global_Skips",
+    "GlobalSkips",
     baca.metronome_mark("44"),
 )
 
