@@ -620,11 +620,6 @@ def make_empty_score():
         name="Clarinet.Music_Staff",
         tag=tag,
     )
-    abjad.annotate(
-        clarinet_music_staff,
-        "default_instrument",
-        instruments["BassClarinet"],
-    )
     abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
     # SCORE
     music_context = abjad.Context(
