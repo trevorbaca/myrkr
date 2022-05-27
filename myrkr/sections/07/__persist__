@@ -7,7 +7,7 @@
         "Clarinet.Music_Staff",
         "GlobalRests",
         "Clarinet.Music_Voice",
-        "Clarinet.Rest_Voice",
+        "Clarinet.RestVoice",
     ],
     "persistent_indicators": {
         "Clarinet.Music_Staff": [
