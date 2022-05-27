@@ -895,7 +895,7 @@ number.13.Clarinet.Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "Clarinet.Rest_Voice"
+        \context Voice = "Clarinet.RestVoice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -905,7 +905,7 @@ number.13.Clarinet.Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Clarinet.Rest_Voice measure 9]
+            % [Clarinet.RestVoice measure 9]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
