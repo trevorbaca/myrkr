@@ -53,9 +53,6 @@ commands(
 commands(
     "cl",
     baca.append_phantom_measure(),
-    baca.attach_first_section_default_indicators(
-        attach_instruments_by_hand=True,
-    ),
     baca.instrument(commands.instruments["BassClarinet"]),
     baca.clef("treble"),
 )
