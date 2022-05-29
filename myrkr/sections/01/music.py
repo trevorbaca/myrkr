@@ -57,6 +57,7 @@ commands(
         attach_instruments_by_hand=True,
     ),
     baca.instrument(commands.instruments["BassClarinet"]),
+    baca.clef("treble"),
 )
 
 if __name__ == "__main__":
