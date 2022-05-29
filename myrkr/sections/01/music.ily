@@ -167,25 +167,39 @@ number.1.Clarinet.MusicVoice = {
         % [Clarinet.MusicVoice measure 1]
         % BEFORE:
         % COMMANDS:
+          %! MEASURE_1
+          %! SHIFTED_CLEF
+          %! baca.OverrideCommand._call(1)
+          %! baca.clef_shift()
+          %! baca.clef_x_extent_false()
+    %%% \once \override ClarinetMusicStaff.Clef.X-extent = ##f
+          %! MEASURE_1
+          %! SHIFTED_CLEF
+          %! baca.OverrideCommand._call(1)
+          %! baca.clef_extra_offset()
+          %! baca.clef_shift()
+    %%% \once \override ClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0)
           %! -PARTS
           %! baca.IndicatorCommand._call()
           %! baca.start_markup()
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }
         % OPENING:
         % COMMANDS:
-          %! DEFAULT_CLEF
-          %! baca._attach_default_indicators(3)
+          %! EXPLICIT_CLEF
+          %! baca.IndicatorCommand._call()
           %! baca._set_status_tag()
+          %! baca.clef()
         \clef "treble"
-          %! DEFAULT_CLEF_COLOR
+          %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
-        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet)
-          %! DEFAULT_CLEF_COLOR_CANCELLATION
+        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'blue)
+          %! EXPLICIT_CLEF_COLOR_CANCELLATION
           %! baca._attach_color_literal(1)
         %@% \override ClarinetMusicStaff.Clef.color = ##f
-          %! DEFAULT_CLEF
-          %! baca._attach_default_indicators(3)
+          %! EXPLICIT_CLEF
+          %! baca.IndicatorCommand._call()
           %! baca._set_status_tag()
+          %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set ClarinetMusicStaff.forceClef = ##t
           %! baca.make_music()
@@ -213,9 +227,9 @@ number.1.Clarinet.MusicVoice = {
         ^ \baca-overblow-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
-          %! DEFAULT_CLEF_REDRAW_COLOR
+          %! EXPLICIT_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'violet)
+        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
         % CLOSING:
         % COMMANDS:
 
