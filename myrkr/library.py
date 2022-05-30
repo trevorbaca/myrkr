@@ -109,9 +109,6 @@ class ColorMaker:
 
     @property
     def indicators(self):
-        """
-        Gets indicators.
-        """
         return self._indicators
 
 
@@ -129,13 +126,12 @@ class Preprocessor:
         "_time_signatures",
     )
 
-    def __init__(self, indicators=(), name_to_rhythm=None):
+    def __init__(self, indicators=()):
         indicators = tuple(indicators)
-        name_to_rhythm = name_to_rhythm or {}
         self._indicators = indicators
         self._command_pairs = []
         self._music = []
-        self._name_to_rhythm = name_to_rhythm
+        self._name_to_rhythm = name_to_rhythm()
         self._selections = ()
         self._time_signatures = ()
         self._validate_indicators()
@@ -246,37 +242,22 @@ class Preprocessor:
 
     @property
     def indicators(self):
-        """
-        Gets indicators.
-        """
         return self._indicators
 
     @property
     def music(self):
-        """
-        Gets music.
-        """
         return self._music
 
     @property
     def name_to_rhythm(self):
-        """
-        Changes name to rhythm.
-        """
         return self._name_to_rhythm
 
     @property
     def selections(self):
-        """
-        Gets selections.
-        """
         return self._selections
 
     @property
     def time_signatures(self):
-        """
-        Gets time signatures.
-        """
         return self._time_signatures
 
     def make_commands(self, maker):
@@ -330,11 +311,6 @@ class RhythmMaker:
         self._displace_split_tuplets = displace_split_tuplets
 
     def __call__(self):
-        """
-        Calls rhythm-maker.
-
-        Returns list of selections.
-        """
         lcm = abjad.math.least_common_multiple(len(self.terms), sum(self.counts))
         terms = abjad.sequence.repeat_to_length(self.terms, lcm)
         tuplet_ratios = abjad.sequence.partition_by_counts(
@@ -474,16 +450,10 @@ class RhythmMaker:
 
     @property
     def counts(self):
-        """
-        Gets counts.
-        """
         return self._counts
 
     @property
     def denominator(self):
-        """
-        Gets denominator.
-        """
         return self._denominator
 
     @property
@@ -515,16 +485,10 @@ class RhythmMaker:
 
     @property
     def terms(self):
-        """
-        Gets terms.
-        """
         return self._terms
 
 
 def color_fingerings(name, index=0):
-    """
-    Makes color fingerings.
-    """
     color_fingerings_ = {
         "A": abjad.CyclicTuple([0, 1, 2, 1, 0, 1, 0, 2, 1, 2, 1, 0, 1, 2, 1]),
         "B": abjad.CyclicTuple([0, 2, 1, 3, 1, 2, 1, 3, 0, 1, 0, 2, 1, 2, 3]),
@@ -535,74 +499,77 @@ def color_fingerings(name, index=0):
     return baca.color_fingerings(color_fingerings__)
 
 
-instruments = dict([("BassClarinet", abjad.BassClarinet())])
-
-metronome_marks = dict(
-    [
-        ("44", abjad.MetronomeMark((1, 4), 44)),
-        ("55", abjad.MetronomeMark((1, 4), 55)),
-        ("88", abjad.MetronomeMark((1, 4), 88)),
-        ("110", abjad.MetronomeMark((1, 4), 110)),
-    ]
-)
-
-maker = RhythmMaker(
-    terms=(2, 2, 3, 2, 2, 3, 2, 3),
-    counts=(2, 3),
-    denominator=4,
-    prolation_indicators=(0, -1, -1),
-)
-charcoal_rhythm = maker()
-
-maker = RhythmMaker(
-    terms=(1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2),
-    counts=(2,),
-    denominator=1,
-    prolation_indicators=(-1,),
-    split_indicators=(1,),
-    displace_split_tuplets=True,
-)
-cobalt_rhythm = maker()
-
-maker = RhythmMaker(
-    terms=(2, 2, 3, 2, 2, 3, 2, 3),
-    counts=(2, 3),
-    denominator=4,
-    prolation_indicators=(0, -1, -1),
-    split_indicators=(1,),
-    displace_split_tuplets=True,
-)
-emerald_rhythm = maker()
-
-maker = RhythmMaker(terms=(1,), counts=(1,), denominator=4)
-graphite_rhythm = maker()
-
-maker = RhythmMaker(
-    # terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
-    terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 4, 3)),
-    counts=(5, 4),
-    denominator=16,
-    prolation_indicators=(0, 0, -1, -1),
-    split_indicators=(0, 0, 1, 1),
-    displace_split_tuplets=True,
-)
-indigo_rhythm = maker()
-
-maker = RhythmMaker(
-    terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
-    counts=(5, 4),
-    denominator=8,
-    prolation_indicators=(0, 0, -1, -1),
-    split_indicators=(0, 0, 1, 1),
-    displace_split_tuplets=True,
-)
-ochre_rhythm = maker()
-
-maker = RhythmMaker(terms=(-3, -1, -4, -2), counts=(1,), denominator=16)
-white_rhythm = maker()
+def instruments():
+    return dict([("BassClarinet", abjad.BassClarinet())])
 
 
-voice_abbreviations = {"cl": "Clarinet.MusicVoice"}
+def metronome_marks():
+    return dict(
+        [
+            ("44", abjad.MetronomeMark((1, 4), 44)),
+            ("55", abjad.MetronomeMark((1, 4), 55)),
+            ("88", abjad.MetronomeMark((1, 4), 88)),
+            ("110", abjad.MetronomeMark((1, 4), 110)),
+        ]
+    )
+
+
+def name_to_rhythm():
+    name_to_rhythm = {}
+    name_to_rhythm["charcoal"] = RhythmMaker(
+        terms=(2, 2, 3, 2, 2, 3, 2, 3),
+        counts=(2, 3),
+        denominator=4,
+        prolation_indicators=(0, -1, -1),
+    )()
+    name_to_rhythm["cobalt"] = RhythmMaker(
+        terms=(1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2),
+        counts=(2,),
+        denominator=1,
+        prolation_indicators=(-1,),
+        split_indicators=(1,),
+        displace_split_tuplets=True,
+    )()
+    name_to_rhythm["emerald"] = RhythmMaker(
+        terms=(2, 2, 3, 2, 2, 3, 2, 3),
+        counts=(2, 3),
+        denominator=4,
+        prolation_indicators=(0, -1, -1),
+        split_indicators=(1,),
+        displace_split_tuplets=True,
+    )()
+    name_to_rhythm["graphite"] = RhythmMaker(
+        terms=(1,),
+        counts=(1,),
+        denominator=4,
+    )()
+    name_to_rhythm["indigo"] = RhythmMaker(
+        # terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
+        terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 4, 3)),
+        counts=(5, 4),
+        denominator=16,
+        prolation_indicators=(0, 0, -1, -1),
+        split_indicators=(0, 0, 1, 1),
+        displace_split_tuplets=True,
+    )()
+    name_to_rhythm["ochr"] = RhythmMaker(
+        terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
+        counts=(5, 4),
+        denominator=8,
+        prolation_indicators=(0, 0, -1, -1),
+        split_indicators=(0, 0, 1, 1),
+        displace_split_tuplets=True,
+    )()
+    name_to_rhythm["white"] = RhythmMaker(
+        terms=(-3, -1, -4, -2),
+        counts=(1,),
+        denominator=16,
+    )()
+    return name_to_rhythm
+
+
+def voice_abbreviations():
+    return {"cl": "Clarinet.MusicVoice"}
 
 
 def make_empty_score():
