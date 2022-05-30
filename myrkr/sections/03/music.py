@@ -23,15 +23,6 @@ preprocessor = library.Preprocessor(
         ("emerald", 1, "A3", "f", ("A", 24)),
         ("emerald", 2, "Ab3", "f", ("A", 26)),
     ),
-    name_to_rhythm={
-        "charcoal": library.charcoal_rhythm,
-        "cobalt": library.cobalt_rhythm,
-        "emerald": library.emerald_rhythm,
-        "graphite": library.graphite_rhythm,
-        "indigo": library.indigo_rhythm,
-        "ochre": library.ochre_rhythm,
-        "white": library.white_rhythm,
-    },
 )
 # Emerald position: 21 ...
 # Indigo position: 54 ...
@@ -41,10 +32,10 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=preprocessor.time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
