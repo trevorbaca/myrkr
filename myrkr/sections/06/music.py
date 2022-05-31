@@ -54,11 +54,10 @@ commands(
     ),
 )
 
-# phantom & reapply
+# reapply
 
 commands(
     "cl",
-    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 

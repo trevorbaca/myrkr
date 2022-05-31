@@ -39,11 +39,10 @@ commands(
     baca.metronome_mark("44"),
 )
 
-# phantom & reapply
+# cl
 
 commands(
     "cl",
-    baca.append_phantom_measure(),
     baca.instrument(commands.instruments["BassClarinet"]),
     baca.clef("treble"),
 )
