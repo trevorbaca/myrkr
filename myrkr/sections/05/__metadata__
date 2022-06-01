@@ -3,6 +3,7 @@
     "duration": "0'55''",
     "final_measure_number": 141,
     "first_measure_number": 111,
+    "has_anchor_skip": True,
     "start_clock_time": "2'09''",
     "stop_clock_time": "3'04''",
     "time_signatures": [

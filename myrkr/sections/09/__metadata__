@@ -3,6 +3,7 @@
     "final_measure_number": 249,
     "first_measure_number": 231,
     "first_metronome_mark": False,
+    "has_anchor_skip": True,
     "start_clock_time": "6'03''",
     "time_signatures": [
         "2/3",
