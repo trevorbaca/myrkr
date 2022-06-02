@@ -170,7 +170,7 @@ number.1.Clarinet.MusicVoice = {
     %%% \once \override ClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0)
           %! -PARTS
           %! baca.IndicatorCommand._call()
-          %! baca.start_markup()
+          %! baca.instrument_name()
         \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }
         % OPENING:
         % COMMANDS:

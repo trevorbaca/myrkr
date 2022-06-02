@@ -28,7 +28,7 @@ commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
     baca.markup(r"\baca-overblow-markup"),
-    baca.start_markup(["BASS", "CLARINET"], hcenter_in=18),
+    baca.instrument_name(["BASS", "CLARINET"], hcenter_in=18),
 )
 
 preprocessor.make_commands(commands)
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        do_not_require_margin_markup=True,
+        do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
         global_rests_in_topmost_staff=True,
         transpose_score=True,
