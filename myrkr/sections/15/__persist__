@@ -6,12 +6,12 @@
         "MusicContext",
         "Clarinet.Music_Staff",
         "GlobalRests",
-        "Clarinet.MusicVoice",
+        "Clarinet.Music",
     ],
     "persistent_indicators": {
-        "Clarinet.MusicVoice": [
+        "Clarinet.Music": [
             baca.Memento(
-                context="Clarinet.MusicVoice",
+                context="Clarinet.Music",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -21,7 +21,7 @@
         ],
         "Clarinet.Music_Staff": [
             baca.Memento(
-                context="Clarinet.MusicVoice",
+                context="Clarinet.Music",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
@@ -29,7 +29,7 @@
                 value="BassClarinet",
             ),
             baca.Memento(
-                context="Clarinet.MusicVoice",
+                context="Clarinet.Music",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",

@@ -138,7 +138,7 @@ number.1.GlobalRests = {
 
 
   %! baca.path.extern()
-number.1.Clarinet.MusicVoice = {
+number.1.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -153,7 +153,7 @@ number.1.Clarinet.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.MusicVoice measure 1]
+        % [Clarinet.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! MEASURE_1
@@ -250,10 +250,10 @@ number.1.Clarinet.Music_Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet.MusicVoice"
+    \context ClarinetMusicVoice = "Clarinet.Music"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
-    { \number.1.Clarinet.MusicVoice }
+    { \number.1.Clarinet.Music }
     % CLOSING:
     % COMMANDS:
 
