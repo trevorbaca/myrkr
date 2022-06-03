@@ -55,7 +55,7 @@ commands(
 preprocessor.make_commands(commands)
 
 commands(
-    "GlobalSkips",
+    "Skips",
     baca.metronome_mark("55"),
     baca.metronome_mark(
         "44",
