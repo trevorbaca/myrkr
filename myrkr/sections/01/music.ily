@@ -210,7 +210,7 @@ number.1.Clarinet.Music = {
         % MARKUP:
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-explicit-indicator-markup "(“BassClarinet”)"
+        ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-overblow-markup

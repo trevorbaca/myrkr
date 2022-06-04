@@ -510,7 +510,7 @@ number.13.Clarinet.Music = {
         ^ \baca-overblow-markup
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+        ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
