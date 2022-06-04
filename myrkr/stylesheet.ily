@@ -226,6 +226,12 @@
 
 %%% MARKUP
 
+myrkr-bass-clarinet-markup = \markup
+  \column {
+  \hcenter-in #18 BASS 
+  \hcenter-in #18 CLARINET
+  }
+
 myrkr-colophon-markup = \markup
   \override #'(font-name . "Palatino")
   \with-color #black

@@ -171,7 +171,7 @@ number.1.Clarinet.Music = {
           %! -PARTS
           %! baca.IndicatorCommand._call()
           %! baca.instrument_name()
-        \set Staff.instrumentName = \markup \column { \hcenter-in #18 "BASS" \hcenter-in #18 "CLARINET" }
+        \set Staff.instrumentName = \myrkr-bass-clarinet-markup
         % OPENING:
         % COMMANDS:
           %! EXPLICIT_CLEF
