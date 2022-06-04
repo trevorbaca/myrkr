@@ -27,8 +27,8 @@ commands = baca.CommandAccumulator(
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
+    baca.instrument_name(r"\myrkr-bass-clarinet-markup"),
     baca.markup(r"\baca-overblow-markup"),
-    baca.instrument_name(["BASS", "CLARINET"], hcenter_in=18),
 )
 
 preprocessor.make_commands(commands)
