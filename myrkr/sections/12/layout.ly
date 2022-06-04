@@ -100,7 +100,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 1/1
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -120,7 +120,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 8/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -260,7 +260,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 3/11
+            s1 * 6/22
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -320,7 +320,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 2/11
+            s1 * 4/22
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -366,7 +366,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 5/8
+            s1 * 10/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -386,7 +386,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/4
+            s1 * 4/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -486,7 +486,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/4
+            s1 * 4/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -626,7 +626,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 2/11
+            s1 * 4/22
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -672,7 +672,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 5/8
+            s1 * 10/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -692,7 +692,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 2/9
+            s1 * 4/18
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -752,7 +752,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 3/4
+            s1 * 12/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -772,7 +772,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/6
+            s1 * 3/18
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -792,7 +792,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 8/16
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -852,7 +852,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/3
+            s1 * 6/18
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -952,7 +952,7 @@
               %! ANCHOR_SKIP
               %! baca._comment_measure_numbers()
               %! baca._style_anchor_skip(1)
-            % [PageLayout measure 46]
+            % [anchor skip]
               %! ANCHOR_SKIP
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)

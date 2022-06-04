@@ -410,7 +410,7 @@ number.10.Skips = {
       %! baca._set_status_tag()
     \time 1/1
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 1/1
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1216,7 +1216,7 @@ number.10.Skips = {
       %! baca._set_status_tag()
     \time 3/1
       %! baca._make_global_skips(1)
-    s1 * 3
+    s1 * 3/1
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1253,7 +1253,7 @@ number.10.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 28]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
@@ -1376,7 +1376,7 @@ number.10.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 10]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1495,7 +1495,7 @@ number.10.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 27]
       %! baca._make_global_rests(1)
-    R1 * 3
+    R1 * 3/1
     % CLOSING:
     % COMMANDS:
 
