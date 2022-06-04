@@ -1899,7 +1899,7 @@ number.15.Clarinet.Music = {
         % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+        ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
         % SPANNER_STARTS:
           %! abjad.glissando(7)
           %! baca.glissando()

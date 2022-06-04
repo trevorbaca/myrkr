@@ -1834,7 +1834,7 @@ number.5.Clarinet.Music = {
     % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+    ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
     % ABSOLUTE_AFTER:
     % COMMANDS:

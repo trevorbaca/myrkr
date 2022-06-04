@@ -1198,7 +1198,7 @@ number.6.Clarinet.Music = {
         % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+        ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
         % START_BEAM:
         [
         % ABSOLUTE_AFTER:
