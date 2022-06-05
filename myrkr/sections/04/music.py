@@ -53,6 +53,15 @@ commands = baca.CommandAccumulator(
     voice_names=voice_names,
 )
 
+baca.interpret.set_up_score(
+    score,
+    commands.manifests(),
+    commands.time_signatures,
+    append_anchor_skip=True,
+    always_make_global_rests=True,
+    attach_nonfirst_empty_start_bar=True,
+)
+
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
     baca.make_music(preprocessor.music),
