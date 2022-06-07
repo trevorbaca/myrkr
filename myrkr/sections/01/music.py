@@ -42,10 +42,13 @@ commands(
 
 preprocessor.make_commands(commands)
 
-commands(
-    "Skips",
-    baca.metronome_mark("44"),
-)
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in ((1 - 1, "44"),):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
 
 # cl
 

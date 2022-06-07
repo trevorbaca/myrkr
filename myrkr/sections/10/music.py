@@ -1,4 +1,3 @@
-import abjad
 import baca
 
 from myrkr import library
@@ -55,21 +54,17 @@ commands(
 
 preprocessor.make_commands(commands)
 
-commands(
-    "Skips",
-    baca.metronome_mark(
-        "55",
-        selector=lambda _: abjad.select.leaf(_, 19),
-    ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=lambda _: abjad.select.leaf(_, 19),
-    ),
-    baca.metronome_mark(
-        "110",
-        selector=lambda _: abjad.select.leaf(_, 23),
-    ),
-)
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in (
+    (20 - 1, "55"),
+    (20 - 1, baca.Accelerando()),
+    (24 - 1, "110"),
+):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
 
 # reapply
 
