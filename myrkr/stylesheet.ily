@@ -63,44 +63,32 @@
 % CONTEXTS
 
 \layout {
-
-    % GLOBAL SKIPS
     \context {
         \name GlobalSkips
         \type Engraver_group
         \consists Script_engraver
         \consists Text_engraver
         \consists \alternateTextSpannerEngraver
-
         \override TextScript.font-size = 6
-
         \override TextSpanner.font-size = 6
         }
 
-    % GLOBAL RESTS
     \context {
         \name GlobalRests
         \type Engraver_group
         \consists Multi_measure_rest_engraver
-
         \override MultiMeasureRest.transparent = ##t
-
         \override MultiMeasureRestText.font-size = 3
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
         }
-
-    % PAGE LAYOUT
     \context {
         \name PageLayout
         \type Engraver_group
         \consists Text_engraver
         \consists \alternateTextSpannerEngraver
-
         \override TextSpanner.font-size = 6
         }
-
-    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -112,11 +100,9 @@
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
-
         \override BarNumber.Y-extent = ##f
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
-
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -124,52 +110,21 @@
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
     }
-
-    % STAFF
     \context {
         \Staff
         \accepts GlobalRests
         \remove Time_signature_engraver
     }
-
-    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
     }
-
-    % CLARINET CONTEXTS
-    \context {
-        \Voice
-        \name ClarinetMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Voice
-        \name ClarinetDynamicsVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ClarinetMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ClarinetMusicVoice
-        \accepts ClarinetDynamicsVoice
-    }
-
-    % MUSIC CONTEXT
     \context {
         \ChoirStaff
         \name MusicContext
         \type Engraver_group
         \alias ChoirStaff
-        \accepts ClarinetMusicStaff
     }
-
-    % SCORE
     \context {
         \Score
         \accepts GlobalContext

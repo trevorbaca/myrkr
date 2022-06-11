@@ -4,7 +4,7 @@
         "GlobalContext",
         "Skips",
         "MusicContext",
-        "Clarinet.Music_Staff",
+        "Clarinet.Staff",
         "Rests",
         "Clarinet.Music",
     ],
@@ -19,7 +19,7 @@
                 value="ppppp",
             )
         ],
-        "Clarinet.Music_Staff": [
+        "Clarinet.Staff": [
             baca.Memento(
                 context="Clarinet.Music",
                 edition=None,

@@ -161,13 +161,13 @@ number.1.Clarinet.Music = {
           %! baca.OverrideCommand._call(1)
           %! baca.clef_shift()
           %! baca.clef_x_extent_false()
-    %%% \once \override ClarinetMusicStaff.Clef.X-extent = ##f
+    %%% \once \override Staff.Clef.X-extent = ##f
           %! MEASURE_1
           %! SHIFTED_CLEF
           %! baca.OverrideCommand._call(1)
           %! baca.clef_extra_offset()
           %! baca.clef_shift()
-    %%% \once \override ClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
           %! -PARTS
           %! baca.IndicatorCommand._call()
           %! baca.instrument_name()
@@ -181,16 +181,16 @@ number.1.Clarinet.Music = {
         \clef "treble"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
-        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'blue)
+        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! EXPLICIT_CLEF_COLOR_CANCELLATION
           %! baca._attach_color_literal(1)
-        %@% \override ClarinetMusicStaff.Clef.color = ##f
+        %@% \override Staff.Clef.color = ##f
           %! EXPLICIT_CLEF
           %! baca.IndicatorCommand._call()
           %! baca._set_status_tag()
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
-        \set ClarinetMusicStaff.forceClef = ##t
+        \set Staff.forceClef = ##t
           %! baca.make_music()
         e\breve.
         % AFTER:
@@ -218,7 +218,7 @@ number.1.Clarinet.Music = {
         % COMMANDS:
           %! EXPLICIT_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
+        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
         % CLOSING:
         % COMMANDS:
 
@@ -235,7 +235,7 @@ number.1.Clarinet.Music = {
 
 
   %! baca.path.extern()
-number.1.Clarinet.Music_Staff = <<
+number.1.Clarinet.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -250,7 +250,7 @@ number.1.Clarinet.Music_Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet.Music"
+    \context Voice = "Clarinet.Music"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
     { \number.1.Clarinet.Music }
