@@ -60,7 +60,7 @@
     ragged-right = ##t
 }
 
-%%% CONTEXTS
+% CONTEXTS
 
 \layout {
 
@@ -177,45 +177,32 @@
         \remove Bar_number_engraver
         \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
-
         \override BarLine.hair-thickness = 0.5
         \override BarLine.X-extent = #'(0 . 0)
-
         \override Beam.breakable = ##t
         \override Beam.damping = 99
-
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
-
         \override Hairpin.to-barline = ##f
-
         \override NoteCollision.merge-differently-dotted = ##t
-
         \override NoteColumn.ignore-collision = ##t
-
         \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
-
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
-
         \override TextScript.font-name = #"Palatino"
         % DISCOVERY: overriding TextScript.X-extent = ##f
         %            makes LilyPond ignore self-alignment-X tweaks;
         %            probably should never be done at stylesheet level.
         % NOTE:      may be best to override NO text script properties.
-
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.staff-padding = 1.5
-
         \override TupletNumber.font-size = 1
-
         autoBeaming = ##f
         barNumberFormatter = #baca-oval-bar-numbers
         proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -224,7 +211,7 @@
 
 }
 
-%%% MARKUP
+% MARKUP
 
 myrkr-bass-clarinet-markup = \markup
   \column {
