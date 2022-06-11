@@ -1535,15 +1535,15 @@ number.10.Clarinet.Music = {
         \clef "treble"
           %! REAPPLIED_CLEF_COLOR
           %! baca._attach_color_literal(2)
-        \once \override ClarinetMusicStaff.Clef.color = #(x11-color 'green4)
+        \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
           %! baca._attach_color_literal(1)
-        %@% \override ClarinetMusicStaff.Clef.color = ##f
+        %@% \override Staff.Clef.color = ##f
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
-        \set ClarinetMusicStaff.forceClef = ##t
+        \set Staff.forceClef = ##t
           %! baca.make_music()
         e\breve
         % AFTER:
@@ -1568,7 +1568,7 @@ number.10.Clarinet.Music = {
         % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
-        \override ClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab)
+        \override Staff.Clef.color = #(x11-color 'OliveDrab)
         % CLOSING:
         % COMMANDS:
 
@@ -2190,7 +2190,7 @@ number.10.Clarinet.Music = {
 
 
   %! baca.path.extern()
-number.10.Clarinet.Music_Staff = <<
+number.10.Clarinet.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2205,7 +2205,7 @@ number.10.Clarinet.Music_Staff = <<
 
     % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
-    \context ClarinetMusicVoice = "Clarinet.Music"
+    \context Voice = "Clarinet.Music"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
     { \number.10.Clarinet.Music }

@@ -74,10 +74,10 @@
 
                 % OPEN_BRACKETS:
                   %! myrkr.make_empty_score()
-                \context ClarinetMusicStaff = "Clarinet.Music_Staff"
+                \context Staff = "Clarinet.Staff"
                   %! myrkr.make_empty_score()
                   %! baca.path.extern()
-                { \number.12.Clarinet.Music_Staff }
+                { \number.12.Clarinet.Staff }
                 % CLOSING:
                 % COMMANDS:
 

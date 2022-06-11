@@ -575,19 +575,15 @@ def voice_abbreviations():
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-    # CLARINET
     clarinet_music_voice = abjad.Voice(
-        lilypond_type="ClarinetMusicVoice",
         name="Clarinet.Music",
         tag=tag,
     )
     clarinet_music_staff = abjad.Staff(
         [clarinet_music_voice],
-        lilypond_type="ClarinetMusicStaff",
-        name="Clarinet.Music_Staff",
+        name="Clarinet.Staff",
         tag=tag,
     )
-    # SCORE
     music_context = abjad.Context(
         [clarinet_music_staff],
         lilypond_type="MusicContext",
