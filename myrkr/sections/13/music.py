@@ -42,10 +42,7 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-commands(
-    ("cl", (1, len(preprocessor.time_signatures))),
-    baca.make_music(preprocessor.music),
-)
+score["Clarinet.Music"].extend(preprocessor.music)
 
 preprocessor.make_commands(commands)
 
