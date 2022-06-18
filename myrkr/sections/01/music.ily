@@ -143,11 +143,8 @@ number.1.Clarinet.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak edge-height #'(0.7 . 0)
-      %! baca.make_music()
     \times 4/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -191,7 +188,6 @@ number.1.Clarinet.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! baca.make_music()
         e\breve.
         % AFTER:
         % ARTICULATIONS:
@@ -223,7 +219,6 @@ number.1.Clarinet.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % CLOSING:
     % COMMANDS:

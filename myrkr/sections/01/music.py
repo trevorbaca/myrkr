@@ -34,9 +34,10 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
+score["Clarinet.Music"].extend(preprocessor.music)
+
 commands(
     ("cl", (1, len(preprocessor.time_signatures))),
-    baca.make_music(preprocessor.music),
     baca.instrument_name(r"\myrkr-bass-clarinet-markup"),
     baca.markup(r"\baca-overblow-markup"),
 )
