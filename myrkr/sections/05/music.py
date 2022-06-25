@@ -68,7 +68,7 @@ for index, item in (
 ):
     skip = skips[index]
     indicator = commands.metronome_marks.get(item, item)
-    baca.commands._metronome_mark(skip, indicator, manifests)
+    baca.metronome_mark(skip, indicator, manifests)
 
 commands(
     ("cl", (23, 25)),
