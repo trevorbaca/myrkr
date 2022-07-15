@@ -110,10 +110,12 @@ commands(
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
-        commands,
+        commands.manifests(),
+        commands.time_signatures,
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        commands=commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
