@@ -33,7 +33,7 @@ preprocessor = library.Preprocessor(
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=preprocessor.time_signatures,
@@ -43,9 +43,9 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
@@ -53,10 +53,10 @@ baca.interpret.set_up_score(
 
 score["Clarinet.Music"].extend(preprocessor.music)
 
-preprocessor.make_commands(commands)
+preprocessor.make_commands(accumulator)
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (1 - 1, "55"),
@@ -64,26 +64,26 @@ for index, item in (
     (23 - 1, "110"),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 baca.bar_line(score["Skips"][34 - 1], "|.")
 
 # reapply
 
-commands(
+accumulator(
     "cl",
     baca.reapply_persistent_indicators(),
 )
 
 # cl
 
-commands(
+accumulator(
     ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
     baca.glissando(),
 )
 
-commands(
+accumulator(
     ("cl", [4, 11]),
     baca.new(
         baca.markup(r"\myrkr-vowel-u-markup"),
@@ -96,7 +96,7 @@ commands(
     baca.text_script_staff_padding(5),
 )
 
-commands(
+accumulator(
     ("cl", 34),
     baca.chunk(
         baca.mark(r"\myrkr-colophon-markup"),
@@ -108,14 +108,14 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
@@ -123,7 +123,7 @@ if __name__ == "__main__":
         global_rests_in_topmost_staff=True,
         transpose_score=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
