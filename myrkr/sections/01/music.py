@@ -52,15 +52,26 @@ for index, item in ((1 - 1, "44"),):
     indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# cl
 
-accumulator(
-    "cl",
-    baca.instrument(accumulator.instruments["BassClarinet"]),
-    baca.clef("treble"),
-)
+def postprocess(m):
+    accumulator(
+        "cl",
+        baca.instrument(accumulator.instruments["BassClarinet"]),
+        baca.clef("treble"),
+    )
+
+
+def main():
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

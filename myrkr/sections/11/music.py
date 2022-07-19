@@ -55,26 +55,32 @@ score["Clarinet.Music"].extend(preprocessor.music)
 
 preprocessor.make_commands(accumulator)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def postprocess(m):
+    accumulator(
+        ("cl", (1, 9)),
+        baca.glissando(),
+    )
 
-# cl
+    accumulator(
+        ("cl", [(10, 14), (19, 21), (25, 29)]),
+        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    )
 
-accumulator(
-    ("cl", (1, 9)),
-    baca.glissando(),
-)
 
-accumulator(
-    ("cl", [(10, 14), (19, 21), (25, 29)]),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
