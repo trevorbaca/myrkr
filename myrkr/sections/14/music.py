@@ -71,27 +71,36 @@ for index, item in (
     indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def postprocess(m):
 
-# cl
+    # TODO: FIXME:
+    # accumulator(
+    #    ("cl", (12, 18)),
+    #    baca.text_spanner(
+    #        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
+    #        pieces=lambda _: baca.select.cmgroups(_, ),
+    #        selector=lambda _: baca.select.rleaves(_),
+    #    ),
+    #    baca.text_spanner_staff_padding(5),
+    # )
 
-# TODO: FIXME:
-# accumulator(
-#    ("cl", (12, 18)),
-#    baca.text_spanner(
-#        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
-#        pieces=lambda _: baca.select.cmgroups(_, ),
-#        selector=lambda _: baca.select.rleaves(_),
-#    ),
-#    baca.text_spanner_staff_padding(5),
-# )
+    pass
+
+
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

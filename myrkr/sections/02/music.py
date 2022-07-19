@@ -77,14 +77,14 @@ for index, item in ((1 - 1, "110"),):
     indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

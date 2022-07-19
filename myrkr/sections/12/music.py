@@ -68,11 +68,6 @@ baca.interpret.set_up_score(
 
 score["Clarinet.Music"].extend(preprocessor.music)
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
-
 preprocessor.make_commands(accumulator)
 
 skips = score["Skips"]
@@ -86,21 +81,27 @@ for index, item in (
     indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def postprocess(m):
+    accumulator(
+        ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
+        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    )
 
-# cl
 
-accumulator(
-    ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

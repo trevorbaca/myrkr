@@ -69,45 +69,51 @@ for index, item in (
 
 baca.bar_line(score["Skips"][34 - 1], "|.")
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def postprocess(m):
+    accumulator(
+        ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
+        baca.glissando(),
+    )
 
-# cl
+    accumulator(
+        ("cl", [4, 11]),
+        baca.new(
+            baca.markup(r"\myrkr-vowel-u-markup"),
+            match=0,
+        ),
+        baca.new(
+            baca.markup(r"\myrkr-vowel-a-markup"),
+            match=1,
+        ),
+        baca.text_script_staff_padding(5),
+    )
 
-accumulator(
-    ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
-    baca.glissando(),
-)
+    accumulator(
+        ("cl", 34),
+        baca.chunk(
+            baca.mark(r"\myrkr-colophon-markup"),
+            baca.rehearsal_mark_down(),
+            baca.rehearsal_mark_padding(6),
+            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
+            selector=lambda _: baca.select.rleaf(_, -1),
+        ),
+    )
 
-accumulator(
-    ("cl", [4, 11]),
-    baca.new(
-        baca.markup(r"\myrkr-vowel-u-markup"),
-        match=0,
-    ),
-    baca.new(
-        baca.markup(r"\myrkr-vowel-a-markup"),
-        match=1,
-    ),
-    baca.text_script_staff_padding(5),
-)
 
-accumulator(
-    ("cl", 34),
-    baca.chunk(
-        baca.mark(r"\myrkr-colophon-markup"),
-        baca.rehearsal_mark_down(),
-        baca.rehearsal_mark_padding(6),
-        baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-        selector=lambda _: baca.select.rleaf(_, -1),
-    ),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

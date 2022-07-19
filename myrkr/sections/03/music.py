@@ -52,14 +52,14 @@ score["Clarinet.Music"].extend(preprocessor.music)
 
 preprocessor.make_commands(accumulator)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

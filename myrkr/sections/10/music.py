@@ -64,31 +64,37 @@ for index, item in (
     indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# reapply
 
-accumulator(
-    "cl",
-    baca.reapply_persistent_indicators(),
-)
+def postprocess(m):
+    accumulator(
+        ("cl", (2, 5)),
+        baca.glissando(),
+    )
 
-# cl
+    accumulator(
+        ("cl", [(7, 9), (11, 15), (17, 19)]),
+        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    )
 
-accumulator(
-    ("cl", (2, 5)),
-    baca.glissando(),
-)
+    accumulator(
+        ("cl", 24),
+        baca.markup(r"\baca-overblow-markup"),
+    )
 
-accumulator(
-    ("cl", [(7, 9), (11, 15), (17, 19)]),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-)
 
-accumulator(
-    ("cl", 24),
-    baca.markup(r"\baca-overblow-markup"),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache["cl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
