@@ -8,9 +8,6 @@ import baca
 
 
 class ColorMaker:
-    """
-    Color maker.
-    """
 
     __slots__ = ("_indicators",)
 
@@ -117,7 +114,6 @@ class Preprocessor:
     __slots__ = (
         "indicators",
         "music",
-        "command_pairs",
         "name_to_rhythm",
         "selections",
         "time_signatures",
@@ -125,31 +121,12 @@ class Preprocessor:
 
     def __init__(self, *indicators):
         self.indicators = indicators
-        self.command_pairs = []
         self.music = []
         self.name_to_rhythm = name_to_rhythm()
         self.selections = ()
         self.time_signatures = ()
         self._validate_indicators()
         self._unpack_indicators()
-
-    def _make_command_pair(self, measure_indicator, pitch, dynamic, color_fingering):
-        if pitch is None and dynamic is None and color_fingering is None:
-            return
-        commands = []
-        if pitch is not None:
-            assert isinstance(pitch, str), repr(pitch)
-            command = baca.pitches(pitch)
-            commands.append(command)
-        if dynamic is not None:
-            dynamic = baca.dynamic(dynamic)
-            commands.append(dynamic)
-        if color_fingering is not None:
-            assert len(color_fingering) == 2
-            color_fingering = color_fingerings(*color_fingering)
-            commands.append(color_fingering)
-        pair = (measure_indicator, commands)
-        self.command_pairs.append(pair)
 
     def _remove_duplicate_dynamics(self):
         pairs = self.command_pairs
@@ -179,24 +156,21 @@ class Preprocessor:
             pitch = None
             dynamic = None
             color_fingering = None
+            recent_selections = []
             assert len(indicator) in (2, 3, 4, 5), repr(indicator)
             name = indicator[0]
             location = indicator[1]
             if isinstance(location, int):
                 measure_count = location
-            elif isinstance(location, tuple):
+            else:
+                assert isinstance(location, tuple)
                 assert len(location) == 2, repr(location)
                 measure_count, position = location
-            else:
-                raise TypeError(location)
-            if len(indicator) == 3:
+            if 3 <= len(indicator):
                 pitch = indicator[2]
-            elif len(indicator) == 4:
-                pitch = indicator[2]
+            if 4 <= len(indicator):
                 dynamic = indicator[3]
-            elif len(indicator) == 5:
-                pitch = indicator[2]
-                dynamic = indicator[3]
+            if 5 <= len(indicator):
                 color_fingering = indicator[4]
             assert isinstance(measure_count, int), repr(measure_count)
             assert isinstance(position, int), repr(position)
@@ -210,17 +184,20 @@ class Preprocessor:
             pairs = cursor.next(count=measure_count)
             for selection, time_signature in pairs:
                 selection = copy.deepcopy(selection)
+                recent_selections.append(selection)
                 selections.append(selection)
                 time_signatures.append(time_signature)
             stop_measure_number = start_measure_number + measure_count - 1
-            if measure_count == 1:
-                measure_indicator = start_measure_number
-            else:
-                measure_indicator = (start_measure_number, stop_measure_number)
-            self._make_command_pair(measure_indicator, pitch, dynamic, color_fingering)
+            if pitch is not None:
+                assert isinstance(pitch, str), repr(pitch)
+                baca.pitches_function(recent_selections, pitch)
+            if dynamic is not None:
+                baca.dynamic_function(recent_selections, dynamic)
+            if color_fingering is not None:
+                assert len(color_fingering) == 2
+                color_fingerings_function(recent_selections, *color_fingering)
             start_measure_number = stop_measure_number + 1
         assert len(selections) == len(time_signatures)
-        self.selections = tuple(selections)
         music = []
         for selection in selections:
             music.extend(selection)
@@ -236,19 +213,8 @@ class Preprocessor:
             assert 2 <= len(indicator) <= 5, repr(indicator)
             assert isinstance(indicator[0], str), repr(indicator)
 
-    def make_commands(self, maker):
-        self._remove_duplicate_dynamics()
-        for pair in self.command_pairs:
-            assert len(pair) == 2, repr(pair)
-            measure_indicator = pair[0]
-            commands = pair[1]
-            maker(("cl", measure_indicator), *commands)
-
 
 class RhythmMaker:
-    """
-    Rhythm-maker.
-    """
 
     __slots__ = (
         "_counts",
@@ -473,6 +439,17 @@ def color_fingerings(name, index=0):
     color_fingerings = color_fingerings_[name]
     color_fingerings__ = abjad.sequence.rotate(color_fingerings, n=index)
     return baca.color_fingerings(color_fingerings__)
+
+
+def color_fingerings_function(argument, name, index=0):
+    color_fingerings_ = {
+        "A": abjad.CyclicTuple([0, 1, 2, 1, 0, 1, 0, 2, 1, 2, 1, 0, 1, 2, 1]),
+        "B": abjad.CyclicTuple([0, 2, 1, 3, 1, 2, 1, 3, 0, 1, 0, 2, 1, 2, 3]),
+        "C": abjad.CyclicTuple([0, 3, 1, 2, 4, 1, 0, 4, 2, 0, 3, 4, 0, 1, 2]),
+    }
+    color_fingerings = color_fingerings_[name]
+    color_fingerings__ = abjad.sequence.rotate(color_fingerings, n=index)
+    baca.color_fingerings_function(argument, color_fingerings__)
 
 
 def instruments():

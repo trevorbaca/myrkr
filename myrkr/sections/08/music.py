@@ -57,9 +57,7 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-score["Clarinet.Music"].extend(preprocessor.music)
-
-preprocessor.make_commands(accumulator)
+accumulator.voice("cl").extend(preprocessor.music)
 
 skips = score["Skips"]
 manifests = accumulator.manifests()
@@ -77,10 +75,9 @@ def postprocess(m):
     for pair in [(27, 34), (41, 43), (48, 50)]:
         with baca.scope(m.get(pair)) as o:
             baca.tenuto_function(o.pheads())
-    accumulator(
-        ("cl", [(5, 9), (21, 26), (52, 55)]),
-        baca.glissando(),
-    )
+    for pair in [(5, 9), (21, 26), (52, 55)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.glissando_function(o)
     baca.markup_function(m[4], r"\baca-overblow-markup")
 
 
@@ -104,7 +101,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
