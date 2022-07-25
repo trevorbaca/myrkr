@@ -6,81 +6,15 @@ import abjad
 import baca
 
 
-def make_music(*indicators):
-    for indicator in indicators:
-        assert isinstance(indicator, tuple), repr(indicator)
-        assert 2 <= len(indicator) <= 5, repr(indicator)
-        assert isinstance(indicator[0], str), repr(indicator)
-    name_to_cursor = {}
-    selections, time_signatures = [], []
-    start_measure_number = 1
-    _name_to_rhythm = name_to_rhythm()
-    for indicator in indicators:
-        position = 0
-        pitch = None
-        dynamic = None
-        color_fingering = None
-        recent_selections = []
-        assert len(indicator) in (2, 3, 4, 5), repr(indicator)
-        name = indicator[0]
-        location = indicator[1]
-        if isinstance(location, int):
-            measure_count = location
-        else:
-            assert isinstance(location, tuple)
-            assert len(location) == 2, repr(location)
-            measure_count, position = location
-        if 3 <= len(indicator):
-            pitch = indicator[2]
-        if 4 <= len(indicator):
-            dynamic = indicator[3]
-        if 5 <= len(indicator):
-            color_fingering = indicator[4]
-        assert isinstance(measure_count, int), repr(measure_count)
-        assert isinstance(position, int), repr(position)
-        reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
-        if reset_cursor:
-            rhythm = list(_name_to_rhythm[name])
-            rhythm = abjad.CyclicTuple(rhythm)
-            cursor = baca.Cursor(source=rhythm, position=position)
-            name_to_cursor[name] = cursor
-        cursor = name_to_cursor[name]
-        pairs = cursor.next(count=measure_count)
-        for selection, time_signature in pairs:
-            selection = copy.deepcopy(selection)
-            recent_selections.append(selection)
-            selections.append(selection)
-            time_signatures.append(time_signature)
-        stop_measure_number = start_measure_number + measure_count - 1
-        if pitch is not None:
-            assert isinstance(pitch, str), repr(pitch)
-            baca.pitches_function(recent_selections, pitch)
-        if dynamic is not None:
-            baca.dynamic_function(recent_selections, dynamic)
-        if color_fingering is not None:
-            assert len(color_fingering) == 2
-            color_fingerings_function(recent_selections, *color_fingering)
-        start_measure_number = stop_measure_number + 1
-    assert len(selections) == len(time_signatures)
-    music = []
-    for selection in selections:
-        music.extend(selection)
-    time_signatures = tuple(time_signatures)
-    for name in sorted(name_to_cursor):
-        cursor = name_to_cursor[name]
-        print(f"{name} position {cursor.position} ...")
-    return music, time_signatures
-
-
 class RhythmMaker:
 
     __slots__ = (
-        "_counts",
-        "_denominator",
-        "_displace_split_tuplets",
-        "_prolation_indicators",
-        "_split_indicators",
-        "_terms",
+        "counts",
+        "denominator",
+        "displace_split_tuplets",
+        "prolation_indicators",
+        "split_indicators",
+        "terms",
     )
 
     def __init__(
@@ -94,21 +28,21 @@ class RhythmMaker:
     ):
         terms = tuple(terms)
         assert all(isinstance(_, int) for _ in terms), repr(terms)
-        self._terms = terms
+        self.terms = terms
         assert abjad.math.all_are_positive_integers(counts), repr(counts)
-        self._counts = counts
+        self.counts = counts
         assert abjad.math.is_positive_integer_power_of_two(denominator)
-        self._denominator = denominator
+        self.denominator = denominator
         prolation_indicators = prolation_indicators or ()
         assert all(_ in (-1, 0, 1) for _ in prolation_indicators)
         prolation_indicators = abjad.CyclicTuple(prolation_indicators)
-        self._prolation_indicators = prolation_indicators
+        self.prolation_indicators = prolation_indicators
         split_indicators = split_indicators or ()
         assert all(_ in (0, 1) for _ in split_indicators)
         split_indicators = abjad.CyclicTuple(split_indicators)
-        self._split_indicators = split_indicators
+        self.split_indicators = split_indicators
         displace_split_tuplets = bool(displace_split_tuplets)
-        self._displace_split_tuplets = displace_split_tuplets
+        self.displace_split_tuplets = displace_split_tuplets
 
     def __call__(self):
         lcm = abjad.math.least_common_multiple(len(self.terms), sum(self.counts))
@@ -172,7 +106,7 @@ class RhythmMaker:
         for tuplet in tuplets:
             tuplet.trivialize()
             abjad.beam(tuplet)
-        time_signatures = self._make_time_signatures(tuplets)
+        time_signatures = self._make_time_signatures(self.denominator, tuplets)
         selections = []
         for tuplet in tuplets:
             if tuplet.trivial():
@@ -186,9 +120,10 @@ class RhythmMaker:
         rhythm = list(rhythm)
         return rhythm
 
-    def _make_time_signatures(self, tuplets):
+    @staticmethod
+    def _make_time_signatures(denominator, tuplets):
         time_signatures = []
-        denominators = range(self.denominator, 2 * self.denominator)
+        denominators = range(denominator, 2 * denominator)
         for tuplet in tuplets:
             duration = abjad.get.duration(tuplet)
             duration = abjad.NonreducedFraction(duration)
@@ -248,58 +183,8 @@ class RhythmMaker:
             abjad.attach(command, tuplet)
             abjad.override(tuplet).tuplet_bracket.stencil = False
 
-    @property
-    def counts(self):
-        return self._counts
 
-    @property
-    def denominator(self):
-        return self._denominator
-
-    @property
-    def displace_split_tuplets(self):
-        """
-        Is true when split tuplets should displace.
-        """
-        return self._displace_split_tuplets
-
-    @property
-    def prolation_indicators(self):
-        """
-        Gets prolation indicators. All indicators are -1, 0 or 1.
-
-        Returns cyclic tuple.
-        """
-        return self._prolation_indicators
-
-    @property
-    def split_indicators(self):
-        """
-        Gets split indicators.
-
-        Set to an iterable in which all elements are 0 or 1.
-
-        Returns cyclic tuple.
-        """
-        return self._split_indicators
-
-    @property
-    def terms(self):
-        return self._terms
-
-
-def color_fingerings(name, index=0):
-    color_fingerings_ = {
-        "A": abjad.CyclicTuple([0, 1, 2, 1, 0, 1, 0, 2, 1, 2, 1, 0, 1, 2, 1]),
-        "B": abjad.CyclicTuple([0, 2, 1, 3, 1, 2, 1, 3, 0, 1, 0, 2, 1, 2, 3]),
-        "C": abjad.CyclicTuple([0, 3, 1, 2, 4, 1, 0, 4, 2, 0, 3, 4, 0, 1, 2]),
-    }
-    color_fingerings = color_fingerings_[name]
-    color_fingerings__ = abjad.sequence.rotate(color_fingerings, n=index)
-    return baca.color_fingerings(color_fingerings__)
-
-
-def color_fingerings_function(argument, name, index=0):
+def attach_color_fingerings(argument, name, index=0):
     color_fingerings_ = {
         "A": abjad.CyclicTuple([0, 1, 2, 1, 0, 1, 0, 2, 1, 2, 1, 0, 1, 2, 1]),
         "B": abjad.CyclicTuple([0, 2, 1, 3, 1, 2, 1, 3, 0, 1, 0, 2, 1, 2, 3]),
@@ -312,6 +197,96 @@ def color_fingerings_function(argument, name, index=0):
 
 def instruments():
     return dict([("BassClarinet", abjad.BassClarinet())])
+
+
+def make_empty_score():
+    tag = baca.tags.function_name(inspect.currentframe())
+    global_context = baca.score.make_global_context()
+    clarinet_music_voice = abjad.Voice(
+        name="Clarinet.Music",
+        tag=tag,
+    )
+    clarinet_music_staff = abjad.Staff(
+        [clarinet_music_voice],
+        name="Clarinet.Staff",
+        tag=tag,
+    )
+    music_context = abjad.Context(
+        [clarinet_music_staff],
+        lilypond_type="MusicContext",
+        name="MusicContext",
+        tag=tag,
+    )
+    score = abjad.Score([global_context, music_context], name="Score", tag=tag)
+    baca.score.assert_lilypond_identifiers(score)
+    baca.score.assert_unique_context_names(score)
+    return score
+
+
+def make_music(*indicators):
+    for indicator in indicators:
+        assert isinstance(indicator, tuple), repr(indicator)
+        assert 2 <= len(indicator) <= 5, repr(indicator)
+        assert isinstance(indicator[0], str), repr(indicator)
+    name_to_cursor = {}
+    selections, time_signatures = [], []
+    start_measure_number = 1
+    _name_to_rhythm = name_to_rhythm()
+    for indicator in indicators:
+        position = 0
+        pitch = None
+        dynamic = None
+        color_fingering = None
+        recent_selections = []
+        assert len(indicator) in (2, 3, 4, 5), repr(indicator)
+        name = indicator[0]
+        location = indicator[1]
+        if isinstance(location, int):
+            measure_count = location
+        else:
+            assert isinstance(location, tuple)
+            assert len(location) == 2, repr(location)
+            measure_count, position = location
+        if 3 <= len(indicator):
+            pitch = indicator[2]
+        if 4 <= len(indicator):
+            dynamic = indicator[3]
+        if 5 <= len(indicator):
+            color_fingering = indicator[4]
+        assert isinstance(measure_count, int), repr(measure_count)
+        assert isinstance(position, int), repr(position)
+        reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
+        if reset_cursor:
+            rhythm = list(_name_to_rhythm[name])
+            rhythm = abjad.CyclicTuple(rhythm)
+            cursor = baca.Cursor(source=rhythm, position=position)
+            name_to_cursor[name] = cursor
+        cursor = name_to_cursor[name]
+        pairs = cursor.next(count=measure_count)
+        for selection, time_signature in pairs:
+            selection = copy.deepcopy(selection)
+            recent_selections.append(selection)
+            selections.append(selection)
+            time_signatures.append(time_signature)
+        stop_measure_number = start_measure_number + measure_count - 1
+        if pitch is not None:
+            assert isinstance(pitch, str), repr(pitch)
+            baca.pitches_function(recent_selections, pitch)
+        if dynamic is not None:
+            baca.dynamic_function(recent_selections, dynamic)
+        if color_fingering is not None:
+            assert len(color_fingering) == 2
+            attach_color_fingerings(recent_selections, *color_fingering)
+        start_measure_number = stop_measure_number + 1
+    assert len(selections) == len(time_signatures)
+    music = []
+    for selection in selections:
+        music.extend(selection)
+    time_signatures = tuple(time_signatures)
+    for name in sorted(name_to_cursor):
+        cursor = name_to_cursor[name]
+        print(f"{name} position {cursor.position} ...")
+    return music, time_signatures
 
 
 def metronome_marks():
@@ -355,18 +330,9 @@ def name_to_rhythm():
         denominator=4,
     )()
     name_to_rhythm["indigo"] = RhythmMaker(
-        # terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
         terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 4, 3)),
         counts=(5, 4),
         denominator=16,
-        prolation_indicators=(0, 0, -1, -1),
-        split_indicators=(0, 0, 1, 1),
-        displace_split_tuplets=True,
-    )()
-    name_to_rhythm["ochre"] = RhythmMaker(
-        terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
-        counts=(5, 4),
-        denominator=8,
         prolation_indicators=(0, 0, -1, -1),
         split_indicators=(0, 0, 1, 1),
         displace_split_tuplets=True,
@@ -381,28 +347,3 @@ def name_to_rhythm():
 
 def voice_abbreviations():
     return {"cl": "Clarinet.Music"}
-
-
-def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
-    global_context = baca.score.make_global_context()
-    clarinet_music_voice = abjad.Voice(
-        name="Clarinet.Music",
-        tag=tag,
-    )
-    clarinet_music_staff = abjad.Staff(
-        [clarinet_music_voice],
-        name="Clarinet.Staff",
-        tag=tag,
-    )
-    music_context = abjad.Context(
-        [clarinet_music_staff],
-        lilypond_type="MusicContext",
-        name="MusicContext",
-        tag=tag,
-    )
-    score = abjad.Score([global_context, music_context], name="Score", tag=tag)
-    baca.score.assert_lilypond_identifiers(score)
-    baca.score.assert_unique_context_names(score)
-    # baca.score.assert_matching_custom_context_names(score)
-    return score
