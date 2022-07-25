@@ -8,7 +8,7 @@ from myrkr import library
 
 cobalt_position = 29
 indigo_position = 128
-preprocessor = library.Preprocessor(
+music, time_signatures = library.make_music(
     # 1-3
     ("graphite", 3, "Eb5", "pppp"),
     ("cobalt", (1, cobalt_position), "C2", "mp"),
@@ -49,7 +49,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
-    time_signatures=preprocessor.time_signatures,
+    time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
@@ -64,7 +64,7 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-accumulator.voice("cl").extend(preprocessor.music)
+accumulator.voice("cl").extend(music)
 
 skips = score["Skips"]
 manifests = accumulator.manifests()

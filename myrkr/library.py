@@ -1,4 +1,3 @@
-import collections
 import copy
 import inspect
 import math
@@ -7,211 +6,70 @@ import abjad
 import baca
 
 
-class ColorMaker:
-
-    __slots__ = ("_indicators",)
-
-    def __init__(self, indicators=None):
-        self._validate_indicators(indicators)
-        self._indicators = indicators
-
-    def __call__(self, start_pitch=None):
-        start_pitch = abjad.NamedPitch(start_pitch)
-        notes = []
-        previous_pitch = start_pitch
-        for indicator in self.indicators:
-            notes_ = self._interpret_indicator(indicator, previous_pitch)
-            notes.extend(notes_)
-            last_note = notes_[-1]
-            previous_pitch = last_note.written_pitch
-        return notes
-
-    def __illustrate__(self, start_pitch=None, title=None, subtitle=None):
-        notes = self(start_pitch=start_pitch)
-        self._attach_clefs(notes)
-        note_voice = abjad.Voice(notes)
-        durations = [abjad.get.duration(_) for _ in notes]
-        maker = baca.SkipRhythmMaker()
-        skips = maker(abjad.Duration(1), durations)
-        label_voice = abjad.Voice(skips)
-        abjad.labe(label_voice).with_indices(direction=abjad.DOWN)
-        abjad.override(label_voice).text_script.staff_padding = 4
-        staff = abjad.Staff([note_voice, label_voice], simultaneous=True)
-        score = abjad.Score([staff])
-        abjad.attach(abjad.TimeSignature((1, 4)), staff)
-        abjad.override(score).bar_line.stencil = False
-        abjad.override(score).bar_number.transparent = True
-        abjad.override(score).spacing_spanner.strict_grace_spacing = True
-        abjad.override(score).spacing_spanner.strict_note_spacing = True
-        abjad.override(score).stem.transparent = True
-        abjad.override(score).text_script.staff_padding = 1
-        abjad.override(score).time_signature.stencil = False
-        moment = abjad.SchemeMoment((1, 9))
-        abjad.setting(score).proportional_notation_duration = moment
-        lilypond_file = abjad.LilyPondFile.new(score)
-        lilypond_file.global_staff_size = 12
-        if subtitle is not None:
-            subtitle = abjad.Markup(r"\markup {subtitle}")
-            lilypond_file.header_block.subtitle = subtitle
-        lilypond_file.header_block.tagline = abjad.Markup(r"\markup \null")
-        if title is not None:
-            title = abjad.Markup(r"\markup {title}")
-            lilypond_file.header_block.title = title
-        lilypond_file.layout_block.indent = 0
-        lilypond_file.paper_block.left_margin = 20
-        vector = abjad.SpacingVector(0, 20, 0, 0)
-        lilypond_file.paper_block.markup_system_spacing = vector
-        vector = abjad.SpacingVector(0, 0, 12, 0)
-        lilypond_file.paper_block.system_system_spacing = vector
-        vector = abjad.SpacingVector(0, 4, 0, 0)
-        lilypond_file.paper_block.top_markup_spacing = vector
-        return lilypond_file
-
-    @classmethod
-    def _attach_clefs(class_, notes):
-        previous_clef = None
-        for note in notes:
-            suggested_clef = class_._suggest_clef(note.written_pitch)
-            if previous_clef is None or not suggested_clef == previous_clef:
-                abjad.attach(suggested_clef, note)
-                previous_clef = suggested_clef
-
-    @staticmethod
-    def _interpret_indicator(indicator, previous_pitch):
-        assert len(indicator) == 2
-        interval = indicator[0]
-        interval = abjad.NamedInterval(interval)
-        current_pitch = previous_pitch + interval
-        color_fingering_numbers = indicator[1]
-        notes = []
-        for number in color_fingering_numbers:
-            note = abjad.Note(current_pitch, abjad.Duration(1, 4))
-            if 0 < number:
-                color_fingering = abjad.ColorFingering(number)
-                abjad.attach(color_fingering, note)
-            notes.append(note)
-        return notes
-
-    @staticmethod
-    def _suggest_clef(pitch):
-        if pitch < -3:
-            return abjad.Clef("bass")
-        return abjad.Clef("treble")
-
-    def _validate_indicators(self, indicators):
-        for indicator in indicators:
-            assert isinstance(indicator, collections.abc.Sequence), repr(indicator)
-            assert len(indicator) == 2, repr(indicator)
-            assert isinstance(indicator[1], collections.abc.Sequence), repr(indicator)
-
-    @property
-    def indicators(self):
-        return self._indicators
-
-
-class Preprocessor:
-
-    __slots__ = (
-        "indicators",
-        "music",
-        "name_to_rhythm",
-        "selections",
-        "time_signatures",
-    )
-
-    def __init__(self, *indicators):
-        self.indicators = indicators
-        self.music = []
-        self.name_to_rhythm = name_to_rhythm()
-        self.selections = ()
-        self.time_signatures = ()
-        self._validate_indicators()
-        self._unpack_indicators()
-
-    def _remove_duplicate_dynamics(self):
-        pairs = self.command_pairs
-        pairs = list(abjad.sequence.nwise(pairs))
-        for first_pair, second_pair in reversed(pairs):
-            first_commands = first_pair[1]
-            first_dynamics = [_ for _ in first_commands if isinstance(_, abjad.Dynamic)]
-            if not first_dynamics:
-                continue
-            first_dynamic = first_dynamics[0]
-            second_commands = second_pair[1]
-            second_dynamics = [
-                _ for _ in second_commands if isinstance(_, abjad.Dynamic)
-            ]
-            if not second_dynamics:
-                continue
-            second_dynamic = second_dynamics[0]
-            if first_dynamic == second_dynamic:
-                second_commands.remove(second_dynamic)
-
-    def _unpack_indicators(self):
-        name_to_cursor = {}
-        selections, time_signatures = [], []
-        start_measure_number = 1
-        for indicator in self.indicators:
-            position = 0
-            pitch = None
-            dynamic = None
-            color_fingering = None
-            recent_selections = []
-            assert len(indicator) in (2, 3, 4, 5), repr(indicator)
-            name = indicator[0]
-            location = indicator[1]
-            if isinstance(location, int):
-                measure_count = location
-            else:
-                assert isinstance(location, tuple)
-                assert len(location) == 2, repr(location)
-                measure_count, position = location
-            if 3 <= len(indicator):
-                pitch = indicator[2]
-            if 4 <= len(indicator):
-                dynamic = indicator[3]
-            if 5 <= len(indicator):
-                color_fingering = indicator[4]
-            assert isinstance(measure_count, int), repr(measure_count)
-            assert isinstance(position, int), repr(position)
-            reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
-            if reset_cursor:
-                rhythm = list(self.name_to_rhythm[name])
-                rhythm = abjad.CyclicTuple(rhythm)
-                cursor = baca.Cursor(source=rhythm, position=position)
-                name_to_cursor[name] = cursor
-            cursor = name_to_cursor[name]
-            pairs = cursor.next(count=measure_count)
-            for selection, time_signature in pairs:
-                selection = copy.deepcopy(selection)
-                recent_selections.append(selection)
-                selections.append(selection)
-                time_signatures.append(time_signature)
-            stop_measure_number = start_measure_number + measure_count - 1
-            if pitch is not None:
-                assert isinstance(pitch, str), repr(pitch)
-                baca.pitches_function(recent_selections, pitch)
-            if dynamic is not None:
-                baca.dynamic_function(recent_selections, dynamic)
-            if color_fingering is not None:
-                assert len(color_fingering) == 2
-                color_fingerings_function(recent_selections, *color_fingering)
-            start_measure_number = stop_measure_number + 1
-        assert len(selections) == len(time_signatures)
-        music = []
-        for selection in selections:
-            music.extend(selection)
-        self.music = music
-        self.time_signatures = tuple(time_signatures)
-        for name in sorted(name_to_cursor):
-            cursor = name_to_cursor[name]
-            print(f"{name} position {cursor.position} ...")
-
-    def _validate_indicators(self):
-        for indicator in self.indicators:
-            assert isinstance(indicator, tuple), repr(indicator)
-            assert 2 <= len(indicator) <= 5, repr(indicator)
-            assert isinstance(indicator[0], str), repr(indicator)
+def make_music(*indicators):
+    for indicator in indicators:
+        assert isinstance(indicator, tuple), repr(indicator)
+        assert 2 <= len(indicator) <= 5, repr(indicator)
+        assert isinstance(indicator[0], str), repr(indicator)
+    name_to_cursor = {}
+    selections, time_signatures = [], []
+    start_measure_number = 1
+    _name_to_rhythm = name_to_rhythm()
+    for indicator in indicators:
+        position = 0
+        pitch = None
+        dynamic = None
+        color_fingering = None
+        recent_selections = []
+        assert len(indicator) in (2, 3, 4, 5), repr(indicator)
+        name = indicator[0]
+        location = indicator[1]
+        if isinstance(location, int):
+            measure_count = location
+        else:
+            assert isinstance(location, tuple)
+            assert len(location) == 2, repr(location)
+            measure_count, position = location
+        if 3 <= len(indicator):
+            pitch = indicator[2]
+        if 4 <= len(indicator):
+            dynamic = indicator[3]
+        if 5 <= len(indicator):
+            color_fingering = indicator[4]
+        assert isinstance(measure_count, int), repr(measure_count)
+        assert isinstance(position, int), repr(position)
+        reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
+        if reset_cursor:
+            rhythm = list(_name_to_rhythm[name])
+            rhythm = abjad.CyclicTuple(rhythm)
+            cursor = baca.Cursor(source=rhythm, position=position)
+            name_to_cursor[name] = cursor
+        cursor = name_to_cursor[name]
+        pairs = cursor.next(count=measure_count)
+        for selection, time_signature in pairs:
+            selection = copy.deepcopy(selection)
+            recent_selections.append(selection)
+            selections.append(selection)
+            time_signatures.append(time_signature)
+        stop_measure_number = start_measure_number + measure_count - 1
+        if pitch is not None:
+            assert isinstance(pitch, str), repr(pitch)
+            baca.pitches_function(recent_selections, pitch)
+        if dynamic is not None:
+            baca.dynamic_function(recent_selections, dynamic)
+        if color_fingering is not None:
+            assert len(color_fingering) == 2
+            color_fingerings_function(recent_selections, *color_fingering)
+        start_measure_number = stop_measure_number + 1
+    assert len(selections) == len(time_signatures)
+    music = []
+    for selection in selections:
+        music.extend(selection)
+    time_signatures = tuple(time_signatures)
+    for name in sorted(name_to_cursor):
+        cursor = name_to_cursor[name]
+        print(f"{name} position {cursor.position} ...")
+    return music, time_signatures
 
 
 class RhythmMaker:
@@ -505,7 +363,7 @@ def name_to_rhythm():
         split_indicators=(0, 0, 1, 1),
         displace_split_tuplets=True,
     )()
-    name_to_rhythm["ochr"] = RhythmMaker(
+    name_to_rhythm["ochre"] = RhythmMaker(
         terms=reversed((1, 2, 3, 2, 3, 1, 3, 2, 2, 3, 1, 2, 3, 2)),
         counts=(5, 4),
         denominator=8,
