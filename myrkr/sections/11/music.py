@@ -57,14 +57,12 @@ preprocessor.make_commands(accumulator)
 
 
 def postprocess(m):
+    for pair in [(10, 14), (19, 21), (25, 29)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.tenuto_function(o.pheads())
     accumulator(
         ("cl", (1, 9)),
         baca.glissando(),
-    )
-
-    accumulator(
-        ("cl", [(10, 14), (19, 21), (25, 29)]),
-        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     )
 
 

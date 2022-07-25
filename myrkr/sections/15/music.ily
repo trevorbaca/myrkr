@@ -1988,8 +1988,7 @@ number.15.Clarinet.Music = {
         % [Clarinet.Music measure 4]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.text_script_staff_padding()
+          %! baca.text_script_staff_padding_function(1)
         \once \override TextScript.staff-padding = 5
         d\breve.
         % AFTER:
@@ -2007,7 +2006,6 @@ number.15.Clarinet.Music = {
           %! baca.dynamic()
         \ppppp
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \myrkr-vowel-u-markup
         % CLOSING:
@@ -2224,8 +2222,7 @@ number.15.Clarinet.Music = {
         % [Clarinet.Music measure 11]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.text_script_staff_padding()
+          %! baca.text_script_staff_padding_function(1)
         \once \override TextScript.staff-padding = 5
         d\breve
         % AFTER:
@@ -2243,7 +2240,6 @@ number.15.Clarinet.Music = {
           %! baca.dynamic()
         \ppppp
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \myrkr-vowel-a-markup
         % CLOSING:
@@ -2997,18 +2993,14 @@ number.15.Clarinet.Music = {
 
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.rehearsal_mark_down()
+          %! baca.rehearsal_mark_down_function(1)
         \once \override Score.RehearsalMark.direction = #down
-          %! baca.OverrideCommand._call(1)
-          %! baca.rehearsal_mark_padding()
+          %! baca.rehearsal_mark_padding_function(1)
         \once \override Score.RehearsalMark.padding = 6
-          %! baca.OverrideCommand._call(1)
-          %! baca.rehearsal_mark_self_alignment_x()
+          %! baca.rehearsal_mark_self_alignment_x_function(1)
         \once \override Score.RehearsalMark.self-alignment-X = #right
         % OPENING:
         % COMMANDS:
-          %! baca.IndicatorCommand._call()
           %! baca.mark()
         \mark \myrkr-colophon-markup
         fs'''!2

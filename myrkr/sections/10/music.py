@@ -66,20 +66,14 @@ for index, item in (
 
 
 def postprocess(m):
+    for pair in [(7, 9), (11, 15), (17, 19)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.tenuto_function(o.pheads())
     accumulator(
         ("cl", (2, 5)),
         baca.glissando(),
     )
-
-    accumulator(
-        ("cl", [(7, 9), (11, 15), (17, 19)]),
-        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    )
-
-    accumulator(
-        ("cl", 24),
-        baca.markup(r"\baca-overblow-markup"),
-    )
+    baca.markup_function(m[24], r"\baca-overblow-markup")
 
 
 def main():

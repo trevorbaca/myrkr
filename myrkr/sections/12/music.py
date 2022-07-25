@@ -83,10 +83,9 @@ for index, item in (
 
 
 def postprocess(m):
-    accumulator(
-        ("cl", [(1, 3), (7, 11), (19, 21), (24, 28)]),
-        baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    )
+    for pair in [(1, 3), (7, 11), (19, 21), (24, 28)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.tenuto_function(o.pheads())
 
 
 def main():

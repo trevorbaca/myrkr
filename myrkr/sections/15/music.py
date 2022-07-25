@@ -75,30 +75,17 @@ def postprocess(m):
         ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
         baca.glissando(),
     )
-
-    accumulator(
-        ("cl", [4, 11]),
-        baca.new(
-            baca.markup(r"\myrkr-vowel-u-markup"),
-            match=0,
-        ),
-        baca.new(
-            baca.markup(r"\myrkr-vowel-a-markup"),
-            match=1,
-        ),
-        baca.text_script_staff_padding(5),
-    )
-
-    accumulator(
-        ("cl", 34),
-        baca.chunk(
-            baca.mark(r"\myrkr-colophon-markup"),
-            baca.rehearsal_mark_down(),
-            baca.rehearsal_mark_padding(6),
-            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-            selector=lambda _: baca.select.rleaf(_, -1),
-        ),
-    )
+    with baca.scope(m[4]) as o:
+        baca.markup_function(o, r"\myrkr-vowel-u-markup")
+        baca.text_script_staff_padding_function(o, 5)
+    with baca.scope(m[11]) as o:
+        baca.markup_function(o, r"\myrkr-vowel-a-markup")
+        baca.text_script_staff_padding_function(o, 5)
+    with baca.scope(m[34]) as o:
+        baca.mark_function(o.leaf(-1), r"\myrkr-colophon-markup")
+        baca.rehearsal_mark_down_function(o.leaf(-1))
+        baca.rehearsal_mark_padding_function(o.leaf(-1), 6)
+        baca.rehearsal_mark_self_alignment_x_function(o.leaf(-1), abjad.RIGHT)
 
 
 def main():
