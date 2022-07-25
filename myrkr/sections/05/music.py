@@ -10,25 +10,23 @@ charcoal_position = 0
 cobalt_position = 5
 indigo_position = 80
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-3
-        ("indigo", (3, indigo_position), "A3", "p", ("C", 44)),
-        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
-        ("indigo", 2, "A3", "mp", ("C", 46)),
-        # 4-6
-        ("indigo", (3, indigo_position), "B3", "mf", ("C", 48)),
-        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
-        ("indigo", 2, "B3", "f", ("C", 50)),
-        # 7-9
-        ("indigo", (3, indigo_position), "C4", "ff", ("C", 52)),
-        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
-        ("indigo", 2, "C4", "fff", ("C", 54)),
-        # 10-13
-        ("indigo", (3, indigo_position), "C#4", "ffff", ("C", 56)),
-        ("cobalt", (1, cobalt_position), "Eb2", "mp"),
-        ("charcoal", (3, charcoal_position), "D5 Eb5 D5 C#5", "pppp"),
-        ("indigo", 6, "C#4", "ffff", ("C", 58)),
-    ),
+    # 1-3
+    ("indigo", (3, indigo_position), "A3", "p", ("C", 44)),
+    ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+    ("indigo", 2, "A3", "mp", ("C", 46)),
+    # 4-6
+    ("indigo", (3, indigo_position), "B3", "mf", ("C", 48)),
+    ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+    ("indigo", 2, "B3", "f", ("C", 50)),
+    # 7-9
+    ("indigo", (3, indigo_position), "C4", "ff", ("C", 52)),
+    ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+    ("indigo", 2, "C4", "fff", ("C", 54)),
+    # 10-13
+    ("indigo", (3, indigo_position), "C#4", "ffff", ("C", 56)),
+    ("cobalt", (1, cobalt_position), "Eb2", "mp"),
+    ("charcoal", (3, charcoal_position), "D5 Eb5 D5 C#5", "pppp"),
+    ("indigo", 6, "C#4", "ffff", ("C", 58)),
 )
 # Charcoal position: 3 ...
 # Cobalt position: 6 ...

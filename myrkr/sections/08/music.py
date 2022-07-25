@@ -9,31 +9,29 @@ from myrkr import library
 cobalt_position = 7
 indigo_position = 98
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-3
-        ("cobalt", (3, cobalt_position), "Eb2", "mp"),
-        ("cobalt", 1, "D2", "ffff"),
-        ("graphite", 5, "C3 D3 Eb3 F3 G3", "pppp"),
-        # 4-6
-        ("indigo", (4, indigo_position), "B3", "f", ("C", 66)),
-        ("indigo", 6, "A3", "p", ("C", 68)),
-        ("white", (1, 0)),
-        # 7-9
-        ("graphite", 6, "G3 A3 Bb3 C4 D4 Eb4", "pppp"),
-        ("graphite", 8, "Eb4", "pppp"),
-        ("indigo", 2, "A3", "p", ("C", 70)),
-        # 10-12
-        ("indigo", 2, "B3", "mp", ("C", 72)),
-        ("indigo", 2, "G3", "mf", ("C", 74)),
-        ("graphite", 3, "Eb4"),
-        # 13-15
-        ("indigo", 2, "G3", "mf", ("C", 76)),
-        ("indigo", 2, "F#3", "f", ("C", 78)),
-        ("graphite", 3, "Eb4", "pppp"),
-        # 16-17
-        ("white", (1, 0)),
-        ("graphite", 4, "C3 Eb3 G3 Bb3", "pppp"),
-    ),
+    # 1-3
+    ("cobalt", (3, cobalt_position), "Eb2", "mp"),
+    ("cobalt", 1, "D2", "ffff"),
+    ("graphite", 5, "C3 D3 Eb3 F3 G3", "pppp"),
+    # 4-6
+    ("indigo", (4, indigo_position), "B3", "f", ("C", 66)),
+    ("indigo", 6, "A3", "p", ("C", 68)),
+    ("white", (1, 0)),
+    # 7-9
+    ("graphite", 6, "G3 A3 Bb3 C4 D4 Eb4", "pppp"),
+    ("graphite", 8, "Eb4", "pppp"),
+    ("indigo", 2, "A3", "p", ("C", 70)),
+    # 10-12
+    ("indigo", 2, "B3", "mp", ("C", 72)),
+    ("indigo", 2, "G3", "mf", ("C", 74)),
+    ("graphite", 3, "Eb4"),
+    # 13-15
+    ("indigo", 2, "G3", "mf", ("C", 76)),
+    ("indigo", 2, "F#3", "f", ("C", 78)),
+    ("graphite", 3, "Eb4", "pppp"),
+    # 16-17
+    ("white", (1, 0)),
+    ("graphite", 4, "C3 Eb3 G3 Bb3", "pppp"),
 )
 # Cobalt position 11 ...
 # Indigo position 118 ...

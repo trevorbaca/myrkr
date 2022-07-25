@@ -8,9 +8,7 @@ from myrkr import library
 
 cobalt_position = 0
 preprocessor = library.Preprocessor(
-    indicators=[
-        ("cobalt", (1, cobalt_position), "D2", "fff"),
-    ],
+    ("cobalt", (1, cobalt_position), "D2", "fff"),
 )
 
 score = library.make_empty_score()

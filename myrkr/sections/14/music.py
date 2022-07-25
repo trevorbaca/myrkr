@@ -9,28 +9,26 @@ from myrkr import library
 cobalt_position = 36
 indigo_position = 150
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-3
-        ("indigo", (2, indigo_position), "Db3", "pppp", ("C", 110)),
-        ("indigo", 2, "C3", "pppp", ("C", 112)),
-        ("indigo", 4, "B2", "pppp", ("C", 114)),
-        # 4-6
-        ("white", (1, 0)),
-        ("cobalt", (1, cobalt_position), "B2", "pppp"),
-        ("white", (1, 0)),
-        # 7-9
-        ("cobalt", 1, "C2", "ppppp"),
-        ("cobalt", 1, "C2", "ppppp"),
-        ("cobalt", 1, "C2", "ppppp"),
-        # 10-12
-        ("cobalt", 1, "C2", "ppppp"),
-        ("cobalt", 1, "C2", "ppppp"),
-        ("cobalt", 1, "C2", "ppppp"),
-        # 13-15
-        ("cobalt", 1, "C2", "ppppp"),
-        ("white", (1, 0)),
-        ("cobalt", 1, "E3", "fff", ("A", 44)),
-    ),
+    # 1-3
+    ("indigo", (2, indigo_position), "Db3", "pppp", ("C", 110)),
+    ("indigo", 2, "C3", "pppp", ("C", 112)),
+    ("indigo", 4, "B2", "pppp", ("C", 114)),
+    # 4-6
+    ("white", (1, 0)),
+    ("cobalt", (1, cobalt_position), "B2", "pppp"),
+    ("white", (1, 0)),
+    # 7-9
+    ("cobalt", 1, "C2", "ppppp"),
+    ("cobalt", 1, "C2", "ppppp"),
+    ("cobalt", 1, "C2", "ppppp"),
+    # 10-12
+    ("cobalt", 1, "C2", "ppppp"),
+    ("cobalt", 1, "C2", "ppppp"),
+    ("cobalt", 1, "C2", "ppppp"),
+    # 13-15
+    ("cobalt", 1, "C2", "ppppp"),
+    ("white", (1, 0)),
+    ("cobalt", 1, "E3", "fff", ("A", 44)),
 )
 # Cobalt position 45 ...
 # Indigo position 158 ...

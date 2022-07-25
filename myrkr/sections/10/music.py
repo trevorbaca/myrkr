@@ -8,22 +8,20 @@ from myrkr import library
 
 cobalt_position = 15
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-3
-        ("cobalt", (1, cobalt_position), "D2", "mp"),
-        ("graphite", 4, "D4 F4 A4 C5", "pppp"),
-        ("cobalt", 1, "D2", "mp"),
-        # 4-6
-        ("graphite", 3, "C5", "pppp"),
-        ("cobalt", 1, "D2", "mp"),
-        ("graphite", 5, "C5", "pppp"),
-        # 7-9
-        ("cobalt", 1, "D2", "mp"),
-        ("graphite", 3, "C5", "pppp"),
-        ("cobalt", 4, "D2"),
-        # 10
-        ("cobalt", 4, "Db2", "fff"),
-    ),
+    # 1-3
+    ("cobalt", (1, cobalt_position), "D2", "mp"),
+    ("graphite", 4, "D4 F4 A4 C5", "pppp"),
+    ("cobalt", 1, "D2", "mp"),
+    # 4-6
+    ("graphite", 3, "C5", "pppp"),
+    ("cobalt", 1, "D2", "mp"),
+    ("graphite", 5, "C5", "pppp"),
+    # 7-9
+    ("cobalt", 1, "D2", "mp"),
+    ("graphite", 3, "C5", "pppp"),
+    ("cobalt", 4, "D2"),
+    # 10
+    ("cobalt", 4, "Db2", "fff"),
 )
 # Cobalt position 27 ...
 
