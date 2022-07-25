@@ -49,9 +49,7 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-score["Clarinet.Music"].extend(preprocessor.music)
-
-preprocessor.make_commands(accumulator)
+accumulator.voice("cl").extend(preprocessor.music)
 
 skips = score["Skips"]
 manifests = accumulator.manifests()
@@ -69,10 +67,9 @@ baca.bar_line(score["Skips"][34 - 1], "|.")
 
 
 def postprocess(m):
-    accumulator(
-        ("cl", [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]),
-        baca.glissando(),
-    )
+    for pair in [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.glissando_function(o)
     with baca.scope(m[4]) as o:
         baca.markup_function(o, r"\myrkr-vowel-u-markup")
         baca.text_script_staff_padding_function(o, 5)
@@ -106,7 +103,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,

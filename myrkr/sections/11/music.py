@@ -49,19 +49,15 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-score["Clarinet.Music"].extend(preprocessor.music)
-
-preprocessor.make_commands(accumulator)
+accumulator.voice("cl").extend(preprocessor.music)
 
 
 def postprocess(m):
     for pair in [(10, 14), (19, 21), (25, 29)]:
         with baca.scope(m.get(pair)) as o:
             baca.tenuto_function(o.pheads())
-    accumulator(
-        ("cl", (1, 9)),
-        baca.glissando(),
-    )
+    with baca.scope(m.get(1, 9)) as o:
+        baca.glissando_function(o)
 
 
 def main():
@@ -84,7 +80,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
