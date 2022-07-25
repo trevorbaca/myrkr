@@ -8,7 +8,7 @@ from myrkr import library
 
 emerald_position = 13
 indigo_position = 42
-preprocessor = library.Preprocessor(
+music, time_signatures = library.make_music(
     # 1-2
     ("indigo", (8, indigo_position), "C4", "p", ("C", 22)),
     ("emerald", (3, emerald_position), "B3", "mf", ("A", 18)),
@@ -31,7 +31,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
-    time_signatures=preprocessor.time_signatures,
+    time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
@@ -46,7 +46,7 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-accumulator.voice("cl").extend(preprocessor.music)
+accumulator.voice("cl").extend(music)
 
 
 def main():
