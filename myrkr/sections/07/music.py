@@ -9,19 +9,17 @@ from myrkr import library
 charcoal_position = 6
 emerald_position = 25
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-3
-        ("charcoal", (2, charcoal_position), "B4 C5 B4 A#4", "mp"),
-        ("emerald", (1, emerald_position), "G3", "ff", ("A", 34)),
-        ("charcoal", 2, "A4 Bb4 A4 G#4", "mf"),
-        # 4-6
-        ("emerald", 1, "G3", "ff", ("A", 36)),
-        ("emerald", 1, "F#3", "fff", ("A", 38)),
-        ("charcoal", 2, "G4 Ab4 G4 F#4", "f"),
-        # 7-8
-        ("emerald", 2, "F#3", "fff", ("A", 40)),
-        ("emerald", 4, "E3", "fff", ("A", 42)),
-    ),
+    # 1-3
+    ("charcoal", (2, charcoal_position), "B4 C5 B4 A#4", "mp"),
+    ("emerald", (1, emerald_position), "G3", "ff", ("A", 34)),
+    ("charcoal", 2, "A4 Bb4 A4 G#4", "mf"),
+    # 4-6
+    ("emerald", 1, "G3", "ff", ("A", 36)),
+    ("emerald", 1, "F#3", "fff", ("A", 38)),
+    ("charcoal", 2, "G4 Ab4 G4 F#4", "f"),
+    # 7-8
+    ("emerald", 2, "F#3", "fff", ("A", 40)),
+    ("emerald", 4, "E3", "fff", ("A", 42)),
 )
 # Charcoal position 12 ...
 # Emerald position 34 ...

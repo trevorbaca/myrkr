@@ -9,20 +9,18 @@ from myrkr import library
 emerald_position = 13
 indigo_position = 42
 preprocessor = library.Preprocessor(
-    indicators=(
-        # 1-2
-        ("indigo", (8, indigo_position), "C4", "p", ("C", 22)),
-        ("emerald", (3, emerald_position), "B3", "mf", ("A", 18)),
-        # 3-4
-        ("indigo", 2, "C4", "p", ("C", 24)),
-        ("emerald", 1, "B3", "mf", ("A", 20)),
-        # 5-6
-        ("emerald", 1, "A3", "mf", ("A", 22)),
-        ("indigo", 2, "C4", "p", ("C", 26)),
-        # 7-8
-        ("emerald", 1, "A3", "f", ("A", 24)),
-        ("emerald", 2, "Ab3", "f", ("A", 26)),
-    ),
+    # 1-2
+    ("indigo", (8, indigo_position), "C4", "p", ("C", 22)),
+    ("emerald", (3, emerald_position), "B3", "mf", ("A", 18)),
+    # 3-4
+    ("indigo", 2, "C4", "p", ("C", 24)),
+    ("emerald", 1, "B3", "mf", ("A", 20)),
+    # 5-6
+    ("emerald", 1, "A3", "mf", ("A", 22)),
+    ("indigo", 2, "C4", "p", ("C", 26)),
+    # 7-8
+    ("emerald", 1, "A3", "f", ("A", 24)),
+    ("emerald", 2, "Ab3", "f", ("A", 26)),
 )
 # Emerald position: 21 ...
 # Indigo position: 54 ...

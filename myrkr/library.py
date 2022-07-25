@@ -113,27 +113,23 @@ class ColorMaker:
 
 
 class Preprocessor:
-    """
-    Preprocessor.
-    """
 
     __slots__ = (
-        "_indicators",
-        "_music",
-        "_command_pairs",
-        "_name_to_rhythm",
-        "_selections",
-        "_time_signatures",
+        "indicators",
+        "music",
+        "command_pairs",
+        "name_to_rhythm",
+        "selections",
+        "time_signatures",
     )
 
-    def __init__(self, indicators=()):
-        indicators = tuple(indicators)
-        self._indicators = indicators
-        self._command_pairs = []
-        self._music = []
-        self._name_to_rhythm = name_to_rhythm()
-        self._selections = ()
-        self._time_signatures = ()
+    def __init__(self, *indicators):
+        self.indicators = indicators
+        self.command_pairs = []
+        self.music = []
+        self.name_to_rhythm = name_to_rhythm()
+        self.selections = ()
+        self.time_signatures = ()
         self._validate_indicators()
         self._unpack_indicators()
 
@@ -153,10 +149,10 @@ class Preprocessor:
             color_fingering = color_fingerings(*color_fingering)
             commands.append(color_fingering)
         pair = (measure_indicator, commands)
-        self._command_pairs.append(pair)
+        self.command_pairs.append(pair)
 
     def _remove_duplicate_dynamics(self):
-        pairs = self._command_pairs
+        pairs = self.command_pairs
         pairs = list(abjad.sequence.nwise(pairs))
         for first_pair, second_pair in reversed(pairs):
             first_commands = first_pair[1]
@@ -224,12 +220,12 @@ class Preprocessor:
             self._make_command_pair(measure_indicator, pitch, dynamic, color_fingering)
             start_measure_number = stop_measure_number + 1
         assert len(selections) == len(time_signatures)
-        self._selections = tuple(selections)
+        self.selections = tuple(selections)
         music = []
         for selection in selections:
             music.extend(selection)
-        self._music = music
-        self._time_signatures = tuple(time_signatures)
+        self.music = music
+        self.time_signatures = tuple(time_signatures)
         for name in sorted(name_to_cursor):
             cursor = name_to_cursor[name]
             print(f"{name} position {cursor.position} ...")
@@ -240,33 +236,13 @@ class Preprocessor:
             assert 2 <= len(indicator) <= 5, repr(indicator)
             assert isinstance(indicator[0], str), repr(indicator)
 
-    @property
-    def indicators(self):
-        return self._indicators
-
-    @property
-    def music(self):
-        return self._music
-
-    @property
-    def name_to_rhythm(self):
-        return self._name_to_rhythm
-
-    @property
-    def selections(self):
-        return self._selections
-
-    @property
-    def time_signatures(self):
-        return self._time_signatures
-
     def make_commands(self, maker):
         self._remove_duplicate_dynamics()
-        for pair in self._command_pairs:
+        for pair in self.command_pairs:
             assert len(pair) == 2, repr(pair)
             measure_indicator = pair[0]
             commands = pair[1]
-            maker(("Clarinet.Music", measure_indicator), *commands)
+            maker(("cl", measure_indicator), *commands)
 
 
 class RhythmMaker:
