@@ -162,7 +162,6 @@ number.1.Clarinet.Music = {
           %! baca.clef_extra_offset_function(1)
     %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
           %! -PARTS
-          %! baca.IndicatorCommand._call()
           %! baca.instrument_name()
         \set Staff.instrumentName = \myrkr-bass-clarinet-markup
         % OPENING:
@@ -203,7 +202,6 @@ number.1.Clarinet.Music = {
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-overblow-markup
         % ABSOLUTE_AFTER:

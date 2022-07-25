@@ -36,12 +36,6 @@ baca.interpret.set_up_score(
 
 score["Clarinet.Music"].extend(preprocessor.music)
 
-accumulator(
-    ("cl", (1, len(preprocessor.time_signatures))),
-    baca.instrument_name(r"\myrkr-bass-clarinet-markup"),
-    baca.markup(r"\baca-overblow-markup"),
-)
-
 preprocessor.make_commands(accumulator)
 
 skips = score["Skips"]
@@ -54,11 +48,13 @@ for index, item in ((1 - 1, "44"),):
 
 
 def postprocess(m):
-    accumulator(
-        "cl",
-        baca.instrument(accumulator.instruments["BassClarinet"]),
-        baca.clef("treble"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["BassClarinet"], accumulator.manifests()
+        )
+        baca.clef_function(o, "treble")
+        baca.instrument_name_function(o, r"\myrkr-bass-clarinet-markup")
+        baca.markup_function(o, r"\baca-overblow-markup")
 
 
 def main():

@@ -2514,7 +2514,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -2551,7 +2550,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -2567,7 +2565,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -2706,7 +2703,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -2734,7 +2730,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -2750,7 +2745,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -2766,7 +2760,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -2782,7 +2775,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3157,7 +3149,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -3185,7 +3176,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3201,7 +3191,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3323,7 +3312,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -3351,7 +3339,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3367,7 +3354,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3383,7 +3369,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -3399,7 +3384,6 @@ number.12.Clarinet.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:

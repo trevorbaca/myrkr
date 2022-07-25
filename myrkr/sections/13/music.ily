@@ -501,7 +501,6 @@ number.13.Clarinet.Music = {
           %! baca.dynamic()
         \fff
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-overblow-markup
           %! REAPPLIED_INSTRUMENT_ALERT
