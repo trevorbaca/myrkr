@@ -67,7 +67,7 @@ def postprocess(m):
             baca.tenuto_function(o.pheads())
     with baca.scope(m.get(2, 5)) as o:
         baca.glissando_function(o)
-    baca.markup_function(m[24], r"\baca-overblow-markup")
+    baca.markup_function(baca.select.pleaf(m[24], 0), r"\baca-overblow-markup")
 
 
 def main():

@@ -50,7 +50,7 @@ def postprocess(m):
         )
         baca.clef_function(o.leaf(0), "treble")
         baca.instrument_name_function(o.leaf(0), r"\myrkr-bass-clarinet-markup")
-        baca.markup_function(o, r"\baca-overblow-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-overblow-markup")
 
 
 def main():

@@ -78,7 +78,7 @@ def postprocess(m):
     for pair in [(5, 9), (21, 26), (52, 55)]:
         with baca.scope(m.get(pair)) as o:
             baca.glissando_function(o)
-    baca.markup_function(m[4], r"\baca-overblow-markup")
+    baca.markup_function(baca.select.pleaf(m[4], 0), r"\baca-overblow-markup")
 
 
 def main():
