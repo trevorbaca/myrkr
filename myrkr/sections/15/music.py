@@ -71,10 +71,10 @@ def postprocess(m):
         with baca.scope(m.get(pair)) as o:
             baca.glissando_function(o)
     with baca.scope(m[4]) as o:
-        baca.markup_function(o, r"\myrkr-vowel-u-markup")
+        baca.markup_function(o.pleaf(0), r"\myrkr-vowel-u-markup")
         baca.text_script_staff_padding_function(o, 5)
     with baca.scope(m[11]) as o:
-        baca.markup_function(o, r"\myrkr-vowel-a-markup")
+        baca.markup_function(o.pleaf(0), r"\myrkr-vowel-a-markup")
         baca.text_script_staff_padding_function(o, 5)
     with baca.scope(m[34]) as o:
         baca.mark_function(o.leaf(-1), r"\myrkr-colophon-markup")

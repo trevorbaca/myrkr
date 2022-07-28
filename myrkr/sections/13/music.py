@@ -52,7 +52,7 @@ for index, item in ((1 - 1, "44"),):
 
 
 def postprocess(m):
-    baca.markup_function(m[1], r"\baca-overblow-markup")
+    baca.markup_function(baca.select.pleaf(m[1], 0), r"\baca-overblow-markup")
 
 
 def main():
