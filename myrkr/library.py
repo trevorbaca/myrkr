@@ -273,7 +273,8 @@ def make_music(*indicators):
             assert isinstance(pitch, str), repr(pitch)
             baca.pitches_function(recent_selections, pitch)
         if dynamic is not None:
-            baca.dynamic_function(recent_selections, dynamic)
+            leaf = baca.select.phead(recent_selections, 0)
+            baca.dynamic_function(leaf, dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
             attach_color_fingerings(recent_selections, *color_fingering)
