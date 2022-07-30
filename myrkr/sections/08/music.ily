@@ -206,19 +206,19 @@ number.8.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -484,19 +484,19 @@ number.8.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "110"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2934,12 +2934,12 @@ number.8.Clarinet.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \mp
         % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
@@ -3021,15 +3021,15 @@ number.8.Clarinet.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \ffff
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-overblow-markup
         % CLOSING:
         % COMMANDS:
@@ -3049,16 +3049,16 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \pppp
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3069,7 +3069,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3080,7 +3080,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3091,7 +3091,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3117,12 +3117,12 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % START_BEAM:
     [
@@ -3315,12 +3315,12 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \p
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
@@ -3612,16 +3612,16 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \pppp
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3632,7 +3632,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3643,7 +3643,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3654,7 +3654,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3665,7 +3665,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3691,19 +3691,19 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
       %! REDUNDANT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'DeepPink1)
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \pppp
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3718,7 +3718,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3733,7 +3733,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3748,7 +3748,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3763,7 +3763,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3778,7 +3778,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3793,7 +3793,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3808,7 +3808,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3828,12 +3828,12 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \p
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -3944,12 +3944,12 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \mp
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -4046,12 +4046,12 @@ number.8.Clarinet.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \mf
         % MARKUP:
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
@@ -4131,7 +4131,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4146,7 +4146,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4161,7 +4161,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4181,12 +4181,12 @@ number.8.Clarinet.Music = {
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'DeepPink1)
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \mf
     % MARKUP:
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -4294,12 +4294,12 @@ number.8.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % START_BEAM:
     [
@@ -4394,19 +4394,19 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \pppp
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4421,7 +4421,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4436,7 +4436,7 @@ number.8.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.tenuto()
+      %! baca.tenuto_function()
     - \tenuto
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4457,16 +4457,16 @@ number.8.Clarinet.Music = {
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'DeepPink1)
       %! REDUNDANT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \pppp
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4477,7 +4477,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4488,7 +4488,7 @@ number.8.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
