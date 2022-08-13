@@ -196,7 +196,7 @@ def attach_color_fingerings(argument, name, index=0):
 
 
 def instruments():
-    return dict([("BassClarinet", abjad.BassClarinet())])
+    return {"BassClarinet": abjad.BassClarinet()}
 
 
 def make_empty_score():
@@ -291,14 +291,12 @@ def make_music(*indicators):
 
 
 def metronome_marks():
-    return dict(
-        [
-            ("44", abjad.MetronomeMark((1, 4), 44)),
-            ("55", abjad.MetronomeMark((1, 4), 55)),
-            ("88", abjad.MetronomeMark((1, 4), 88)),
-            ("110", abjad.MetronomeMark((1, 4), 110)),
-        ]
-    )
+    return {
+        "44": abjad.MetronomeMark((1, 4), 44),
+        "55": abjad.MetronomeMark((1, 4), 55),
+        "88": abjad.MetronomeMark((1, 4), 88),
+        "110": abjad.MetronomeMark((1, 4), 110),
+    }
 
 
 def name_to_rhythm():
