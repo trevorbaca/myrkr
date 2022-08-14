@@ -45,9 +45,7 @@ for index, item in ((1 - 1, "44"),):
 
 def postprocess(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["BassClarinet"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
         baca.clef_function(o.leaf(0), "treble")
         baca.instrument_name_function(o.leaf(0), r"\myrkr-bass-clarinet-markup")
         baca.markup_function(o.pleaf(0), r"\baca-overblow-markup")
