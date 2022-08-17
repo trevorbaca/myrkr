@@ -77,7 +77,7 @@ for index, item in ((1 - 1, "110"),):
 def main():
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
-    baca.reapply_new(
+    baca.reapply(
         accumulator.voices(),
         accumulator.manifests(),
         previous_persistent_indicators,
