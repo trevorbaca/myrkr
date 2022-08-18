@@ -331,10 +331,6 @@ def name_to_rhythm():
     return name_to_rhythm
 
 
-def voice_abbreviations():
-    return {"cl": "Clarinet.Music"}
-
-
 instruments = {"BassClarinet": abjad.BassClarinet()}
 
 
@@ -350,3 +346,6 @@ manifests = {
     "abjad.Instrument": instruments,
     "abjad.MetronomeMark": metronome_marks,
 }
+
+
+voice_abbreviations = {"cl": "Clarinet.Music"}
