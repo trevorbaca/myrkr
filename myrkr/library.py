@@ -195,10 +195,6 @@ def attach_color_fingerings(argument, name, index=0):
     baca.color_fingerings_function(argument, color_fingerings__)
 
 
-def instruments():
-    return {"BassClarinet": abjad.BassClarinet()}
-
-
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
@@ -290,15 +286,6 @@ def make_music(*indicators):
     return music, time_signatures
 
 
-def metronome_marks():
-    return {
-        "44": abjad.MetronomeMark((1, 4), 44),
-        "55": abjad.MetronomeMark((1, 4), 55),
-        "88": abjad.MetronomeMark((1, 4), 88),
-        "110": abjad.MetronomeMark((1, 4), 110),
-    }
-
-
 def name_to_rhythm():
     name_to_rhythm = {}
     name_to_rhythm["charcoal"] = RhythmMaker(
@@ -346,3 +333,20 @@ def name_to_rhythm():
 
 def voice_abbreviations():
     return {"cl": "Clarinet.Music"}
+
+
+instruments = {"BassClarinet": abjad.BassClarinet()}
+
+
+metronome_marks = {
+    "44": abjad.MetronomeMark((1, 4), 44),
+    "55": abjad.MetronomeMark((1, 4), 55),
+    "88": abjad.MetronomeMark((1, 4), 88),
+    "110": abjad.MetronomeMark((1, 4), 110),
+}
+
+
+manifests = {
+    "abjad.Instrument": instruments,
+    "abjad.MetronomeMark": metronome_marks,
+}
