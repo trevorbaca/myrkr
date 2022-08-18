@@ -57,8 +57,7 @@ for index, item in (
     (24 - 1, "110"),
 ):
     skip = skips[index]
-    indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark_function(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, item, manifests)
 
 
 def postprocess(m):
