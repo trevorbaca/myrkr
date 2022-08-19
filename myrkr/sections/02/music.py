@@ -49,7 +49,7 @@ accumulator = baca.CommandAccumulator(
     instruments=library.instruments,
     metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    _voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
