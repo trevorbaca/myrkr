@@ -46,7 +46,6 @@ baca.interpret.set_up_score(
 accumulator.voice("cl").extend(music)
 
 skips = score["Skips"]
-manifests = library.manifests
 
 for index, item in (
     (20 - 1, "55"),
@@ -54,7 +53,7 @@ for index, item in (
     (24 - 1, "110"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def postprocess(m):
