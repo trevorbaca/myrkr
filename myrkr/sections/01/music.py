@@ -6,37 +6,37 @@ from myrkr import library
 ########################################### 01 ##########################################
 #########################################################################################
 
-cobalt_position = 0
-music, time_signatures = library.make_music(
-    ("cobalt", (1, cobalt_position), "D2", "fff"),
-)
 
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
+def make_empty_score():
+    cobalt_position = 0
+    music, time_signatures = library.make_music(
+        ("cobalt", (1, cobalt_position), "D2", "fff"),
+    )
 
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
+    score = library.make_empty_score()
+    voice_names = baca.accumulator.get_voice_names(score)
+    accumulator = baca.CommandAccumulator(
+        time_signatures=time_signatures,
+        _voice_abbreviations=library.voice_abbreviations,
+        _voice_names=voice_names,
+    )
+    baca.interpret.set_up_score(
+        score,
+        accumulator.time_signatures,
+        accumulator,
+        library.manifests,
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_section=True,
+    )
+    accumulator.voice("cl").extend(music)
+    return score, accumulator
 
-baca.interpret.set_up_score(
-    score,
-    accumulator.time_signatures,
-    accumulator,
-    library.manifests,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-    first_section=True,
-)
 
-accumulator.voice("cl").extend(music)
-
-skips = score["Skips"]
-
-for index, item in ((1 - 1, "44"),):
-    skip = skips[index]
-    baca.metronome_mark_function(skip, item, library.manifests)
+def GLOBALS(skips):
+    for index, item in ((1 - 1, "44"),):
+        skip = skips[index]
+        baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def postprocess(m):
@@ -48,22 +48,25 @@ def postprocess(m):
 
 
 def make_score():
+    score, accumulator = make_empty_score()
+    GLOBALS(score["Skips"])
     cache = baca.interpret.cache_leaves(
         score,
         len(accumulator.time_signatures),
         library.voice_abbreviations,
     )
     postprocess(cache["cl"])
+    return score, accumulator
 
 
 def main():
-    make_score()
+    score, accumulator = make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
-        activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
