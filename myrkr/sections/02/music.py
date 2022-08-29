@@ -95,7 +95,7 @@ def main():
         library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
-        activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         deactivate=[baca.tags.REPEAT_PITCH_CLASS_COLORING],
