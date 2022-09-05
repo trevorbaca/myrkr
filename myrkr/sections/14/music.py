@@ -70,9 +70,9 @@ def postprocess(m):
     # accumulator(
     #    ("cl", (12, 18)),
     #    baca.text_spanner(
+    #        o.rleaves(),
     #        "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
     #        pieces=lambda _: baca.select.cmgroups(_, ),
-    #        selector=lambda _: baca.select.rleaves(_),
     #    ),
     #    baca.text_spanner_staff_padding(5),
     # )
