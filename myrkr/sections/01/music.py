@@ -36,15 +36,15 @@ def make_empty_score():
 def GLOBALS(skips):
     for index, item in ((1 - 1, "44"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def postprocess(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
-        baca.clef_function(o.leaf(0), "treble")
-        baca.instrument_name_function(o.leaf(0), r"\myrkr-bass-clarinet-markup")
-        baca.markup_function(o.pleaf(0), r"\baca-overblow-markup")
+        baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
+        baca.clef(o.leaf(0), "treble")
+        baca.instrument_name(o.leaf(0), r"\myrkr-bass-clarinet-markup")
+        baca.markup(o.pleaf(0), r"\baca-overblow-markup")
 
 
 def make_score():

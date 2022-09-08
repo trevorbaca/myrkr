@@ -64,17 +64,17 @@ def GLOBALS(skips):
         (10 - 1, "110"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def postprocess(m):
     for pair in [(27, 34), (41, 43), (48, 50)]:
         with baca.scope(m.get(pair)) as o:
-            baca.tenuto_function(o.pheads())
+            baca.tenuto(o.pheads())
     for pair in [(5, 9), (21, 26), (52, 55)]:
         with baca.scope(m.get(pair)) as o:
-            baca.glissando_function(o)
-    baca.markup_function(baca.select.pleaf(m[4], 0), r"\baca-overblow-markup")
+            baca.glissando(o)
+    baca.markup(baca.select.pleaf(m[4], 0), r"\baca-overblow-markup")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

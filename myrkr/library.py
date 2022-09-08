@@ -192,7 +192,7 @@ def attach_color_fingerings(argument, name, index=0):
     }
     color_fingerings = color_fingerings_[name]
     color_fingerings__ = abjad.sequence.rotate(color_fingerings, n=index)
-    baca.color_fingerings_function(argument, color_fingerings__)
+    baca.color_fingerings(argument, color_fingerings__)
 
 
 def make_empty_score():
@@ -267,10 +267,10 @@ def make_music(*indicators):
         stop_measure_number = start_measure_number + measure_count - 1
         if pitch is not None:
             assert isinstance(pitch, str), repr(pitch)
-            baca.pitches_function(recent_selections, pitch)
+            baca.pitches(recent_selections, pitch)
         if dynamic is not None:
             leaf = baca.select.phead(recent_selections, 0)
-            baca.dynamic_function(leaf, dynamic)
+            baca.dynamic(leaf, dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
             attach_color_fingerings(recent_selections, *color_fingering)

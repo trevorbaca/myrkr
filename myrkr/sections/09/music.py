@@ -57,13 +57,13 @@ def GLOBALS(skips):
         (13 - 1, "110"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def postprocess(m):
     for pair in [(2, 4), (6, 8), (10, 12), (14, 16), (18, 19)]:
         with baca.scope(m.get(pair)) as o:
-            baca.glissando_function(o)
+            baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
