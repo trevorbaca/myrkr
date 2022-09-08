@@ -53,9 +53,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 def postprocess(m):
     for pair in [(10, 14), (19, 21), (25, 29)]:
         with baca.scope(m.get(pair)) as o:
-            baca.tenuto_function(o.pheads())
+            baca.tenuto(o.pheads())
     with baca.scope(m.get(1, 9)) as o:
-        baca.glissando_function(o)
+        baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

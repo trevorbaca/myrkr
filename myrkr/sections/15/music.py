@@ -57,25 +57,25 @@ def GLOBALS(skips):
         (23 - 1, "110"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
-    baca.bar_line_function(skips[34 - 1], "|.")
+        baca.metronome_mark(skip, item, library.manifests)
+    baca.bar_line(skips[34 - 1], "|.")
 
 
 def postprocess(m):
     for pair in [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]:
         with baca.scope(m.get(pair)) as o:
-            baca.glissando_function(o)
+            baca.glissando(o)
     with baca.scope(m[4]) as o:
-        baca.markup_function(o.pleaf(0), r"\myrkr-vowel-u-markup")
-        baca.text_script_staff_padding_function(o, 5)
+        baca.markup(o.pleaf(0), r"\myrkr-vowel-u-markup")
+        baca.text_script_staff_padding(o, 5)
     with baca.scope(m[11]) as o:
-        baca.markup_function(o.pleaf(0), r"\myrkr-vowel-a-markup")
-        baca.text_script_staff_padding_function(o, 5)
+        baca.markup(o.pleaf(0), r"\myrkr-vowel-a-markup")
+        baca.text_script_staff_padding(o, 5)
     with baca.scope(m[34]) as o:
-        baca.mark_function(o.leaf(-1), r"\myrkr-colophon-markup")
-        baca.rehearsal_mark_down_function(o.leaf(-1))
-        baca.rehearsal_mark_padding_function(o.leaf(-1), 6)
-        baca.rehearsal_mark_self_alignment_x_function(o.leaf(-1), abjad.RIGHT)
+        baca.mark(o.leaf(-1), r"\myrkr-colophon-markup")
+        baca.rehearsal_mark_down(o.leaf(-1))
+        baca.rehearsal_mark_padding(o.leaf(-1), 6)
+        baca.rehearsal_mark_self_alignment_x(o.leaf(-1), abjad.RIGHT)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

@@ -60,12 +60,12 @@ def GLOBALS(skips):
         (19 - 1, "55"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def postprocess(m):
     with baca.scope(m.get(23, 25)) as o:
-        baca.glissando_function(o)
+        baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

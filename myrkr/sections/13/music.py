@@ -44,11 +44,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 def GLOBALS(skips):
     for index, item in ((1 - 1, "44"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def postprocess(m):
-    baca.markup_function(baca.select.pleaf(m[1], 0), r"\baca-overblow-markup")
+    baca.markup(baca.select.pleaf(m[1], 0), r"\baca-overblow-markup")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
