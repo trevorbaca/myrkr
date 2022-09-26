@@ -47,6 +47,7 @@ def postprocess(m):
         baca.markup(o.pleaf(0), r"\baca-overblow-markup")
 
 
+@baca.build.timed
 def make_score():
     score, accumulator = make_empty_score()
     GLOBALS(score["Skips"])
@@ -61,7 +62,8 @@ def make_score():
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
-    score, accumulator = make_score()
+    timing = baca.build.Timing()
+    score, accumulator = make_score(timing)
     metadata, persist, timing = baca.build.postprocess_score(
         score,
         library.manifests,
