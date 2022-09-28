@@ -78,7 +78,7 @@ def postprocess(m):
         baca.rehearsal_mark_self_alignment_x(o.leaf(-1), abjad.RIGHT)
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
     score, accumulator = make_empty_score(
         first_measure_number, previous_persistent_indicators
