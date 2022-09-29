@@ -12,7 +12,7 @@ def make_empty_score():
     music, time_signatures = library.make_music(
         ("cobalt", (1, cobalt_position), "D2", "fff"),
     )
-    measures = baca.measures(time_signatures)
+    measures = baca.section.measures(time_signatures)
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
