@@ -1,9 +1,66 @@
 {
+    "alive_during_section": [
+        "Score",
+        "GlobalContext",
+        "Skips",
+        "MusicContext",
+        "Clarinet.Staff",
+        "Rests",
+        "Clarinet.Music",
+    ],
     "bol_measure_numbers": [142, 152],
     "duration": "0'48''",
     "final_measure_number": 160,
     "first_measure_number": 142,
     "has_anchor_skip": True,
+    "persistent_indicators": {
+        "Clarinet.Music": [
+            baca.Memento(
+                context="Clarinet.Music",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="f",
+            )
+        ],
+        "Clarinet.Staff": [
+            baca.Memento(
+                context="Clarinet.Music",
+                edition=None,
+                manifest="instruments",
+                prototype=None,
+                synthetic_offset=None,
+                value="BassClarinet",
+            ),
+            baca.Memento(
+                context="Clarinet.Music",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            ),
+        ],
+        "Score": [
+            baca.Memento(
+                context="Skips",
+                edition=None,
+                manifest="metronome_marks",
+                prototype=None,
+                synthetic_offset=None,
+                value="110",
+            ),
+            baca.Memento(
+                context="Skips",
+                edition=None,
+                manifest=None,
+                prototype="abjad.TimeSignature",
+                synthetic_offset=None,
+                value="4/22",
+            ),
+        ],
+    },
     "start_clock_time": "3'04''",
     "stop_clock_time": "3'52''",
     "time_signatures": [
