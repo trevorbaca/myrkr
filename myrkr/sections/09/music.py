@@ -98,11 +98,9 @@ def main():
         global_rests_in_topmost_staff=True,
         manifests=library.manifests,
         transpose_score=True,
-        tags=baca.tags.Tags(
-            activate=[baca.tags.LOCAL_MEASURE_NUMBER],
-            deactivate=[baca.tags.REPEAT_PITCH_CLASS_COLORING],
-        ),
     )
+    baca.tags.deactivate(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
+    baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER)
     lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
