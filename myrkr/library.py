@@ -280,9 +280,9 @@ def make_music(*indicators):
     for selection in selections:
         music.extend(selection)
     time_signatures = tuple(time_signatures)
-    for name in sorted(name_to_cursor):
-        cursor = name_to_cursor[name]
-        print(f"{name} position {cursor.position} ...")
+    # for name in sorted(name_to_cursor):
+    #     cursor = name_to_cursor[name]
+    #     print(f"{name} position {cursor.position} ...")
     return music, time_signatures
 
 
