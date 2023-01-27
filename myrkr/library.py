@@ -126,7 +126,6 @@ class RhythmMaker:
         denominators = range(denominator, 2 * denominator)
         for tuplet in tuplets:
             duration = abjad.get.duration(tuplet)
-            duration = abjad.NonreducedFraction(duration)
             for denominator in denominators:
                 duration = duration.with_denominator(denominator)
                 if duration.denominator == denominator:
@@ -134,7 +133,6 @@ class RhythmMaker:
                     break
             else:
                 duration = abjad.get.duration(tuplet)
-                duration = abjad.NonreducedFraction(duration)
                 time_signatures.append(duration)
         tuplet_count = len(tuplets)
         time_signature_count = len(time_signatures)
