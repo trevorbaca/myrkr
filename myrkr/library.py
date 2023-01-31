@@ -128,9 +128,8 @@ class RhythmMaker:
             duration = abjad.get.duration(tuplet)
             for denominator in denominators:
                 pair = abjad.duration.with_denominator(duration, denominator)
-                duration = abjad.NonreducedFraction(pair)
-                if duration.denominator == denominator:
-                    time_signatures.append(duration)
+                if pair[1] == denominator:
+                    time_signatures.append(pair)
                     break
             else:
                 duration = abjad.get.duration(tuplet)
