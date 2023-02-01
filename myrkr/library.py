@@ -7,7 +7,6 @@ import baca
 
 
 class RhythmMaker:
-
     __slots__ = (
         "counts",
         "denominator",
