@@ -20,12 +20,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ("cobalt", (1, cobalt_position), "B1", "fff"),
     )
     # Cobalt position 36 ...
-    measures = baca.section.measures(time_signatures)
+    signatures = baca.section.signatures(time_signatures)
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
         score,
-        measures(),
+        signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
@@ -33,7 +33,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     voices("cl").extend(music)
-    return score, voices, measures
+    return score, voices, signatures
 
 
 def GLOBALS(skips):
@@ -48,7 +48,7 @@ def postprocess(m):
 
 @baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
-    score, voices, measures = make_empty_score(
+    score, voices, signatures = make_empty_score(
         first_measure_number, previous_persistent_indicators
     )
     GLOBALS(score["Skips"])
@@ -59,7 +59,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     )
     cache = baca.section.cache_leaves(
         score,
-        len(measures()),
+        len(signatures()),
         library.voice_abbreviations,
     )
     postprocess(cache["cl"])
