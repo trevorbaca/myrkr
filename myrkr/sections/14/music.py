@@ -65,7 +65,7 @@ def postprocess(m):
     # baca.text_spanner(
     #     o.rleaves(),
     #     "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
-    #     the_pieces=baca.select.cmgroups(o.rleaves(), ),
+    #     pieces=baca.select.cmgroups(o.rleaves(), ),
     # ),
     # baca.text_spanner_staff_padding(5),
 
