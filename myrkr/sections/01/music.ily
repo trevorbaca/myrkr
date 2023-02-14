@@ -1,12 +1,8 @@
   %! baca.path.extern()
 number.1.Skips = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 1]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -20,8 +16,6 @@ number.1.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 12/5
-    % AFTER:
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -67,15 +61,11 @@ number.1.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca.style_anchor_skip(1)
     % [anchor skip]
-    % OPENING:
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(2)
     \baca-time-signature-transparent
@@ -87,8 +77,6 @@ number.1.Skips = {
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -109,17 +97,13 @@ number.1.Skips = {
       %! baca._label_measure_numbers()
       %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanMN
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -127,17 +111,12 @@ number.1.Skips = {
 
   %! baca.path.extern()
 number.1.Rests = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 12/5
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -145,20 +124,13 @@ number.1.Rests = {
 
   %! baca.path.extern()
 number.1.Clarinet.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! MEASURE_1
           %! SHIFTED_CLEF
           %! baca.clef_x_extent_false(1)
@@ -170,8 +142,6 @@ number.1.Clarinet.Music = {
           %! -PARTS
           %! baca.instrument_name()
         \set Staff.instrumentName = \myrkr-bass-clarinet-markup
-        % OPENING:
-        % COMMANDS:
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
@@ -190,8 +160,6 @@ number.1.Clarinet.Music = {
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
         e\breve.
-        % AFTER:
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -204,26 +172,17 @@ number.1.Clarinet.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \fff
-        % MARKUP:
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
           %! baca.markup()
         ^ \baca-overblow-markup
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! EXPLICIT_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! myrkr.make_empty_score()
   %! baca.path.extern()
 }
@@ -231,28 +190,19 @@ number.1.Clarinet.Music = {
 
   %! baca.path.extern()
 number.1.Clarinet.Staff = <<
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! baca.make_global_context()
     \context GlobalRests = "Rests"
       %! baca.make_global_context()
       %! baca.path.extern()
     { \number.1.Rests }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! myrkr.make_empty_score()
     \context Voice = "Clarinet.Music"
       %! myrkr.make_empty_score()
       %! baca.path.extern()
     { \number.1.Clarinet.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! myrkr.make_empty_score()
   %! baca.path.extern()
 >>
