@@ -221,10 +221,17 @@ def make_music(*indicators):
         assert isinstance(indicator, tuple), repr(indicator)
         assert 2 <= len(indicator) <= 5, repr(indicator)
         assert isinstance(indicator[0], str), repr(indicator)
-    name_to_cursor = {}
     selections, time_signatures = [], []
     start_measure_number = 1
     _name_to_rhythm = name_to_rhythm()
+    name_to_position = {
+        "charcoal": 0,
+        "cobalt": 0,
+        "emerald": 0,
+        "graphite": 0,
+        "indigo": 0,
+        "white": 0,
+    }
     for indicator in indicators:
         position = 0
         pitch = None
@@ -233,6 +240,7 @@ def make_music(*indicators):
         recent_selections = []
         assert len(indicator) in (2, 3, 4, 5), repr(indicator)
         name = indicator[0]
+        assert name in name_to_position
         location = indicator[1]
         if isinstance(location, int):
             measure_count = location
@@ -240,6 +248,7 @@ def make_music(*indicators):
             assert isinstance(location, tuple)
             assert len(location) == 2, repr(location)
             measure_count, position = location
+            name_to_position[name] = position
         if 3 <= len(indicator):
             pitch = indicator[2]
         if 4 <= len(indicator):
@@ -248,14 +257,12 @@ def make_music(*indicators):
             color_fingering = indicator[4]
         assert isinstance(measure_count, int), repr(measure_count)
         assert isinstance(position, int), repr(position)
-        reset_cursor = name not in name_to_cursor or isinstance(location, tuple)
-        if reset_cursor:
-            rhythm = list(_name_to_rhythm[name])
-            rhythm = abjad.CyclicTuple(rhythm)
-            cursor = baca.Cursor(source=rhythm, position=position)
-            name_to_cursor[name] = cursor
-        cursor = name_to_cursor[name]
-        pairs = cursor.next(count=measure_count)
+        rhythm = list(_name_to_rhythm[name])
+        rhythm = abjad.CyclicTuple(rhythm)
+        start_measure = name_to_position[name]
+        stop_measure = start_measure + measure_count
+        pairs = rhythm[start_measure:stop_measure]
+        name_to_position[name] += measure_count
         for selection, time_signature in pairs:
             selection = copy.deepcopy(selection)
             recent_selections.append(selection)
@@ -277,9 +284,6 @@ def make_music(*indicators):
     for selection in selections:
         music.extend(selection)
     time_signatures = tuple(time_signatures)
-    # for name in sorted(name_to_cursor):
-    #     cursor = name_to_cursor[name]
-    #     print(f"{name} position {cursor.position} ...")
     return music, time_signatures
 
 
