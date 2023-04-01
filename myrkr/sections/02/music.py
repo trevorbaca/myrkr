@@ -43,7 +43,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ("indigo", 2, "F4", "ppp", ("C", 18)),
         ("indigo", 6, "F#4", "pppp", ("C", 20)),
     )
-    time_signatures = baca.section.time_signatures(time_signatures)
+    time_signatures = baca.section.wrap(time_signatures)
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
