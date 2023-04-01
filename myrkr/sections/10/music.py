@@ -26,7 +26,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ("cobalt", 4, "Db2", "fff"),
     )
     # Cobalt position 27 ...
-    time_signatures = baca.section.time_signatures(time_signatures)
+    time_signatures = baca.section.wrap(time_signatures)
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
