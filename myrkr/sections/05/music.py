@@ -69,7 +69,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
         first_measure_number, previous_persistent_indicators
     )
     GLOBALS(score["Skips"])
-    baca.section.reapply(
+    baca.section.reapply_persistent_indicators(
         voices,
         previous_persistent_indicators,
         manifests=library.manifests,

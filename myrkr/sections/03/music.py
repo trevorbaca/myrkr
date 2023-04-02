@@ -47,7 +47,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     score, voices, time_signatures = make_empty_score(
         first_measure_number, previous_persistent_indicators
     )
-    baca.section.reapply(
+    baca.section.reapply_persistent_indicators(
         voices,
         previous_persistent_indicators,
         manifests=library.manifests,
