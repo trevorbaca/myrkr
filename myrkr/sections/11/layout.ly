@@ -288,9 +288,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 1/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -461,9 +461,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 12/5
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -478,10 +478,10 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #4
               %! ANCHOR_SKIP
+            \baca-time-signature-transparent
+              %! ANCHOR_SKIP
               %! BREAK
             \noBreak
-              %! ANCHOR_SKIP
-            \baca-time-signature-transparent
               %! ANCHOR_SKIP
             s1 * 1/4
               %! ANCHOR_SKIP
