@@ -91,9 +91,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 8/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -160,9 +160,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -216,9 +216,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 5/4
               %! SPACING
             %@% \bacaStopTextSpanSPM

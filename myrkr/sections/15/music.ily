@@ -85,12 +85,12 @@ number.15.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 4]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 12/5
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -258,12 +258,12 @@ number.15.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 11]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/3
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -356,12 +356,12 @@ number.15.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 15]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 2/3
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -525,12 +525,12 @@ number.15.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 22]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 12/5
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -987,14 +987,14 @@ number.15.Clarinet.Music = {
     {
 
         % [Clarinet.Music measure 1]
-          %! REAPPLIED_CLEF
-        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
           %! REAPPLIED_CLEF
         \set Staff.forceClef = ##t
+          %! REAPPLIED_CLEF
+        \clef "treble"
         fs'''!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC

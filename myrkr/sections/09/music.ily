@@ -1,15 +1,15 @@
 number.9.Skips = {
 
     % [Skips measure 1]
-      %! EXPLICIT_TIME_SIGNATURE
-    #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 2/3
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
       %! +SECTION
       %! EMPTY_START_BAR
     \bar ""
+      %! EXPLICIT_TIME_SIGNATURE
+    #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 2/3
     s1 * 2/3
       %! EXPLICIT_METRONOME_MARK
     %@% - \abjad-dashed-line-with-arrow
@@ -86,12 +86,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 12/5
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
@@ -173,12 +173,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 9]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/3
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
@@ -495,14 +495,14 @@ number.9.Clarinet.Music = {
     {
 
         % [Clarinet.Music measure 1]
-          %! REAPPLIED_CLEF
-        \clef "treble"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
           %! REAPPLIED_CLEF
         \set Staff.forceClef = ##t
+          %! REAPPLIED_CLEF
+        \clef "treble"
         e1
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
