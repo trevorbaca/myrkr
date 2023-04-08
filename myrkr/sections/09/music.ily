@@ -1,13 +1,13 @@
 number.9.Skips = {
 
     % [Skips measure 1]
+      %! EXPLICIT_TIME_SIGNATURE
+    #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
       %! +SECTION
       %! EMPTY_START_BAR
     \bar ""
-      %! EXPLICIT_TIME_SIGNATURE
-    #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
     s1 * 2/3
@@ -86,10 +86,10 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
     s1 * 12/5
@@ -173,10 +173,10 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 9]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/3
     s1 * 4/3
