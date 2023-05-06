@@ -11,7 +11,10 @@ from myrkr import library
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     charcoal_position = 24
     cobalt_position = 45
-    music, time_signatures = library.make_music(
+    score = library.make_empty_score()
+    voice = score["Clarinet.Music"]
+    time_signatures = library.make_music(
+        voice,
         # 1-3
         ("charcoal", (3, charcoal_position), "E5 F5 E5 D#5", "p"),
         ("cobalt", (1, cobalt_position), "C2", "ppppp"),
@@ -30,7 +33,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     # Charcoal position 54 ...
     # Cobalt position 49 ...
     time_signatures = baca.section.wrap(time_signatures)
-    score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
         score,
@@ -41,7 +43,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
-    voices("cl").extend(music)
     return score, voices, time_signatures
 
 

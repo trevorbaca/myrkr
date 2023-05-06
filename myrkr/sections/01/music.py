@@ -9,11 +9,13 @@ from myrkr import library
 
 def make_empty_score():
     cobalt_position = 0
-    music, time_signatures = library.make_music(
+    score = library.make_empty_score()
+    voice = score["Clarinet.Music"]
+    time_signatures = library.make_music(
+        voice,
         ("cobalt", (1, cobalt_position), "D2", "fff"),
     )
     time_signatures = baca.section.wrap(time_signatures)
-    score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
         score,
@@ -23,7 +25,7 @@ def make_empty_score():
         first_section=True,
         manifests=library.manifests,
     )
-    voices("cl").extend(music)
+    # voices("cl").extend(music)
     return score, voices, time_signatures
 
 
