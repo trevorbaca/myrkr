@@ -11,7 +11,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     cobalt_position = 1
     emerald_position = 21
     indigo_position = 54
-    music, time_signatures = library.make_music(
+    score = library.make_empty_score()
+    voice = score["Clarinet.Music"]
+    time_signatures = library.make_music(
+        voice,
         # 1-2
         ("indigo", (2, indigo_position), "C4", "p", ("C", 24)),
         ("indigo", (6, indigo_position), "C#4", "pp", ("C", 26)),
@@ -42,7 +45,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     # Emerald position 25 ...
     # Indigo position 80 ...
     time_signatures = baca.section.wrap(time_signatures)
-    score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     baca.section.set_up_score(
         score,
@@ -53,7 +55,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
-    voices("cl").extend(music)
     return score, voices, time_signatures
 
 

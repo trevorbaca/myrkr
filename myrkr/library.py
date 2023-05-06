@@ -216,12 +216,13 @@ def make_empty_score():
     return score
 
 
-def make_music(*indicators):
+def make_music(voice, *indicators):
     for indicator in indicators:
         assert isinstance(indicator, tuple), repr(indicator)
         assert 2 <= len(indicator) <= 5, repr(indicator)
         assert isinstance(indicator[0], str), repr(indicator)
-    selections, time_signatures = [], []
+    # selections, time_signatures = [], []
+    time_signatures = []
     start_measure_number = 1
     _name_to_rhythm = name_to_rhythm()
     name_to_position = {
@@ -266,7 +267,8 @@ def make_music(*indicators):
         for selection, time_signature in pairs:
             selection = copy.deepcopy(selection)
             recent_selections.append(selection)
-            selections.append(selection)
+            # selections.append(selection)
+            voice.extend(selection)
             time_signatures.append(time_signature)
         stop_measure_number = start_measure_number + measure_count - 1
         if pitch is not None:
@@ -279,12 +281,13 @@ def make_music(*indicators):
             assert len(color_fingering) == 2
             attach_color_fingerings(recent_selections, *color_fingering)
         start_measure_number = stop_measure_number + 1
-    assert len(selections) == len(time_signatures)
-    music = []
-    for selection in selections:
-        music.extend(selection)
+    # assert len(selections) == len(time_signatures)
+    # music = []
+    # for selection in selections:
+    #     music.extend(selection)
     time_signatures = tuple(time_signatures)
-    return music, time_signatures
+    # return music, time_signatures
+    return time_signatures
 
 
 def name_to_rhythm():
