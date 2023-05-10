@@ -101,6 +101,7 @@ class RhythmMaker:
         if last_tuplet is not None:
             split_tuplets.append(last_tuplet)
         tuplets = split_tuplets
+        temporary_voice = abjad.Voice(tuplets, name="Temporary")
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         for tuplet in tuplets:
             tuplet.trivialize()
@@ -114,6 +115,7 @@ class RhythmMaker:
                 selections.append(selection)
             else:
                 selections.append([tuplet])
+        temporary_voice[:] = []
         assert len(selections) == len(time_signatures)
         rhythm = zip(selections, time_signatures)
         rhythm = list(rhythm)
@@ -267,7 +269,6 @@ def make_music(voice, *indicators):
         for selection, time_signature in pairs:
             selection = copy.deepcopy(selection)
             recent_selections.append(selection)
-            # selections.append(selection)
             voice.extend(selection)
             time_signatures.append(time_signature)
         stop_measure_number = start_measure_number + measure_count - 1
@@ -281,12 +282,7 @@ def make_music(voice, *indicators):
             assert len(color_fingering) == 2
             attach_color_fingerings(recent_selections, *color_fingering)
         start_measure_number = stop_measure_number + 1
-    # assert len(selections) == len(time_signatures)
-    # music = []
-    # for selection in selections:
-    #     music.extend(selection)
     time_signatures = tuple(time_signatures)
-    # return music, time_signatures
     return time_signatures
 
 
