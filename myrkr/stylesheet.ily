@@ -93,6 +93,7 @@
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
+        \consists Bar_engraver
         % causes programming error: cyclic dependency: calculation-in-progress
         % encountered for VerticalAxisGroup.adjacent-pure-heights:
         % \consists Bar_number_engraver
@@ -102,9 +103,13 @@
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
+
         \override BarNumber.Y-extent = ##f
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
+
+        \override TextSpanner.to-barline = ##t
+
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
@@ -136,30 +141,43 @@
         \remove System_start_delimiter_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarLine.X-extent = #'(0 . 0)
+
         \override Beam.breakable = ##t
         \override Beam.damping = 99
+
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
+
         \override Hairpin.to-barline = ##f
+
         \override NoteCollision.merge-differently-dotted = ##t
+
         \override NoteColumn.ignore-collision = ##t
         \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
+
         \override RepeatTie.X-extent = ##f
+
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
+
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
+
         \override TextScript.font-name = #"Palatino"
         % DISCOVERY: overriding TextScript.X-extent = ##f
         %            makes LilyPond ignore self-alignment-X tweaks;
         %            probably should never be done at stylesheet level.
         % NOTE:      may be best to override NO text script properties.
+
+        \override TextSpanner.to-barline = ##t
+
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.staff-padding = 1.5
         \override TupletNumber.font-size = 1
+
         autoBeaming = ##f
         barNumberFormatter = #baca-oval-bar-numbers
         proportionalNotationDuration = #(ly:make-moment 1 24)
