@@ -32,7 +32,7 @@ def make_empty_score():
 def GLOBALS(skips):
     for index, item in ((1 - 1, "44"),):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def postprocess(m):
