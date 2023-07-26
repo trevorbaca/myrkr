@@ -50,7 +50,7 @@ def GLOBALS(skips):
         (24 - 1, "110"),
     ):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def postprocess(m):
