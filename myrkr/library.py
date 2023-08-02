@@ -195,7 +195,7 @@ def attach_color_fingerings(argument, name, index=0):
 
 
 def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     clarinet_music_voice = abjad.Voice(
         name="Clarinet.Music",
