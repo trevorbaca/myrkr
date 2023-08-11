@@ -17,7 +17,7 @@ number.2.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "110" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "110" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -1662,7 +1662,7 @@ number.2.Clarinet.Music = {
     f''8.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
       %! REAPPLIED_INSTRUMENT_ALERT
@@ -1924,7 +1924,7 @@ number.2.Clarinet.Music = {
         d''2.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \mf
 
@@ -1936,7 +1936,7 @@ number.2.Clarinet.Music = {
     f''16
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -2025,7 +2025,7 @@ number.2.Clarinet.Music = {
     d''2
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \mf
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -2040,7 +2040,7 @@ number.2.Clarinet.Music = {
         f''8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ppp
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
@@ -2134,7 +2134,7 @@ number.2.Clarinet.Music = {
         d''2.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \f
 
@@ -2146,7 +2146,7 @@ number.2.Clarinet.Music = {
     fs''!16
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
@@ -2193,7 +2193,7 @@ number.2.Clarinet.Music = {
         d''2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \f
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -2213,7 +2213,7 @@ number.2.Clarinet.Music = {
         fs''!8.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ppp
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -2296,7 +2296,7 @@ number.2.Clarinet.Music = {
     c''2.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \f
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -2307,7 +2307,7 @@ number.2.Clarinet.Music = {
     fs''!8.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -2349,7 +2349,7 @@ number.2.Clarinet.Music = {
         c''2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \f
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -2366,7 +2366,7 @@ number.2.Clarinet.Music = {
         fs''!16
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ppp
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
@@ -2454,7 +2454,7 @@ number.2.Clarinet.Music = {
         c''2.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ff
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -2495,7 +2495,7 @@ number.2.Clarinet.Music = {
     g''8.
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \ppp
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -2545,7 +2545,7 @@ number.2.Clarinet.Music = {
         bf'!2
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \fff
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
@@ -2595,7 +2595,7 @@ number.2.Clarinet.Music = {
         g''16
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ppp
         [
@@ -2637,7 +2637,7 @@ number.2.Clarinet.Music = {
     gs''!8
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \pppp
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
