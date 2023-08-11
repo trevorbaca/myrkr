@@ -7,6 +7,12 @@ number.5.Skips = {
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 10/16
+      %! RED_START_BAR
+    %@% \tweak break-visibility ##(#t #t #f)
+      %! RED_START_BAR
+    %@% \tweak color #red
+      %! RED_START_BAR
+    %@% \mark \markup \with-dimensions-from \null "05"
     s1 * 10/16
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
