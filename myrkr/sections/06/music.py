@@ -106,5 +106,19 @@ def main():
     )
 
 
+def make_layout():
+    distances = (10,)
+    spacing = baca.make_layout(
+        baca.page(
+            1,
+            baca.system(measure=1, y_offset=30, distances=distances),
+            baca.system(measure=11, y_offset=80, distances=distances),
+        ),
+        spacing=(1, 28),
+        overrides=(baca.space(3, (1, 40)),),
+    )
+    baca.section.make_layout_ly(spacing)
+
+
 if __name__ == "__main__":
     main()
