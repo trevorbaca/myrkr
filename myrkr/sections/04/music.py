@@ -78,7 +78,6 @@ def persist_score(score, environment):
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
         global_rests_in_topmost_staff=True,
-        transpose_score=True,
     )
     baca.tags.deactivate(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
     baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER)
