@@ -62,15 +62,15 @@ def postprocess(m):
             baca.glissando(o)
     with baca.scope(m[4]) as o:
         baca.markup(o.pleaf(0), r"\myrkr-vowel-u-markup")
-        baca.text_script_staff_padding(o, 5)
+        baca.override.text_script_staff_padding(o, 5)
     with baca.scope(m[11]) as o:
         baca.markup(o.pleaf(0), r"\myrkr-vowel-a-markup")
-        baca.text_script_staff_padding(o, 5)
+        baca.override.text_script_staff_padding(o, 5)
     with baca.scope(m[34]) as o:
         baca.mark(o.leaf(-1), r"\myrkr-colophon-markup")
-        baca.rehearsal_mark_down(o.leaf(-1))
-        baca.rehearsal_mark_padding(o.leaf(-1), 6)
-        baca.rehearsal_mark_self_alignment_x(o.leaf(-1), abjad.RIGHT)
+        baca.override.rehearsal_mark_down(o.leaf(-1))
+        baca.override.rehearsal_mark_padding(o.leaf(-1), 6)
+        baca.override.rehearsal_mark_self_alignment_x(o.leaf(-1), abjad.RIGHT)
 
 
 @baca.build.timed("make_score")
