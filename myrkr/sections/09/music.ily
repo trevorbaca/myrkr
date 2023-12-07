@@ -3,6 +3,8 @@ number.9.Skips = {
     % [Skips measure 1]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 2/3
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -13,8 +15,6 @@ number.9.Skips = {
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "09"
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 2/3
     s1 * 2/3
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-dashed-line-with-arrow
@@ -93,10 +93,10 @@ number.9.Skips = {
     % [Skips measure 5]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 12/5
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
@@ -180,10 +180,10 @@ number.9.Skips = {
     % [Skips measure 9]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/3
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 4/3
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
