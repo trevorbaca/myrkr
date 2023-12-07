@@ -3,6 +3,8 @@ number.13.Skips = {
     % [Skips measure 1]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 2/3
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -13,8 +15,6 @@ number.13.Skips = {
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "13"
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 2/3
     s1 * 2/3
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line

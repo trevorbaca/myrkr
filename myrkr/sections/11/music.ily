@@ -5,14 +5,14 @@ number.11.Skips = {
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #blue
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 1/4
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "11"
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 1/4
     s1 * 1/4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
@@ -340,10 +340,10 @@ number.11.Skips = {
     % [Skips measure 16]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/18
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 4/18
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -392,10 +392,10 @@ number.11.Skips = {
     % [Skips measure 18]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/22
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 4/22
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -536,10 +536,10 @@ number.11.Skips = {
     % [Skips measure 24]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 8/5
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 8/5
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -672,10 +672,10 @@ number.11.Skips = {
     % [Skips measure 30]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 7/22
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 7/22
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -749,10 +749,10 @@ number.11.Skips = {
     % [Skips measure 33]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 5/22
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 5/22
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -776,10 +776,10 @@ number.11.Skips = {
     % [Skips measure 34]
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 12/5
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #blue
     s1 * 12/5
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
