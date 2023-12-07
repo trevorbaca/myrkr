@@ -5,14 +5,14 @@ number.15.Skips = {
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #blue
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 4/4
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "15"
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 4/4
     s1 * 4/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-dashed-line-with-arrow
@@ -1424,10 +1424,10 @@ number.15.Clarinet.Music = {
         g'''2.
         \glissando
 
+        \mark \myrkr-colophon-markup
         \once \override Score.RehearsalMark.direction = #down
         \once \override Score.RehearsalMark.padding = 6
         \once \override Score.RehearsalMark.self-alignment-X = #right
-        \mark \myrkr-colophon-markup
         fs'''!2
 
     }
