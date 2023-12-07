@@ -5,14 +5,14 @@ number.3.Skips = {
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #blue
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 13/16
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "03"
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 13/16
     s1 * 13/16
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
