@@ -77,6 +77,8 @@ number.1.Clarinet.Music = {
     {
 
         % [Clarinet.Music measure 1]
+          %! EXPLICIT_CLEF
+        \clef "treble"
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
@@ -91,8 +93,6 @@ number.1.Clarinet.Music = {
         \set Staff.forceClef = ##t
           %! -PARTS
         \set Staff.instrumentName = \myrkr-bass-clarinet-markup
-          %! EXPLICIT_CLEF
-        \clef "treble"
         e\breve.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
