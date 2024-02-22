@@ -60,7 +60,7 @@ def GLOBALS(skips):
 
 def postprocess(m):
     with baca.scope(m.get(23, 25)) as o:
-        baca.glissando(o)
+        baca.basic_glissando(o)
 
 
 @baca.build.timed("make_score")
