@@ -54,7 +54,7 @@ def GLOBALS(skips):
 def postprocess(m):
     for pair in [(1, 2), (4, 5), (8, 9)]:
         with baca.scope(m.get(pair)) as o:
-            baca.glissando(o)
+            baca.basic_glissando(o)
 
 
 @baca.build.timed("make_score")
