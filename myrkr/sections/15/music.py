@@ -59,7 +59,11 @@ def GLOBALS(skips):
 def postprocess(m):
     for pair in [(1, 3), (5, 10), (12, 14), (16, 21), (23, 34)]:
         with baca.scope(m.get(pair)) as o:
-            baca.basic_glissando(o, do_not_allow_repeats=True)
+            baca.multistage_glissando(
+                o,
+                do_not_allow_repeats=True,
+                do_not_hide_middle_note_heads=True,
+            )
     with baca.scope(m[4]) as o:
         baca.markup(o.pleaf(0), r"\myrkr-vowel-u-markup")
         baca.override.text_script_staff_padding(o, 5)
