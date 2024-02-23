@@ -50,7 +50,10 @@ def postprocess(m):
         with baca.scope(m.get(pair)) as o:
             baca.tenuto(o.pheads())
     with baca.scope(m.get(1, 9)) as o:
-        baca.basic_glissando(o)
+        baca.glissando(
+            o,
+            do_not_hide_middle_note_heads=True,
+        )
 
 
 @baca.build.timed("make_score")
