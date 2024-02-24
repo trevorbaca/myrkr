@@ -72,7 +72,7 @@ def postprocess(m):
                 o,
                 do_not_hide_middle_note_heads=True,
             )
-    baca.markup(baca.select.pleaf(m[4], 0), r"\baca-overblow-markup")
+    baca.markup(baca.select.pleaf(m[4], 0), r"\baca-boxed-overblow-markup")
 
 
 @baca.build.timed("make_score")

@@ -269,7 +269,7 @@ number.13.Clarinet.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \fff
-        ^ \baca-overblow-markup
+        ^ \baca-boxed-overblow-markup
           %! REAPPLIED_INSTRUMENT_ALERT
         ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
           %! REAPPLIED_CLEF_REDRAW_COLOR
