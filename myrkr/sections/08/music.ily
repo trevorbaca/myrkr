@@ -1604,7 +1604,7 @@ number.8.Clarinet.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ffff
-        ^ \baca-overblow-markup
+        ^ \baca-boxed-overblow-markup
 
     }
 

@@ -38,7 +38,7 @@ def postprocess(m):
         baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
         baca.clef(o.leaf(0), "treble")
         baca.instrument_name(o.leaf(0), r"\myrkr-bass-clarinet-markup")
-        baca.markup(o.pleaf(0), r"\baca-overblow-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-overblow-markup")
 
 
 @baca.build.timed("make_score")

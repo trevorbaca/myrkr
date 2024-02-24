@@ -43,7 +43,7 @@ def GLOBALS(skips):
 
 
 def postprocess(m):
-    baca.markup(baca.select.pleaf(m[1], 0), r"\baca-overblow-markup")
+    baca.markup(baca.select.pleaf(m[1], 0), r"\baca-boxed-overblow-markup")
 
 
 @baca.build.timed("make_score")
