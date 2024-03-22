@@ -101,7 +101,7 @@ number.1.Clarinet.Music = {
         \fff
         ^ \baca-boxed-overblow-markup
           %! EXPLICIT_INSTRUMENT_ALERT
-        ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
+        %@% ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
