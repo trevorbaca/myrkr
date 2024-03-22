@@ -653,7 +653,7 @@ number.14.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
     \pppp
       %! REAPPLIED_INSTRUMENT_ALERT
-    ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
+    %@% ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
     [
       %! REAPPLIED_CLEF_REDRAW_COLOR
