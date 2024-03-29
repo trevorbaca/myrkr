@@ -62,7 +62,7 @@ def GLOBALS(skips):
 def postprocess(m):
     # TODO: FIXME:
     # ("cl", (12, 18)),
-    # baca.mspanners.text(
+    # baca.spanners.text(
     #     o.rleaves(),
     #     "˝A˝ || ˝U˝ || ˝I˝ || ˝U˝ || ˝A˝ || ˝O˝ || ˝I˝",
     #     pieces=baca.select.cmgroups(o.rleaves(), ),
