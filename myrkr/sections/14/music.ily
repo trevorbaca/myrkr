@@ -819,7 +819,9 @@ number.14.Clarinet.Music = {
     }
 
     % [Clarinet.Music measure 9]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
@@ -836,7 +838,9 @@ number.14.Clarinet.Music = {
     }
 
     % [Clarinet.Music measure 11]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
@@ -939,7 +943,9 @@ number.14.Clarinet.Music = {
     }
 
     % [Clarinet.Music measure 19]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3

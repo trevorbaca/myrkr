@@ -706,7 +706,9 @@ number.9.Clarinet.Music = {
     }
 
     % [Clarinet.Music measure 17]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     % [Clarinet.Music measure 18]
     c''4
