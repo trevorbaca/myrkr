@@ -1850,7 +1850,9 @@ number.8.Clarinet.Music = {
     }
 
     % [Clarinet.Music measure 20]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     % [Clarinet.Music measure 21]
     a'4
@@ -2202,7 +2204,9 @@ number.8.Clarinet.Music = {
     - \tenuto
 
     % [Clarinet.Music measure 51]
-    r8.
+    R1 * 3/16
+      %! DURATION_MULTIPLIER
+    %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     % [Clarinet.Music measure 52]
     d'4
