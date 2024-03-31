@@ -89,7 +89,7 @@ def make_layout():
             baca.system(measure=17, y_offset=80, distances=distances),
         ),
         spacing=(1, 28),
-        overrides=(baca.space(8, (1, 40)),),
+        overrides=(baca.region(8, (1, 40)),),
     )
     baca.section.make_layout_ly(spacing)
 
