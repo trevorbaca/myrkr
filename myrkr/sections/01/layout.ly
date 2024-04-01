@@ -20,7 +20,7 @@
               %! BREAK
             \baca-lbsd #80 #'(10)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \pageBreak
             s1 * 12/5
@@ -33,7 +33,7 @@
             % [anchor skip]
               %! ANCHOR_SKIP
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #4
+            \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             \baca-time-signature-transparent
               %! ANCHOR_SKIP
