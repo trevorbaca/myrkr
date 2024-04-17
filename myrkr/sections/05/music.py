@@ -92,7 +92,6 @@ def persist_score(score, environment):
         environment,
         library.manifests,
         do_not_require_short_instrument_names=True,
-        error_on_not_yet_pitched=True,
         global_rests_in_topmost_staff=True,
     )
     baca.section.deactivate_tags(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
