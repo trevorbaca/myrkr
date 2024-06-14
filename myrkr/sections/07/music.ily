@@ -522,7 +522,7 @@ number.7.Clarinet.Music = {
     d'''2
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 2]
@@ -544,7 +544,7 @@ number.7.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
     \ff
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 4]
@@ -580,7 +580,7 @@ number.7.Clarinet.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 7]
@@ -601,7 +601,7 @@ number.7.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 8]
@@ -618,7 +618,7 @@ number.7.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 9]
@@ -670,7 +670,7 @@ number.7.Clarinet.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 14]

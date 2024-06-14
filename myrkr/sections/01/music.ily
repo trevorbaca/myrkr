@@ -75,7 +75,7 @@ number.1.Rests = {
 number.1.Clarinet.Music = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 1]

@@ -1546,7 +1546,7 @@ number.8.Rests = {
 number.8.Clarinet.Music = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 1]
@@ -1574,7 +1574,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 2]
@@ -1585,7 +1585,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 3]
@@ -1596,7 +1596,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 4]
@@ -1661,7 +1661,7 @@ number.8.Clarinet.Music = {
     cs''!8
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Clarinet.Music measure 11]
@@ -1680,7 +1680,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11
+    \tuplet 11/8
     {
 
         % [Clarinet.Music measure 12]
@@ -1703,7 +1703,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Clarinet.Music measure 13]
@@ -1754,7 +1754,7 @@ number.8.Clarinet.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 4 }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 15]
@@ -1794,7 +1794,7 @@ number.8.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 17]
@@ -1813,7 +1813,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 18]
@@ -1836,7 +1836,7 @@ number.8.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 19]
@@ -1971,7 +1971,7 @@ number.8.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13
+    \tuplet 13/8
     {
 
         % [Clarinet.Music measure 36]
@@ -2030,7 +2030,7 @@ number.8.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13
+    \tuplet 13/8
     {
 
         % [Clarinet.Music measure 39]
@@ -2121,7 +2121,7 @@ number.8.Clarinet.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     ]
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 45]
@@ -2164,7 +2164,7 @@ number.8.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Clarinet.Music measure 47]
