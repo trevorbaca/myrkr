@@ -251,7 +251,7 @@ number.13.Rests = {
 number.13.Clarinet.Music = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 1]
@@ -280,7 +280,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 2]
@@ -296,7 +296,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 3]
@@ -312,7 +312,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 4]
@@ -328,7 +328,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 5]
@@ -344,7 +344,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 6]
@@ -360,7 +360,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 7]
@@ -376,7 +376,7 @@ number.13.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 8]

@@ -990,7 +990,7 @@ number.15.Rests = {
 
 number.15.Clarinet.Music = {
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 1]
@@ -1029,7 +1029,7 @@ number.15.Clarinet.Music = {
     fs'''!2
     \glissando
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 3]
@@ -1041,7 +1041,7 @@ number.15.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 4]
@@ -1056,7 +1056,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 5]
@@ -1083,7 +1083,7 @@ number.15.Clarinet.Music = {
     g'''2.
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 7]
@@ -1130,7 +1130,7 @@ number.15.Clarinet.Music = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 11]
@@ -1145,7 +1145,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 12]
@@ -1165,7 +1165,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 13]
@@ -1187,7 +1187,7 @@ number.15.Clarinet.Music = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 15]
@@ -1200,7 +1200,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 16]
@@ -1217,7 +1217,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 17]
@@ -1239,7 +1239,7 @@ number.15.Clarinet.Music = {
     fs'''!2
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 19]
@@ -1254,7 +1254,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 20]
@@ -1276,7 +1276,7 @@ number.15.Clarinet.Music = {
     fs'''!2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 22]
@@ -1289,7 +1289,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 23]
@@ -1306,7 +1306,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 24]
@@ -1328,7 +1328,7 @@ number.15.Clarinet.Music = {
     es'''!2.
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 26]
@@ -1367,7 +1367,7 @@ number.15.Clarinet.Music = {
     g'''2
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 30]
@@ -1382,7 +1382,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 31]
@@ -1404,7 +1404,7 @@ number.15.Clarinet.Music = {
     g'''2
     \glissando
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 33]
@@ -1416,7 +1416,7 @@ number.15.Clarinet.Music = {
 
     }
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 34]

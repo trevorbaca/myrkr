@@ -1029,7 +1029,7 @@ number.11.Clarinet.Music = {
     f'''4
     - \tenuto
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 15]
@@ -1057,7 +1057,7 @@ number.11.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Clarinet.Music measure 16]
@@ -1107,7 +1107,7 @@ number.11.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11
+    \tuplet 11/8
     {
 
         % [Clarinet.Music measure 18]
@@ -1188,7 +1188,7 @@ number.11.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 24]
@@ -1237,7 +1237,7 @@ number.11.Clarinet.Music = {
     - \tenuto
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11
+    \tuplet 11/8
     {
 
         % [Clarinet.Music measure 30]
@@ -1310,7 +1310,7 @@ number.11.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/11
+    \tuplet 11/8
     {
 
         % [Clarinet.Music measure 33]
@@ -1329,7 +1329,7 @@ number.11.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 34]

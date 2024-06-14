@@ -682,7 +682,7 @@ number.14.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13
+    \tuplet 13/8
     {
 
         % [Clarinet.Music measure 2]
@@ -739,7 +739,7 @@ number.14.Clarinet.Music = {
     ]
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/13
+    \tuplet 13/8
     {
 
         % [Clarinet.Music measure 5]
@@ -804,7 +804,7 @@ number.14.Clarinet.Music = {
     cs'!8
     ]
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 8]
@@ -826,7 +826,7 @@ number.14.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 10]
@@ -845,7 +845,7 @@ number.14.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 12]
@@ -871,7 +871,7 @@ number.14.Clarinet.Music = {
     \ppppp
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 14]
@@ -887,7 +887,7 @@ number.14.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 15]
@@ -913,7 +913,7 @@ number.14.Clarinet.Music = {
     \ppppp
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 17]
@@ -929,7 +929,7 @@ number.14.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 18]
@@ -950,7 +950,7 @@ number.14.Clarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 20]

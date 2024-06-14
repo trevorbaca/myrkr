@@ -498,7 +498,7 @@ number.9.Rests = {
 number.9.Clarinet.Music = {
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 1]
@@ -535,7 +535,7 @@ number.9.Clarinet.Music = {
     af''!2.
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 3]
@@ -557,7 +557,7 @@ number.9.Clarinet.Music = {
     g''2
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 5]
@@ -592,7 +592,7 @@ number.9.Clarinet.Music = {
     b''2
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 8]
@@ -607,7 +607,7 @@ number.9.Clarinet.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Clarinet.Music measure 9]
@@ -620,7 +620,7 @@ number.9.Clarinet.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 10]
@@ -647,7 +647,7 @@ number.9.Clarinet.Music = {
     d'''2
     \glissando
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Clarinet.Music measure 12]
@@ -666,7 +666,7 @@ number.9.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
     \mp
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 14]
@@ -693,7 +693,7 @@ number.9.Clarinet.Music = {
     fs'''!2
     \glissando
 
-    \times 4/7
+    \tuplet 7/4
     {
 
         % [Clarinet.Music measure 16]
