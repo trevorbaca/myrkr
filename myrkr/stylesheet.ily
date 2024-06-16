@@ -1,3 +1,4 @@
+\version "2.25.13"
 #(set-default-paper-size "ledger")
 #(set-global-staff-size 11)
 
@@ -118,6 +119,7 @@
     \consists Staff_collecting_engraver
     \consists Time_signature_engraver
     \accepts GlobalSkips
+    \defaultchild GlobalSkips
     \accepts GlobalRests
     \accepts PageLayout
 
@@ -207,7 +209,7 @@
 
     autoBeaming = ##f
     barNumberFormatter = #baca-oval-bar-numbers
-    proportionalNotationDuration = #(ly:make-moment 1 24)
+    proportionalNotationDuration = \musicLength 1*1/24
     tupletFullLength = ##t
   }
 }
