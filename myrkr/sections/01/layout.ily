@@ -11,25 +11,13 @@
         {   %*% PageLayout
 
             % [PageLayout measure 1]
-              %! SPACING_COMMAND
-            \baca-new-strict-spacing-section #1 #28
             s1 * 12/5
-              %! SPACING
-            %@% - \baca-start-spm-left-only "[1/28]"
-              %! SPACING
-            %@% \bacaStartTextSpanSPM
 
             % [anchor skip]
-              %! ANCHOR_SKIP
-              %! SPACING_COMMAND
-            \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             \baca-time-signature-transparent
               %! ANCHOR_SKIP
             s1 * 1/4
-              %! ANCHOR_SKIP
-              %! SPACING
-            %@% \bacaStopTextSpanSPM
               %! ANCHOR_SKIP
             \once \override Score.BarLine.transparent = ##t
               %! ANCHOR_SKIP
@@ -52,6 +40,40 @@
             s1 * 1/4
 
         }   %*% Breaks
+
+        \context GlobalSkips = "SpacingCommands"
+        {   %*% SpacingCommands
+
+            % [SpacingCommands measure 1]
+              %! SPACING_COMMAND
+            \baca-new-strict-spacing-section #1 #28
+            s1 * 12/5
+
+            % [anchor skip]
+              %! SPACING_COMMAND
+            \baca-new-strict-spacing-section #1 #4
+              %! ANCHOR_SKIP
+            s1 * 1/4
+
+        }   %*% SpacingCommands
+
+        \context GlobalSkips = "SpacingAnnotations"
+        {   %*% SpacingAnnotations
+
+            % [SpacingAnnotations measure 1]
+            s1 * 12/5
+              %! SPACING
+            %@% - \baca-start-spm-left-only "[1/28]"
+              %! SPACING
+            %@% \bacaStartTextSpanSPM
+
+            % [anchor skip]
+              %! ANCHOR_SKIP
+            s1 * 1/4
+              %! SPACING
+            %@% \bacaStopTextSpanSPM
+
+        }   %*% SpacingAnnotations
 
     >>
 
