@@ -2,7 +2,7 @@
 
 
 \context Score = "Score"
-<<
+{
 
     \context GlobalContext = "GlobalContext"
     <<
@@ -1156,4 +1156,4 @@
 
     >>
 
->>
+}
