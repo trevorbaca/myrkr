@@ -79,6 +79,8 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=55
     s1 * 12/5
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
@@ -225,6 +227,8 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 13]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=110
     s1 * 3/1
       %! LOCAL_MEASURE_NUMBER
     \bacaStopTextSpanLMN
