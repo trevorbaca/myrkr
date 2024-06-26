@@ -17,7 +17,6 @@
             s1 * 12/5
 
             % [anchor skip]
-            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 
