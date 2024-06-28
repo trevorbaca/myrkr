@@ -496,9 +496,14 @@ number.9.TimeSignatures = {
     % [TimeSignatures measure 19]
     s1 * 1/4
 
+      %! ANCHOR_SKIP
     % [anchor skip]
       %! ANCHOR_SKIP
     s1 * 1/4
+      %! ANCHOR_SKIP
+    \once \override Score.BarLine.transparent = ##t
+      %! ANCHOR_SKIP
+    \once \override Score.SpanBar.transparent = ##t
 
 }
 
