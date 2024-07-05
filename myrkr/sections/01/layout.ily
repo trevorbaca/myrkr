@@ -30,12 +30,12 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 12/5
 
             % [anchor skip]
               %! ANCHOR_SKIP
-            \baca-new-strict-spacing-section #1 #4
+            \baca-start-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             s1 * 1/4
               %! ANCHOR_SKIP

@@ -198,228 +198,228 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 13/16
 
             % [SpacingCommands measure 2]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/22
 
             % [SpacingCommands measure 3]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 8/16
 
             % [SpacingCommands measure 4]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 7/20
 
             % [SpacingCommands measure 5]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 6/22
 
             % [SpacingCommands measure 6]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/20
 
             % [SpacingCommands measure 7]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 11/16
 
             % [SpacingCommands measure 8]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/22
 
             % [SpacingCommands measure 9]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 10/16
 
             % [SpacingCommands measure 10]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/16
 
             % [SpacingCommands measure 11]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 7/22
 
             % [SpacingCommands measure 12]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/16
 
             % [SpacingCommands measure 13]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/7
 
             % [SpacingCommands measure 14]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 11/16
 
             % [SpacingCommands measure 15]
-            \baca-new-strict-spacing-section #1 #40
+            \baca-start-strict-spacing-section #1 #40
             s1 * 4/22
 
             % [SpacingCommands measure 16]
-            \baca-new-strict-spacing-section #35 #672
+            \baca-start-strict-spacing-section #35 #672
             s1 * 10/16
 
             % [SpacingCommands measure 17]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/18
 
             % [SpacingCommands measure 18]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 2/4
 
             % [SpacingCommands measure 19]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 7/22
 
             % [SpacingCommands measure 20]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/18
 
             % [SpacingCommands measure 21]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 12/16
 
             % [SpacingCommands measure 22]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/18
 
             % [SpacingCommands measure 23]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/5
 
             % [SpacingCommands measure 24]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 8/16
 
             % [SpacingCommands measure 25]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/20
 
             % [SpacingCommands measure 26]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/7
 
             % [SpacingCommands measure 27]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 6/18
 
             % [SpacingCommands measure 28]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 7/20
 
             % [SpacingCommands measure 29]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 10/16
 
             % [SpacingCommands measure 30]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/26
 
             % [SpacingCommands measure 31]
-            \baca-new-strict-spacing-section #35 #672
+            \baca-start-strict-spacing-section #35 #672
             s1 * 3/4
 
             % [SpacingCommands measure 32]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 9/16
 
             % [SpacingCommands measure 33]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/16
 
             % [SpacingCommands measure 34]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 2/5
 
             % [SpacingCommands measure 35]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 8/26
 
             % [SpacingCommands measure 36]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/16
 
             % [SpacingCommands measure 37]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 11/16
 
             % [SpacingCommands measure 38]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/16
 
             % [SpacingCommands measure 39]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/5
 
             % [SpacingCommands measure 40]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/4
 
             % [SpacingCommands measure 41]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 2/7
 
             % [SpacingCommands measure 42]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 9/16
 
             % [SpacingCommands measure 43]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/18
 
             % [SpacingCommands measure 44]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 2/5
 
             % [SpacingCommands measure 45]
-            \baca-new-strict-spacing-section #35 #672
+            \baca-start-strict-spacing-section #35 #672
             s1 * 3/4
 
             % [SpacingCommands measure 46]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/7
 
             % [SpacingCommands measure 47]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 2/7
 
             % [SpacingCommands measure 48]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/16
 
             % [SpacingCommands measure 49]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/18
 
             % [SpacingCommands measure 50]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 11/16
 
             % [SpacingCommands measure 51]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 4/22
 
             % [SpacingCommands measure 52]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 10/16
 
             % [SpacingCommands measure 53]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 5/16
 
             % [SpacingCommands measure 54]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 7/22
 
             % [SpacingCommands measure 55]
-            \baca-new-strict-spacing-section #1 #28
+            \baca-start-strict-spacing-section #1 #28
             s1 * 3/16
 
             % [anchor skip]
               %! ANCHOR_SKIP
-            \baca-new-strict-spacing-section #1 #4
+            \baca-start-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             s1 * 1/4
               %! ANCHOR_SKIP
