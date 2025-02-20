@@ -22,5 +22,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/trevorbaca/myrkr"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["myrkr"]
+package-dir = { "" = "source" }
