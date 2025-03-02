@@ -1,6 +1,6 @@
 % Myrkr (2015) for bass clarinet
 
-\version "2.25.23"
+\version "2.25.24"
 
 \include "stylesheet.ily"
 % \include "layout.ily"
