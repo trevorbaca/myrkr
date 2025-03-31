@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.6.Skips = {
+number.6.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -456,7 +457,8 @@ number.6.Skips = {
 }
 
 
-number.6.TimeSignatures = {
+number.6.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE
@@ -620,7 +622,8 @@ number.6.TimeSignatures = {
 }
 
 
-number.6.Rests = {
+number.6.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/20
@@ -682,7 +685,8 @@ number.6.Rests = {
 }
 
 
-number.6.Clarinet.Music = {
+number.6.Clarinet.Music =
+{
 
     \tweak edge-height #'(0.7 . 0)
     \tuplet 5/4
@@ -1083,12 +1087,17 @@ number.6.Clarinet.Music = {
 }
 
 
-number.6.Clarinet.Staff = <<
+number.6.Clarinet.Staff =
+<<
 
     \context GlobalRests = "Rests"
-    { \number.6.Rests }
+    {
+        \number.6.Rests
+    }
 
     \context Voice = "Clarinet.Music"
-    { \number.6.Clarinet.Music }
+    {
+        \number.6.Clarinet.Music
+    }
 
 >>

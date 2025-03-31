@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.15.Skips = {
+number.15.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -772,7 +773,8 @@ number.15.Skips = {
 }
 
 
-number.15.TimeSignatures = {
+number.15.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1001,7 +1003,8 @@ number.15.TimeSignatures = {
 }
 
 
-number.15.Rests = {
+number.15.Rests =
+{
 
     % [Rests measure 1]
     R1 * 4/4
@@ -1108,7 +1111,8 @@ number.15.Rests = {
 }
 
 
-number.15.Clarinet.Music = {
+number.15.Clarinet.Music =
+{
 
     \tuplet 5/4
     {
@@ -1557,12 +1561,17 @@ number.15.Clarinet.Music = {
 }
 
 
-number.15.Clarinet.Staff = <<
+number.15.Clarinet.Staff =
+<<
 
     \context GlobalRests = "Rests"
-    { \number.15.Rests }
+    {
+        \number.15.Rests
+    }
 
     \context Voice = "Clarinet.Music"
-    { \number.15.Clarinet.Music }
+    {
+        \number.15.Clarinet.Music
+    }
 
 >>

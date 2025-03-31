@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.1.Skips = {
+number.1.Skips =
+{
 
     % [Skips measure 1]
       %! LILYPOND_TEMPO_COMMAND
@@ -55,7 +56,8 @@ number.1.Skips = {
 }
 
 
-number.1.TimeSignatures = {
+number.1.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE
@@ -83,7 +85,8 @@ number.1.TimeSignatures = {
 }
 
 
-number.1.Rests = {
+number.1.Rests =
+{
 
     % [Rests measure 1]
     R1 * 12/5
@@ -91,7 +94,8 @@ number.1.Rests = {
 }
 
 
-number.1.Clarinet.Music = {
+number.1.Clarinet.Music =
+{
 
     \tweak edge-height #'(0.7 . 0)
     \tuplet 5/4
@@ -131,12 +135,17 @@ number.1.Clarinet.Music = {
 }
 
 
-number.1.Clarinet.Staff = <<
+number.1.Clarinet.Staff =
+<<
 
     \context GlobalRests = "Rests"
-    { \number.1.Rests }
+    {
+        \number.1.Rests
+    }
 
     \context Voice = "Clarinet.Music"
-    { \number.1.Clarinet.Music }
+    {
+        \number.1.Clarinet.Music
+    }
 
 >>

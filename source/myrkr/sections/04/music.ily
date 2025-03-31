@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.4.Skips = {
+number.4.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -756,7 +757,8 @@ number.4.Skips = {
 }
 
 
-number.4.TimeSignatures = {
+number.4.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1051,7 +1053,8 @@ number.4.TimeSignatures = {
 }
 
 
-number.4.Rests = {
+number.4.Rests =
+{
 
     % [Rests measure 1]
     R1 * 11/16
@@ -1158,7 +1161,8 @@ number.4.Rests = {
 }
 
 
-number.4.Clarinet.Music = {
+number.4.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1867,12 +1871,17 @@ number.4.Clarinet.Music = {
 }
 
 
-number.4.Clarinet.Staff = <<
+number.4.Clarinet.Staff =
+<<
 
     \context GlobalRests = "Rests"
-    { \number.4.Rests }
+    {
+        \number.4.Rests
+    }
 
     \context Voice = "Clarinet.Music"
-    { \number.4.Clarinet.Music }
+    {
+        \number.4.Clarinet.Music
+    }
 
 >>

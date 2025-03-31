@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.3.Skips = {
+number.3.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -462,7 +463,8 @@ number.3.Skips = {
 }
 
 
-number.3.TimeSignatures = {
+number.3.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -643,7 +645,8 @@ number.3.TimeSignatures = {
 }
 
 
-number.3.Rests = {
+number.3.Rests =
+{
 
     % [Rests measure 1]
     R1 * 13/16
@@ -708,7 +711,8 @@ number.3.Rests = {
 }
 
 
-number.3.Clarinet.Music = {
+number.3.Clarinet.Music =
+{
 
     % [Clarinet.Music measure 1]
       %! REPEAT_PITCH_CLASS_COLORING
@@ -1093,12 +1097,17 @@ number.3.Clarinet.Music = {
 }
 
 
-number.3.Clarinet.Staff = <<
+number.3.Clarinet.Staff =
+<<
 
     \context GlobalRests = "Rests"
-    { \number.3.Rests }
+    {
+        \number.3.Rests
+    }
 
     \context Voice = "Clarinet.Music"
-    { \number.3.Clarinet.Music }
+    {
+        \number.3.Clarinet.Music
+    }
 
 >>
