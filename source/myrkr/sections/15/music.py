@@ -71,7 +71,7 @@ def postprocess(m):
         baca.markup(o.pleaf(0), r"\myrkr-vowel-a-markup")
         baca.override.text_script_staff_padding(o, 5)
     with baca.scope(m[34]) as o:
-        baca.mark(o.leaf(-1), r"\myrkr-colophon-markup")
+        baca.rehearsal_mark(o.leaf(-1), r"\myrkr-colophon-markup")
         baca.override.rehearsal_mark_direction_down(o.leaf(-1))
         baca.override.rehearsal_mark_padding(o.leaf(-1), 6)
         baca.override.rehearsal_mark_self_alignment_x(o.leaf(-1), abjad.RIGHT)
