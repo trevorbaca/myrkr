@@ -72,7 +72,9 @@ class RhythmMaker:
                     leaf = abjad.Rest(duration)
                 leaves.append(leaf)
             duration = abjad.Duration(scaled_weight, self.denominator)
-            tuplet = abjad.Tuplet.from_duration(duration, leaves)
+            multiplier = duration / abjad.get.duration(leaves)
+            ratio = abjad.Ratio(multiplier.denominator, multiplier.numerator)
+            tuplet = abjad.Tuplet(ratio, leaves)
             tuplets.append(tuplet)
         split_tuplets = []
         last_tuplet = None
