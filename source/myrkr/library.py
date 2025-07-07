@@ -85,10 +85,10 @@ class RhythmMaker:
             if split_indicator == 0:
                 split_tuplets.append(tuplet)
             elif split_indicator == 1:
-                selections = self._split_tuplet(tuplet)
-                assert len(selections) == 2
-                left_tuplet = selections[0][0]
-                right_tuplet = selections[1][0]
+                lists = self._split_tuplet(tuplet)
+                assert len(lists) == 2
+                left_tuplet = lists[0][0]
+                right_tuplet = lists[1][0]
                 if self.displace_split_tuplets:
                     if i == 0:
                         last_tuplet = left_tuplet
@@ -109,17 +109,17 @@ class RhythmMaker:
             tuplet.trivialize()
             abjad.beam(tuplet)
         time_signatures = self._make_time_signatures(self.denominator, tuplets)
-        selections = []
+        lists = []
         for tuplet in tuplets:
             if tuplet.ratio.is_trivial():
-                selection = abjad.mutate.eject_contents(tuplet)
-                assert isinstance(selection, list)
-                selections.append(selection)
+                list_ = abjad.mutate.eject_contents(tuplet)
+                assert isinstance(list_, list)
+                lists.append(list_)
             else:
-                selections.append([tuplet])
+                lists.append([tuplet])
         temporary_voice[:] = []
-        assert len(selections) == len(time_signatures)
-        rhythm = zip(selections, time_signatures)
+        assert len(lists) == len(time_signatures)
+        rhythm = zip(lists, time_signatures)
         rhythm = list(rhythm)
         return rhythm
 
@@ -165,8 +165,8 @@ class RhythmMaker:
             (tuplet, total_duration, left_count, right_count)
         )
         durations = [left_duration, right_duration]
-        selections = abjad.mutate.split(tuplet, durations)
-        return selections
+        lists = abjad.mutate.split(tuplet, durations)
+        return lists
 
     @staticmethod
     def _tweak_length_1_tuplets(score):
@@ -225,7 +225,6 @@ def make_music(voice, *indicators):
         assert isinstance(indicator, tuple), repr(indicator)
         assert 2 <= len(indicator) <= 5, repr(indicator)
         assert isinstance(indicator[0], str), repr(indicator)
-    # selections, time_signatures = [], []
     time_signatures = []
     start_measure_number = 1
     _name_to_rhythm = name_to_rhythm()
@@ -242,7 +241,7 @@ def make_music(voice, *indicators):
         pitch = None
         dynamic = None
         color_fingering = None
-        recent_selections = []
+        recent_component_lists = []
         assert len(indicator) in (2, 3, 4, 5), repr(indicator)
         name = indicator[0]
         assert name in name_to_position
@@ -268,21 +267,21 @@ def make_music(voice, *indicators):
         stop_measure = start_measure + measure_count
         pairs = rhythm[start_measure:stop_measure]
         name_to_position[name] += measure_count
-        for selection, time_signature in pairs:
-            selection = copy.deepcopy(selection)
-            recent_selections.append(selection)
-            voice.extend(selection)
+        for leaves, time_signature in pairs:
+            leaves = copy.deepcopy(leaves)
+            recent_component_lists.append(leaves)
+            voice.extend(leaves)
             time_signatures.append(time_signature)
         stop_measure_number = start_measure_number + measure_count - 1
         if pitch is not None:
             assert isinstance(pitch, str), repr(pitch)
-            baca.pitches(recent_selections, pitch)
+            baca.pitches(recent_component_lists, pitch)
         if dynamic is not None:
-            leaf = baca.select.phead(recent_selections, 0)
+            leaf = baca.select.phead(recent_component_lists, 0)
             baca.dynamic(leaf, dynamic)
         if color_fingering is not None:
             assert len(color_fingering) == 2
-            attach_color_fingerings(recent_selections, *color_fingering)
+            attach_color_fingerings(recent_component_lists, *color_fingering)
         start_measure_number = stop_measure_number + 1
     time_signatures = tuple(time_signatures)
     return time_signatures
