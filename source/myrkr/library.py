@@ -111,7 +111,7 @@ class RhythmMaker:
         time_signatures = self._make_time_signatures(self.denominator, tuplets)
         lists = []
         for tuplet in tuplets:
-            if tuplet.ratio.is_trivial():
+            if tuplet.get_ratio().is_trivial():
                 list_ = abjad.mutate.eject_contents(tuplet)
                 assert isinstance(list_, list)
                 lists.append(list_)
