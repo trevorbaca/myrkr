@@ -143,7 +143,10 @@ class RhythmMaker:
         assert len(tuplets) == len(time_signatures), pair
         for tuplet, time_signature in zip(tuplets, time_signatures):
             tuplet_duration = abjad.get.duration(tuplet)
-            time_signature = abjad.Duration(time_signature)
+            if isinstance(time_signature, tuple):
+                time_signature = abjad.Duration(*time_signature)
+            else:
+                time_signature = abjad.Duration(time_signature)
             assert tuplet_duration == time_signature, repr(
                 (tuplet_duration, time_signature)
             )
@@ -174,7 +177,7 @@ class RhythmMaker:
             if not len(tuplet) == 1:
                 continue
             note = tuplet[0]
-            if abjad.Duration((1, 8)) < note.written_duration:
+            if abjad.Duration(1, 8) < note.written_duration:
                 continue
             string = r"\set tupletFullLength = ##f"
             command = abjad.LilyPondLiteral(string, "before")
