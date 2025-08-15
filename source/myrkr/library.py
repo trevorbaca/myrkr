@@ -67,7 +67,8 @@ class RhythmMaker:
             for term in tuplet_ratio:
                 duration = abjad.Duration(abs(term), self.denominator)
                 if 0 < term:
-                    leaf = abjad.Note("c'", duration)
+                    pitch = abjad.NamedPitch("c'")
+                    leaf = abjad.Note.from_pitch_and_duration(pitch, duration)
                 else:
                     leaf = abjad.Rest(duration)
                 leaves.append(leaf)
