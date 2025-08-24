@@ -68,7 +68,7 @@ class RhythmMaker:
                 duration = abjad.Duration(abs(term), self.denominator)
                 if 0 < term:
                     pitch = abjad.NamedPitch("c'")
-                    leaf = abjad.Note.from_pitch_and_duration(pitch, duration)
+                    leaf = abjad.Note.from_duration_and_pitch(duration, pitch)
                 else:
                     leaf = abjad.Rest.from_duration(duration)
                 leaves.append(leaf)
