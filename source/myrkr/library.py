@@ -120,7 +120,7 @@ class RhythmMaker:
                 lists.append([tuplet])
         temporary_voice[:] = []
         assert len(lists) == len(time_signatures)
-        rhythm = zip(lists, time_signatures)
+        rhythm = zip(lists, time_signatures, strict=True)
         rhythm = list(rhythm)
         return rhythm
 
@@ -142,7 +142,7 @@ class RhythmMaker:
         time_signature_count = len(time_signatures)
         pair = (tuplet_count, time_signature_count)
         assert len(tuplets) == len(time_signatures), pair
-        for tuplet, time_signature in zip(tuplets, time_signatures):
+        for tuplet, time_signature in zip(tuplets, time_signatures, strict=True):
             tuplet_duration = abjad.get.duration(tuplet)
             if isinstance(time_signature, tuple):
                 time_signature = abjad.Duration(*time_signature)
