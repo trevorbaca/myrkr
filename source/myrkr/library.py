@@ -65,14 +65,14 @@ class RhythmMaker:
                 raise ValueError(prolation_indicator)
             leaves = []
             for term in tuplet_ratio:
-                duration = abjad.Duration(abs(term), self.denominator)
+                duration = abjad.ValueDuration(abs(term), self.denominator)
                 if 0 < term:
                     pitch = abjad.NamedPitch("c'")
                     leaf = abjad.Note.from_duration_and_pitch(duration, pitch)
                 else:
                     leaf = abjad.Rest.from_duration(duration)
                 leaves.append(leaf)
-            duration = abjad.Duration(scaled_weight, self.denominator)
+            duration = abjad.ValueDuration(scaled_weight, self.denominator)
             multiplier = duration / abjad.get.duration(leaves)
             ratio = abjad.Ratio(multiplier.denominator, multiplier.numerator)
             tuplet = abjad.Tuplet(ratio, leaves)
@@ -131,7 +131,9 @@ class RhythmMaker:
         for tuplet in tuplets:
             duration = abjad.get.duration(tuplet)
             for denominator in denominators:
-                pair = abjad.duration.pair_with_denominator(duration, denominator)
+                pair = abjad.duration.pair_with_denominator(
+                    duration.as_fraction(), denominator
+                )
                 if pair[1] == denominator:
                     time_signatures.append(pair)
                     break
@@ -145,9 +147,11 @@ class RhythmMaker:
         for tuplet, time_signature in zip(tuplets, time_signatures, strict=True):
             tuplet_duration = abjad.get.duration(tuplet)
             if isinstance(time_signature, tuple):
-                time_signature = abjad.Duration(*time_signature)
+                time_signature = abjad.ValueDuration(*time_signature)
             else:
-                time_signature = abjad.Duration(time_signature)
+                assert isinstance(time_signature, abjad.ValueDuration), repr(
+                    time_signature
+                )
             assert tuplet_duration == time_signature, repr(
                 (tuplet_duration, time_signature)
             )
@@ -178,7 +182,7 @@ class RhythmMaker:
             if not len(tuplet) == 1:
                 continue
             note = tuplet[0]
-            if abjad.Duration(1, 8) < note.written_duration:
+            if abjad.ValueDuration(1, 8) < note.written_duration:
                 continue
             string = r"\set tupletFullLength = ##f"
             command = abjad.LilyPondLiteral(string, "before")
@@ -340,10 +344,10 @@ instruments = {"BassClarinet": abjad.BassClarinet()}
 
 
 metronome_marks = {
-    "44": abjad.MetronomeMark(abjad.Duration(1, 4), 44),
-    "55": abjad.MetronomeMark(abjad.Duration(1, 4), 55),
-    "88": abjad.MetronomeMark(abjad.Duration(1, 4), 88),
-    "110": abjad.MetronomeMark(abjad.Duration(1, 4), 110),
+    "44": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 44),
+    "55": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 55),
+    "88": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 88),
+    "110": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 110),
 }
 
 
